@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=~/.oh-my-zsh
 
-if [[ ! -d $ZSH ]]
+if [[ ! -d ${ZSH} ]]
 then
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
@@ -40,8 +40,8 @@ ZSH_THEME="halcyon"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump)
 
-source $ZSH/oh-my-zsh.sh
-source ${HOME}/dotfiles/docker/start.sh
+source ${ZSH}/oh-my-zsh.sh
+source ~/dotfiles/docker/start.sh
 
 # Customize to your needs...
 
