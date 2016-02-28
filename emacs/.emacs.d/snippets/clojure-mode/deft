@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: deftype
+# key: deft
+# binding: direct-keybinding
+# --
+(deftype
+  ^{"$1"}
+  $2
+  [$3]
+  $0)

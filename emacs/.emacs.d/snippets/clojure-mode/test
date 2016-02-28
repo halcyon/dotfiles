@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: test
+# key: tt
+# binding: direct-keybinding
+# --
+(deftest $1
+  (is (= $2))
+  $0)

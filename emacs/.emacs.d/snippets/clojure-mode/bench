@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: bench
+# key: bench
+# binding: direct-keybinding
+# --
+(dotimes [_ 5 ]
+  (time (dotimes [i 1000000]
+  $0
+  )))

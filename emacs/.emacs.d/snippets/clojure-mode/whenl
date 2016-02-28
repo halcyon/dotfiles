@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: whenl
+# key: whenl
+# binding: direct-keybinding
+# --
+(when-let [$1 $2]
+  $3)
+  $0

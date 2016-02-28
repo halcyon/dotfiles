@@ -1,0 +1,15 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: defproject
+# key: defproject
+# binding: direct-keybinding
+# --
+(defproject ${1:`(file-name-base (f-parent (buffer-file-name)))`} "0.1.0-SNAPSHOT"
+  :description "$2"
+  :url "$3"
+  :license {:name "GNU General Public License"
+            :url "http://www.gnu.org/licenses/gpl.html"}
+  :jvm-opts ["-XX:MaxPermSize=256m"]
+  :dependencies [[org.clojure/clojure "1.8.0"]]
+  :profiles {:dev {:plugins []
+                   :dependencies []
+                   :source-paths ["dev"]}})

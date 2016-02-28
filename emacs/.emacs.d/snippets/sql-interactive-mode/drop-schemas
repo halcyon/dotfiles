@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: drop-schemas
+# key: ds
+# binding: direct-keybinding
+# --
+DROP SCHEMA IF EXISTS $1 CASCADE;
+DROP TABLE IF EXISTS public.$1_migrations CASCADE;$0

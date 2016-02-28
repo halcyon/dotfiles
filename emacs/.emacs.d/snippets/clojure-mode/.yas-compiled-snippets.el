@@ -1,0 +1,41 @@
+;;; Compiled snippets and support files for `clojure-mode'
+;;; Snippet definitions:
+;;;
+(yas-define-snippets 'clojure-mode
+                     '(("bench" "(dotimes [_ 5 ]\n  (time (dotimes [i 1000000]\n  $0\n  )))" "bench" nil nil nil nil "direct-keybinding" nil)
+                       ("cljsbuild" ":cljsbuild {:builds [{:source-paths [\"src\" \"dev\"]\n                      :compiler {:output-to \"target/classes/public/app.js\"\n                      :output-dir \"target/classes/public/out\"\n                      :optimizations :none\n                      :recompile-dependents true\n                      :source-map true}}]}" "cljsbuild" nil nil nil nil "direct-keybinding" nil)
+                       ("com" "(defrecord $1 [$2]\n  component/Lifecycle\n  (start [this] $3)\n  (stop [this] $4))" "com" nil nil nil nil "direct-keybinding" nil)
+                       ("def" "(def $0)" "def" nil nil nil nil "direct-keybinding" nil)
+                       ("defm" "(defmacro $1\n  \"$2\"\n  [$3]\n  $0)" "defmacro" nil nil nil nil "direct-keybinding" nil)
+                       ("defn" "(defn $1\n  \"$2\"\n  [$3]\n  $0)" "defn" nil nil nil nil "direct-keybinding" nil)
+                       ("defproject" "(defproject ${1:`(file-name-base (f-parent (buffer-file-name)))`} \"0.1.0-SNAPSHOT\"\n  :description \"$2\"\n  :url \"$3\"\n  :license {:name \"GNU General Public License\"\n            :url \"http://www.gnu.org/licenses/gpl.html\"}\n  :jvm-opts [\"-XX:MaxPermSize=256m\"]\n  :dependencies [[org.clojure/clojure \"1.8.0\"]]\n  :profiles {:dev {:plugins []\n                   :dependencies []\n                   :source-paths [\"dev\"]}})" "defproject" nil nil nil nil "direct-keybinding" nil)
+                       ("defr" "(defrecord\n  ^{\"$1\"}\n  $2\n  [$3]\n  $0)" "defrecord" nil nil nil nil "direct-keybinding" nil)
+                       ("deft" "(deftype\n  ^{\"$1\"}\n  $2\n  [$3]\n  $0)" "deftype" nil nil nil nil "direct-keybinding" nil)
+                       ("dev" ":profiles {:dev {:plugins [$1]\n                 :dependencies [$0]}}" "dev-profile" nil nil nil nil "direct-keybinding" nil)
+                       ("d" "(d/div {}\n  $0)" "div" nil nil nil nil "direct-keybinding" nil)
+                       ("d." "(d/div {:className \"$1\"}$0)" "div-class" nil nil nil nil "direct-keybinding" nil)
+                       ("doseq" "(doseq [$1 $2]\n  $3)\n$0" "doseq" nil nil nil nil "direct-keybinding" nil)
+                       ("fn" "(fn [$1]\n  $0)" "fn" nil nil nil nil "direct-keybinding" nil)
+                       ("for" "(for [$1 $2]\n  $3)" "for" nil nil nil nil "direct-keybinding" nil)
+                       ("if" "(if $1\n  $2\n  $3)\n$0" "if" nil nil nil nil "direct-keybinding" nil)
+                       ("ifl" "(if-let [$1 $2]\n  $3)\n$0" "if-let" nil nil nil nil "direct-keybinding" nil)
+                       ("import" "(:import ($1))" "import" nil nil nil nil "direct-keybinding" nil)
+                       ("is" "(is (= $1 $2))" "is" nil nil nil nil "direct-keybinding" nil)
+                       ("let" "(let [$1 $2]\n  $3)\n$0" "let" nil nil nil nil "direct-keybinding" nil)
+                       ("map" "(map $1 $2)" "map" nil nil nil nil "direct-keybinding" nil)
+                       ("mapl" "(map #($1) $2)" "map-lambda" nil nil nil nil "direct-keybinding" nil)
+                       ("mdoc" "^{:doc \"$1\"}" "mdoc" nil nil nil nil "direct-keybinding" nil)
+                       ("ns" "(ns `(clojure-expected-ns)`\n  $0)" "ns" nil nil nil nil "direct-keybinding" nil)
+                       ("opts" "{:keys [$1]\n :or {$2}\n :as $3}" "opts" nil nil nil nil "direct-keybinding" nil)
+                       ("pr" "(prn $1)\n$0" "pr" nil nil nil nil "direct-keybinding" nil)
+                       ("print" "(println $1)\n$0" "print" nil nil nil nil "direct-keybinding" nil)
+                       ("reduce" "(reduce ${1:(fn [p n] $0)} $2)" "reduce" nil nil nil nil "direct-keybinding" nil)
+                       ("require" "(:require [$1 :as $2])" "require" nil nil nil nil "direct-keybinding" nil)
+                       ("tt" "(deftest $1\n  (is (= $2))\n  $0)" "test" nil nil nil nil "direct-keybinding" nil)
+                       ("tc" "(ns `(clojure-expected-ns)`\n  (:use [`(replace-regexp-in-string \"-test\" \"\" (clojure-expected-ns))`])\n  (:use [clojure.test]))\n\ntt$0" "testcase" nil nil nil nil "direct-keybinding" nil)
+                       ("try" "(try\n$1\n(catch ${2:Exception} e\n$3))" "try" nil nil nil nil "direct-keybinding" nil)
+                       ("when" "(when $1\n      $2)\n$0" "when" nil nil nil nil "direct-keybinding" nil)
+                       ("whenl" "(when-let [$1 $2]\n  $3)\n  $0" "whenl" nil nil nil nil "direct-keybinding" nil)))
+
+
+;;; Do not edit! File generated at Tue Feb  9 20:25:23 2016

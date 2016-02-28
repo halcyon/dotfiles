@@ -1,0 +1,7 @@
+[push]
+	default = simple
+[core]
+	editor = emacs -nw
+	autocrlf = input
+[include]
+        path = ~/dotfiles-private/git/git-private

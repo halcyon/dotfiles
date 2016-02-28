@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: reduce
+# key: reduce
+# binding: direct-keybinding
+# --
+(reduce ${1:(fn [p n] $0)} $2)

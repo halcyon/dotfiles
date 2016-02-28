@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: dev-profile
+# key: dev
+# binding: direct-keybinding
+# --
+:profiles {:dev {:plugins [$1]
+                 :dependencies [$0]}}
