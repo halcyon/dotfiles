@@ -181,7 +181,7 @@ Null prefix argument turns off the mode."
 (use-package dired-x
   ;;; C-x C-j opens dired with the cursor right on the file you're editing
   :ensure nil
-  :config
+  :init
   (setq ls-lisp-use-insert-directory-program nil)
   (require 'ls-lisp))
 
@@ -191,7 +191,7 @@ Null prefix argument turns off the mode."
                    :url "http://fly.srk.fer.hr/~hniksic/emacs/htmlize.git"))
 (use-package org-settings
   :ensure nil
-  :config
+  :init
   (set-face-attribute 'org-document-info nil :inherit 'org-block)
   (set-face-attribute 'org-document-info nil :foreground nil)
   (setq org-src-fontify-natively t
@@ -394,7 +394,7 @@ Null prefix argument turns off the mode."
 ;;;;; elisp-settings
 (use-package elisp-settings
   :ensure nil
-  :config
+  :init
   (add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
   (font-lock-add-keywords 'emacs-lisp-mode
                           '(("(\\s-*\\(\\_<\\(?:\\sw\\|\\s_\\)+\\)\\_>"
