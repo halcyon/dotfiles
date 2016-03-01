@@ -1,8 +1,6 @@
 #!/bin/bash
 
-VM=dev
-DRIVER=xhyve
-DRIVER_OPTS="--xhyve-memory-size 2048"
+VM=default
 DOCKER_MACHINE=/usr/local/bin/docker-machine
 VBOXMANAGE=/Applications/VirtualBox.app/Contents/MacOS/VBoxManage
 
@@ -10,24 +8,26 @@ BLUE='\033[0;34m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
+unset DYLD_LIBRARY_PATH
+unset LD_LIBRARY_PATH
+
 clear
 
 if [ ! -f $DOCKER_MACHINE ] || [ ! -f $VBOXMANAGE ]; then
-  echo "Either VirtualBox or Docker Machine are not installed."
+  echo "Either VirtualBox or Docker Machine are not installed. Please re-run the Toolbox Installer and try again."
   exit 1
 fi
 
-$DOCKER_MACHINE inspect $VM &> /dev/null
-MACHINE_EXISTS_CODE=$?
+$VBOXMANAGE showvminfo $VM &> /dev/null
+VM_EXISTS_CODE=$?
 
-if [ $MACHINE_EXISTS_CODE -eq 1 ]; then
+if [ $VM_EXISTS_CODE -eq 1 ]; then
   echo "Creating Machine $VM..."
   $DOCKER_MACHINE rm -f $VM &> /dev/null
   rm -rf ~/.docker/machine/machines/$VM
-  sudo rm -f /var/db/dhcpd_leases
-  $DOCKER_MACHINE create -d $DRIVER $DRIVER_OPTS $VM
+  $DOCKER_MACHINE create -d virtualbox --virtualbox-memory 2048 $VM
 else
-  echo "Machine $VM already exists."
+  echo "Machine $VM already exists in VirtualBox."
 fi
 
 echo "Starting machine $VM..."
@@ -54,4 +54,11 @@ echo -e "${BLUE}docker${NC} is configured to use the ${GREEN}$VM${NC} machine wi
 echo "For help getting started, check out the docs at https://docs.docker.com"
 echo
 
-eval $($DOCKER_MACHINE env $VM --shell=zsh)
+eval $($DOCKER_MACHINE env $VM --shell=bash)
+
+#USER_SHELL=$(dscl /Search -read /Users/$USER UserShell | awk '{print $2}' | head -n 1)
+#if [[ $USER_SHELL == *"/bash"* ]] || [[ $USER_SHELL == *"/zsh"* ]] || [[ $USER_SHELL == *"/sh"* ]]; then
+#  $USER_SHELL --login
+#else
+#  $USER_SHELL
+#fi
