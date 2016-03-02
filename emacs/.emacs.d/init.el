@@ -312,8 +312,7 @@ Null prefix argument turns off the mode."
 ;;;;; org-reveal
 (use-package ox-reveal
   :quelpa (ox-reveal :fetcher github
-                     :repo "yjwen/org-reveal")
-  :config (setq org-reveal-root "reveal.js"))
+                     :repo "yjwen/org-reveal"))
 
 ;;;; replacements for improved functionality
 ;;;;; which-key
