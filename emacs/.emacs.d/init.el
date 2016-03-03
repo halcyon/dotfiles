@@ -13,7 +13,8 @@
 (setq quelpa-update-melpa-p nil)
 (unless (require 'quelpa nil t)
   (with-temp-buffer
-    (url-insert-file-contents "https://raw.github.com/quelpa/quelpa/master/bootstrap.el")
+    (url-insert-file-contents (concat "https://raw.github.com/quelpa"
+                                      "/quelpa/master/bootstrap.el"))
     (eval-buffer)))
 
 ;; install use-package and the quelpa handler
@@ -202,7 +203,8 @@ Null prefix argument turns off the mode."
 ;;;;; hide-mode-line
 (use-package hide-mode-line
   :quelpa (hide-mode-line :fetcher url
-                          :url "http://webonastick.com/emacs-lisp/hide-mode-line.el"))
+                          :url "http://webonastick.com/emacs-lisp/hide-mode-line.el"
+                          :version original))
 
 ;;;;; org-present
 (use-package org-present
