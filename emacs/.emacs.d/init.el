@@ -1,7 +1,7 @@
 ;;; package --- init.el
 ;;; Commentary:
 ;;; Code:
-(setq message-log-max 10000) ; debugging
+(setq message-log-max 10000)
 
 (require 'package)
 (setq package-enable-at-startup nil)
