@@ -435,6 +435,7 @@ Null prefix argument turns off the mode."
 ;;;;; clj-refactor
 (use-package clj-refactor
   :config
+  (setq cljr-warn-on-eval nil)
   (defun my-clojure-mode-hook ()
     (clj-refactor-mode)
     ;; This choice of keybinding leaves cider-macroexpand-1 unbound
