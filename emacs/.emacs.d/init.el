@@ -7,9 +7,10 @@
 (setq package-enable-at-startup nil)
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("gnu" . "https://elpa.gnu.org/packages/")))
-(when (not package-archive-contents)
-    (package-refresh-contents))
+(unless (file-directory-p "~/.emacs.d/elpa/archives")
+  (package-refresh-contents))
 (package-initialize)
+
 (setq quelpa-update-melpa-p nil)
 (unless (require 'quelpa nil t)
   (with-temp-buffer
@@ -130,7 +131,9 @@ Null prefix argument turns off the mode."
 ;;;;; color-theme-solarized
 (use-package color-theme
   :quelpa (color-theme :fetcher bzr
-                       :repo "http://bzr.savannah.gnu.org/r/color-theme/trunk"))
+                       :repo "http://bzr.savannah.gnu.org/r/color-theme/trunk"
+                       :files ("*.el" "themes")))
+
 (use-package color-theme-solarized
   :quelpa (color-theme-solarized :fetcher github
                                  :repo "sellout/emacs-color-theme-solarized")

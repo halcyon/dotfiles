@@ -1,3 +1,4 @@
+*.elc
 emacs/.emacs.d/.ido.last
 emacs/.emacs.d/.smex-items
 emacs/.emacs.d/auto-save-list
@@ -8,6 +9,5 @@ emacs/.emacs.d/request
 emacs/.emacs.d/var
 emacs/.emacs.d/.last-package-update-day
 emacs/.emacs.d/cider-repl-history.eld
-emacs/.emacs.d/init.elc
 emacs/.emacs.d/quelpa
 emacs/.emacs.d/.cask
