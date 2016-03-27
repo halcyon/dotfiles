@@ -85,6 +85,12 @@ export LESS='-R'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+export ORACLE_HOME=~/instantclient_11_2
+export DYLD_LIBRARY_PATH=${ORACLE_HOME}
+export PATH=${PATH}:${ORACLE_HOME}
+export NLS_LANG="AMERICAN_AMERICA.UTF8"
+export SQLPATH=~/dotfiles/oracle
+
 if [[ -f ~/dotfiles-private/zsh/zsh-private ]]
 then
     source ~/dotfiles-private/zsh/zsh-private
