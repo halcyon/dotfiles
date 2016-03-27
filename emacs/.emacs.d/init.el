@@ -539,11 +539,6 @@ Null prefix argument turns off the mode."
   (provide 'SQLi-mode))
 
 ;;;; learning materials
-;;;;; 4clojure
-(use-package 4clojure
-  :quelpa (4clojure :fetcher github
-                    :repo "losingkeys/4clojure.el"))
-
 ;;;;; sicp
 (use-package sicp
   :quelpa (sicp :fetcher github
