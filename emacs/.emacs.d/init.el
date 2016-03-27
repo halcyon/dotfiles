@@ -522,13 +522,17 @@ Null prefix argument turns off the mode."
 (use-package SQLi-mode
   :ensure nil
   :init
-  (setq sql-connection-alist
-        '((docker (sql-product 'postgres)
-                  (sql-port 5432)
-                  (sql-server "192.168.64.2")
-                  (sql-user "root")
-                  (sql-database "lp_docker")))
-        sql-product 'postgres)
+  (defun docker-postgres ()
+    (interactive)
+    (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg")
+    (setq sql-product 'postgres)
+    (sql-connect 'docker-postgres 'docker-postgres))
+  (defun webicon-oracle ()
+    (interactive)
+    (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg")
+    (setenv "DYLD_LIBRARY_PATH" (getenv "ORACLE_HOME"))
+    (setq sql-product 'oracle)
+    (sql-connect 'webicon-oracle 'webicon-oracle))
   (add-hook 'sql-interactive-mode-hook
             (lambda ()
               (toggle-truncate-lines t)))
