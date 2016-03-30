@@ -63,6 +63,20 @@
   (put 'scroll-left 'disabled nil)
   (global-unset-key [swipe-left])
   (global-unset-key [swipe-right])
+  (defadvice terminal-init-screen
+      ;; The advice is named `tmux', and is run before
+      ;; `terminal-init-screen' runs.
+      (before tmux activate)
+    ;; Docstring.  This describes the advice and is made available inside
+    ;; emacs; e.g. when doing C-h f terminal-init-screen RET
+    "Apply xterm keymap, allowing use of keys passed through tmux."
+    ;; This is the elisp code that is run before `terminal-init-screen'.
+    (if (getenv "TMUX")
+        (let ((map (copy-keymap xterm-function-map)))
+          (set-keymap-parent map (keymap-parent input-decode-map))
+          (set-keymap-parent input-decode-map map))))
+  (define-key key-translation-map (kbd "M-[ 65 ; 6") (kbd "C-S-a"))
+  (define-key key-translation-map (kbd "M-[ 68 ; 6") (kbd "C-S-d"))
   (provide 'global-settings)
   :bind (("<f6>" . fullscreen)
          ("C-x C-b" . ibuffer-interactive)))
@@ -469,6 +483,8 @@ Null prefix argument turns off the mode."
 
 ;;;;; flycheck-pos-tip
 (use-package flycheck-pos-tip
+  :quelpa (flycheck-pos-tip :repo "flycheck/flycheck-pos-tip"
+                            :fetcher github)
   :config
   (setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
