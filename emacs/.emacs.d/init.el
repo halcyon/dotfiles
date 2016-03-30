@@ -77,6 +77,7 @@
           (set-keymap-parent input-decode-map map))))
   (define-key key-translation-map (kbd "M-[ 65 ; 6") (kbd "C-S-a"))
   (define-key key-translation-map (kbd "M-[ 68 ; 6") (kbd "C-S-d"))
+  (define-key key-translation-map (kbd "M-[ 9 ; 3") (kbd "<M-tab>"))
   (provide 'global-settings)
   :bind (("<f6>" . fullscreen)
          ("C-x C-b" . ibuffer-interactive)))
