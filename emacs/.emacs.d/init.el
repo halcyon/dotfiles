@@ -395,6 +395,11 @@ Null prefix argument turns off the mode."
 (use-package projectile
   :config (projectile-global-mode))
 
+;;;;; pbcopy
+(use-package pbcopy
+  :quelpa (pbcopy :fetcher github :repo "emacsfodder/pbcopy.el")
+  :config (turn-on-pbcopy))
+
 ;;;; language
 ;;;;; yasnippet
 (use-package f)
