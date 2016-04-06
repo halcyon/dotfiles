@@ -31,6 +31,19 @@
 (setq use-package-always-ensure t)
 (quelpa-use-package-activate-advice)
 
+;;; Helper functions
+(defun linum-off ()
+  "Disable line numbers in the left margin."
+  (linum-mode -1))
+
+(defun fullscreen-on ()
+  "Enable fullscreen."
+  (set-frame-parameter nil 'fullscreen 'fullboth))
+
+(defun fullscreen-off ()
+  "Disable fullscreen."
+  (set-frame-parameter nil 'fullscreen nil))
+
 ;;; Packages
 
 ;;;; settings
@@ -48,14 +61,11 @@
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
   (winner-mode)
-  (defun fullscreen ()
+  (defun fullscreen-toggle ()
     (interactive)
-    (set-frame-parameter nil
-                         'fullscreen
-                         (if (frame-parameter nil
-                                              'fullscreen)
-                             nil
-                           'fullboth)))
+    (if (frame-parameter nil 'fullscreen)
+        (fullscreen-off)
+      (fullscreen-on)))
   (defun ibuffer-interactive ()
     (interactive)
     (ibuffer t))
@@ -80,7 +90,7 @@
   (define-key key-translation-map (kbd "\e[65;6") (kbd "C-S-a"))
   (define-key key-translation-map (kbd "\e[68;6") (kbd "C-S-d"))
   (provide 'global-settings)
-  :bind (("<f6>" . fullscreen)
+  :bind (("<f6>" . fullscreen-toggle)
          ("C-x C-b" . ibuffer-interactive)))
 
 ;;;;; backup-settings
@@ -188,12 +198,12 @@ Null prefix argument turns off the mode."
   (bind-key "C-'" #'term-line-mode term-raw-map)
   (bind-key "C-'" #'term-char-mode term-mode-map)
   (bind-key "C-y" #'term-paste term-raw-map)
-  (add-hook 'term-mode-hook (lambda () (linum-mode -1))))
+  (add-hook 'term-mode-hook #'linum-off))
 
 ;;;;; info
 (use-package info
   :config
-  (add-hook 'Info-mode-hook (lambda () (linum-mode -1))))
+  (add-hook 'Info-mode-hook #'linum-off))
 
 ;;;;; dired-x
 (use-package dired-x
@@ -228,28 +238,24 @@ Null prefix argument turns off the mode."
   :quelpa (org-present :fetcher github
                        :repo "rlister/org-present")
   :config
-  (add-hook 'org-present-mode-hook
-            (lambda ()
-              (org-present-big)
-              (org-display-inline-images)
-              (org-present-hide-cursor)
-              (org-present-read-only)
-              (linum-mode -1)
-              (hide-mode-line)
-              (set-frame-parameter nil
-                                   'fullscreen
-                                   'fullboth)))
-  (add-hook 'org-present-mode-quit-hook
-            (lambda ()
-              (org-present-small)
-              (org-remove-inline-images)
-              (org-present-show-cursor)
-              (org-present-read-write)
-              (linum-mode)
-              (hide-mode-line)
-              (set-frame-parameter nil
-                                   'fullscreen
-                                   nil))))
+  (defun configure-org-present ()
+    (org-present-big)
+    (org-display-inline-images)
+    (org-present-hide-cursor)
+    (org-present-read-only)
+    (linum-off)
+    (hide-mode-line)
+    (fullscreen-on))
+  (defun deconfigure-org-present ()
+    (org-present-small)
+    (org-remove-inline-images)
+    (org-present-show-cursor)
+    (org-present-read-write)
+    (linum-mode)
+    (hide-mode-line)
+    (fullscreen-off))
+  (add-hook 'org-present-mode-hook #'configure-org-present)
+  (add-hook 'org-present-mode-quit-hook #'deconfigure-org-present))
 
 ;;;;; org2jekyll
 (use-package org2jekyll
@@ -374,14 +380,16 @@ Null prefix argument turns off the mode."
 
 ;;;;; ag
 (use-package ag
-  :config (add-hook 'clojure-mode-hook
-                    (lambda () (set (make-local-variable 'ag-arguments)
-                                    (list "--clojure"
-                                          "--line-number"
-                                          "--smart-case"
-                                          "--nogroup"
-                                          "--column"
-                                          "--")))))
+  :config
+  (defun configure-ag-clojure ()
+    (set (make-local-variable 'ag-arguments)
+                            (list "--clojure"
+                                  "--line-number"
+                                  "--smart-case"
+                                  "--nogroup"
+                                  "--column"
+                                  "--")))
+  (add-hook 'clojure-mode-hook #'configure-ag-clojure))
 
 ;;;;; undo-tree
 (use-package undo-tree
@@ -454,25 +462,25 @@ Null prefix argument turns off the mode."
 (use-package clojure-mode-extra-font-locking)
 (use-package clojure-mode
   :config
-  (add-hook 'clojure-mode-hook
-            (lambda ()
-              (define-clojure-indent
+  (defun configure-clojure-indent ()
+    (define-clojure-indent
                 (GET 'defun)
                 (POST 'defun)
                 (PUT 'defun)
                 (DELETE 'defun)
                 (HEAD 'defun)
-                (ANY 'defun)))))
+                (ANY 'defun)))
+  (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
 ;;;;; clj-refactor
 (use-package clj-refactor
   :config
   (setq cljr-warn-on-eval nil)
-  (add-hook 'clojure-mode-hook
-            (lambda ()
-              (clj-refactor-mode)
-              ;; This choice of keybinding leaves cider-macroexpand-1 unbound
-              (cljr-add-keybindings-with-prefix "C-c C-m"))))
+  (defun configure-clj-refactor ()
+    (clj-refactor-mode)
+    ;; This choice of keybinding leaves cider-macroexpand-1 unbound
+    (cljr-add-keybindings-with-prefix "C-c C-m"))
+  (add-hook 'clojure-mode-hook #'configure-clj-refactor))
 
 ;;;;; cider
 (use-package cider
@@ -481,8 +489,9 @@ Null prefix argument turns off the mode."
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
   (add-hook 'cider-mode-hook #'eldoc-mode)
   (add-hook 'cider-repl-mode-hook #'eldoc-mode)
-  (add-hook 'cider-connected-hook
-            (lambda () (with-current-buffer nrepl-server-buffer (clojure-mode)))))
+  (defun nrepl-server-clojure-on ()
+    (with-current-buffer nrepl-server-buffer (clojure-mode)))
+  (add-hook 'cider-connected-hook #'nrepl-server-clojure-on))
 
 ;;;;; flycheck
 (use-package flycheck)
@@ -558,9 +567,9 @@ Null prefix argument turns off the mode."
     (setenv "DYLD_LIBRARY_PATH" (getenv "ORACLE_HOME"))
     (setq sql-product 'oracle)
     (sql-connect 'webicon-oracle 'webicon-oracle))
-  (add-hook 'sql-interactive-mode-hook
-            (lambda ()
-              (toggle-truncate-lines t)))
+  (defun truncate-lines-on ()
+    (toggle-truncate-lines t))
+  (add-hook 'sql-interactive-mode-hook #'truncate-lines-on)
   (provide 'SQLi-mode))
 
 ;;;; learning materials
