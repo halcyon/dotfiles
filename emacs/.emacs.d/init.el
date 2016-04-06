@@ -480,6 +480,7 @@ Null prefix argument turns off the mode."
   (setq cider-repl-history-size 1000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
   (add-hook 'cider-mode-hook #'eldoc-mode)
+  (add-hook 'cider-repl-mode-hook #'eldoc-mode)
   (add-hook 'cider-connected-hook
             (lambda () (with-current-buffer nrepl-server-buffer (clojure-mode)))))
 
