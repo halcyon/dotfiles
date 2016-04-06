@@ -45,7 +45,7 @@
         vc-follow-symlinks t
         x-select-enable-clipboard t)
   (setq-default indent-tabs-mode nil)
-  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+  (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
   (winner-mode)
   (defun fullscreen ()
@@ -136,12 +136,10 @@ Null prefix argument turns off the mode."
                     :stable t)
   :config
   (setq outshine-use-speed-commands t)
-  (add-hook 'outline-minor-mode-hook
-            'outshine-hook-function)
-  (add-hook 'emacs-lisp-mode-hook
-            'outline-minor-mode)
-  (bind-key "<S-tab>" 'outshine-cycle-buffer)
-  (bind-key "<M-tab>" 'company-complete))
+  (add-hook 'outline-minor-mode-hook #'outshine-hook-function)
+  (add-hook 'emacs-lisp-mode-hook #'outline-minor-mode)
+  (bind-key "<S-tab>" #'outshine-cycle-buffer)
+  (bind-key "<M-tab>" #'company-complete))
 
 ;;;;; color-theme-solarized
 (use-package color-theme
@@ -186,9 +184,9 @@ Null prefix argument turns off the mode."
   ;; Have C-y act as usual in term-mode, to avoid C-' C-y C-'
   ;; Well the real default would be C-c C-j C-y C-c C-k.
   :config
-  (bind-key "C-'" 'term-line-mode term-raw-map)
-  (bind-key "C-'" 'term-char-mode term-mode-map)
-  (bind-key "C-y" 'term-paste term-raw-map)
+  (bind-key "C-'" #'term-line-mode term-raw-map)
+  (bind-key "C-'" #'term-char-mode term-mode-map)
+  (bind-key "C-y" #'term-paste term-raw-map)
   (add-hook 'term-mode-hook (lambda () (linum-mode -1))))
 
 ;;;;; info
@@ -397,7 +395,8 @@ Null prefix argument turns off the mode."
 
 ;;;;; pbcopy
 (use-package pbcopy
-  :quelpa (pbcopy :fetcher github :repo "emacsfodder/pbcopy.el")
+  :quelpa (pbcopy :fetcher github
+                  :repo "emacsfodder/pbcopy.el")
   :config (turn-on-pbcopy))
 
 ;;;; language
@@ -413,13 +412,13 @@ Null prefix argument turns off the mode."
 ;;;;; company
 (use-package company
   :config
-  (add-hook 'after-init-hook 'global-company-mode))
+  (add-hook 'after-init-hook #'global-company-mode))
 
 ;;;;; elisp-settings
 (use-package elisp-settings
   :ensure nil
   :init
-  (add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
+  (add-hook 'emacs-lisp-mode-hook #'eldoc-mode)
   (font-lock-add-keywords 'emacs-lisp-mode
                           '(("(\\s-*\\(\\_<\\(?:\\sw\\|\\s_\\)+\\)\\_>"
                              1 'font-lock-keyword-face)))
@@ -428,8 +427,8 @@ Null prefix argument turns off the mode."
 ;;;;; elisp-slime-nav
 (use-package elisp-slime-nav
   :config
-  (add-hook 'emacs-lisp-mode-hook 'turn-on-elisp-slime-nav-mode)
-  (add-hook 'ielm-mode-hook 'turn-on-elisp-slime-nav-mode))
+  (add-hook 'emacs-lisp-mode-hook #'turn-on-elisp-slime-nav-mode)
+  (add-hook 'ielm-mode-hook #'turn-on-elisp-slime-nav-mode))
 
 ;;;;; overseer.el
 (use-package overseer
@@ -479,8 +478,7 @@ Null prefix argument turns off the mode."
   :config
   (setq cider-repl-history-size 1000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
-  (add-hook 'cider-mode-hook
-            'cider-turn-on-eldoc-mode)
+  (add-hook 'cider-mode-hook #'eldoc-mode)
   (add-hook 'cider-connected-hook
             (lambda () (with-current-buffer nrepl-server-buffer (clojure-mode)))))
 
@@ -516,9 +514,9 @@ Null prefix argument turns off the mode."
 ;;;;; rainbow-delimters
 (use-package rainbow-delimiters
   :config
-  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
-  (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
-  (add-hook 'scheme-mode-hook 'rainbow-delimiters-mode))
+  (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+  (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
+  (add-hook 'scheme-mode-hook #'rainbow-delimiters-mode))
 
 ;;;; version control
 ;;;;; magit
@@ -600,7 +598,7 @@ Null prefix argument turns off the mode."
   :config
   (escreen-install)
   (add-hook 'escreen-goto-screen-hook
-            'escreen-enable-number-mode-if-more-than-one-screen))
+            #'escreen-enable-number-mode-if-more-than-one-screen))
 
 (provide 'init)
 ;;; init.el ends here
