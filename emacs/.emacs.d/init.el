@@ -357,14 +357,15 @@ Null prefix argument turns off the mode."
   (ido-mode)
   (ido-everywhere)
   (flx-ido-mode)
-  (setq ido-enable-flex-matching t)
-  (setq ido-use-faces nil)  ; disable ido faces to see flx highlights.
-  (setq ido-save-directory-list-file "~/.emacs.d/.ido.last")
-  (setq ido-use-filename-at-point 'guess)
-  (setq ido-show-dot-for-dired t)
-  (setq ido-default-buffer-method 'selected-window)
-  ;; have vertical ido completion lists
-  (setq ido-decorations
+  (setq gc-cons-threshold 20000000
+        ido-enable-flex-matching t
+        ido-use-faces nil  ; disable ido faces to see flx highlights.
+        ido-save-directory-list-file "~/.emacs.d/.ido.last"
+        ido-use-filename-at-point 'guess
+        ido-show-dot-for-dired t
+        ido-default-buffer-method 'selected-window
+        ;; have vertical ido completion lists
+        ido-decorations
         '("\n-> " "" "\n   " "\n   ..."
           "[" "]" " [No match]" " [Matched]"
           " [Not readable]" " [Too big]"
