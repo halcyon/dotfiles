@@ -357,8 +357,7 @@ Null prefix argument turns off the mode."
   (ido-mode)
   (ido-everywhere)
   (flx-ido-mode)
-  (setq gc-cons-threshold 20000000
-        ido-enable-flex-matching t
+  (setq ido-enable-flex-matching t
         ido-use-faces nil  ; disable ido faces to see flx highlights.
         ido-save-directory-list-file "~/.emacs.d/.ido.last"
         ido-use-filename-at-point 'guess
