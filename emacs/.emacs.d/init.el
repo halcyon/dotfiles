@@ -512,6 +512,9 @@ Null prefix argument turns off the mode."
   (flycheck-clojure-setup)
   (add-hook 'after-init-hook #'global-flycheck-mode))
 
+;;;;; gradle
+(use-package gradle-mode)
+
 ;;;;; smartparens
 (use-package smartparens
   :config

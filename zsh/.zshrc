@@ -95,3 +95,7 @@ if [[ -f ~/dotfiles-private/zsh/zsh-private ]]
 then
     source ~/dotfiles-private/zsh/zsh-private
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/smcleod/.sdkman"
+[[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
