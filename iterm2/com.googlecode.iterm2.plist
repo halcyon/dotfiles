@@ -336,11 +336,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>94 1056 1440 572 -199 900 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>-105 1302 924 485 -199 900 1920 1057 </string>
+	<string>499 1212 924 485 -199 900 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-193 909 1908 1040 -199 900 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-16 1216 1050 676 -199 900 1920 1057 </string>
+	<string>-193 909 1908 1040 -199 900 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>-193 1494 570 451 -199 900 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_528DA4D9-EB99-4C3F-B28D-C7E9A020C04F</key>
@@ -1504,6 +1504,13 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x44</string>
 				</dict>
+				<key>0xf702-0x2c0000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>[1;7D</string>
+				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -1531,6 +1538,13 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x43</string>
+				</dict>
+				<key>0xf703-0x2c0000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>[1;7C</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1838,7 +1852,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>477597665.01010102</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>481140614.55987698</real>
+	<real>484508744.48321301</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1901,7 +1915,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-31T18:04:07Z</date>
+	<date>2016-05-09T06:49:59Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
