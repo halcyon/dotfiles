@@ -142,6 +142,7 @@ Null prefix argument turns off the mode."
                   :repo "tj64/outorg"
                   :stable t))
 (use-package outshine
+  :diminish outline-minor-mode
   :quelpa (outshine :fetcher github
                     :repo "tj64/outshine"
                     :stable t)
@@ -342,6 +343,7 @@ Null prefix argument turns off the mode."
 ;;;; replacements for improved functionality
 ;;;;; which-key
 (use-package which-key
+  :diminish which-key-mode
   :config (which-key-mode))
 
 ;;;;; smex
@@ -376,7 +378,8 @@ Null prefix argument turns off the mode."
 
 ;;;;; goto-last-change
 (use-package goto-last-change
-  :bind ("C-x C-/" . goto-last-change))
+  :bind (("C-x C-/" . goto-last-change)
+         ("C-x C-_" . goto-last-change)))
 
 ;;;;; ag
 (use-package ag
@@ -393,7 +396,9 @@ Null prefix argument turns off the mode."
 
 ;;;;; undo-tree
 (use-package undo-tree
-  :config (global-undo-tree-mode))
+  :diminish undo-tree-mode
+  :config (global-undo-tree-mode)
+  :bind ("s-/" . undo-tree-visualize))
 
 ;;;;; browse-kill-ring
 (use-package browse-kill-ring)
@@ -412,22 +417,44 @@ Null prefix argument turns off the mode."
 ;;;;; yasnippet
 (use-package f)
 (use-package yasnippet
+  :diminish yas-minor-mode
   :config
-  (yas-global-mode))
+  (yas-global-mode)
+  (yas-reload-all))
+
+;;;;; ensime
+(use-package ensime
+  :quelpa (ensime :fetcher github
+                  :repo "ensime/ensime-emacs")
+  :commands ensime ensime-mode)
 
 ;;;;; emmet-mode
 (use-package emmet-mode)
 
 ;;;;; company
 (use-package company
+  :diminish company-mode
   :config
   (add-hook 'after-init-hook #'global-company-mode))
+
+(use-package eldoc
+  :ensure nil
+  :diminish eldoc-mode
+  :commands eldoc-mode
+  :init
+  (add-hook 'emacs-lisp-mode-hook #'eldoc-mode)
+  (add-hook 'cider-mode-hook #'eldoc-mode)
+  (add-hook 'cider-repl-mode-hook #'eldoc-mode)
+  (add-hook 'ensime-mode-hook #'eldoc-mode))
+
+(use-package abbrev
+  :ensure nil
+  :diminish abbrev-mode)
 
 ;;;;; elisp-settings
 (use-package elisp-settings
   :ensure nil
   :init
-  (add-hook 'emacs-lisp-mode-hook #'eldoc-mode)
   (font-lock-add-keywords 'emacs-lisp-mode
                           '(("(\\s-*\\(\\_<\\(?:\\sw\\|\\s_\\)+\\)\\_>"
                              1 'font-lock-keyword-face)))
@@ -435,6 +462,7 @@ Null prefix argument turns off the mode."
 
 ;;;;; elisp-slime-nav
 (use-package elisp-slime-nav
+  :diminish elisp-slime-nav-mode
   :config
   (add-hook 'emacs-lisp-mode-hook #'turn-on-elisp-slime-nav-mode)
   (add-hook 'ielm-mode-hook #'turn-on-elisp-slime-nav-mode))
@@ -487,14 +515,13 @@ Null prefix argument turns off the mode."
   :config
   (setq cider-repl-history-size 1000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
-  (add-hook 'cider-mode-hook #'eldoc-mode)
-  (add-hook 'cider-repl-mode-hook #'eldoc-mode)
   (defun nrepl-server-clojure-on ()
     (with-current-buffer nrepl-server-buffer (clojure-mode)))
   (add-hook 'cider-connected-hook #'nrepl-server-clojure-on))
 
 ;;;;; flycheck
-(use-package flycheck)
+(use-package flycheck
+  :diminish flycheck-mode)
 
 ;;;;; flycheck-pos-tip
 (use-package flycheck-pos-tip
@@ -512,8 +539,13 @@ Null prefix argument turns off the mode."
   (flycheck-clojure-setup)
   (add-hook 'after-init-hook #'global-flycheck-mode))
 
+;;;;; markdown-mode
+(use-package markdown-mode
+  :config (add-to-list 'auto-mode-alist '("\\.apib\\'" . markdown-mode)))
+
 ;;;;; smartparens
 (use-package smartparens
+  :diminish smartparens-mode
   :config
   (sp-use-smartparens-bindings)
   (show-smartparens-global-mode)
@@ -546,6 +578,7 @@ Null prefix argument turns off the mode."
 
 ;;;;; git-gutter
 (use-package git-gutter
+  :diminish git-gutter-mode
   :init
   (git-gutter:linum-setup)
   (global-git-gutter-mode)
