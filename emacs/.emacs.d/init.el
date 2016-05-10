@@ -221,6 +221,8 @@ Null prefix argument turns off the mode."
 (use-package org-settings
   :ensure nil
   :init
+  (require 'ob-clojure)
+  (setq org-babel-clojure-backend 'cider)
   (set-face-attribute 'org-document-info nil :inherit 'org-block)
   (set-face-attribute 'org-document-info nil :foreground nil)
   (setq org-src-fontify-natively t
@@ -414,6 +416,10 @@ Null prefix argument turns off the mode."
   :config (turn-on-pbcopy))
 
 ;;;; language
+;;;;; gradle-mode
+(use-package gradle-mode
+  :config (gradle-mode))
+
 ;;;;; yasnippet
 (use-package f)
 (use-package yasnippet
