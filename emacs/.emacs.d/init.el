@@ -418,6 +418,7 @@ Null prefix argument turns off the mode."
 ;;;; language
 ;;;;; gradle-mode
 (use-package gradle-mode
+  :diminish gradle-mode
   :config (gradle-mode))
 
 ;;;;; yasnippet
