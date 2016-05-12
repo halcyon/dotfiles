@@ -415,6 +415,12 @@ Null prefix argument turns off the mode."
                   :repo "emacsfodder/pbcopy.el")
   :config (turn-on-pbcopy))
 
+;;;;; restclient
+(use-package restclient
+  :quelpa (restclient :repo "pashky/restclient.el"
+                      :fetcher github
+                      :files ("restclient.el")))
+
 ;;;; language
 ;;;;; gradle-mode
 (use-package gradle-mode
