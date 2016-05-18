@@ -483,8 +483,7 @@ Null prefix argument turns off the mode."
 ;;;;; overseer.el
 (use-package overseer
   :quelpa (overseer :fetcher github
-                    :repo "halcyon/overseer.el"
-                    :branch "run-test-at-point"))
+                    :repo "tonini/overseer.el"))
 
 ;;;;; slime
 (use-package macrostep
