@@ -71,6 +71,7 @@
     (ibuffer t))
   (put 'narrow-to-region 'disabled nil)
   (put 'scroll-left 'disabled nil)
+  (put 'upcase-region 'disabled nil)
   (global-unset-key [swipe-left])
   (global-unset-key [swipe-right])
   (defadvice terminal-init-screen
