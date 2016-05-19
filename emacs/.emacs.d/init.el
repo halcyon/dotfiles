@@ -264,8 +264,7 @@ Null prefix argument turns off the mode."
 ;;;;; org2jekyll
 (use-package org2jekyll
   :quelpa (org2jekyll :fetcher github
-                      :repo "halcyon/org2jekyll"
-                      :branch "permissive-frontmatter")
+                      :repo "ardumont/org2jekyll")
   :config
   (setq org2jekyll-blog-author "Scott McLeod"
         org2jekyll-source-directory  (expand-file-name "~/projects/org/www.zeddworks.com")
