@@ -551,6 +551,18 @@ Null prefix argument turns off the mode."
   (flycheck-clojure-setup)
   (add-hook 'after-init-hook #'global-flycheck-mode))
 
+;;;;; haskell-mode
+(use-package haskell-mode
+  :config
+  (setq haskell-process-type 'stack-ghci
+        haskell-tags-on-save t)
+  (add-hook 'haskell-mode-hook #'interactive-haskell-mode))
+
+;;;;; hindent
+(use-package hindent
+  :config
+  (add-hook 'haskell-mode-hook #'hindent-mode))
+
 ;;;;; markdown-mode
 (use-package markdown-mode
   :config (add-to-list 'auto-mode-alist '("\\.apib\\'" . markdown-mode)))

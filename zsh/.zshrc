@@ -87,9 +87,12 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export ORACLE_HOME=~/instantclient_11_2
 export DYLD_LIBRARY_PATH=${ORACLE_HOME}
-export PATH=${PATH}:${ORACLE_HOME}
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export SQLPATH=~/dotfiles/oracle
+
+export HASKELL_STACK_PATH=~/.local/bin
+
+export PATH=${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
 
 if [[ -f ~/dotfiles-private/zsh/zsh-private ]]
 then
