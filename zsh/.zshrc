@@ -105,3 +105,5 @@ export SDKMAN_DIR="/Users/smcleod/.sdkman"
 
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
+
+ulimit -c unlimited

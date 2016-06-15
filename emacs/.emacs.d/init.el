@@ -186,6 +186,18 @@ Null prefix argument turns off the mode."
     (setq mac-option-modifier 'meta))
   (provide 'visual-settings))
 
+;;;;; scratch
+(use-package scratch
+  :quelpa (scratch :fetcher github
+                   :repo "ieure/scratch-el"))
+
+;;;;; scratch-ext
+(use-package scratch-ext
+  :quelpa (scratch-ext :fetcher github :repo "kyanagi/scratch-ext-el"))
+
+;;;;; persistent-scratch
+(use-package persistent-scratch)
+
 ;;;;; term
 (use-package term
   ;; If you do use M-x term, you will notice there's line mode that acts like
@@ -555,8 +567,7 @@ Null prefix argument turns off the mode."
 ;;;;; haskell-mode
 (use-package haskell-mode
   :config
-  (setq haskell-process-type 'stack-ghci
-        haskell-tags-on-save t)
+  (setq haskell-process-type 'stack-ghci)
   (add-hook 'haskell-mode-hook #'interactive-haskell-mode))
 
 ;;;;; hindent
