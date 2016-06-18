@@ -10,6 +10,8 @@
     <string>true</string>
     <key>PATH</key>
     <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin</string>
+    <key>LC_CTYPE</key>
+    <string>en_US.UTF-8</string>
   </dict>
   <key>ProgramArguments</key>
   <array>
