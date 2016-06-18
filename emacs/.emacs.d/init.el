@@ -370,7 +370,8 @@ Null prefix argument turns off the mode."
 
 ;;;;; goto-last-change
 (use-package goto-last-change
-  :bind ("C-x C-/" . goto-last-change))
+  :bind (("C-x C-/" . goto-last-change)
+         ("C-x C-_" . goto-last-change)))
 
 ;;;;; ag
 (use-package ag
