@@ -36,14 +36,6 @@
   "Disable line numbers in the left margin."
   (linum-mode -1))
 
-(defun fullscreen-on ()
-  "Enable fullscreen."
-  (set-frame-parameter nil 'fullscreen 'fullboth))
-
-(defun fullscreen-off ()
-  "Disable fullscreen."
-  (set-frame-parameter nil 'fullscreen nil))
-
 ;;; Packages
 
 ;;;; settings
@@ -59,11 +51,6 @@
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
   (winner-mode)
-  (defun fullscreen-toggle ()
-    (interactive)
-    (if (frame-parameter nil 'fullscreen)
-        (fullscreen-off)
-      (fullscreen-on)))
   (defun ibuffer-interactive ()
     (interactive)
     (ibuffer t))
@@ -71,8 +58,6 @@
   (put 'scroll-left 'disabled nil)
   (put 'upcase-region 'disabled nil)
   (put 'downcase-region 'disabled nil)
-  (global-unset-key [swipe-left])
-  (global-unset-key [swipe-right])
   (defadvice terminal-init-screen
       ;; The advice is named `tmux', and is run before
       ;; `terminal-init-screen' runs.
@@ -90,8 +75,7 @@
   (define-key key-translation-map (kbd "\e[65;6") (kbd "C-S-a"))
   (define-key key-translation-map (kbd "\e[68;6") (kbd "C-S-d"))
   (provide 'global-settings)
-  :bind (("<f6>" . fullscreen-toggle)
-         ("C-x C-b" . ibuffer-interactive)))
+  :bind ("C-x C-b" . ibuffer-interactive))
 
 ;;;;; backup-settings
 (use-package backup-settings
@@ -106,7 +90,6 @@
         backup-by-copying t ; don't clobber symlinks
         version-control t   ; version numbers for backup files
         delete-old-versions t    ; delete excess backup files silently
-        delete-by-moving-to-trash t
         kept-old-versions 6 ; oldest versions to keep when a new numbered backup is made (default: 2)
         kept-new-versions 9 ; newest versions to keep when a new numbered backup is made (default: 2)
         auto-save-default t ; auto-save every buffer that visits a file
@@ -172,16 +155,14 @@ Null prefix argument turns off the mode."
 (use-package visual-settings
   :ensure nil
   :init
-  (set-cursor-color "yellow")
   (line-number-mode)                 ; line numbers in the mode line
   (column-number-mode)               ; column numbers in the mode line
   (global-hl-line-mode)              ; highlight current line
   (global-linum-mode)                ; add line numbers on the left
-  ;; (global-prettify-symbols-mode)
-  (when (string-match "apple-darwin" system-configuration)
-    (set-face-font 'default "Menlo-22")
-    (setq mac-command-modifier 'none)
-    (setq mac-option-modifier 'meta))
+  ;; (when (string-match "apple-darwin" system-configuration)
+  ;;   (set-face-font 'default "Menlo-22")
+  ;;   (setq mac-command-modifier 'none)
+  ;;   (setq mac-option-modifier 'meta))
   (provide 'visual-settings))
 
 ;;;;; scratch
@@ -259,16 +240,14 @@ Null prefix argument turns off the mode."
     (org-present-hide-cursor)
     (org-present-read-only)
     (linum-off)
-    (hide-mode-line)
-    (fullscreen-on))
+    (hide-mode-line))
   (defun deconfigure-org-present ()
     (org-present-small)
     (org-remove-inline-images)
     (org-present-show-cursor)
     (org-present-read-write)
     (linum-mode)
-    (hide-mode-line)
-    (fullscreen-off))
+    (hide-mode-line))
   (add-hook 'org-present-mode-hook #'configure-org-present)
   (add-hook 'org-present-mode-quit-hook #'deconfigure-org-present))
 
@@ -391,8 +370,7 @@ Null prefix argument turns off the mode."
 
 ;;;;; goto-last-change
 (use-package goto-last-change
-  :bind (("C-x C-/" . goto-last-change)
-         ("C-x C-_" . goto-last-change)))
+  :bind ("C-x C-/" . goto-last-change))
 
 ;;;;; ag
 (use-package ag
