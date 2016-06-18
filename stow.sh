@@ -1,8 +1,10 @@
 #!/usr/bin/env zsh
 for i in `ls`
 do
-    if [[ ${i} != "stow.sh" ]]
+    if [[ ${i} != "stow.sh" && ${i} != "LaunchAgents" ]]
     then
-        stow ${1} $i
+        stow $i
     fi
 done
+
+ln -sf ../../dotfiles/LaunchAgents/homebrew.mxcl.emacs.plist ~/Library/LaunchAgents
