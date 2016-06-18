@@ -45,39 +45,7 @@ source ~/dotfiles/docker/start.sh
 
 # Customize to your needs...
 
-alias e='/usr/local/bin/emacs'
-
-is_arg_p() {
-    [[ ${1} == $'-'* ]]
-}
-
-file_not_found_p() {
-    [[ ! -f ${1} ]]
-}
-
-emacs() {
-    emacs_args=()
-    files=()
-    for token; do
-        if is_arg_p ${token}
-        then
-            emacs_args+=${token}
-        else
-            files+=${token}
-            if file_not_found_p ${token}
-            then
-                touch "${token}"
-            fi
-        fi
-    done
-
-    if [[ ${#emacs_args[@]} -eq 0 ]]
-    then
-        open -a emacs ${files}
-    else
-        open -a emacs ${files} --args ${emacs_args}
-    fi
-}
+alias e='/usr/local/bin/emacsclient'
 
 bindkey "^R" history-incremental-search-backward
 

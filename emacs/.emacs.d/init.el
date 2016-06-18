@@ -52,8 +52,6 @@
   :ensure nil
   :init
   (menu-bar-mode -1)
-  (tool-bar-mode -1)
-  (scroll-bar-mode -1)
   (setq inhibit-startup-message t
         vc-follow-symlinks t
         x-select-enable-clipboard t)
