@@ -218,8 +218,7 @@ Null prefix argument turns off the mode."
   (set-face-attribute 'org-document-info nil :inherit 'org-block)
   (set-face-attribute 'org-document-info nil :foreground nil)
   (setq org-src-fontify-natively t
-        org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
-        org-startup-with-inline-images t)
+        org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)")))
   (provide 'org-settings))
 
 ;;;;; hide-mode-line
