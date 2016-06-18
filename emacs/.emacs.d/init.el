@@ -45,8 +45,7 @@
   :init
   (menu-bar-mode -1)
   (setq inhibit-startup-message t
-        vc-follow-symlinks t
-        x-select-enable-clipboard t)
+        vc-follow-symlinks t)
   (setq-default indent-tabs-mode nil)
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
