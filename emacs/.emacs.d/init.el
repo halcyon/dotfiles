@@ -131,8 +131,8 @@ Null prefix argument turns off the mode."
   (setq outshine-use-speed-commands t)
   (add-hook 'outline-minor-mode-hook #'outshine-hook-function)
   (add-hook 'emacs-lisp-mode-hook #'outline-minor-mode)
-  (bind-key "<S-tab>" #'outshine-cycle-buffer)
-  (bind-key "<M-tab>" #'company-complete))
+  :bind (("<S-tab>" . outshine-cycle-buffer)
+         ("<M-tab>" . company-complete)))
 
 ;;;;; color-theme-solarized
 (use-package color-theme
