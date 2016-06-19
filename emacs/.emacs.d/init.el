@@ -135,15 +135,11 @@ Null prefix argument turns off the mode."
          ("<M-tab>" . company-complete)))
 
 ;;;;; color-theme-solarized
-(use-package color-theme
-  :quelpa (color-theme :fetcher bzr
-                       :repo "http://bzr.savannah.gnu.org/r/color-theme/trunk"
-                       :files ("*.el" "themes")))
-
 (use-package color-theme-solarized
-  :quelpa (color-theme-solarized :fetcher github
-                                 :repo "sellout/emacs-color-theme-solarized")
-  :config
+  :quelpa (solarized-theme :fetcher github
+                           :repo "sellout/emacs-color-theme-solarized"
+                           :files ("solarized-theme.el" "solarized-definitions.el"))
+  :init
   (load-theme 'solarized t)
   (set-frame-parameter nil 'background-mode 'dark)
   (set-terminal-parameter nil 'background-mode 'dark)
