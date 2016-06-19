@@ -21,8 +21,7 @@
 ;; install use-package and the quelpa handler
 (quelpa '(use-package
            :fetcher github
-           :repo "jwiegley/use-package"
-           :stable t))
+           :repo "jwiegley/use-package"))
 (quelpa '(quelpa-use-package
           :fetcher github
           :repo "quelpa/quelpa-use-package"))
@@ -187,11 +186,12 @@ Null prefix argument turns off the mode."
   ;; better use just one key to do the same.
   ;; Have C-y act as usual in term-mode, to avoid C-' C-y C-'
   ;; Well the real default would be C-c C-j C-y C-c C-k.
-  :config
-  (bind-key "C-'" #'term-line-mode term-raw-map)
-  (bind-key "C-'" #'term-char-mode term-mode-map)
-  (bind-key "C-y" #'term-paste term-raw-map)
-  (add-hook 'term-mode-hook #'linum-off))
+  :config (add-hook 'term-mode-hook #'linum-off)
+  :bind (:map term-mode-map
+              ("C-'" . term-char-mode)
+         :map term-raw-map
+              ("C-'" . term-line-mode)
+              ("C-y" . term-paste)))
 
 ;;;;; info
 (use-package info
