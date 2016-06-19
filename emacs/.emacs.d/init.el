@@ -195,8 +195,7 @@ Null prefix argument turns off the mode."
 
 ;;;;; info
 (use-package info
-  :config
-  (add-hook 'Info-mode-hook #'linum-off))
+  :config (add-hook 'Info-mode-hook #'linum-off))
 
 ;;;;; dired-x
 (use-package dired-x
