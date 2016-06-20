@@ -143,7 +143,8 @@ Null prefix argument turns off the mode."
   (load-theme 'solarized t)
   (set-frame-parameter nil 'background-mode 'dark)
   (set-terminal-parameter nil 'background-mode 'dark)
-  (enable-theme 'solarized))
+  (enable-theme 'solarized)
+  (provide 'color-theme-solarized))
 
 ;;;;; visual-settings
 (use-package visual-settings
