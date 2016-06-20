@@ -196,10 +196,10 @@ Null prefix argument turns off the mode."
 ;;;;; dired-x
 (use-package dired-x
   ;;; C-x C-j opens dired with the cursor right on the file you're editing
+  ;;; C-x 4 C-j opens dired in a separate window
+  ;;; `brew install coreutils` to install gnu ls on mac
   :ensure nil
-  :init
-  (setq ls-lisp-use-insert-directory-program nil)
-  (require 'ls-lisp))
+  :config (setq insert-directory-program "gls"))
 
 ;;;;; org-settings
 (use-package htmlize
