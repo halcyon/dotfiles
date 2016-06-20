@@ -216,34 +216,6 @@ Null prefix argument turns off the mode."
         org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)")))
   (provide 'org-settings))
 
-;;;;; hide-mode-line
-(use-package hide-mode-line
-  :quelpa (hide-mode-line :fetcher url
-                          :url "http://webonastick.com/emacs-lisp/hide-mode-line.el"
-                          :version original))
-
-;;;;; org-present
-(use-package org-present
-  :quelpa (org-present :fetcher github
-                       :repo "rlister/org-present")
-  :config
-  (defun configure-org-present ()
-    (org-present-big)
-    (org-display-inline-images)
-    (org-present-hide-cursor)
-    (org-present-read-only)
-    (linum-off)
-    (hide-mode-line))
-  (defun deconfigure-org-present ()
-    (org-present-small)
-    (org-remove-inline-images)
-    (org-present-show-cursor)
-    (org-present-read-write)
-    (linum-mode)
-    (hide-mode-line))
-  (add-hook 'org-present-mode-hook #'configure-org-present)
-  (add-hook 'org-present-mode-quit-hook #'deconfigure-org-present))
-
 ;;;;; org2jekyll
 (use-package org2jekyll
   :quelpa (org2jekyll :fetcher github
