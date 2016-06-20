@@ -154,10 +154,6 @@ Null prefix argument turns off the mode."
   (column-number-mode)               ; column numbers in the mode line
   (global-hl-line-mode)              ; highlight current line
   (global-linum-mode)                ; add line numbers on the left
-  ;; (when (string-match "apple-darwin" system-configuration)
-  ;;   (set-face-font 'default "Menlo-22")
-  ;;   (setq mac-command-modifier 'none)
-  ;;   (setq mac-option-modifier 'meta))
   (provide 'visual-settings))
 
 ;;;;; scratch
