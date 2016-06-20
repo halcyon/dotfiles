@@ -1345,7 +1345,7 @@
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
-					<string>[39;5</string>
+					<string>[39;5u</string>
 				</dict>
 				<key>0x2d-0x40000</key>
 				<dict>
