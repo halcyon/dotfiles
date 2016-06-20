@@ -360,21 +360,11 @@ Null prefix argument turns off the mode."
 ;;;;; browse-kill-ring
 (use-package browse-kill-ring)
 
-;;;;; projectile
-(use-package projectile
-  :config (projectile-global-mode))
-
 ;;;;; pbcopy
 (use-package pbcopy
   :quelpa (pbcopy :fetcher github
                   :repo "emacsfodder/pbcopy.el")
   :config (turn-on-pbcopy))
-
-;;;;; restclient
-(use-package restclient
-  :quelpa (restclient :repo "pashky/restclient.el"
-                      :fetcher github
-                      :files ("restclient.el")))
 
 ;;;; language
 ;;;;; gradle-mode
@@ -382,13 +372,15 @@ Null prefix argument turns off the mode."
   :diminish gradle-mode
   :config (gradle-mode))
 
-;;;;; yasnippet
-(use-package f)
-(use-package yasnippet
-  :diminish yas-minor-mode
-  :config
-  (yas-global-mode)
-  (yas-reload-all))
+;;;;; projectile
+(use-package projectile
+  :config (projectile-global-mode))
+
+;;;;; restclient
+(use-package restclient
+  :quelpa (restclient :repo "pashky/restclient.el"
+                      :fetcher github
+                      :files ("restclient.el")))
 
 ;;;;; ensime
 (use-package ensime
@@ -521,6 +513,13 @@ Null prefix argument turns off the mode."
 (use-package markdown-mode
   :config (add-to-list 'auto-mode-alist '("\\.apib\\'" . markdown-mode)))
 
+;;;;; rainbow-delimiters
+(use-package rainbow-delimiters
+  :config
+  (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+  (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
+  (add-hook 'scheme-mode-hook #'rainbow-delimiters-mode))
+
 ;;;;; smartparens
 (use-package smartparens
   :diminish smartparens-mode
@@ -532,12 +531,13 @@ Null prefix argument turns off the mode."
   (set-face-background 'sp-show-pair-match-face "deep sky blue")
   (set-face-foreground 'sp-show-pair-match-face "white"))
 
-;;;;; rainbow-delimters
-(use-package rainbow-delimiters
+;;;;; yasnippet
+(use-package f)
+(use-package yasnippet
+  :diminish yas-minor-mode
   :config
-  (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
-  (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
-  (add-hook 'scheme-mode-hook #'rainbow-delimiters-mode))
+  (yas-global-mode)
+  (yas-reload-all))
 
 ;;;; version control
 ;;;;; magit
