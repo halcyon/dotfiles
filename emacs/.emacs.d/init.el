@@ -72,6 +72,7 @@
   (define-key key-translation-map (kbd "\e[9;3") (kbd "<M-tab>"))
   (define-key key-translation-map (kbd "\e[65;6") (kbd "C-S-a"))
   (define-key key-translation-map (kbd "\e[68;6") (kbd "C-S-d"))
+  (define-key key-translation-map (kbd "\e[86;8") (kbd "C-M-S-v"))
   (provide 'global-settings)
   :bind ("C-x C-b" . ibuffer-interactive))
 

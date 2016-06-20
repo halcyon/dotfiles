@@ -1417,6 +1417,13 @@
 					<key>Text</key>
 					<string>[68;6</string>
 				</dict>
+				<key>0x56-0xe0000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>[86;8</string>
+				</dict>
 				<key>0x9-0x80000</key>
 				<dict>
 					<key>Action</key>
