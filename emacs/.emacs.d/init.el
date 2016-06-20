@@ -134,18 +134,6 @@ Null prefix argument turns off the mode."
   :bind (("<S-tab>" . outshine-cycle-buffer)
          ("<M-tab>" . company-complete)))
 
-;;;;; color-theme-solarized
-(use-package color-theme-solarized
-  :quelpa (solarized-theme :fetcher github
-                           :repo "sellout/emacs-color-theme-solarized"
-                           :files ("solarized-theme.el" "solarized-definitions.el"))
-  :init
-  (load-theme 'solarized t)
-  (set-frame-parameter nil 'background-mode 'dark)
-  (set-terminal-parameter nil 'background-mode 'dark)
-  (enable-theme 'solarized)
-  (provide 'color-theme-solarized))
-
 ;;;;; visual-settings
 (use-package visual-settings
   :ensure nil
@@ -155,6 +143,13 @@ Null prefix argument turns off the mode."
   (global-hl-line-mode)              ; highlight current line
   (global-linum-mode)                ; add line numbers on the left
   (provide 'visual-settings))
+
+;;;;; zenburn-theme
+(use-package zenburn-theme
+  :quelpa (zenburn-theme :repo "bbatsov/zenburn-emacs" :fetcher github)
+  :init
+  (defvar zenburn-override-colors-alist
+    '(("zenburn-bg-05"       . "color-233"))))
 
 ;;;;; scratch
 (use-package scratch
