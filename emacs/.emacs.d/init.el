@@ -147,9 +147,7 @@ Null prefix argument turns off the mode."
 ;;;;; zenburn-theme
 (use-package zenburn-theme
   :quelpa (zenburn-theme :repo "bbatsov/zenburn-emacs" :fetcher github)
-  :init
-  (custom-set-faces '(hl-line ((t (:background "color-240")))))
-  (load-theme 'zenburn t))
+  :config (set-face-background 'hl-line "color-240"))
 
 ;;;;; scratch
 (use-package scratch
