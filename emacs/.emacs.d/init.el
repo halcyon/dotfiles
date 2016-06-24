@@ -302,7 +302,9 @@ Null prefix argument turns off the mode."
 ;;;; helm-projectile
 (use-package helm-projectile
   :quelpa (helm-projectile :repo "bbatsov/helm-projectile"
-                           :fetcher github))
+                           :fetcher github)
+  :config
+  (setq projectile-switch-project-action 'helm-projectile))
 
 (use-package helm-cider
   :quelpa (helm-cider :fetcher github
