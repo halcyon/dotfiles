@@ -49,9 +49,6 @@
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
   (winner-mode)
-  (defun ibuffer-interactive ()
-    (interactive)
-    (ibuffer t))
   (put 'narrow-to-region 'disabled nil)
   (put 'scroll-left 'disabled nil)
   (put 'upcase-region 'disabled nil)
@@ -73,8 +70,7 @@
   (define-key key-translation-map (kbd "\e[65;6") (kbd "C-S-a"))
   (define-key key-translation-map (kbd "\e[68;6") (kbd "C-S-d"))
   (define-key key-translation-map (kbd "\e[86;8") (kbd "C-M-S-v"))
-  (provide 'global-settings)
-  :bind ("C-x C-b" . ibuffer-interactive))
+  (provide 'global-settings))
 
 ;;;;; backup-settings
 (use-package backup-settings
@@ -147,7 +143,8 @@ Null prefix argument turns off the mode."
 
 ;;;;; zenburn-theme
 (use-package zenburn-theme
-  :quelpa (zenburn-theme :repo "bbatsov/zenburn-emacs" :fetcher github)
+  :quelpa (zenburn-theme :fetcher github
+                         :repo "bbatsov/zenburn-emacs")
   :config (set-face-background 'hl-line "color-240"))
 
 ;;;;; scratch
@@ -157,7 +154,8 @@ Null prefix argument turns off the mode."
 
 ;;;;; scratch-ext
 (use-package scratch-ext
-  :quelpa (scratch-ext :fetcher github :repo "kyanagi/scratch-ext-el"))
+  :quelpa (scratch-ext :fetcher github
+                       :repo "kyanagi/scratch-ext-el"))
 
 ;;;;; persistent-scratch
 (use-package persistent-scratch)
@@ -297,21 +295,30 @@ Null prefix argument turns off the mode."
 ;;;; helm
 (use-package helm
   :config
-  (require 'helm-config))
+  (require 'helm-config)
+  :bind (("C-x b" . helm-buffers-list)
+         ("M-x" . helm-M-x)))
 
-;;;; helm-projectile
-(use-package helm-projectile
-  :quelpa (helm-projectile :repo "bbatsov/helm-projectile"
-                           :fetcher github)
-  :config
-  (setq projectile-switch-project-action 'helm-projectile))
+;;;; helm-ag
+(use-package helm-ag)
 
+;;;; helm-cider
 (use-package helm-cider
   :quelpa (helm-cider :fetcher github
                       :repo "clojure-emacs/helm-cider"))
 
+;;;; helm-clojuredocs
 (use-package helm-clojuredocs
-  :quelpa (helm-clojuredocs :repo "mbuczko/helm-clojuredocs" :fetcher github))
+  :quelpa (helm-clojuredocs :fetcher github
+                            :repo "mbuczko/helm-clojuredocs"))
+
+;;;; helm-projectile
+(use-package helm-projectile
+  :quelpa (helm-projectile :fetcher github
+                           :repo "bbatsov/helm-projectile")
+  :config
+  (setq projectile-switch-project-action 'helm-projectile)
+  (helm-projectile-on))
 
 ;;;;; projectile
 (use-package projectile
