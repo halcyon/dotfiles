@@ -294,31 +294,26 @@ Null prefix argument turns off the mode."
   :diminish which-key-mode
   :config (which-key-mode))
 
-;;;;; smex
-(use-package smex
+;;;; helm
+(use-package helm
   :config
-  (setq smex-save-file "~/.emacs.d/.smex-items")
-  (smex-initialize)
-  :bind ("M-x" . smex))
+  (require 'helm-config))
 
-;;;;; flx-ido
-(use-package flx-ido
-  :config
-  (ido-mode)
-  (ido-everywhere)
-  (flx-ido-mode)
-  (setq ido-enable-flex-matching t
-        ido-use-faces nil  ; disable ido faces to see flx highlights.
-        ido-save-directory-list-file "~/.emacs.d/.ido.last"
-        ido-use-filename-at-point 'guess
-        ido-show-dot-for-dired t
-        ido-default-buffer-method 'selected-window
-        ;; have vertical ido completion lists
-        ido-decorations
-        '("\n-> " "" "\n   " "\n   ..."
-          "[" "]" " [No match]" " [Matched]"
-          " [Not readable]" " [Too big]"
-          " [Confirm]")))
+;;;; helm-projectile
+(use-package helm-projectile
+  :quelpa (helm-projectile :repo "bbatsov/helm-projectile"
+                           :fetcher github))
+
+(use-package helm-cider
+  :quelpa (helm-cider :fetcher github
+                      :repo "clojure-emacs/helm-cider"))
+
+(use-package helm-clojuredocs
+  :quelpa (helm-clojuredocs :repo "mbuczko/helm-clojuredocs" :fetcher github))
+
+;;;;; projectile
+(use-package projectile
+  :config (projectile-global-mode))
 
 ;;;;; multiple-cursors
 (use-package multiple-cursors
@@ -362,10 +357,6 @@ Null prefix argument turns off the mode."
 (use-package gradle-mode
   :diminish gradle-mode
   :config (gradle-mode))
-
-;;;;; projectile
-(use-package projectile
-  :config (projectile-global-mode))
 
 ;;;;; restclient
 (use-package restclient
