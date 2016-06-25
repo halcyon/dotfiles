@@ -41,7 +41,7 @@ ZSH_THEME="halcyon"
 plugins=(git autojump)
 
 source ${ZSH}/oh-my-zsh.sh
-source ~/dotfiles/docker/start.sh
+# source ~/dotfiles/docker/start.sh
 
 # Customize to your needs...
 
@@ -62,16 +62,18 @@ export HASKELL_STACK_PATH=~/.local/bin
 
 export PATH=${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 if [[ -f ~/dotfiles-private/zsh/zsh-private ]]
 then
     source ~/dotfiles-private/zsh/zsh-private
 fi
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/smcleod/.sdkman"
-[[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
-
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
 ulimit -c unlimited
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/smcleod/.sdkman"
+[[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"

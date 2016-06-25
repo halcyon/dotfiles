@@ -464,10 +464,12 @@ Null prefix argument turns off the mode."
 (use-package cider
   :config
   (setq cider-repl-history-size 1000
-        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
-  (defun nrepl-server-clojure-on ()
-    (with-current-buffer nrepl-server-buffer (clojure-mode)))
-  (add-hook 'cider-connected-hook #'nrepl-server-clojure-on))
+        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
+        cider-cljs-lein-repl "(user/start-figwheel)")
+  ;; (defun nrepl-server-clojure-on ()
+  ;;   (with-current-buffer nrepl-server-buffer (clojure-mode)))
+  ;; (add-hook 'cider-connected-hook #'nrepl-server-clojure-on)
+  )
 
 ;;;;; flycheck
 (use-package flycheck
