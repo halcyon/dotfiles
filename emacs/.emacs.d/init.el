@@ -44,6 +44,7 @@
   :init
   (menu-bar-mode -1)
   (setq inhibit-startup-message t
+        require-final-newline t
         vc-follow-symlinks t)
   (setq-default indent-tabs-mode nil)
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
@@ -465,7 +466,9 @@ Null prefix argument turns off the mode."
   :config
   (setq cider-repl-history-size 1000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
-        cider-cljs-lein-repl "(user/start-figwheel)"))
+        cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))"
+        ;; cider-cljs-lein-repl "(user/start-figwheel)"
+        ))
 
 ;;;;; flycheck
 (use-package flycheck
