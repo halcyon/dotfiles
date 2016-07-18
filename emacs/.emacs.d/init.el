@@ -68,6 +68,8 @@
           (set-keymap-parent input-decode-map map))))
   (define-key key-translation-map (kbd "<backtab>") (kbd "<S-tab>"))
   (define-key key-translation-map (kbd "\e[9;3") (kbd "<M-tab>"))
+  (define-key key-translation-map (kbd "\e[44;6") (kbd "C-,"))
+  (define-key key-translation-map (kbd "\e[46;6") (kbd "C-."))
   (define-key key-translation-map (kbd "\e[65;6") (kbd "C-S-a"))
   (define-key key-translation-map (kbd "\e[68;6") (kbd "C-S-d"))
   (define-key key-translation-map (kbd "\e[86;8") (kbd "C-M-S-v"))
@@ -293,33 +295,36 @@ Null prefix argument turns off the mode."
   :diminish which-key-mode
   :config (which-key-mode))
 
-;;;; helm
+;;;;; helm
 (use-package helm
   :config
   (require 'helm-config)
   :bind (("C-x b" . helm-buffers-list)
          ("M-x" . helm-M-x)))
 
-;;;; helm-ag
+;;;;; helm-ag
 (use-package helm-ag)
 
-;;;; helm-cider
+;;;;; helm-cider
 (use-package helm-cider
   :quelpa (helm-cider :fetcher github
                       :repo "clojure-emacs/helm-cider"))
 
-;;;; helm-clojuredocs
+;;;;; helm-clojuredocs
 (use-package helm-clojuredocs
   :quelpa (helm-clojuredocs :fetcher github
                             :repo "mbuczko/helm-clojuredocs"))
 
-;;;; helm-projectile
+;;;;; helm-projectile
 (use-package helm-projectile
   :quelpa (helm-projectile :fetcher github
                            :repo "bbatsov/helm-projectile")
   :config
   (setq projectile-switch-project-action 'helm-projectile)
   (helm-projectile-on))
+
+;;;;; helm-swoop
+(use-package helm-swoop)
 
 ;;;;; projectile
 (use-package projectile
@@ -466,9 +471,8 @@ Null prefix argument turns off the mode."
   :config
   (setq cider-repl-history-size 1000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
-        cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))"
-        ;; cider-cljs-lein-repl "(user/start-figwheel)"
-        ))
+        ;; cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))"
+        cider-cljs-lein-repl "(user/start-figwheel)"))
 
 ;;;;; flycheck
 (use-package flycheck
