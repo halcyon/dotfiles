@@ -208,10 +208,8 @@ Null prefix argument turns off the mode."
   :ensure nil
   :init
   (require 'ob-clojure)
-  (setq org-babel-clojure-backend 'cider)
-  (set-face-attribute 'org-document-info nil :inherit 'org-block)
-  (set-face-attribute 'org-document-info nil :foreground nil)
   (setq org-src-fontify-natively t
+        org-babel-clojure-backend 'cider
         org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)")))
   (provide 'org-settings))
 
@@ -512,7 +510,12 @@ Null prefix argument turns off the mode."
 
 ;;;;; markdown-mode
 (use-package markdown-mode
-  :config (add-to-list 'auto-mode-alist '("\\.apib\\'" . markdown-mode)))
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode)
+         ("\\.apib\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
 
 ;;;;; rainbow-delimiters
 (use-package rainbow-delimiters
