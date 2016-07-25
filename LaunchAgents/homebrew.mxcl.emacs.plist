@@ -12,6 +12,10 @@
     <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin</string>
     <key>LC_CTYPE</key>
     <string>en_US.UTF-8</string>
+    <key>GOOGLE_CLIENT_ID</key>
+    <string>705960416213-3u9cvvk4sdb33lj7sag9o4gbd9q1phj3.apps.googleusercontent.com</string>
+    <key>GOOGLE_CLIENT_SECRET</key>
+    <string>Q01OUlvesV59tLDK-AtsMoNE</string>
   </dict>
   <key>ProgramArguments</key>
   <array>

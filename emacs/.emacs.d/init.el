@@ -117,6 +117,13 @@ Null prefix argument turns off the mode."
   (add-to-list 'auto-mode-alist '("\\id_rsa.*\\'" . sensitive-mode))
   (provide 'backup-settings))
 
+;;;;; cider
+(use-package cider
+  :config
+  (setq cider-repl-history-size 100000
+        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
+        cider-cljs-lein-repl "(user/start-figwheel)"))
+
 ;;;;; outshine
 (use-package outorg
   :quelpa (outorg :fetcher github
@@ -315,6 +322,11 @@ Null prefix argument turns off the mode."
   :quelpa (helm-clojuredocs :fetcher github
                             :repo "mbuczko/helm-clojuredocs"))
 
+;;;;; helm-google
+(use-package helm-google
+  :quelpa (helm-google :fetcher github
+                       :repo "steckerhalter/helm-google"))
+
 ;;;;; helm-projectile
 (use-package helm-projectile
   :quelpa (helm-projectile :fetcher github
@@ -466,13 +478,6 @@ Null prefix argument turns off the mode."
     (cljr-add-keybindings-with-prefix "C-c C-m"))
   (add-hook 'clojure-mode-hook #'configure-clj-refactor))
 
-;;;;; cider
-(use-package cider
-  :config
-  (setq cider-repl-history-size 1000
-        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
-        ;; cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))"
-        cider-cljs-lein-repl "(user/start-figwheel)"))
 
 ;;;;; flycheck
 (use-package flycheck
@@ -558,6 +563,11 @@ Null prefix argument turns off the mode."
   (global-git-gutter-mode)
   :bind (("C-x C-g" . git-gutter-mode)
          ("C-x v =" . git-gutter:popup-hunk)))
+
+;;;;; google-contacts
+(use-package google-contacts
+  :quelpa (google-contacts :fetcher github
+                           :repo "jd/google-contacts.el"))
 
 ;;;;; SQLi-mode
 (use-package SQLi-mode
