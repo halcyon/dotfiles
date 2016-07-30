@@ -463,7 +463,8 @@ Null prefix argument turns off the mode."
                 (PUT 'defun)
                 (DELETE 'defun)
                 (HEAD 'defun)
-                (ANY 'defun)))
+                (ANY 'defun)
+                (checking 'defun)))
   (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
 ;;;;; clj-refactor
