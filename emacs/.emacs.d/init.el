@@ -122,7 +122,7 @@ Null prefix argument turns off the mode."
   :config
   (setq cider-repl-history-size 100000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
-        cider-cljs-lein-repl "(user/start-figwheel)"))
+        cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))"))
 
 ;;;;; outshine
 (use-package outorg
@@ -634,3 +634,28 @@ Null prefix argument turns off the mode."
 
 (provide 'init)
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(safe-local-variable-values
+   (quote
+    ((cider-cljs-lein-repl . "(do (require '[figwheel-sidecar.repl-api :as ra])
+                               (ra/start-figwheel! {:figwheel-options {}
+                                                    :build-ids [\"browser\"]
+                                                    :all-builds (map #(clojure.set/rename-keys % {:build-options :compiler})
+                                                                     (get-in (sys/fetch-config) [:data :all-builds]))})
+                               (ra/cljs-repl))")
+     (cider-cljs-lein-repl . "(do (require '[figwheel-sidecar.repl-api :as ra])
+                               (ra/start-figwheel! {:figwheel-options {}
+                                                    :build-ids [\"chrome\"]
+                                                    :all-builds (map #(clojure.set/rename-keys % {:build-options :compiler})
+                                                                     (get-in (sys/fetch-config) [:data :all-builds]))})
+                               (ra/cljs-repl))")))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
