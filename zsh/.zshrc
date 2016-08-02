@@ -78,5 +78,4 @@ ulimit -c unlimited
 export SDKMAN_DIR="/Users/smcleod/.sdkman"
 [[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
 
-#eval `keychain --eval --agents gpg`
 export GPG_TTY=$(tty)

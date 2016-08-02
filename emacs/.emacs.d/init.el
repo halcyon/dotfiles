@@ -118,12 +118,12 @@ Null prefix argument turns off the mode."
   (provide 'backup-settings))
 
 ;;;;; keychain-environment
-(use-package keychain-environment
-  :quelpa (keychain-environment :repo "tarsius/keychain-environment"
-                                :fetcher github)
-  :init
-  (keychain-refresh-environment)
-  (add-hook 'server-visit-hook #'keychain-refresh-environment))
+;; (use-package keychain-environment
+;;   :quelpa (keychain-environment :repo "tarsius/keychain-environment"
+;;                                 :fetcher github)
+;;   :init
+;;   (keychain-refresh-environment)
+;;   (add-hook 'server-visit-hook #'keychain-refresh-environment))
 
 ;;;;; cider
 (use-package cider
