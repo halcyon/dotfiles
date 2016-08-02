@@ -79,4 +79,3 @@ export SDKMAN_DIR="/Users/smcleod/.sdkman"
 [[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
 
 export GPG_TTY=$(tty)
-eval `keychain --eval --agents gpg`
