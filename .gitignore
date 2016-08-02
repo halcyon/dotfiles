@@ -11,3 +11,8 @@ emacs/.emacs.d/.cask
 emacs/.emacs.d/ensime
 emacs/.emacs.d/auto-save-list
 emacs/.emacs.d/recentf
+/emacs/.emacs.d/.mc-lists.el
+emacs/.emacs.d/eshell/
+emacs/.emacs.d/games/
+/emacs/.emacs.d/oauth2.plstore
+emacs/.emacs.d/url/

@@ -401,8 +401,8 @@ Null prefix argument turns off the mode."
 ;;;;; company
 (use-package company
   :diminish company-mode
-  :config
-  (add-hook 'after-init-hook #'global-company-mode))
+  :config (add-hook 'after-init-hook #'global-company-mode)
+  :bind ("<M-tab>" . company-complete))
 
 (use-package eldoc
   :ensure nil

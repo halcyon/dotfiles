@@ -3,5 +3,7 @@
 [core]
 	editor = emacs -nw
 	autocrlf = input
+[commit]
+	gpgsign = true
 [include]
         path = ~/dotfiles-private/git/git-private
