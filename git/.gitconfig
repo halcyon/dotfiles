@@ -5,5 +5,7 @@
 	autocrlf = input
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg2
 [include]
         path = ~/dotfiles-private/git/git-private
