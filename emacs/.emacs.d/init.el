@@ -120,7 +120,10 @@ Null prefix argument turns off the mode."
 ;;;;; keychain-environment
 (use-package keychain-environment
   :quelpa (keychain-environment :repo "tarsius/keychain-environment"
-                                :fetcher github))
+                                :fetcher github)
+  :init
+  (keychain-refresh-environment)
+  (add-hook 'server-visit-hook #'keychain-refresh-environment))
 
 ;;;;; cider
 (use-package cider
