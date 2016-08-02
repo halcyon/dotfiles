@@ -77,3 +77,5 @@ ulimit -c unlimited
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/smcleod/.sdkman"
 [[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
+
+keychain --agents gpg
