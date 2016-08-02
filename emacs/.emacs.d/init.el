@@ -145,8 +145,7 @@ Null prefix argument turns off the mode."
   (setq outshine-use-speed-commands t)
   (add-hook 'outline-minor-mode-hook #'outshine-hook-function)
   (add-hook 'emacs-lisp-mode-hook #'outline-minor-mode)
-  :bind (("<S-tab>" . outshine-cycle-buffer)
-         ("<M-tab>" . company-complete)))
+  :bind (("<S-tab>" . outshine-cycle-buffer)))
 
 ;;;;; visual-settings
 (use-package visual-settings
@@ -406,7 +405,7 @@ Null prefix argument turns off the mode."
 ;;;;; company
 (use-package company
   :diminish company-mode
-  :config (add-hook 'after-init-hook #'global-company-mode)
+  :init (add-hook 'after-init-hook #'global-company-mode)
   :bind ("<M-tab>" . company-complete))
 
 (use-package eldoc
