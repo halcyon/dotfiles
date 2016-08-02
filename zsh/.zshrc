@@ -78,4 +78,4 @@ ulimit -c unlimited
 export SDKMAN_DIR="/Users/smcleod/.sdkman"
 [[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
 
-keychain --agents gpg
+eval `keychain --eval --agents gpg`
