@@ -125,6 +125,8 @@ Null prefix argument turns off the mode."
 
 ;;;;; cider
 (use-package cider
+  :bind (:map cider-repl-mode-map
+              ("C-M-q" . prog-indent-sexp))
   :config
   (setq cider-repl-history-size 100000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
@@ -211,6 +213,9 @@ Null prefix argument turns off the mode."
 (use-package htmlize
   :quelpa (htmlize :fetcher git
                    :url "http://fly.srk.fer.hr/~hniksic/emacs/htmlize.git"))
+(use-package ox-gfm
+  :quelpa (ox-gfm :fetcher github
+                  :repo "larstvei/ox-gfm"))
 (use-package org-settings
   :ensure nil
   :init
