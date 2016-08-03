@@ -117,6 +117,11 @@ Null prefix argument turns off the mode."
   (add-to-list 'auto-mode-alist '("\\id_rsa.*\\'" . sensitive-mode))
   (provide 'backup-settings))
 
+(use-package pinentry
+  :config
+  (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
+  (pinentry-start))
+
 ;;;;; keychain-environment
 ;; (use-package keychain-environment
 ;;   :quelpa (keychain-environment :repo "tarsius/keychain-environment"
