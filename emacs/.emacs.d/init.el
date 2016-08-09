@@ -587,24 +587,22 @@ Null prefix argument turns off the mode."
 (use-package SQLi-mode
   :ensure nil
   :init
+  (defadvice sql-connect
+      (before load-sql-connections activate)
+    "Registers sql connections before running sql-connect."
+    (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg"))
   (defun docker-postgres ()
     (interactive)
-    (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg")
     (setq sql-product 'postgres)
     (sql-connect 'docker-postgres 'docker-postgres))
   (defun webicon-oracle ()
     (interactive)
-    (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg")
-    (setenv "DYLD_LIBRARY_PATH" (getenv "ORACLE_HOME"))
     (setq sql-product 'oracle)
     (sql-connect 'webicon-oracle 'webicon-oracle))
-  (defun truncate-lines-on ()
-    (toggle-truncate-lines t))
-  (add-hook 'sql-interactive-mode-hook #'truncate-lines-on)
+  (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
   (provide 'SQLi-mode))
 
 ;;;;; emacs-slack
-
 (use-package alert
   :commands (alert))
 (use-package emacs-slack
