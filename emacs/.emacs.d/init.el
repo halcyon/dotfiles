@@ -586,7 +586,7 @@ Null prefix argument turns off the mode."
 ;;;;; SQLi-mode
 (use-package SQLi-mode
   :ensure nil
-  :config
+  :init
   (defun docker-postgres ()
     (interactive)
     (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg")
