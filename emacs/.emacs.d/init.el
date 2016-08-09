@@ -586,7 +586,7 @@ Null prefix argument turns off the mode."
 ;;;;; SQLi-mode
 (use-package SQLi-mode
   :ensure nil
-  :init
+  :config
   (defun docker-postgres ()
     (interactive)
     (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg")
@@ -602,6 +602,21 @@ Null prefix argument turns off the mode."
     (toggle-truncate-lines t))
   (add-hook 'sql-interactive-mode-hook #'truncate-lines-on)
   (provide 'SQLi-mode))
+
+;;;;; emacs-slack
+
+(use-package alert
+  :commands (alert))
+(use-package emacs-slack
+  :quelpa (slack :fetcher github
+                 :repo "yuya373/emacs-slack")
+  :commands (slack-start)
+  :init (setq slack-buffer-emojify t
+              slack-prefer-current-team t)
+  :config (defadvice slack-start
+              (before register-slack-teams activate)
+            "Registers slack teams before starting slack."
+            (require 'slack-connections "~/dotfiles-private/emacs/slack-connections.el.gpg")))
 
 ;;;; learning materials
 ;;;;; sicp
