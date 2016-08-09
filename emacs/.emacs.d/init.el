@@ -609,12 +609,13 @@ Null prefix argument turns off the mode."
   :quelpa (slack :fetcher github
                  :repo "yuya373/emacs-slack")
   :commands (slack-start)
-  :init (setq slack-buffer-emojify t
-              slack-prefer-current-team t)
-  :config (defadvice slack-start
-              (before register-slack-teams activate)
-            "Registers slack teams before starting slack."
-            (require 'slack-connections "~/dotfiles-private/emacs/slack-connections.el.gpg")))
+  :init
+  (setq slack-buffer-emojify t
+        slack-prefer-current-team t)
+  (defadvice slack-start
+      (before register-slack-teams activate)
+    "Registers slack teams before starting slack."
+    (require 'slack-connections "~/dotfiles-private/emacs/slack-connections.el.gpg")))
 
 ;;;; learning materials
 ;;;;; sicp
