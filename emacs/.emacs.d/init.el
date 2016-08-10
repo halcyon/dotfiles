@@ -222,7 +222,8 @@ Null prefix argument turns off the mode."
   (require 'ob-clojure)
   (setq org-src-fontify-natively t
         org-babel-clojure-backend 'cider
-        org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)")))
+        org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
+        org-hierarchical-todo-statistics nil)
   (provide 'org-settings))
 
 ;;;;; org2jekyll
