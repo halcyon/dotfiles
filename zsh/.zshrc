@@ -45,6 +45,7 @@ source ${ZSH}/oh-my-zsh.sh
 
 # Customize to your needs...
 
+export ALTERNATE_EDITOR=""
 alias e='/usr/local/bin/emacsclient'
 
 bindkey "^R" history-incremental-search-backward
@@ -53,8 +54,7 @@ export LESS='-R'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-export ORACLE_HOME=~/instantclient_11_2
-export DYLD_LIBRARY_PATH=${ORACLE_HOME}
+export ORACLE_HOME=~/instantclient_12_1
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export SQLPATH=~/dotfiles/oracle
 
