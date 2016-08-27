@@ -455,8 +455,8 @@ Null prefix argument turns off the mode."
     :quelpa (macrostep :fetcher github
                        :repo "joddie/macrostep"))
 (use-package slime
-  :config (setq inferior-lisp-program "sbcl"
-                 slime-contribs '(slime-fancy)))
+  :init (setq inferior-lisp-program "sbcl"
+              slime-contribs '(slime-fancy)))
 
 ;;;;; geiser
 (use-package geiser
