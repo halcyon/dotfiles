@@ -415,7 +415,12 @@ Null prefix argument turns off the mode."
 (use-package company
   :diminish company-mode
   :init (add-hook 'after-init-hook #'global-company-mode)
-  :bind ("<M-tab>" . company-complete))
+  :bind (("<M-tab>" . company-complete)
+         :map company-active-map
+         ("C-n" . company-select-next)
+         ("C-p" . company-select-previous)
+         ("C-d" . company-show-doc-buffer)
+         ("M-." . company-show-location)))
 
 (use-package company-emoji
   :config (add-to-list 'company-backends 'company-emoji))
@@ -456,9 +461,12 @@ Null prefix argument turns off the mode."
                     :repo "tonini/overseer.el"))
 
 ;;;;; slime
+(use-package slime-company
+  :quelpa (slime-company :fetcher github
+                         :repo "anwyn/slime-company"))
 (use-package slime
   :init (setq inferior-lisp-program "sbcl"
-              slime-contribs '(slime-fancy)))
+              slime-contribs '(slime-fancy slime-company)))
 
 ;;;;; geiser
 (use-package geiser
