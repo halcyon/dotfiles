@@ -45,6 +45,8 @@ source ${ZSH}/oh-my-zsh.sh
 
 # Customize to your needs...
 
+ulimit -c unlimited
+
 export ALTERNATE_EDITOR=""
 alias e='/usr/local/bin/emacsclient'
 
@@ -60,7 +62,7 @@ export SQLPATH=~/dotfiles/oracle
 
 export HASKELL_STACK_PATH=~/.local/bin
 
-export PATH=${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
+export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
@@ -72,7 +74,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
-ulimit -c unlimited
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/smcleod/.sdkman"

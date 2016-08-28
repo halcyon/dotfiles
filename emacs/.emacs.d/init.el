@@ -211,8 +211,9 @@ Null prefix argument turns off the mode."
 
 ;;;;; org-settings
 (use-package htmlize
-  :quelpa (htmlize :fetcher git
-                   :url "http://fly.srk.fer.hr/~hniksic/emacs/htmlize.git"))
+  :quelpa (htmlize :repo "dunn/htmlize-mirror"
+                   :fetcher github))
+
 (use-package ox-gfm
   :quelpa (ox-gfm :fetcher github
                   :repo "larstvei/ox-gfm"))
@@ -313,6 +314,10 @@ Null prefix argument turns off the mode."
   :diminish which-key-mode
   :config (which-key-mode))
 
+;;;;; projectile
+(use-package projectile
+  :config (projectile-global-mode))
+
 ;;;;; helm
 (use-package helm
   :config
@@ -347,9 +352,6 @@ Null prefix argument turns off the mode."
 ;;;;; helm-swoop
 (use-package helm-swoop)
 
-;;;;; projectile
-(use-package projectile
-  :config (projectile-global-mode))
 
 ;;;;; multiple-cursors
 (use-package multiple-cursors
@@ -415,6 +417,9 @@ Null prefix argument turns off the mode."
   :init (add-hook 'after-init-hook #'global-company-mode)
   :bind ("<M-tab>" . company-complete))
 
+(use-package company-emoji
+  :config (add-to-list 'company-backends 'company-emoji))
+
 (use-package eldoc
   :ensure nil
   :diminish eldoc-mode
@@ -451,9 +456,6 @@ Null prefix argument turns off the mode."
                     :repo "tonini/overseer.el"))
 
 ;;;;; slime
-(use-package macrostep
-    :quelpa (macrostep :fetcher github
-                       :repo "joddie/macrostep"))
 (use-package slime
   :init (setq inferior-lisp-program "sbcl"
               slime-contribs '(slime-fancy)))
