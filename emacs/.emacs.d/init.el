@@ -465,8 +465,8 @@ Null prefix argument turns off the mode."
   :quelpa (slime-company :fetcher github
                          :repo "anwyn/slime-company"))
 (use-package slime
-  :init (setq inferior-lisp-program "sbcl"
-              slime-contribs '(slime-fancy slime-company)))
+  :init (setq inferior-lisp-program "sbcl")
+  :config (slime-setup '(slime-fancy slime-company)))
 
 ;;;;; geiser
 (use-package geiser
