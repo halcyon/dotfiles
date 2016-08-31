@@ -465,13 +465,39 @@ Null prefix argument turns off the mode."
   :quelpa (slime-company :fetcher github
                          :repo "anwyn/slime-company"))
 (use-package slime
-  :init (setq inferior-lisp-program "sbcl")
-  :config (slime-setup '(slime-fancy slime-company)))
+  :config
+  (setq slime-lisp-implementations '((sbcl ("sbcl"))
+                                     (mit-scheme ("mit-scheme") :init mit-scheme-init)))
+  (slime-setup '(slime-fancy slime-company))
+  ;; (defun find-mit-scheme-package ()
+  ;;   (save-excursion
+  ;;     (let ((case-fold-search t))
+  ;;       (and (re-search-backward "^[;]+ package: \\((.+)\\).*$" nil t)
+  ;;            (match-string-no-properties 1)))))
+  (defun mit-scheme-init (file encoding)
+    (unload-feature 'slime-autodoc t)
+    (format "%S\n\n"
+            `(begin
+              (load-option 'format)
+              (load-option 'sos)
+              (eval
+               '(create-package-from-description
+                 (make-package-description '(swank) (list (list))
+                                           (vector) (vector) (vector) false))
+               (->environment '(package)))
+              (load ,(expand-file-name "contrib/swank-mit-scheme.scm"
+                                       slime-path)
+                    (->environment '(swank)))
+              (eval '(start-swank ,file) (->environment '(swank))))))
+  (defun scheme-mode-init ()
+    (slime-mode 1))
+  (add-hook 'scheme-mode-hook #'scheme-mode-init))
+
 
 ;;;;; geiser
-(use-package geiser
-  :config
-  (setq geiser-active-implementations '(chicken)))
+;; (use-package geiser
+;;   :config
+;;   (setq geiser-active-implementations '(chicken)))
 
 ;;;;; clojure-mode
 (use-package clojure-mode-extra-font-locking)
