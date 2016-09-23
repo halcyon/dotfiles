@@ -199,7 +199,9 @@ Null prefix argument turns off the mode."
 
 ;;;;; info
 (use-package info
-  :config (add-hook 'Info-mode-hook #'linum-off))
+  :config
+  (add-to-list 'Info-directory-list (expand-file-name "~/Dropbox/info"))
+  (add-hook 'Info-mode-hook #'linum-off))
 
 ;;;;; dired-x
 (use-package dired-x
@@ -209,7 +211,8 @@ Null prefix argument turns off the mode."
   :ensure nil
   :config (setq insert-directory-program "gls"))
 
-;;;;; org-settings
+;;;;; org
+
 (use-package htmlize
   :quelpa (htmlize :repo "dunn/htmlize-mirror"
                    :fetcher github))
@@ -217,6 +220,7 @@ Null prefix argument turns off the mode."
 (use-package ox-gfm
   :quelpa (ox-gfm :fetcher github
                   :repo "larstvei/ox-gfm"))
+
 (use-package org-settings
   :ensure nil
   :init
@@ -465,10 +469,23 @@ Null prefix argument turns off the mode."
   :quelpa (slime-company :fetcher github
                          :repo "anwyn/slime-company"))
 (use-package slime
-  :config
+  :quelpa (slime :repo "slime/slime"
+                 :fetcher github
+                 :files ("*.el"
+                         ("lib" "lib/hyperspec.el")
+                         "swank"
+                         "*.lisp"
+                         "*.asd"
+                         ("contrib" "contrib/*" (:exclude "contrib/test"))
+                         "doc/slime.texi"
+                         "doc/slime.info"
+                         "doc/dir"
+                         "ChangeLog"))
+  :init
   (setq slime-lisp-implementations '((sbcl ("sbcl"))
-                                     (mit-scheme ("mit-scheme") :init mit-scheme-init)))
-  (slime-setup '(slime-fancy slime-company))
+                                     (mit-scheme ("mit-scheme") :init mit-scheme-init))
+        slime-contribs '(slime-fancy slime-company))
+  :config
   ;; (defun find-mit-scheme-package ()
   ;;   (save-excursion
   ;;     (let ((case-fold-search t))
@@ -654,12 +671,6 @@ Null prefix argument turns off the mode."
       (before register-slack-teams activate)
     "Registers slack teams before starting slack."
     (require 'slack-connections "~/dotfiles-private/emacs/slack-connections.el.gpg")))
-
-;;;; learning materials
-;;;;; sicp
-(use-package sicp
-  :quelpa (sicp :fetcher github
-                :repo "webframp/sicp-info"))
 
 ;;;; windows
 ;;;;; buffer-move
