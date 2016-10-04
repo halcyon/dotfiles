@@ -326,6 +326,7 @@ Null prefix argument turns off the mode."
 (use-package helm
   :config
   (require 'helm-config)
+  (helm-mode)
   :bind (("C-x b" . helm-buffers-list)
          ("M-x" . helm-M-x)))
 
