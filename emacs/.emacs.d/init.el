@@ -4,6 +4,8 @@
 (setq message-log-max 10000)
 
 (require 'package)
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
 (setq package-enable-at-startup nil)
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("gnu" . "https://elpa.gnu.org/packages/")))
@@ -556,13 +558,13 @@ Null prefix argument turns off the mode."
   (setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
 ;;;;; flycheck-clojure
-(use-package flycheck-clojure
-  :quelpa (flycheck-clojure :fetcher github
-                            :repo "clojure-emacs/squiggly-clojure"
-                            :files ("elisp/flycheck-clojure/*.el"))
-  :config
-  (flycheck-clojure-setup)
-  (add-hook 'after-init-hook #'global-flycheck-mode))
+;; (use-package flycheck-clojure
+;;   :quelpa (flycheck-clojure :fetcher github
+;;                             :repo "clojure-emacs/squiggly-clojure"
+;;                             :files ("elisp/flycheck-clojure/*.el"))
+;;   :config
+;;   (flycheck-clojure-setup)
+;;   (add-hook 'after-init-hook #'global-flycheck-mode))
 
 ;;;;; haskell-mode
 (use-package haskell-mode
@@ -574,6 +576,13 @@ Null prefix argument turns off the mode."
 (use-package hindent
   :config
   (add-hook 'haskell-mode-hook #'hindent-mode))
+
+;;;;; js2-mode
+(use-package js2-mode
+  :quelpa (js2-mode :repo "mooz/js2-mode"
+                    :fetcher github)
+  :config
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)))
 
 ;;;;; markdown-mode
 (use-package markdown-mode
