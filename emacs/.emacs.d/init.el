@@ -60,6 +60,8 @@
   ;; (define-key key-translation-map "\e[9;3" (kbd "<M-tab>"))
   (define-key key-translation-map "\e[44;6" (kbd "C-,"))
   (define-key key-translation-map "\e[46;6" (kbd "C-."))
+  (define-key key-translation-map "\e[1;5D" (kbd "C-<left>"))
+  (define-key key-translation-map "\e[1;5C" (kbd "C-<right>"))
   (define-key key-translation-map "\e[1;6D" (kbd "C-S-<left>"))
   (define-key key-translation-map "\e[1;6C" (kbd "C-S-<right>"))
   (define-key key-translation-map "\e[65;6" (kbd "C-S-a"))
@@ -412,7 +414,7 @@ Null prefix argument turns off the mode."
 (use-package company
   :diminish company-mode
   :init (add-hook 'after-init-hook #'global-company-mode)
-  :bind (("<M-tab>" . company-complete)
+  :bind (("C-M-i" . company-complete)
          :map company-active-map
          ("C-n" . company-select-next)
          ("C-p" . company-select-previous)
