@@ -48,7 +48,7 @@ source ${ZSH}/oh-my-zsh.sh
 ulimit -c unlimited
 
 export ALTERNATE_EDITOR=""
-alias e='/usr/local/bin/emacsclient'
+alias e='/usr/bin/emacsclient'
 
 bindkey "^R" history-incremental-search-backward
 

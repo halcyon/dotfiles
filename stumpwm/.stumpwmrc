@@ -15,7 +15,7 @@
       (eval-command cmd t))))
 
 (defcommand urxvt () ()
-            (run-or-raise "killall urxvt; urxvt -e tmux" '(:title "tmux")))
+            (run-or-raise "killall urxvt; urxvt -e tmux" '(:title "^tmux$")))
 (define-key *root-map* (kbd "u") "urxvt")
 
 (defcommand chromium () ()
