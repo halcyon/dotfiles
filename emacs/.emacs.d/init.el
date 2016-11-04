@@ -60,10 +60,6 @@
   ;; (define-key key-translation-map "\e[9;3" (kbd "<M-tab>"))
   (define-key key-translation-map "\e[44;6" (kbd "C-,"))
   (define-key key-translation-map "\e[46;6" (kbd "C-."))
-  (define-key key-translation-map "\e[1;5D" (kbd "C-<left>"))
-  (define-key key-translation-map "\e[1;5C" (kbd "C-<right>"))
-  (define-key key-translation-map "\e[1;6D" (kbd "C-S-<left>"))
-  (define-key key-translation-map "\e[1;6C" (kbd "C-S-<right>"))
   (define-key key-translation-map "\e[65;6" (kbd "C-S-a"))
   (define-key key-translation-map "\e[68;6" (kbd "C-S-d"))
   (define-key key-translation-map "\e[86;8" (kbd "C-M-S-v"))
@@ -383,11 +379,9 @@ Null prefix argument turns off the mode."
 ;;;;; browse-kill-ring
 (use-package browse-kill-ring)
 
-;;;;; pbcopy
-(use-package pbcopy
-  :quelpa (pbcopy :fetcher github
-                  :repo "emacsfodder/pbcopy.el")
-  :config (turn-on-pbcopy))
+;;;;; xclip
+(use-package xclip
+  :config (turn-on-xclip))
 
 ;;;; language
 ;;;;; gradle-mode
@@ -415,6 +409,8 @@ Null prefix argument turns off the mode."
   :diminish company-mode
   :init (add-hook 'after-init-hook #'global-company-mode)
   :bind (("C-M-i" . company-complete)
+         :map emacs-lisp-mode-map
+         ("C-M-i" . company-complete)
          :map company-active-map
          ("C-n" . company-select-next)
          ("C-p" . company-select-previous)

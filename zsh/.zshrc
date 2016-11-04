@@ -54,8 +54,6 @@ bindkey "^R" history-incremental-search-backward
 
 export LESS='-R'
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 export ORACLE_HOME=~/instantclient_12_1
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export SQLPATH=~/dotfiles/oracle
