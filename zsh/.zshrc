@@ -59,10 +59,7 @@ export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export SQLPATH=~/dotfiles/oracle
 
 export HASKELL_STACK_PATH=~/.local/bin
-
 export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
-
-export ANDROID_HOME=/usr/local/opt/android-sdk
 
 if [[ -f ~/dotfiles-private/zsh/zsh-private ]]
 then
@@ -72,3 +69,5 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/smcleod/.sdkman"
 [[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
+
+export EDITOR=/usr/bin/emacsclient
