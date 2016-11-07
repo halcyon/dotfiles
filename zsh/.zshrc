@@ -1,16 +1,16 @@
 # Path to your oh-my-zsh configuration.
-ZSH=~/.oh-my-zsh
+ZSH=${HOME}/.oh-my-zsh
 
 if [[ ! -d ${ZSH} ]]
 then
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    git clone git://github.com/robbyrussell/oh-my-zsh.git ${HOME}/.oh-my-zsh
 fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_CUSTOM=~/.oh-my-zsh-custom
+ZSH_CUSTOM=${HOME}/.oh-my-zsh-custom
 ZSH_THEME="halcyon"
 
 # Example aliases
@@ -48,26 +48,22 @@ source ${ZSH}/oh-my-zsh.sh
 ulimit -c unlimited
 
 export ALTERNATE_EDITOR=""
-alias e=/usr/bin/emacsclient
+export EDITOR=/usr/bin/emacsclient
+alias e=${EDITOR}
+
 
 bindkey "^R" history-incremental-search-backward
 
 export LESS='-R'
 
-export ORACLE_HOME=~/instantclient_12_1
+export ORACLE_HOME=${HOME}/instantclient_12_1
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
-export SQLPATH=~/dotfiles/oracle
+export SQLPATH=${HOME}/dotfiles/oracle
 
-export HASKELL_STACK_PATH=~/.local/bin
+export HASKELL_STACK_PATH=${HOME}/.local/bin
 export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
 
-if [[ -f ~/dotfiles-private/zsh/zsh-private ]]
+if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
-    source ~/dotfiles-private/zsh/zsh-private
+    source ${HOME}/dotfiles-private/zsh/zsh-private
 fi
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/smcleod/.sdkman"
-[[ -s "/Users/smcleod/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/smcleod/.sdkman/bin/sdkman-init.sh"
-
-export EDITOR=/usr/bin/emacsclient
