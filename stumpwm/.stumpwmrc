@@ -39,6 +39,13 @@
 ;; Lock screen
 (define-key *root-map* (kbd "C-l") "exec xlock")
 
+(defcommand vbox-fullscreen-xrandr () ()
+            (run-shell-command (concat "/usr/bin/xrandr "
+                                       "--output VGA-1 --auto "
+                                       "--output VGA-2 --auto --below VGA-1")))
+
+(define-key *root-map* (kbd "C-r") "vbox-fullscreen-xrandr")
+
 ;; Web jump (works for Google and Imdb)
 (defmacro make-web-jump (name prefix)
   `(defcommand ,(intern name) (search) ((:rest ,(concatenate 'string name " search: ")))
