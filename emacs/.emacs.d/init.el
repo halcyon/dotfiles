@@ -56,8 +56,17 @@
   (put 'scroll-left 'disabled nil)
   (put 'upcase-region 'disabled nil)
   (put 'downcase-region 'disabled nil)
-  ;; (define-key key-translation-map (kbd "<backtab>") (kbd "<S-tab>"))
-  ;; (define-key key-translation-map "\e[9;3" (kbd "<M-tab>"))
+  (defadvice terminal-init-screen
+      ;; The advice is named `tmux', and is run before `terminal-init-screen' runs.
+      (before tmux activate)
+    ;; Docstring.  This describes the advice and is made available inside emacs;
+    ;; for example when doing C-h f terminal-init-screen RET
+    "Apply xterm keymap, allowing use of keys passed through tmux."
+    ;; This is the elisp code that is run before `terminal-init-screen'.
+    (if (getenv "TMUX")
+        (let ((map (copy-keymap xterm-function-map)))
+          (set-keymap-parent map (keymap-parent input-decode-map))
+          (set-keymap-parent input-decode-map map))))
   (define-key key-translation-map "\e[44;6" (kbd "C-,"))
   (define-key key-translation-map "\e[46;6" (kbd "C-."))
   (define-key key-translation-map "\e[65;6" (kbd "C-S-a"))
