@@ -18,17 +18,13 @@
             (run-or-raise "killall urxvt; urxvt -e tmux" '(:title "^tmux$")))
 (define-key *root-map* (kbd "u") "urxvt")
 
-(defcommand chromium () ()
-            (run-or-raise "killall chromium; chromium" '(:class "Chromium")))
-(define-key *root-map* (kbd "c") "chromium")
-
 (defcommand firefox () ()
             (run-or-raise "killall firefox; firefox" '(:class "Firefox")))
 (define-key *root-map* (kbd "b") "firefox")
 
 (defcommand slack () ()
             (run-or-raise "killall slack; slack" '(:class "Slack")))
-(define-key *root-map* (kbd "S") "slack")
+(define-key *root-map* (kbd "c") "slack")
 
 ;; Read some doc
 (define-key *root-map* (kbd "d") "exec gv")

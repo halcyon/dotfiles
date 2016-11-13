@@ -1,7 +1,7 @@
 URxvt.iso14755: false
 URxvt.scrollBar: false
-URxvt.font: xft:Noto Mono:size=22
-URxvt.italicFont: xft:Noto Sans:size=22:Bold:Italic
+URxvt.font: xft:Ubuntu Mono:size=22,xft:Symbola
+URxvt.italicFont: xft:Ubuntu Mono:size=22:Bold:Italic
 URxvt.letterSpace: -1
 URxvt.keysym.C-comma: \033[44;6
 URxvt.keysym.C-period: \033[46;6
