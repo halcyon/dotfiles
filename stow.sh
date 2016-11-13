@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 for i in `ls`
 do
-  stow $i
+  if [[ ${i} != "stow.sh" && ${i} != "oracle" ]]
+  then
+    stow $i
+  fi
 done
