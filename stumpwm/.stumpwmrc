@@ -26,6 +26,10 @@
             (run-or-raise "killall slack; slack" '(:class "Slack")))
 (define-key *root-map* (kbd "c") "slack")
 
+(defcommand calibre () ()
+            (run-or-raise "killall calibre; calibre" '(:class "Calibre")))
+(define-key *root-map* (kbd "C") "calibre")
+
 ;; Read some doc
 (define-key *root-map* (kbd "d") "exec gv")
 ;; Browse somewhere
