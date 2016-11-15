@@ -16,3 +16,11 @@ emacs/.emacs.d/games/
 /emacs/.emacs.d/oauth2.plstore
 emacs/.emacs.d/url/
 emacs/.emacs.d/emojis/
+local/.local/share/autojump
+local/.local/share/konsole
+local/.local/share/kxmlgui5
+local/.local/share/xorg
+config/.config/calibre/fonts/scanner_cache.json
+config/.config/calibre/iterator.pickle
+config/.config/calibre/gui.json
+config/.config/calibre/gui.py

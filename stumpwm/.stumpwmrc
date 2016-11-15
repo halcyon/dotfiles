@@ -14,20 +14,20 @@
     (when cmd
       (eval-command cmd t))))
 
-(defcommand urxvt () ()
-            (run-or-raise "killall urxvt; urxvt -e tmux" '(:title "^tmux$")))
-(define-key *root-map* (kbd "u") "urxvt")
+(defcommand konsole () ()
+            (run-or-raise "killall konsole; konsole" '(:title "^Konsole$")))
+(define-key *root-map* (kbd "k") "konsole")
 
 (defcommand firefox () ()
-            (run-or-raise "killall firefox; firefox" '(:class "Firefox")))
+            (run-or-raise "killall firefox; firefox" '(:class "^Firefox$")))
 (define-key *root-map* (kbd "b") "firefox")
 
 (defcommand slack () ()
-            (run-or-raise "killall slack; slack" '(:class "Slack")))
+            (run-or-raise "killall slack; slack" '(:class "^Slack$")))
 (define-key *root-map* (kbd "c") "slack")
 
 (defcommand calibre () ()
-            (run-or-raise "killall calibre; calibre" '(:class "Calibre")))
+            (run-or-raise "killall calibre; calibre" '(:class "^Calibre$")))
 (define-key *root-map* (kbd "C") "calibre")
 
 ;; Read some doc

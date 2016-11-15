@@ -6,7 +6,7 @@ UseFontLineChararacters=true
 
 [Cursor Options]
 CustomCursorColor=255,255,0
-UseCustomCursorColor=true
+UseCustomCursorColor=false
 
 [General]
 Command=/usr/bin/zsh -c /usr/bin/tmux
