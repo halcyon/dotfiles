@@ -1,0 +1,5 @@
+<kpartgui name="konsole" version="1">
+  <ActionProperties>
+    <Action name="options_show_menubar" shortcut="Ctrl+Shift+M"/>
+  </ActionProperties>
+</kpartgui>

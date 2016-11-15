@@ -1,0 +1,30 @@
+[Desktop Entry]
+DefaultProfile=screen-256color.profile
+
+[Favorite Profiles]
+Favorites=
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+SaveGeometryOnExit=false
+ShowAppNameOnTitleBar=false
+ShowMenuBarByDefault=false
+
+[MainWindow]
+Height 1080[$d]
+Height 600[$d]
+Height 900[$d]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB34AAAQ2AAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1440[$d]
+Width 1920[$d]
+Width 800[$d]
+
+[Shortcut Schemes]
+Current Scheme=screen-256color
+
+[TabBar]
+ShowQuickButtons=false
+TabBarPosition=Top
+TabBarVisibility=AlwaysHideTabBar
