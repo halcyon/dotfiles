@@ -14,6 +14,7 @@ Environment=TERM=screen-256color
 Name=screen-256color
 Parent=FALLBACK/
 ShowTerminalSizeHint=false
+StartInCurrentSessionDir=false
 TerminalRows=24
 
 [Interaction Options]
