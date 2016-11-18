@@ -15,7 +15,7 @@
       (eval-command cmd t))))
 
 (defcommand konsole () ()
-            (run-or-raise "killall konsole; konsole" '(:title "^Konsole$")))
+            (run-or-raise "killall konsole; konsole" '(:class "^konsole$")))
 (define-key *root-map* (kbd "k") "konsole")
 
 (defcommand firefox () ()
