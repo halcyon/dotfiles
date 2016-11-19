@@ -7,6 +7,14 @@
 ;; change the prefix key to something else
 (set-prefix-key (kbd "C-t"))
 
+(defun str (&rest strings)
+  (apply #'concatenate 'string strings))
+
+(defparameter *home-dir* (stumpwm::getenv "HOME"))
+
+(defun home (path)
+  (str *home-dir* "/" path))
+
 ;; prompt the user for an interactive command. The first arg is an
 ;; optional initial contents.
 (defcommand colon1 (&optional (initial "")) (:rest)
@@ -96,3 +104,5 @@
 (define-frame-preference "Emacs"
   (1 t t :restore "emacs-editing-dump" :title "...xdvi")
   (0 t t :create "emacs-dump" :class "Emacs"))
+
+(load (home "dotfiles-private/stumpwm/vpn.lisp"))
