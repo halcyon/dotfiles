@@ -35,7 +35,7 @@
 (define-key *root-map* (kbd "c") "slack")
 
 (defcommand calibre () ()
-            (run-or-raise "killall calibre; calibre" '(:class "^Calibre$")))
+            (run-or-raise "killall calibre; QT_DEVICE_PIXEL_RATIO=1 calibre" '(:class "^calibre$")))
 (define-key *root-map* (kbd "C") "calibre")
 
 ;; Read some doc
