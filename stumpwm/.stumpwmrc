@@ -38,12 +38,14 @@
             (run-or-raise "killall calibre; QT_DEVICE_PIXEL_RATIO=1 calibre" '(:class "^calibre$")))
 (define-key *root-map* (kbd "C") "calibre")
 
+(defcommand sococo () ()
+            (run-or-raise "killall sococo; sococo" '(:class "^Sococo$")))
+(define-key *root-map* (kbd "C-s") "sococo")
+
 ;; Read some doc
 (define-key *root-map* (kbd "d") "exec gv")
 ;; Browse somewhere
 ;; (define-key *root-map* (kbd "b") "colon1 exec firefox http://www.")
-;; Ssh somewhere
-(define-key *root-map* (kbd "C-s") "colon1 exec xterm -e ssh ")
 ;; Lock screen
 (define-key *root-map* (kbd "C-l") "exec xlock")
 
