@@ -32,7 +32,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-/usr/bin/VBoxClient-all
-/usr/bin/xset r rate 225 30
-/usr/bin/xrandr --output VGA-1 --auto --output VGA-2 --auto --below VGA-1
+/usr/bin/xset r rate 200 50
 /usr/local/bin/stumpwm
