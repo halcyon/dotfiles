@@ -5,7 +5,7 @@
 (in-package :stumpwm)
 
 ;; change the prefix key to something else
-(set-prefix-key (kbd "C-t"))
+(set-prefix-key (kbd "C-e"))
 
 (defun str (&rest strings)
   (apply #'concatenate 'string strings))
@@ -24,7 +24,7 @@
 
 (defcommand konsole () ()
             (run-or-raise "killall konsole; konsole" '(:class "^konsole$")))
-(define-key *root-map* (kbd "k") "konsole")
+(define-key *root-map* (kbd "t") "konsole")
 
 (defcommand firefox () ()
             (run-or-raise "killall firefox; firefox" '(:class "^Firefox$")))
@@ -39,7 +39,7 @@
 (define-key *root-map* (kbd "C") "calibre")
 
 (defcommand sococo () ()
-            (run-or-raise "killall sococo; sococo" '(:class "^Sococo$")))
+            (run-or-raise "killall chromium; chromium" '(:class "^Chromium$")))
 (define-key *root-map* (kbd "C-s") "sococo")
 
 ;; Read some doc
