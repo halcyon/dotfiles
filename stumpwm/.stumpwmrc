@@ -5,7 +5,7 @@
 (in-package :stumpwm)
 
 ;; change the prefix key to something else
-(set-prefix-key (kbd "C-e"))
+(set-prefix-key (kbd "C-t"))
 
 (defun str (&rest strings)
   (apply #'concatenate 'string strings))
