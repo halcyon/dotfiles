@@ -24,7 +24,7 @@
 
 (defcommand konsole () ()
             (run-or-raise "killall konsole; konsole" '(:class "^konsole$")))
-(define-key *root-map* (kbd "t") "konsole")
+(define-key *root-map* (kbd "T") "konsole")
 
 (defcommand firefox () ()
             (run-or-raise "killall firefox; firefox" '(:class "^Firefox$")))
