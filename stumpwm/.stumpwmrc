@@ -42,6 +42,10 @@
             (run-or-raise "killall chromium; chromium" '(:class "^Chromium$")))
 (define-key *root-map* (kbd "C-s") "sococo")
 
+(defcommand zathura () ()
+            (run-or-raise "zathura" '(:class "^Zathura$")))
+(define-key *root-map* (kbd "z") "zathura")
+
 ;; Read some doc
 (define-key *root-map* (kbd "d") "exec gv")
 ;; Browse somewhere
