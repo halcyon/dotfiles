@@ -43,8 +43,12 @@
 (define-key *root-map* (kbd "C-s") "sococo")
 
 (defcommand zathura () ()
-            (run-or-raise "zathura" '(:class "^Zathura$")))
+            (run-or-raise "killall zathura; zathura" '(:class "^Zathura$")))
 (define-key *root-map* (kbd "z") "zathura")
+
+(defcommand pavucontrol () ()
+            (run-or-pull "killall pavucontrol; pavucontrol" '(:class "^Pavucontrol$")))
+(define-key *root-map* (kbd "P") "pavucontrol")
 
 ;; Read some doc
 (define-key *root-map* (kbd "d") "exec gv")
