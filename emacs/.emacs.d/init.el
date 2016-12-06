@@ -541,6 +541,13 @@ Null prefix argument turns off the mode."
     (cljr-add-keybindings-with-prefix "C-c C-m"))
   (add-hook 'clojure-mode-hook #'configure-clj-refactor))
 
+;;;;; rust-mode
+(use-package rust-mode)
+
+;;;;; cargo
+(use-package cargo
+  :config
+  (add-hook 'rust-mode-hook #'cargo-minor-mode))
 
 ;;;;; flycheck
 (use-package flycheck
