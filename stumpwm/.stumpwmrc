@@ -7,14 +7,6 @@
 ;; change the prefix key to something else
 (set-prefix-key (kbd "C-t"))
 
-(defun str (&rest strings)
-  (apply #'concatenate 'string strings))
-
-(defparameter *home-dir* (stumpwm::getenv "HOME"))
-
-(defun home (path)
-  (str *home-dir* "/" path))
-
 ;; prompt the user for an interactive command. The first arg is an
 ;; optional initial contents.
 (defcommand colon1 (&optional (initial "")) (:rest)
@@ -22,47 +14,12 @@
     (when cmd
       (eval-command cmd t))))
 
-(defcommand konsole () ()
-            (run-or-raise "killall konsole; konsole" '(:class "^konsole$")))
-(define-key *root-map* (kbd "T") "konsole")
-
-(defcommand firefox () ()
-            (run-or-raise "killall firefox; firefox" '(:class "^Firefox$")))
-(define-key *root-map* (kbd "b") "firefox")
-
-(defcommand slack () ()
-            (run-or-raise "killall slack; slack" '(:class "^Slack$")))
-(define-key *root-map* (kbd "c") "slack")
-
-(defcommand calibre () ()
-            (run-or-raise "killall calibre; QT_SCALE_FACTOR=1 calibre" '(:class "^calibre$")))
-(define-key *root-map* (kbd "C") "calibre")
-
-(defcommand sococo () ()
-            (run-or-raise "killall chromium; chromium" '(:class "^Chromium$")))
-(define-key *root-map* (kbd "C-s") "sococo")
-
-(defcommand zathura () ()
-            (run-or-raise "killall zathura; zathura" '(:class "^Zathura$")))
-(define-key *root-map* (kbd "z") "zathura")
-
-(defcommand pavucontrol () ()
-            (run-or-pull "killall pavucontrol; pavucontrol" '(:class "^Pavucontrol$")))
-(define-key *root-map* (kbd "P") "pavucontrol")
-
 ;; Read some doc
 (define-key *root-map* (kbd "d") "exec gv")
 ;; Browse somewhere
 ;; (define-key *root-map* (kbd "b") "colon1 exec firefox http://www.")
 ;; Lock screen
 (define-key *root-map* (kbd "C-l") "exec xlock")
-
-(defcommand vbox-fullscreen-xrandr () ()
-            (run-shell-command (concat "/usr/bin/xrandr "
-                                       "--output VGA-1 --auto "
-                                       "--output VGA-2 --auto --below VGA-1")))
-
-(define-key *root-map* (kbd "C-r") "vbox-fullscreen-xrandr")
 
 ;; Web jump (works for Google and Imdb)
 (defmacro make-web-jump (name prefix)
@@ -115,4 +72,5 @@
   (1 t t :restore "emacs-editing-dump" :title "...xdvi")
   (0 t t :create "emacs-dump" :class "Emacs"))
 
-(load (home "dotfiles-private/stumpwm/vpn.lisp"))
+(defparameter *home-dir* (stumpwm::getenv "HOME"))
+(load (concat *home-dir* "/" "dotfiles-private/stumpwm/stumpwm.lisp"))
