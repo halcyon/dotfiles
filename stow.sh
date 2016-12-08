@@ -8,3 +8,4 @@ do
 done
 
 sudo stow xorg.conf.d -t /etc/X11
+sudo stow sysctl.d -t /etc
