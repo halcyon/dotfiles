@@ -63,6 +63,10 @@ export SQLPATH=${HOME}/dotfiles/oracle
 export HASKELL_STACK_PATH=${HOME}/.local/bin
 export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
 
+export STARDICT_DATA_DIR=/home/smcleod/Dropbox/dic
+export SDCV_PAGER=less
+alias sdcv='sdcv --utf8-input --utf8-output --color'
+
 if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/dotfiles-private/zsh/zsh-private
