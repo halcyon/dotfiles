@@ -47,7 +47,9 @@
   (menu-bar-mode -1)
   (setq inhibit-startup-message t
         require-final-newline t
-        vc-follow-symlinks t)
+        vc-follow-symlinks t
+        browse-url-browser-function 'browse-url-generic
+        browse-url-generic-program "vivaldi-stable")
   (setq-default indent-tabs-mode nil)
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)

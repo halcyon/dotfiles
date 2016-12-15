@@ -67,6 +67,8 @@ export STARDICT_DATA_DIR=/home/smcleod/Dropbox/dic
 export SDCV_PAGER=less
 alias sdcv='sdcv --utf8-input --utf8-output --color'
 
+export BROWSER=vivaldi-stable
+
 if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/dotfiles-private/zsh/zsh-private
