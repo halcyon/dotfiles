@@ -2251,7 +2251,7 @@ See `org-file-apps'.")
     ("dvi"    . "xdvi %s")
     ("fig"    . "xfig %s")
     (t . "open %s"))
-  "Default file applications on a MacOS X system.
+  "Default file applications on a macOS system.
 The system \"open\" is known as a default, but we use X11 applications
 for some files for which the OS does not have a good default.
 See `org-file-apps'.")
@@ -2323,7 +2323,7 @@ Possible values for the file identifier are:
                will also open html files inside Emacs, unless you add
                (\"html\" . default) to the list as well.
  `system'      The system command to open files, like `open' on Windows
-               and Mac OS X, and mailcap under GNU/Linux.  This is the command
+               and macOS, and mailcap under GNU/Linux.  This is the command
                that will be selected if you call `org-open-at-point' with a
                double prefix argument (`\\[universal-argument] \
 \\[universal-argument] \\[org-open-at-point]').
@@ -4092,7 +4092,7 @@ All available processes and theirs documents can be found in
      :image-output-type "png"
      :image-size-adjust (1.0 . 1.0)
      :latex-compiler ("latex -interaction nonstopmode -output-directory %o %f")
-     :image-converter ("dvipng -fg %F -bg %B -D %D -T tight -o %o%b.png %f"))
+     :image-converter ("dvipng -fg %F -bg %B -D %D -T tight -o %O %f"))
     (dvisvgm
      :programs ("latex" "dvisvgm")
      :description "dvi > svg"
@@ -4102,7 +4102,7 @@ All available processes and theirs documents can be found in
      :image-output-type "svg"
      :image-size-adjust (1.7 . 1.5)
      :latex-compiler ("latex -interaction nonstopmode -output-directory %o %f")
-     :image-converter ("dvisvgm %f -n -b min -c %S -o %o%b.svg"))
+     :image-converter ("dvisvgm %f -n -b min -c %S -o %O"))
     (imagemagick
      :programs ("latex" "convert")
      :description "pdf > png"
@@ -4113,7 +4113,7 @@ All available processes and theirs documents can be found in
      :image-size-adjust (1.0 . 1.0)
      :latex-compiler ("pdflatex -interaction nonstopmode -output-directory %o %f")
      :image-converter
-     ("convert -density %D -trim -antialias %f -quality 100 %o%b.png")))
+     ("convert -density %D -trim -antialias %f -quality 100 %O")))
   "Definitions of external processes for LaTeX previewing.
 Org mode can use some external commands to generate TeX snippet's images for
 previewing or inserting into HTML files, e.g., \"dvipng\".  This variable tells
@@ -4156,9 +4156,10 @@ PROPERTIES accepts the following attributes:
 
 Place-holders used by `:image-converter' and `:latex-compiler':
 
-  %f    input file name.
-  %b    base name of input file.
-  %o    base directory of input file.
+  %f    input file name
+  %b    base name of input file
+  %o    base directory of input file
+  %O    absolute output file name
 
 Place-holders only used by `:image-converter':
 
@@ -11155,7 +11156,8 @@ of matched result, which is either `dedicated' or `fuzzy'."
   (let* ((case-fold-search t)
 	 (origin (point))
 	 (normalized (replace-regexp-in-string "\n[ \t]*" " " s))
-	 (words (org-split-string s "[ \t\n]+"))
+	 (starred (eq (string-to-char normalized) ?*))
+	 (words (split-string (if starred (substring s 1) s)))
 	 (s-multi-re (mapconcat #'regexp-quote words "[ \t]+\\(?:\n[ \t]*\\)?"))
 	 (s-single-re (mapconcat #'regexp-quote words "[ \t]+"))
 	 type)
@@ -11197,109 +11199,104 @@ of matched result, which is either `dedicated' or `fuzzy'."
       ;; Look for a regular expression.
       (funcall (if (derived-mode-p 'org-mode) #'org-occur #'org-do-occur)
 	       (match-string 1 s)))
-     ;; Fuzzy links.
-     (t
-      (let ((starred (eq (string-to-char normalized) ?*)))
-	(cond
-	 ;; Look for targets, only if not in a headline search.
-	 ((and (not starred)
-	       (let ((target (format "<<%s>>" s-multi-re)))
-		 (catch :target-match
-		   (goto-char (point-min))
-		   (while (re-search-forward target nil t)
-		     (backward-char)
-		     (let ((context (org-element-context)))
-		       (when (eq (org-element-type context) 'target)
-			 (setq type 'dedicated)
-			 (goto-char (org-element-property :begin context))
-			 (throw :target-match t))))
-		   nil))))
-	 ;; Look for elements named after S, only if not in a headline
-	 ;; search.
-	 ((and (not starred)
-	       (let ((name (format "^[ \t]*#\\+NAME: +%s[ \t]*$" s-single-re)))
-		 (catch :name-match
-		   (goto-char (point-min))
-		   (while (re-search-forward name nil t)
-		     (let ((element (org-element-at-point)))
-		       (when (equal (org-split-string
-				     (org-element-property :name element)
-				     "[ \t]+")
-				    words)
-			 (setq type 'dedicated)
-			 (beginning-of-line)
-			 (throw :name-match t))))
-		   nil))))
-	 ;; Regular text search.  Prefer headlines in Org mode
-	 ;; buffers.
-	 ((and (derived-mode-p 'org-mode)
-	       (let* ((wspace "[ \t]")
-		      (wspaceopt (concat wspace "*"))
-		      (cookie (concat "\\(?:"
-				      wspaceopt
-				      "\\[[0-9]*\\(?:%\\|/[0-9]*\\)\\]"
-				      wspaceopt
-				      "\\)"))
-		      (sep (concat "\\(?:\\(?:" wspace "\\|" cookie "\\)+\\)"))
-		      (title
-		       (format "\\(?:%s[ \t]+\\)?%s?%s%s?"
-			       org-comment-string
-			       sep
-			       (let ((re (mapconcat #'regexp-quote words sep)))
-				 (if starred (substring re 1) re))
-			       sep))
-		      (exact-title (format "\\`%s\\'" title))
-		      (re (concat org-outline-regexp-bol "+.*" title)))
-		 (goto-char (point-min))
-		 (catch :found
-		   (while (re-search-forward re nil t)
-		     (when (string-match-p exact-title (org-get-heading t t))
-		       (throw :found t)))
-		   nil)))
-	  (beginning-of-line)
-	  (setq type 'dedicated))
-	 ;; Offer to create non-existent headline depending on
-	 ;; `org-link-search-must-match-exact-headline'.
-	 ((and (derived-mode-p 'org-mode)
-	       (not org-link-search-inhibit-query)
-	       (eq org-link-search-must-match-exact-headline 'query-to-create)
-	       (yes-or-no-p "No match - create this as a new heading? "))
-	  (goto-char (point-max))
-	  (unless (bolp) (newline))
-	  (org-insert-heading nil t t)
-	  (insert s "\n")
-	  (beginning-of-line 0))
-	 ;; Only headlines are looked after.  No need to process
-	 ;; further: throw an error.
-	 ((and (derived-mode-p 'org-mode)
-	       (or starred org-link-search-must-match-exact-headline))
-	  (goto-char origin)
-	  (error "No match for fuzzy expression: %s" normalized))
-	 ;; Regular text search.
-	 ((catch :fuzzy-match
-	    (goto-char (point-min))
-	    (while (re-search-forward s-multi-re nil t)
-	      ;; Skip match if it contains AVOID-POS or it is included
-	      ;; in a link with a description but outside the
-	      ;; description.
-	      (unless (or (and avoid-pos
-			       (<= (match-beginning 0) avoid-pos)
-			       (> (match-end 0) avoid-pos))
-			  (and (save-match-data
-				 (org-in-regexp org-bracket-link-regexp))
-			       (match-beginning 3)
-			       (or (> (match-beginning 3) (point))
-				   (<= (match-end 3) (point)))
-			       (org-element-lineage
-				(save-match-data (org-element-context))
-				'(link) t)))
-		(goto-char (match-beginning 0))
-		(setq type 'fuzzy)
-		(throw :fuzzy-match t)))
-	    nil))
-	 ;; All failed.  Throw an error.
-	 (t (goto-char origin)
-	    (error "No match for fuzzy expression: %s" normalized))))))
+     ;; From here, we handle fuzzy links.
+     ;;
+     ;; Look for targets, only if not in a headline search.
+     ((and (not starred)
+	   (let ((target (format "<<%s>>" s-multi-re)))
+	     (catch :target-match
+	       (goto-char (point-min))
+	       (while (re-search-forward target nil t)
+		 (backward-char)
+		 (let ((context (org-element-context)))
+		   (when (eq (org-element-type context) 'target)
+		     (setq type 'dedicated)
+		     (goto-char (org-element-property :begin context))
+		     (throw :target-match t))))
+	       nil))))
+     ;; Look for elements named after S, only if not in a headline
+     ;; search.
+     ((and (not starred)
+	   (let ((name (format "^[ \t]*#\\+NAME: +%s[ \t]*$" s-single-re)))
+	     (catch :name-match
+	       (goto-char (point-min))
+	       (while (re-search-forward name nil t)
+		 (let ((element (org-element-at-point)))
+		   (when (equal words
+				(split-string
+				 (org-element-property :name element)))
+		     (setq type 'dedicated)
+		     (beginning-of-line)
+		     (throw :name-match t))))
+	       nil))))
+     ;; Regular text search.  Prefer headlines in Org mode buffers.
+     ;; Ignore COMMENT keyword, TODO keywords, priority cookies,
+     ;; statistics cookies and tags.
+     ((and (derived-mode-p 'org-mode)
+	   (let ((title-re
+		  (format "%s[ \t]*\\(?:%s[ \t]+\\)?.*%s"
+			  org-outline-regexp-bol
+			  org-comment-string
+			  (mapconcat
+			   (lambda (w) (format "\\<%s\\>" (regexp-quote w)))
+			   words
+			   ".+")))
+		 (cookie-re "\\[[0-9]*\\(?:%\\|/[0-9]*\\)\\]")
+		 (comment-re (format "\\`%s[ \t]+" org-comment-string)))
+	     (goto-char (point-min))
+	     (catch :found
+	       (while (re-search-forward title-re nil t)
+		 (when (equal words
+			      (split-string
+			       (replace-regexp-in-string
+				cookie-re ""
+				(replace-regexp-in-string
+				 comment-re "" (org-get-heading t t)))))
+		   (throw :found t)))
+	       nil)))
+      (beginning-of-line)
+      (setq type 'dedicated))
+     ;; Offer to create non-existent headline depending on
+     ;; `org-link-search-must-match-exact-headline'.
+     ((and (derived-mode-p 'org-mode)
+	   (not org-link-search-inhibit-query)
+	   (eq org-link-search-must-match-exact-headline 'query-to-create)
+	   (yes-or-no-p "No match - create this as a new heading? "))
+      (goto-char (point-max))
+      (unless (bolp) (newline))
+      (org-insert-heading nil t t)
+      (insert s "\n")
+      (beginning-of-line 0))
+     ;; Only headlines are looked after.  No need to process
+     ;; further: throw an error.
+     ((and (derived-mode-p 'org-mode)
+	   (or starred org-link-search-must-match-exact-headline))
+      (goto-char origin)
+      (error "No match for fuzzy expression: %s" normalized))
+     ;; Regular text search.
+     ((catch :fuzzy-match
+	(goto-char (point-min))
+	(while (re-search-forward s-multi-re nil t)
+	  ;; Skip match if it contains AVOID-POS or it is included in
+	  ;; a link with a description but outside the description.
+	  (unless (or (and avoid-pos
+			   (<= (match-beginning 0) avoid-pos)
+			   (> (match-end 0) avoid-pos))
+		      (and (save-match-data
+			     (org-in-regexp org-bracket-link-regexp))
+			   (match-beginning 3)
+			   (or (> (match-beginning 3) (point))
+			       (<= (match-end 3) (point)))
+			   (org-element-lineage
+			    (save-match-data (org-element-context))
+			    '(link) t)))
+	    (goto-char (match-beginning 0))
+	    (setq type 'fuzzy)
+	    (throw :fuzzy-match t)))
+	nil))
+     ;; All failed.  Throw an error.
+     (t (goto-char origin)
+	(error "No match for fuzzy expression: %s" normalized)))
     ;; Disclose surroundings of match, if appropriate.
     (when (and (derived-mode-p 'org-mode) (not stealth))
       (org-show-context 'link-search))
@@ -13331,77 +13328,81 @@ This function is run automatically after each state change to a DONE state."
 			     org-log-repeat)))
       (org-back-to-heading t)
       (org-add-planning-info nil nil 'closed)
-      (let ((end (save-excursion (outline-next-heading) (point))))
+      (let ((end (save-excursion (outline-next-heading) (point)))
+	    (planning-re (regexp-opt
+			  (list org-scheduled-string org-deadline-string))))
 	(while (re-search-forward org-ts-regexp end t)
-	  (when (save-match-data
-		  (or (org-at-planning-p)
-		      (org-at-property-p)
-		      (eq (org-element-type (save-excursion
-					      (backward-char)
-					      (org-element-context)))
-			  'timestamp)))
-	    (let ((type (cond ((match-end 1) org-scheduled-string)
-			      ((match-end 3) org-deadline-string)
-			      (t "Plain:")))
-		  (ts (or (match-string 2) (match-string 4) (match-string 0))))
-	      (cond
-	       ((not
-		 (string-match "\\([.+]\\)?\\(\\+[0-9]+\\)\\([hdwmy]\\)" ts))
-		;; Time-stamps without a repeater are usually skipped.
-		;; However, a SCHEDULED time-stamp without one is
-		;; removed, as it is considered as no longer relevant.
-		(when (equal type org-scheduled-string)
-		  (org-remove-timestamp-with-keyword type)))
-	       (t
-		(let ((n (string-to-number (match-string 2 ts)))
-		      (what (match-string 3 ts)))
-		  (when (equal what "w") (setq n (* n 7) what "d"))
-		  (when (and (equal what "h")
-			     (not (string-match-p "[0-9]\\{1,2\\}:[0-9]\\{2\\}"
-						  ts)))
-		    (user-error
-		     "Cannot repeat in Repeat in %d hour(s) because no hour \
+	  (let* ((ts (match-string 0))
+		 (planning? (org-at-planning-p))
+		 (type (if (not planning?) "Plain:"
+			 (save-excursion
+			   (re-search-backward
+			    planning-re (line-beginning-position) t)
+			   (match-string 0)))))
+	    (cond
+	     ;; Ignore fake time-stamps (e.g., within comments).
+	     ((and (not planning?)
+		   (not (org-at-property-p))
+		   (not (eq 'timestamp
+			    (org-element-type (save-excursion
+						(backward-char)
+						(org-element-context)))))))
+	     ;; Time-stamps without a repeater are usually skipped.
+	     ;; However, a SCHEDULED time-stamp without one is
+	     ;; removed, as it is considered as no longer relevant.
+	     ((not (string-match "\\([.+]\\)?\\(\\+[0-9]+\\)\\([hdwmy]\\)" ts))
+	      (when (equal type org-scheduled-string)
+		(org-remove-timestamp-with-keyword type)))
+	     (t
+	      (let ((n (string-to-number (match-string 2 ts)))
+		    (what (match-string 3 ts)))
+		(when (equal what "w") (setq n (* n 7) what "d"))
+		(when (and (equal what "h")
+			   (not (string-match-p "[0-9]\\{1,2\\}:[0-9]\\{2\\}"
+						ts)))
+		  (user-error
+		   "Cannot repeat in Repeat in %d hour(s) because no hour \
 has been set"
-		     n))
-		  ;; Preparation, see if we need to modify the start
-		  ;; date for the change.
-		  (when (match-end 1)
-		    (let ((time (save-match-data (org-time-string-to-time ts))))
-		      (cond
-		       ((equal (match-string 1 ts) ".")
-			;; Shift starting date to today
-			(org-timestamp-change
-			 (- (org-today) (time-to-days time))
-			 'day))
-		       ((equal (match-string 1 ts) "+")
-			(let ((nshiftmax 10)
-			      (nshift 0))
-			  (while (or (= nshift 0)
-				     (not (time-less-p (current-time) time)))
-			    (when (= (cl-incf nshift) nshiftmax)
-			      (or (y-or-n-p
-				   (format "%d repeater intervals were not \
+		   n))
+		;; Preparation, see if we need to modify the start
+		;; date for the change.
+		(when (match-end 1)
+		  (let ((time (save-match-data (org-time-string-to-time ts))))
+		    (cond
+		     ((equal (match-string 1 ts) ".")
+		      ;; Shift starting date to today
+		      (org-timestamp-change
+		       (- (org-today) (time-to-days time))
+		       'day))
+		     ((equal (match-string 1 ts) "+")
+		      (let ((nshiftmax 10)
+			    (nshift 0))
+			(while (or (= nshift 0)
+				   (not (time-less-p (current-time) time)))
+			  (when (= (cl-incf nshift) nshiftmax)
+			    (or (y-or-n-p
+				 (format "%d repeater intervals were not \
 enough to shift date past today.  Continue? "
-					   nshift))
-				  (user-error "Abort")))
-			    (org-timestamp-change n (cdr (assoc what whata)))
-			    (org-at-timestamp-p t)
-			    (setq ts (match-string 1))
-			    (setq time
-				  (save-match-data
-				    (org-time-string-to-time ts)))))
-			(org-timestamp-change (- n) (cdr (assoc what whata)))
-			;; Rematch, so that we have everything in
-			;; place for the real shift.
-			(org-at-timestamp-p t)
-			(setq ts (match-string 1))
-			(string-match "\\([.+]\\)?\\(\\+[0-9]+\\)\\([hdwmy]\\)"
-				      ts)))))
-		  (save-excursion
-		    (org-timestamp-change n (cdr (assoc what whata)) nil t))
-		  (setq msg
-			(concat
-			 msg type " " org-last-changed-timestamp " ")))))))))
+					 nshift))
+				(user-error "Abort")))
+			  (org-timestamp-change n (cdr (assoc what whata)))
+			  (org-at-timestamp-p t)
+			  (setq ts (match-string 1))
+			  (setq time
+				(save-match-data
+				  (org-time-string-to-time ts)))))
+		      (org-timestamp-change (- n) (cdr (assoc what whata)))
+		      ;; Rematch, so that we have everything in place
+		      ;; for the real shift.
+		      (org-at-timestamp-p t)
+		      (setq ts (match-string 1))
+		      (string-match "\\([.+]\\)?\\(\\+[0-9]+\\)\\([hdwmy]\\)"
+				    ts)))))
+		(save-excursion
+		  (org-timestamp-change n (cdr (assoc what whata)) nil t))
+		(setq msg
+		      (concat
+		       msg type " " org-last-changed-timestamp " "))))))))
       (setq org-log-post-message msg)
       (message "%s" msg))))
 
@@ -17802,7 +17803,7 @@ days in order to avoid rounding problems."
 
 (org-define-error 'org-diary-sexp-no-match "Unable to match diary sexp")
 
-(defun org-time-string-to-absolute (s &optional daynr prefer show-all buffer pos)
+(defun org-time-string-to-absolute (s &optional daynr prefer buffer pos)
   "Convert time stamp S to an absolute day number.
 
 If DAYNR in non-nil, and there is a specifier for a cyclic time
@@ -17826,7 +17827,7 @@ signalled."
 	      (match-string 1 s) "" (calendar-gregorian-from-absolute daynr)))
 	daynr
       (signal 'org-diary-sexp-no-match (list s))))
-   ((and daynr show-all) (org-closest-date s daynr prefer))
+   (daynr (org-closest-date s daynr prefer))
    (t (time-to-days
        (condition-case errdata
 	   (apply #'encode-time (org-parse-time-string s))
@@ -18124,7 +18125,7 @@ INACTIVE-OK."
 (defun org-at-clock-log-p nil
   "Is the cursor on the clock log line?"
   (save-excursion
-    (move-beginning-of-line 1)
+    (beginning-of-line)
     (looking-at org-clock-line-re)))
 
 (defvar org-clock-history)                     ; defined in org-clock.el
@@ -19385,12 +19386,9 @@ inspection."
 	    (with-current-buffer (find-file-noselect tmp-out-file t)
 	      (goto-char (point-min))
 	      (when (re-search-forward
-		     (concat
-		      (regexp-quote
-		       "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"")
-		      "[^>]*?>"
-		      "\\(.\\|\n\\)*"
-		      "</math>")
+		     (format "<math[^>]*?%s[^>]*?>\\(.\\|\n\\)*</math>"
+			     (regexp-quote
+			      "xmlns=\"http://www.w3.org/1998/Math/MathML\""))
 		     nil t)
 		(prog1 (match-string 0) (kill-buffer))))))
     (cond
@@ -19460,9 +19458,8 @@ inspection."
 
 (defun org--get-display-dpi ()
   "Get the DPI of the display.
-
-Assumes that the display has the same pixel width in the
-horizontal and vertical directions."
+The function assumes that the display has the same pixel width in
+the horizontal and vertical directions."
   (if (display-graphic-p)
       (round (/ (display-pixel-height)
 		(/ (display-mm-height) 25.4)))
@@ -19505,12 +19502,11 @@ a HTML file."
 	 (texfilebase (make-temp-name
 		       (expand-file-name "orgtex" tmpdir)))
 	 (texfile (concat texfilebase ".tex"))
-	 (font-height (face-attribute 'default :height nil))
 	 (image-size-adjust (or (plist-get processing-info :image-size-adjust)
 				'(1.0 . 1.0)))
 	 (scale (* (if buffer (car image-size-adjust) (cdr image-size-adjust))
 		   (or (plist-get options (if buffer :scale :html-scale)) 1.0)))
-	 (dpi (* scale (floor (if buffer font-height 140.0))))
+	 (dpi (* scale (if buffer (org--get-display-dpi) 140.0)))
 	 (fg (or (plist-get options (if buffer :foreground :html-foreground))
 		 "Black"))
 	 (bg (or (plist-get options (if buffer :background :html-background))
@@ -22764,11 +22760,13 @@ If PROCESS is a function, it is called with a single argument:
 the SOURCE file.
 
 If it is a list of commands, each of them is called using
-`shell-command'.  By default, in each command, %b, %f, %F and %o
-are replaced with, respectively, SOURCE base name, name, full
-name and directory.  It is possible, however, to use more
-place-holders by specifying them in optional argument SPEC, as an
-alist following the pattern (CHARACTER . REPLACEMENT-STRING).
+`shell-command'.  By default, in each command, %b, %f, %F, %o and
+%O are replaced with, respectively, SOURCE base name, name, full
+name, directory and absolute output file name.  It is possible,
+however, to use more place-holders by specifying them in optional
+argument SPEC, as an alist following the pattern
+
+  (CHARACTER . REPLACEMENT-STRING).
 
 When PROCESS is a list of commands, optional argument LOG-BUF can
 be set to a buffer or a buffer name.  `shell-command' then uses
@@ -22776,6 +22774,7 @@ it for output."
   (let* ((base-name (file-name-base source))
 	 (full-name (file-truename source))
 	 (out-dir (file-name-directory source))
+	 (output (expand-file-name (concat base-name "." ext) out-dir))
 	 (time (current-time))
 	 (err-msg (if (stringp err-msg) (concat ".  " err-msg) "")))
     (save-window-excursion
@@ -22787,16 +22786,16 @@ it for output."
 			     `((?b . ,(shell-quote-argument base-name))
 			       (?f . ,(shell-quote-argument source))
 			       (?F . ,(shell-quote-argument full-name))
-			       (?o . ,(shell-quote-argument out-dir))))))
+			       (?o . ,(shell-quote-argument out-dir))
+			       (?O . ,(shell-quote-argument output))))))
 	   (dolist (command process)
 	     (shell-command (format-spec command spec) log-buf))))
 	(_ (error "No valid command to process %S%s" source err-msg))))
     ;; Check for process failure.  Output file is expected to be
     ;; located in the same directory as SOURCE.
-    (let ((output (expand-file-name (concat base-name "." ext) out-dir)))
-      (unless (org-file-newer-than-p output time)
-	(error (format "File %S wasn't produced%s" output err-msg)))
-      output)))
+    (unless (org-file-newer-than-p output time)
+      (error (format "File %S wasn't produced%s" output err-msg)))
+    output))
 
 ;;; Indentation
 
@@ -24689,7 +24688,8 @@ Move to the previous element at the same level, when possible."
   "Move backward element at point."
   (interactive)
   (if (org-with-limited-levels (org-at-heading-p)) (org-move-subtree-up)
-    (let* ((elem (org-element-at-point))
+    (let* ((elem (or (org-element-at-point)
+		     (user-error "No element at point")))
 	   (prev-elem
 	    (save-excursion
 	      (goto-char (org-element-property :begin elem))
@@ -24715,7 +24715,8 @@ Move to the previous element at the same level, when possible."
   "Move forward element at point."
   (interactive)
   (let* ((pos (point))
-	 (elem (org-element-at-point)))
+	 (elem (or (org-element-at-point)
+		   (user-error "No element at point"))))
     (when (= (point-max) (org-element-property :end elem))
       (user-error "Cannot drag element forward"))
     (goto-char (org-element-property :end elem))

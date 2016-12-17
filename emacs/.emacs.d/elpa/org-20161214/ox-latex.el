@@ -1021,7 +1021,7 @@ be a list containing two strings: the name of the option, and the
 value.  For example,
 
   (setq org-latex-minted-options
-    '((\"bgcolor\" \"bg\") (\"frame\" \"lines\")))
+    \\='((\"bgcolor\" \"bg\") (\"frame\" \"lines\")))
 
 will result in src blocks being exported with
 
@@ -1060,7 +1060,7 @@ exported.  This format string may contain these elements:
 For example,
 
   (setq org-latex-custom-lang-environments
-     '((python \"pythoncode\")
+     \\='((python \"pythoncode\")
        (ocaml \"\\\\begin{listing}
 \\\\begin{minted}[%o]{ocaml}
 %s\\\\end{minted}
@@ -1145,12 +1145,15 @@ A better approach is to use a compiler suit such as `latexmk'."
     "%latex -interaction nonstopmode -output-directory %o %f"
     "%latex -interaction nonstopmode -output-directory %o %f")
   "Commands to process a LaTeX file to a PDF file.
+
 This is a list of strings, each of them will be given to the
 shell as a command.  %f in the command will be replaced by the
-full file name, %b by the file base name (i.e. without directory
-and extension parts), %o by the base directory of the file,
-%latex is the LaTeX compiler (see `org-latex-compiler'), and %bib
-is the BibTeX-like compiler (see `org-latex-bib-compiler').
+relative file name, %F by the absolute file name, %b by the file
+base name (i.e. without directory and extension parts), %o by the
+base directory of the file, %O by the absolute file name of the
+output file, %latex is the LaTeX compiler (see
+`org-latex-compiler'), and %bib is the BibTeX-like compiler (see
+`org-latex-bib-compiler').
 
 The reason why this is a list is that it usually takes several
 runs of `pdflatex', maybe mixed with a call to `bibtex'.  Org
@@ -1483,15 +1486,7 @@ should not be used for floats.  See
 
 (defun org-latex--protect-text (text)
   "Protect special characters in string TEXT and return it."
-  (replace-regexp-in-string
-   "--\\|[\\{}$%&_#~^]"
-   (lambda (m)
-     (cond ((equal m "--") "-{}-")
-	   ((equal m "\\") "\\textbackslash{}")
-	   ((equal m "~") "\\textasciitilde{}")
-	   ((equal m "^") "\\textasciicircum{}")
-	   (t (concat "\\" m))))
-   text nil t))
+  (replace-regexp-in-string "[\\{}$%&_#~^]" "\\\\\\&" text))
 
 (defun org-latex--text-markup (text markup info)
   "Format TEXT depending on MARKUP text markup.
@@ -1505,13 +1500,23 @@ INFO is a plist used as a communication channel.  See
       ;; and use "\\verb" command.
       (verb
        (let ((separator (org-latex--find-verb-separator text)))
-	 (concat "\\verb" separator
+	 (concat "\\verb"
+		 separator
 		 (replace-regexp-in-string "\n" " " text)
 		 separator)))
       ;; Handle the `protectedtexttt' special case: Protect some
       ;; special chars and use "\texttt{%s}" format string.
       (protectedtexttt
-       (format "\\texttt{%s}" (org-latex--protect-text text)))
+       (format "\\texttt{%s}"
+	       (replace-regexp-in-string
+		"--\\|[\\{}$%&_#~^]"
+		(lambda (m)
+		  (cond ((equal m "--") "-{}-")
+			((equal m "\\") "\\textbackslash{}")
+			((equal m "~") "\\textasciitilde{}")
+			((equal m "^") "\\textasciicircum{}")
+			(t (org-latex--protect-text m))))
+		text nil t)))
       ;; Else use format string.
       (t (format fmt text)))))
 
@@ -2040,7 +2045,7 @@ contextual information."
 	 (separator (org-latex--find-verb-separator code)))
     (cl-case (plist-get info :latex-listings)
       ;; Do not use a special package: transcode it verbatim.
-      ((nil) (format "\\texttt{%s}" (org-latex--protect-text code)))
+      ((nil) (format "\\texttt{%s}" (org-latex--text-markup code 'code info)))
       ;; Use minted package.
       (minted
        (let* ((org-lang (org-element-property :language inline-src-block))
@@ -2416,17 +2421,16 @@ DESC is the description part of the link, or the empty string.
 INFO is a plist holding contextual information.  See
 `org-export-data'."
   (let* ((type (org-element-property :type link))
-	 (raw-path (replace-regexp-in-string
-		    "%" "\\%" (org-element-property :path link) nil t))
+	 (raw-path (org-element-property :path link))
 	 ;; Ensure DESC really exists, or set it to nil.
 	 (desc (and (not (string= desc "")) desc))
 	 (imagep (org-export-inline-image-p
 		  link (plist-get info :latex-inline-image-rules)))
-	 (path (cond
-		((member type '("http" "https" "ftp" "mailto" "doi"))
-		 (concat type ":" raw-path))
-		((string= type "file") (org-export-file-uri raw-path))
-		(t raw-path))))
+	 (path (org-latex--protect-text
+		(cond ((member type '("http" "https" "ftp" "mailto" "doi"))
+		       (concat type ":" raw-path))
+		      ((string= type "file") (org-export-file-uri raw-path))
+		      (t raw-path)))))
     (cond
      ;; Link type is handled by a special function.
      ((org-export-custom-protocol-maybe link desc 'latex))
@@ -2695,22 +2699,24 @@ channel."
 DATA is a parse tree or a secondary string.  INFO is a plist
 containing export options.  Modify DATA by side-effect and return it."
   (let ((valid-object-p
-	 ;; Non-nil when OBJ can be added to the latex math block.
-	 (lambda (obj)
+	 ;; Non-nil when OBJ can be added to the latex math block B.
+	 (lambda (obj b)
 	   (pcase (org-element-type obj)
 	     (`entity (org-element-property :latex-math-p obj))
 	     (`latex-fragment
 	      (let ((value (org-element-property :value obj)))
 		(or (string-prefix-p "\\(" value)
 		    (string-match-p "\\`\\$[^$]" value))))
-	     ((or `subscript `superscript) t)))))
+	     ((and type (or `subscript `superscript))
+	      (not (memq type (mapcar #'org-element-type
+				      (org-element-contents b)))))))))
     (org-element-map data '(entity latex-fragment subscript superscript)
       (lambda (object)
 	;; Skip objects already wrapped.
 	(when (and (not (eq (org-element-type
 			     (org-element-property :parent object))
 			    'latex-math-block))
-		   (funcall valid-object-p object))
+		   (funcall valid-object-p object nil))
 	  (let ((math-block (list 'latex-math-block nil))
 		(next-elements (org-export-get-next-element object info t))
 		(last object))
@@ -2722,16 +2728,17 @@ containing export options.  Modify DATA by side-effect and return it."
 	      ;; MATH-BLOCK swallows consecutive math objects.
 	      (catch 'exit
 		(dolist (next next-elements)
-		  (if (not (funcall valid-object-p next)) (throw 'exit nil)
-		    (org-element-extract-element next)
-		    (org-element-adopt-elements math-block next)
-		    ;; Eschew the case: \beta$x$ -> \(\betax\).
-		    (unless (memq (org-element-type next)
-				  '(subscript superscript))
-		      (org-element-put-property last :post-blank 1))
-		    (setq last next)
-		    (when (> (or (org-element-property :post-blank next) 0) 0)
-		      (throw 'exit nil))))))
+		  (unless (funcall valid-object-p next math-block)
+		    (throw 'exit nil))
+		  (org-element-extract-element next)
+		  (org-element-adopt-elements math-block next)
+		  ;; Eschew the case: \beta$x$ -> \(\betax\).
+		  (unless (memq (org-element-type next)
+				'(subscript superscript))
+		    (org-element-put-property last :post-blank 1))
+		  (setq last next)
+		  (when (> (or (org-element-property :post-blank next) 0) 0)
+		    (throw 'exit nil)))))
 	    (org-element-put-property
 	     math-block :post-blank (org-element-property :post-blank last)))))
       info nil '(subscript superscript latex-math-block) t)
@@ -3613,7 +3620,7 @@ produced."
 	(mapc #'delete-file
 	      (directory-files
 	       (file-name-directory outfile)
-	       nil
+	       t
 	       (concat (regexp-quote (file-name-base outfile))
 		       "\\(?:\\.[0-9]+\\)?\\."
 		       (regexp-opt org-latex-logfiles-extensions))
