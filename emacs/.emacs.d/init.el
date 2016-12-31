@@ -427,9 +427,6 @@ Null prefix argument turns off the mode."
          ("C-d" . company-show-doc-buffer)
          ("M-." . company-show-location)))
 
-(use-package company-emoji
-  :config (add-to-list 'company-backends 'company-emoji))
-
 (use-package eldoc
   :ensure nil
   :diminish eldoc-mode
@@ -438,7 +435,8 @@ Null prefix argument turns off the mode."
   (add-hook 'emacs-lisp-mode-hook #'eldoc-mode)
   (add-hook 'cider-mode-hook #'eldoc-mode)
   (add-hook 'cider-repl-mode-hook #'eldoc-mode)
-  (add-hook 'ensime-mode-hook #'eldoc-mode))
+  (add-hook 'ensime-mode-hook #'eldoc-mode)
+  (add-hook 'racer-mode-hook #'eldoc-mode))
 
 (use-package abbrev
   :ensure nil
@@ -545,6 +543,12 @@ Null prefix argument turns off the mode."
 
 ;;;;; rust-mode
 (use-package rust-mode)
+
+;;;;; racer
+(use-package racer
+  :config
+  (setq racer-rust-src-path "/usr/src/rust/src/")
+  (add-hook 'rust-mode-hook #'racer-mode))
 
 ;;;;; cargo
 (use-package cargo
