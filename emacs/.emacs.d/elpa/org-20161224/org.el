@@ -21157,8 +21157,8 @@ This command does many different things, depending on context:
 	     ;; Limit to supported contexts.
 	     '(babel-call clock dynamic-block footnote-definition
 			  footnote-reference inline-babel-call inline-src-block
-			  item keyword node-property paragraph plain-list
-			  property-drawer radio-target src-block
+			  inlinetask item keyword node-property paragraph
+			  plain-list property-drawer radio-target src-block
 			  statistics-cookie table table-cell table-row
 			  timestamp)
 	     t))
@@ -22773,7 +22773,7 @@ be set to a buffer or a buffer name.  `shell-command' then uses
 it for output."
   (let* ((base-name (file-name-base source))
 	 (full-name (file-truename source))
-	 (out-dir (file-name-directory source))
+	 (out-dir (or (file-name-directory source) "./"))
 	 (output (expand-file-name (concat base-name "." ext) out-dir))
 	 (time (current-time))
 	 (err-msg (if (stringp err-msg) (concat ".  " err-msg) "")))

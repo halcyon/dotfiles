@@ -9,9 +9,9 @@
 ;;       Bozhidar Batsov <bozhidar@batsov.com>
 ;;       Artur Malabarba <bruce.connor.am@gmail.com>
 ;; URL: http://github.com/clojure-emacs/clojure-mode
-;; Package-Version: 5.6.0
+;; Package-Version: 5.6.1
 ;; Keywords: languages clojure clojurescript lisp
-;; Version: 5.6.0
+;; Version: 5.6.1
 ;; Package-Requires: ((emacs "24.4"))
 
 ;; This file is not part of GNU Emacs.
@@ -80,7 +80,7 @@
   :link '(url-link :tag "Github" "https://github.com/clojure-emacs/clojure-mode")
   :link '(emacs-commentary-link :tag "Commentary" "clojure-mode"))
 
-(defconst clojure-mode-version "5.5.2"
+(defconst clojure-mode-version "5.6.1"
   "The current version of `clojure-mode'.")
 
 (defface clojure-keyword-face
@@ -195,7 +195,6 @@ Out-of-the box clojure-mode understands lein, boot and gradle."
 
 (defcustom clojure-refactor-map-prefix (kbd "C-c C-r")
   "Clojure refactor keymap prefix."
-  :group 'clojure
   :type 'string
   :package-version '(clojure-mode . "5.6.0"))
 
@@ -2195,23 +2194,20 @@ BINDINGS is the list of bound names and init expressions, END denotes the end of
 Return a list: odd elements are bound names, even elements init expressions."
   (clojure--goto-let)
   (down-list 2)
-  (backward-char)
   (let* ((start (point))
          (sexp-start start)
          (end (save-excursion
+                (backward-char)
                 (forward-sexp)
                 (down-list -1)
                 (point)))
          bindings)
-    (forward-char)
     (while (/= sexp-start end)
       (forward-sexp)
-      (let ((sexp (buffer-substring-no-properties sexp-start (point))))
-        (push (string-trim
-               (if (= start sexp-start)
-                   (substring sexp 1)
-                 sexp))
-              bindings))
+      (push
+       (string-trim (buffer-substring-no-properties sexp-start (point)))
+       bindings)
+      (skip-chars-forward "\r\n\t[:blank:]")
       (setq sexp-start (point)))
     (nreverse bindings)))
 

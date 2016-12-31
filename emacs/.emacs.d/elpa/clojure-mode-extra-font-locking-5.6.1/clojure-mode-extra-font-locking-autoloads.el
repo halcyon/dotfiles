@@ -4,7 +4,7 @@
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
 ;;;### (autoloads nil nil ("clojure-mode-extra-font-locking.el")
-;;;;;;  (22579 55557 895841 886000))
+;;;;;;  (22629 33145 933625 164000))
 
 ;;;***
 
