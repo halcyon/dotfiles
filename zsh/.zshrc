@@ -69,6 +69,8 @@ alias sdcv='sdcv --utf8-input --utf8-output --color'
 
 export BROWSER=vivaldi-stable
 
+source $HOME/.cargo/env
+
 if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/dotfiles-private/zsh/zsh-private
