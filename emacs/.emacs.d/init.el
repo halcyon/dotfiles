@@ -69,6 +69,7 @@
         (let ((map (copy-keymap xterm-function-map)))
           (set-keymap-parent map (keymap-parent input-decode-map))
           (set-keymap-parent input-decode-map map))))
+  (define-key key-translation-map "\e[39;6" (kbd "C-'"))
   (define-key key-translation-map "\e[116;6" (kbd "C-t"))
   (define-key key-translation-map "\e[65;6" (kbd "C-S-a"))
   (define-key key-translation-map "\e[68;6" (kbd "C-S-d"))
