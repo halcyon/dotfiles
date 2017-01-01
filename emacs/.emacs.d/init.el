@@ -322,6 +322,17 @@ Null prefix argument turns off the mode."
 (use-package projectile
   :config (projectile-global-mode))
 
+;;;;; avy
+(use-package avy
+  :config
+  (avy-setup-default)
+  ;; (setq avy-keys
+  ;;       (nconc (number-sequence ?a ?z)
+  ;;            (number-sequence ?A ?Z)
+  ;;            (number-sequence ?1 ?9)
+  ;;            '(?0)))
+  )
+
 ;;;;; helm
 (use-package helm
   :config
