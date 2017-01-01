@@ -685,21 +685,6 @@ Null prefix argument turns off the mode."
   (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
   (provide 'SQLi-mode))
 
-;;;;; slack
-(use-package alert
-  :commands alert)
-(use-package slack
-  :quelpa (slack :fetcher github
-                 :repo "yuya373/emacs-slack")
-  :commands slack-start
-  :config
-  (setq slack-buffer-emojify t
-        slack-prefer-current-team t)
-  (defadvice slack-start
-      (before register-slack-teams activate)
-    "Registers slack teams before starting slack."
-    (require 'slack-connections "~/dotfiles-private/emacs/slack-connections.el.gpg")))
-
 ;;;; windows
 ;;;;; buffer-move
 (use-package buffer-move
