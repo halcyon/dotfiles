@@ -665,11 +665,6 @@ Null prefix argument turns off the mode."
   :bind (("C-x C-g" . git-gutter-mode)
          ("C-x v =" . git-gutter:popup-hunk)))
 
-;;;;; google-contacts
-(use-package google-contacts
-  :quelpa (google-contacts :fetcher github
-                           :repo "jd/google-contacts.el"))
-
 ;;;;; SQLi-mode
 (use-package SQLi-mode
   :ensure nil
@@ -688,8 +683,6 @@ Null prefix argument turns off the mode."
     (sql-connect 'webicon-oracle 'webicon-oracle))
   (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
   (provide 'SQLi-mode))
-
-
 
 ;;;;; escreen
 (use-package escreen
