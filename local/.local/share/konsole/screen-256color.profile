@@ -8,6 +8,9 @@ UseFontLineChararacters=true
 CustomCursorColor=255,255,0
 UseCustomCursorColor=false
 
+[Encoding Options]
+DefaultEncoding=UTF-8
+
 [General]
 Command=/usr/bin/zsh -c /usr/bin/tmux
 Environment=TERM=screen-256color
@@ -21,9 +24,6 @@ TerminalRows=24
 CtrlRequiredForDrag=false
 MiddleClickPasteMode=1
 MouseWheelZoomEnabled=false
-
-[Keyboard]
-KeyBindings=screen-256color
 
 [Scrolling]
 ScrollBarPosition=2

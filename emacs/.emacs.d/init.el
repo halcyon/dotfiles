@@ -70,7 +70,6 @@
           (set-keymap-parent map (keymap-parent input-decode-map))
           (set-keymap-parent input-decode-map map))))
   (define-key key-translation-map "\e[39;6" (kbd "C-'"))
-  (define-key key-translation-map "\e[116;6" (kbd "C-t"))
   (define-key key-translation-map "\e[65;6" (kbd "C-S-a"))
   (define-key key-translation-map "\e[68;6" (kbd "C-S-d"))
   (define-key key-translation-map "\e[86;8" (kbd "C-M-S-v"))
@@ -209,8 +208,7 @@ Null prefix argument turns off the mode."
   ;;; C-x C-j opens dired with the cursor right on the file you're editing
   ;;; C-x 4 C-j opens dired in a separate window
   ;;; `brew install coreutils` to install gnu ls on mac
-  :ensure nil
-  :config (setq insert-directory-program "gls"))
+  :ensure nil)
 
 ;;;;; org
 
