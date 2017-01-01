@@ -1,0 +1,15 @@
+#"xvkbd -no-jump-pointer -xsendevent -text "\Cx@c'""
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[39;6""
+Control + apostrophe
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[65;6""
+Control + Shift + A
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[86;8""
+Control + Alt + Shift + v
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[68;6""
+Control + Shift + d
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[116;6""
+Control + t
