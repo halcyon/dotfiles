@@ -331,6 +331,10 @@ Null prefix argument turns off the mode."
   ;;            '(?0)))
   )
 
+;;;;; ace-window
+(use-package ace-window
+  :bind ("M-p" . ace-window))
+
 ;;;;; helm
 (use-package helm
   :config
@@ -685,27 +689,7 @@ Null prefix argument turns off the mode."
   (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
   (provide 'SQLi-mode))
 
-;;;; windows
-;;;;; buffer-move
-(use-package buffer-move
-  ;;; Swaps the window with an adjacent window
-  :bind (("<C-S-up>" . buf-move-up)
-         ("<C-S-down>" . buf-move-down)
-         ("<C-S-left>" . buf-move-left)
-         ("<C-S-right>" . buf-move-right)))
 
-;;;;; wind-move
-(use-package wind-move
-  ;;; Lets you move point from window to window using Shift and the arrow keys
-  :ensure nil
-  :init
-  (windmove-default-keybindings)
-  (provide 'wind-move))
-
-;;;;; window-numbering
-(use-package window-numbering
-  ;;; Number windows in mode line and navigate using M-1 through M-0
-  :config (window-numbering-mode))
 
 ;;;;; escreen
 (use-package escreen
