@@ -21,9 +21,11 @@ StartInCurrentSessionDir=false
 TerminalRows=24
 
 [Interaction Options]
+AutoCopySelectedText=true
 CtrlRequiredForDrag=false
 MiddleClickPasteMode=1
 MouseWheelZoomEnabled=false
+TrimTrailingSpacesInSelectedText=true
 
 [Scrolling]
 ScrollBarPosition=2
