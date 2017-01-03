@@ -26,6 +26,7 @@ CtrlRequiredForDrag=false
 MiddleClickPasteMode=1
 MouseWheelZoomEnabled=false
 TrimTrailingSpacesInSelectedText=true
+UnderlineLinksEnabled=false
 
 [Scrolling]
 ScrollBarPosition=2

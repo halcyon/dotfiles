@@ -71,6 +71,10 @@ export BROWSER=vivaldi-stable
 
 source $HOME/.cargo/env
 
+function youtube-playlist() {
+    youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' -o "%(playlist_index)s-%(title)s.%(ext)s" ${1}
+}
+
 if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/dotfiles-private/zsh/zsh-private
