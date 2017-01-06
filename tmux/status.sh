@@ -7,7 +7,7 @@ else
     VPN=""
 fi
 
-SYSTEM_BATTERY=$(acpi | grep -i Unknown | awk -F, '{print $2}' | awk '{$1=$1;print}')
+SYSTEM_BATTERY=$(acpi | awk -F, '{print $2}' | awk '{$1=$1;print}')
 # KEYBOARD_BATTERY=$(cat /sys/class/power_supply/hid-04:db:56:db:5d:96-battery/capacity ||
 #                        cat /sys/class/power_supply/hid-e8:06:88:54:b1:d4-battery/capacity)
 # TRACKPAD_BATTERY=$(cat /sys/class/power_supply/hid-60:c5:47:81:45:70-battery/capacity ||
