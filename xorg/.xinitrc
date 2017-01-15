@@ -35,4 +35,4 @@ fi
 /usr/bin/xbindkeys
 /usr/bin/xset r rate 200 50
 /usr/bin/syndaemon -i 0.8 -R -d
-/usr/local/bin/stumpwm
+/usr/bin/stumpwm
