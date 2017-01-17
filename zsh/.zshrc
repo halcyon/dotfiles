@@ -79,3 +79,6 @@ if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/dotfiles-private/zsh/zsh-private
 fi
+
+export NVM_DIR="/home/smcleod/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
