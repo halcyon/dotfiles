@@ -1610,9 +1610,9 @@ only."
             (helm-empty-source-p))
         0
         (save-excursion
-          (if in-current-source
-              (goto-char (helm-get-previous-header-pos))
-              (goto-char (point-min)))
+          (helm-aif (and in-current-source (helm-get-previous-header-pos))
+              (goto-char it)
+            (goto-char (point-min)))
           (forward-line 1)
           (if (helm-pos-multiline-p)
               (cl-loop with count-multi = 1
@@ -5058,9 +5058,11 @@ If SPLIT-ONEWINDOW is non-`nil' window is split in persistent action."
   "Select the window that will be used for persistent action.
 See `helm-persistent-action-display-window' for how to use SPLIT-ONEWINDOW."
   (select-window (get-buffer-window (helm-buffer-get)))
-  (select-window
-   (setq minibuffer-scroll-window
-         (helm-persistent-action-display-window split-onewindow))))
+  (prog1
+      (select-window
+       (setq minibuffer-scroll-window
+             (helm-persistent-action-display-window split-onewindow)))
+    (helm-log "Selected window is %S" minibuffer-scroll-window)))
 
 ;;; Scrolling - recentering
 ;;
