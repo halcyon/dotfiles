@@ -15,11 +15,11 @@
       (eval-command cmd t))))
 
 ;; Read some doc
-(define-key *root-map* (kbd "d") "exec gv")
+;; (define-key *root-map* (kbd "d") "exec gv")
 ;; Browse somewhere
 ;; (define-key *root-map* (kbd "b") "colon1 exec firefox http://www.")
 ;; Lock screen
-(define-key *root-map* (kbd "C-l") "exec xlock")
+;; (define-key *root-map* (kbd "C-l") "exec xlock")
 
 ;; Web jump (works for Google and Imdb)
 (defmacro make-web-jump (name prefix)
@@ -31,8 +31,8 @@
 (make-web-jump "imdb" "firefox http://www.imdb.com/find?q=")
 
 ;; C-t M-s is a terrble binding, but you get the idea.
-(define-key *root-map* (kbd "M-s") "google")
-(define-key *root-map* (kbd "i") "imdb")
+;; (define-key *root-map* (kbd "M-s") "google")
+;; (define-key *root-map* (kbd "i") "imdb")
 
 ;; Message window font
 (set-font "-xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso8859-15")
