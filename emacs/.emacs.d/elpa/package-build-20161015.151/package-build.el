@@ -7,7 +7,7 @@
 ;; Author: Donald Ephraim Curtis <dcurtis@milkbox.net>
 ;; Created: 2011-09-30
 ;; Version: 0.1
-;; Package-Version: 20161014.2251
+;; Package-Version: 20161015.151
 ;; Keywords: tools
 ;; Package-Requires: ((cl-lib "0.5"))
 

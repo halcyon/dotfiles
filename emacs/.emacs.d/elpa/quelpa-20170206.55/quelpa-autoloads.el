@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "quelpa" "quelpa.el" (22568 4126 170000 1000))
+;;;### (autoloads nil "quelpa" "quelpa.el" (22698 30523 241 188000))
 ;;; Generated autoloads from quelpa.el
 
 (autoload 'quelpa-expand-recipe "quelpa" "\
@@ -38,6 +38,11 @@ C-u M-x quelpa) it will try to upgrade the given package even if
 the global var `quelpa-upgrade-p' is set to nil.
 
 \(fn ARG &rest PLIST)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("bootstrap.el" "quelpa-pkg.el") (22698
+;;;;;;  30523 241 188000))
 
 ;;;***
 
