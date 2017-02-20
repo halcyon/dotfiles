@@ -7,9 +7,9 @@
 ;;     Sebastian Wiesner <swiesner@lunaryorn.com>
 ;; Maintainer: Sebastian Wiesner <swiesner@lunaryorn.com>
 ;; URL: https://github.com/flycheck/flycheck-pos-tip
-;; Package-Version: 20161112.1712
+;; Package-Version: 0.3
 ;; Keywords: tools, convenience
-;; Version: 0.4-cvs
+;; Version: 0.3
 ;; Package-Requires: ((emacs "24.1") (flycheck "0.22") (pos-tip "0.4.6"))
 
 ;; This file is not part of GNU Emacs.
@@ -108,28 +108,18 @@ TTY frames."
   :global t
   :group 'flycheck
   (let ((hooks '(post-command-hook focus-out-hook)))
-    (cond
-     ;; Use our display function and remember the old one but only if we haven't
-     ;; yet configured it, to avoid activating twice.
-     ((and flycheck-pos-tip-mode
-           (not (eq flycheck-display-errors-function
-                    #'flycheck-pos-tip-error-messages)))
-      (setq flycheck-pos-tip-old-display-function
-            flycheck-display-errors-function
-            flycheck-display-errors-function
-            #'flycheck-pos-tip-error-messages)
-      (dolist (hook hooks)
-        (add-hook hook #'flycheck-pos-tip-hide-messages)))
-     ;; Reset the display function and remove ourselves from all hooks but only
-     ;; if the mode is still active.
-     ((and (not flycheck-pos-tip-mode)
-           (eq flycheck-display-errors-function
-               #'flycheck-pos-tip-error-messages))
+    (if flycheck-pos-tip-mode
+        (progn
+          (setq flycheck-pos-tip-old-display-function
+                flycheck-display-errors-function
+                flycheck-display-errors-function
+                #'flycheck-pos-tip-error-messages)
+          (dolist (hook hooks)
+            (add-hook hook #'flycheck-pos-tip-hide-messages)))
       (setq flycheck-display-errors-function
-            flycheck-pos-tip-old-display-function
-            flycheck-pos-tip-old-display-function nil)
+            flycheck-pos-tip-old-display-function)
       (dolist (hook hooks)
-        (remove-hook hook 'flycheck-pos-tip-hide-messages))))))
+        (remove-hook hook 'flycheck-pos-tip-hide-messages)))))
 
 (provide 'flycheck-pos-tip)
 

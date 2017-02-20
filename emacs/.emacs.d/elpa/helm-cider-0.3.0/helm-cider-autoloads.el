@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-cider" "helm-cider.el" (22568 4224 873333
-;;;;;;  335000))
+;;;### (autoloads nil "helm-cider" "helm-cider.el" (22698 29513 664490
+;;;;;;  7000))
 ;;; Generated autoloads from helm-cider.el
 
 (autoload 'helm-cider-apropos-symbol "helm-cider" "\
@@ -76,6 +76,38 @@ or call the function `helm-cider-mode'.")
 Use Helm for CIDER.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "helm-cider-repl" "helm-cider-repl.el" (22698
+;;;;;;  29513 654490 354000))
+;;; Generated autoloads from helm-cider-repl.el
+
+(autoload 'helm-cider-repl-history-insert "helm-cider-repl" "\
+Insert candidate at the last CIDER REPL prompt.
+
+Existing input at the prompt is cleared.
+
+This function is meant to be one of `helm-cider-repl-history-actions'.
+
+\(fn CANDIDATE)" nil nil)
+
+(autoload 'helm-cider-repl-history-delete "helm-cider-repl" "\
+Delete marked candidates from `cider-repl-input-history'.
+
+This function is meant to be one of `helm-cider-repl-history-actions'.
+
+\(fn CANDIDATE)" nil nil)
+
+(autoload 'helm-cider-repl-history "helm-cider-repl" "\
+Helm interface to CIDER REPL history.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("helm-cider-pkg.el") (22698 29513 644490
+;;;;;;  705000))
 
 ;;;***
 

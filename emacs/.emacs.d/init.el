@@ -161,7 +161,7 @@ Null prefix argument turns off the mode."
   (setq outshine-use-speed-commands t)
   (add-hook 'outline-minor-mode-hook #'outshine-hook-function)
   (add-hook 'emacs-lisp-mode-hook #'outline-minor-mode)
-  :bind (("<S-tab>" . outshine-cycle-buffer)))
+  :bind (("<backtab>" . outshine-cycle-buffer)))
 
 ;;;;; visual-settings
 (use-package visual-settings
@@ -222,9 +222,7 @@ Null prefix argument turns off the mode."
 
 ;;;;; org
 
-(use-package htmlize
-  :quelpa (htmlize :repo "dunn/htmlize-mirror"
-                   :fetcher github))
+(use-package htmlize)
 
 (use-package ox-gfm
   :quelpa (ox-gfm :fetcher github
@@ -358,9 +356,7 @@ Null prefix argument turns off the mode."
 (use-package helm-ag)
 
 ;;;;; helm-cider
-(use-package helm-cider
-  :quelpa (helm-cider :fetcher github
-                      :repo "clojure-emacs/helm-cider"))
+(use-package helm-cider)
 
 ;;;;; helm-clojuredocs
 (use-package helm-clojuredocs
@@ -558,8 +554,6 @@ Null prefix argument turns off the mode."
 
 ;;;;; flycheck-pos-tip
 (use-package flycheck-pos-tip
-  :quelpa (flycheck-pos-tip :repo "flycheck/flycheck-pos-tip"
-                            :fetcher github)
   :config
   (setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 

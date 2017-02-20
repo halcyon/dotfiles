@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "flycheck-pos-tip" "flycheck-pos-tip.el" (22568
-;;;;;;  4278 610000 1000))
+;;;### (autoloads nil "flycheck-pos-tip" "flycheck-pos-tip.el" (22698
+;;;;;;  29514 444462 805000))
 ;;; Generated autoloads from flycheck-pos-tip.el
 
 (defvar flycheck-pos-tip-mode nil "\
