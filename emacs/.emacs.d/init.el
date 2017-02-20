@@ -134,6 +134,19 @@ Null prefix argument turns off the mode."
     "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
   (put 'cider-cljs-lein-repl 'safe-local-variable #'stringp))
 
+;;;;; company
+(use-package company
+  :diminish company-mode
+  :init (add-hook 'after-init-hook #'global-company-mode)
+  :bind (("C-M-i" . company-complete)
+         :map emacs-lisp-mode-map
+         ("C-M-i" . company-complete)
+         :map company-active-map
+         ("C-n" . company-select-next)
+         ("C-p" . company-select-previous)
+         ("C-d" . company-show-doc-buffer)
+         ("M-." . company-show-location)))
+
 ;;;;; outshine
 (use-package outorg
   :quelpa (outorg :fetcher github
@@ -162,8 +175,6 @@ Null prefix argument turns off the mode."
 
 ;;;;; zenburn-theme
 (use-package zenburn-theme
-  :quelpa (zenburn-theme :fetcher github
-                         :repo "bbatsov/zenburn-emacs")
   :config (set-face-background 'hl-line "color-240"))
 
 ;;;;; scratch
@@ -418,27 +429,14 @@ Null prefix argument turns off the mode."
                       :fetcher github
                       :files ("restclient.el")))
 
-;;;;; ensime
-(use-package ensime
-  :quelpa (ensime :fetcher github
-                  :repo "ensime/ensime-emacs")
-  :commands ensime ensime-mode)
+;; ;;;;; ensime
+;; (use-package ensime
+;;   :quelpa (ensime :fetcher github
+;;                   :repo "ensime/ensime-emacs")
+;;   :commands ensime ensime-mode)
 
 ;;;;; emmet-mode
 (use-package emmet-mode)
-
-;;;;; company
-(use-package company
-  :diminish company-mode
-  :init (add-hook 'after-init-hook #'global-company-mode)
-  :bind (("C-M-i" . company-complete)
-         :map emacs-lisp-mode-map
-         ("C-M-i" . company-complete)
-         :map company-active-map
-         ("C-n" . company-select-next)
-         ("C-p" . company-select-previous)
-         ("C-d" . company-show-doc-buffer)
-         ("M-." . company-show-location)))
 
 (use-package eldoc
   :ensure nil
@@ -477,22 +475,8 @@ Null prefix argument turns off the mode."
                     :repo "tonini/overseer.el"))
 
 ;;;;; slime
-(use-package slime-company
-  :quelpa (slime-company :fetcher github
-                         :repo "anwyn/slime-company"))
+(use-package slime-company)
 (use-package slime
-  :quelpa (slime :repo "slime/slime"
-                 :fetcher github
-                 :files ("*.el"
-                         ("lib" "lib/hyperspec.el")
-                         "swank"
-                         "*.lisp"
-                         "*.asd"
-                         ("contrib" "contrib/*" (:exclude "contrib/test"))
-                         "doc/slime.texi"
-                         "doc/slime.info"
-                         "doc/dir"
-                         "ChangeLog"))
   :init
   (setq slime-lisp-implementations '((sbcl ("sbcl"))
                                      (mit-scheme ("mit-scheme") :init mit-scheme-init))
@@ -647,14 +631,8 @@ Null prefix argument turns off the mode."
   :bind ("C-x C-z" . magit-status))
 
 ;;;;; gist
-(use-package gh
-  :quelpa (gh :fetcher github
-              :repo "sigma/gh.el"
-              :stable t))
-(use-package gist
-  :quelpa (gist :fetcher github
-                :repo "defunkt/gist.el"
-                :stable t))
+(use-package gh)
+(use-package gist)
 
 ;;;;; git-gutter
 (use-package git-gutter

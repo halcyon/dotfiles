@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "gh-api" "gh-api.el" (22568 4296 250000 2000))
-;;; Generated autoloads from gh-api.el
+;;;### (autoloads nil "gh-api" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-api.el"
+;;;;;;  "294e2cf605135360b78ec934364a5d48")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-api.el
 
 (require 'eieio)
 
@@ -14,8 +15,9 @@
 
 ;;;***
 
-;;;### (autoloads nil "gh-auth" "gh-auth.el" (22568 4296 246666 668000))
-;;; Generated autoloads from gh-auth.el
+;;;### (autoloads nil "gh-auth" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-auth.el"
+;;;;;;  "8b6a0c604702d9da75a77827a7ddd21f")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-auth.el
 
 (require 'eieio)
 
@@ -27,24 +29,25 @@
 
 ;;;***
 
-;;;### (autoloads nil "gh-cache" "gh-cache.el" (22568 4296 246666
-;;;;;;  668000))
-;;; Generated autoloads from gh-cache.el
+;;;### (autoloads nil "gh-cache" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-cache.el"
+;;;;;;  "691a34d11fd5e51d0c82289de791088f")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-cache.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads nil "gh-common" "gh-common.el" (22568 4296 243333
-;;;;;;  335000))
-;;; Generated autoloads from gh-common.el
+;;;### (autoloads nil "gh-common" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-common.el"
+;;;;;;  "6a4c16b67da5711a3f27e2e35d5dfbf0")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-common.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads nil "gh-gist" "gh-gist.el" (22568 4296 243333 335000))
-;;; Generated autoloads from gh-gist.el
+;;;### (autoloads nil "gh-gist" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-gist.el"
+;;;;;;  "31df857ce454c2056a8dfc829b813654")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-gist.el
 
 (require 'eieio)
 
@@ -56,25 +59,25 @@
 
 ;;;***
 
-;;;### (autoloads nil "gh-issue-comments" "gh-issue-comments.el"
-;;;;;;  (22568 4296 243333 335000))
-;;; Generated autoloads from gh-issue-comments.el
+;;;### (autoloads nil "gh-issue-comments" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-issue-comments.el"
+;;;;;;  "4788bfa397bdd1c300c6338257ba08b1")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-issue-comments.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads nil "gh-issues" "gh-issues.el" (22568 4296 240000
-;;;;;;  1000))
-;;; Generated autoloads from gh-issues.el
+;;;### (autoloads nil "gh-issues" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-issues.el"
+;;;;;;  "d67c03ac3962b0a7e0c7510dba3070ba")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-issues.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads nil "gh-oauth" "gh-oauth.el" (22568 4296 240000
-;;;;;;  1000))
-;;; Generated autoloads from gh-oauth.el
+;;;### (autoloads nil "gh-oauth" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-oauth.el"
+;;;;;;  "6a6e10c2a5195685fc0c77bb0e1df59f")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-oauth.el
 
 (require 'eieio)
 
@@ -82,8 +85,9 @@
 
 ;;;***
 
-;;;### (autoloads nil "gh-orgs" "gh-orgs.el" (22568 4296 236666 668000))
-;;; Generated autoloads from gh-orgs.el
+;;;### (autoloads nil "gh-orgs" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-orgs.el"
+;;;;;;  "5e5937518df66a4dc454f0106708f46a")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-orgs.el
 
 (require 'eieio)
 
@@ -93,17 +97,17 @@
 
 ;;;***
 
-;;;### (autoloads nil "gh-pull-comments" "gh-pull-comments.el" (22568
-;;;;;;  4296 233333 334000))
-;;; Generated autoloads from gh-pull-comments.el
+;;;### (autoloads nil "gh-pull-comments" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pull-comments.el"
+;;;;;;  "63ee84fa38f80a08fe703a83f4d44eb9")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-pull-comments.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads nil "gh-pulls" "gh-pulls.el" (22568 4296 230000
-;;;;;;  2000))
-;;; Generated autoloads from gh-pulls.el
+;;;### (autoloads nil "gh-pulls" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pulls.el"
+;;;;;;  "9ddb4a1267beb893d2f2c8167524262a")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-pulls.el
 
 (require 'eieio)
 
@@ -113,9 +117,9 @@
 
 ;;;***
 
-;;;### (autoloads nil "gh-repos" "gh-repos.el" (22568 4296 230000
-;;;;;;  2000))
-;;; Generated autoloads from gh-repos.el
+;;;### (autoloads nil "gh-repos" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-repos.el"
+;;;;;;  "da618d76a8e1da1185df9d6d8a597d0a")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-repos.el
 
 (require 'eieio)
 
@@ -127,16 +131,17 @@
 
 ;;;***
 
-;;;### (autoloads nil "gh-url" "gh-url.el" (22568 4296 226666 668000))
-;;; Generated autoloads from gh-url.el
+;;;### (autoloads nil "gh-url" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-url.el"
+;;;;;;  "907ce9c34dd4a147b2fb366fcaa60877")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-url.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads nil "gh-users" "gh-users.el" (22568 4296 223333
-;;;;;;  335000))
-;;; Generated autoloads from gh-users.el
+;;;### (autoloads nil "gh-users" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-users.el"
+;;;;;;  "1f5256d02936faab702d1936a2d1e1dc")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-users.el
 
 (require 'eieio)
 
@@ -146,8 +151,17 @@
 
 ;;;***
 
-;;;### (autoloads nil nil ("gh-pkg.el" "gh-profile.el" "gh-search.el"
-;;;;;;  "gh.el") (22568 4296 236666 668000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/gh-0.10.0/gh-api.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-auth.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-cache.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-common.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-gist.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-issue-comments.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-issues.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-oauth.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-orgs.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-profile.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pull-comments.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pulls.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-repos.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-search.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-url.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-users.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh.el")
+;;;;;;  (22698 28184 720697 867000))
 
 ;;;***
 
