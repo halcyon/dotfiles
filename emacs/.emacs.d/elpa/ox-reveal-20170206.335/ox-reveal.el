@@ -5,7 +5,7 @@
 ;; Author: Yujie Wen <yjwen.ty at gmail dot com>
 ;; Created: 2013-04-27
 ;; Version: 1.0
-;; Package-Version: 20161104.252
+;; Package-Version: 20170206.335
 ;; Package-Requires: ((org "20150330"))
 ;; Keywords: outlines, hypermedia, slideshow, presentation
 
@@ -65,6 +65,8 @@
     (:reveal-extra-js "REVEAL_EXTRA_JS" nil org-reveal-extra-js nil)
     (:reveal-hlevel "REVEAL_HLEVEL" nil nil t)
     (:reveal-title-slide nil "reveal_title_slide" org-reveal-title-slide t)
+    (:reveal-slide-global-header nil "reveal_global_header" org-reveal-global-header t)
+    (:reveal-slide-global-footer nil "reveal_global_footer" org-reveal-global-footer t)
     (:reveal-title-slide-background "REVEAL_TITLE_SLIDE_BACKGROUND" nil nil t)
     (:reveal-title-slide-background-size "REVEAL_TITLE_SLIDE_BACKGROUND_SIZE" nil nil t)
     (:reveal-title-slide-background-position "REVEAL_TITLE_SLIDE_BACKGROUND_POSITION" nil nil t)
@@ -297,6 +299,18 @@ content."
   :group 'org-export-reveal
   :type 'string)
 
+(defcustom org-reveal-global-header nil
+  "If non nil, slide header defined in org-reveal-slide-header
+  is displayed also on title and toc slide"
+  :group 'org-export-reveal
+  :type 'boolean)
+
+(defcustom org-reveal-global-footer nil
+  "If non nil, slide footer defined in org-reveal-slide-footer
+  is displayed also on title and toc slide"
+  :group 'org-export-reveal
+  :type 'boolean)
+
 (defcustom org-reveal-slide-footer nil
   "HTML content used as Reveal.js slide footer"
   :group 'org-export-reveal
@@ -320,6 +334,15 @@ content."
           (const search)
           (const remotes)
           (const multiplex)))
+
+(defcustom org-reveal-external-plugins nil
+  "Additional third-party Plugins to load with reveal.
+Each entry should contain a name and an expression of the form
+\"{src: '%srelative/path/from/reveal/root', async:true/false,condition: jscallbackfunction(){}}\"
+Note that some plugins have dependencies such as jquery; these must be included here as well,
+BEFORE the plugins that depend on them."
+  :group 'org-export-reveal
+  :type 'alist)
 
 (defcustom org-reveal-single-file nil
   "Export presentation into one single HTML file, which embedded
@@ -707,10 +730,13 @@ dependencies: [
                                          (wrong-type-argument nil))))
                    (or (and buffer-plugins (listp buffer-plugins) buffer-plugins)
                        org-reveal-plugins))))
+               (external-plugins
+                (cl-loop for (key . value) in org-reveal-external-plugins
+                         collect (format  value root-path )) )
+               (all-plugins (if external-plugins (append external-plugins builtin-codes) builtin-codes))
                (extra-codes (plist-get info :reveal-extra-js))
                (total-codes
-                (if (string= "" extra-codes) builtin-codes
-                  (append (list extra-codes) builtin-codes))))
+                (if (string= "" extra-codes) all-plugins (append (list extra-codes) all-plugins))                ))
           (mapconcat 'identity total-codes ",\n"))
         "]\n"
          ))
@@ -721,9 +747,18 @@ dependencies: [
 (defun org-reveal-toc (depth info)
   "Build a slide of table of contents."
   (let ((toc (org-html-toc depth info)))
-    (if toc
-        (format "<section id=\"table-of-contents\">\n%s</section>\n"
-                (replace-regexp-in-string "<a href=\"#" "<a href=\"#/slide-" toc)))))
+    (when toc
+      (let ((toc-slide-with-header (plist-get info :reveal-slide-global-header))
+            (toc-slide-with-footer (plist-get info :reveal-slide-global-footer)))
+        (concat "<section id=\"table-of-contents\">\n"
+                (when toc-slide-with-header
+                   (let ((header (plist-get info :reveal-slide-header)))
+                     (when header (format "<div class=\"slide-header\">%s</div>\n" header))))
+                (replace-regexp-in-string "<a href=\"#" "<a href=\"#/slide-" toc)
+                (when toc-slide-with-footer
+                   (let ((footer (plist-get info :reveal-slide-footer)))
+                     (when footer (format "<div class=\"slide-footer\">%s</div>\n" footer))))
+                "</section>\n")))))
 
 (defun org-reveal-inner-template (contents info)
   "Return body of document string after HTML conversion.
@@ -1045,7 +1080,9 @@ info is a plist holding export options."
              (title-slide-background-size (plist-get info :reveal-title-slide-background-size))
              (title-slide-background-position (plist-get info :reveal-title-slide-background-position))
              (title-slide-background-repeat (plist-get info :reveal-title-slide-background-repeat))
-             (title-slide-background-transition (plist-get info :reveal-title-slide-background-transition)))
+             (title-slide-background-transition (plist-get info :reveal-title-slide-background-transition))
+             (title-slide-with-header (plist-get info :reveal-slide-global-header))
+             (title-slide-with-footer (plist-get info :reveal-slide-global-footer)))
          (concat "<section id=\"sec-title-slide\""
                  (when title-slide-background
                    (concat " data-background=\"" title-slide-background "\""))
@@ -1058,10 +1095,17 @@ info is a plist holding export options."
                  (when title-slide-background-transition
                    (concat " data-background-transition=\"" title-slide-background-transition "\""))
                  ">"
+                 (when title-slide-with-header
+                   (let ((header (plist-get info :reveal-slide-header)))
+                     (when header (format "<div class=\"slide-header\">%s</div>\n" header))))
                  (cond ((eq title-slide nil) nil)
                        ((stringp title-slide) (format-spec title-slide (org-html-format-spec info)))
                        ((eq title-slide 'auto) (org-reveal--auto-title-slide-template info)))
-                 "\n</section>\n"))))
+                 "\n"
+                 (when title-slide-with-footer
+                   (let ((footer (plist-get info :reveal-slide-footer)))
+                     (when footer (format "<div class=\"slide-footer\">%s</div>\n" footer))))
+                 "</section>\n"))))
    contents
    "</div>
 </div>\n"

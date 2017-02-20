@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "overseer" "overseer.el" (22568 4259 290000
-;;;;;;  2000))
+;;;### (autoloads nil "overseer" "overseer.el" (22698 30670 685386
+;;;;;;  255000))
 ;;; Generated autoloads from overseer.el
 
 (autoload 'overseer-version "overseer" "\

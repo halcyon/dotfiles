@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "bind-key" "bind-key.el" (22692 28116 877493
-;;;;;;  428000))
+;;;### (autoloads nil "bind-key" "bind-key.el" (22698 30692 784654
+;;;;;;  659000))
 ;;; Generated autoloads from bind-key.el
 
 (autoload 'bind-key "bind-key" "\
@@ -64,9 +64,23 @@ Display all the personal keybindings defined by `bind-key'.
 
 ;;;***
 
-;;;### (autoloads nil "use-package" "use-package.el" (22692 28116
-;;;;;;  877493 428000))
+;;;### (autoloads nil "use-package" "use-package.el" (22698 30692
+;;;;;;  764655 320000))
 ;;; Generated autoloads from use-package.el
+
+(autoload 'use-package-autoload-keymap "use-package" "\
+Loads PACKAGE and then binds the key sequence used to invoke
+this function to KEYMAP-SYMBOL.  It then simulates pressing the
+same key sequence a again, so that the next key pressed is routed
+to the newly loaded keymap.
+
+This function supports use-package's :bind-keymap keyword.  It
+works by binding the given key sequence to an invocation of this
+function for a particular keymap.  The keymap is expected to be
+defined by the package.  In this way, loading the package is
+deferred until the prefix key sequence is pressed.
+
+\(fn KEYMAP-SYMBOL PACKAGE OVERRIDE)" nil nil)
 
 (autoload 'use-package "use-package" "\
 Declare an Emacs package by specifying a group of configuration options.
@@ -125,8 +139,8 @@ this file.  Usage:
 
 ;;;***
 
-;;;### (autoloads nil nil ("use-package-pkg.el") (22692 28116 867493
-;;;;;;  840000))
+;;;### (autoloads nil nil ("use-package-pkg.el") (22698 30692 314670
+;;;;;;  231000))
 
 ;;;***
 

@@ -4,7 +4,7 @@
 
 ;; Author: Magnar Sveen <magnars@gmail.com>
 ;; Version: 2.13.0
-;; Package-Version: 20161108.1152
+;; Package-Version: 20170207.2356
 ;; Keywords: lists
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -579,14 +579,31 @@ Alias: `-any'"
 
 \(fn LIST)")
 
-(gv-define-simple-setter -first-item setcar)
+;; Ensure that calls to `-first-item' are compiled to a single opcode,
+;; just like `car'.
+(put '-first-item 'byte-opcode 'byte-car)
+(put '-first-item 'byte-compile 'byte-compile-one-arg)
+
+;; TODO: emacs23 support, when dropped remove the condition
+(eval-when-compile
+  (require 'cl)
+  (if (fboundp 'gv-define-simple-setter)
+      (gv-define-simple-setter -first-item setcar)
+    (require 'cl)
+    (with-no-warnings
+      (defsetf -first-item (x) (val) `(setcar ,x ,val)))))
 
 (defun -last-item (list)
   "Return the last item of LIST, or nil on an empty list."
   (declare (pure t) (side-effect-free t))
   (car (last list)))
 
-(gv-define-setter -last-item (val x) `(setcar (last ,x) ,val))
+;; TODO: emacs23 support, when dropped remove the condition
+(eval-when-compile
+  (if (fboundp 'gv-define-setter)
+      (gv-define-setter -last-item (val x) `(setcar (last ,x) ,val))
+    (with-no-warnings
+      (defsetf -last-item (x) (val) `(setcar (last ,x) ,val)))))
 
 (defun -butlast (list)
   "Return a list of all items in list except for the last."
@@ -1343,7 +1360,7 @@ last item in second form, etc."
 signified by the token `it' in the first form. If there are more
 forms, insert the first form at the position signified by `it' in
 in second form, etc."
-  (declare (debug ->))
+  (declare (debug (form &rest [&or symbolp (sexp &rest [&or "it" form])])))
   (if (null more)
       (if (listp form)
           (--map-when (eq it 'it) x form)
@@ -1960,6 +1977,22 @@ The test for equality is done with `equal',
 or with `-compare-fn' if that's non-nil."
   (--filter (not (-contains? list2 it)) list))
 
+(defun -powerset (list)
+  "Return the power set of LIST."
+  (if (null list) '(())
+    (let ((last (-powerset (cdr list))))
+      (append (mapcar (lambda (x) (cons (car list) x)) last)
+              last))))
+
+(defun -permutations (list)
+  "Return the permutations of LIST."
+  (if (null list) '(())
+    (apply #'append
+           (mapcar (lambda (x)
+                     (mapcar (lambda (perm) (cons x perm))
+                             (-permutations (remove x list))))
+                   list))))
+
 (defun -contains? (list element)
   "Return non-nil if LIST contains ELEMENT.
 
@@ -2326,7 +2359,7 @@ structure such as plist or alist."
 
 (defun dash-enable-font-lock ()
   "Add syntax highlighting to dash functions, macros and magic values."
-  (eval-after-load "lisp-mode"
+  (eval-after-load 'lisp-mode
     '(progn
        (let ((new-keywords '(
                              "-each"
