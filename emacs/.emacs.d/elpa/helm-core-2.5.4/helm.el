@@ -188,6 +188,7 @@ NOTE: SUBKEY and OTHER-SUBKEYS bindings support char syntax only
     (define-key map (kbd "C-z")        'helm-execute-persistent-action)
     (define-key map (kbd "C-j")        'helm-execute-persistent-action)
     (define-key map (kbd "C-o")        'helm-next-source)
+    (define-key map (kbd "M-o")        'helm-previous-source)
     (define-key map (kbd "C-l")        'helm-recenter-top-bottom-other-window)
     (define-key map (kbd "M-C-l")      'helm-reposition-window-other-window)
     (define-key map (kbd "C-M-v")      'helm-scroll-other-window)
@@ -1785,113 +1786,134 @@ only."
 (defun helm (&rest plist)
   "Main function to execute helm sources.
 
+PLIST is a list like
+
+\(:key1 val1 :key2 val2 ...\)
+
+ or
+
+\(&optional sources input prompt resume preselect
+            buffer keymap default history allow-nest\).
+
+** Keywords
+
 Keywords supported:
-:sources :input :prompt :resume :preselect
-:buffer :keymap :default :history :allow-nest
 
-Extra LOCAL-VARS keywords are supported, see below.
+- :sources
+- :input
+- :prompt
+- :resume
+- :preselect
+- :buffer
+- :keymap
+- :default
+- :history
+- :allow-nest
 
-PLIST is a list like \(:key1 val1 :key2 val2 ...\) or
-\(&optional sources input prompt resume
-            preselect buffer keymap default history\).
+Extra LOCAL-VARS keywords are supported, see the \"** Other
+keywords\" section below.
 
 Basic keywords are the following:
 
-\:sources
+*** :sources
 
-A list of sources used for this session.  It also accepts a
-symbol, interpreted as a variable of a helm source
-i.e (a symbol can be passed instead of a list of sources).
-It also accepts an alist representing a helm source, which is
-detected by \(assq 'name ANY-SOURCES\).
-NOTE: In this case the source is embedded in the helm command and
-have no symbol name, so it is not reachable from outside.
-It will be referenced in `helm-sources' as a whole alist.
+One of the following:
 
-\:input
+- List of sources
+- Symbol whose value is a list of sources
+- Alist representing a Helm source.
+  - In this case the source has no name and is referenced in
+    `helm-sources' as a whole alist.
 
-Temporary value of `helm-pattern', ie. initial input of minibuffer.
+*** :input
 
-\:prompt
+Initial input of minibuffer (temporary value of `helm-pattern')
 
-Prompt other than \"pattern: \".
+*** :prompt
 
-\:resume
+Minibuffer prompt. Default value is `helm--prompt'.
 
-If t, Resurrect previously instance of `helm'.  Skip the initialization.
+*** :resume
+
+If t, allow resumption of the previous session of this Helm
+command, skipping initialization.
+
 If 'noresume, this instance of `helm' cannot be resumed.
 
-\:preselect
+*** :preselect
 
-Initially selected candidate.  Specified by exact candidate or a regexp.
+Initially selected candidate (string or regexp).
 
-\:buffer
+*** :buffer
 
-The buffer name for this helm session. `helm-buffer' will take this value.
+Buffer name for this Helm session. `helm-buffer' will take this value.
 
-\:keymap
+*** :keymap
 
-[Obsolete]
+\[Obsolete]
 
-Keymap used at start of this Helm session.
+Keymap used at the start of this Helm session.
 
-It is overridden by keymaps specified in sources, and is here
+It is overridden by keymaps specified in sources, and is kept
 only for backward compatibility.
 
 Keymaps should be specified in sources using the :keymap slot
-instead.
+instead. See `helm-source'.
 
 This keymap is not restored by `helm-resume'.
 
-\:default
+*** :default
 
-A default argument that will be inserted in minibuffer \ with
-\\<minibuffer-local-map>\\[next-history-element]. When nil or not
-present `thing-at-point' will be used instead. If
-`helm--maybe-use-default-as-input' is non-`nil' display will be
-updated using :default arg as input unless :input is specified,
-which in this case will take precedence over :default. This is a
-string or a list. If list, car of the list becomes initial
-default input. \\<minibuffer-local-map>\\[next-history-element]
-cycles through the list items.
+Default value inserted into the minibuffer \ with
+\\<minibuffer-local-map>\\[next-history-element].
 
-\:history
+It can be a string or a list of strings, in this case
+\\<minibuffer-local-map>\\[next-history-element] cycles through
+the list items, starting with the first.
+
+If nil, `thing-at-point' is used.
+
+If `helm--maybe-use-default-as-input' is non-`nil', display is
+updated using this value, unless :input is specified, in which
+case that value is used instead.
+
+*** :history
 
 Minibuffer input, by default, is pushed to `minibuffer-history'.
+
 When an argument HISTORY is provided, input is pushed to
-HISTORY. The HISTORY element should be a valid symbol.
+HISTORY. HISTORY should be a valid symbol.
 
-\:allow-nest
+*** :allow-nest
 
-Allow running this helm command in a running helm session.
+Allow running this Helm command in a running Helm session.
 
-Standard arguments are supported. These two are the same:
+** Other keywords
 
-\(helm :sources sources :input input :prompt prompt :resume resume
-       :preselect preselect :buffer buffer :keymap keymap :default default
-       :history history\)
-
-and
-
-\(helm sources input prompt resume preselect buffer keymap default history\)
-
-are the same for now. However, the use of non-keyword args is
-deprecated and should not be used.
-
-Other keywords are interpreted as local variables of this helm
+Other keywords are interpreted as local variables of this Helm
 session. The `helm-' prefix can be omitted. For example,
 
 \(helm :sources 'helm-source-buffers-list
-       :buffer \"*helm buffers*\" :candidate-number-limit 10\)
+       :buffer \"*helm buffers*\"
+       :candidate-number-limit 10\)
 
-starts helm session with `helm-source-buffers' source in
-*helm buffers* buffer and sets variable `helm-candidate-number-limit'
-to 10 as a session local variable.
+starts a Helm session with the variable
+`helm-candidate-number-limit' set to 10.
+
+** Backward compatibility
+
+For backward compatibility, positional parameters are
+supported:
+
+\(helm sources input prompt resume preselect
+       buffer keymap default history allow-nest\)
+
+However, the use of non-keyword args is deprecated.
 
 \(fn &key SOURCES INPUT PROMPT RESUME PRESELECT BUFFER KEYMAP DEFAULT HISTORY ALLOW-NEST OTHER-LOCAL-VARS)"
   (let ((fn (cond ((or (and helm-alive-p (plist-get plist :allow-nest))
                        (and helm-alive-p (memq 'allow-nest plist)))
-                   #'helm-nest)
+                   #'helm--nest)
                   ((keywordp (car plist))
                    #'helm)
                   (t #'helm-internal))))
@@ -2129,8 +2151,8 @@ Return nil if no `helm-buffer' found."
 Call `helm' only with ANY-SOURCES and ANY-BUFFER as args."
   (helm :sources any-sources :buffer any-buffer))
 
-(defun helm-nest (&rest same-as-helm)
-  "Allows calling `helm' within a running helm session.
+(defun helm--nest (&rest same-as-helm)
+  "[internal]Allows calling `helm' within a running helm session.
 
 Arguments SAME-AS-HELM are the same as `helm'.
 
@@ -2915,7 +2937,7 @@ Cache the candidates if there is no cached value yet."
 
 (defun helm--initialize-one-by-one-candidates (candidates source)
   "Process the CANDIDATES with the `filter-one-by-one' function in SOURCE.
-Return CANDIDATES when pattern is empty."
+Return CANDIDATES unchanged when pattern is not empty."
   (helm-aif (and (string= helm-pattern "")
                  (assoc-default 'filter-one-by-one source))
       (cl-loop for cand in candidates collect
@@ -2959,7 +2981,7 @@ maybe filtered CANDIDATES."
   (helm-process-real-to-display
    (helm-process-filtered-candidate-transformer-maybe
     (helm-process-candidate-transformer
-     (helm--initialize-one-by-one-candidates candidates source) source)
+     candidates source)
     source process-p)
    source))
 
@@ -3317,11 +3339,19 @@ It is used for narrowing list of candidates to the
        (if (or (equal helm-pattern "")
                (helm--candidates-in-buffer-p matchfns))
            ;; Compute all candidates up to LIMIT.
-           (helm-take-first-elements
-            (helm-get-cached-candidates source) limit)
-         ;; Compute candidates according to pattern with their match fns.
-         (helm-match-from-candidates
-          (helm-get-cached-candidates source) matchfns matchpartfn limit source))
+           ;; one-by-one are computed here only for sources that
+           ;; display a list of  candidates even with an empty
+           ;; pattern.
+           (helm--initialize-one-by-one-candidates
+            (helm-take-first-elements
+             (helm-get-cached-candidates source) limit)
+            source)
+           ;; Compute candidates according to pattern with their match
+           ;; fns.
+           ;; one-by-one filtered candidates are computed during the
+           ;; execution of next loop in `helm-match-from-candidates'.
+           (helm-match-from-candidates
+            (helm-get-cached-candidates source) matchfns matchpartfn limit source))
        source))))
 
 (defun helm--candidates-in-buffer-p (matchfns)
@@ -3332,20 +3362,17 @@ It is used for narrowing list of candidates to the
   (helm-log "Source name = %S" (assoc-default 'name source))
   (when matches
     (helm-insert-header-from-source source)
-    (if (not (assq 'multiline source))
-        (cl-loop for m in matches
-                 for count from 1
-                 do (helm-insert-match m 'insert count source))
-      (let ((start (point))
-            (count 0)
-            separate)
-        (cl-dolist (match matches)
-          (cl-incf count)
-          (if separate
-              (helm-insert-candidate-separator)
-            (setq separate t))
-          (helm-insert-match match 'insert count source))
-        (put-text-property start (point) 'helm-multiline t)))))
+    (cl-loop with separate = nil
+             with start = (point)
+             for m in matches
+             for count from 1
+             do (if (not (assq 'multiline source))
+                    (helm-insert-match m 'insert count source)
+                    (if separate
+                        (helm-insert-candidate-separator)
+                        (setq separate t))
+                    (helm-insert-match m 'insert count source)
+                    (put-text-property start (point) 'helm-multiline t)))))
 
 (defmacro helm--maybe-use-while-no-input (&rest body)
   "Wrap BODY in `helm-while-no-input' unless initializing a remote connection."
@@ -3427,6 +3454,8 @@ without recomputing them, it should be a list of lists."
            ;; are computed.
            (unless sources (erase-buffer))
            ;; Compute matches without rendering the sources.
+           ;; This prevent the helm-buffer flickering when constantly
+           ;; updating.
            (helm-log "Matches: %S"
                      (setq matches (or candidates (helm--collect-matches sources))))
            ;; If computing matches finished and is not interrupted
@@ -3435,8 +3464,10 @@ without recomputing them, it should be a list of lists."
              (erase-buffer)             ; [1]
              (cl-loop for src in sources
                       for mtc in matches
-                      do (helm-render-source src mtc))))
-      (helm--update-move-first-line)
+                      do (helm-render-source src mtc))
+             ;; Move to first line only when there is matches
+             ;; to avoid cursor moving upside down (issue #1703).
+             (helm--update-move-first-line)))
       (let ((src (or source (helm-get-current-source))))
         (unless (assoc 'candidates-process src)
           (helm-display-mode-line src)

@@ -82,3 +82,5 @@ fi
 
 export NVM_DIR="/home/smcleod/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -s "/home/smcleod/.gvm/scripts/gvm" ]] && source "/home/smcleod/.gvm/scripts/gvm"
