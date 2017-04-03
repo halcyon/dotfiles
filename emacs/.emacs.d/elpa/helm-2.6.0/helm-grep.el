@@ -455,7 +455,7 @@ It is intended to use as a let-bound variable, DON'T set this globaly.")
                                   "i")))
          (helm-grep-default-command
           (concat helm-grep-default-command " %m")) ; `%m' like multi.
-         (patterns (split-string helm-pattern))
+         (patterns (helm-mm-split-pattern helm-pattern))
          (pipe-switches (mapconcat 'identity helm-grep-pipe-cmd-switches " "))
          (pipes
           (helm-aif (cdr patterns)
@@ -676,8 +676,9 @@ If N is positive go forward otherwise go backward."
                (goto-char it)
              (forward-line 1))
            (funcall mark-maybe)))
-    (helm-follow-execute-persistent-action-maybe)
-    (helm-log-run-hook 'helm-move-selection-after-hook)))
+    (unless allow-mode
+      (helm-follow-execute-persistent-action-maybe)
+      (helm-log-run-hook 'helm-move-selection-after-hook))))
 
 ;;;###autoload
 (defun helm-goto-precedent-file ()
@@ -1372,7 +1373,7 @@ Ripgrep (rg) types are also supported if this backend is used."
   "Prepare AG command line to search PATTERN in DIRECTORY.
 When TYPE is specified it is one of what returns `helm-grep-ag-get-types'
 if available with current AG version."
-  (let* ((patterns (split-string pattern))
+  (let* ((patterns (helm-mm-split-pattern pattern))
          (pipe-switches (mapconcat 'identity helm-grep-ag-pipe-cmd-switches " "))
          (pipe-cmd (pcase (helm-grep--ag-command)
                      ((and com (or "ag" "pt"))
