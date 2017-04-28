@@ -525,14 +525,14 @@ Null prefix argument turns off the mode."
   (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
 ;;;;; clj-refactor
-(use-package clj-refactor
-  :config
-  (setq cljr-warn-on-eval nil)
-  (defun configure-clj-refactor ()
-    (clj-refactor-mode)
-    ;; This choice of keybinding leaves cider-macroexpand-1 unbound
-    (cljr-add-keybindings-with-prefix "C-c C-m"))
-  (add-hook 'clojure-mode-hook #'configure-clj-refactor))
+;; (use-package clj-refactor
+;;   :config
+;;   (setq cljr-warn-on-eval nil)
+;;   (defun configure-clj-refactor ()
+;;     (clj-refactor-mode)
+;;     ;; This choice of keybinding leaves cider-macroexpand-1 unbound
+;;     (cljr-add-keybindings-with-prefix "C-c C-m"))
+;;   (add-hook 'clojure-mode-hook #'configure-clj-refactor))
 
 ;;;;; rust-mode
 (use-package rust-mode)
