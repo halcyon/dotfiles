@@ -37,4 +37,6 @@ fi
 /usr/bin/xbindkeys
 /usr/bin/xset r rate 200 50
 /usr/bin/syndaemon -i 0.8 -R -d
+/usr/bin/xmodmap -e "clear mod4"
+/usr/bin/xmodmap -e "keycode 133 = F20"
 /usr/bin/stumpwm

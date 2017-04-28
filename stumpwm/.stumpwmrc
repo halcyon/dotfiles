@@ -4,8 +4,19 @@
 
 (in-package :stumpwm)
 
-;; change the prefix key to something else
-(set-prefix-key (kbd "C-t"))
+;;** Prefix Key
+
+;; I tend to place "system-wide" window manager shortcut keys consistently
+;; on Super-<something> rather than the horrible defaults that can get in
+;; the way of Emacs' use (various Control and Alt bindings).
+
+;; same as `keycode 133 = F20' in `~/.Xmodmap', `133' (TO BE CHECKED WITH
+;; `xev') being the left "Windows" key, aka `Super_L'
+;; (run-shell-command "xmodmap -e 'keycode 133 = F20'" t)
+
+;; change the prefix key
+(set-prefix-key (kbd "F20"))  ;; `Alt Gr'
+;; (set-prefix-key (kbd "C-t"))
 
 ;; prompt the user for an interactive command. The first arg is an
 ;; optional initial contents.
@@ -74,3 +85,33 @@
 
 (defparameter *home-dir* (stumpwm::getenv "HOME"))
 (load (concat *home-dir* "/" "dotfiles-private/stumpwm/stumpwm.lisp"))
+
+;;** 12 (info "(stumpwm)Hooks")
+
+;; display the key sequence in progress
+(defun key-press-hook (key key-seq cmd)
+  (declare (ignore key))
+  (unless (eq *top-map* *resize-map*)
+    (let ((*message-window-gravity* :bottom-right))
+      (message "Key sequence: ~a" (print-key-seq (reverse key-seq))))
+    ;; (when (stringp cmd)
+    ;;   ;; give 'em time to read it
+    ;;   (sleep 0.5))
+    ))
+
+(defmacro replace-hook (hook fn)
+  `(remove-hook ,hook ,fn)
+  `(add-hook ,hook ,fn))
+
+(replace-hook *key-press-hook* 'key-press-hook)
+
+
+;; This is for the sake of Emacs.
+;; Local Variables:
+;; coding: utf-8
+;; mode: emacs-lisp
+;; mode: outline-minor
+;; ispell-local-dictionary: "en_US"
+;; End:
+
+;;; .stumpwmrc ends here
