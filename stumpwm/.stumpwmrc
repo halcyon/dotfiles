@@ -12,11 +12,9 @@
 
 ;; same as `keycode 133 = F20' in `~/.Xmodmap', `133' (TO BE CHECKED WITH
 ;; `xev') being the left "Windows" key, aka `Super_L'
-;; (run-shell-command "xmodmap -e 'keycode 133 = F20'" t)
 
 ;; change the prefix key
-(set-prefix-key (kbd "F20"))  ;; `Alt Gr'
-;; (set-prefix-key (kbd "C-t"))
+(set-prefix-key (kbd "s-t"))
 
 ;; prompt the user for an interactive command. The first arg is an
 ;; optional initial contents.
