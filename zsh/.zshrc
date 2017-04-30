@@ -49,14 +49,16 @@ ulimit -c unlimited
 
 export ALTERNATE_EDITOR=""
 case `uname` in
-Darwin) export COPY="reattach-to-user-namespace pbcopy"
-        export PASTE="reattach-to-user-namespace pbpaste"
-        export EDITOR="/usr/local/bin/emacsclient"
-        alias e="/usr/local/bin/emacsclient"
-        ;;
-Linux) export EDITOR="/usr/bin/emacsclient"
-       alias e="/usr/bin/emacsclient"
-       ;;
+    Darwin) export EDITOR="/usr/local/bin/emacsclient"
+            alias e="/usr/local/bin/emacsclient"
+            export COPY="reattach-to-user-namespace pbcopy"
+            export PASTE="reattach-to-user-namespace pbpaste"
+            ;;
+    Linux) export EDITOR="/usr/bin/emacsclient"
+           alias e="/usr/bin/emacsclient"
+           export COPY="xclip -i -sel p -f | xclip -i -sel c"
+           export PASTE="xclip -o"
+           ;;
 esac
 
 bindkey "^R" history-incremental-search-backward
