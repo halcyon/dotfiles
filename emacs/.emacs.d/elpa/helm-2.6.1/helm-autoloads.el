@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-adaptive" "helm-adaptive.el" (22776 46790
-;;;;;;  283259 209000))
-;;; Generated autoloads from helm-adaptive.el
+;;;### (autoloads nil "helm-adaptive" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-adaptive.el"
+;;;;;;  "1a0dd503171d2bb39860666165c4abb6")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-adaptive.el
 
 (defvar helm-adaptive-mode nil "\
 Non-nil if Helm-Adaptive mode is enabled.
@@ -30,9 +30,9 @@ Useful when you have a old or corrupted `helm-adaptive-history-file'.
 
 ;;;***
 
-;;;### (autoloads nil "helm-apt" "helm-apt.el" (22776 46790 243260
-;;;;;;  220000))
-;;; Generated autoloads from helm-apt.el
+;;;### (autoloads nil "helm-apt" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-apt.el"
+;;;;;;  "4c8bd0da7a5b9f6c57adeca618afbb1f")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-apt.el
 
 (autoload 'helm-apt "helm-apt" "\
 Preconfigured `helm' : frontend of APT package manager.
@@ -42,9 +42,9 @@ With a prefix arg reload cache.
 
 ;;;***
 
-;;;### (autoloads nil "helm-bookmark" "helm-bookmark.el" (22776 46790
-;;;;;;  313258 452000))
-;;; Generated autoloads from helm-bookmark.el
+;;;### (autoloads nil "helm-bookmark" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-bookmark.el"
+;;;;;;  "050ab69c3fe2d3c8ecb184195944744f")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-bookmark.el
 
 (autoload 'helm-bookmarks "helm-bookmark" "\
 Preconfigured `helm' for bookmarks.
@@ -66,9 +66,9 @@ Need addressbook-bookmark package as dependencie.
 
 ;;;***
 
-;;;### (autoloads nil "helm-buffers" "helm-buffers.el" (22776 46790
-;;;;;;  223260 725000))
-;;; Generated autoloads from helm-buffers.el
+;;;### (autoloads nil "helm-buffers" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-buffers.el"
+;;;;;;  "9027533e9696ec43db3533198b10d1c2")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-buffers.el
 
 (autoload 'helm-buffers-list "helm-buffers" "\
 Preconfigured `helm' to list buffers.
@@ -82,9 +82,9 @@ Preconfigured `helm' lightweight version (buffer -> recentf).
 
 ;;;***
 
-;;;### (autoloads nil "helm-color" "helm-color.el" (22776 46790 303258
-;;;;;;  704000))
-;;; Generated autoloads from helm-color.el
+;;;### (autoloads nil "helm-color" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-color.el"
+;;;;;;  "4eacb1e074d9f6648eb6c878c7fe736d")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-color.el
 
 (autoload 'helm-colors "helm-color" "\
 Preconfigured `helm' for color.
@@ -93,9 +93,9 @@ Preconfigured `helm' for color.
 
 ;;;***
 
-;;;### (autoloads nil "helm-command" "helm-command.el" (22776 46790
-;;;;;;  73264 514000))
-;;; Generated autoloads from helm-command.el
+;;;### (autoloads nil "helm-command" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-command.el"
+;;;;;;  "7fb60aa972d83926c6c78b2dc3ce01dc")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-command.el
 
 (autoload 'helm-M-x "helm-command" "\
 Preconfigured `helm' for Emacs commands.
@@ -112,9 +112,9 @@ You can get help on each command by persistent action.
 
 ;;;***
 
-;;;### (autoloads nil "helm-config" "helm-config.el" (22776 46790
-;;;;;;  313258 452000))
-;;; Generated autoloads from helm-config.el
+;;;### (autoloads nil "helm-config" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-config.el"
+;;;;;;  "768845b6c120b1678995cfe2a18126c5")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-config.el
 
 (autoload 'helm-configuration "helm-config" "\
 Customize `helm'.
@@ -123,9 +123,9 @@ Customize `helm'.
 
 ;;;***
 
-;;;### (autoloads nil "helm-dabbrev" "helm-dabbrev.el" (22776 46790
-;;;;;;  253259 967000))
-;;; Generated autoloads from helm-dabbrev.el
+;;;### (autoloads nil "helm-dabbrev" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-dabbrev.el"
+;;;;;;  "201a8d99f9e07db853e04730efd8f00b")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "helm-dabbrev" "\
 Preconfigured helm for dynamic abbreviations.
@@ -134,9 +134,9 @@ Preconfigured helm for dynamic abbreviations.
 
 ;;;***
 
-;;;### (autoloads nil "helm-elisp" "helm-elisp.el" (22776 46790 313258
-;;;;;;  452000))
-;;; Generated autoloads from helm-elisp.el
+;;;### (autoloads nil "helm-elisp" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-elisp.el"
+;;;;;;  "f4dd2e3f65e6be350521b0ccae71696e")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "helm-elisp" "\
 Preconfigured helm for lisp symbol completion at point.
@@ -188,9 +188,9 @@ Preconfigured helm for complex command history.
 
 ;;;***
 
-;;;### (autoloads nil "helm-elisp-package" "helm-elisp-package.el"
-;;;;;;  (22776 46790 93264 8000))
-;;; Generated autoloads from helm-elisp-package.el
+;;;### (autoloads nil "helm-elisp-package" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-elisp-package.el"
+;;;;;;  "3fb2db1872c9cc3df10b17156f67bfa1")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "helm-elisp-package" "\
 Preconfigured helm for listing and handling emacs packages.
@@ -205,9 +205,9 @@ Same as `helm-list-elisp-packages' but don't fetch packages on remote.
 
 ;;;***
 
-;;;### (autoloads nil "helm-eshell" "helm-eshell.el" (22776 46790
-;;;;;;  143262 745000))
-;;; Generated autoloads from helm-eshell.el
+;;;### (autoloads nil "helm-eshell" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-eshell.el"
+;;;;;;  "e35c44e07901e32b20b88efab21f37e7")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "helm-eshell" "\
 Preconfigured helm to provide helm completion in eshell.
@@ -221,9 +221,9 @@ Preconfigured helm for eshell history.
 
 ;;;***
 
-;;;### (autoloads nil "helm-eval" "helm-eval.el" (22776 46790 283259
-;;;;;;  209000))
-;;; Generated autoloads from helm-eval.el
+;;;### (autoloads nil "helm-eval" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-eval.el"
+;;;;;;  "7fc4be9f73d273210b713adb0cae3e0c")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-eval.el
 
 (autoload 'helm-eval-expression "helm-eval" "\
 Preconfigured helm for `helm-source-evaluation-result'.
@@ -242,9 +242,9 @@ Preconfigured helm for `helm-source-calculation-result'.
 
 ;;;***
 
-;;;### (autoloads nil "helm-external" "helm-external.el" (22776 46790
-;;;;;;  23265 777000))
-;;; Generated autoloads from helm-external.el
+;;;### (autoloads nil "helm-external" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-external.el"
+;;;;;;  "0b48abc217e606f8a80865263235e362")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-external.el
 
 (autoload 'helm-run-external-command "helm-external" "\
 Preconfigured `helm' to run External PROGRAM asyncronously from Emacs.
@@ -256,9 +256,9 @@ You can set your own list of commands with
 
 ;;;***
 
-;;;### (autoloads nil "helm-files" "helm-files.el" (22776 46790 263259
-;;;;;;  714000))
-;;; Generated autoloads from helm-files.el
+;;;### (autoloads nil "helm-files" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-files.el"
+;;;;;;  "6f63e5426b45b8033ae59ef905d15b2b")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-files.el
 
 (autoload 'helm-projects-history "helm-files" "\
 
@@ -347,9 +347,9 @@ It allows additionally to delete more than one connection at once.
 
 ;;;***
 
-;;;### (autoloads nil "helm-font" "helm-font.el" (22776 46790 153262
-;;;;;;  493000))
-;;; Generated autoloads from helm-font.el
+;;;### (autoloads nil "helm-font" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-font.el"
+;;;;;;  "061055936a6fe299c413095d415294b2")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-font.el
 
 (autoload 'helm-select-xfont "helm-font" "\
 Preconfigured `helm' to select Xfont.
@@ -363,9 +363,9 @@ Preconfigured helm for `ucs-names' math symbols.
 
 ;;;***
 
-;;;### (autoloads nil "helm-grep" "helm-grep.el" (22776 46790 323258
-;;;;;;  199000))
-;;; Generated autoloads from helm-grep.el
+;;;### (autoloads nil "helm-grep" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-grep.el"
+;;;;;;  "a03d0297469eadb66a8b171517d8eace")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "helm-grep" "\
 Go to precedent file in helm grep/etags buffers.
@@ -391,9 +391,9 @@ With a prefix arg ARG git-grep the whole repository.
 
 ;;;***
 
-;;;### (autoloads nil "helm-help" "helm-help.el" (22776 46790 3266
-;;;;;;  280000))
-;;; Generated autoloads from helm-help.el
+;;;### (autoloads nil "helm-help" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-help.el"
+;;;;;;  "fbbcd721df58bdf651f09b9b1d961131")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-help.el
 
 (autoload 'helm-documentation "helm-help" "\
 Preconfigured helm for helm documentation.
@@ -412,9 +412,9 @@ String displayed in mode-line in `helm-source-find-files'.")
 
 ;;;***
 
-;;;### (autoloads nil "helm-id-utils" "helm-id-utils.el" (22776 46790
-;;;;;;  243260 220000))
-;;; Generated autoloads from helm-id-utils.el
+;;;### (autoloads nil "helm-id-utils" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-id-utils.el"
+;;;;;;  "2310e8b2a8e468d5385ddc52469e9a2d")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-id-utils.el
 
 (autoload 'helm-gid "helm-id-utils" "\
 Preconfigured helm for `gid' command line of `ID-Utils'.
@@ -427,9 +427,9 @@ See <https://www.gnu.org/software/idutils/>.
 
 ;;;***
 
-;;;### (autoloads nil "helm-imenu" "helm-imenu.el" (22776 46790 193261
-;;;;;;  483000))
-;;; Generated autoloads from helm-imenu.el
+;;;### (autoloads nil "helm-imenu" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-imenu.el"
+;;;;;;  "03576ca372904cfefb76d1fd0c312339")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-imenu.el
 
 (autoload 'helm-imenu "helm-imenu" "\
 Preconfigured `helm' for `imenu'.
@@ -445,9 +445,9 @@ or it have an association in `helm-imenu-all-buffer-assoc'.
 
 ;;;***
 
-;;;### (autoloads nil "helm-info" "helm-info.el" (22776 46790 173261
-;;;;;;  988000))
-;;; Generated autoloads from helm-info.el
+;;;### (autoloads nil "helm-info" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-info.el"
+;;;;;;  "cbe72a63d714d75e21814f1dc5c66728")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-info.el
 
 (autoload 'helm-info "helm-info" "\
 Preconfigured `helm' for searching Info files' indices.
@@ -473,9 +473,9 @@ With a prefix-arg insert symbol at point.
 
 ;;;***
 
-;;;### (autoloads nil "helm-locate" "helm-locate.el" (22776 46790
-;;;;;;  43265 271000))
-;;; Generated autoloads from helm-locate.el
+;;;### (autoloads nil "helm-locate" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-locate.el"
+;;;;;;  "d30e1fc3f52eb252fa275257c9de03ae")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-locate.el
 
 (autoload 'helm-projects-find-files "helm-locate" "\
 Find files with locate in `helm-locate-project-list'.
@@ -501,9 +501,9 @@ Where db_path is a filename matched by
 
 ;;;***
 
-;;;### (autoloads nil "helm-man" "helm-man.el" (22776 46790 283259
-;;;;;;  209000))
-;;; Generated autoloads from helm-man.el
+;;;### (autoloads nil "helm-man" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-man.el"
+;;;;;;  "bc23ca4e2dccdab739ef2efa4b497922")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-man.el
 
 (autoload 'helm-man-woman "helm-man" "\
 Preconfigured `helm' for Man and Woman pages.
@@ -513,9 +513,9 @@ With a prefix arg reinitialize the cache.
 
 ;;;***
 
-;;;### (autoloads nil "helm-misc" "helm-misc.el" (22776 46790 273259
-;;;;;;  462000))
-;;; Generated autoloads from helm-misc.el
+;;;### (autoloads nil "helm-misc" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-misc.el"
+;;;;;;  "4d4316ce744ecc71414b7e4d77e272a7")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-misc.el
 
 (autoload 'helm-world-time "helm-misc" "\
 Preconfigured `helm' to show world time.
@@ -550,9 +550,9 @@ Preconfigured `helm' that provide completion of `comint' history.
 
 ;;;***
 
-;;;### (autoloads nil "helm-mode" "helm-mode.el" (22776 46789 973267
-;;;;;;  43000))
-;;; Generated autoloads from helm-mode.el
+;;;### (autoloads nil "helm-mode" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-mode.el"
+;;;;;;  "2c548e7a69a45900c0c9894e0c37e840")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-mode.el
 
 (autoload 'helm-comp-read "helm-mode" "\
 Read a string in the minibuffer, with helm completion.
@@ -731,9 +731,9 @@ Note: This mode is incompatible with Emacs23.
 
 ;;;***
 
-;;;### (autoloads nil "helm-net" "helm-net.el" (22776 46790 303258
-;;;;;;  704000))
-;;; Generated autoloads from helm-net.el
+;;;### (autoloads nil "helm-net" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-net.el"
+;;;;;;  "489558d06f40bcffd73c2219babb089e")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-net.el
 
 (autoload 'helm-surfraw "helm-net" "\
 Preconfigured `helm' to search PATTERN with search ENGINE.
@@ -752,9 +752,9 @@ Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest.
 
 ;;;***
 
-;;;### (autoloads nil "helm-org" "helm-org.el" (22776 46790 323258
-;;;;;;  199000))
-;;; Generated autoloads from helm-org.el
+;;;### (autoloads nil "helm-org" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-org.el"
+;;;;;;  "fc759c0d6215c1cc2db4e8473fbdfb8e")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-org.el
 
 (autoload 'helm-org-agenda-files-headings "helm-org" "\
 Preconfigured helm for org files headings.
@@ -784,9 +784,9 @@ Preconfigured helm for org templates.
 
 ;;;***
 
-;;;### (autoloads nil "helm-regexp" "helm-regexp.el" (22776 46790
-;;;;;;  293258 957000))
-;;; Generated autoloads from helm-regexp.el
+;;;### (autoloads nil "helm-regexp" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-regexp.el"
+;;;;;;  "e7812504709c72d5fd67c7d48f373744")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-regexp.el
 
 (autoload 'helm-moccur-mode "helm-regexp" "\
 Major mode to provide actions in helm moccur saved buffer.
@@ -824,9 +824,9 @@ The prefix arg can be set before calling
 
 ;;;***
 
-;;;### (autoloads nil "helm-ring" "helm-ring.el" (22776 46789 993266
-;;;;;;  535000))
-;;; Generated autoloads from helm-ring.el
+;;;### (autoloads nil "helm-ring" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-ring.el"
+;;;;;;  "1f8f9b48279ed6ace581841d56e88e03")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-ring.el
 
 (defvar helm-push-mark-mode nil "\
 Non-nil if Helm-Push-Mark mode is enabled.
@@ -883,9 +883,9 @@ This command is useful when used with persistent action.
 
 ;;;***
 
-;;;### (autoloads nil "helm-semantic" "helm-semantic.el" (22776 46790
-;;;;;;  203261 230000))
-;;; Generated autoloads from helm-semantic.el
+;;;### (autoloads nil "helm-semantic" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-semantic.el"
+;;;;;;  "4f52743ad45d3b2847fe615764ac898b")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-semantic.el
 
 (autoload 'helm-semantic "helm-semantic" "\
 Preconfigured `helm' for `semantic'.
@@ -906,9 +906,9 @@ Fill in the symbol at point by default.
 
 ;;;***
 
-;;;### (autoloads nil "helm-sys" "helm-sys.el" (22776 46790 253259
-;;;;;;  967000))
-;;; Generated autoloads from helm-sys.el
+;;;### (autoloads nil "helm-sys" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-sys.el"
+;;;;;;  "fffd1dd237b2661d95c819b42a4a2f44")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-sys.el
 
 (defvar helm-top-poll-mode nil "\
 Non-nil if Helm-Top-Poll mode is enabled.
@@ -942,9 +942,9 @@ Preconfigured helm for xrandr.
 
 ;;;***
 
-;;;### (autoloads nil "helm-tags" "helm-tags.el" (22776 46790 123263
-;;;;;;  251000))
-;;; Generated autoloads from helm-tags.el
+;;;### (autoloads nil "helm-tags" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-tags.el"
+;;;;;;  "070a2d962683efe3f02c84de2b6fea49")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-tags.el
 
 (autoload 'helm-etags-select "helm-tags" "\
 Preconfigured helm for etags.
@@ -962,9 +962,9 @@ This function aggregates three sources of tag files:
 
 ;;;***
 
-;;;### (autoloads nil "helm-utils" "helm-utils.el" (22776 46790 53265
-;;;;;;  19000))
-;;; Generated autoloads from helm-utils.el
+;;;### (autoloads nil "helm-utils" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-utils.el"
+;;;;;;  "f5768af7af59ea2fdd27693f8d59c1e6")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-2.6.1/helm-utils.el
 
 (defvar helm-popup-tip-mode nil "\
 Non-nil if Helm-Popup-Tip mode is enabled.
@@ -983,8 +983,30 @@ Show help-echo informations in a popup tip at end of line.
 
 ;;;***
 
-;;;### (autoloads nil nil ("helm-easymenu.el" "helm-pkg.el" "helm-types.el")
-;;;;;;  (22776 46790 323258 199000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/helm-2.6.1/helm-adaptive.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-apt.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-bookmark.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-buffers.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-color.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-command.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-config.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-dabbrev.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-easymenu.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-elisp-package.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-elisp.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-eshell.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-eval.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-external.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-files.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-font.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-grep.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-help.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-id-utils.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-imenu.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-info.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-locate.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-man.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-misc.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-mode.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-net.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-org.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-regexp.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-ring.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-semantic.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-sys.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-tags.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-2.6.1/helm-types.el" "../../../../../.emacs.d/elpa/helm-2.6.1/helm-utils.el")
+;;;;;;  (22790 6946 0 0))
 
 ;;;***
 

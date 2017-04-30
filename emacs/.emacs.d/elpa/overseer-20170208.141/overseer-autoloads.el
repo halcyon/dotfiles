@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "overseer" "overseer.el" (22698 30670 685386
-;;;;;;  255000))
-;;; Generated autoloads from overseer.el
+;;;### (autoloads nil "overseer" "../../../../../.emacs.d/elpa/overseer-20170208.141/overseer.el"
+;;;;;;  "1902dac49be5eaf46a4a709256d9ccbd")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/overseer-20170208.141/overseer.el
 
 (autoload 'overseer-version "overseer" "\
 Get the Overseer version as string.
@@ -36,6 +36,12 @@ Key bindings:
 \(fn)" nil nil)
 
 (dolist (hook '(emacs-lisp-mode-hook)) (add-hook hook 'overseer-enable-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/overseer-20170208.141/overseer-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/overseer-20170208.141/overseer.el")
+;;;;;;  (22790 6973 0 0))
 
 ;;;***
 

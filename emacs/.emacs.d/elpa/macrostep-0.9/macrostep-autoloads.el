@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "macrostep" "macrostep.el" (22698 27844 672388
-;;;;;;  521000))
-;;; Generated autoloads from macrostep.el
+;;;### (autoloads nil "macrostep" "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep.el"
+;;;;;;  "c4c7cddea73734e122ad4f2d61e442e2")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/macrostep-0.9/macrostep.el
 
 (autoload 'macrostep-mode "macrostep" "\
 Minor mode for inline expansion of macros in Emacs Lisp source buffers.
@@ -36,9 +36,9 @@ behaviors.
 
 ;;;***
 
-;;;### (autoloads nil "macrostep-c" "macrostep-c.el" (22698 27844
-;;;;;;  672388 521000))
-;;; Generated autoloads from macrostep-c.el
+;;;### (autoloads nil "macrostep-c" "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-c.el"
+;;;;;;  "69a7229b1a64aa4d3e8996b64c98d114")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-c.el
 
 (autoload 'macrostep-c-mode-hook "macrostep-c" "\
 
@@ -49,8 +49,11 @@ behaviors.
 
 ;;;***
 
-;;;### (autoloads nil nil ("macrostep-pkg.el") (22698 27844 662388
-;;;;;;  860000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-c.el"
+;;;;;;  "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep.el")
+;;;;;;  (22790 6974 0 0))
 
 ;;;***
 

@@ -3,7 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("pcache.el") (22654 20270 933600 466000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/pcache-0.4.2/pcache-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/pcache-0.4.2/pcache.el") (22790
+;;;;;;  7027 0 0))
 
 ;;;***
 

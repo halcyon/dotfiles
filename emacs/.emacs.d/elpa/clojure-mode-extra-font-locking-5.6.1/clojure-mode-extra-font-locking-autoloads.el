@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("clojure-mode-extra-font-locking.el")
-;;;;;;  (22629 33145 933625 164000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/clojure-mode-extra-font-locking-5.6.1/clojure-mode-extra-font-locking-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/clojure-mode-extra-font-locking-5.6.1/clojure-mode-extra-font-locking.el")
+;;;;;;  (22790 6982 0 0))
 
 ;;;***
 

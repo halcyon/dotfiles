@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "avy" "avy.el" (22632 7409 327674 358000))
-;;; Generated autoloads from avy.el
+;;;### (autoloads nil "avy" "../../../../../.emacs.d/elpa/avy-0.4.0/avy.el"
+;;;;;;  "4e7c3a3ac63862ccd12b962d7b194daf")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/avy-0.4.0/avy.el
 
 (autoload 'avy-goto-char "avy" "\
 Jump to the currently visible CHAR.
@@ -119,8 +120,10 @@ The window scope is determined by `avy-all-windows' (ARG negates it).
 
 ;;;***
 
-;;;### (autoloads nil nil ("avy-pkg.el" "avy-test.el") (22632 7409
-;;;;;;  237671 285000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/avy-0.4.0/avy-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/avy-0.4.0/avy-pkg.el" "../../../../../.emacs.d/elpa/avy-0.4.0/avy-test.el"
+;;;;;;  "../../../../../.emacs.d/elpa/avy-0.4.0/avy.el") (22790 6941
+;;;;;;  0 0))
 
 ;;;***
 

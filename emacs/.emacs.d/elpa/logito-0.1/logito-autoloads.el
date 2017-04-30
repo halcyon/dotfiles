@@ -3,7 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("logito.el") (22568 4296 140000 1000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/logito-0.1/logito-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/logito-0.1/logito.el") (22790
+;;;;;;  7026 0 0))
 
 ;;;***
 

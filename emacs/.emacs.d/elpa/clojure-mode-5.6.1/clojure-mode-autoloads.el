@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "clojure-mode" "clojure-mode.el" (22629 33146
-;;;;;;  583650 184000))
-;;; Generated autoloads from clojure-mode.el
+;;;### (autoloads nil "clojure-mode" "../../../../../.emacs.d/elpa/clojure-mode-5.6.1/clojure-mode.el"
+;;;;;;  "b216fc5d0c3fd93c75a324fedb7c7882")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/clojure-mode-5.6.1/clojure-mode.el
 
 (autoload 'clojure-mode "clojure-mode" "\
 Major mode for editing Clojure code.
@@ -133,6 +133,12 @@ Major mode for editing ClojureX code.
 (add-to-list 'auto-mode-alist '("\\.cljs\\'" . clojurescript-mode))
 
 (add-to-list 'auto-mode-alist '("\\(?:build\\|profile\\)\\.boot\\'" . clojure-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/clojure-mode-5.6.1/clojure-mode-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/clojure-mode-5.6.1/clojure-mode.el")
+;;;;;;  (22790 6874 0 0))
 
 ;;;***
 

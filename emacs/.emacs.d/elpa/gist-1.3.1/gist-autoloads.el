@@ -94,8 +94,8 @@ Fork a gist.
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/gist-1.3.1/gist-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/gist-1.3.1/gist.el") (22698
-;;;;;;  28186 330642 269000))
+;;;;;;  "../../../../../.emacs.d/elpa/gist-1.3.1/gist.el") (22790
+;;;;;;  7030 0 0))
 
 ;;;***
 

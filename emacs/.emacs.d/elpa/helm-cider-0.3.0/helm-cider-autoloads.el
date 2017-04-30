@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-cider" "helm-cider.el" (22698 29513 664490
-;;;;;;  7000))
-;;; Generated autoloads from helm-cider.el
+;;;### (autoloads nil "helm-cider" "../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider.el"
+;;;;;;  "463b5637a9a00d826ea539f99afc7bdd")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider.el
 
 (autoload 'helm-cider-apropos-symbol "helm-cider" "\
 Choose Clojure symbols across namespaces.
@@ -79,9 +79,9 @@ Use Helm for CIDER.
 
 ;;;***
 
-;;;### (autoloads nil "helm-cider-repl" "helm-cider-repl.el" (22698
-;;;;;;  29513 654490 354000))
-;;; Generated autoloads from helm-cider-repl.el
+;;;### (autoloads nil "helm-cider-repl" "../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider-repl.el"
+;;;;;;  "28feab1a5bcdb751c037baefa4ed1e1e")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider-repl.el
 
 (autoload 'helm-cider-repl-history-insert "helm-cider-repl" "\
 Insert candidate at the last CIDER REPL prompt.
@@ -106,8 +106,11 @@ Helm interface to CIDER REPL history.
 
 ;;;***
 
-;;;### (autoloads nil nil ("helm-cider-pkg.el") (22698 29513 644490
-;;;;;;  705000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider-repl.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.3.0/helm-cider.el")
+;;;;;;  (22790 6951 0 0))
 
 ;;;***
 

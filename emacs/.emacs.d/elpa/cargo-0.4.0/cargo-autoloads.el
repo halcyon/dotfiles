@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "cargo" "cargo.el" (22698 21741 363685 574000))
-;;; Generated autoloads from cargo.el
+;;;### (autoloads nil "cargo" "../../../../../.emacs.d/elpa/cargo-0.4.0/cargo.el"
+;;;;;;  "d573b57a0dc08dd160a85cfc2274585d")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/cargo-0.4.0/cargo.el
 
 (autoload 'cargo-minor-mode "cargo" "\
 Cargo minor mode. Used to hold keybindings for cargo-mode
@@ -13,9 +14,9 @@ Cargo minor mode. Used to hold keybindings for cargo-mode
 
 ;;;***
 
-;;;### (autoloads nil "cargo-process" "cargo-process.el" (22698 21741
-;;;;;;  363685 574000))
-;;; Generated autoloads from cargo-process.el
+;;;### (autoloads nil "cargo-process" "../../../../../.emacs.d/elpa/cargo-0.4.0/cargo-process.el"
+;;;;;;  "3c8c44c50952c8d6effa3d44b9699276")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/cargo-0.4.0/cargo-process.el
 
 (autoload 'cargo-process-bench "cargo-process" "\
 Run the Cargo bench command.
@@ -157,7 +158,10 @@ Run the last cargo-process command.
 
 ;;;***
 
-;;;### (autoloads nil nil ("cargo-pkg.el") (22698 21741 363685 574000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/cargo-0.4.0/cargo-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/cargo-0.4.0/cargo-pkg.el" "../../../../../.emacs.d/elpa/cargo-0.4.0/cargo-process.el"
+;;;;;;  "../../../../../.emacs.d/elpa/cargo-0.4.0/cargo.el") (22790
+;;;;;;  6984 0 0))
 
 ;;;***
 

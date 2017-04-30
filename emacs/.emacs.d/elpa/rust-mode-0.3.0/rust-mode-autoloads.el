@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "rust-mode" "rust-mode.el" (22598 19353 946005
-;;;;;;  957000))
-;;; Generated autoloads from rust-mode.el
+;;;### (autoloads nil "rust-mode" "../../../../../.emacs.d/elpa/rust-mode-0.3.0/rust-mode.el"
+;;;;;;  "f31b12b8e872b37bd18b466894858a68")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/rust-mode-0.3.0/rust-mode.el
 
 (autoload 'rust-mode "rust-mode" "\
 Major mode for Rust code.
@@ -15,6 +15,12 @@ Major mode for Rust code.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/rust-mode-0.3.0/rust-mode-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/rust-mode-0.3.0/rust-mode.el")
+;;;;;;  (22790 6983 0 0))
 
 ;;;***
 

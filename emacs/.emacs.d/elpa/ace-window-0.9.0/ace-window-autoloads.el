@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "ace-window" "ace-window.el" (22632 27649 364196
-;;;;;;  762000))
-;;; Generated autoloads from ace-window.el
+;;;### (autoloads nil "ace-window" "../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window.el"
+;;;;;;  "b10c4df265dd4bdcc5ac1b1fb25dbee8")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window.el
 
 (autoload 'ace-select-window "ace-window" "\
 Ace select window.
@@ -57,6 +57,12 @@ or call the function `ace-window-display-mode'.")
 Minor mode for showing the ace window key in the mode line.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window.el")
+;;;;;;  (22790 6942 0 0))
 
 ;;;***
 

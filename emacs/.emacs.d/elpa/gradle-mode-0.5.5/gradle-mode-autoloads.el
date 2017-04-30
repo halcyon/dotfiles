@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "gradle-mode" "gradle-mode.el" (22568 4232
-;;;;;;  746666 668000))
-;;; Generated autoloads from gradle-mode.el
+;;;### (autoloads nil "gradle-mode" "../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode.el"
+;;;;;;  "817b51cca0aaa680e21c2848e06f74ee")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode.el
 
 (defvar gradle-mode nil "\
 Non-nil if Gradle mode is enabled.
@@ -20,6 +20,12 @@ Run gradle tasks from any buffer, scanning up to nearest gradle
 directory to run tasks.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode.el")
+;;;;;;  (22790 6967 0 0))
 
 ;;;***
 

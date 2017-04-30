@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-swoop" "helm-swoop.el" (22568 4230 246666
-;;;;;;  667000))
-;;; Generated autoloads from helm-swoop.el
+;;;### (autoloads nil "helm-swoop" "../../../../../.emacs.d/elpa/helm-swoop-1.7.2/helm-swoop.el"
+;;;;;;  "705ecfb20116c084991dbb132fd43146")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-swoop-1.7.2/helm-swoop.el
 
 (autoload 'helm-swoop-back-to-last-point "helm-swoop" "\
 Go back to last position where `helm-swoop' was called
@@ -70,6 +70,12 @@ Start helm-swoop without pre input query.
 
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/helm-swoop-1.7.2/helm-swoop-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-swoop-1.7.2/helm-swoop.el")
+;;;;;;  (22790 6960 0 0))
 
 ;;;***
 

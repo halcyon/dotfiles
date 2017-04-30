@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "xclip" "xclip.el" (22568 4232 623333 335000))
-;;; Generated autoloads from xclip.el
+;;;### (autoloads nil "xclip" "../../../../../.emacs.d/elpa/xclip-1.3/xclip.el"
+;;;;;;  "dafa7cf5928d5dda1ba0e739e3c07d0b")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/xclip-1.3/xclip.el
 
 (defvar xclip-mode nil "\
 Non-nil if Xclip mode is enabled.
@@ -20,6 +21,12 @@ or call the function `xclip-mode'.")
 Minor mode to use the `xclip' program to copy&paste.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/xclip-1.3/xclip-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/xclip-1.3/xclip.el") (22790
+;;;;;;  6967 0 0))
 
 ;;;***
 

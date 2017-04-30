@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "flycheck-pos-tip" "flycheck-pos-tip.el" (22698
-;;;;;;  29514 444462 805000))
-;;; Generated autoloads from flycheck-pos-tip.el
+;;;### (autoloads nil "flycheck-pos-tip" "../../../../../.emacs.d/elpa/flycheck-pos-tip-0.3/flycheck-pos-tip.el"
+;;;;;;  "3b2735ecf60eff7521e6ce73b8a1f9ee")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/flycheck-pos-tip-0.3/flycheck-pos-tip.el
 
 (defvar flycheck-pos-tip-mode nil "\
 Non-nil if Flycheck-Pos-Tip mode is enabled.
@@ -34,6 +34,12 @@ GUI tooltip.  Falls back to `flycheck-display-error-messages' on
 TTY frames.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/flycheck-pos-tip-0.3/flycheck-pos-tip-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/flycheck-pos-tip-0.3/flycheck-pos-tip.el")
+;;;;;;  (22790 6987 0 0))
 
 ;;;***
 
