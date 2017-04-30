@@ -48,9 +48,16 @@ source ${ZSH}/oh-my-zsh.sh
 ulimit -c unlimited
 
 export ALTERNATE_EDITOR=""
-export EDITOR=/usr/bin/emacs
-alias e=/usr/bin/emacsclient
-
+case `uname` in
+Darwin) export COPY="reattach-to-user-namespace pbcopy"
+        export PASTE="reattach-to-user-namespace pbpaste"
+        export EDITOR="/usr/local/bin/emacsclient"
+        alias e="/usr/local/bin/emacsclient"
+        ;;
+Linux) export EDITOR="/usr/bin/emacsclient"
+       alias e="/usr/bin/emacsclient"
+       ;;
+esac
 
 bindkey "^R" history-incremental-search-backward
 
