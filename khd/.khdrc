@@ -1,0 +1,11 @@
+# C-/
+lctrl - 0x2C             : khd -w ""
+
+lctrl + lalt - up        : khd -w "[1;7A"
+lctrl + lalt - down      : khd -w "[1;7B"
+lctrl + lalt - right     : khd -w "[1;7C"
+lctrl + lalt - left      : khd -w "[1;7D"
+
+lctrl + shift - d        : khd -w "[68;6"
+lctrl + shift - a        : khd -w "[65;6"
+lctrl + lalt + shift - v : khd -w "[86;8"
