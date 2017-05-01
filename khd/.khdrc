@@ -1,11 +1,11 @@
-# C-/
-lctrl - 0x2C             : khd -w ""
+# 'C-/'
+lctrl - 0x2C              : khd -w `printf "\x1f"`
 
-lctrl + lalt - up        : khd -w "[1;7A"
-lctrl + lalt - down      : khd -w "[1;7B"
-lctrl + lalt - right     : khd -w "[1;7C"
-lctrl + lalt - left      : khd -w "[1;7D"
+lctrl + lalt - up         : khd -w `printf "\e[1;7A"`
+lctrl + lalt - down       : khd -w `printf "\e[1;7B"`
+lctrl + lalt - right      : khd -w `printf "\e[1;7C"`
+lctrl + lalt - left       : khd -w `printf "\e[1;7D"`
 
-lctrl + shift - d        : khd -w "[68;6"
-lctrl + shift - a        : khd -w "[65;6"
-lctrl + lalt + shift - v : khd -w "[86;8"
+lctrl + lshift - d        : khd -w `printf "\e[68;6"`
+lctrl + lshift - a        : khd -w `printf "\e[65;6"`
+lctrl + lalt + lshift - v : khd -w `printf "\e[86;8"`
