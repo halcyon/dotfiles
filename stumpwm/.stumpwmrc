@@ -14,7 +14,7 @@
 ;; `xev') being the left "Windows" key, aka `Super_L'
 
 ;; change the prefix key
-(set-prefix-key (kbd "s-t"))
+(set-prefix-key (kbd "s-quoteleft"))
 
 ;; prompt the user for an interactive command. The first arg is an
 ;; optional initial contents.
