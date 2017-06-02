@@ -49,7 +49,7 @@
         require-final-newline t
         vc-follow-symlinks t
         browse-url-browser-function 'browse-url-generic
-        browse-url-generic-program "vivaldi-stable")
+        browse-url-generic-program "opera")
   (setq-default indent-tabs-mode nil)
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
