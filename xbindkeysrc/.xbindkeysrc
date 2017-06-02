@@ -18,3 +18,9 @@ Alt + Shift + Right
 
 "xvkbd -no-jump-pointer -xsendevent -text "\C[[1;4D""
 Alt + Shift + Left
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[6;3~""
+Alt + Next
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[5;3~""
+Alt + Prior
