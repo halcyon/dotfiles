@@ -3,9 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "gist" "../../../../../.emacs.d/elpa/gist-1.3.1/gist.el"
-;;;;;;  "fb231ad62e5f39c0eb8260681ed595f4")
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/gist-1.3.1/gist.el
+;;;### (autoloads nil "gist" "gist.el" (22840 52596 639193 185000))
+;;; Generated autoloads from gist.el
 
 (autoload 'gist-region "gist" "\
 Post the current region as a new paste at gist.github.com
@@ -90,12 +89,6 @@ List your starred gists.
 Fork a gist.
 
 \(fn)" t nil)
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/gist-1.3.1/gist-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/gist-1.3.1/gist.el") (22790
-;;;;;;  7030 0 0))
 
 ;;;***
 

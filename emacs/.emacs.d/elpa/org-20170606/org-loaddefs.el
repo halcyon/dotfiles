@@ -1079,7 +1079,7 @@ Set `org-capture-templates' to be similar to `org-remember-templates'.
 
 ;;;***
 
-;;;### (autoloads nil "org-clock" "org-clock.el" "5930538556c16dfa3ab0661217f26955")
+;;;### (autoloads nil "org-clock" "org-clock.el" "4c3204be61893872a2c145a928eb07c4")
 ;;; Generated autoloads from org-clock.el
 
 (autoload 'org-resolve-clocks "org-clock" "\
@@ -1343,7 +1343,7 @@ tree can be found.
 
 ;;;***
 
-;;;### (autoloads nil "org-element" "org-element.el" "e1827ee5063bcac919c1e0b2df212c3c")
+;;;### (autoloads nil "org-element" "org-element.el" "3f8f8f2fdcde3beaabe6e10d74ac03cd")
 ;;; Generated autoloads from org-element.el
 
 (autoload 'org-element-update-syntax "org-element" "\
@@ -1756,7 +1756,7 @@ line directly before or after the table.
 
 ;;;***
 
-;;;### (autoloads nil "org-table" "org-table.el" "7239f6ae575a2767e40687aa9abc2f4c")
+;;;### (autoloads nil "org-table" "org-table.el" "5b8a07d046b04ca301fc3e49541cc343")
 ;;; Generated autoloads from org-table.el
 
 (autoload 'org-table-create-with-table\.el "org-table" "\
@@ -2005,13 +2005,14 @@ any of (?a ?A ?n ?N ?t ?T ?f ?F) where the capital letters indicate that
 sorting should be done in reverse order.
 
 If the SORTING-TYPE is ?f or ?F, then GETKEY-FUNC specifies
-a function to be called to extract the key.  It must return either
-a string or a number that should serve as the sorting key for that
-row.  It will then use COMPARE-FUNC to compare entries.  If GETKEY-FUNC
-is specified interactively, the comparison will be either a string or
-numeric compare based on the type of the first key in the table.
+a function to be called to extract the key.  It must return a value
+that is compatible with COMPARE-FUNC, the function used to compare
+entries.
 
-\(fn WITH-CASE &optional SORTING-TYPE GETKEY-FUNC COMPARE-FUNC)" t nil)
+A non-nil value for INTERACTIVE? is used to signal that this
+function is being called interactively.
+
+\(fn &optional WITH-CASE SORTING-TYPE GETKEY-FUNC COMPARE-FUNC INTERACTIVE\\=\\?)" t nil)
 
 (autoload 'org-table-cut-region "org-table" "\
 Copy region in table to the clipboard and blank all relevant fields.
@@ -2679,9 +2680,9 @@ Store an org-link to the current location.
 This link is added to `org-stored-links' and can later be inserted
 into an Org buffer with `org-insert-link' (`\\[org-insert-link]').
 
-For some link types, a `\\[universal-argument]' prefix ARG is interpreted.
-For links to Usenet articles, ARG negates `org-gnus-prefer-web-links'.
-For file links, ARG negates `org-context-in-file-links'.
+For some link types, a `\\[universal-argument]' prefix ARG is interpreted.  A single
+`\\[universal-argument]' negates `org-context-in-file-links' for file links or
+`org-gnus-prefer-web-links' for links to Usenet articles.
 
 A `\\[universal-argument] \\[universal-argument]' prefix ARG forces skipping storing functions that are not
 part of Org core.
@@ -3177,7 +3178,7 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-html" "ox-html.el" "ebfb941092b84d2545d3e4ba409deb87")
+;;;### (autoloads nil "ox-html" "ox-html.el" "fc1247becd5a40bcf7dfb00367b74922")
 ;;; Generated autoloads from ox-html.el
 
 (put 'org-html-head-include-default-style 'safe-local-variable 'booleanp)
@@ -3688,7 +3689,7 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-publish" "ox-publish.el" "51ad217c5fcff0f1695d1e5d62dac1fb")
+;;;### (autoloads nil "ox-publish" "ox-publish.el" "16d92fb7a98e9f73064e7fff68939745")
 ;;; Generated autoloads from ox-publish.el
 
 (defalias 'org-publish-project 'org-publish)
@@ -3731,7 +3732,7 @@ the project.
 
 ;;;***
 
-;;;### (autoloads nil "ox-texinfo" "ox-texinfo.el" "aaad8d4c3a538744acc5bc6f623616a7")
+;;;### (autoloads nil "ox-texinfo" "ox-texinfo.el" "308ed57b78a3426bd8506e4b33a2f25f")
 ;;; Generated autoloads from ox-texinfo.el
 
 (autoload 'org-texinfo-publish-to-texinfo "ox-texinfo" "\
