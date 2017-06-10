@@ -47,6 +47,7 @@
   (menu-bar-mode -1)
   (setq inhibit-startup-message t
         require-final-newline t
+        ielm-dynamic-return nil
         vc-follow-symlinks t
         browse-url-browser-function 'browse-url-generic
         browse-url-generic-program "opera")
@@ -233,9 +234,46 @@ Null prefix argument turns off the mode."
   (require 'ob-clojure)
   (setq org-src-fontify-natively t
         org-babel-clojure-backend 'cider
+        org-directory "~/projects/org"
+        org-agenda-files `(,org-directory)
+        org-default-notes-file (concat org-directory "/notes.org")
+        org-refile-targets '((org-agenda-files :level . 1))
+        org-refile-allow-creating-parent-nodes 'confirm
         org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
         org-hierarchical-todo-statistics nil)
-  (provide 'org-settings))
+  (let* ((tw-margin '(file+datetree+prompt ""))
+         (underlying "* %^{Underlying} ")
+         (headers (concat "|Side|Qty|Symbol|Exp|Strike|Type|\n%?"
+                          "|-\n"))
+         (credit (concat "** Credit\n"
+                         "- %^{Credit} Cr. %^{transaction-date}t"))
+         (iron-condor (concat underlying
+                              "Iron Condor\n"
+                              headers
+                              "|LONG | 1|%\\1|%t|%^{long-put-strike}  |PUT |\n"
+                              "|SHORT|-1|%\\1|%t|%^{short-put-strike} |PUT |\n"
+                              "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
+                              "|LONG | 1|%\\1|%t|%^{long-call-strike} |CALL|\n"
+                              credit))
+         (jade-lizard (concat underlying
+                              "Jade Lizard\n"
+                              headers
+                              "|SHORT|-1|%\\1|%t|%^{short-put-strike} |PUT |\n"
+                              "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
+                              "|LONG | 1|%\\1|%t|%^{long-call-strike} |CALL|\n"
+                              credit))
+         (strangle (concat underlying
+                           "Strangle\n"
+                           headers
+                           "|SHORT|-1|%\\1|%t|%^{short-put-strike} |PUT |\n"
+                           "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
+                           credit)))
+    (setq org-capture-templates `(("p" "Position")
+                                  ("pi" "Iron Condor" entry ,tw-margin ,iron-condor :unnarrowed t)
+                                  ("pj" "Jade Lizard" entry ,tw-margin ,jade-lizard :unnarrowed t)
+                                  ("ps" "Strangle" entry ,tw-margin ,strangle :unnarrowed t))))
+  (provide 'org-settings)
+  :bind ("C-c c" . org-capture))
 
 ;;;;; org2jekyll
 (use-package org2jekyll
