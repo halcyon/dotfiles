@@ -241,12 +241,22 @@ Null prefix argument turns off the mode."
         org-refile-allow-creating-parent-nodes 'confirm
         org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
         org-hierarchical-todo-statistics nil)
-  (let* ((tw-margin '(file+datetree+prompt ""))
+  (let* ((target '(file+datetree+prompt ""))
          (underlying "* %^{Underlying} ")
          (headers (concat "|Side|Qty|Symbol|Exp|Strike|Type|\n%?"
                           "|-\n"))
          (credit (concat "** Credit\n"
                          "- %^{Credit} Cr. %^{transaction-date}t"))
+         (naked-call (concat underlying
+                             "Call\n"
+                             headers
+                             "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
+                             credit))
+         (naked-put (concat underlying
+                            "Put\n"
+                            headers
+                            "|SHORT|-1|%\\1|%t|%^{short-put-strike}|PUT|\n"
+                            credit))
          (iron-condor (concat underlying
                               "Iron Condor\n"
                               headers
@@ -269,9 +279,11 @@ Null prefix argument turns off the mode."
                            "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
                            credit)))
     (setq org-capture-templates `(("p" "Position")
-                                  ("pi" "Iron Condor" entry ,tw-margin ,iron-condor :unnarrowed t)
-                                  ("pj" "Jade Lizard" entry ,tw-margin ,jade-lizard :unnarrowed t)
-                                  ("ps" "Strangle" entry ,tw-margin ,strangle :unnarrowed t))))
+                                  ("pc" "Call" entry ,target ,naked-call :unnarrowed t)
+                                  ("pp" "Put" entry ,target ,naked-put :unnarrowed t)
+                                  ("pi" "Iron Condor" entry ,target ,iron-condor :unnarrowed t)
+                                  ("pj" "Jade Lizard" entry ,target ,jade-lizard :unnarrowed t)
+                                  ("ps" "Strangle" entry ,target ,strangle :unnarrowed t))))
   (provide 'org-settings)
   :bind ("C-c c" . org-capture))
 
