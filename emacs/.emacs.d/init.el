@@ -237,16 +237,16 @@ Null prefix argument turns off the mode."
         org-directory "~/projects/org"
         org-agenda-files `(,org-directory)
         org-default-notes-file (concat org-directory "/notes.org")
-        org-refile-targets '((org-agenda-files :level . 1))
+        org-refile-targets '((org-agenda-files :level . 3))
         org-refile-allow-creating-parent-nodes 'confirm
         org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
         org-hierarchical-todo-statistics nil)
   (let* ((target '(file+datetree+prompt ""))
          (underlying "* %^{Underlying} ")
-         (headers (concat "|Side|Qty|Symbol|Exp|Strike|Type|\n%?"
-                          "|-\n"))
+         (headers (concat "  |Side|Qty|Symbol|Exp|Strike|Type|\n%?"
+                          "  |-\n"))
          (credit (concat "** Credit\n"
-                         "- %^{Credit} Cr. %^{transaction-date}t"))
+                         "   - %^{Credit} Cr. %^{transaction-date}t"))
          (naked-call (concat underlying
                              "Call\n"
                              headers
