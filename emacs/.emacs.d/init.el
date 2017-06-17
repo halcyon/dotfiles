@@ -257,6 +257,12 @@ Null prefix argument turns off the mode."
                             headers
                             "|SHORT|-1|%\\1|%t|%^{short-put-strike}|PUT|\n"
                             credit))
+         (put-spread (concat underlying
+                             "Put Spread\n"
+                             headers
+                             "|LONG |-1|%\\1|%t|%^{long-put-strike} |PUT|\n"
+                             "|SHORT|-1|%\\1|%t|%^{short-put-strike}|PUT|\n"
+                             credit))
          (iron-condor (concat underlying
                               "Iron Condor\n"
                               headers
@@ -279,11 +285,14 @@ Null prefix argument turns off the mode."
                            "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
                            credit)))
     (setq org-capture-templates `(("p" "Position")
-                                  ("pc" "Call" entry ,target ,naked-call :unnarrowed t)
-                                  ("pp" "Put" entry ,target ,naked-put :unnarrowed t)
                                   ("pi" "Iron Condor" entry ,target ,iron-condor :unnarrowed t)
                                   ("pj" "Jade Lizard" entry ,target ,jade-lizard :unnarrowed t)
-                                  ("ps" "Strangle" entry ,target ,strangle :unnarrowed t))))
+                                  ("ps" "Strangle" entry ,target ,strangle :unnarrowed t)
+                                  ("pn" "Naked")
+                                  ("pnc" "Naked Call" entry ,target ,naked-call :unnarrowed t)
+                                  ("pnp" "Naked Put" entry ,target ,naked-put :unnarrowed t)
+                                  ("pp" "Put")
+                                  ("pps" "Put Spread" entry ,target ,put-spread :unnarrowed t))))
   (provide 'org-settings)
   :bind ("C-c c" . org-capture))
 
