@@ -263,6 +263,24 @@ Null prefix argument turns off the mode."
                              "|LONG |-1|%\\1|%t|%^{long-put-strike} |PUT|\n"
                              "|SHORT|-1|%\\1|%t|%^{short-put-strike}|PUT|\n"
                              credit))
+         (ratio-put-spread (concat underlying
+                                   "Ratio Put Spread\n"
+                                   headers
+                                   "|SHORT|-2|%\\1|%t|%^{short-put-strike}|PUT|\n"
+                                   "|LONG |-1|%\\1|%t|%^{long-put-strike} |PUT|\n"
+                                   credit))
+         (call-spread (concat underlying
+                              "Call Spread\n"
+                              headers
+                              "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
+                              "|LONG |-1|%\\1|%t|%^{long-call-strike} |CALL|\n"
+                              credit))
+         (ratio-call-spread (concat underlying
+                                    "Ratio Call Spread\n"
+                                    headers
+                                    "|LONG |-1|%\\1|%t|%^{long-call-strike} |CALL|\n"
+                                    "|SHORT|-2|%\\1|%t|%^{short-call-strike}|CALL|\n"
+                                    credit))
          (iron-condor (concat underlying
                               "Iron Condor\n"
                               headers
@@ -288,11 +306,16 @@ Null prefix argument turns off the mode."
                                   ("pi" "Iron Condor" entry ,target ,iron-condor :unnarrowed t)
                                   ("pj" "Jade Lizard" entry ,target ,jade-lizard :unnarrowed t)
                                   ("ps" "Strangle" entry ,target ,strangle :unnarrowed t)
-                                  ("pn" "Naked")
-                                  ("pnc" "Naked Call" entry ,target ,naked-call :unnarrowed t)
-                                  ("pnp" "Naked Put" entry ,target ,naked-put :unnarrowed t)
+
                                   ("pp" "Put")
-                                  ("pps" "Put Spread" entry ,target ,put-spread :unnarrowed t))))
+                                  ("ppn" "Naked Put" entry ,target ,naked-put :unnarrowed t)
+                                  ("pps" "Put Spread" entry ,target ,put-spread :unnarrowed t)
+                                  ("ppr" "Ratio Put Spread" entry ,target ,ratio-put-spread :unnarrowed t)
+
+                                  ("pc" "Call")
+                                  ("pcn" "Naked Call" entry ,target ,naked-call :unnarrowed t)
+                                  ("pcs" "Call Spread" entry ,target ,call-spread :unnarrowed t)
+                                  ("pcr" "Ratio Call Spread" entry ,target ,ratio-call-spread :unnarrowed t))))
   (provide 'org-settings)
   :bind ("C-c c" . org-capture))
 
