@@ -36,5 +36,5 @@ fi
 /usr/bin/xss-lock slock &
 /usr/bin/xbindkeys
 /usr/bin/xset r rate 200 50
-/usr/bin/syndaemon -i 0.8 -R -d
+#/usr/bin/syndaemon -i 0.8 -R -d
 /usr/bin/stumpwm
