@@ -243,65 +243,68 @@ Null prefix argument turns off the mode."
         org-hierarchical-todo-statistics nil)
   (let* ((target '(file+datetree+prompt ""))
          (underlying "* %^{Underlying} ")
-         (headers (concat "  |Side|Qty|Symbol|Exp|Strike|Type|\n%?"
-                          "  |-\n"))
-         (credit (concat "** Credit\n"
-                         "   - %^{Credit} Cr. %^{transaction-date}t"))
+         (headers "  |-\n%?")
+         (transactions (concat "  |-\n"
+                               "  ||||%^{transaction-date}t|%^{Credit}|Trade|\n"
+                               "  |-\n"
+                               "  |Total||||||\n"
+                               "  |-\n"
+                               "  #+TBLFM: @>$5=vsum(@II..III);%.2f\n"))
          (naked-call (concat underlying
                              "Call\n"
                              headers
-                             "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
-                             credit))
+                             "|Short|-1|%\\1|%t|%^{short-call-strike}|Call|\n"
+                             transactions))
          (naked-put (concat underlying
                             "Put\n"
                             headers
-                            "|SHORT|-1|%\\1|%t|%^{short-put-strike}|PUT|\n"
-                            credit))
+                            "|Short|-1|%\\1|%t|%^{short-put-strike}|Put|\n"
+                            transactions))
          (put-spread (concat underlying
                              "Put Spread\n"
                              headers
-                             "|LONG |-1|%\\1|%t|%^{long-put-strike} |PUT|\n"
-                             "|SHORT|-1|%\\1|%t|%^{short-put-strike}|PUT|\n"
-                             credit))
+                             "|Long | 1|%\\1|%t|%^{long-put-strike} |Put|\n"
+                             "|Short|-1|%\\1|%t|%^{short-put-strike}|Put|\n"
+                             transactions))
          (ratio-put-spread (concat underlying
                                    "Ratio Put Spread\n"
                                    headers
-                                   "|SHORT|-2|%\\1|%t|%^{short-put-strike}|PUT|\n"
-                                   "|LONG |-1|%\\1|%t|%^{long-put-strike} |PUT|\n"
-                                   credit))
+                                   "|Short|-2|%\\1|%t|%^{short-put-strike}|Put|\n"
+                                   "|Long | 1|%\\1|%t|%^{long-put-strike} |Put|\n"
+                                   transactions))
          (call-spread (concat underlying
                               "Call Spread\n"
                               headers
-                              "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
-                              "|LONG |-1|%\\1|%t|%^{long-call-strike} |CALL|\n"
-                              credit))
+                              "|Short|-1|%\\1|%t|%^{short-call-strike}|Call|\n"
+                              "|Long | 1|%\\1|%t|%^{long-call-strike} |Call|\n"
+                              transactions))
          (ratio-call-spread (concat underlying
                                     "Ratio Call Spread\n"
                                     headers
-                                    "|LONG |-1|%\\1|%t|%^{long-call-strike} |CALL|\n"
-                                    "|SHORT|-2|%\\1|%t|%^{short-call-strike}|CALL|\n"
-                                    credit))
+                                    "|Long | 1|%\\1|%t|%^{long-call-strike} |Call|\n"
+                                    "|Short|-2|%\\1|%t|%^{short-call-strike}|Call|\n"
+                                    transactions))
          (iron-condor (concat underlying
                               "Iron Condor\n"
                               headers
-                              "|LONG | 1|%\\1|%t|%^{long-put-strike}  |PUT |\n"
-                              "|SHORT|-1|%\\1|%t|%^{short-put-strike} |PUT |\n"
-                              "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
-                              "|LONG | 1|%\\1|%t|%^{long-call-strike} |CALL|\n"
-                              credit))
+                              "|Long | 1|%\\1|%t|%^{long-put-strike}  |Put |\n"
+                              "|Short|-1|%\\1|%t|%^{short-put-strike} |Put |\n"
+                              "|Short|-1|%\\1|%t|%^{short-call-strike}|Call|\n"
+                              "|Long | 1|%\\1|%t|%^{long-call-strike} |Call|\n"
+                              transactions))
          (jade-lizard (concat underlying
                               "Jade Lizard\n"
                               headers
-                              "|SHORT|-1|%\\1|%t|%^{short-put-strike} |PUT |\n"
-                              "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
-                              "|LONG | 1|%\\1|%t|%^{long-call-strike} |CALL|\n"
-                              credit))
+                              "|Short|-1|%\\1|%t|%^{short-put-strike} |Put |\n"
+                              "|Short|-1|%\\1|%t|%^{short-call-strike}|Call|\n"
+                              "|Long | 1|%\\1|%t|%^{long-call-strike} |Call|\n"
+                              transactions))
          (strangle (concat underlying
                            "Strangle\n"
                            headers
-                           "|SHORT|-1|%\\1|%t|%^{short-put-strike} |PUT |\n"
-                           "|SHORT|-1|%\\1|%t|%^{short-call-strike}|CALL|\n"
-                           credit)))
+                           "|Short|-1|%\\1|%t|%^{short-put-strike} |Put |\n"
+                           "|Short|-1|%\\1|%t|%^{short-call-strike}|Call|\n"
+                           transactions)))
     (setq org-capture-templates `(("p" "Position")
                                   ("pi" "Iron Condor" entry ,target ,iron-condor :unnarrowed t)
                                   ("pj" "Jade Lizard" entry ,target ,jade-lizard :unnarrowed t)
