@@ -4132,7 +4132,7 @@ PROPERTIES accepts the following attributes:
   :image-output-type  string, output file type of image converter (e.g., \"png\").
   :use-xcolor         boolean, when non-nil, LaTeX \"xcolor\" macro is used to
                       deal with background and foreground color of image.
-                      Otherwise, dvipng style background and foregroud color
+                      Otherwise, dvipng style background and foreground color
                       format are generated.  You may then refer to them in
                       command options with \"%F\" and \"%B\".
   :image-size-adjust  cons of numbers, the car element is used to adjust LaTeX
@@ -6208,9 +6208,10 @@ by a #."
 			       'keymap org-mouse-map))
     (org-rear-nonsticky-at (match-end 0))
     (when org-display-custom-times
-      (if (match-end 3)
-	  (org-display-custom-time (match-beginning 3) (match-end 3))
-	(org-display-custom-time (match-beginning 1) (match-end 1))))
+      ;; If it's a date range, activate custom time for second date.
+      (when (match-end 3)
+	(org-display-custom-time (match-beginning 3) (match-end 3)))
+      (org-display-custom-time (match-beginning 1) (match-end 1)))
     t))
 
 (defvar-local org-target-link-regexp nil
@@ -13738,7 +13739,7 @@ EXTRA is additional text that will be inserted into the notes buffer."
   (org-switch-to-buffer-other-window "*Org Note*")
   (erase-buffer)
   (if (memq org-log-note-how '(time state))
-      (let (current-prefix-arg) (org-store-log-note))
+      (org-store-log-note)
     (let ((org-inhibit-startup t)) (org-mode))
     (insert (format "# Insert note for %s.
 # Finish with C-c C-c, or cancel with C-c C-k.\n\n"
@@ -13815,7 +13816,7 @@ EXTRA is additional text that will be inserted into the notes buffer."
 				     org-log-note-previous-state)))))))
       (when lines (setq note (concat note " \\\\")))
       (push note lines))
-    (when (and lines (not (or current-prefix-arg org-note-abort)))
+    (when (and lines (not org-note-abort))
       (with-current-buffer (marker-buffer org-log-note-marker)
 	(org-with-wide-buffer
 	 ;; Find location for the new note.
@@ -14808,7 +14809,7 @@ it as a time string and apply `float-time' to it.  If S is nil, just return 0."
    ((numberp s) s)
    ((stringp s)
     (condition-case nil
-	(float-time (apply 'encode-time (org-parse-time-string s)))
+	(float-time (apply #'encode-time (org-parse-time-string s nil t)))
       (error 0.)))
    (t 0.)))
 
@@ -17103,7 +17104,7 @@ user."
   ;; FIXME: cleanup and comment
   ;; Pass `current-time' result to `decode-time' (instead of calling
   ;; without arguments) so that only `current-time' has to be
-  ;; overriden in tests.
+  ;; overridden in tests.
   (let ((org-def def)
 	(org-defdecode defdecode)
 	(nowdecode (decode-time (current-time)))
@@ -17285,7 +17286,7 @@ user."
       (unless deltadef
 	;; Pass `current-time' result to `decode-time' (instead of
 	;; calling without arguments) so that only `current-time' has
-	;; to be overriden in tests.
+	;; to be overridden in tests.
 	(let ((now (decode-time (current-time))))
 	  (setq day (nth 3 now) month (nth 4 now) year (nth 5 now))))
       (cond ((member deltaw '("d" "")) (setq day (+ day deltan)))
@@ -17740,7 +17741,7 @@ BUFFER.
 
 Diary sexp timestamps are matched against DAYNR, when non-nil.
 If matching fails or DAYNR is nil, `org-diary-sexp-no-match' is
-signalled."
+signaled."
   (cond
    ((string-match "\\`%%\\((.*)\\)" s)
     ;; Sexp timestamp: try to match DAYNR, if available, since we're
@@ -19027,9 +19028,7 @@ looks only before point, not after."
   (catch 'exit
     (let ((pos (point))
 	  (dodollar (member "$" (plist-get org-format-latex-options :matchers)))
-	  (lim (progn
-		 (re-search-backward (concat "^\\(" paragraph-start "\\)") nil t)
-		 (point)))
+	  (lim (save-excursion (org-backward-paragraph) (point)))
 	  dd-on str (start 0) m re)
       (goto-char pos)
       (when dodollar
@@ -19463,7 +19462,7 @@ a HTML file."
 	(insert latex-header)
 	(insert "\n\\begin{document}\n" string "\n\\end{document}\n")))
 
-    (let* ((err-msg (format "Please adjust '%s' part of \
+    (let* ((err-msg (format "Please adjust `%s' part of \
 `org-preview-latex-process-alist'."
 			    processing-type))
 	   (image-input-file
