@@ -567,6 +567,7 @@ Null prefix argument turns off the mode."
   ;;     (let ((case-fold-search t))
   ;;       (and (re-search-backward "^[;]+ package: \\((.+)\\).*$" nil t)
   ;;            (match-string-no-properties 1)))))
+  (load (expand-file-name "~/quicklisp/slime-helper.el"))
   (defun mit-scheme-init (file encoding)
     (unload-feature 'slime-autodoc t)
     (format "%S\n\n"
