@@ -26,6 +26,6 @@ case `uname` in
 Darwin) echo "${LOCAL_TIME} | ${ZULU_TIME}"
         ;;
 Linux) SYSTEM_BATTERY=$(acpi | awk -F, '{print $2}' | awk '{$1=$1;print}' | head -n1)
-       echo "${VPN} | ${MICROPHONE} | ${SYSTEM_BATTERY} | ${LOCAL_TIME} | ${ZULU_TIME}"
+       echo -n "${VPN} | ${MICROPHONE} | ${SYSTEM_BATTERY} | ${LOCAL_TIME} | ${ZULU_TIME}"
        ;;
 esac
