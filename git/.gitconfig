@@ -9,5 +9,5 @@
 	program = gpg2
 [include]
         path = ~/dotfiles-private/git/git-private
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+# [url "git@github.com:"]
+# 	insteadOf = https://github.com/

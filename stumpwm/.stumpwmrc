@@ -103,12 +103,6 @@
 
 (replace-hook *key-press-hook* 'key-press-hook)
 
-(require :swank)
-(swank-loader:init)
-(swank:create-server :port 4004
-                     :style swank:*communication-style*
-                     :dont-close t)
-
 ;; This is for the sake of Emacs.
 ;; Local Variables:
 ;; coding: utf-8
