@@ -662,6 +662,23 @@ Null prefix argument turns off the mode."
   :config
   (add-hook 'haskell-mode-hook #'hindent-mode))
 
+;; ;;;;; tide
+;; (use-package tide
+;;   :config
+;;   (defun setup-tide-mode ()
+;;     (interactive)
+;;     (tide-setup)
+;;     (flycheck-mode +1)
+;;     (setq flycheck-check-syntax-automatically '(save mode-enabled))
+;;     (eldoc-mode +1)
+;;     (tide-hl-identifier-mode +1)
+;;     (company-mode +1))
+;;   (setq company-tooltip-align-annotations t)
+;;   ;; formats the buffer before saving
+;;   (add-hook 'before-save-hook 'tide-format-before-save)
+
+;;   (add-hook 'typescript-mode-hook #'setup-tide-mode))
+
 ;;;;; js2-mode
 (use-package js2-mode
   :quelpa (js2-mode :repo "mooz/js2-mode"

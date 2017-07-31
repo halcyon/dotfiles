@@ -75,7 +75,11 @@ export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export SQLPATH=${HOME}/dotfiles/oracle
 
 export HASKELL_STACK_PATH=${HOME}/.local/bin
-export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}
+
+export GEM_HOME=${HOME}/.gem
+export GEM_PATH=${GEM_HOME}/ruby/2.4.0
+
+export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}:${GEM_PATH}/bin
 
 export STARDICT_DATA_DIR=/home/smcleod/Dropbox/dic
 export SDCV_PAGER=less
@@ -93,8 +97,5 @@ if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/dotfiles-private/zsh/zsh-private
 fi
-
-export NVM_DIR="/home/smcleod/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [[ -s "/home/smcleod/.gvm/scripts/gvm" ]] && source "/home/smcleod/.gvm/scripts/gvm"
