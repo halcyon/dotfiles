@@ -403,6 +403,9 @@ Null prefix argument turns off the mode."
   :quelpa (ox-reveal :fetcher github
                      :repo "yjwen/org-reveal"))
 
+;;;;; yaml-mode
+(use-package yaml-mode)
+
 ;;;; replacements for improved functionality
 ;;;;; which-key
 (use-package which-key
