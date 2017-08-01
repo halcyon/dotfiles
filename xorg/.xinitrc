@@ -36,4 +36,4 @@ fi
 /usr/bin/xss-lock slock &
 /usr/bin/xbindkeys
 /usr/bin/xset r rate 200 50
-exec sbcl --load ~/dotfiles-private/stumpwm/startstump
+exec sbcl --load ~/dotfiles/stumpwm/startstump
