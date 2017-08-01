@@ -38,7 +38,7 @@ ZSH_THEME="halcyon"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump)
+plugins=(git autojump totp)
 
 source ${ZSH}/oh-my-zsh.sh
 # source ~/dotfiles/docker/start.sh
@@ -99,3 +99,7 @@ then
 fi
 
 [[ -s "/home/smcleod/.gvm/scripts/gvm" ]] && source "/home/smcleod/.gvm/scripts/gvm"
+
+export PATH="/home/smcleod/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
