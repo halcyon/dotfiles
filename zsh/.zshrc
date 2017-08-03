@@ -87,8 +87,6 @@ alias sdcv='sdcv --utf8-input --utf8-output --color'
 
 export BROWSER=opera
 
-source $HOME/.cargo/env
-
 function youtube-playlist() {
     youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' -o "%(playlist_index)s-%(title)s.%(ext)s" ${1}
 }
@@ -100,6 +98,4 @@ fi
 
 [[ -s "/home/smcleod/.gvm/scripts/gvm" ]] && source "/home/smcleod/.gvm/scripts/gvm"
 
-export PATH="/home/smcleod/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+export MANPATH=$(manpath)":${HOME}/dotfiles/man"
