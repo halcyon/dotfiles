@@ -123,6 +123,20 @@ Null prefix argument turns off the mode."
   (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
   (pinentry-start))
 
+;;;;; golden-ratio
+(use-package golden-ratio
+  :init
+  (setq golden-ratio-auto-scale t)
+  :config
+  (golden-ratio-mode 1))
+
+;;;;; golden-ratio-scroll-screen
+(use-package golden-ratio-scroll-screen
+  :quelpa (golden-ratio-scroll-screen :repo "jixiuf/golden-ratio-scroll-screen" :fetcher github)
+  :config
+  (global-set-key [remap scroll-down-command] 'golden-ratio-scroll-screen-down)
+  (global-set-key [remap scroll-up-command] 'golden-ratio-scroll-screen-up))
+
 ;;;;; cider
 (use-package cider
   :bind (:map cider-repl-mode-map
