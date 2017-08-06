@@ -69,6 +69,7 @@ function tmate () {
 bindkey "^R" history-incremental-search-backward
 
 export LESS='-R'
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 export ORACLE_HOME=${HOME}/instantclient_12_1
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
