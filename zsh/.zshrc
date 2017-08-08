@@ -61,10 +61,10 @@ case `uname` in
            ;;
 esac
 
-function tmate () {
-    unset TMUX
-    /usr/bin/tmate -L default
-}
+# function tmate () {
+#     unset TMUX
+#     /usr/bin/tmate -L default
+# }
 
 bindkey "^R" history-incremental-search-backward
 
