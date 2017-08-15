@@ -84,7 +84,7 @@ export GEM_PATH=${GEM_HOME}/ruby/2.4.0
 
 export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}:${GEM_PATH}/bin:${HOME}/go/bin
 
-export STARDICT_DATA_DIR=/home/smcleod/Dropbox/dic
+export STARDICT_DATA_DIR=/home/smcleod/gitlab/dic
 export SDCV_PAGER=less
 alias sdcv='sdcv --utf8-input --utf8-output --color'
 

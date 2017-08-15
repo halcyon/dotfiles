@@ -124,18 +124,18 @@ Null prefix argument turns off the mode."
   (pinentry-start))
 
 ;;;;; golden-ratio
-(use-package golden-ratio
-  :init
-  (setq golden-ratio-auto-scale t)
-  :config
-  (golden-ratio-mode 1))
+;; (use-package golden-ratio
+;;   :init
+;;   (setq golden-ratio-auto-scale t)
+;;   :config
+;;   (golden-ratio-mode 1))
 
 ;;;;; golden-ratio-scroll-screen
-(use-package golden-ratio-scroll-screen
-  :quelpa (golden-ratio-scroll-screen :repo "jixiuf/golden-ratio-scroll-screen" :fetcher github)
-  :config
-  (global-set-key [remap scroll-down-command] 'golden-ratio-scroll-screen-down)
-  (global-set-key [remap scroll-up-command] 'golden-ratio-scroll-screen-up))
+;; (use-package golden-ratio-scroll-screen
+;;   :quelpa (golden-ratio-scroll-screen :repo "jixiuf/golden-ratio-scroll-screen" :fetcher github)
+;;   :config
+;;   (global-set-key [remap scroll-down-command] 'golden-ratio-scroll-screen-down)
+;;   (global-set-key [remap scroll-up-command] 'golden-ratio-scroll-screen-up))
 
 ;;;;; cider
 (use-package cider
@@ -225,7 +225,7 @@ Null prefix argument turns off the mode."
 ;;;;; info
 (use-package info
   :config
-  (add-to-list 'Info-directory-list (expand-file-name "~/Dropbox/info"))
+  (add-to-list 'Info-directory-list (expand-file-name "~/gitlab/info"))
   (add-hook 'Info-mode-hook #'linum-off))
 
 ;;;;; dired-x
