@@ -4,6 +4,8 @@
 
 (in-package :stumpwm)
 
+(setf *shell-program* "/usr/bin/zsh")
+
 ;;** Prefix Key
 
 ;; I tend to place "system-wide" window manager shortcut keys consistently
