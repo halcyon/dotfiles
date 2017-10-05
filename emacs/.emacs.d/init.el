@@ -8,7 +8,8 @@
 (load custom-file)
 (setq package-enable-at-startup nil)
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
-                         ("gnu" . "https://elpa.gnu.org/packages/")))
+                         ("gnu" . "https://elpa.gnu.org/packages/")
+                         ("org" . "http://orgmode.org/elpa/")))
 (unless (file-directory-p "~/.emacs.d/elpa/archives")
   (package-refresh-contents))
 (package-initialize)
@@ -238,9 +239,9 @@ Null prefix argument turns off the mode."
 
 (use-package htmlize)
 
-(use-package ox-gfm
-  :quelpa (ox-gfm :fetcher github
-                  :repo "larstvei/ox-gfm"))
+;; (use-package ox-gfm
+;;   :quelpa (ox-gfm :fetcher github
+;;                   :repo "larstvei/ox-gfm"))
 
 (use-package org-settings
   :ensure nil
