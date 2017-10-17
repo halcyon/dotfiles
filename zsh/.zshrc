@@ -82,7 +82,7 @@ export HASKELL_STACK_PATH=${HOME}/.local/bin
 export GEM_HOME=${HOME}/.gem
 export GEM_PATH=${GEM_HOME}/ruby/2.4.0
 
-export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}:${GEM_PATH}/bin:${HOME}/go/bin
+export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}:${GEM_PATH}/bin:${HOME}/go/bin:${HOME}/bin
 
 export STARDICT_DATA_DIR=/home/smcleod/gitlab/dic
 export SDCV_PAGER=less
