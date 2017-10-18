@@ -49,6 +49,9 @@ source ${ZSH}/oh-my-zsh.sh
 
 ulimit -c unlimited
 
+# Unbinds C-\ from SIGQUIT
+stty quit undef
+
 export ALTERNATE_EDITOR=""
 case `uname` in
     Darwin) export EDITOR="/usr/local/bin/emacsclient"
