@@ -4,7 +4,7 @@
 
 (in-package :stumpwm)
 
-(setf *shell-program* "/usr/bin/zsh")
+;; (setf *shell-program* "/usr/bin/zsh")
 
 ;;** Prefix Key
 
