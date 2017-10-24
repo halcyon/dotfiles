@@ -607,9 +607,9 @@ Null prefix argument turns off the mode."
 
 
 ;;;;; geiser
-;; (use-package geiser
-;;   :config
-;;   (setq geiser-active-implementations '(chicken)))
+(use-package geiser
+  :config
+  (setq geiser-active-implementations '(mit)))
 
 ;;;;; clojure-mode
 (use-package clojure-mode-extra-font-locking)
