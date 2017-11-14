@@ -513,7 +513,7 @@ Null prefix argument turns off the mode."
 
 ;;;;; xclip
 (use-package xclip
-  :config (turn-on-xclip))
+  :config (xclip-mode))
 
 ;;;; language
 ;;;;; gradle-mode
@@ -577,7 +577,8 @@ Null prefix argument turns off the mode."
 (use-package slime
   :init
   (setq slime-lisp-implementations '((sbcl ("sbcl"))
-                                     (mit-scheme ("mit-scheme") :init mit-scheme-init))
+                                     ;; (mit-scheme ("mit-scheme") :init mit-scheme-init)
+                                     )
         slime-contribs '(slime-fancy slime-company))
   :config
   ;; (defun find-mit-scheme-package ()
@@ -586,24 +587,28 @@ Null prefix argument turns off the mode."
   ;;       (and (re-search-backward "^[;]+ package: \\((.+)\\).*$" nil t)
   ;;            (match-string-no-properties 1)))))
   (load (expand-file-name "~/quicklisp/slime-helper.el"))
-  (defun mit-scheme-init (file encoding)
-    (unload-feature 'slime-autodoc t)
-    (format "%S\n\n"
-            `(begin
-              (load-option 'format)
-              (load-option 'sos)
-              (eval
-               '(create-package-from-description
-                 (make-package-description '(swank) (list (list))
-                                           (vector) (vector) (vector) false))
-               (->environment '(package)))
-              (load ,(expand-file-name "contrib/swank-mit-scheme.scm"
-                                       slime-path)
-                    (->environment '(swank)))
-              (eval '(start-swank ,file) (->environment '(swank))))))
-  (defun scheme-mode-init ()
-    (slime-mode 1))
-  (add-hook 'scheme-mode-hook #'scheme-mode-init))
+  ;; (defun mit-scheme-init (file encoding)
+  ;;   (unload-feature 'slime-autodoc t)
+  ;;   (format "%S\n\n"
+  ;;           `(begin
+  ;;             (load-option 'format)
+  ;;             (load-option 'sos)
+  ;;             (eval
+  ;;              '(create-package-from-description
+  ;;                (make-package-description '(swank) (list (list))
+  ;;                                          (vector) (vector) (vector) false))
+  ;;              (->environment '(package)))
+  ;;             (load ,(expand-file-name "contrib/swank-mit-scheme.scm"
+  ;;                                      slime-path)
+  ;;                   (->environment '(swank)))
+  ;;             (eval '(start-swank ,file) (->environment '(swank))))))
+  ;; (defun mit-scheme ()
+  ;;   (interactive)
+  ;;     (slime 'mit-scheme))
+  ;; (defun scheme-mode-init ()
+  ;;   (slime-mode 1))
+  ;; (add-hook 'scheme-mode-hook #'scheme-mode-init)
+  )
 
 
 ;;;;; geiser
