@@ -84,7 +84,7 @@
   (0 t t :create "emacs-dump" :class "Emacs"))
 
 (defparameter *home-dir* (stumpwm::getenv "HOME"))
-(load (concat *home-dir* "/" "dotfiles-private/stumpwm/stumpwm.lisp"))
+(load (concat *home-dir* "/" "gitlab/dotfiles-private/stumpwm/stumpwm.lisp"))
 
 ;;** 12 (info "(stumpwm)Hooks")
 

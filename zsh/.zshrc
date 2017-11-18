@@ -97,9 +97,9 @@ function youtube-playlist() {
     youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' -o "%(playlist_index)s-%(title)s.%(ext)s" ${1}
 }
 
-if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
+if [[ -f ${HOME}/gitlab/dotfiles-private/zsh/zsh-private ]]
 then
-    source ${HOME}/dotfiles-private/zsh/zsh-private
+    source ${HOME}/gitlab/dotfiles-private/zsh/zsh-private
 fi
 
 [[ -s "/home/smcleod/.gvm/scripts/gvm" ]] && source "/home/smcleod/.gvm/scripts/gvm"
