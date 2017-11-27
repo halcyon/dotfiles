@@ -51,7 +51,7 @@
         ielm-dynamic-return nil
         vc-follow-symlinks t
         browse-url-browser-function 'browse-url-generic
-        browse-url-generic-program "opera")
+        browse-url-generic-program "firefox")
   (setq-default indent-tabs-mode nil)
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
@@ -70,7 +70,7 @@
     (if (getenv "TMUX")
         (let ((map (copy-keymap xterm-function-map)))
           (set-keymap-parent map (keymap-parent input-decode-map))
-          (set-keymap-parent input-decode-map map))))
+         (set-keymap-parent input-decode-map map))))
   (define-key key-translation-map "\e[65;6" (kbd "C-S-a"))
   (define-key key-translation-map "\e[68;6" (kbd "C-S-d"))
   (define-key key-translation-map "\e[86;8" (kbd "C-M-S-v"))
@@ -137,6 +137,28 @@ Null prefix argument turns off the mode."
 ;;   :config
 ;;   (global-set-key [remap scroll-down-command] 'golden-ratio-scroll-screen-down)
 ;;   (global-set-key [remap scroll-up-command] 'golden-ratio-scroll-screen-up))
+
+;;;;; emms
+(use-package emms
+  :bind (("C-c +" . emms-volume-mode-plus)
+         ("C-c -" . emms-volume-mode-minus))
+  :config
+  (emms-all)
+  (emms-default-players)
+  (setq emms-playlist-default-major-mode 'emms-playlist-mode
+        emms-volume-change-function 'emms-volume-pulse-change))
+
+;; (use-package emms-player-mpv
+;;   :config
+;;   (add-to-list 'emms-player-list 'emms-player-mpv))
+
+;;;;; elfeed
+(use-package elfeed
+  :bind ("C-x w" . elfeed)
+  :config
+  (setq elfeed-feeds '("http://www.spreaker.com/show/2429288/episodes/feed"
+                       "http://feeds.feedburner.com/ClarkHowardPodcast"
+                       "https://news.ycombinator.com/rss")))
 
 ;;;;; cider
 (use-package cider
