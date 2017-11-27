@@ -91,7 +91,7 @@ export STARDICT_DATA_DIR=/home/smcleod/gitlab/dic
 export SDCV_PAGER=less
 alias sdcv='sdcv --utf8-input --utf8-output --color'
 
-export BROWSER=opera
+export BROWSER=firefox
 
 function youtube-playlist() {
     youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' -o "%(playlist_index)s-%(title)s.%(ext)s" ${1}
