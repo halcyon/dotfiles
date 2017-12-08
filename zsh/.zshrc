@@ -97,6 +97,15 @@ function youtube-playlist() {
     youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' -o "%(playlist_index)s-%(title)s.%(ext)s" ${1}
 }
 
+function git-gc-all-ferocious() {
+  git remote rm origin || true
+  #git tag | xargs git tag -d
+  git branch -D in || true
+  (cd .git; rm -rf refs/remotes/ refs/original/ *_HEAD logs/)
+  git for-each-ref --format="%(refname)" refs/original/ | xargs -n1 --no-run-if-empty git update-ref -d
+  git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc "$@"
+}
+
 if [[ -f ${HOME}/gitlab/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/gitlab/dotfiles-private/zsh/zsh-private
