@@ -138,6 +138,9 @@ Null prefix argument turns off the mode."
 ;;   (global-set-key [remap scroll-down-command] 'golden-ratio-scroll-screen-down)
 ;;   (global-set-key [remap scroll-up-command] 'golden-ratio-scroll-screen-up))
 
+;;;;; private
+(require 'emacs-private (expand-file-name "~/gitlab/dotfiles-private/emacs/emacs-private.el"))
+
 ;;;;; emms
 (use-package emms
   :bind (("C-c +" . emms-volume-mode-plus)
