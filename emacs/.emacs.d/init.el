@@ -119,10 +119,10 @@ Null prefix argument turns off the mode."
   (provide 'backup-settings))
 
 ;;;;; pinentry
-(use-package pinentry
-  :config
-  (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
-  (pinentry-start))
+;; (use-package pinentry
+;;   :config
+;;   (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
+;;   (pinentry-start))
 
 ;;;;; golden-ratio
 ;; (use-package golden-ratio
@@ -794,7 +794,7 @@ Null prefix argument turns off the mode."
   (defadvice sql-connect
       (before load-sql-connections activate)
     "Registers sql connections before running sql-connect."
-    (require 'sql-connections "~/dotfiles-private/emacs/sql-connections.el.gpg"))
+    (require 'sql-connections "~/gitlab/dotfiles-private/emacs/sql-connections.el.gpg"))
   (defun docker-postgres ()
     (interactive)
     (setq sql-product 'postgres)

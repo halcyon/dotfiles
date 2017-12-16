@@ -40,12 +40,9 @@ ZSH_THEME="halcyon"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump)
 
-export GPG_TTY=$(tty)
+# export GPG_TTY=$(tty)
 
 source ${ZSH}/oh-my-zsh.sh
-# source ~/dotfiles/docker/start.sh
-
-# Customize to your needs...
 
 ulimit -c unlimited
 
@@ -53,39 +50,24 @@ ulimit -c unlimited
 stty quit undef
 
 export ALTERNATE_EDITOR=""
-case `uname` in
-    Darwin) export EDITOR="/usr/local/bin/emacsclient"
-            alias e="/usr/local/bin/emacsclient"
-            export COPY="reattach-to-user-namespace pbcopy"
-            export PASTE="reattach-to-user-namespace pbpaste"
-            ;;
-    Linux) export EDITOR="/usr/bin/emacsclient"
-           alias e="/usr/bin/emacsclient"
-           export COPY="xclip -i -sel p -f | xclip -i -sel c"
-           export PASTE="xclip -o"
-           ;;
-esac
 
-# function tmate () {
-#     unset TMUX
-#     /usr/bin/tmate -L default
-# }
+export EDITOR="/usr/bin/emacsclient"
+alias e="/usr/bin/emacsclient"
+export COPY="xclip -i -sel p -f | xclip -i -sel c"
+export PASTE="xclip -o"
 
 bindkey "^R" history-incremental-search-backward
 
 export LESS='-R'
-export _JAVA_AWT_WM_NONREPARENTING=1
+# export _JAVA_AWT_WM_NONREPARENTING=1
 
-export ORACLE_HOME=${HOME}/instantclient_12_1
-export NLS_LANG="AMERICAN_AMERICA.UTF8"
-export SQLPATH=${HOME}/dotfiles/oracle
+# export ORACLE_HOME=${HOME}/instantclient_12_1
+# export NLS_LANG="AMERICAN_AMERICA.UTF8"
+# export SQLPATH=${HOME}/dotfiles/oracle
 
 export HASKELL_STACK_PATH=${HOME}/.local/bin
 
-export GEM_HOME=${HOME}/.gem
-export GEM_PATH=${GEM_HOME}/ruby/2.4.0
-
-export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}:${GEM_PATH}/bin:${HOME}/go/bin:${HOME}/bin
+export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}:${HOME}/go/bin:${HOME}/bin
 
 export STARDICT_DATA_DIR=/home/smcleod/gitlab/dic
 export SDCV_PAGER=less
@@ -110,7 +92,5 @@ if [[ -f ${HOME}/gitlab/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/gitlab/dotfiles-private/zsh/zsh-private
 fi
-
-[[ -s "/home/smcleod/.gvm/scripts/gvm" ]] && source "/home/smcleod/.gvm/scripts/gvm"
 
 export MANPATH=$(manpath)":${HOME}/dotfiles/man"
