@@ -272,6 +272,7 @@ Null prefix argument turns off the mode."
   :ensure nil
   :init
   (require 'ob-clojure)
+  (require 'org-notmuch)
   (setq org-src-fontify-natively t
         org-babel-clojure-backend 'cider
         org-directory "~/projects/org"
