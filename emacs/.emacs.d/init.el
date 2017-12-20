@@ -119,10 +119,10 @@ Null prefix argument turns off the mode."
   (provide 'backup-settings))
 
 ;;;;; pinentry
-;; (use-package pinentry
-;;   :config
-;;   (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
-;;   (pinentry-start))
+(use-package pinentry
+  :config
+  (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
+  (pinentry-start))
 
 ;;;;; golden-ratio
 ;; (use-package golden-ratio
