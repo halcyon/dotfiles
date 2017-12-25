@@ -155,14 +155,6 @@ Null prefix argument turns off the mode."
 ;;   :config
 ;;   (add-to-list 'emms-player-list 'emms-player-mpv))
 
-;;;;; elfeed
-(use-package elfeed
-  :bind ("C-x w" . elfeed)
-  :config
-  (setq elfeed-feeds '("http://www.spreaker.com/show/2429288/episodes/feed"
-                       "http://feeds.feedburner.com/ClarkHowardPodcast"
-                       "https://news.ycombinator.com/rss")))
-
 ;;;;; cider
 (use-package cider
   :bind (:map cider-repl-mode-map
