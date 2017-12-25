@@ -49,6 +49,7 @@ ulimit -c unlimited
 # Unbinds C-\ from SIGQUIT
 stty quit undef
 
+export GPG_TTY=${TTY}
 export ALTERNATE_EDITOR=""
 
 export EDITOR="/usr/bin/emacsclient"
