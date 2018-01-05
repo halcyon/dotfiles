@@ -70,7 +70,7 @@ export HASKELL_STACK_PATH=${HOME}/.local/bin
 
 export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HASKELL_STACK_PATH}:${HOME}/go/bin:${HOME}/bin
 
-export STARDICT_DATA_DIR=/home/smcleod/gitlab/dic
+export STARDICT_DATA_DIR=${HOME}/gitlab/dic
 export SDCV_PAGER=less
 alias sdcv='sdcv --utf8-input --utf8-output --color'
 
