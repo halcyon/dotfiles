@@ -142,18 +142,14 @@ Null prefix argument turns off the mode."
 (require 'emacs-private (expand-file-name "~/gitlab/dotfiles-private/emacs/emacs-private.el"))
 
 ;;;;; emms
-(use-package emms
-  :bind (("C-c +" . emms-volume-mode-plus)
-         ("C-c -" . emms-volume-mode-minus))
-  :config
-  (emms-all)
-  (emms-default-players)
-  (setq emms-playlist-default-major-mode 'emms-playlist-mode
-        emms-volume-change-function 'emms-volume-pulse-change))
-
-;; (use-package emms-player-mpv
+;; (use-package emms
+;;   :bind (("C-c +" . emms-volume-mode-plus)
+;;          ("C-c -" . emms-volume-mode-minus))
 ;;   :config
-;;   (add-to-list 'emms-player-list 'emms-player-mpv))
+;;   (emms-all)
+;;   (emms-default-players)
+;;   (setq emms-playlist-default-major-mode 'emms-playlist-mode
+;;         emms-volume-change-function 'emms-volume-pulse-change))
 
 ;;;;; cider
 (use-package cider
@@ -796,6 +792,18 @@ Null prefix argument turns off the mode."
     (interactive)
     (setq sql-product 'oracle)
     (sql-connect 'webicon-oracle 'webicon-oracle))
+  (defun linkmod-qa ()
+    (interactive)
+    (setq sql-product 'mysql)
+    (sql-connect 'linkmod-qa 'linkmod-qa))
+  (defun linkmod-local-qa ()
+    (interactive)
+    (setq sql-product 'mysql)
+    (sql-connect 'linkmod-local-qa 'linkmod-local-qa))
+  (defun linkmod-local-prod ()
+    (interactive)
+    (setq sql-product 'mysql)
+    (sql-connect 'linkmod-local-prod 'linkmod-local-prod))
   (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
   (provide 'SQLi-mode))
 
@@ -809,6 +817,11 @@ Null prefix argument turns off the mode."
   (escreen-install)
   (add-hook 'escreen-goto-screen-hook
             #'escreen-enable-number-mode-if-more-than-one-screen))
+
+;;;;; rcirc-notify
+(use-package rcirc-notify
+  :quelpa (rcirc-notify :fetcher github
+  :repo "nicferrier/rcirc-notify"))
 
 (provide 'init)
 ;;; init.el ends here

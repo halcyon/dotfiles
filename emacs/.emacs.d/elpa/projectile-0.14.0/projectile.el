@@ -1990,6 +1990,7 @@ It assumes the test/ folder is at the same level as src/."
           (error "No matching source file found")))
     ;; find the matching test file
     (let ((test-file (projectile-find-matching-test file-name)))
+      (print (concat "the test-file: " test-file))
       (if test-file
           (projectile-expand-root test-file)
         (if projectile-create-missing-test-files
@@ -2057,6 +2058,10 @@ It assumes the test/ folder is at the same level as src/."
                            (when test-suffix
                              (string-equal name (concat basename test-suffix))))))
                    (projectile-current-project-files))))
+    (print (concat "basename: " basename))
+    (print (concat "projectile-project-type: " (projectile-project-type)))
+    (print (concat "test-prefix: " test-prefix))
+    (print (concat "test-suffix: " test-suffix))
     (cond
      ((null candidates) nil)
      ((= (length candidates) 1) (car candidates))

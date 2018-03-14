@@ -95,3 +95,7 @@ then
 fi
 
 export MANPATH=$(manpath)":${HOME}/dotfiles/man"
+
+export PATH="/home/ksm/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
