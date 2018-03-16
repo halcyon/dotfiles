@@ -197,17 +197,10 @@ Null prefix argument turns off the mode."
   (global-hl-line-mode)              ; highlight current line
   (global-linum-mode)                ; add line numbers on the left
 
-  (set-frame-font "Fira Code 16")
+  (setq default-frame-alist '((font . "Fira Code 16")))
   (add-hook 'after-make-frame-functions
             (lambda (frame)
-              (set-fontset-font t
-                                '(#Xe100 . #Xe16f)
-                                "Fira Code Symbol")))
-
-  ;; This works when using emacs without server/client
-  ;; (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
-  ;; I haven't found one statement that makes both of the above situations work, so I use both for now
-
+              (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code")))
   (defconst fira-code-font-lock-keywords-alist
     (mapcar (lambda (regex-char-pair)
               `(,(car regex-char-pair)
@@ -331,9 +324,9 @@ Null prefix argument turns off the mode."
   (defun add-fira-code-symbol-keywords ()
     (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))
 
-  (when (window-system)
-    (add-hook 'prog-mode-hook
-              (lambda ()
+  (add-hook 'prog-mode-hook
+            (lambda ()
+              (when (window-system)
                 (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))))
   (provide 'display-settings))
 
