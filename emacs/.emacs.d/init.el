@@ -974,10 +974,15 @@ Null prefix argument turns off the mode."
 
 ;;;;; slack
 (use-package slack
+  :bind (:map slack-mode-map
+              ("C-c C-o" . browse-url)
+         :map slack-file-info-buffer-mode-map
+              ("C-c C-o" . browse-url))
   :quelpa (slack :fetcher github
                  :repo "yuya373/emacs-slack")
   :commands slack-start
   :config
+  (add-hook 'term-mode-hook #'linum-off)
   (setq slack-buffer-emojify t
         slack-prefer-current-team t)
   (defadvice slack-start
