@@ -33,11 +33,6 @@
 (setq use-package-always-ensure t)
 (quelpa-use-package-activate-advice)
 
-;;; Helper functions
-(defun linum-off ()
-  "Disable line numbers in the left margin."
-  (linum-mode 0))
-
 ;;; Packages
 
 ;;;; settings
@@ -45,9 +40,9 @@
 (use-package global-settings
   :ensure nil
   :init
-  (menu-bar-mode 0)
-  (tool-bar-mode 0)
-  (scroll-bar-mode 0)
+  (menu-bar-mode -1)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
   (setq inhibit-startup-message t
         require-final-newline t
         ielm-dynamic-return nil
@@ -370,7 +365,9 @@ Null prefix argument turns off the mode."
   ;; better use just one key to do the same.
   ;; Have C-y act as usual in term-mode, to avoid C-' C-y C-'
   ;; Well the real default would be C-c C-j C-y C-c C-k.
-  :config (add-hook 'term-mode-hook #'linum-off)
+  :config (add-hook 'term-mode-hook (lambda ()
+                                      (linum-mode -1)
+                                      (turn-off-smartparens-strict-mode)))
   :bind (:map term-mode-map
               ("C-'" . term-char-mode)
          :map term-raw-map
@@ -381,7 +378,7 @@ Null prefix argument turns off the mode."
 (use-package info
   :config
   (add-to-list 'Info-directory-list (expand-file-name "~/gitlab/info"))
-  (add-hook 'Info-mode-hook #'linum-off))
+  (add-hook 'Info-mode-hook (lambda () (linum-mode -1))))
 
 ;;;;; dired-x
 (use-package dired-x
@@ -981,7 +978,10 @@ Null prefix argument turns off the mode."
                  :repo "yuya373/emacs-slack")
   :commands slack-start
   :config
-  (add-hook 'slack-mode-hook #'linum-off)
+  (add-hook 'slack-mode-hook
+            (lambda ()
+              (linum-mode -1)
+              (turn-off-smartparens-strict-mode)))
   (setq slack-buffer-emojify t
         slack-prefer-current-team t)
   (defadvice slack-start
