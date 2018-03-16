@@ -34,7 +34,8 @@ fi
 
 [[ -x /usr/bin/dunst ]] && /usr/bin/dunst &
 
-if [ -x /usr/bin/gcalcli ]; then
+if [ -x ~/.pyenv/shims/gcalcli ]
+  then
   while true; do
     /usr/bin/gcalcli --calendar="smcleod@rentpath.com" --calendar="IDG Services" remind
     sleep 300
