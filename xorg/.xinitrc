@@ -42,6 +42,12 @@ if [ -x ~/.pyenv/shims/gcalcli ]
   done &
 fi
 
+while true; do
+    ~/dotfiles/notmuch/notmuch-notification.sh
+    sleep 300
+done &
+
+
 /usr/bin/xhost + local:docker
 /usr/bin/xset s 600
 /usr/bin/xss-lock slock &
