@@ -30,9 +30,8 @@ if [ "$UNREAD_COUNT" -gt 0 ]; then
   # have notmuch pull the specified number of mail subjects from the search.
   # also, do some rought formatting of the result, to pull thread string,
     # sender etc. leaving just the subject text.
-  TXT_SUBS=$(notmuch search --format=text --output=summary --limit="$LIMIT" --sort="$SORT" "$SEARCH" | sed 's/^thread:[a-f,0-9]*[[:blank:]]*//')
-  # TXT_SUBS=$(notmuch search --format=text --output=summary --limit="$LIMIT" --sort="$SORT" "$SEARCH" | sed 's/^[^;]*; //' | sed 's/$/\n'/)
-  # special characters like @, &, (, ), etc. break notify-send
+    TXT_SUBS=$(notmuch search --format=text --output=summary --limit="$LIMIT" --sort="$SORT" "$SEARCH" | sed 's/^.*][[:blank:]]//')
+    # special characters like @, &, (, ), etc. break notify-send
   # however it likes HTML encoding just fine, so use recode.
 
   notify-send -i "$NOTIFICATION_ICON" "$UNREAD_COUNT unread mesages." "$TXT_SUBS"
