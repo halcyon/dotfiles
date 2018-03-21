@@ -195,7 +195,7 @@ Null prefix argument turns off the mode."
   (line-number-mode)                 ; line numbers in the mode line
   (column-number-mode)               ; column numbers in the mode line
   (global-hl-line-mode)              ; highlight current line
-  (global-linum-mode)                ; add line numbers on the left
+  (global-display-line-numbers-mode) ; add line numbers on the left
 
   (setq default-frame-alist '((font . "Fira Code 16")))
   (add-hook 'after-make-frame-functions
@@ -359,7 +359,7 @@ Null prefix argument turns off the mode."
   ;; Have C-y act as usual in term-mode, to avoid C-' C-y C-'
   ;; Well the real default would be C-c C-j C-y C-c C-k.
   :config (add-hook 'term-mode-hook (lambda ()
-                                      (linum-mode -1)
+                                      (display-line-numbers-mode -1)
                                       (turn-off-smartparens-strict-mode)))
   :bind (:map term-mode-map
               ("C-'" . term-char-mode)
@@ -371,7 +371,7 @@ Null prefix argument turns off the mode."
 (use-package info
   :config
   (add-to-list 'Info-directory-list (expand-file-name "~/gitlab/info"))
-  (add-hook 'Info-mode-hook (lambda () (linum-mode -1))))
+  (add-hook 'Info-mode-hook (lambda () (display-line-numbers-mode -1))))
 
 ;;;;; dired-x
 (use-package dired-x
@@ -902,7 +902,6 @@ Null prefix argument turns off the mode."
 (use-package git-gutter
   :diminish git-gutter-mode
   :init
-  (git-gutter:linum-setup)
   (global-git-gutter-mode)
   :bind (("C-x C-g" . git-gutter-mode)
          ("C-x v =" . git-gutter:popup-hunk)))
@@ -973,7 +972,7 @@ Null prefix argument turns off the mode."
   :config
   (add-hook 'slack-mode-hook
             (lambda ()
-              (linum-mode -1)
+              (display-line-numbers-mode -1)
               (turn-off-smartparens-strict-mode)))
   (setq slack-buffer-emojify t
         slack-prefer-current-team t)
