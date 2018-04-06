@@ -921,7 +921,7 @@ Null prefix argument turns off the mode."
   (defun webicon-oracle ()
     (interactive)
     (setq sql-product 'oracle)
-    (sql-connect 'webicon-oracle 'webicon-oracle))
+    (sql-connect 'webicon-oracle))
   (defun csi_mm_03_14_18 ()
     (interactive)
     (setq sql-product 'mysql)
