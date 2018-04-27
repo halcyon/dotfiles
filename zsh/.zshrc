@@ -40,8 +40,6 @@ ZSH_THEME="halcyon"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump)
 
-# export GPG_TTY=$(tty)
-
 source ${ZSH}/oh-my-zsh.sh
 
 ulimit -c unlimited

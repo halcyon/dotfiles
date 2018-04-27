@@ -574,7 +574,10 @@ Null prefix argument turns off the mode."
 
 ;;;;; projectile
 (use-package projectile
-  :config (projectile-global-mode))
+  :config
+  (projectile-global-mode)
+  (projectile-register-project-type 'deps-edn '("deps.edn")
+                                    :test-suffix "_test"))
 
 ;;;;; avy
 (use-package avy
