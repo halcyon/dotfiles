@@ -94,6 +94,6 @@ fi
 
 export MANPATH=$(manpath)":${HOME}/dotfiles/man"
 
-export PATH="/home/ksm/.pyenv/bin:$PATH"
+export PATH="/home/ksm/.pyenv/bin:/home/ksm/kubernetes/client/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
