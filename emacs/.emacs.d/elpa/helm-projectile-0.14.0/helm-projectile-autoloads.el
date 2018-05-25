@@ -1,7 +1,10 @@
 ;;; helm-projectile-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "helm-projectile" "../../../../../.emacs.d/elpa/helm-projectile-0.14.0/helm-projectile.el"
 ;;;;;;  "0c74dd18b0325ff2b3ad3a418682b5eb")
@@ -65,12 +68,21 @@ If invoked outside of a project, displays a list of known projects to jump.
 \(fn &optional ARG)" t nil)
 
 (eval-after-load 'projectile '(progn (define-key projectile-command-map (kbd "h") #'helm-projectile)))
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-projectile"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-projectile-0.14.0/helm-projectile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-projectile-0.14.0/helm-projectile.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-projectile" '("helm-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/helm-projectile-0.14.0/helm-projectile-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/helm-projectile-0.14.0/helm-projectile.el")
-;;;;;;  (23206 60799 612918 737000))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -78,5 +90,6 @@ If invoked outside of a project, displays a list of known projects to jump.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; helm-projectile-autoloads.el ends here

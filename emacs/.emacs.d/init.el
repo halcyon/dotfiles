@@ -151,7 +151,8 @@ Null prefix argument turns off the mode."
 ;;;;; cider
 (use-package cider
   :bind (:map cider-repl-mode-map
-              ("C-M-q" . prog-indent-sexp))
+              ("C-M-q" . prog-indent-sexp)
+              ("C-c C-p" . cider-pprint-eval-last-sexp))
   :config
   (setq cider-repl-history-size 100000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
@@ -574,10 +575,11 @@ Null prefix argument turns off the mode."
 
 ;;;;; projectile
 (use-package projectile
+  :quelpa (projectile :repo "bbatsov/projectile"
+                      :fetcher github
+                      :files ("projectile.el"))
   :config
-  (projectile-global-mode)
-  (projectile-register-project-type 'deps-edn '("deps.edn")
-                                    :test-suffix "_test"))
+  (projectile-global-mode))
 
 ;;;;; avy
 (use-package avy
