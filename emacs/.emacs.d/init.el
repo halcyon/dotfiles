@@ -982,6 +982,14 @@ Null prefix argument turns off the mode."
     "Registers slack teams before starting slack."
     (require 'slack-connections "~/gitlab/dotfiles-private/emacs/slack-connections.el.gpg")))
 
+;;;;; spark
+(use-package spark
+  :quelpa (spark :fetcher github
+                 :repo "alvinfrancis/spark"))
+
+;;;;; es-mode
+(use-package es-mode)
+
 ;;;;; alert
 (use-package alert
   :commands (alert)
