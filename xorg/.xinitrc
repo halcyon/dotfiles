@@ -37,8 +37,8 @@ fi
 if [ -x ~/.pyenv/shims/gcalcli ]
   then
   while true; do
-    ~/.pyenv/shims/gcalcli --configFolder ~/.gcalcli-rentpath --calendar="smcleod@rentpath.com" --calendar="IDG Services" remind
-    ~/.pyenv/shims/gcalcli --configFolder ~/.gcalcli-halcyonblue --calendar="halcyonblue@gmail.com" remind
+    ~/.pyenv/shims/gcalcli --configFolder ~/.gcalcli-rentpath --calendar="smcleod@rentpath.com" --calendar="IDG Services" remind 120
+    ~/.pyenv/shims/gcalcli --configFolder ~/.gcalcli-halcyonblue --calendar="halcyonblue@gmail.com" remind 120
     sleep 300
   done &
 fi
