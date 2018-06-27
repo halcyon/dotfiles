@@ -66,6 +66,8 @@ export LESS='-R'
 
 export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HOME}/bin
 
+export IPOD_MOUNTPOINT="/mnt/nano"
+
 export STARDICT_DATA_DIR=${HOME}/gitlab/dic
 export SDCV_PAGER=less
 alias sdcv='sdcv --utf8-input --utf8-output --color'
