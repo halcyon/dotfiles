@@ -616,9 +616,9 @@ Null prefix argument turns off the mode."
                             :repo "mbuczko/helm-clojuredocs"))
 
 ;;;;; helm-google
-(use-package helm-google
-  :quelpa (helm-google :fetcher github
-                       :repo "steckerhalter/helm-google"))
+;; (use-package helm-google
+;;   :quelpa (helm-google :fetcher github
+;;                        :repo "steckerhalter/helm-google"))
 
 ;;;;; helm-projectile
 (use-package helm-projectile
@@ -939,15 +939,15 @@ Null prefix argument turns off the mode."
   (provide 'SQLi-mode))
 
 ;;;;; escreen
-(use-package escreen
-  ;;; Emacs window session manager
-  ;;; Get started with C-\ ?
-  :quelpa (escreen :fetcher github
-                   :repo "emacsmirror/escreen")
-  :config
-  (escreen-install)
-  (add-hook 'escreen-goto-screen-hook
-            #'escreen-enable-number-mode-if-more-than-one-screen))
+;; (use-package escreen
+;;   ;;; Emacs window session manager
+;;   ;;; Get started with C-\ ?
+;;   :quelpa (escreen :fetcher github
+;;                    :repo "emacsmirror/escreen")
+;;   :config
+;;   (escreen-install)
+;;   (add-hook 'escreen-goto-screen-hook
+;;             #'escreen-enable-number-mode-if-more-than-one-screen))
 
 ;;;;; rcirc
 (use-package rcirc
@@ -989,6 +989,21 @@ Null prefix argument turns off the mode."
 
 ;;;;; es-mode
 (use-package es-mode)
+
+;;;;; fsharp-mode
+(use-package fsharp-mode
+  :quelpa (fsharp-mode :fetcher github
+                       :repo "rneatherway/emacs-fsharp-mode-bin"
+                       :files ("*.el"
+                               ("bin"
+                                "*.exe"
+                                "*.exe.config"
+                                "*.dll"))))
+
+;;;;; csharp-mode
+(use-package csharp-mode
+  :quelpa (csharp-mode :fetcher github
+                       :repo "josteink/csharp-mode"))
 
 ;;;;; alert
 (use-package alert
