@@ -24,3 +24,15 @@ Alt + Next
 
 "xvkbd -no-jump-pointer -xsendevent -text "\C[[5;3~""
 Alt + Prior
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[1;3A""
+Alt + Up
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[1;3B""
+Alt + Down
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[1;3C""
+Alt + Right
+
+"xvkbd -no-jump-pointer -xsendevent -text "\C[[1;3D""
+Alt + Left
