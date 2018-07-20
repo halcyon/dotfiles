@@ -644,12 +644,12 @@ Null prefix argument turns off the mode."
   :config
   (defun configure-ag-clojure ()
     (set (make-local-variable 'ag-arguments)
-                            (list "--clojure"
-                                  "--line-number"
-                                  "--smart-case"
-                                  "--nogroup"
-                                  "--column"
-                                  "--")))
+         (list "--clojure"
+               "--line-number"
+               "--smart-case"
+               "--nogroup"
+               "--column"
+               "--")))
   (add-hook 'clojure-mode-hook #'configure-ag-clojure))
 
 ;;;;; undo-tree
