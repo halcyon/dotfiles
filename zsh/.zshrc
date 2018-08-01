@@ -38,7 +38,7 @@ ZSH_THEME="halcyon"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump)
+plugins=(git fasd)
 
 source ${ZSH}/oh-my-zsh.sh
 
@@ -92,7 +92,10 @@ then
     source ${HOME}/gitlab/dotfiles-private/zsh/zsh-private
 fi
 
-export MANPATH=$(manpath)":${HOME}/dotfiles/man"
+export MANPATH="${MANPATH}:${HOME}/dotfiles/man"
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+if [[ $(uname -s) == "Linux" ]]
+   then
+   . $HOME/.asdf/asdf.sh
+   . $HOME/.asdf/completions/asdf.bash
+fi
