@@ -41,11 +41,9 @@
   :ensure nil
   :init
   (menu-bar-mode -1)
-  (tool-bar-mode -1)
-  (scroll-bar-mode -1)
   (setq inhibit-startup-message t
         require-final-newline t
-        ielm-dynamic-return nil
+        ;; ielm-dynamic-return nil
         vc-follow-symlinks t
         browse-url-browser-function 'browse-url-generic
         browse-url-generic-program "firefox")
@@ -121,32 +119,8 @@ Null prefix argument turns off the mode."
   (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
   (pinentry-start))
 
-;;;;; golden-ratio
-;; (use-package golden-ratio
-;;   :init
-;;   (setq golden-ratio-auto-scale t)
-;;   :config
-;;   (golden-ratio-mode 1))
-
-;;;;; golden-ratio-scroll-screen
-;; (use-package golden-ratio-scroll-screen
-;;   :quelpa (golden-ratio-scroll-screen :repo "jixiuf/golden-ratio-scroll-screen" :fetcher github)
-;;   :config
-;;   (global-set-key [remap scroll-down-command] 'golden-ratio-scroll-screen-down)
-;;   (global-set-key [remap scroll-up-command] 'golden-ratio-scroll-screen-up))
-
 ;;;;; private
 (require 'emacs-private (expand-file-name "~/gitlab/dotfiles-private/emacs/emacs-private.el"))
-
-;;;;; emms
-;; (use-package emms
-;;   :bind (("C-c +" . emms-volume-mode-plus)
-;;          ("C-c -" . emms-volume-mode-minus))
-;;   :config
-;;   (emms-all)
-;;   (emms-default-players)
-;;   (setq emms-playlist-default-major-mode 'emms-playlist-mode
-;;         emms-volume-change-function 'emms-volume-pulse-change))
 
 ;;;;; cider
 (use-package cider
@@ -197,138 +171,6 @@ Null prefix argument turns off the mode."
   (column-number-mode)               ; column numbers in the mode line
   (global-hl-line-mode)              ; highlight current line
   (global-display-line-numbers-mode) ; add line numbers on the left
-
-  (setq default-frame-alist '((font . "Fira Code 16")))
-  (add-hook 'after-make-frame-functions
-            (lambda (frame)
-              (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code")))
-  (defconst fira-code-font-lock-keywords-alist
-    (mapcar (lambda (regex-char-pair)
-              `(,(car regex-char-pair)
-                (0 (prog1 ()
-                     (compose-region (match-beginning 1)
-                                     (match-end 1)
-                                     ;; The first argument to concat is a string containing a literal tab
-                                     ,(concat "	" (list (decode-char 'ucs (cadr regex-char-pair)))))))))
-            '(("\\(www\\)"                   #Xe100)
-              ("[^/]\\(\\*\\*\\)[^/]"        #Xe101)
-              ("\\(\\*\\*\\*\\)"             #Xe102)
-              ("\\(\\*\\*/\\)"               #Xe103)
-              ("\\(\\*>\\)"                  #Xe104)
-              ("[^*]\\(\\*/\\)"              #Xe105)
-              ("\\(\\\\\\\\\\)"              #Xe106)
-              ("\\(\\\\\\\\\\\\\\)"          #Xe107)
-              ("\\({-\\)"                    #Xe108)
-              ("\\(\\[\\]\\)"                #Xe109)
-              ("\\(::\\)"                    #Xe10a)
-              ("\\(:::\\)"                   #Xe10b)
-              ("[^=]\\(:=\\)"                #Xe10c)
-              ("\\(!!\\)"                    #Xe10d)
-              ("\\(!=\\)"                    #Xe10e)
-              ("\\(!==\\)"                   #Xe10f)
-              ("\\(-}\\)"                    #Xe110)
-              ("\\(--\\)"                    #Xe111)
-              ("\\(---\\)"                   #Xe112)
-              ("\\(-->\\)"                   #Xe113)
-              ("[^-]\\(->\\)"                #Xe114)
-              ("\\(->>\\)"                   #Xe115)
-              ("\\(-<\\)"                    #Xe116)
-              ("\\(-<<\\)"                   #Xe117)
-              ("\\(-~\\)"                    #Xe118)
-              ("\\(#{\\)"                    #Xe119)
-              ("\\(#\\[\\)"                  #Xe11a)
-              ("\\(##\\)"                    #Xe11b)
-              ("\\(###\\)"                   #Xe11c)
-              ("\\(####\\)"                  #Xe11d)
-              ("\\(#(\\)"                    #Xe11e)
-              ("\\(#\\?\\)"                  #Xe11f)
-              ("\\(#_\\)"                    #Xe120)
-              ("\\(#_(\\)"                   #Xe121)
-              ("\\(\\.-\\)"                  #Xe122)
-              ("\\(\\.=\\)"                  #Xe123)
-              ("\\(\\.\\.\\)"                #Xe124)
-              ("\\(\\.\\.<\\)"               #Xe125)
-              ("\\(\\.\\.\\.\\)"             #Xe126)
-              ("\\(\\?=\\)"                  #Xe127)
-              ("\\(\\?\\?\\)"                #Xe128)
-              ("\\(;;\\)"                    #Xe129)
-              ("\\(/\\*\\)"                  #Xe12a)
-              ("\\(/\\*\\*\\)"               #Xe12b)
-              ("\\(/=\\)"                    #Xe12c)
-              ("\\(/==\\)"                   #Xe12d)
-              ("\\(/>\\)"                    #Xe12e)
-              ("\\(//\\)"                    #Xe12f)
-              ("\\(///\\)"                   #Xe130)
-              ("\\(&&\\)"                    #Xe131)
-              ("\\(||\\)"                    #Xe132)
-              ("\\(||=\\)"                   #Xe133)
-              ("[^|]\\(|=\\)"                #Xe134)
-              ("\\(|>\\)"                    #Xe135)
-              ("\\(\\^=\\)"                  #Xe136)
-              ("\\(\\$>\\)"                  #Xe137)
-              ("\\(\\+\\+\\)"                #Xe138)
-              ("\\(\\+\\+\\+\\)"             #Xe139)
-              ("\\(\\+>\\)"                  #Xe13a)
-              ("\\(=:=\\)"                   #Xe13b)
-              ("[^!/]\\(==\\)[^>]"           #Xe13c)
-              ("\\(===\\)"                   #Xe13d)
-              ("\\(==>\\)"                   #Xe13e)
-              ("[^=]\\(=>\\)"                #Xe13f)
-              ("\\(=>>\\)"                   #Xe140)
-              ("\\(<=\\)"                    #Xe141)
-              ("\\(=<<\\)"                   #Xe142)
-              ("\\(=/=\\)"                   #Xe143)
-              ("\\(>-\\)"                    #Xe144)
-              ("\\(>=\\)"                    #Xe145)
-              ("\\(>=>\\)"                   #Xe146)
-              ("[^-=]\\(>>\\)"               #Xe147)
-              ("\\(>>-\\)"                   #Xe148)
-              ("\\(>>=\\)"                   #Xe149)
-              ("\\(>>>\\)"                   #Xe14a)
-              ("\\(<\\*\\)"                  #Xe14b)
-              ("\\(<\\*>\\)"                 #Xe14c)
-              ("\\(<|\\)"                    #Xe14d)
-              ("\\(<|>\\)"                   #Xe14e)
-              ("\\(<\\$\\)"                  #Xe14f)
-              ("\\(<\\$>\\)"                 #Xe150)
-              ("\\(<!--\\)"                  #Xe151)
-              ("\\(<-\\)"                    #Xe152)
-              ("\\(<--\\)"                   #Xe153)
-              ("\\(<->\\)"                   #Xe154)
-              ("\\(<\\+\\)"                  #Xe155)
-              ("\\(<\\+>\\)"                 #Xe156)
-              ("\\(<=\\)"                    #Xe157)
-              ("\\(<==\\)"                   #Xe158)
-              ("\\(<=>\\)"                   #Xe159)
-              ("\\(<=<\\)"                   #Xe15a)
-              ("\\(<>\\)"                    #Xe15b)
-              ("[^-=]\\(<<\\)"               #Xe15c)
-              ("\\(<<-\\)"                   #Xe15d)
-              ("\\(<<=\\)"                   #Xe15e)
-              ("\\(<<<\\)"                   #Xe15f)
-              ("\\(<~\\)"                    #Xe160)
-              ("\\(<~~\\)"                   #Xe161)
-              ("\\(</\\)"                    #Xe162)
-              ("\\(</>\\)"                   #Xe163)
-              ("\\(~@\\)"                    #Xe164)
-              ("\\(~-\\)"                    #Xe165)
-              ("\\(~=\\)"                    #Xe166)
-              ("\\(~>\\)"                    #Xe167)
-              ("[^<]\\(~~\\)"                #Xe168)
-              ("\\(~~>\\)"                   #Xe169)
-              ("\\(%%\\)"                    #Xe16a)
-              ;; ("\\(x\\)"                   #Xe16b) This ended up being hard to do properly so i'm leaving it out.
-              ("[^:=]\\(:\\)[^:=]"           #Xe16c)
-              ("[^\\+<>]\\(\\+\\)[^\\+<>]"   #Xe16d)
-              ("[^\\*/<>]\\(\\*\\)[^\\*/<>]" #Xe16f))))
-
-  (defun add-fira-code-symbol-keywords ()
-    (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))
-
-  (add-hook 'prog-mode-hook
-            (lambda ()
-              (when (window-system)
-                (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))))
   (provide 'display-settings))
 
 ;;;;; zenburn-theme
@@ -381,7 +223,8 @@ Null prefix argument turns off the mode."
   :ensure nil)
 
 ;;;;; org
-
+(use-package org-plus-contrib
+  :init (provide 'org-plus-contrib))
 (use-package htmlize)
 
 ;; (use-package ox-gfm
@@ -835,30 +678,6 @@ Null prefix argument turns off the mode."
   :config
   (add-hook 'haskell-mode-hook #'hindent-mode))
 
-;; ;;;;; tide
-;; (use-package tide
-;;   :config
-;;   (defun setup-tide-mode ()
-;;     (interactive)
-;;     (tide-setup)
-;;     (flycheck-mode +1)
-;;     (setq flycheck-check-syntax-automatically '(save mode-enabled))
-;;     (eldoc-mode +1)
-;;     (tide-hl-identifier-mode +1)
-;;     (company-mode +1))
-;;   (setq company-tooltip-align-annotations t)
-;;   ;; formats the buffer before saving
-;;   (add-hook 'before-save-hook 'tide-format-before-save)
-
-;;   (add-hook 'typescript-mode-hook #'setup-tide-mode))
-
-;;;;; js2-mode
-(use-package js2-mode
-  :quelpa (js2-mode :repo "mooz/js2-mode"
-                    :fetcher github)
-  :config
-  (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)))
-
 ;;;;; markdown-mode
 (use-package markdown-mode
   :commands (markdown-mode gfm-mode)
@@ -923,10 +742,10 @@ Null prefix argument turns off the mode."
     (interactive)
     (setq sql-product 'postgres)
     (sql-connect 'docker-postgres 'docker-postgres))
-  (defun webicon-oracle ()
+  (defun webicon-prod ()
     (interactive)
     (setq sql-product 'oracle)
-    (sql-connect 'webicon-oracle))
+    (sql-connect 'webicon-prod))
   (defun webicon-qa ()
     (interactive)
     (setq sql-product 'oracle)
@@ -937,17 +756,6 @@ Null prefix argument turns off the mode."
     (sql-connect 'csi_mm_03_14_18))
   (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
   (provide 'SQLi-mode))
-
-;;;;; escreen
-;; (use-package escreen
-;;   ;;; Emacs window session manager
-;;   ;;; Get started with C-\ ?
-;;   :quelpa (escreen :fetcher github
-;;                    :repo "emacsmirror/escreen")
-;;   :config
-;;   (escreen-install)
-;;   (add-hook 'escreen-goto-screen-hook
-;;             #'escreen-enable-number-mode-if-more-than-one-screen))
 
 ;;;;; rcirc
 (use-package rcirc
@@ -968,7 +776,9 @@ Null prefix argument turns off the mode."
          :map slack-message-buffer-mode-map ("C-c C-o" . browse-url)
          :map slack-file-info-buffer-mode-map ("C-c C-o" . browse-url))
   :quelpa (slack :fetcher github
-                 :repo "yuya373/emacs-slack")
+                 ;; :repo "yuya373/emacs-slack"
+		 :repo "halcyon/emacs-slack"
+		 :branch "halcyon-fix-terminal")
   :commands slack-start
   :config
   (add-hook 'slack-mode-hook
@@ -987,23 +797,10 @@ Null prefix argument turns off the mode."
   :quelpa (spark :fetcher github
                  :repo "alvinfrancis/spark"))
 
-;;;;; es-mode
-(use-package es-mode)
-
-;;;;; fsharp-mode
-(use-package fsharp-mode
-  :quelpa (fsharp-mode :fetcher github
-                       :repo "rneatherway/emacs-fsharp-mode-bin"
-                       :files ("*.el"
-                               ("bin"
-                                "*.exe"
-                                "*.exe.config"
-                                "*.dll"))))
-
-;;;;; csharp-mode
-(use-package csharp-mode
-  :quelpa (csharp-mode :fetcher github
-                       :repo "josteink/csharp-mode"))
+;;;;
+(use-package emacs-direnv
+  :quelpa (emacs-direnv :fetcher github
+                        :repo "wbolster/emacs-direnv"))
 
 ;;;;; alert
 (use-package alert
