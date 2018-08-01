@@ -6,8 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "hindent" "hindent.el" (0 0 0 0))
-;;; Generated autoloads from hindent.el
+;;;### (autoloads nil "hindent" "../../../../../.emacs.d/elpa/hindent-5.2.6/hindent.el"
+;;;;;;  "2eadf73ad0b36ffdc36a01a0c2db4f63")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/hindent-5.2.6/hindent.el
 
 (autoload 'hindent-mode "hindent" "\
 Indent code with the hindent program.
@@ -49,8 +50,20 @@ the file.
 \(fn BEG END &optional DROP-NEWLINE)" t nil)
 
 (define-obsolete-function-alias 'hindent/reformat-decl 'hindent-reformat-decl)
+
+;;;### (autoloads "actual autoloads are elsewhere" "hindent" "../../../../../.emacs.d/elpa/hindent-5.2.6/hindent.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/hindent-5.2.6/hindent.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hindent" '("hindent-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/hindent-5.2.6/hindent-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/hindent-5.2.6/hindent.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

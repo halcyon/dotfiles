@@ -798,9 +798,9 @@ Null prefix argument turns off the mode."
                  :repo "alvinfrancis/spark"))
 
 ;;;;
-(use-package emacs-direnv
-  :quelpa (emacs-direnv :fetcher github
-                        :repo "wbolster/emacs-direnv"))
+(use-package direnv
+  :quelpa (direnv :fetcher github
+                  :repo "wbolster/emacs-direnv"))
 
 ;;;;; alert
 (use-package alert

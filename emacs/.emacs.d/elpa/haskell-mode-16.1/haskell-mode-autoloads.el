@@ -1,7 +1,10 @@
 ;;; haskell-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "ghc-core" "../../../../../.emacs.d/elpa/haskell-mode-16.1/ghc-core.el"
 ;;;;;;  "96453ab274d3f4542e7ccf9af74bbfc2")
@@ -22,6 +25,14 @@ Compile and load the current buffer as tidy core.
 Major mode for GHC Core files.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ghc-core" "../../../../../.emacs.d/elpa/haskell-mode-16.1/ghc-core.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/ghc-core.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ghc-core" '("ghc-core-")))
+
+;;;***
 
 ;;;***
 
@@ -35,6 +46,15 @@ Major mode for working with .ghci files.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.ghci\\'" . ghci-script-mode))
+
+;;;### (autoloads "actual autoloads are elsewhere" "ghci-script-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/ghci-script-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/ghci-script-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ghci-script-mode" '("ghci-script-mode-")))
+
+;;;***
 
 ;;;***
 
@@ -149,6 +169,14 @@ Prompts for a Cabal command to run.
 Dump minimal imports.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell" "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell" '("haskell-" "xref-prompt-for-identifier" "interactive-haskell-mode-map")))
+
+;;;***
 
 ;;;***
 
@@ -160,6 +188,15 @@ Dump minimal imports.
 Align all the imports in the buffer.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-align-imports"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-align-imports.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-align-imports.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-align-imports" '("haskell-align-imports-")))
+
+;;;***
 
 ;;;***
 
@@ -173,6 +210,15 @@ Align all the imports in the buffer.
 Mode for editing *.chs files of the c2hs haskell tool.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-c2hs"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-c2hs.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-c2hs.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-c2hs" '("haskell-c2hs-font-lock-keywords")))
+
+;;;***
 
 ;;;***
 
@@ -213,6 +259,24 @@ OTHER-WINDOW use `find-file-other-window'.
 \(fn OTHER-WINDOW)" t nil)
 
 (let ((loads (get 'haskell-cabal 'custom-loads))) (if (member '"haskell-cabal" loads) nil (put 'haskell-cabal 'custom-loads (cons '"haskell-cabal" loads))))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-cabal"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-cabal.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-cabal.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-cabal" '("haskell-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-collapse"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-collapse.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-collapse.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-collapse" '("haskell-collapse")))
 
 ;;;***
 
@@ -338,6 +402,15 @@ cursor position and markers by using
 Find use cases of the identifier at point and highlight them all.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-commands"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-commands.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-commands.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-commands" '("haskell-")))
+
+;;;***
 
 ;;;***
 
@@ -369,6 +442,24 @@ derived from `compilation-mode'. See Info
 node `(haskell-mode)compilation' for more details.
 
 \(fn &optional EDIT-COMMAND)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-compile"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-compile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-compile.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-compile" '("haskell-compil")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-complete-module"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-complete-module.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-complete-module.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-complete-module" '("haskell-complete-module")))
 
 ;;;***
 
@@ -385,6 +476,15 @@ provides completions for haskell keywords, language pragmas,
 GHC's options, and language extensions, but not identifiers.
 
 \(fn)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-completions"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-completions.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-completions.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-completions" '("haskell-completions-")))
+
+;;;***
 
 ;;;***
 
@@ -395,6 +495,15 @@ GHC's options, and language extensions, but not identifiers.
 (let ((loads (get 'haskell 'custom-loads))) (if (member '"haskell-customize" loads) nil (put 'haskell 'custom-loads (cons '"haskell-customize" loads))))
 
 (let ((loads (get 'haskell-interactive 'custom-loads))) (if (member '"haskell-customize" loads) nil (put 'haskell-interactive 'custom-loads (cons '"haskell-customize" loads))))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-customize"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-customize.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-customize.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-customize" '("haskell-")))
+
+;;;***
 
 ;;;***
 
@@ -421,6 +530,15 @@ Face for headings." :group (quote haskell-debug))
 
 (defface haskell-debug-muted-face '((t :foreground "#999")) "\
 Face for muteds." :group (quote haskell-debug))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-debug"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-debug.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-debug.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-debug" '("haskell-debug")))
+
+;;;***
 
 ;;;***
 
@@ -479,6 +597,15 @@ assumed, respectively.
 Invokes `haskell-decl-scan-mode-hook' on activation.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-decl-scan"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-decl-scan.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-decl-scan.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-decl-scan" '("haskell-d" "literate-haskell-ds-")))
+
+;;;***
 
 ;;;***
 
@@ -512,6 +639,15 @@ of prelude functions and their types, or from the local functions in the
 current buffer.
 
 \(fn &optional SYM)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-doc"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-doc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-doc.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-doc" '("haskell-" "turn-off-haskell-doc")))
+
+;;;***
 
 ;;;***
 
@@ -542,6 +678,24 @@ Face used to highlight LiquidHaskell annotations ({-@ ... @-})." :group (quote h
 (defface haskell-literate-comment-face '((t :inherit font-lock-doc-face)) "\
 Face with which to fontify literate comments.
 Inherit from `default' to avoid fontification of them." :group (quote haskell-appearance))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-font-lock"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-font-lock.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-font-lock.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-font-lock" '("haskell-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-ghc-support"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-ghc-support.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-ghc-support.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-ghc-support" '("haskell-")))
 
 ;;;***
 
@@ -572,6 +726,15 @@ Do a Hayoo search for QUERY.
 \(fn QUERY)" t nil)
 
 (defalias 'hayoo 'haskell-hayoo)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-hoogle"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-hoogle.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-hoogle.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-hoogle" '("haskell-h")))
+
+;;;***
 
 ;;;***
 
@@ -614,6 +777,15 @@ If `ARG' is falsey, toggle `haskell-indent-mode'.  Else sets
 Invokes `haskell-indent-hook' if not nil.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-indent"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-indent.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-indent.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-indent" '("turn-off-haskell-indent" "haskell-indent-")))
+
+;;;***
 
 ;;;***
 
@@ -634,6 +806,15 @@ set and deleted as if they were real tabs.
 Turn on the haskell-indentation minor mode.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-indentation"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-indentation.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-indentation.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-indentation" '("haskell-indentation-")))
+
+;;;***
 
 ;;;***
 
@@ -676,6 +857,24 @@ function `haskell-presentation-present', depending on variable
 `haskell-process-use-presentation-mode'.
 
 \(fn LINE)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-interactive-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-interactive-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-interactive-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-interactive-mode" '("haskell-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-lexeme"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-lexeme.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-lexeme.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-lexeme" '("haskell-lexeme-")))
 
 ;;;***
 
@@ -702,6 +901,15 @@ new thread, and use the `foreign-store' package to access the
 running context across :load/:reloads in GHCi.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-load"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-load.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-load.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-load" '("haskell-" "last-overlay-in-if" "first-overlay-in-if" "overlay-start" "with-overlay-properties")))
+
+;;;***
 
 ;;;***
 
@@ -713,6 +921,15 @@ running context across :load/:reloads in GHCi.
 Launch the Haskell sessions menu.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-menu"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-menu.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-menu.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-menu" '("haskell-menu-")))
+
+;;;***
 
 ;;;***
 
@@ -826,6 +1043,15 @@ with function `xref-find-definitions' after new table was
 generated.
 
 \(fn &optional AND-THEN-FIND-THIS-TAG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-mode" '("haskell-")))
+
+;;;***
 
 ;;;***
 
@@ -849,6 +1075,15 @@ Get the modules of the current project.
 If DONTCREATE is non-nil don't create a new session.
 
 \(fn SESSION &optional DONTCREATE)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-modules"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-modules.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-modules.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-modules" '("haskell-")))
+
+;;;***
 
 ;;;***
 
@@ -883,6 +1118,15 @@ In Transient Mark mode, if the mark is active, operate on the contents
 of the region instead.
 
 \(fn COLS)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-move-nested"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-move-nested.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-move-nested.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-move-nested" '("haskell-")))
+
+;;;***
 
 ;;;***
 
@@ -905,6 +1149,51 @@ Return to the non-import point we were at before going to the module list.
    If we were originally at an import list, we can just cycle through easily.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-navigate-imports"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-navigate-imports.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-navigate-imports.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-navigate-imports" '("haskell-navigate-imports-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-presentation-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-presentation-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-presentation-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-presentation-mode" '("haskell-presentation-")))
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-process"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-process.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-process.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-process" '("haskell-")))
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-repl"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-repl.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-repl.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-repl" '("haskell-interactive-")))
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-sandbox"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-sandbox.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-sandbox.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-sandbox" '("haskell-sandbox-")))
 
 ;;;***
 
@@ -921,6 +1210,15 @@ Maybe get the Haskell session, return nil if there isn't one.
 Get the session process.
 
 \(fn S)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-session"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-session.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-session.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-session" '("haskell-session")))
+
+;;;***
 
 ;;;***
 
@@ -936,6 +1234,24 @@ If the region is active, it will restrict the imports to sort
 within that region.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-sort-imports"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-sort-imports.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-sort-imports.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-sort-imports" '("haskell-sort-imports-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-string"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-string.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-string.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-string" '("haskell-string-")))
 
 ;;;***
 
@@ -950,6 +1266,15 @@ Set input method `haskell-unicode'.
 
 ;;;***
 
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-utils"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-utils.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/haskell-utils.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-utils" '("haskell-")))
+
+;;;***
+
 ;;;### (autoloads nil "highlight-uses-mode" "../../../../../.emacs.d/elpa/haskell-mode-16.1/highlight-uses-mode.el"
 ;;;;;;  "55334f1b8202e898a89d0be733b16421")
 ;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/highlight-uses-mode.el
@@ -958,6 +1283,15 @@ Set input method `haskell-unicode'.
 Minor mode for highlighting and jumping between uses.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "highlight-uses-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/highlight-uses-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/highlight-uses-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "highlight-uses-mode" '("highlight-uses-mode-")))
+
+;;;***
 
 ;;;***
 
@@ -1034,6 +1368,15 @@ we load it.
 Minor mode for enabling inf-haskell process interaction.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "inf-haskell"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/inf-haskell.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/inf-haskell.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "inf-haskell" '("inf" "haskell-p")))
+
+;;;***
 
 ;;;***
 
@@ -1043,6 +1386,15 @@ Minor mode for enabling inf-haskell process interaction.
 
 (defface w3m-haddock-heading-face '((((class color)) :inherit highlight)) "\
 Face for quarantines." :group (quote haskell))
+
+;;;### (autoloads "actual autoloads are elsewhere" "w3m-haddock"
+;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/w3m-haddock.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/haskell-mode-16.1/w3m-haddock.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "w3m-haddock" '("w3m-haddock-" "haskell-w3m-")))
+
+;;;***
 
 ;;;***
 
@@ -1089,7 +1441,7 @@ Face for quarantines." :group (quote haskell))
 ;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/highlight-uses-mode.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/inf-haskell.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/haskell-mode-16.1/w3m-haddock.el")
-;;;;;;  (22790 6988 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -1097,5 +1449,6 @@ Face for quarantines." :group (quote haskell))
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; haskell-mode-autoloads.el ends here

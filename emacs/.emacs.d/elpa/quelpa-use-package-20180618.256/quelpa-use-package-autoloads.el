@@ -6,11 +6,18 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "quelpa-use-package" "quelpa-use-package.el"
+;;;### (autoloads "actual autoloads are elsewhere" "quelpa-use-package"
+;;;;;;  "../../../../../.emacs.d/elpa/quelpa-use-package-20180618.256/quelpa-use-package.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from quelpa-use-package.el
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/quelpa-use-package-20180618.256/quelpa-use-package.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "quelpa-use-package" '("quelpa-use-package-" "use-package-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/quelpa-use-package-20180618.256/quelpa-use-package-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/quelpa-use-package-20180618.256/quelpa-use-package.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -6,8 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "overseer" "overseer.el" (0 0 0 0))
-;;; Generated autoloads from overseer.el
+;;;### (autoloads nil "overseer" "../../../../../.emacs.d/elpa/overseer-20180226.119/overseer.el"
+;;;;;;  "921e221712047ef0ece4f8382e7a05ca")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/overseer-20180226.119/overseer.el
 
 (autoload 'overseer-version "overseer" "\
 Get the Overseer version as string.
@@ -38,8 +39,20 @@ Key bindings:
 \(fn)" nil nil)
 
 (dolist (hook '(emacs-lisp-mode-hook)) (add-hook hook 'overseer-enable-mode))
+
+;;;### (autoloads "actual autoloads are elsewhere" "overseer" "../../../../../.emacs.d/elpa/overseer-20180226.119/overseer.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/overseer-20180226.119/overseer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "overseer" '("overseer-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/overseer-20180226.119/overseer-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/overseer-20180226.119/overseer.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

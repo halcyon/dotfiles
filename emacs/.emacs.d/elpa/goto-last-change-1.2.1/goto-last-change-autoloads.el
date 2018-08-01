@@ -1,7 +1,10 @@
 ;;; goto-last-change-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "goto-last-change" "../../../../../.emacs.d/elpa/goto-last-change-1.2.1/goto-last-change.el"
 ;;;;;;  "a569a6b5084c7660e022fe024b187779")
@@ -14,12 +17,21 @@ With a prefix arg (optional arg MARK-POINT non-nil), set mark so \\[exchange-poi
 will return point to the current position.
 
 \(fn &optional MARK-POINT MINIMAL-LINE-DISTANCE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "goto-last-change"
+;;;;;;  "../../../../../.emacs.d/elpa/goto-last-change-1.2.1/goto-last-change.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/goto-last-change-1.2.1/goto-last-change.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "goto-last-change" '("goto-last-change-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/goto-last-change-1.2.1/goto-last-change-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/goto-last-change-1.2.1/goto-last-change.el")
-;;;;;;  (22790 6961 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -27,5 +39,6 @@ will return point to the current position.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; goto-last-change-autoloads.el ends here

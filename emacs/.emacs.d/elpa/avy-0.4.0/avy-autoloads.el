@@ -1,7 +1,10 @@
 ;;; avy-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "avy" "../../../../../.emacs.d/elpa/avy-0.4.0/avy.el"
 ;;;;;;  "4e7c3a3ac63862ccd12b962d7b194daf")
@@ -117,13 +120,20 @@ Read one or many consecutive chars and jump to the first one.
 The window scope is determined by `avy-all-windows' (ARG negates it).
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "avy" "../../../../../.emacs.d/elpa/avy-0.4.0/avy.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/avy-0.4.0/avy.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "avy" '("avy-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/avy-0.4.0/avy-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/avy-0.4.0/avy-pkg.el" "../../../../../.emacs.d/elpa/avy-0.4.0/avy-test.el"
-;;;;;;  "../../../../../.emacs.d/elpa/avy-0.4.0/avy.el") (22790 6941
-;;;;;;  0 0))
+;;;;;;  "../../../../../.emacs.d/elpa/avy-0.4.0/avy.el") (0 0 0 0))
 
 ;;;***
 
@@ -131,5 +141,6 @@ The window scope is determined by `avy-all-windows' (ARG negates it).
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; avy-autoloads.el ends here

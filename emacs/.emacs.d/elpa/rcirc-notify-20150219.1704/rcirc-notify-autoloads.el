@@ -1,11 +1,14 @@
 ;;; rcirc-notify-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "rcirc-notify" "rcirc-notify.el" (23209 27611
-;;;;;;  952776 148000))
-;;; Generated autoloads from rcirc-notify.el
+;;;### (autoloads nil "rcirc-notify" "../../../../../.emacs.d/elpa/rcirc-notify-20150219.1704/rcirc-notify.el"
+;;;;;;  "285d981df10c3581e1ff220d49a1bbb2")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/rcirc-notify-20150219.1704/rcirc-notify.el
 
 (autoload 'rcirc-notify-me "rcirc-notify" "\
 Notify the current user when someone sends a message that
@@ -23,6 +26,21 @@ to them.
 Initialize rcirc-notify into rcirc with hooks.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "rcirc-notify"
+;;;;;;  "../../../../../.emacs.d/elpa/rcirc-notify-20150219.1704/rcirc-notify.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/rcirc-notify-20150219.1704/rcirc-notify.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rcirc-notify" '("rcirc-notify")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/rcirc-notify-20150219.1704/rcirc-notify-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/rcirc-notify-20150219.1704/rcirc-notify.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -30,5 +48,6 @@ Initialize rcirc-notify into rcirc with hooks.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; rcirc-notify-autoloads.el ends here

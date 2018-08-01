@@ -6,22 +6,25 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "coolj" "coolj.el" (0 0 0 0))
-;;; Generated autoloads from coolj.el
+;;;### (autoloads "actual autoloads are elsewhere" "coolj" "../../../../../.emacs.d/elpa/notmuch-0.27/coolj.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/coolj.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "coolj" '("coolj-")))
 
 ;;;***
 
-;;;### (autoloads nil "make-deps" "make-deps.el" (0 0 0 0))
-;;; Generated autoloads from make-deps.el
+;;;### (autoloads "actual autoloads are elsewhere" "make-deps" "../../../../../.emacs.d/elpa/notmuch-0.27/make-deps.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/make-deps.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "make-deps" '("make-deps" "batch-make-deps")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch" "notmuch.el" (0 0 0 0))
-;;; Generated autoloads from notmuch.el
+;;;### (autoloads nil "notmuch" "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch.el"
+;;;;;;  "611416086dc43907e0e6579dd8824956")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch.el
 
 (autoload 'notmuch-search "notmuch" "\
 Display threads matching QUERY in a notmuch-search buffer.
@@ -55,22 +58,29 @@ If the current buffer is the only notmuch buffer, bury it. If no
 notmuch buffers exist, run `notmuch'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch" "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch" '("notmuch-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "notmuch-address" "notmuch-address.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from notmuch-address.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-address"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-address.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-address.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-address" '("notmuch-address-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-company" "notmuch-company.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from notmuch-company.el
+;;;### (autoloads nil "notmuch-company" "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-company.el"
+;;;;;;  "7ad12506a7e123889bbc47b08ac9cacd")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-company.el
 
 (autoload 'notmuch-company-setup "notmuch-company" "\
 
@@ -81,48 +91,68 @@ notmuch buffers exist, run `notmuch'.
 `company-mode' completion back-end for `notmuch'.
 
 \(fn COMMAND &optional ARG &rest IGNORE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-company"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-company.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-company.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-company" '("notmuch-company-last-prefix")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "notmuch-compat" "notmuch-compat.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from notmuch-compat.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-compat"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-compat.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-compat.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-compat" '("notmuch-message--fold-long-headers")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-crypto" "notmuch-crypto.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from notmuch-crypto.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-crypto"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-crypto.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-crypto.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-crypto" '("notmuch-crypto-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-draft" "notmuch-draft.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-draft.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-draft"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-draft.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-draft.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-draft" '("notmuch-draft-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-hello" "notmuch-hello.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-hello.el
+;;;### (autoloads nil "notmuch-hello" "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-hello.el"
+;;;;;;  "5d462d0cff82c9a6ae152945ed7ac344")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-hello.el
 
 (autoload 'notmuch-hello "notmuch-hello" "\
 Run notmuch and display saved searches, known tags, etc.
 
 \(fn &optional NO-DISPLAY)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-hello"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-hello.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-hello.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-hello" '("notmuch-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "notmuch-jump" "notmuch-jump.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-jump.el
+;;;### (autoloads nil "notmuch-jump" "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-jump.el"
+;;;;;;  "894168d19f1cbdd869435b6fc6b6ef75")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-jump.el
 
 (autoload 'notmuch-jump-search "notmuch-jump" "\
 Jump to a saved search by shortcut key.
@@ -133,65 +163,84 @@ Typically these shortcuts are a single key long, so this is a
 fast way to jump to a saved search from anywhere in Notmuch.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-jump"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-jump.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-jump.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-jump" '("notmuch-jump")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "notmuch-lib" "notmuch-lib.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-lib.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-lib"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-lib.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-lib.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-lib" '("notmuch-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-maildir-fcc" "notmuch-maildir-fcc.el"
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-maildir-fcc"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-maildir-fcc.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from notmuch-maildir-fcc.el
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-maildir-fcc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-maildir-fcc" '("notmuch-" "with-temporary-notmuch-message-buffer")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-message" "notmuch-message.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from notmuch-message.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-message"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-message.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-message.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-message" '("notmuch-message-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-mua" "notmuch-mua.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-mua.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-mua"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-mua.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-mua.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-mua" '("notmuch-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-parser" "notmuch-parser.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from notmuch-parser.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-parser"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-parser.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-parser.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-parser" '("notmuch-sexp-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-print" "notmuch-print.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-print.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-print"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-print.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-print.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-print" '("notmuch-print-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-query" "notmuch-query.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-query.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-query"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-query.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-query.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-query" '("notmuch-query-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-show" "notmuch-show.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-show.el
+;;;### (autoloads nil "notmuch-show" "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-show.el"
+;;;;;;  "b546e9479f4cff3a391c1f46c0cd55b3")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-show.el
 
 (autoload 'notmuch-show "notmuch-show" "\
 Run \"notmuch show\" with the given thread ID and display results.
@@ -216,33 +265,69 @@ Returns the buffer containing the messages, or NIL if no messages
 matched.
 
 \(fn THREAD-ID &optional ELIDE-TOGGLE PARENT-BUFFER QUERY-CONTEXT BUFFER-NAME)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-show"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-show.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-show.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-show" '("notmuch-" "with-current-notmuch-show-message")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "notmuch-tag" "notmuch-tag.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-tag.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-tag"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-tag.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-tag.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-tag" '("notmuch-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-tree" "notmuch-tree.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-tree.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-tree"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-tree.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-tree.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-tree" '("notmuch-")))
 
 ;;;***
 
-;;;### (autoloads nil "notmuch-wash" "notmuch-wash.el" (0 0 0 0))
-;;; Generated autoloads from notmuch-wash.el
+;;;### (autoloads "actual autoloads are elsewhere" "notmuch-wash"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-wash.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-wash.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-wash" '("notmuch-wash-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("notmuch-pkg.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/notmuch-0.27/coolj.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/make-deps.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-address.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-company.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-compat.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-crypto.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-draft.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-hello.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-jump.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-lib.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-maildir-fcc.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-message.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-mua.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-parser.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-print.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-query.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-show.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-tag.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-tree.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch-wash.el"
+;;;;;;  "../../../../../.emacs.d/elpa/notmuch-0.27/notmuch.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 

@@ -1,7 +1,10 @@
 ;;; git-gutter-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "git-gutter" "../../../../../.emacs.d/elpa/git-gutter-0.90/git-gutter.el"
 ;;;;;;  "c44fcac3f747277c5fbc6d8b424840c3")
@@ -48,12 +51,20 @@ Show diff information in gutter
 Toggle to show diff information.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "git-gutter" "../../../../../.emacs.d/elpa/git-gutter-0.90/git-gutter.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/git-gutter-0.90/git-gutter.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git-gutter" '("git-gutter")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/git-gutter-0.90/git-gutter-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/git-gutter-0.90/git-gutter.el")
-;;;;;;  (22790 7032 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -61,5 +72,6 @@ Toggle to show diff information.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; git-gutter-autoloads.el ends here

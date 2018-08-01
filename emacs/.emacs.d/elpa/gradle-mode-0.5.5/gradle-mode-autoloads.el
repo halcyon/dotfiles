@@ -1,7 +1,10 @@
 ;;; gradle-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "gradle-mode" "../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode.el"
 ;;;;;;  "817b51cca0aaa680e21c2848e06f74ee")
@@ -20,12 +23,21 @@ Run gradle tasks from any buffer, scanning up to nearest gradle
 directory to run tasks.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gradle-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gradle-mode" '("gradle-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/gradle-mode-0.5.5/gradle-mode.el")
-;;;;;;  (22790 6967 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -33,5 +45,6 @@ directory to run tasks.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; gradle-mode-autoloads.el ends here

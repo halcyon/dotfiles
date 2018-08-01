@@ -1,7 +1,10 @@
 ;;; ag-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "ag" "../../../../../.emacs.d/elpa/ag-0.47/ag.el"
 ;;;;;;  "aa44835c1dfe042b7854086de8ddba51")
@@ -112,12 +115,19 @@ Kill all `ag-mode' buffers.
 Kill all `ag-mode' buffers other than the current buffer.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ag" "../../../../../.emacs.d/elpa/ag-0.47/ag.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/ag-0.47/ag.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ag" '("ag-" "ag/")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/ag-0.47/ag-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/ag-0.47/ag.el") (22790 6962
-;;;;;;  0 0))
+;;;;;;  "../../../../../.emacs.d/elpa/ag-0.47/ag.el") (0 0 0 0))
 
 ;;;***
 
@@ -125,5 +135,6 @@ Kill all `ag-mode' buffers other than the current buffer.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; ag-autoloads.el ends here

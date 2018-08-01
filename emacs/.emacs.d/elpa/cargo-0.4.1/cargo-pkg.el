@@ -2,7 +2,11 @@
   '((emacs "24.3")
     (rust-mode "0.2.0"))
   :keywords
-  '("tools"))
+  '("tools")
+  :authors
+  '(("Kevin W. van Rooijen" . "kevin.van.rooijen@attichacker.com"))
+  :maintainer
+  '("Kevin W. van Rooijen" . "kevin.van.rooijen@attichacker.com"))
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:

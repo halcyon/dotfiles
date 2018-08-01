@@ -98,4 +98,6 @@ if [[ $(uname -s) == "Linux" ]]
    then
    . $HOME/.asdf/asdf.sh
    . $HOME/.asdf/completions/asdf.bash
+else
+    export PATH="${PATH}:${HOME}/go/bin"
 fi

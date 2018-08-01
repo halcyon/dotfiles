@@ -50,20 +50,35 @@
 ;; no-byte-compile: t
 ;; End:
 
-;;;### (autoloads nil "slime" "slime.el" (0 0 0 0))
-;;; Generated autoloads from slime.el
+;;;### (autoloads "actual autoloads are elsewhere" "slime" "../../../../../.emacs.d/elpa/slime-2.22/slime.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/slime-2.22/slime.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slime" '("sldb-" "slime" "def-slime-selector-method" "define-sl" "??" "?q" "?i" "?v" "?l" "?d" "?e" "?c" "?n" "?p" "?t" "make-slime-" "inferior-lisp-program")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("slime-pkg.el") (0 0 0 0))
+;;;### (autoloads "actual autoloads are elsewhere" "slime-tests"
+;;;;;;  "../../../../../.emacs.d/elpa/slime-2.22/slime-tests.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/slime-2.22/slime-tests.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slime-tests" '("symbol-at-point." "sexp-at-point.1" "sbcl-world-lock" "report-condition-with-circular-list" "read" "traditional-recipe" "def-slime-test" "dis" "find-definition" "flow-control" "inspector" "indentation" "inter" "end-of-file" "loop-interrupt-" "locally-bound-debugger-hook" "break" "macroexpand" "utf-8-source" "unwind-to-previous-sldb-level" "arglist" "async-eval-debugging" "comp" "narrowing")))
 
 ;;;***
 
-;;;### (autoloads nil "slime-tests" "slime-tests.el" (0 0 0 0))
-;;; Generated autoloads from slime-tests.el
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/slime-2.22/slime-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/slime-2.22/slime-pkg.el" "../../../../../.emacs.d/elpa/slime-2.22/slime-tests.el"
+;;;;;;  "../../../../../.emacs.d/elpa/slime-2.22/slime.el") (0 0
+;;;;;;  0 0))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slime-tests" '("symbol-at-point." "sexp-at-point.1" "sbcl-world-lock" "report-condition-with-circular-list" "read" "traditional-recipe" "def-slime-test" "dis" "find-definition" "flow-control" "inspector" "indentation" "inter" "end-of-file" "loop-interrupt-" "locally-bound-debugger-hook" "break" "macroexpand" "utf-8-source" "unwind-to-previous-sldb-level" "arglist" "async-eval-debugging" "comp" "narrowing")))
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "slime-autoloads"
+;;;;;;  "../../../../../.emacs.d/elpa/slime-2.22/slime-autoloads.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/slime-2.22/slime-autoloads.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slime-autoloads" '("slime-contribs")))
 
 ;;;***

@@ -1,9 +1,22 @@
 ;;; peg-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil nil ("peg.el") (22790 6956 0 0))
+;;;### (autoloads "actual autoloads are elsewhere" "peg" "../../../../../.emacs.d/elpa/peg-20150708.241/peg.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/peg-20150708.241/peg.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "peg" '("peg-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/peg-20150708.241/peg-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/peg-20150708.241/peg.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 
@@ -11,5 +24,6 @@
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; peg-autoloads.el ends here

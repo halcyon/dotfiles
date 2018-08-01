@@ -1,7 +1,10 @@
 ;;; macrostep-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "macrostep" "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep.el"
 ;;;;;;  "c4c7cddea73734e122ad4f2d61e442e2")
@@ -33,6 +36,14 @@ buffer instead of inline in the current buffer.  Setting
 behaviors.
 
 \(fn &optional TOGGLE-SEPARATE-BUFFER)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "macrostep" "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/macrostep-0.9/macrostep.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "macrostep" '("macrostep-")))
+
+;;;***
 
 ;;;***
 
@@ -46,6 +57,15 @@ behaviors.
 \(fn)" nil nil)
 
 (add-hook 'c-mode-hook #'macrostep-c-mode-hook)
+
+;;;### (autoloads "actual autoloads are elsewhere" "macrostep-c"
+;;;;;;  "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-c.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-c.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "macrostep-c" '("macrostep-c-")))
+
+;;;***
 
 ;;;***
 
@@ -53,7 +73,7 @@ behaviors.
 ;;;;;;  "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-c.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep-pkg.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/macrostep-0.9/macrostep.el")
-;;;;;;  (22790 6974 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -61,5 +81,6 @@ behaviors.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; macrostep-autoloads.el ends here

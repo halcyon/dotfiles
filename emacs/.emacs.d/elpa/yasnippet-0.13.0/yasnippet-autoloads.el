@@ -6,8 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "yasnippet" "yasnippet.el" (0 0 0 0))
-;;; Generated autoloads from yasnippet.el
+;;;### (autoloads nil "yasnippet" "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet.el"
+;;;;;;  "99fb610baa892a09de5fa26184148ca2")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet.el
 
 (autoload 'yas-minor-mode "yasnippet" "\
 Toggle YASnippet mode.
@@ -47,28 +48,41 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 \(fn &optional ARG)" t nil)
 (autoload 'snippet-mode "yasnippet" "A mode for editing yasnippets" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "yasnippet" "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yasnippet" '("yas" "help-snippet-def" "snippet-mode-map" "last-buffer-undo-list")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "yasnippet-debug" "yasnippet-debug.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from yasnippet-debug.el
+;;;### (autoloads "actual autoloads are elsewhere" "yasnippet-debug"
+;;;;;;  "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-debug.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-debug.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yasnippet-debug" '("yas-")))
 
 ;;;***
 
-;;;### (autoloads nil "yasnippet-tests" "yasnippet-tests.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from yasnippet-tests.el
+;;;### (autoloads "actual autoloads are elsewhere" "yasnippet-tests"
+;;;;;;  "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-tests.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-tests.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yasnippet-tests" '("yas-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("yasnippet-pkg.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-debug.el"
+;;;;;;  "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet-tests.el"
+;;;;;;  "../../../../../.emacs.d/elpa/yasnippet-0.13.0/yasnippet.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -6,11 +6,18 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "clojure-mode-extra-font-locking" "clojure-mode-extra-font-locking.el"
+;;;### (autoloads "actual autoloads are elsewhere" "clojure-mode-extra-font-locking"
+;;;;;;  "../../../../../.emacs.d/elpa/clojure-mode-extra-font-locking-5.8.1/clojure-mode-extra-font-locking.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from clojure-mode-extra-font-locking.el
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/clojure-mode-extra-font-locking-5.8.1/clojure-mode-extra-font-locking.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clojure-mode-extra-font-locking" '("clojure-built-in-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/clojure-mode-extra-font-locking-5.8.1/clojure-mode-extra-font-locking-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/clojure-mode-extra-font-locking-5.8.1/clojure-mode-extra-font-locking.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

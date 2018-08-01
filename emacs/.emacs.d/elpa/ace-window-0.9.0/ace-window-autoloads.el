@@ -1,7 +1,10 @@
 ;;; ace-window-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "ace-window" "../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window.el"
 ;;;;;;  "b10c4df265dd4bdcc5ac1b1fb25dbee8")
@@ -57,12 +60,20 @@ or call the function `ace-window-display-mode'.")
 Minor mode for showing the ace window key in the mode line.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ace-window" "../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ace-window" '("ace-window-mode" "aw-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/ace-window-0.9.0/ace-window.el")
-;;;;;;  (22790 6942 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -70,5 +81,6 @@ Minor mode for showing the ace window key in the mode line.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; ace-window-autoloads.el ends here

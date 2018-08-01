@@ -1,7 +1,10 @@
 ;;; rainbow-delimiters-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "rainbow-delimiters" "../../../../../.emacs.d/elpa/rainbow-delimiters-2.1.3/rainbow-delimiters.el"
 ;;;;;;  "27460229f40aca5c34e1b3f2c7826038")
@@ -21,12 +24,21 @@ Enable `rainbow-delimiters-mode'.
 Disable `rainbow-delimiters-mode'.
 
 \(fn)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "rainbow-delimiters"
+;;;;;;  "../../../../../.emacs.d/elpa/rainbow-delimiters-2.1.3/rainbow-delimiters.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/rainbow-delimiters-2.1.3/rainbow-delimiters.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rainbow-delimiters" '("rainbow-delimiters-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/rainbow-delimiters-2.1.3/rainbow-delimiters-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/rainbow-delimiters-2.1.3/rainbow-delimiters.el")
-;;;;;;  (22790 7009 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -34,5 +46,6 @@ Disable `rainbow-delimiters-mode'.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; rainbow-delimiters-autoloads.el ends here

@@ -4,8 +4,13 @@
     (let-alist "1.0.4")
     (seq "1.11")
     (emacs "24.3"))
-  :url "http://www.flycheck.org" :keywords
-  '("convenience" "languages" "tools"))
+  :keywords
+  '("convenience" "languages" "tools")
+  :authors
+  '(("Sebastian Wiesner" . "swiesner@lunaryorn.com"))
+  :maintainer
+  '("Clément Pit-Claudel" . "clement.pitclaudel@live.com")
+  :url "http://www.flycheck.org")
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:

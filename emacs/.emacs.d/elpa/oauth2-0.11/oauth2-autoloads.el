@@ -1,10 +1,14 @@
 ;;; oauth2-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "oauth2" "oauth2.el" (23209 33858 195057 778000))
-;;; Generated autoloads from oauth2.el
+;;;### (autoloads nil "oauth2" "../../../../../.emacs.d/elpa/oauth2-0.11/oauth2.el"
+;;;;;;  "ef371fd35a854fb2d7fb34f0194a1050")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/oauth2-0.11/oauth2.el
 
 (autoload 'oauth2-refresh-access "oauth2" "\
 Refresh OAuth access TOKEN.
@@ -34,6 +38,20 @@ TOKEN can be obtained with `oauth2-auth'.  CALLBACK gets called with CBARGS
 when finished.  See `url-retrieve'.
 
 \(fn TOKEN URL CALLBACK &optional CBARGS REQUEST-METHOD REQUEST-DATA REQUEST-EXTRA-HEADERS)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "oauth2" "../../../../../.emacs.d/elpa/oauth2-0.11/oauth2.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/oauth2-0.11/oauth2.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "oauth2" '("oauth")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/oauth2-0.11/oauth2-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/oauth2-0.11/oauth2.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 
@@ -41,5 +59,6 @@ when finished.  See `url-retrieve'.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; oauth2-autoloads.el ends here

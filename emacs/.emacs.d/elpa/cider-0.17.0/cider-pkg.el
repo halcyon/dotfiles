@@ -7,6 +7,15 @@
     (seq "2.16"))
   :keywords
   '("languages" "clojure" "cider")
+  :authors
+  '(("Tim King" . "kingtim@gmail.com")
+    ("Phil Hagelberg" . "technomancy@gmail.com")
+    ("Bozhidar Batsov" . "bozhidar@batsov.com")
+    ("Artur Malabarba" . "bruce.connor.am@gmail.com")
+    ("Hugo Duncan" . "hugo@hugoduncan.org")
+    ("Steve Purcell" . "steve@sanityinc.com"))
+  :maintainer
+  '("Bozhidar Batsov" . "bozhidar@batsov.com")
   :url "http://www.github.com/clojure-emacs/cider")
 ;; Local Variables:
 ;; no-byte-compile: t

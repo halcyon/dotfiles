@@ -1,11 +1,22 @@
 ;;; pcache-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
+
+;;;### (autoloads "actual autoloads are elsewhere" "pcache" "../../../../../.emacs.d/elpa/pcache-0.4.2/pcache.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/pcache-0.4.2/pcache.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pcache" '("pcache-" "constructor" "*pcache-repositor")))
+
+;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/pcache-0.4.2/pcache-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/pcache-0.4.2/pcache.el") (22790
-;;;;;;  7027 0 0))
+;;;;;;  "../../../../../.emacs.d/elpa/pcache-0.4.2/pcache.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 
@@ -13,5 +24,6 @@
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; pcache-autoloads.el ends here

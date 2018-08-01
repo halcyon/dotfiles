@@ -1,10 +1,33 @@
 ;;; quelpa-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "quelpa" "quelpa.el" (22790 6852 0 0))
-;;; Generated autoloads from quelpa.el
+;;;### (autoloads nil "quelpa" "../../../../../.emacs.d/elpa/quelpa-0.0.1/quelpa.el"
+;;;;;;  "7b57b0195a86675b0979e64d7ae05248")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/quelpa-0.0.1/quelpa.el
+
+(autoload 'quelpa-build-package "quelpa" "\
+Create PACKAGE-NAME with VERSION.
+
+The information in FILE-SPECS is used to gather files from
+SOURCE-DIR.
+
+The resulting package will be stored as a .el or .tar file in
+TARGET-DIR, depending on whether there are multiple files.
+
+Argument FILE-SPECS is a list of specs for source files, which
+should be relative to SOURCE-DIR.  The specs can be wildcards,
+and optionally specify different target paths.  They extended
+syntax is currently only documented in the MELPA README.  You can
+simply pass `quelpa-build-default-files-spec' in most cases.
+
+Returns the archive entry for the package.
+
+\(fn PACKAGE-NAME VERSION FILE-SPECS SOURCE-DIR TARGET-DIR)" nil nil)
 
 (autoload 'quelpa-expand-recipe "quelpa" "\
 Expand a given recipe name into full recipe.
@@ -38,6 +61,20 @@ C-u M-x quelpa) it will try to upgrade the given package even if
 the global var `quelpa-upgrade-p' is set to nil.
 
 \(fn ARG &rest PLIST)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "quelpa" "../../../../../.emacs.d/elpa/quelpa-0.0.1/quelpa.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/quelpa-0.0.1/quelpa.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "quelpa" '("quelpa-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/quelpa-0.0.1/quelpa-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/quelpa-0.0.1/quelpa.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 
@@ -45,5 +82,6 @@ the global var `quelpa-upgrade-p' is set to nil.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; quelpa-autoloads.el ends here

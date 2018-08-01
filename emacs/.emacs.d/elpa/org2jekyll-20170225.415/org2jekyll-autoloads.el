@@ -1,11 +1,14 @@
 ;;; org2jekyll-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "org2jekyll" "org2jekyll.el" (22790 6913 0
-;;;;;;  0))
-;;; Generated autoloads from org2jekyll.el
+;;;### (autoloads nil "org2jekyll" "../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll.el"
+;;;;;;  "f8b27ee8a36f060a2287d31edf8722ed")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll.el
 
 (autoload 'org2jekyll-init-current-buffer "org2jekyll" "\
 Given an existing buffer, add the needed metadata to make it a post or page.
@@ -56,11 +59,31 @@ Commands:
 \\{org2jekyll-mode-map}
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org2jekyll" "../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org2jekyll" '("org2jekyll-")))
+
+;;;***
 
 ;;;***
 
-;;;### (autoloads nil nil ("org2jekyll-pkg.el" "org2jekyll-utilities.el")
-;;;;;;  (22790 6913 0 0))
+;;;### (autoloads "actual autoloads are elsewhere" "org2jekyll-utilities"
+;;;;;;  "../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll-utilities.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll-utilities.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org2jekyll-utilities" '("org2jekyll-tests-with-temp-buffer")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll-utilities.el"
+;;;;;;  "../../../../../.emacs.d/elpa/org2jekyll-20170225.415/org2jekyll.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -68,5 +91,6 @@ Commands:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; org2jekyll-autoloads.el ends here

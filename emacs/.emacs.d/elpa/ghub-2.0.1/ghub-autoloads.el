@@ -6,8 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "ghub" "ghub.el" (0 0 0 0))
-;;; Generated autoloads from ghub.el
+;;;### (autoloads nil "ghub" "../../../../../.emacs.d/elpa/ghub-2.0.1/ghub.el"
+;;;;;;  "7c0e567fe8ad63cb6426952f983f4546")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/ghub-2.0.1/ghub.el
 
 (autoload 'ghub-create-token "ghub" "\
 Create, store and return a new token.
@@ -25,12 +26,20 @@ This is intended for debugging purposes only.  The user
 has to provide several values including their password.
 
 \(fn HOST USERNAME PACKAGE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ghub" "../../../../../.emacs.d/elpa/ghub-2.0.1/ghub.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/ghub-2.0.1/ghub.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ghub" '("auth-source-netrc-parse-next-interesting@save-match-data" "ghub-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil nil ("ghub-pkg.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/ghub-2.0.1/ghub-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/ghub-2.0.1/ghub-pkg.el" "../../../../../.emacs.d/elpa/ghub-2.0.1/ghub.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

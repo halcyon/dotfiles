@@ -1,7 +1,10 @@
 ;;; helm-ag-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "helm-ag" "../../../../../.emacs.d/elpa/helm-ag-0.58/helm-ag.el"
 ;;;;;;  "41fef80a34263aaf15d83a0aa0e8e470")
@@ -56,12 +59,20 @@
 
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-ag" "../../../../../.emacs.d/elpa/helm-ag-0.58/helm-ag.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-ag-0.58/helm-ag.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-ag" '("helm-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/helm-ag-0.58/helm-ag-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/helm-ag-0.58/helm-ag.el") (22790
-;;;;;;  6951 0 0))
+;;;;;;  "../../../../../.emacs.d/elpa/helm-ag-0.58/helm-ag.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 
@@ -69,5 +80,6 @@
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; helm-ag-autoloads.el ends here

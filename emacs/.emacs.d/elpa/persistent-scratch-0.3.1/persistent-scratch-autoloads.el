@@ -6,9 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "persistent-scratch" "persistent-scratch.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from persistent-scratch.el
+;;;### (autoloads nil "persistent-scratch" "../../../../../.emacs.d/elpa/persistent-scratch-0.3.1/persistent-scratch.el"
+;;;;;;  "35de431e6b4280d6950e1302179a89fb")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/persistent-scratch-0.3.1/persistent-scratch.el
 
 (autoload 'persistent-scratch-save "persistent-scratch" "\
 Save the current state of scratch buffers.
@@ -115,8 +115,21 @@ lexicographically increasing file names when formatted using
 `persistent-scratch-backup-file-name-format'.
 
 \(fn DIFF)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "persistent-scratch"
+;;;;;;  "../../../../../.emacs.d/elpa/persistent-scratch-0.3.1/persistent-scratch.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/persistent-scratch-0.3.1/persistent-scratch.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "persistent-scratch" '("persistent-scratch-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/persistent-scratch-0.3.1/persistent-scratch-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/persistent-scratch-0.3.1/persistent-scratch.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

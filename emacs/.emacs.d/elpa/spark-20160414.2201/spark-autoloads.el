@@ -6,8 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "spark" "spark.el" (0 0 0 0))
-;;; Generated autoloads from spark.el
+;;;### (autoloads nil "spark" "../../../../../.emacs.d/elpa/spark-20160414.2201/spark.el"
+;;;;;;  "935d94837ba0fd7d2fc9fb7c0c76063d")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/spark-20160414.2201/spark.el
 
 (autoload 'spark "spark" "\
 Generates a sparkline string for a list of real numbers.
@@ -164,8 +165,20 @@ Examples:
   \"
 
 \(fn NUMBERS &key MIN MAX KEY (SIZE 50) LABELS TITLE (SCALE\\=\\? t) (NEWLINE\\=\\? t))" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "spark" "../../../../../.emacs.d/elpa/spark-20160414.2201/spark.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/spark-20160414.2201/spark.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spark" '("spark-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/spark-20160414.2201/spark-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/spark-20160414.2201/spark.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

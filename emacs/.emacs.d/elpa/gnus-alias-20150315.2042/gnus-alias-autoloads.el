@@ -6,8 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "gnus-alias" "gnus-alias.el" (0 0 0 0))
-;;; Generated autoloads from gnus-alias.el
+;;;### (autoloads nil "gnus-alias" "../../../../../.emacs.d/elpa/gnus-alias-20150315.2042/gnus-alias.el"
+;;;;;;  "448254fa8f2fbff071cc726b35dd6d6a")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gnus-alias-20150315.2042/gnus-alias.el
 
 (autoload 'gnus-alias-init "gnus-alias" "\
 Add gnus-alias call to message mode hook.
@@ -61,8 +62,20 @@ for details).  If such an argument is not needed in the current
 context, `gnus-alias-determine-identity' may be used directly in a hook.
 
 \(fn WHICH-HEADER)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gnus-alias" "../../../../../.emacs.d/elpa/gnus-alias-20150315.2042/gnus-alias.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gnus-alias-20150315.2042/gnus-alias.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gnus-alias" '("gnus-alias-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/gnus-alias-20150315.2042/gnus-alias-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gnus-alias-20150315.2042/gnus-alias.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

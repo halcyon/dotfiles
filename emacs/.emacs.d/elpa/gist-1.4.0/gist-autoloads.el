@@ -1,10 +1,14 @@
 ;;; gist-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "gist" "gist.el" (22840 52596 639193 185000))
-;;; Generated autoloads from gist.el
+;;;### (autoloads nil "gist" "../../../../../.emacs.d/elpa/gist-1.4.0/gist.el"
+;;;;;;  "ec6f64ff6c34b58c3f71bbb4c9dda196")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gist-1.4.0/gist.el
 
 (autoload 'gist-region "gist" "\
 Post the current region as a new paste at gist.github.com
@@ -89,6 +93,20 @@ List your starred gists.
 Fork a gist.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gist" "../../../../../.emacs.d/elpa/gist-1.4.0/gist.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gist-1.4.0/gist.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gist" '("dired-do-gist" "gist-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/gist-1.4.0/gist-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/gist-1.4.0/gist.el") (0 0 0
+;;;;;;  0))
 
 ;;;***
 
@@ -96,5 +114,6 @@ Fork a gist.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; gist-autoloads.el ends here

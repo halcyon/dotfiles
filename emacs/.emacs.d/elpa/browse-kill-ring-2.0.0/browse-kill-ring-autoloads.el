@@ -1,7 +1,10 @@
 ;;; browse-kill-ring-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "browse-kill-ring" "../../../../../.emacs.d/elpa/browse-kill-ring-2.0.0/browse-kill-ring.el"
 ;;;;;;  "c8e47c620d7774e51f9273577b06d95e")
@@ -19,12 +22,21 @@ behavior.  This function sets things up so that M-y will invoke
 Display items in the `kill-ring' in another buffer.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "browse-kill-ring"
+;;;;;;  "../../../../../.emacs.d/elpa/browse-kill-ring-2.0.0/browse-kill-ring.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/browse-kill-ring-2.0.0/browse-kill-ring.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "browse-kill-ring" '("browse-kill-ring-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/browse-kill-ring-2.0.0/browse-kill-ring-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/browse-kill-ring-2.0.0/browse-kill-ring.el")
-;;;;;;  (22790 6966 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -32,5 +44,6 @@ Display items in the `kill-ring' in another buffer.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; browse-kill-ring-autoloads.el ends here

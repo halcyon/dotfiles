@@ -1,7 +1,10 @@
 ;;; gh-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "gh-api" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-api.el"
 ;;;;;;  "294e2cf605135360b78ec934364a5d48")
@@ -12,6 +15,14 @@
 (eieio-defclass-autoload 'gh-api 'nil "gh-api" "Github API")
 
 (eieio-defclass-autoload 'gh-api-v3 '(gh-api) "gh-api" "Github API v3")
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-api" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-api.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-api.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-api" '("gh-" "constructor" "logito-log")))
+
+;;;***
 
 ;;;***
 
@@ -26,6 +37,14 @@
 (eieio-defclass-autoload 'gh-password-authenticator '(gh-authenticator) "gh-auth" "Password-based authenticator")
 
 (eieio-defclass-autoload 'gh-oauth-authenticator '(gh-authenticator) "gh-auth" "Oauth-based authenticator")
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-auth" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-auth.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-auth.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-auth" '("gh-" "constructor")))
+
+;;;***
 
 ;;;***
 
@@ -34,6 +53,14 @@
 ;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-cache.el
 
 (require 'eieio)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-cache" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-cache.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-cache.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-cache" '("gh-cache" "pcache-")))
+
+;;;***
 
 ;;;***
 
@@ -42,6 +69,14 @@
 ;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-common.el
 
 (require 'eieio)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-common" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-common.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-common.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-common" '("gh-" "slot-unbound")))
+
+;;;***
 
 ;;;***
 
@@ -56,6 +91,14 @@
 (eieio-defclass-autoload 'gh-gist-gist-stub '(gh-object) "gh-gist" "Class for user-created gist objects")
 
 (eieio-defclass-autoload 'gh-gist-gist '(gh-gist-gist-stub) "gh-gist" "Gist object")
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-gist" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-gist.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-gist.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-gist" '("gh-")))
+
+;;;***
 
 ;;;***
 
@@ -64,6 +107,15 @@
 ;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-issue-comments.el
 
 (require 'eieio)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-issue-comments"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-issue-comments.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-issue-comments.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-issue-comments" '("gh-")))
+
+;;;***
 
 ;;;***
 
@@ -72,6 +124,14 @@
 ;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-issues.el
 
 (require 'eieio)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-issues" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-issues.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-issues.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-issues" '("gh-")))
+
+;;;***
 
 ;;;***
 
@@ -82,6 +142,14 @@
 (require 'eieio)
 
 (eieio-defclass-autoload 'gh-oauth-api '(gh-api-v3) "gh-oauth" "OAuth API")
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-oauth" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-oauth.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-oauth.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-oauth" '("gh-o" "constructor")))
+
+;;;***
 
 ;;;***
 
@@ -94,6 +162,22 @@
 (eieio-defclass-autoload 'gh-orgs-api '(gh-api-v3) "gh-orgs" "Orgs API")
 
 (eieio-defclass-autoload 'gh-orgs-org-stub '(gh-object) "gh-orgs" nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-orgs" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-orgs.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-orgs.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-orgs" '("gh-o")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-profile" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-profile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-profile.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-profile" '("gh-profile-")))
 
 ;;;***
 
@@ -102,6 +186,15 @@
 ;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-pull-comments.el
 
 (require 'eieio)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-pull-comments"
+;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pull-comments.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-pull-comments.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-pull-comments" '("gh-")))
+
+;;;***
 
 ;;;***
 
@@ -114,6 +207,14 @@
 (eieio-defclass-autoload 'gh-pulls-api '(gh-api-v3) "gh-pulls" "Git pull requests API")
 
 (eieio-defclass-autoload 'gh-pulls-request '(gh-pulls-request-stub) "gh-pulls" "Git pull requests API")
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-pulls" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pulls.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-pulls.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-pulls" '("gh-")))
+
+;;;***
 
 ;;;***
 
@@ -128,6 +229,22 @@
 (eieio-defclass-autoload 'gh-repos-repo-stub '(gh-object) "gh-repos" "Class for user-created repository objects")
 
 (eieio-defclass-autoload 'gh-repos-repo '(gh-repos-repo-stub) "gh-repos" "Class for GitHub repositories")
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-repos" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-repos.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-repos.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-repos" '("gh-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-search" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-search.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-search.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-search" '("gh-search-")))
 
 ;;;***
 
@@ -136,6 +253,14 @@
 ;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-url.el
 
 (require 'eieio)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-url" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-url.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-url.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-url" '("gh-url-")))
+
+;;;***
 
 ;;;***
 
@@ -148,6 +273,14 @@
 (eieio-defclass-autoload 'gh-users-api '(gh-api-v3) "gh-users" "Users API")
 
 (eieio-defclass-autoload 'gh-users-user '(gh-user) "gh-users" nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gh-users" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-users.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/gh-0.10.0/gh-users.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-users" '("gh-")))
+
+;;;***
 
 ;;;***
 
@@ -161,7 +294,7 @@
 ;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-pulls.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-repos.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-search.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh-url.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/gh-0.10.0/gh-users.el" "../../../../../.emacs.d/elpa/gh-0.10.0/gh.el")
-;;;;;;  (22790 7028 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -169,5 +302,6 @@
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; gh-autoloads.el ends here

@@ -1,7 +1,10 @@
 ;;; emmet-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "emmet-mode" "../../../../../.emacs.d/elpa/emmet-mode-1.0.8/emmet-mode.el"
 ;;;;;;  "345b033d0f26254460815a68667850d1")
@@ -52,12 +55,20 @@ This will show a preview of the expanded emmet code and you can
 accept it or skip it.
 
 \(fn BEG END)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "emmet-mode" "../../../../../.emacs.d/elpa/emmet-mode-1.0.8/emmet-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/emmet-mode-1.0.8/emmet-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "emmet-mode" '("emmet-")))
+
+;;;***
 
 ;;;***
 
 ;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/emmet-mode-1.0.8/emmet-mode-autoloads.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/emmet-mode-1.0.8/emmet-mode.el")
-;;;;;;  (22790 6969 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -65,5 +76,6 @@ accept it or skip it.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; emmet-mode-autoloads.el ends here

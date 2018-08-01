@@ -1,11 +1,14 @@
 ;;; helm-cider-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "helm-cider" "helm-cider.el" (23206 57681 954772
-;;;;;;  43000))
-;;; Generated autoloads from helm-cider.el
+;;;### (autoloads nil "helm-cider" "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider.el"
+;;;;;;  "9881864b80dca6946d8bd706e19e8632")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider.el
 
 (autoload 'helm-cider-apropos-symbol "helm-cider" "\
 Choose Clojure symbols across namespaces.
@@ -78,12 +81,20 @@ or call the function `helm-cider-mode'.")
 Use Helm for CIDER.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-cider" "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider" '("helm-cider-")))
+
+;;;***
 
 ;;;***
 
-;;;### (autoloads nil "helm-cider-repl" "helm-cider-repl.el" (23206
-;;;;;;  57681 829774 610000))
-;;; Generated autoloads from helm-cider-repl.el
+;;;### (autoloads nil "helm-cider-repl" "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-repl.el"
+;;;;;;  "8a45caf31b7ca619f349d1e6bc97c001")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-repl.el
 
 (autoload 'helm-cider-repl-history-insert "helm-cider-repl" "\
 Insert candidate at the last CIDER REPL prompt.
@@ -105,12 +116,21 @@ This function is meant to be one of `helm-cider-repl-history-actions'.
 Helm interface to CIDER REPL history.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-cider-repl"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-repl.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-repl.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-repl" '("helm-cider-repl-")))
+
+;;;***
 
 ;;;***
 
-;;;### (autoloads nil "helm-cider-spec" "helm-cider-spec.el" (23206
-;;;;;;  57681 913772 885000))
-;;; Generated autoloads from helm-cider-spec.el
+;;;### (autoloads nil "helm-cider-spec" "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-spec.el"
+;;;;;;  "f7340873192a6f5c1147bdf5453e1a16")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-spec.el
 
 (autoload 'helm-cider-spec-symbol "helm-cider-spec" "\
 Choose Clojure specs across namespaces.
@@ -150,11 +170,34 @@ If ARG is raw prefix argument \\[universal-argument]
 \\[universal-argument], choose namespace before symbol.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-cider-spec"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-spec.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-spec.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-spec" '("helm-cider-spec-")))
+
+;;;***
 
 ;;;***
 
-;;;### (autoloads nil nil ("helm-cider-pkg.el" "helm-cider-util.el")
-;;;;;;  (23206 57681 871773 747000))
+;;;### (autoloads "actual autoloads are elsewhere" "helm-cider-util"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-util.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-util.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-util" '("helm-cider--")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-repl.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-spec.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider-util.el"
+;;;;;;  "../../../../../.emacs.d/elpa/helm-cider-0.4.0/helm-cider.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -162,5 +205,6 @@ If ARG is raw prefix argument \\[universal-argument]
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; helm-cider-autoloads.el ends here

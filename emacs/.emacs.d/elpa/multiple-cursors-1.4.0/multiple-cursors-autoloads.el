@@ -1,7 +1,19 @@
 ;;; multiple-cursors-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
+
+;;;### (autoloads "actual autoloads are elsewhere" "mc-cycle-cursors"
+;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-cycle-cursors.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-cycle-cursors.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mc-cycle-cursors" '("mc/")))
+
+;;;***
 
 ;;;### (autoloads nil "mc-edit-lines" "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-edit-lines.el"
 ;;;;;;  "5d934922b9f9a3a5965a92fd7f58e807")
@@ -30,6 +42,15 @@ Add one cursor to the end of each line in the active region.
 Add one cursor to the beginning of each line in the active region.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "mc-edit-lines"
+;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-edit-lines.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-edit-lines.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mc-edit-lines" '("mc/edit-lines-empty-lines")))
+
+;;;***
 
 ;;;***
 
@@ -45,6 +66,15 @@ still edit lines while you are in mc-hide-unmatched-lines
 mode. To leave this mode press <return> or \"C-g\"
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "mc-hide-unmatched-lines-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-hide-unmatched-lines-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-hide-unmatched-lines-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mc-hide-unmatched-lines-mode" '("hum/")))
+
+;;;***
 
 ;;;***
 
@@ -218,6 +248,15 @@ already there.
 Mark the tag we're in and its pair for renaming.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "mc-mark-more"
+;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-mark-more.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-mark-more.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mc-mark-more" '("mc/" "mc--")))
+
+;;;***
 
 ;;;***
 
@@ -269,6 +308,15 @@ Might not behave as intended if more than one cursors are on the same line.
 Aligns all cursors with whitespace like `mc/vertical-align' does
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "mc-separate-operations"
+;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-separate-operations.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/mc-separate-operations.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mc-separate-operations" '("mc--")))
+
+;;;***
 
 ;;;***
 
@@ -280,6 +328,15 @@ Aligns all cursors with whitespace like `mc/vertical-align' does
 Mode while multiple cursors are active.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "multiple-cursors-core"
+;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/multiple-cursors-core.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/multiple-cursors-core.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "multiple-cursors-core" '("multiple-cursors-mode" "unsupported-cmd" "deactivate-cursor-after-undo" "activate-cursor-for-undo")))
+
+;;;***
 
 ;;;***
 
@@ -299,6 +356,15 @@ an exceedingly quick way of adding multiple cursors to multiple lines.
 A mode for creating a rectangular region to edit
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "rectangular-region-mode"
+;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/rectangular-region-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/rectangular-region-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rectangular-region-mode" '("rectangular-region-mode" "rrm/")))
+
+;;;***
 
 ;;;***
 
@@ -313,7 +379,7 @@ A mode for creating a rectangular region to edit
 ;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/multiple-cursors-pkg.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/multiple-cursors.el"
 ;;;;;;  "../../../../../.emacs.d/elpa/multiple-cursors-1.4.0/rectangular-region-mode.el")
-;;;;;;  (22790 6960 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -321,5 +387,6 @@ A mode for creating a rectangular region to edit
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; multiple-cursors-autoloads.el ends here
