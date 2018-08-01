@@ -101,3 +101,5 @@ if [[ $(uname -s) == "Linux" ]]
 else
     export PATH="${PATH}:${HOME}/go/bin"
 fi
+
+eval "$(direnv hook zsh)"
