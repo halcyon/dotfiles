@@ -4,9 +4,9 @@
 
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/projectile
-;; Package-Version: 20180728.1057
+;; Package-Version: 1.0.0
 ;; Keywords: project, convenience
-;; Version: 1.1.0-snapshot
+;; Version: 1.0.0
 ;; Package-Requires: ((emacs "25.1") (pkg-info "0.4"))
 
 ;; This file is NOT part of GNU Emacs.
@@ -149,7 +149,7 @@ Otherwise consider the current directory the project root."
           (const :tag "Default" default)
           (function :tag "Custom function")))
 
-(defcustom projectile-keymap-prefix (kbd "C-c C-p")
+(defcustom projectile-keymap-prefix (kbd "C-c p")
   "Projectile keymap prefix."
   :group 'projectile
   :type 'string)
@@ -307,9 +307,7 @@ containing a root file."
   :type '(repeat string))
 
 (defcustom projectile-globally-unignored-files nil
-  "A list of files globally unignored by projectile.
-
-Regular expressions can be used."
+  "A list of files globally unignored by projectile."
   :group 'projectile
   :type '(repeat string)
   :package-version '(projectile . "0.14.0"))
@@ -333,9 +331,7 @@ Regular expressions can be used."
     ".tox"
     ".svn"
     ".stack-work")
-  "A list of directories globally ignored by projectile.
-
-Regular expressions can be used."
+  "A list of directories globally ignored by projectile."
   :safe (lambda (x) (not (remq t (mapcar #'stringp x))))
   :group 'projectile
   :type '(repeat string))
@@ -363,8 +359,8 @@ it for functions working with buffers."
 (defcustom projectile-globally-ignored-buffers nil
   "A list of buffer-names ignored by projectile.
 
-If a buffer is in the list projectile will ignore it for
-functions working with buffers. Regular expressions can be used."
+If a buffer is in the list projectile will ignore
+it for functions working with buffers."
   :group 'projectile
   :type '(repeat string)
   :package-version '(projectile . "0.12.0"))
@@ -1379,15 +1375,9 @@ this case unignored files will be absent from FILES."
          (string-prefix-p project-root (file-truename default-directory) (eq system-type 'windows-nt)))))
 
 (defun projectile-ignored-buffer-p (buffer)
-  "Check if BUFFER should be ignored.
-
-Regular expressions can be use."
+  "Check if BUFFER should be ignored."
   (or
-   (with-current-buffer buffer
-     (cl-some
-      (lambda (name)
-        (string-match-p name (buffer-name)))
-      projectile-globally-ignored-buffers))
+   (member (buffer-name buffer) projectile-globally-ignored-buffers)
    (with-current-buffer buffer
      (cl-some
       (lambda (mode)
@@ -1512,28 +1502,18 @@ projectile project root."
     (mapcar (lambda (f) (file-relative-name f project-root)) files)))
 
 (defun projectile-ignored-directory-p (directory)
-  "Check if DIRECTORY should be ignored.
-
-Regular expressions can be use."
-  (cl-some
-   (lambda (name)
-     (string-match-p name directory))
-   (projectile-ignored-directories)))
+  "Check if DIRECTORY should be ignored."
+  (member directory (projectile-ignored-directories)))
 
 (defun projectile-ignored-file-p (file)
-  "Check if FILE should be ignored.
-
-Regular expressions can be use."
-  (cl-some
-   (lambda (name)
-     (string-match-p name file))
-   (projectile-ignored-files)))
+  "Check if FILE should be ignored."
+  (member file (projectile-ignored-files)))
 
 (defun projectile-check-pattern-p (file pattern)
   "Check if FILE meets PATTERN."
   (or (string-suffix-p (directory-file-name pattern)
-                      (directory-file-name file))
-     (member file (file-expand-wildcards pattern t))))
+                       (directory-file-name file))
+      (member file (file-expand-wildcards pattern t))))
 
 (defun projectile-ignored-rel-p (file directory patterns)
   "Check if FILE should be ignored relative to DIRECTORY
@@ -2918,42 +2898,22 @@ SEARCH-TERM is a regexp."
 
 ;;;###autoload
 (defun projectile-run-shell ()
-  "Invoke `shell' in the project's root.
-
-Switch to the project specific shell buffer if it already exists."
+  "Invoke `shell' in the project's root."
   (interactive)
   (projectile-with-default-dir (projectile-project-root)
     (shell (concat "*shell " (projectile-project-name) "*"))))
 
 ;;;###autoload
 (defun projectile-run-eshell ()
-  "Invoke `eshell' in the project's root.
-
-Switch to the project specific eshell buffer if it already exists."
+  "Invoke `eshell' in the project's root."
   (interactive)
   (let ((eshell-buffer-name (concat "*eshell " (projectile-project-name) "*")))
     (projectile-with-default-dir (projectile-project-root)
       (eshell))))
 
 ;;;###autoload
-(defun projectile-run-ielm ()
-  "Invoke `ielm' in the project's root.
-
-Switch to the project specific ielm buffer if it already exists."
-  (interactive)
-  (let ((ielm-buffer-name (format "*ielm %s*" (projectile-project-name))))
-    (if (get-buffer ielm-buffer-name)
-        (switch-to-buffer ielm-buffer-name)
-      (projectile-with-default-dir (projectile-project-root)
-        (ielm))
-      ;; ielm's buffer name is hardcoded, so we have to rename it after creation
-      (rename-buffer ielm-buffer-name))))
-
-;;;###autoload
 (defun projectile-run-term (program)
-  "Invoke `term' in the project's root.
-
-Switch to the project specific term buffer if it already exists."
+  "Invoke `term' in the project's root."
   (interactive (list nil))
   (let* ((term (concat "term " (projectile-project-name)))
          (buffer (concat "*" term "*")))
@@ -3258,18 +3218,7 @@ Should be set via .dir-locals.el.")
   (plist-get (gethash project-type projectile-project-types) 'run-command))
 
 (defun projectile-configure-command (compile-dir)
-  "Retrieve the configure command for COMPILE-DIR.
-
-The command is determined like this:
-
-- first we check `projectile-configure-cmd-map' for the last
-configure command that was invoked on the project
-
-- then we check for `projectile-project-configure-cmd' supplied
-via .dir-locals.el
-
-- finally we check for the default configure command for a
-project of that type"
+  "Retrieve the configure command for COMPILE-DIR."
   (or (gethash compile-dir projectile-configure-cmd-map)
       projectile-project-configure-cmd
       (let ((cmd-format-string (projectile-default-configure-command (projectile-project-type))))
@@ -3277,52 +3226,19 @@ project of that type"
           (format cmd-format-string (projectile-project-root))))))
 
 (defun projectile-compilation-command (compile-dir)
-  "Retrieve the compilation command for COMPILE-DIR.
-
-The command is determined like this:
-
-- first we check `projectile-compilation-cmd-map' for the last
-compile command that was invoked on the project
-
-- then we check for `projectile-project-compilation-cmd' supplied
-via .dir-locals.el
-
-- finally we check for the default compilation command for a
-project of that type"
+  "Retrieve the compilation command for COMPILE-DIR."
   (or (gethash compile-dir projectile-compilation-cmd-map)
       projectile-project-compilation-cmd
       (projectile-default-compilation-command (projectile-project-type))))
 
 (defun projectile-test-command (compile-dir)
-  "Retrieve the test command for COMPILE-DIR.
-
-The command is determined like this:
-
-- first we check `projectile-test-cmd-map' for the last
-test command that was invoked on the project
-
-- then we check for `projectile-project-test-cmd' supplied
-via .dir-locals.el
-
-- finally we check for the default test command for a
-project of that type"
+  "Retrieve the test command for COMPILE-DIR."
   (or (gethash compile-dir projectile-test-cmd-map)
       projectile-project-test-cmd
       (projectile-default-test-command (projectile-project-type))))
 
 (defun projectile-run-command (compile-dir)
-  "Retrieve the run command for COMPILE-DIR.
-
-The command is determined like this:
-
-- first we check `projectile-run-cmd-map' for the last
-run command that was invoked on the project
-
-- then we check for `projectile-project-run-cmd' supplied
-via .dir-locals.el
-
-- finally we check for the default run command for a
-project of that type"
+  "Retrieve the run command for COMPILE-DIR."
   (or (gethash compile-dir projectile-run-cmd-map)
       projectile-project-run-cmd
       (projectile-default-run-command (projectile-project-type))))
@@ -3601,30 +3517,26 @@ This command will first prompt for the directory the file is in."
   "Determine whether we should cleanup (remove) PROJECT or not.
 
 It handles the case of remote projects as well.
-See `projectile--cleanup-known-projects'."
+See `projectile-cleanup-known-projects'."
   ;; Taken from from `recentf-keep-default-predicate'
   (cond
    ((file-remote-p project nil t) (file-readable-p project))
    ((file-remote-p project))
    ((file-readable-p project))))
 
-(defun projectile--cleanup-known-projects ()
-  "Remove known projects that don't exist anymore and return a list of projects removed."
+;;;###autoload
+(defun projectile-cleanup-known-projects ()
+  "Remove known projects that don't exist anymore."
+  (interactive)
   (projectile-merge-known-projects)
   (let ((projects-kept (cl-remove-if-not #'projectile-keep-project-p projectile-known-projects))
         (projects-removed (cl-remove-if #'projectile-keep-project-p projectile-known-projects)))
     (setq projectile-known-projects projects-kept)
     (projectile-merge-known-projects)
-    projects-removed))
-
-;;;###autoload
-(defun projectile-cleanup-known-projects ()
-  "Remove known projects that don't exist anymore."
-  (interactive)
-  (if-let ((projects-removed (projectile--cleanup-known-projects)))
-      (message "Projects removed: %s"
-               (mapconcat #'identity projects-removed ", "))
-    (message "No projects needed to be removed.")))
+    (if projects-removed
+        (message "Projects removed: %s"
+                 (mapconcat #'identity projects-removed ", "))
+      (message "No projects needed to be removed."))))
 
 ;;;###autoload
 (defun projectile-clear-known-projects ()
@@ -3948,7 +3860,6 @@ is chosen."
     (define-key map (kbd "v") #'projectile-vc)
     (define-key map (kbd "V") #'projectile-browse-dirty-projects)
     (define-key map (kbd "x e") #'projectile-run-eshell)
-    (define-key map (kbd "x i") #'projectile-run-ielm)
     (define-key map (kbd "x t") #'projectile-run-term)
     (define-key map (kbd "x s") #'projectile-run-shell)
     (define-key map (kbd "z") #'projectile-cache-current-file)
@@ -3989,7 +3900,6 @@ is chosen."
    "--"
    ["Run shell" projectile-run-shell]
    ["Run eshell" projectile-run-eshell]
-   ["Run ielm" projectile-run-ielm]
    ["Run term" projectile-run-term]
    "--"
    ["Cache current file" projectile-cache-current-file]
@@ -4065,7 +3975,7 @@ Otherwise behave as if called interactively.
       (setq projectile-projects-cache-time
             (make-hash-table :test 'equal)))
     ;; update the list of known projects
-    (projectile--cleanup-known-projects)
+    (projectile-cleanup-known-projects)
     (projectile-discover-projects-in-search-path)
     (add-hook 'find-file-hook 'projectile-find-file-hook-function)
     (add-hook 'projectile-find-dir-hook #'projectile-track-known-projects-find-file-hook t)

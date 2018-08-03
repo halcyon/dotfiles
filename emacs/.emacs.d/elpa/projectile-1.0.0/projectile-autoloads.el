@@ -6,9 +6,8 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "projectile" "../../../../../.emacs.d/elpa/projectile-20180728.1057/projectile.el"
-;;;;;;  "3fbc5bbd7586eee26b883fd4077d0e69")
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/projectile-20180728.1057/projectile.el
+;;;### (autoloads nil "projectile" "projectile.el" (0 0 0 0))
+;;; Generated autoloads from projectile.el
 
 (autoload 'projectile-version "projectile" "\
 Get the Projectile version as string.
@@ -310,28 +309,15 @@ Invoke `async-shell-command' in the project's root.
 (autoload 'projectile-run-shell "projectile" "\
 Invoke `shell' in the project's root.
 
-Switch to the project specific shell buffer if it already exists.
-
 \(fn)" t nil)
 
 (autoload 'projectile-run-eshell "projectile" "\
 Invoke `eshell' in the project's root.
 
-Switch to the project specific eshell buffer if it already exists.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-ielm "projectile" "\
-Invoke `ielm' in the project's root.
-
-Switch to the project specific ielm buffer if it already exists.
-
 \(fn)" t nil)
 
 (autoload 'projectile-run-term "projectile" "\
 Invoke `term' in the project's root.
-
-Switch to the project specific term buffer if it already exists.
 
 \(fn PROGRAM)" t nil)
 
@@ -526,20 +512,8 @@ Otherwise behave as if called interactively.
 \(fn &optional ARG)" t nil)
 
 (define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0")
-
-;;;### (autoloads "actual autoloads are elsewhere" "projectile" "../../../../../.emacs.d/elpa/projectile-20180728.1057/projectile.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../.emacs.d/elpa/projectile-20180728.1057/projectile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "projectile" '("projectile-" "??" "def-projectile-commander-method")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/projectile-20180728.1057/projectile-autoloads.el"
-;;;;;;  "../../../../../.emacs.d/elpa/projectile-20180728.1057/projectile.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

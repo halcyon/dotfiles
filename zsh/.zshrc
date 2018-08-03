@@ -99,7 +99,7 @@ if [[ $(uname -s) == "Linux" ]]
    . $HOME/.asdf/asdf.sh
    . $HOME/.asdf/completions/asdf.bash
 else
-    export PATH="${PATH}:${HOME}/go/bin"
+    export PATH="${PATH}:${HOME}/bin:${HOME}/go/bin"
 fi
 
 eval "$(direnv hook zsh)"
