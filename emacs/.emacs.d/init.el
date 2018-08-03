@@ -17,8 +17,7 @@
 (setq quelpa-update-melpa-p nil)
 (unless (require 'quelpa nil t)
   (with-temp-buffer
-    (url-insert-file-contents (concat "https://raw.github.com/quelpa"
-                                      "/quelpa/master/bootstrap.el"))
+    (url-insert-file-contents "https://framagit.org/steckerhalter/quelpa/raw/master/bootstrap.el")
     (eval-buffer)))
 
 ;; install use-package and the quelpa handler
@@ -33,10 +32,6 @@
 (setq use-package-always-ensure t)
 (quelpa-use-package-activate-advice)
 
-;;; Packages
-
-;;;; settings
-;;;;; global-settings
 (use-package global-settings
   :ensure nil
   :init
@@ -71,7 +66,18 @@
   (define-key key-translation-map "\e[86;8" (kbd "C-M-S-v"))
   (provide 'global-settings))
 
-;;;;; backup-settings
+(use-package display-settings
+  :ensure nil
+  :init
+  (line-number-mode)                 ; line numbers in the mode line
+  (column-number-mode)               ; column numbers in the mode line
+  (global-hl-line-mode)              ; highlight current line
+  (global-display-line-numbers-mode) ; add line numbers on the left
+  (provide 'display-settings))
+
+(use-package zenburn-theme
+  :config (set-face-background 'hl-line "color-240"))
+
 (use-package backup-settings
   :ensure nil
   :init
@@ -113,28 +119,27 @@ Null prefix argument turns off the mode."
   (add-to-list 'auto-mode-alist '("\\id_rsa.*\\'" . sensitive-mode))
   (provide 'backup-settings))
 
-;;;;; pinentry
 (use-package pinentry
   :config
   (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
   (pinentry-start))
 
-;;;;; private
+(use-package diminish)
+
 (require 'emacs-private (expand-file-name "~/gitlab/dotfiles-private/emacs/emacs-private.el"))
 
-;;;;; cider
 (use-package cider
   :bind (:map cider-repl-mode-map
               ("C-M-q" . prog-indent-sexp)
               ("C-c C-p" . cider-pprint-eval-last-sexp))
   :config
   (setq cider-repl-history-size 100000
-        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
+        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
+        cider-lein-parameters "repl :headless :host localhost")
   (defvar cider-cljs-lein-repl
     "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
   (put 'cider-cljs-lein-repl 'safe-local-variable #'stringp))
 
-;;;;; company
 (use-package company
   :diminish company-mode
   :init (add-hook 'after-init-hook #'global-company-mode)
@@ -147,50 +152,6 @@ Null prefix argument turns off the mode."
          ("C-d" . company-show-doc-buffer)
          ("M-." . company-show-location)))
 
-;;;;; outshine
-(use-package outorg
-  :quelpa (outorg :fetcher github
-                  :repo "tj64/outorg"
-                  :stable t))
-(use-package outshine
-  :diminish outline-minor-mode
-  :quelpa (outshine :fetcher github
-                    :repo "tj64/outshine"
-                    :stable t)
-  :config
-  (setq outshine-use-speed-commands t)
-  (add-hook 'outline-minor-mode-hook #'outshine-hook-function)
-  (add-hook 'emacs-lisp-mode-hook #'outline-minor-mode)
-  :bind (("<backtab>" . outshine-cycle-buffer)))
-
-;;;;; display-settings
-(use-package display-settings
-  :ensure nil
-  :init
-  (line-number-mode)                 ; line numbers in the mode line
-  (column-number-mode)               ; column numbers in the mode line
-  (global-hl-line-mode)              ; highlight current line
-  (global-display-line-numbers-mode) ; add line numbers on the left
-  (provide 'display-settings))
-
-;;;;; zenburn-theme
-(use-package zenburn-theme
-  :config (set-face-background 'hl-line "color-240"))
-
-;;;;; scratch
-(use-package scratch
-  :quelpa (scratch :fetcher github
-                   :repo "ieure/scratch-el"))
-
-;;;;; scratch-ext
-(use-package scratch-ext
-  :quelpa (scratch-ext :fetcher github
-                       :repo "kyanagi/scratch-ext-el"))
-
-;;;;; persistent-scratch
-(use-package persistent-scratch)
-
-;;;;; term
 (use-package term
   ;; If you do use M-x term, you will notice there's line mode that acts like
   ;; emacs buffers, and there's the default char mode that will send your
@@ -210,19 +171,16 @@ Null prefix argument turns off the mode."
               ("C-'" . term-line-mode)
               ("C-y" . term-paste)))
 
-;;;;; info
 (use-package info
   :config
   (add-to-list 'Info-directory-list (expand-file-name "~/gitlab/info"))
   (add-hook 'Info-mode-hook (lambda () (display-line-numbers-mode -1))))
 
-;;;;; dired-x
 (use-package dired-x
   ;;; C-x C-j opens dired with the cursor right on the file you're editing
   ;;; C-x 4 C-j opens dired in a separate window
   :ensure nil)
 
-;;;;; org
 (use-package org-plus-contrib
   :init (provide 'org-plus-contrib))
 (use-package htmlize)
@@ -326,7 +284,6 @@ Null prefix argument turns off the mode."
   (provide 'org-settings)
   :bind ("C-c c" . org-capture))
 
-;;;;; org2jekyll
 (use-package org2jekyll
   :quelpa (org2jekyll :fetcher github
                       :repo "ardumont/org2jekyll")
@@ -402,29 +359,16 @@ Null prefix argument turns off the mode."
            :html-html5-fancy t
            :html-postamble nil))))
 
-;;;;; org-reveal
 (use-package ox-reveal
   :quelpa (ox-reveal :fetcher github
                      :repo "yjwen/org-reveal"))
 
-;;;;; yaml-mode
 (use-package yaml-mode)
 
-;;;; replacements for improved functionality
-;;;;; which-key
 (use-package which-key
   :diminish which-key-mode
   :config (which-key-mode))
 
-;;;;; projectile
-(use-package projectile
-  :quelpa (projectile :repo "bbatsov/projectile"
-                      :fetcher github
-                      :files ("projectile.el"))
-  :config
-  (projectile-global-mode))
-
-;;;;; avy
 (use-package avy
   :config
   (avy-setup-default)
@@ -435,11 +379,9 @@ Null prefix argument turns off the mode."
   ;;            '(?0)))
   )
 
-;;;;; ace-window
 (use-package ace-window
   :bind ("M-p" . ace-window))
 
-;;;;; helm
 (use-package helm
   :config
   (require 'helm-config)
@@ -450,39 +392,22 @@ Null prefix argument turns off the mode."
 ;;;;; helm-ag
 (use-package helm-ag)
 
-;;;;; helm-cider
-(use-package helm-cider)
+(use-package projectile
+  :config
+  (projectile-mode))
 
-;;;;; helm-clojuredocs
-(use-package helm-clojuredocs
-  :quelpa (helm-clojuredocs :fetcher github
-                            :repo "mbuczko/helm-clojuredocs"))
-
-;;;;; helm-google
-;; (use-package helm-google
-;;   :quelpa (helm-google :fetcher github
-;;                        :repo "steckerhalter/helm-google"))
-
-;;;;; helm-projectile
 (use-package helm-projectile
   :config
   (setq projectile-switch-project-action 'helm-projectile)
   (helm-projectile-on))
 
-;;;;; helm-swoop
-(use-package helm-swoop)
-
-
-;;;;; multiple-cursors
 (use-package multiple-cursors
   :bind ("C-S-c C-S-c" . mc/edit-lines))
 
-;;;;; goto-last-change
 (use-package goto-last-change
   :bind (("C-x C-/" . goto-last-change)
          ("C-x C-_" . goto-last-change)))
 
-;;;;; ag
 (use-package ag
   :config
   (defun configure-ag-clojure ()
@@ -495,39 +420,24 @@ Null prefix argument turns off the mode."
                "--")))
   (add-hook 'clojure-mode-hook #'configure-ag-clojure))
 
-;;;;; undo-tree
 (use-package undo-tree
   :diminish undo-tree-mode
   :config (global-undo-tree-mode)
   :bind ("s-/" . undo-tree-visualize))
 
-;;;;; browse-kill-ring
 (use-package browse-kill-ring)
 
-;;;;; xclip
 (use-package xclip
   :config (xclip-mode))
 
-;;;; language
-;;;;; gradle-mode
 (use-package gradle-mode
   :diminish gradle-mode
   :config (gradle-mode))
 
-;;;;; restclient
 (use-package restclient
   :quelpa (restclient :repo "pashky/restclient.el"
                       :fetcher github
                       :files ("restclient.el")))
-
-;; ;;;;; ensime
-;; (use-package ensime
-;;   :quelpa (ensime :fetcher github
-;;                   :repo "ensime/ensime-emacs")
-;;   :commands ensime ensime-mode)
-
-;;;;; emmet-mode
-(use-package emmet-mode)
 
 (use-package eldoc
   :ensure nil
@@ -540,11 +450,6 @@ Null prefix argument turns off the mode."
   (add-hook 'ensime-mode-hook #'eldoc-mode)
   (add-hook 'racer-mode-hook #'eldoc-mode))
 
-(use-package abbrev
-  :ensure nil
-  :diminish abbrev-mode)
-
-;;;;; elisp-settings
 (use-package elisp-settings
   :ensure nil
   :init
@@ -553,19 +458,16 @@ Null prefix argument turns off the mode."
                              1 'font-lock-keyword-face)))
   (provide 'elisp-settings))
 
-;;;;; elisp-slime-nav
 (use-package elisp-slime-nav
   :diminish elisp-slime-nav-mode
   :config
   (add-hook 'emacs-lisp-mode-hook #'turn-on-elisp-slime-nav-mode)
   (add-hook 'ielm-mode-hook #'turn-on-elisp-slime-nav-mode))
 
-;;;;; overseer.el
 (use-package overseer
   :quelpa (overseer :fetcher github
                     :repo "tonini/overseer.el"))
 
-;;;;; slime
 (use-package slime-company)
 (use-package slime
   :init
@@ -604,12 +506,10 @@ Null prefix argument turns off the mode."
   )
 
 
-;;;;; geiser
 (use-package geiser
   :config
   (setq geiser-active-implementations '(mit)))
 
-;;;;; clojure-mode
 (use-package clojure-mode-extra-font-locking)
 (use-package clojure-mode
   :config
@@ -635,25 +535,20 @@ Null prefix argument turns off the mode."
 ;;     (cljr-add-keybindings-with-prefix "C-c C-m"))
 ;;   (add-hook 'clojure-mode-hook #'configure-clj-refactor))
 
-;;;;; rust-mode
 (use-package rust-mode)
 
-;;;;; racer
 (use-package racer
   :config
   (setq racer-rust-src-path (expand-file-name "~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"))
   (add-hook 'rust-mode-hook #'racer-mode))
 
-;;;;; cargo
 (use-package cargo
   :config
   (add-hook 'rust-mode-hook #'cargo-minor-mode))
 
-;;;;; flycheck
 (use-package flycheck
   :diminish flycheck-mode)
 
-;;;;; flycheck-pos-tip
 (use-package flycheck-pos-tip
   :config
   (setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
@@ -667,18 +562,15 @@ Null prefix argument turns off the mode."
 ;;   (flycheck-clojure-setup)
 ;;   (add-hook 'after-init-hook #'global-flycheck-mode))
 
-;;;;; haskell-mode
 (use-package haskell-mode
   :config
   (setq haskell-process-type 'stack-ghci)
   (add-hook 'haskell-mode-hook #'interactive-haskell-mode))
 
-;;;;; hindent
 (use-package hindent
   :config
   (add-hook 'haskell-mode-hook #'hindent-mode))
 
-;;;;; markdown-mode
 (use-package markdown-mode
   :commands (markdown-mode gfm-mode)
   :mode (("README\\.md\\'" . gfm-mode)
@@ -687,14 +579,12 @@ Null prefix argument turns off the mode."
          ("\\.apib\\'" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
 
-;;;;; rainbow-delimiters
 (use-package rainbow-delimiters
   :config
   (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
   (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
   (add-hook 'scheme-mode-hook #'rainbow-delimiters-mode))
 
-;;;;; smartparens
 (use-package smartparens
   :diminish smartparens-mode
   :config
@@ -705,7 +595,6 @@ Null prefix argument turns off the mode."
   (set-face-background 'sp-show-pair-match-face "deep sky blue")
   (set-face-foreground 'sp-show-pair-match-face "white"))
 
-;;;;; yasnippet
 (use-package f)
 (use-package yasnippet
   :diminish yas-minor-mode
@@ -713,16 +602,12 @@ Null prefix argument turns off the mode."
   (yas-global-mode)
   (yas-reload-all))
 
-;;;; version control
-;;;;; magit
 (use-package magit
   :bind ("C-x C-z" . magit-status))
 
-;;;;; gist
 (use-package gh)
 (use-package gist)
 
-;;;;; git-gutter
 (use-package git-gutter
   :diminish git-gutter-mode
   :init
@@ -730,7 +615,6 @@ Null prefix argument turns off the mode."
   :bind (("C-x C-g" . git-gutter-mode)
          ("C-x v =" . git-gutter:popup-hunk)))
 
-;;;;; SQLi-mode
 (use-package SQLi-mode
   :ensure nil
   :init
@@ -757,7 +641,6 @@ Null prefix argument turns off the mode."
   (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
   (provide 'SQLi-mode))
 
-;;;;; rcirc
 (use-package rcirc
   :ensure nil
   :config
@@ -765,12 +648,10 @@ Null prefix argument turns off the mode."
         rcirc-default-full-name "Scott McLeod")
   (provide 'rcirc))
 
-;;;;; rcirc-notify
 (use-package rcirc-notify
   :quelpa (rcirc-notify :fetcher github
                         :repo "nicferrier/rcirc-notify"))
 
-;;;;; slack
 (use-package slack
   :bind (:map slack-mode-map ("C-c C-o" . browse-url)
          :map slack-message-buffer-mode-map ("C-c C-o" . browse-url)
@@ -792,17 +673,10 @@ Null prefix argument turns off the mode."
     "Registers slack teams before starting slack."
     (require 'slack-connections "~/gitlab/dotfiles-private/emacs/slack-connections.el.gpg")))
 
-;;;;; spark
-(use-package spark
-  :quelpa (spark :fetcher github
-                 :repo "alvinfrancis/spark"))
-
-;;;;
 (use-package direnv
   :quelpa (direnv :fetcher github
                   :repo "wbolster/emacs-direnv"))
 
-;;;;; alert
 (use-package alert
   :commands (alert)
   :init
