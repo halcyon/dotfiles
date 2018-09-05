@@ -618,14 +618,33 @@ Null prefix argument turns off the mode."
 (use-package SQLi-mode
   :ensure nil
   :init
+  (defcustom sql-ms-program "sqlcmd"
+    "Command to start ;osql; (replaced for sqlcmd) by Microsoft.
+     Starts `sql-interactive-mode' after doing some setup."
+    :type 'file
+    :group 'SQL)
+  (defcustom sql-ms-options '("-s" "|" "-k")
+    ;; -W is the linesize
+    "List of additional options for `sql-ms-program'."
+    :type '(repeat string)
+    :version "22.1"
+    :group 'SQL)
   (defadvice sql-connect
       (before load-sql-connections activate)
     "Registers sql connections before running sql-connect."
     (require 'sql-connections "~/gitlab/dotfiles-private/emacs/sql-connections.el.gpg"))
+  (defun warehouse-staging ()
+    (interactive)
+    (setq sql-product 'ms)
+    (sql-connect 'warehouse-staging 'warehouse-staging))
   (defun docker-postgres ()
     (interactive)
     (setq sql-product 'postgres)
     (sql-connect 'docker-postgres 'docker-postgres))
+  (defun webicon-ci ()
+    (interactive)
+    (setq sql-product 'oracle)
+    (sql-connect 'webicon-ci))
   (defun webicon-prod ()
     (interactive)
     (setq sql-product 'oracle)
@@ -666,7 +685,7 @@ Null prefix argument turns off the mode."
             (lambda ()
               (display-line-numbers-mode -1)
               (turn-off-smartparens-strict-mode)))
-  (setq slack-buffer-emojify t
+  (setq slack-buffer-emojify nil
         slack-prefer-current-team t)
   (defadvice slack-start
       (before register-slack-teams activate)
