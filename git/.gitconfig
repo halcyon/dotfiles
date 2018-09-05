@@ -11,6 +11,3 @@
         path = ~/gitlab/dotfiles-private/git/git-private
 # [url "git@github.com:"]
 # 	insteadOf = https://github.com/
-[user]
-	name = halcyon
-	email = halcyonblue@gmail.com
