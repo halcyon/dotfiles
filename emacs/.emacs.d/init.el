@@ -129,26 +129,16 @@ Null prefix argument turns off the mode."
 (require 'emacs-private (expand-file-name "~/gitlab/dotfiles-private/emacs/emacs-private.el"))
 
 (use-package cider
+  :init
+  (put 'cider-ns-refresh-before-fn 'safe-local-variable #'stringp)
+  (put 'cider-ns-refresh-after-fn  'safe-local-variable #'stringp)
+  (put 'cider-default-cljs-repl 'safe-local-variable #'symbolp)
   :bind (:map cider-repl-mode-map
               ("C-M-q" . prog-indent-sexp)
               ("C-c C-p" . cider-pprint-eval-last-sexp))
   :config
   (setq cider-repl-history-size 100000
-        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"
-        ;; cider-lein-parameters "repl :headless :host localhost"
-        )
-  ;; (cider-refresh-before-fn . "integrant.repl/suspend")
-  ;;        (cider-refresh-after-fn  . "integrant.repl/resume"))))
-
-  (put 'cider-refresh-before-fn 'safe-local-variable #'stringp)
-  (put 'cider-refresh-after-fn  'safe-local-variable #'stringp)
-  (put 'cider-default-cljs-repl 'safe-local-variable #'symbolp)
-  (put 'cider-figwheel-main-default-options 'safe-local-variable #'stringp)
-  (put 'cider-clojure-cli-global-options 'safe-local-variable #'stringp)
-  ;; (defvar cider-cljs-lein-repl
-  ;;   "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
-  ;; (put 'cider-cljs-lein-repl 'safe-local-variable #'stringp)
-  )
+        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"))
 
 (use-package company
   :diminish company-mode
