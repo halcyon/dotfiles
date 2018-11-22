@@ -38,9 +38,23 @@ ZSH_THEME="halcyon"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git fasd kubectl helm docker docker-compose ssh-agent)
+plugins=(docker docker-compose fasd git helm kubectl)
+
+if [[ $(uname -s) == "Linux" ]]
+then
+    . $HOME/.asdf/asdf.sh
+else
+    export PATH="${PATH}:${HOME}/bin:${HOME}/go/bin"
+fi
 
 source ${ZSH}/oh-my-zsh.sh
+
+if [[ $(uname -s) == "Linux" ]]
+then
+    . $HOME/.asdf/completions/asdf.bash
+fi
+
+
 
 ulimit -c unlimited
 
@@ -94,12 +108,6 @@ fi
 
 export MANPATH="${MANPATH}:${HOME}/dotfiles/man"
 
-if [[ $(uname -s) == "Linux" ]]
-   then
-   . $HOME/.asdf/asdf.sh
-   . $HOME/.asdf/completions/asdf.bash
-else
-    export PATH="${PATH}:${HOME}/bin:${HOME}/go/bin"
-fi
+
 
 eval "$(direnv hook zsh)"
