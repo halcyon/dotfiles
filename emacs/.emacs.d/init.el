@@ -546,6 +546,13 @@ Null prefix argument turns off the mode."
   :config
   (add-hook 'rust-mode-hook #'cargo-minor-mode))
 
+(use-package scala-mode)
+
+(use-package ensime
+  :quelpa (ensime :fetcher github
+                  :repo "ensime/ensime-emacs")
+  :config (setq ensime-eldoc-hints 'all))
+
 (use-package flycheck
   :diminish flycheck-mode)
 
