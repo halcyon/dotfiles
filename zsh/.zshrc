@@ -40,22 +40,13 @@ ZSH_THEME="halcyon"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(docker docker-compose fasd git helm kubectl)
 
-if [[ $(uname -s) == "Linux" ]]
-then
-    . $HOME/.asdf/asdf.sh
-    . ~/.asdf/plugins/java/asdf-java-wrapper.zsh
-else
-    export PATH="${PATH}:${HOME}/bin:${HOME}/go/bin"
-fi
+. $HOME/.asdf/asdf.sh
+. ~/.asdf/plugins/java/asdf-java-wrapper.zsh
 
+asdf current java > /dev/null
 source ${ZSH}/oh-my-zsh.sh
 
-if [[ $(uname -s) == "Linux" ]]
-then
-    . $HOME/.asdf/completions/asdf.bash
-fi
-
-
+. $HOME/.asdf/completions/asdf.bash
 
 ulimit -c unlimited
 
@@ -109,6 +100,4 @@ fi
 
 export MANPATH="${MANPATH}:${HOME}/dotfiles/man"
 
-
-
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"

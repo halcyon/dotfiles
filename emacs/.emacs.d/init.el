@@ -6,13 +6,16 @@
 (require 'package)
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
+;; (toggle-debug-on-error)
 (setq package-enable-at-startup nil)
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("gnu" . "https://elpa.gnu.org/packages/")
-                         ("org" . "http://orgmode.org/elpa/")))
-(unless (file-directory-p "~/.emacs.d/elpa/archives")
-  (package-refresh-contents))
+                         ("org" . "https://orgmode.org/elpa/")))
 (package-initialize)
+(package-refresh-contents)
+;; (unless (file-directory-p "~/.emacs.d/elpa/archives")
+;;   (package-refresh-contents))
+
 
 (setq quelpa-update-melpa-p nil)
 (unless (require 'quelpa nil t)
@@ -394,7 +397,13 @@ Null prefix argument turns off the mode."
 
 (use-package projectile
   :config
-  (projectile-mode))
+  (projectile-mode)
+  (projectile-register-project-type 'gradlew '("gradlew")
+                                    :compile "./gradlew build"
+                                    :test-suffix "Test"
+                                    :src-dir "src/main/java/"
+                                    :test-dir "src/test/java/"
+                                    :test "./gradlew test"))
 
 (use-package helm-projectile
   :config
@@ -552,6 +561,60 @@ Null prefix argument turns off the mode."
   :quelpa (ensime :fetcher github
                   :repo "ensime/ensime-emacs")
   :config (setq ensime-eldoc-hints 'all))
+
+;; (use-package meghanada
+;;   :config (add-hook 'java-mode-hook
+;;                     (lambda ()
+;;                       ;; meghanada-mode on
+;;                       (meghanada-mode t)
+;;                       (flycheck-mode +1)
+;;                       (setq c-basic-offset 2)
+;;                       ;; use code format
+;;                       (add-hook 'before-save-hook 'meghanada-code-beautify-before-save)))
+;;   ;; (setq meghanada-java-path
+;;   ;;       (expand-file-name "shims/java" (getenv "ASDF_DIR")))
+;;   )
+
+(use-package treemacs
+  :quelpa (treemacs
+           :fetcher github
+           :repo "Alexander-Miller/treemacs"
+           :files (:defaults
+                   "icons"
+                   "src/elisp/treemacs*.el"
+                   "src/scripts/treemacs*.py"
+                   (:exclude "src/extra/*"))))
+(use-package lsp-mode
+  :quelpa (lsp-mode :repo "emacs-lsp/lsp-mode" :fetcher github)
+  :config (require 'dap-java)
+  :config (require 'lsp-java-treemacs))
+(use-package hydra
+  :quelpa (hydra :repo "abo-abo/hydra"
+                 :fetcher github))
+(use-package company-lsp
+	     :quelpa (company-lsp :repo "tigersoldier/company-lsp" :fetcher github))
+(use-package lsp-ui
+	     :quelpa (lsp-ui :repo "emacs-lsp/lsp-ui" :fetcher github))
+(use-package lsp-java
+  :after lsp
+  :quelpa (lsp-java :repo "emacs-lsp/lsp-java"
+                    :fetcher github
+                    :files (:defaults "icons"))
+  :config
+  (add-hook 'java-mode-hook 'lsp))
+
+(use-package dap-mode
+  :quelpa (dap-mode :repo "yyoncho/dap-mode"
+		    :fetcher github
+		    :files (:defaults "icons"))
+  :after lsp-mode
+  :config
+  (dap-mode t)
+  (dap-ui-mode t))
+
+;; (use-package dap-java :after (lsp-java))
+;; (use-package lsp-java-treemacs :after (treemacs))
+
 
 (use-package flycheck
   :diminish flycheck-mode)
