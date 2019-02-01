@@ -396,6 +396,7 @@ Null prefix argument turns off the mode."
 (use-package helm-ag)
 
 (use-package projectile
+  :bind ("C-c p" . 'projectile-command-map)
   :config
   (projectile-mode)
   (projectile-register-project-type 'gradlew '("gradlew")
