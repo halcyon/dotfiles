@@ -39,12 +39,14 @@
   :ensure nil
   :init
   (menu-bar-mode -1)
+  (tool-bar-mode -1)
   (setq inhibit-startup-message t
         require-final-newline t
         ;; ielm-dynamic-return nil
         vc-follow-symlinks t
         browse-url-browser-function 'browse-url-generic
-        browse-url-generic-program "firefox")
+        browse-url-generic-program "firefox"
+        ring-bell-function 'ignore)
   (setq-default indent-tabs-mode nil)
   (add-hook 'before-save-hook #'delete-trailing-whitespace)
   (global-auto-revert-mode)
@@ -69,6 +71,76 @@
   (define-key key-translation-map "\e[86;8" (kbd "C-M-S-v"))
   (provide 'global-settings))
 
+(use-package fira-code-mode
+  :ensure nil
+  :init
+  ;; This works when using emacs --daemon + emacsclient
+  ;; (add-hook 'after-make-frame-functions (lambda (frame) (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
+  ;; This works when using emacs without server/client
+  ;; (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
+  ;; I haven't found one statement that makes both of the above situations work, so I use both for now
+
+  (defun fira-code-mode--make-alist (list)
+    "Generate prettify-symbols alist from LIST."
+    (let ((idx -1))
+      (mapcar
+       (lambda (s)
+         (setq idx (1+ idx))
+         (let* ((code (+ #Xe100 idx))
+                (width (string-width s))
+                (prefix ())
+                (suffix '(?\s (Br . Br)))
+                (n 1))
+           (while (< n width)
+             (setq prefix (append prefix '(?\s (Br . Bl))))
+             (setq n (1+ n)))
+           (cons s (append prefix suffix (list (decode-char 'ucs code))))))
+       list)))
+
+  (defconst fira-code-mode--ligatures
+    '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\"
+      "{-" "[]" "::" ":::" ":=" "!!" "!=" "!==" "-}"
+      "--" "---" "-->" "->" "->>" "-<" "-<<" "-~"
+      "#{" "#[" "##" "###" "####" "#(" "#?" "#_" "#_("
+      ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*"
+      "/**" "/=" "/==" "/>" "//" "///" "&&" "||" "||="
+      "|=" "|>" "^=" "$>" "++" "+++" "+>" "=:=" "=="
+      "===" "==>" "=>" "=>>" "<=" "=<<" "=/=" ">-" ">="
+      ">=>" ">>" ">>-" ">>=" ">>>" "<*" "<*>" "<|" "<|>"
+      "<$" "<$>" "<!--" "<-" "<--" "<->" "<+" "<+>" "<="
+      "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<" "<~"
+      "<~~" "</" "</>" "~@" "~-" "~=" "~>" "~~" "~~>" "%%"
+      "x" ":" "+" "+" "*"))
+
+  (defvar fira-code-mode--old-prettify-alist)
+
+  (defun fira-code-mode--enable ()
+    "Enable Fira Code ligatures in current buffer."
+    (setq-local fira-code-mode--old-prettify-alist prettify-symbols-alist)
+    (setq-local prettify-symbols-alist (append (fira-code-mode--make-alist fira-code-mode--ligatures) fira-code-mode--old-prettify-alist))
+    (prettify-symbols-mode t))
+
+  (defun fira-code-mode--disable ()
+    "Disable Fira Code ligatures in current buffer."
+    (setq-local prettify-symbols-alist fira-code-mode--old-prettify-alist)
+    (prettify-symbols-mode -1))
+
+  (define-globalized-minor-mode global-fira-code-mode fira-code-mode fira-code-mode)
+
+  (define-minor-mode fira-code-mode
+    "Fira Code ligatures minor mode"
+    :lighter " Fira Code"
+    (setq-local prettify-symbols-unprettify-at-point 'right-edge)
+    (if fira-code-mode
+        (fira-code-mode--enable)
+      (fira-code-mode--disable)))
+
+  (defun fira-code-mode--setup ()
+    "Setup Fira Code Symbols"
+    (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol"))
+
+  (provide 'fira-code-mode))
+
 (use-package display-settings
   :ensure nil
   :init
@@ -76,6 +148,15 @@
   (column-number-mode)               ; column numbers in the mode line
   (global-hl-line-mode)              ; highlight current line
   (global-display-line-numbers-mode) ; add line numbers on the left
+
+  (add-to-list 'default-frame-alist
+               '(vertical-scroll-bars . nil))
+
+  (add-to-list 'default-frame-alist
+               '(font . "Fira Code Retina 16"))
+
+  (global-fira-code-mode)
+
   (provide 'display-settings))
 
 (use-package zenburn-theme
@@ -576,42 +657,50 @@ Null prefix argument turns off the mode."
 ;;   ;;       (expand-file-name "shims/java" (getenv "ASDF_DIR")))
 ;;   )
 
-(use-package treemacs
-  :quelpa (treemacs
-           :fetcher github
-           :repo "Alexander-Miller/treemacs"
-           :files (:defaults
-                   "icons"
-                   "src/elisp/treemacs*.el"
-                   "src/scripts/treemacs*.py"
-                   (:exclude "src/extra/*"))))
-(use-package lsp-mode
-  :quelpa (lsp-mode :repo "emacs-lsp/lsp-mode" :fetcher github)
-  :config (require 'dap-java)
-  :config (require 'lsp-java-treemacs))
+;; (use-package treemacs
+;;   :quelpa (treemacs
+;;            :fetcher github
+;;            :repo "Alexander-Miller/treemacs"
+;;            :files (:defaults
+;;                    "icons"
+;;                    "src/elisp/treemacs*.el"
+;;                    "src/scripts/treemacs*.py"
+;;                    (:exclude "src/extra/*"))))
+;; (use-package lsp-mode
+;;   :quelpa (lsp-mode :repo "emacs-lsp/lsp-mode" :fetcher github)
+;;   ;; :config
+;;   ;; (require 'dap-java)
+;;   ;; (require 'lsp-java-treemacs)
+;;   )
 (use-package hydra
   :quelpa (hydra :repo "abo-abo/hydra"
                  :fetcher github))
-(use-package company-lsp
-	     :quelpa (company-lsp :repo "tigersoldier/company-lsp" :fetcher github))
-(use-package lsp-ui
-	     :quelpa (lsp-ui :repo "emacs-lsp/lsp-ui" :fetcher github))
-(use-package lsp-java
-  :after lsp
-  :quelpa (lsp-java :repo "emacs-lsp/lsp-java"
-                    :fetcher github
-                    :files (:defaults "icons"))
-  :config
-  (add-hook 'java-mode-hook 'lsp))
 
-(use-package dap-mode
-  :quelpa (dap-mode :repo "yyoncho/dap-mode"
-		    :fetcher github
-		    :files (:defaults "icons"))
-  :after lsp-mode
+;; (use-package company-lsp
+;; 	     :quelpa (company-lsp :repo "tigersoldier/company-lsp" :fetcher github))
+
+(use-package lsp-java
+  ;; :after lsp
+  ;; :quelpa (lsp-java :repo "emacs-lsp/lsp-java"
+  ;;                   :fetcher github
+  ;;                   :stable t
+  ;;                   :files (:defaults "icons"))
   :config
-  (dap-mode t)
-  (dap-ui-mode t))
+  (require 'dap-java)
+
+  (add-hook 'java-mode-hook
+            (lambda ()
+              (lsp)
+              (lsp-ui-mode -1))))
+
+;; (use-package dap-mode
+;;   :quelpa (dap-mode :repo "yyoncho/dap-mode"
+;; 		    :fetcher github
+;; 		    :files (:defaults "icons"))
+;;   :after lsp-mode
+;;   :config
+;;   (dap-mode t)
+;;   (dap-ui-mode t))
 
 ;; (use-package dap-java :after (lsp-java))
 ;; (use-package lsp-java-treemacs :after (treemacs))
