@@ -58,7 +58,7 @@ export ALTERNATE_EDITOR=""
 
 export EDITOR="emacsclient" #"${HOME}/bin/emacsclient"
 # alias e="emacsclient -nw" #"${HOME}/bin/emacsclient -nw"
-alias e="emacsclient.sh"
+# alias e="emacsclient.sh"
 export COPY="xclip -i -sel p -f | xclip -i -sel c"
 export PASTE="xclip -o"
 

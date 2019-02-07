@@ -149,13 +149,13 @@
   (global-hl-line-mode)              ; highlight current line
   (global-display-line-numbers-mode) ; add line numbers on the left
 
-  (add-to-list 'default-frame-alist
-               '(vertical-scroll-bars . nil))
+  ;; (add-to-list 'default-frame-alist
+  ;;              '(vertical-scroll-bars . nil))
 
-  (add-to-list 'default-frame-alist
-               '(font . "Fira Code Retina 16"))
+  ;; (add-to-list 'default-frame-alist
+  ;;              '(font . "Fira Code Retina 16"))
 
-  (global-fira-code-mode)
+  ;; (global-fira-code-mode)
 
   (provide 'display-settings))
 
@@ -644,18 +644,18 @@ Null prefix argument turns off the mode."
                   :repo "ensime/ensime-emacs")
   :config (setq ensime-eldoc-hints 'all))
 
-;; (use-package meghanada
-;;   :config (add-hook 'java-mode-hook
-;;                     (lambda ()
-;;                       ;; meghanada-mode on
-;;                       (meghanada-mode t)
-;;                       (flycheck-mode +1)
-;;                       (setq c-basic-offset 2)
-;;                       ;; use code format
-;;                       (add-hook 'before-save-hook 'meghanada-code-beautify-before-save)))
-;;   ;; (setq meghanada-java-path
-;;   ;;       (expand-file-name "shims/java" (getenv "ASDF_DIR")))
-;;   )
+(use-package meghanada
+  :config (add-hook 'java-mode-hook
+                    (lambda ()
+                      ;; meghanada-mode on
+                      (meghanada-mode t)
+                      (flycheck-mode +1)
+                      (setq c-basic-offset 2)
+                      ;; use code format
+                      (add-hook 'before-save-hook 'meghanada-code-beautify-before-save)))
+  (setq meghanada-java-path (expand-file-name "shims/java" (getenv "ASDF_DIR"))
+        meghanada-maven-path (expand-file-name "shims/mvn" (getenv "ASDF_DIR"))
+        meghanada-gradle-path (expand-file-name "shims/gradle" (getenv "ASDF_DIR"))))
 
 ;; (use-package treemacs
 ;;   :quelpa (treemacs
@@ -679,19 +679,19 @@ Null prefix argument turns off the mode."
 ;; (use-package company-lsp
 ;; 	     :quelpa (company-lsp :repo "tigersoldier/company-lsp" :fetcher github))
 
-(use-package lsp-java
-  ;; :after lsp
-  ;; :quelpa (lsp-java :repo "emacs-lsp/lsp-java"
-  ;;                   :fetcher github
-  ;;                   :stable t
-  ;;                   :files (:defaults "icons"))
-  :config
-  (require 'dap-java)
+;; (use-package lsp-java
+;;   ;; :after lsp
+;;   ;; :quelpa (lsp-java :repo "emacs-lsp/lsp-java"
+;;   ;;                   :fetcher github
+;;   ;;                   :stable t
+;;   ;;                   :files (:defaults "icons"))
+;;   :config
+;;   (require 'dap-java)
 
-  (add-hook 'java-mode-hook
-            (lambda ()
-              (lsp)
-              (lsp-ui-mode -1))))
+;;   (add-hook 'java-mode-hook
+;;             (lambda ()
+;;               (lsp)
+;;               (lsp-ui-mode -1))))
 
 ;; (use-package dap-mode
 ;;   :quelpa (dap-mode :repo "yyoncho/dap-mode"
@@ -709,9 +709,9 @@ Null prefix argument turns off the mode."
 (use-package flycheck
   :diminish flycheck-mode)
 
-(use-package flycheck-pos-tip
-  :config
-  (setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
+;; (use-package flycheck-pos-tip
+;;   :config
+;;   (setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
 ;;;;; flycheck-clojure
 ;; (use-package flycheck-clojure
