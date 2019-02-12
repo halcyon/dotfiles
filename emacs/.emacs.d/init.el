@@ -652,7 +652,8 @@ Null prefix argument turns off the mode."
                       (flycheck-mode +1)
                       (setq c-basic-offset 2)
                       ;; use code format
-                      (add-hook 'before-save-hook 'meghanada-code-beautify-before-save)))
+                      ;; (add-hook 'before-save-hook 'meghanada-code-beautify-before-save)
+                      ))
   (setq meghanada-java-path (expand-file-name "shims/java" (getenv "ASDF_DIR"))
         meghanada-maven-path (expand-file-name "shims/mvn" (getenv "ASDF_DIR"))
         meghanada-gradle-path (expand-file-name "shims/gradle" (getenv "ASDF_DIR"))))

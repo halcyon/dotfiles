@@ -38,15 +38,15 @@ ZSH_THEME="halcyon"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker docker-compose fasd git helm kubectl)
+plugins=(docker docker-compose fasd git helm kubectl asdf)
 
-. $HOME/.asdf/asdf.sh
-. ~/.asdf/plugins/java/asdf-java-wrapper.zsh
+# . $HOME/.asdf/asdf.sh
+# . ~/.asdf/plugins/java/asdf-java-wrapper.zsh
 
-asdf current java > /dev/null
+# asdf current java > /dev/null
 source ${ZSH}/oh-my-zsh.sh
 
-. $HOME/.asdf/completions/asdf.bash
+# . $HOME/.asdf/completions/asdf.bash
 
 ulimit -c unlimited
 
@@ -57,7 +57,7 @@ export GPG_TTY=${TTY}
 export ALTERNATE_EDITOR=""
 
 export EDITOR="emacsclient" #"${HOME}/bin/emacsclient"
-# alias e="emacsclient -nw" #"${HOME}/bin/emacsclient -nw"
+alias e="emacsclient" #"${HOME}/bin/emacsclient -nw"
 # alias e="emacsclient.sh"
 export COPY="xclip -i -sel p -f | xclip -i -sel c"
 export PASTE="xclip -o"
