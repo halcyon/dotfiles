@@ -48,10 +48,16 @@ while true; do
     sleep 300
 done &
 
+eval `gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh`
+export GNOME_KEYRING_CONTROL
+export SSH_AUTH_SOCK
+export GPG_AGENT_INFO
+export GNOME_KEYRING_PID
 
 /usr/bin/xhost + local:docker
-/usr/bin/xset s 600
+/usr/bin/xset s 300 r rate 200 50 b off
 /usr/bin/xss-lock slock &
 /usr/bin/xbindkeys
-/usr/bin/xset r rate 200 50
+#/usr/bin/ssh-agent
+
 exec sbcl --load ~/dotfiles/stumpwm/startstump > stumpwm.log 2>&1

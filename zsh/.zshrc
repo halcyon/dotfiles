@@ -70,8 +70,9 @@ export LESS='-R'
 # export ORACLE_HOME=${HOME}/instantclient_12_1
 # export NLS_LANG="AMERICAN_AMERICA.UTF8"
 # export SQLPATH=${HOME}/dotfiles/oracle
+export IDEA_HOME=${HOME}/idea-IC-183.5429.30
 
-export PATH=/usr/local/sbin:${PATH}:${ORACLE_HOME}:${HOME}/bin
+export PATH=/usr/local/sbin:${PATH}:${HOME}/bin:${IDEA_HOME}/bin
 
 export IPOD_MOUNTPOINT="/mnt/nano"
 
