@@ -650,7 +650,7 @@ Null prefix argument turns off the mode."
                       ;; meghanada-mode on
                       (meghanada-mode t)
                       (flycheck-mode +1)
-                      (setq c-basic-offset 2)
+                      (setq c-basic-offset 4)
                       ;; use code format
                       ;; (add-hook 'before-save-hook 'meghanada-code-beautify-before-save)
                       ))
