@@ -539,7 +539,8 @@ Null prefix argument turns off the mode."
   (add-hook 'cider-mode-hook #'eldoc-mode)
   (add-hook 'cider-repl-mode-hook #'eldoc-mode)
   (add-hook 'ensime-mode-hook #'eldoc-mode)
-  (add-hook 'racer-mode-hook #'eldoc-mode))
+  (add-hook 'racer-mode-hook #'eldoc-mode)
+  (add-hook 'go-mode-hook #'go-eldoc-setup))
 
 (use-package elisp-settings
   :ensure nil
@@ -595,6 +596,12 @@ Null prefix argument turns off the mode."
   ;;   (slime-mode 1))
   ;; (add-hook 'scheme-mode-hook #'scheme-mode-init)
   )
+
+(use-package go-mode
+  :config (setq gofmt-command "goimports"))
+(use-package go-guru)
+(use-package company-go)
+(use-package go-eldoc)
 
 
 (use-package geiser
