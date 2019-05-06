@@ -12,7 +12,7 @@
                          ("gnu" . "https://elpa.gnu.org/packages/")
                          ("org" . "https://orgmode.org/elpa/")))
 (package-initialize)
-(package-refresh-contents)
+;; (package-refresh-contents)
 ;; (unless (file-directory-p "~/.emacs.d/elpa/archives")
 ;;   (package-refresh-contents))
 
@@ -71,75 +71,75 @@
   (define-key key-translation-map "\e[86;8" (kbd "C-M-S-v"))
   (provide 'global-settings))
 
-(use-package fira-code-mode
-  :ensure nil
-  :init
-  ;; This works when using emacs --daemon + emacsclient
-  ;; (add-hook 'after-make-frame-functions (lambda (frame) (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
-  ;; This works when using emacs without server/client
-  ;; (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
-  ;; I haven't found one statement that makes both of the above situations work, so I use both for now
+;; (use-package fira-code-mode
+;;   :ensure nil
+;;   :init
+;;   ;; This works when using emacs --daemon + emacsclient
+;;   ;; (add-hook 'after-make-frame-functions (lambda (frame) (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
+;;   ;; This works when using emacs without server/client
+;;   ;; (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
+;;   ;; I haven't found one statement that makes both of the above situations work, so I use both for now
 
-  (defun fira-code-mode--make-alist (list)
-    "Generate prettify-symbols alist from LIST."
-    (let ((idx -1))
-      (mapcar
-       (lambda (s)
-         (setq idx (1+ idx))
-         (let* ((code (+ #Xe100 idx))
-                (width (string-width s))
-                (prefix ())
-                (suffix '(?\s (Br . Br)))
-                (n 1))
-           (while (< n width)
-             (setq prefix (append prefix '(?\s (Br . Bl))))
-             (setq n (1+ n)))
-           (cons s (append prefix suffix (list (decode-char 'ucs code))))))
-       list)))
+;;   (defun fira-code-mode--make-alist (list)
+;;     "Generate prettify-symbols alist from LIST."
+;;     (let ((idx -1))
+;;       (mapcar
+;;        (lambda (s)
+;;          (setq idx (1+ idx))
+;;          (let* ((code (+ #Xe100 idx))
+;;                 (width (string-width s))
+;;                 (prefix ())
+;;                 (suffix '(?\s (Br . Br)))
+;;                 (n 1))
+;;            (while (< n width)
+;;              (setq prefix (append prefix '(?\s (Br . Bl))))
+;;              (setq n (1+ n)))
+;;            (cons s (append prefix suffix (list (decode-char 'ucs code))))))
+;;        list)))
 
-  (defconst fira-code-mode--ligatures
-    '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\"
-      "{-" "[]" "::" ":::" ":=" "!!" "!=" "!==" "-}"
-      "--" "---" "-->" "->" "->>" "-<" "-<<" "-~"
-      "#{" "#[" "##" "###" "####" "#(" "#?" "#_" "#_("
-      ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*"
-      "/**" "/=" "/==" "/>" "//" "///" "&&" "||" "||="
-      "|=" "|>" "^=" "$>" "++" "+++" "+>" "=:=" "=="
-      "===" "==>" "=>" "=>>" "<=" "=<<" "=/=" ">-" ">="
-      ">=>" ">>" ">>-" ">>=" ">>>" "<*" "<*>" "<|" "<|>"
-      "<$" "<$>" "<!--" "<-" "<--" "<->" "<+" "<+>" "<="
-      "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<" "<~"
-      "<~~" "</" "</>" "~@" "~-" "~=" "~>" "~~" "~~>" "%%"
-      "x" ":" "+" "+" "*"))
+;;   (defconst fira-code-mode--ligatures
+;;     '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\"
+;;       "{-" "[]" "::" ":::" ":=" "!!" "!=" "!==" "-}"
+;;       "--" "---" "-->" "->" "->>" "-<" "-<<" "-~"
+;;       "#{" "#[" "##" "###" "####" "#(" "#?" "#_" "#_("
+;;       ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*"
+;;       "/**" "/=" "/==" "/>" "//" "///" "&&" "||" "||="
+;;       "|=" "|>" "^=" "$>" "++" "+++" "+>" "=:=" "=="
+;;       "===" "==>" "=>" "=>>" "<=" "=<<" "=/=" ">-" ">="
+;;       ">=>" ">>" ">>-" ">>=" ">>>" "<*" "<*>" "<|" "<|>"
+;;       "<$" "<$>" "<!--" "<-" "<--" "<->" "<+" "<+>" "<="
+;;       "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<" "<~"
+;;       "<~~" "</" "</>" "~@" "~-" "~=" "~>" "~~" "~~>" "%%"
+;;       "x" ":" "+" "+" "*"))
 
-  (defvar fira-code-mode--old-prettify-alist)
+;;   (defvar fira-code-mode--old-prettify-alist)
 
-  (defun fira-code-mode--enable ()
-    "Enable Fira Code ligatures in current buffer."
-    (setq-local fira-code-mode--old-prettify-alist prettify-symbols-alist)
-    (setq-local prettify-symbols-alist (append (fira-code-mode--make-alist fira-code-mode--ligatures) fira-code-mode--old-prettify-alist))
-    (prettify-symbols-mode t))
+;;   (defun fira-code-mode--enable ()
+;;     "Enable Fira Code ligatures in current buffer."
+;;     (setq-local fira-code-mode--old-prettify-alist prettify-symbols-alist)
+;;     (setq-local prettify-symbols-alist (append (fira-code-mode--make-alist fira-code-mode--ligatures) fira-code-mode--old-prettify-alist))
+;;     (prettify-symbols-mode t))
 
-  (defun fira-code-mode--disable ()
-    "Disable Fira Code ligatures in current buffer."
-    (setq-local prettify-symbols-alist fira-code-mode--old-prettify-alist)
-    (prettify-symbols-mode -1))
+;;   (defun fira-code-mode--disable ()
+;;     "Disable Fira Code ligatures in current buffer."
+;;     (setq-local prettify-symbols-alist fira-code-mode--old-prettify-alist)
+;;     (prettify-symbols-mode -1))
 
-  (define-globalized-minor-mode global-fira-code-mode fira-code-mode fira-code-mode)
+;;   (define-globalized-minor-mode global-fira-code-mode fira-code-mode fira-code-mode)
 
-  (define-minor-mode fira-code-mode
-    "Fira Code ligatures minor mode"
-    :lighter " Fira Code"
-    (setq-local prettify-symbols-unprettify-at-point 'right-edge)
-    (if fira-code-mode
-        (fira-code-mode--enable)
-      (fira-code-mode--disable)))
+;;   (define-minor-mode fira-code-mode
+;;     "Fira Code ligatures minor mode"
+;;     :lighter " Fira Code"
+;;     (setq-local prettify-symbols-unprettify-at-point 'right-edge)
+;;     (if fira-code-mode
+;;         (fira-code-mode--enable)
+;;       (fira-code-mode--disable)))
 
-  (defun fira-code-mode--setup ()
-    "Setup Fira Code Symbols"
-    (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol"))
+;;   (defun fira-code-mode--setup ()
+;;     "Setup Fira Code Symbols"
+;;     (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol"))
 
-  (provide 'fira-code-mode))
+;;   (provide 'fira-code-mode))
 
 (use-package display-settings
   :ensure nil
@@ -643,6 +643,15 @@ Null prefix argument turns off the mode."
   :quelpa (ensime :fetcher github
                   :repo "ensime/ensime-emacs")
   :config (setq ensime-eldoc-hints 'all))
+
+;; (use-package jdibug
+;;   :config
+;;   (setq jdibug-connect-hosts (quote ("localhost:6006"))
+;;         jdibug-use-jdee-source-paths nil
+;;         jdibug-source-paths (list "/home/ksm/projects/central-management/update/svc-cm-update/src/main/java"
+;;                                   "/home/ksm/projects/central-management/update/svc-cm-update/src/test/java")))
+
+;; (use-package realgud)
 
 (use-package meghanada
   :config (add-hook 'java-mode-hook
