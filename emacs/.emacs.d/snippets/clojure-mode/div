@@ -1,7 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: div
-# key: d
-# binding: direct-keybinding
-# --
-(d/div {}
-  $0)

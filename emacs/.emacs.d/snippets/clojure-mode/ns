@@ -1,7 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: ns
-# key: ns
-# binding: direct-keybinding
-# --
-(ns `(clojure-expected-ns)`
-  $0)

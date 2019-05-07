@@ -1,9 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: defmacro
-# key: defm
-# binding: direct-keybinding
-# --
-(defmacro $1
-  "$2"
-  [$3]
-  $0)

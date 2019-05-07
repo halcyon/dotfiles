@@ -3,40 +3,26 @@
 ;;; Code:
 (setq message-log-max 10000)
 
-(require 'package)
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
-;; (toggle-debug-on-error)
-(setq package-enable-at-startup nil)
-(setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
-                         ("gnu" . "https://elpa.gnu.org/packages/")
-                         ("org" . "https://orgmode.org/elpa/")))
-(package-initialize)
-;; (package-refresh-contents)
-;; (unless (file-directory-p "~/.emacs.d/elpa/archives")
-;;   (package-refresh-contents))
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 
+(straight-use-package 'use-package)
 
-(setq quelpa-update-melpa-p nil)
-(unless (require 'quelpa nil t)
-  (with-temp-buffer
-    (url-insert-file-contents "https://framagit.org/steckerhalter/quelpa/raw/master/bootstrap.el")
-    (eval-buffer)))
+(setq straight-use-package-by-default t)
 
-;; install use-package and the quelpa handler
-(quelpa '(use-package
-           :fetcher github
-           :repo "jwiegley/use-package"))
-(quelpa '(quelpa-use-package
-          :fetcher github
-          :repo "quelpa/quelpa-use-package"))
-(require 'quelpa-use-package)
-
-(setq use-package-always-ensure t)
-(quelpa-use-package-activate-advice)
 
 (use-package global-settings
-  :ensure nil
+  :straight nil
   :init
   (menu-bar-mode -1)
   (tool-bar-mode -1)
@@ -71,99 +57,20 @@
   (define-key key-translation-map "\e[86;8" (kbd "C-M-S-v"))
   (provide 'global-settings))
 
-;; (use-package fira-code-mode
-;;   :ensure nil
-;;   :init
-;;   ;; This works when using emacs --daemon + emacsclient
-;;   ;; (add-hook 'after-make-frame-functions (lambda (frame) (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
-;;   ;; This works when using emacs without server/client
-;;   ;; (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
-;;   ;; I haven't found one statement that makes both of the above situations work, so I use both for now
-
-;;   (defun fira-code-mode--make-alist (list)
-;;     "Generate prettify-symbols alist from LIST."
-;;     (let ((idx -1))
-;;       (mapcar
-;;        (lambda (s)
-;;          (setq idx (1+ idx))
-;;          (let* ((code (+ #Xe100 idx))
-;;                 (width (string-width s))
-;;                 (prefix ())
-;;                 (suffix '(?\s (Br . Br)))
-;;                 (n 1))
-;;            (while (< n width)
-;;              (setq prefix (append prefix '(?\s (Br . Bl))))
-;;              (setq n (1+ n)))
-;;            (cons s (append prefix suffix (list (decode-char 'ucs code))))))
-;;        list)))
-
-;;   (defconst fira-code-mode--ligatures
-;;     '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\"
-;;       "{-" "[]" "::" ":::" ":=" "!!" "!=" "!==" "-}"
-;;       "--" "---" "-->" "->" "->>" "-<" "-<<" "-~"
-;;       "#{" "#[" "##" "###" "####" "#(" "#?" "#_" "#_("
-;;       ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*"
-;;       "/**" "/=" "/==" "/>" "//" "///" "&&" "||" "||="
-;;       "|=" "|>" "^=" "$>" "++" "+++" "+>" "=:=" "=="
-;;       "===" "==>" "=>" "=>>" "<=" "=<<" "=/=" ">-" ">="
-;;       ">=>" ">>" ">>-" ">>=" ">>>" "<*" "<*>" "<|" "<|>"
-;;       "<$" "<$>" "<!--" "<-" "<--" "<->" "<+" "<+>" "<="
-;;       "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<" "<~"
-;;       "<~~" "</" "</>" "~@" "~-" "~=" "~>" "~~" "~~>" "%%"
-;;       "x" ":" "+" "+" "*"))
-
-;;   (defvar fira-code-mode--old-prettify-alist)
-
-;;   (defun fira-code-mode--enable ()
-;;     "Enable Fira Code ligatures in current buffer."
-;;     (setq-local fira-code-mode--old-prettify-alist prettify-symbols-alist)
-;;     (setq-local prettify-symbols-alist (append (fira-code-mode--make-alist fira-code-mode--ligatures) fira-code-mode--old-prettify-alist))
-;;     (prettify-symbols-mode t))
-
-;;   (defun fira-code-mode--disable ()
-;;     "Disable Fira Code ligatures in current buffer."
-;;     (setq-local prettify-symbols-alist fira-code-mode--old-prettify-alist)
-;;     (prettify-symbols-mode -1))
-
-;;   (define-globalized-minor-mode global-fira-code-mode fira-code-mode fira-code-mode)
-
-;;   (define-minor-mode fira-code-mode
-;;     "Fira Code ligatures minor mode"
-;;     :lighter " Fira Code"
-;;     (setq-local prettify-symbols-unprettify-at-point 'right-edge)
-;;     (if fira-code-mode
-;;         (fira-code-mode--enable)
-;;       (fira-code-mode--disable)))
-
-;;   (defun fira-code-mode--setup ()
-;;     "Setup Fira Code Symbols"
-;;     (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol"))
-
-;;   (provide 'fira-code-mode))
-
 (use-package display-settings
-  :ensure nil
+  :straight nil
   :init
   (line-number-mode)                 ; line numbers in the mode line
   (column-number-mode)               ; column numbers in the mode line
   (global-hl-line-mode)              ; highlight current line
   (global-display-line-numbers-mode) ; add line numbers on the left
-
-  ;; (add-to-list 'default-frame-alist
-  ;;              '(vertical-scroll-bars . nil))
-
-  ;; (add-to-list 'default-frame-alist
-  ;;              '(font . "Fira Code Retina 16"))
-
-  ;; (global-fira-code-mode)
-
   (provide 'display-settings))
 
 (use-package zenburn-theme
   :config (set-face-background 'hl-line "color-240"))
 
 (use-package backup-settings
-  :ensure nil
+  :straight nil
   :init
   (defvar --backup-directory (concat user-emacs-directory "backups"))
   (if (not (file-exists-p --backup-directory))
@@ -246,6 +153,7 @@ Null prefix argument turns off the mode."
   ;; better use just one key to do the same.
   ;; Have C-y act as usual in term-mode, to avoid C-' C-y C-'
   ;; Well the real default would be C-c C-j C-y C-c C-k.
+  :straight nil
   :config (add-hook 'term-mode-hook (lambda ()
                                       (display-line-numbers-mode -1)
                                       (turn-off-smartparens-strict-mode)))
@@ -256,6 +164,7 @@ Null prefix argument turns off the mode."
               ("C-y" . term-paste)))
 
 (use-package info
+  :straight nil
   :config
   (add-to-list 'Info-directory-list (expand-file-name "~/gitlab/info"))
   (add-hook 'Info-mode-hook (lambda () (display-line-numbers-mode -1))))
@@ -263,21 +172,17 @@ Null prefix argument turns off the mode."
 (use-package dired-x
   ;;; C-x C-j opens dired with the cursor right on the file you're editing
   ;;; C-x 4 C-j opens dired in a separate window
-  :ensure nil)
+  :straight nil)
 
 (use-package org-plus-contrib
   :init (provide 'org-plus-contrib))
 (use-package htmlize)
 
-;; (use-package ox-gfm
-;;   :quelpa (ox-gfm :fetcher github
-;;                   :repo "larstvei/ox-gfm"))
-
 (use-package org-settings
-  :ensure nil
+  :straight nil
   :init
   (require 'ob-clojure)
-  (require 'org-notmuch)
+  (require 'ol-notmuch)
   (setq org-src-fontify-natively t
         org-babel-clojure-backend 'cider
         org-directory "~/projects/org"
@@ -369,8 +274,8 @@ Null prefix argument turns off the mode."
   :bind ("C-c c" . org-capture))
 
 (use-package org2jekyll
-  :quelpa (org2jekyll :fetcher github
-                      :repo "ardumont/org2jekyll")
+  :straight (:host github
+             :repo "ardumont/org2jekyll")
   :config
   (setq org2jekyll-blog-author "Scott McLeod"
         org2jekyll-source-directory  (expand-file-name "~/projects/org/www.zeddworks.com")
@@ -444,8 +349,8 @@ Null prefix argument turns off the mode."
            :html-postamble nil))))
 
 (use-package ox-reveal
-  :quelpa (ox-reveal :fetcher github
-                     :repo "yjwen/org-reveal"))
+  :straight (:host github
+             :repo "yjwen/org-reveal"))
 
 (use-package yaml-mode)
 
@@ -526,12 +431,12 @@ Null prefix argument turns off the mode."
   :config (gradle-mode))
 
 (use-package restclient
-  :quelpa (restclient :repo "pashky/restclient.el"
-                      :fetcher github
-                      :files ("restclient.el")))
+  :straight (:host github
+             :repo "pashky/restclient.el"
+             :files ("restclient.el")))
 
 (use-package eldoc
-  :ensure nil
+  :straight nil
   :diminish eldoc-mode
   :commands eldoc-mode
   :init
@@ -543,7 +448,7 @@ Null prefix argument turns off the mode."
   (add-hook 'go-mode-hook #'go-eldoc-setup))
 
 (use-package elisp-settings
-  :ensure nil
+  :straight nil
   :init
   (font-lock-add-keywords 'emacs-lisp-mode
                           '(("(\\s-*\\(\\_<\\(?:\\sw\\|\\s_\\)+\\)\\_>"
@@ -557,8 +462,8 @@ Null prefix argument turns off the mode."
   (add-hook 'ielm-mode-hook #'turn-on-elisp-slime-nav-mode))
 
 (use-package overseer
-  :quelpa (overseer :fetcher github
-                    :repo "tonini/overseer.el"))
+  :straight (:host github
+             :repo "tonini/overseer.el"))
 
 (use-package slime-company)
 (use-package slime
@@ -602,7 +507,7 @@ Null prefix argument turns off the mode."
 (use-package go-guru)
 (use-package company-go)
 (use-package go-eldoc)
-
+(use-package go-dlv)
 
 (use-package geiser
   :config
@@ -623,16 +528,6 @@ Null prefix argument turns off the mode."
                 (checking 'defun)))
   (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
-;;;;; clj-refactor
-;; (use-package clj-refactor
-;;   :config
-;;   (setq cljr-warn-on-eval nil)
-;;   (defun configure-clj-refactor ()
-;;     (clj-refactor-mode)
-;;     ;; This choice of keybinding leaves cider-macroexpand-1 unbound
-;;     (cljr-add-keybindings-with-prefix "C-c C-m"))
-;;   (add-hook 'clojure-mode-hook #'configure-clj-refactor))
-
 (use-package rust-mode)
 
 (use-package racer
@@ -647,20 +542,16 @@ Null prefix argument turns off the mode."
 (use-package scala-mode)
 
 (use-package ensime
-  :quelpa (ensime :fetcher github
-                  :repo "ensime/ensime-emacs")
+  :straight (:host github
+                   :repo "ensime/ensime-emacs"
+                   :branch "2.0")
   :config (setq ensime-eldoc-hints 'all))
 
-;; (use-package jdibug
-;;   :config
-;;   (setq jdibug-connect-hosts (quote ("localhost:6006"))
-;;         jdibug-use-jdee-source-paths nil
-;;         jdibug-source-paths (list "/home/ksm/projects/central-management/update/svc-cm-update/src/main/java"
-;;                                   "/home/ksm/projects/central-management/update/svc-cm-update/src/test/java")))
-
-;; (use-package realgud)
+(use-package realgud)
 
 (use-package meghanada
+  :straight (:host github
+             :repo "mopemope/meghanada-emacs")
   :config (add-hook 'java-mode-hook
                     (lambda ()
                       ;; meghanada-mode on
@@ -674,70 +565,13 @@ Null prefix argument turns off the mode."
         meghanada-maven-path (expand-file-name "shims/mvn" (getenv "ASDF_DIR"))
         meghanada-gradle-path (expand-file-name "shims/gradle" (getenv "ASDF_DIR"))))
 
-;; (use-package treemacs
-;;   :quelpa (treemacs
-;;            :fetcher github
-;;            :repo "Alexander-Miller/treemacs"
-;;            :files (:defaults
-;;                    "icons"
-;;                    "src/elisp/treemacs*.el"
-;;                    "src/scripts/treemacs*.py"
-;;                    (:exclude "src/extra/*"))))
-;; (use-package lsp-mode
-;;   :quelpa (lsp-mode :repo "emacs-lsp/lsp-mode" :fetcher github)
-;;   ;; :config
-;;   ;; (require 'dap-java)
-;;   ;; (require 'lsp-java-treemacs)
-;;   )
+
 (use-package hydra
-  :quelpa (hydra :repo "abo-abo/hydra"
-                 :fetcher github))
-
-;; (use-package company-lsp
-;; 	     :quelpa (company-lsp :repo "tigersoldier/company-lsp" :fetcher github))
-
-;; (use-package lsp-java
-;;   ;; :after lsp
-;;   ;; :quelpa (lsp-java :repo "emacs-lsp/lsp-java"
-;;   ;;                   :fetcher github
-;;   ;;                   :stable t
-;;   ;;                   :files (:defaults "icons"))
-;;   :config
-;;   (require 'dap-java)
-
-;;   (add-hook 'java-mode-hook
-;;             (lambda ()
-;;               (lsp)
-;;               (lsp-ui-mode -1))))
-
-;; (use-package dap-mode
-;;   :quelpa (dap-mode :repo "yyoncho/dap-mode"
-;; 		    :fetcher github
-;; 		    :files (:defaults "icons"))
-;;   :after lsp-mode
-;;   :config
-;;   (dap-mode t)
-;;   (dap-ui-mode t))
-
-;; (use-package dap-java :after (lsp-java))
-;; (use-package lsp-java-treemacs :after (treemacs))
-
+  :straight (:host github
+             :repo "abo-abo/hydra"))
 
 (use-package flycheck
   :diminish flycheck-mode)
-
-;; (use-package flycheck-pos-tip
-;;   :config
-;;   (setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
-
-;;;;; flycheck-clojure
-;; (use-package flycheck-clojure
-;;   :quelpa (flycheck-clojure :fetcher github
-;;                             :repo "clojure-emacs/squiggly-clojure"
-;;                             :files ("elisp/flycheck-clojure/*.el"))
-;;   :config
-;;   (flycheck-clojure-setup)
-;;   (add-hook 'after-init-hook #'global-flycheck-mode))
 
 (use-package haskell-mode
   :config
@@ -793,7 +627,7 @@ Null prefix argument turns off the mode."
          ("C-x v =" . git-gutter:popup-hunk)))
 
 (use-package SQLi-mode
-  :ensure nil
+  :straight nil
   :init
   (defcustom sql-ms-program "sqlcmd"
     "Command to start ;osql; (replaced for sqlcmd) by Microsoft.
@@ -850,24 +684,24 @@ Null prefix argument turns off the mode."
   (provide 'SQLi-mode))
 
 (use-package rcirc
-  :ensure nil
+  :straight nil
   :config
   (setq rcirc-default-nick "smcleod"
         rcirc-default-full-name "Scott McLeod")
   (provide 'rcirc))
 
 (use-package rcirc-notify
-  :quelpa (rcirc-notify :fetcher github
-                        :repo "nicferrier/rcirc-notify"))
+  :straight (:host github
+             :repo "nicferrier/rcirc-notify"))
 
 (use-package slack
   :bind (:map slack-mode-map ("C-c C-o" . browse-url)
          :map slack-message-buffer-mode-map ("C-c C-o" . browse-url)
          :map slack-file-info-buffer-mode-map ("C-c C-o" . browse-url))
-  :quelpa (slack :fetcher github
+  :straight (:host github
                  ;; :repo "yuya373/emacs-slack"
-		 :repo "halcyon/emacs-slack"
-		 :branch "halcyon-fix-terminal")
+             :repo "halcyon/emacs-slack"
+	     :branch "halcyon-fix-terminal")
   :commands slack-start
   :config
   (add-hook 'slack-mode-hook
@@ -882,13 +716,13 @@ Null prefix argument turns off the mode."
     (require 'slack-connections "~/gitlab/dotfiles-private/emacs/slack-connections.el.gpg")))
 
 (use-package direnv
-  :quelpa (direnv :fetcher github
-                  :repo "wbolster/emacs-direnv"))
+  :straight (:host github
+             :repo "wbolster/emacs-direnv"))
 
 (use-package alert
   :commands (alert)
   :init
   (setq alert-default-style 'libnotify))
 
-(provide 'init)
+;; (provide 'init)
 ;;; init.el ends here

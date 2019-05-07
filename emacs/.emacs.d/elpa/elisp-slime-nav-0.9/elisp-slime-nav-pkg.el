@@ -1,2 +1,0 @@
-;;; -*- no-byte-compile: t -*-
-(define-package "elisp-slime-nav" "0.9" "Make M-. and M-, work in elisp like they do in slime" '((cl-lib "0.2")))

@@ -1,6 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: mdoc
-# key: mdoc
-# binding: direct-keybinding
-# --
-^{:doc "$1"}

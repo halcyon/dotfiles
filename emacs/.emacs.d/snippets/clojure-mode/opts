@@ -1,8 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: opts
-# key: opts
-# binding: direct-keybinding
-# --
-{:keys [$1]
- :or {$2}
- :as $3}
