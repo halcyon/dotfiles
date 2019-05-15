@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/emacs-load-relative/el-get-install.el

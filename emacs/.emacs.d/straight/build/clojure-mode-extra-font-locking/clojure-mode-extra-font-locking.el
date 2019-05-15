@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/clojure-mode/clojure-mode-extra-font-locking.el

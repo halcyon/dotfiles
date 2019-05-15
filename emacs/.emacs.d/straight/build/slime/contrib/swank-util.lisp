@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/slime/contrib/swank-util.lisp

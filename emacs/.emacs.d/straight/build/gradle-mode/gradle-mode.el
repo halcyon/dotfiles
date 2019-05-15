@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/emacs-gradle-mode/gradle-mode.el

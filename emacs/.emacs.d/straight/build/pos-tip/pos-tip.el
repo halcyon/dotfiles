@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/pos-tip/pos-tip.el

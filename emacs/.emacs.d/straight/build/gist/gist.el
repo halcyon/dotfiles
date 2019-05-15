@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/gist.el/gist.el
