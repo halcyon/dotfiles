@@ -1,0 +1,1 @@
+/home/ksm/.emacs.d/straight/repos/slime-company/slime-company.el

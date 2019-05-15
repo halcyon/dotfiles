@@ -102,4 +102,4 @@ fi
 
 export MANPATH="${MANPATH}:${HOME}/dotfiles/man"
 
-#eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"

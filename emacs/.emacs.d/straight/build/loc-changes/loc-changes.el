@@ -1,0 +1,1 @@
+/home/ksm/.emacs.d/straight/repos/emacs-loc-changes/loc-changes.el
