@@ -1,0 +1,1 @@
+/home/ksm/.emacs.d/straight/repos/elisp-slime-nav/elisp-slime-nav.el

@@ -1,0 +1,1 @@
+/home/ksm/.emacs.d/straight/repos/yasnippet/yasnippet.el
