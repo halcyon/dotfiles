@@ -435,6 +435,8 @@ Null prefix argument turns off the mode."
              :repo "pashky/restclient.el"
              :files ("restclient.el")))
 
+(use-package ein)
+
 (use-package eldoc
   :straight nil
   :diminish eldoc-mode
