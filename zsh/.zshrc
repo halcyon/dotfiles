@@ -56,8 +56,8 @@ stty quit undef
 export GPG_TTY=${TTY}
 export ALTERNATE_EDITOR=""
 
-export EDITOR="emacsclient" #"${HOME}/bin/emacsclient"
-alias e="emacsclient" #"${HOME}/bin/emacsclient -nw"
+export EDITOR="emacs" #"${HOME}/bin/emacsclient"
+alias e="emacs" #"${HOME}/bin/emacsclient -nw"
 # alias e="emacsclient.sh"
 export COPY="xclip -i -sel p -f | xclip -i -sel c"
 export PASTE="xclip -o"
