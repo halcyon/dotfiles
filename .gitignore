@@ -17,6 +17,8 @@ emacs/.emacs.d/games/
 /emacs/.emacs.d/oauth2.plstore
 emacs/.emacs.d/url/
 emacs/.emacs.d/emojis/
+emacs/.emacs.d/meghanada/
+emacs/.emacs.d/transient/
 local/.local/share/autojump
 local/.local/share/konsole
 local/.local/share/kxmlgui5
