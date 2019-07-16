@@ -40,13 +40,9 @@ ZSH_THEME="halcyon"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(docker docker-compose fasd git helm kubectl asdf)
 
-# . $HOME/.asdf/asdf.sh
-# . ~/.asdf/plugins/java/asdf-java-wrapper.zsh
-
-# asdf current java > /dev/null
 source ${ZSH}/oh-my-zsh.sh
 
-# . $HOME/.asdf/completions/asdf.bash
+. ${HOME}/.asdf/plugins/java/set-java-home.sh
 
 ulimit -c unlimited
 
