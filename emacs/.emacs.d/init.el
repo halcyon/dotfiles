@@ -534,7 +534,6 @@ Null prefix argument turns off the mode."
 
 (use-package racer
   :config
-  (setq racer-rust-src-path (expand-file-name "~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"))
   (add-hook 'rust-mode-hook #'racer-mode))
 
 (use-package cargo
