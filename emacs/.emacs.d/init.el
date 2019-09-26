@@ -553,6 +553,9 @@ Null prefix argument turns off the mode."
 
 (use-package realgud)
 
+(use-package realgud-jdb
+  :straight realgud-jdb)
+
 (use-package meghanada
   :straight (:host github
              :repo "mopemope/meghanada-emacs")
