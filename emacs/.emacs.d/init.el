@@ -530,7 +530,10 @@ Null prefix argument turns off the mode."
                 (checking 'defun)))
   (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
-(use-package rust-mode)
+(use-package rust-mode
+    :straight (:host github
+                   :repo "halcyon/rust-mode"
+                   :branch "sm-nocapture"))
 
 (use-package racer
   :config
