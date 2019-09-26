@@ -11,3 +11,6 @@
         path = ~/gitlab/dotfiles-private/git/git-private
 # [url "git@github.com:"]
 # 	insteadOf = https://github.com/
+[user]
+	name = Scott McLeod
+	email = halcyonblue@gmail.com
