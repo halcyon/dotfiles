@@ -1385,6 +1385,14 @@ Save the displayed images as attachments and insert links to them.
 
 ;;;***
 
+;;;### (autoloads nil "org-attach-git" "org-attach-git.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from org-attach-git.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-attach-git" '("org-attach-git-")))
+
+;;;***
+
 ;;;### (autoloads nil "org-bibtex-extras" "org-bibtex-extras.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from org-bibtex-extras.el
@@ -1620,13 +1628,6 @@ Create agenda view for contacts matching NAME.
 ;;; Generated autoloads from org-depend.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-depend" '("org-depend-")))
-
-;;;***
-
-;;;### (autoloads nil "org-drill" "org-drill.el" (0 0 0 0))
-;;; Generated autoloads from org-drill.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-drill" '("org-" "shuffle-list" "spelln-integer-in-language" "*org-drill-" "with-" "drill-answer" "determine-next-interval-s" "initial-optimal-factor-sm5" "inter-repetition-interval-sm5" "get-optimal-factor-sm5" "pop-random" "push-end" "pseudonormal" "time-to-" "command-keybinding-to-string" "round-float" "free-marker")))
 
 ;;;***
 
@@ -2776,7 +2777,7 @@ Return PDF file's name.
 ;;; Generated autoloads from ox-rss.el
 
 (autoload 'org-rss-export-as-rss "ox-rss" "\
-Export current buffer to a RSS buffer.
+Export current buffer to an RSS buffer.
 
 If narrowing is active in the current buffer, only export its
 narrowed part.
@@ -2801,7 +2802,7 @@ non-nil.
 \(fn &optional ASYNC SUBTREEP VISIBLE-ONLY)" t nil)
 
 (autoload 'org-rss-export-to-rss "ox-rss" "\
-Export current buffer to a RSS file.
+Export current buffer to an RSS file.
 
 If narrowing is active in the current buffer, only export its
 narrowed part.

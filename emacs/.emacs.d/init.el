@@ -108,6 +108,7 @@ Null prefix argument turns off the mode."
       (if auto-save-default
           (auto-save-mode 1))))
   (add-to-list 'auto-mode-alist '("\\id_rsa.*\\'" . sensitive-mode))
+  (add-to-list 'auto-mode-alist '("\\!dev!shm!.*\\'" . sensitive-mode))
   (provide 'backup-settings))
 
 (use-package pinentry
@@ -158,9 +159,9 @@ Null prefix argument turns off the mode."
                                       (display-line-numbers-mode -1)
                                       (turn-off-smartparens-strict-mode)))
   :bind (:map term-mode-map
-              ("C-'" . term-char-mode)
+              ("C-\\" . term-char-mode)
          :map term-raw-map
-              ("C-'" . term-line-mode)
+              ("C-\\" . term-line-mode)
               ("C-y" . term-paste)))
 
 (use-package info
@@ -613,7 +614,7 @@ Null prefix argument turns off the mode."
   (set-face-background 'sp-show-pair-match-face "deep sky blue")
   (set-face-foreground 'sp-show-pair-match-face "white"))
 
-(use-package f)
+;; (use-package f)
 (use-package yasnippet
   :diminish yas-minor-mode
   :config
@@ -706,9 +707,10 @@ Null prefix argument turns off the mode."
          :map slack-message-buffer-mode-map ("C-c C-o" . browse-url)
          :map slack-file-info-buffer-mode-map ("C-c C-o" . browse-url))
   :straight (:host github
-                 ;; :repo "yuya373/emacs-slack"
-             :repo "halcyon/emacs-slack"
-	     :branch "halcyon-fix-terminal")
+                 :repo "yuya373/emacs-slack"
+             ;; :repo "halcyon/emacs-slack"
+	     ;; :branch "halcyon-fix-terminal"
+             )
   :commands slack-start
   :config
   (add-hook 'slack-mode-hook

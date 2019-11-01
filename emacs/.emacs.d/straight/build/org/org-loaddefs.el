@@ -368,7 +368,7 @@ This command is set with the variable `org-archive-default-command'.
 
 ;;;***
 
-;;;### (autoloads nil "org-attach" "org-attach.el" "fe9f8c7e20f1deaa836efb482e55d9a4")
+;;;### (autoloads nil "org-attach" "org-attach.el" "7197bca428f6068ba9ca95a7159b4783")
 ;;; Generated autoloads from org-attach.el
 
 (autoload 'org-attach "org-attach" "\
@@ -387,7 +387,7 @@ Idea taken from `gnus-dired-attach'.
 
 ;;;***
 
-;;;### (autoloads nil "org-clock" "org-clock.el" "391247e04750eba2abe948486554a81a")
+;;;### (autoloads nil "org-clock" "org-clock.el" "c893ec7b3335427a670b4fb7f13e44be")
 ;;; Generated autoloads from org-clock.el
 
 (autoload 'org-resolve-clocks "org-clock" "\
@@ -566,7 +566,7 @@ will be built under the headline at point.
 
 ;;;***
 
-;;;### (autoloads nil "org-element" "org-element.el" "9e93320ac9f3f512131d187567d98050")
+;;;### (autoloads nil "org-element" "org-element.el" "f53a7a6901267927d6b88597e72b6d9a")
 ;;; Generated autoloads from org-element.el
 
 (autoload 'org-element-update-syntax "org-element" "\
@@ -686,7 +686,7 @@ offer additional commands in a menu.
 
 ;;;***
 
-;;;### (autoloads nil "org-id" "org-id.el" "0b9befd7ba008a6ce5e70d74a1d8abc5")
+;;;### (autoloads nil "org-id" "org-id.el" "5913a0de9315b42c39ecacbd4c0e3121")
 ;;; Generated autoloads from org-id.el
 
 (autoload 'org-id-get-create "org-id" "\
@@ -795,7 +795,7 @@ during idle time.
 
 ;;;***
 
-;;;### (autoloads nil "org-mobile" "org-mobile.el" "4ccbe2119a516840bd9e45d273e574df")
+;;;### (autoloads nil "org-mobile" "org-mobile.el" "caffff3bad4ecdc2f3db69b77c9f3742")
 ;;; Generated autoloads from org-mobile.el
 
 (autoload 'org-mobile-push "org-mobile" "\
@@ -826,7 +826,7 @@ line directly before or after the table.
 
 ;;;***
 
-;;;### (autoloads nil "org-table" "org-table.el" "63bb5ff31e4f48064582581fd59dafcd")
+;;;### (autoloads nil "org-table" "org-table.el" "3b4fc38ce3a8dcb84345816592446e6c")
 ;;; Generated autoloads from org-table.el
 
 (autoload 'org-table-create-with-table\.el "org-table" "\
@@ -1052,11 +1052,14 @@ row, and the cursor is moved with it.  Therefore, repeating this
 command causes the column to be filled row-by-row.
 
 If the variable `org-table-copy-increment' is non-nil and the
-field is an integer or a timestamp, it will be incremented while
-copying.  By default, increment by the difference between the
-value in the current field and the one in the field above.  To
-increment using a fixed integer, set `org-table-copy-increment'
-to a number.  In the case of a timestamp, increment by days.
+field is a number, a timestamp, or is either prefixed or suffixed
+with a number, it will be incremented while copying.  By default,
+increment by the difference between the value in the current
+field and the one in the field above, if any.  To increment using
+a fixed integer, set `org-table-copy-increment' to a number.  In
+the case of a timestamp, increment by days.
+
+However, when N is 0, do not increment the field at all.
 
 \(fn N)" t nil)
 
@@ -1671,7 +1674,7 @@ using three `C-u' prefix arguments.
 
 ;;;***
 
-;;;### (autoloads nil "ox" "ox.el" "a59360cbb230cbad600dc475a7da9d48")
+;;;### (autoloads nil "ox" "ox.el" "8dd4aea6b04a893a6031f387d80101a4")
 ;;; Generated autoloads from ox.el
 
 (autoload 'org-export-get-backend "ox" "\
@@ -1860,7 +1863,7 @@ When ARG is `\\[universal-argument] \\[universal-argument]', display the asynchr
 
 ;;;***
 
-;;;### (autoloads nil "ox-ascii" "ox-ascii.el" "05e3f27f1926aa80e03e60c5a144698a")
+;;;### (autoloads nil "ox-ascii" "ox-ascii.el" "1ccd11fa909fecec0004ff4ceb29e4a4")
 ;;; Generated autoloads from ox-ascii.el
 
 (autoload 'org-ascii-convert-region-to-ascii "ox-ascii" "\
@@ -2105,7 +2108,7 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-html" "ox-html.el" "4037d6b1a5eff03ffea4f8e4acd6cc10")
+;;;### (autoloads nil "ox-html" "ox-html.el" "68856f474de48058c31a294da2e9183e")
 ;;; Generated autoloads from ox-html.el
 
 (put 'org-html-head-include-default-style 'safe-local-variable 'booleanp)
@@ -2397,7 +2400,7 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-md" "ox-md.el" "8c71b478d4e65b73ade054f063fd7180")
+;;;### (autoloads nil "ox-md" "ox-md.el" "4fe6f439ee52d17b9cf57b7694206aed")
 ;;; Generated autoloads from ox-md.el
 
 (autoload 'org-md-export-as-markdown "ox-md" "\
@@ -2469,7 +2472,7 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-odt" "ox-odt.el" "4646df030fc7c1fa9182ea07999528d4")
+;;;### (autoloads nil "ox-odt" "ox-odt.el" "19323e17550a53d91eef793adf312e43")
 ;;; Generated autoloads from ox-odt.el
 
 (put 'org-odt-preferred-output-format 'safe-local-variable 'stringp)
@@ -2609,7 +2612,7 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-publish" "ox-publish.el" "37f16f8598f6834d7c49574cfa28c0a6")
+;;;### (autoloads nil "ox-publish" "ox-publish.el" "779620744d924af107bb12738776a5c6")
 ;;; Generated autoloads from ox-publish.el
 
 (defalias 'org-publish-project 'org-publish)

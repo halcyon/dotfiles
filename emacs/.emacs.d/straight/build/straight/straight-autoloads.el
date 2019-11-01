@@ -198,6 +198,19 @@ forked packages).
 
 \(fn PACKAGE &optional FROM-UPSTREAM)" t nil)
 
+(autoload 'straight-fetch-package-and-deps "straight" "\
+Try to fetch a PACKAGE and its (transitive) dependencies.
+PACKAGE, its dependencies, their dependencies, etc. are fetched
+from their primary remotes.
+
+PACKAGE is a string naming a package. Interactively, select
+PACKAGE from the known packages in the current Emacs session
+using `completing-read'. With prefix argument FROM-UPSTREAM,
+fetch not just from primary remote but also from upstream (for
+forked packages).
+
+\(fn PACKAGE &optional FROM-UPSTREAM)" t nil)
+
 (autoload 'straight-fetch-all "straight" "\
 Try to fetch all packages from their primary remotes.
 With prefix argument FROM-UPSTREAM, fetch not just from primary
@@ -215,6 +228,19 @@ non-nil if the package should actually be fetched.
 
 (autoload 'straight-merge-package "straight" "\
 Try to merge a PACKAGE from the primary remote.
+PACKAGE is a string naming a package. Interactively, select
+PACKAGE from the known packages in the current Emacs session
+using `completing-read'. With prefix argument FROM-UPSTREAM,
+merge not just from primary remote but also from upstream (for
+forked packages).
+
+\(fn PACKAGE &optional FROM-UPSTREAM)" t nil)
+
+(autoload 'straight-merge-package-and-deps "straight" "\
+Try to merge a PACKAGE and its (transitive) dependencies.
+PACKAGE, its dependencies, their dependencies, etc. are merged
+from their primary remotes.
+
 PACKAGE is a string naming a package. Interactively, select
 PACKAGE from the known packages in the current Emacs session
 using `completing-read'. With prefix argument FROM-UPSTREAM,
@@ -245,6 +271,19 @@ PACKAGE from the known packages in the current Emacs session
 using `completing-read'. With prefix argument FROM-UPSTREAM, pull
 not just from primary remote but also from upstream (for forked
 packages).
+
+\(fn PACKAGE &optional FROM-UPSTREAM)" t nil)
+
+(autoload 'straight-pull-package-and-deps "straight" "\
+Try to pull a PACKAGE and its (transitive) dependencies.
+PACKAGE, its dependencies, their dependencies, etc. are pulled
+from their primary remotes.
+
+PACKAGE is a string naming a package. Interactively, select
+PACKAGE from the known packages in the current Emacs session
+using `completing-read'. With prefix argument FROM-UPSTREAM,
+pull not just from primary remote but also from upstream (for
+forked packages).
 
 \(fn PACKAGE &optional FROM-UPSTREAM)" t nil)
 
@@ -313,6 +352,9 @@ Read version lockfiles and restore package versions to those listed.
 
 ;;;### (autoloads nil "straight-x" "straight-x.el" (0 0 0 0))
 ;;; Generated autoloads from straight-x.el
+
+(defvar straight-x-pinned-packages nil "\
+List of pinned packages.")
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight-x" '("straight-x-")))
 

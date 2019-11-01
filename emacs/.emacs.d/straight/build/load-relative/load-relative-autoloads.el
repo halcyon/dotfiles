@@ -19,7 +19,7 @@ readevalloop of `lread.c' as the car of variable
 Failing that, we use `load-file-name' which should work in some
 subset of the same places that the first method works.  However
 `load-file-name' will be nil for code that is eval'd.  To cover
-those cases, we try `buffer-file-name' which is initially
+those cases, we try function `buffer-file-name' which is initially
 correct, for eval'd code, but will change and may be wrong if the
 code sets or switches buffers after the initial execution.
 

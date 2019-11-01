@@ -1108,6 +1108,14 @@ to override `appt-message-warning-time'.
 
 ;;;***
 
+;;;### (autoloads nil "org-attach-git" "org-attach-git.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from org-attach-git.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-attach-git" '("org-attach-git-")))
+
+;;;***
+
 ;;;### (autoloads nil "org-capture" "org-capture.el" (0 0 0 0))
 ;;; Generated autoloads from org-capture.el
 
