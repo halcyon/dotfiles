@@ -447,7 +447,7 @@ Null prefix argument turns off the mode."
   (add-hook 'cider-mode-hook #'eldoc-mode)
   (add-hook 'cider-repl-mode-hook #'eldoc-mode)
   (add-hook 'ensime-mode-hook #'eldoc-mode)
-  (add-hook 'racer-mode-hook #'eldoc-mode)
+  ;; (add-hook 'racer-mode-hook #'eldoc-mode)
   (add-hook 'go-mode-hook #'go-eldoc-setup))
 
 (use-package elisp-settings
@@ -531,18 +531,24 @@ Null prefix argument turns off the mode."
                 (checking 'defun)))
   (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
-(use-package rust-mode
-    :straight (:host github
-                   :repo "halcyon/rust-mode"
-                   :branch "sm-nocapture"))
+(use-package lsp-mode)
+(use-package rustic
+  :init
+  (setq rustic-lsp-server 'rust-analyzer)
+  (setq lsp-rust-analyzer-server-command '("/home/ksm/.asdf/shims/ra_lsp_server")))
 
-(use-package racer
-  :config
-  (add-hook 'rust-mode-hook #'racer-mode))
+;; (use-package rust-mode
+;;     :straight (:host github
+;;                    :repo "halcyon/rust-mode"
+;;                    :branch "sm-nocapture"))
 
-(use-package cargo
-  :config
-  (add-hook 'rust-mode-hook #'cargo-minor-mode))
+;; (use-package racer
+;;   :config
+;;   (add-hook 'rust-mode-hook #'racer-mode))
+
+;; (use-package cargo
+;;   :config
+;;   (add-hook 'rust-mode-hook #'cargo-minor-mode))
 
 (use-package scala-mode)
 
