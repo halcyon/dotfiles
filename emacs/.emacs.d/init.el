@@ -534,8 +534,9 @@ Null prefix argument turns off the mode."
 (use-package lsp-mode)
 (use-package rustic
   :init
-  (setq rustic-lsp-server 'rust-analyzer)
-  (setq lsp-rust-analyzer-server-command '("/home/ksm/.asdf/shims/ra_lsp_server")))
+  (setq rustic-lsp-server 'rust-analyzer
+        lsp-rust-analyzer-server-command '("/home/ksm/.asdf/shims/ra_lsp_server")
+        rustic-test-arguments "-- --nocapture"))
 
 ;; (use-package rust-mode
 ;;     :straight (:host github
