@@ -531,25 +531,18 @@ Null prefix argument turns off the mode."
                 (checking 'defun)))
   (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
-(use-package lsp-mode)
+
+
 (use-package rustic
-  :init
+  :straight (:host github
+                   :repo "brotzeit/rustic")
+  :config
   (setq rustic-lsp-server 'rust-analyzer
-        lsp-rust-analyzer-server-command '("/home/ksm/.asdf/shims/ra_lsp_server")
-        rustic-test-arguments "-- --nocapture"))
+        rustic-analyzer-command "rust-analyzer"))
 
-;; (use-package rust-mode
-;;     :straight (:host github
-;;                    :repo "halcyon/rust-mode"
-;;                    :branch "sm-nocapture"))
-
-;; (use-package racer
-;;   :config
-;;   (add-hook 'rust-mode-hook #'racer-mode))
-
-;; (use-package cargo
-;;   :config
-;;   (add-hook 'rust-mode-hook #'cargo-minor-mode))
+(use-package lsp-mode
+  :straight (:host github
+                   :repo "emacs-lsp/lsp-mode"))
 
 (use-package scala-mode)
 
