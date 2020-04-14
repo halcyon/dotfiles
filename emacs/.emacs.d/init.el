@@ -538,7 +538,8 @@ Null prefix argument turns off the mode."
                    :repo "brotzeit/rustic")
   :config
   (setq rustic-lsp-server 'rust-analyzer
-        rustic-analyzer-command "rust-analyzer"))
+        rustic-analyzer-command "rust-analyzer"
+        rustic-test-arguments "-- --nocapture"))
 
 (use-package lsp-mode
   :straight (:host github
@@ -732,6 +733,10 @@ Null prefix argument turns off the mode."
   :commands (alert)
   :init
   (setq alert-default-style 'libnotify))
+
+(use-package shell
+  :straight nil
+  :config (setq sh-indentation 2))
 
 ;; (provide 'init)
 ;;; init.el ends here
