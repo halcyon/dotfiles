@@ -738,5 +738,9 @@ Null prefix argument turns off the mode."
   :straight nil
   :config (setq sh-indentation 2))
 
+(use-package js
+  :straight nil
+  :config (setq js-indent-level 2))
+
 ;; (provide 'init)
 ;;; init.el ends here

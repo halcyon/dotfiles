@@ -42,7 +42,7 @@ plugins=(docker docker-compose fasd git helm kubectl asdf)
 
 source ${ZSH}/oh-my-zsh.sh
 
-. ${HOME}/.asdf/plugins/java/set-java-home.sh
+. ${HOME}/.asdf/plugins/java/set-java-home.zsh
 
 ulimit -c unlimited
 
