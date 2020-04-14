@@ -99,3 +99,6 @@ fi
 export MANPATH="${MANPATH}:${HOME}/dotfiles/man"
 
 eval "$(direnv hook zsh)"
+
+# added by travis gem
+[ -f /home/ksm/.travis/travis.sh ] && source /home/ksm/.travis/travis.sh
