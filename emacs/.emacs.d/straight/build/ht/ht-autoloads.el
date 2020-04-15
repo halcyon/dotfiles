@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "ht" "ht.el" (0 0 0 0))
-;;; Generated autoloads from ht.el
+;;;### (autoloads "actual autoloads are elsewhere" "ht" "../../../../../../.emacs.d/straight/build/ht/ht.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/ht/ht.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ht" 'nil))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/ht/ht.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

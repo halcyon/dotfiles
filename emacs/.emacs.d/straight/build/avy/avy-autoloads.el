@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "avy" "avy.el" (0 0 0 0))
-;;; Generated autoloads from avy.el
+;;;### (autoloads nil "avy" "../../../../../../.emacs.d/straight/build/avy/avy.el"
+;;;;;;  "d0d651c02212fea7070fd03e4f499576")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/avy/avy.el
 
 (autoload 'avy-goto-char "avy" "\
 Jump to the currently visible CHAR.
@@ -50,6 +51,14 @@ Jump to one of the current isearch candidates.
 
 (autoload 'avy-goto-word-0 "avy" "\
 Jump to a word start.
+The window scope is determined by `avy-all-windows'.
+When ARG is non-nil, do the opposite of `avy-all-windows'.
+BEG and END narrow the scope where candidates are searched.
+
+\(fn ARG &optional BEG END)" t nil)
+
+(autoload 'avy-goto-whitespace-end "avy" "\
+Jump to the end of a whitespace sequence.
 The window scope is determined by `avy-all-windows'.
 When ARG is non-nil, do the opposite of `avy-all-windows'.
 BEG and END narrow the scope where candidates are searched.
@@ -247,8 +256,19 @@ Read one or many consecutive chars and jump to the first one.
 The window scope is determined by `avy-all-windows' (ARG negates it).
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "avy" "../../../../../../.emacs.d/straight/build/avy/avy.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/avy/avy.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "avy" '("avy-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/avy/avy.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

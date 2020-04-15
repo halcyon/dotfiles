@@ -7,54 +7,54 @@
 ;;; Generated autoloads from helm-ag.el
 
 (autoload 'helm-ag-pop-stack "helm-ag" "\
-
+Not documented.
 
 \(fn)" t nil)
 
 (autoload 'helm-ag-clear-stack "helm-ag" "\
-
+Not documented.
 
 \(fn)" t nil)
 
 (autoload 'helm-ag-this-file "helm-ag" "\
+Do ag with in this file with QUERY.
 
-
-\(fn)" t nil)
+\(fn &optional QUERY)" t nil)
 
 (autoload 'helm-ag "helm-ag" "\
+Do ag with in BASEDIR and with QUERY.
 
-
-\(fn &optional BASEDIR)" t nil)
+\(fn &optional BASEDIR QUERY)" t nil)
 
 (autoload 'helm-do-ag-this-file "helm-ag" "\
+Not documented.
 
-
-\(fn)" t nil)
+\(fn &optional QUERY)" t nil)
 
 (autoload 'helm-do-ag "helm-ag" "\
+Not documented.
 
-
-\(fn &optional BASEDIR TARGETS)" t nil)
+\(fn &optional BASEDIR TARGETS QUERY)" t nil)
 
 (autoload 'helm-ag-project-root "helm-ag" "\
+Not documented.
 
-
-\(fn)" t nil)
+\(fn &optional QUERY)" t nil)
 
 (autoload 'helm-do-ag-project-root "helm-ag" "\
+Not documented.
 
-
-\(fn)" t nil)
+\(fn &optional QUERY)" t nil)
 
 (autoload 'helm-ag-buffers "helm-ag" "\
+Not documented.
 
-
-\(fn)" t nil)
+\(fn &optional QUERY)" t nil)
 
 (autoload 'helm-do-ag-buffers "helm-ag" "\
+Not documented.
 
-
-\(fn)" t nil)
+\(fn &optional QUERY)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-ag" '("helm-")))
 

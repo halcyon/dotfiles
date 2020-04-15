@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "ace-window" "ace-window.el" (0 0 0 0))
-;;; Generated autoloads from ace-window.el
+;;;### (autoloads nil "ace-window" "../../../../../../.emacs.d/straight/build/ace-window/ace-window.el"
+;;;;;;  "9f0beceb407b0d1a323afd069d115309")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/ace-window/ace-window.el
 
 (autoload 'ace-select-window "ace-window" "\
 Ace select window.
@@ -26,11 +27,19 @@ Ace delete other windows.
 
 \(fn)" t nil)
 
+(autoload 'ace-display-buffer "ace-window" "\
+Make `display-buffer' and `pop-to-buffer' select using `ace-window'.
+See sample config for `display-buffer-base-action' and `display-buffer-alist':
+https://github.com/abo-abo/ace-window/wiki/display-buffer.
+
+\(fn BUFFER ALIST)" nil nil)
+
 (autoload 'ace-window "ace-window" "\
 Select a window.
 Perform an action based on ARG described below.
 
 By default, behaves like extended `other-window'.
+See `aw-scope' which extends it to work with frames.
 
 Prefixed with one \\[universal-argument], does a swap between the
 selected window and the current window, so that the selected
@@ -56,8 +65,19 @@ or call the function `ace-window-display-mode'.")
 Minor mode for showing the ace window key in the mode line.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ace-window" "../../../../../../.emacs.d/straight/build/ace-window/ace-window.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/ace-window/ace-window.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ace-window" '("ace-window-mode" "aw-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/ace-window/ace-window.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

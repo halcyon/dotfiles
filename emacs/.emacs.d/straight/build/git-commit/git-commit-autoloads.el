@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "git-commit" "git-commit.el" (0 0 0 0))
-;;; Generated autoloads from git-commit.el
+;;;### (autoloads nil "git-commit" "../../../../../../.emacs.d/straight/build/git-commit/git-commit.el"
+;;;;;;  "facf206c8cdeaf0a4b8ea5e0a6ce7449")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/git-commit/git-commit.el
 
 (defvar global-git-commit-mode t "\
 Non-nil if Global Git-Commit mode is enabled.
@@ -36,8 +37,19 @@ provide such a commit message.
 
 
 \(fn)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "git-commit" "../../../../../../.emacs.d/straight/build/git-commit/git-commit.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/git-commit/git-commit.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git-commit" '("git-commit-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/git-commit/git-commit.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

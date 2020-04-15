@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "kv" "kv.el" (0 0 0 0))
-;;; Generated autoloads from kv.el
+;;;### (autoloads "actual autoloads are elsewhere" "kv" "../../../../../../.emacs.d/straight/build/kv/kv.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/kv/kv.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "kv" '("keyword->symbol" "map-bind" "dotass")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/kv/kv.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

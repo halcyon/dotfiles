@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "deferred" "deferred.el" (0 0 0 0))
-;;; Generated autoloads from deferred.el
+;;;### (autoloads "actual autoloads are elsewhere" "deferred" "../../../../../../.emacs.d/straight/build/deferred/deferred.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/deferred/deferred.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "deferred" '("deferred:")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/deferred/deferred.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

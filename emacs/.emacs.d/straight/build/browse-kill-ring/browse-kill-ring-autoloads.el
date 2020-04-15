@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "browse-kill-ring" "browse-kill-ring.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from browse-kill-ring.el
+;;;### (autoloads nil "browse-kill-ring" "../../../../../../.emacs.d/straight/build/browse-kill-ring/browse-kill-ring.el"
+;;;;;;  "f78979f048555e9ac4fc42313ec3d6f0")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "browse-kill-ring" "\
 Set up M-y (`yank-pop') so that it can invoke `browse-kill-ring'.
@@ -19,8 +19,20 @@ behavior.  This function sets things up so that M-y will invoke
 Display items in the `kill-ring' in another buffer.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "browse-kill-ring"
+;;;;;;  "../../../../../../.emacs.d/straight/build/browse-kill-ring/browse-kill-ring.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/browse-kill-ring/browse-kill-ring.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "browse-kill-ring" '("browse-kill-ring-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/browse-kill-ring/browse-kill-ring.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

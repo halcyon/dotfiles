@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "helm-adaptive" "helm-adaptive.el" (0 0 0 0))
-;;; Generated autoloads from helm-adaptive.el
+;;;### (autoloads nil "helm-adaptive" "../../../../../../.emacs.d/straight/build/helm/helm-adaptive.el"
+;;;;;;  "3f517cd0e90dfe48bbc163f9aa159e1f")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-adaptive.el
 
 (defvar helm-adaptive-mode nil "\
 Non-nil if Helm-Adaptive mode is enabled.
@@ -26,13 +27,21 @@ Delete all `helm-adaptive-history' and his file.
 Useful when you have a old or corrupted `helm-adaptive-history-file'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-adaptive"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-adaptive.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-adaptive.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-adaptive" '("helm-adapt")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-bookmark" "helm-bookmark.el" (0 0 0 0))
-;;; Generated autoloads from helm-bookmark.el
+;;;### (autoloads nil "helm-bookmark" "../../../../../../.emacs.d/straight/build/helm/helm-bookmark.el"
+;;;;;;  "3ba2672645cea1f48cafbf69de9f906e")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "helm-bookmark" "\
 Preconfigured `helm' for bookmarks.
@@ -45,13 +54,21 @@ Optional source `helm-source-bookmark-addressbook' is loaded
 only if external addressbook-bookmark package is installed.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-bookmark"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-bookmark.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-bookmark.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-bookmark" '("helm-" "bmkext-jump-" "bookmark")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-buffers" "helm-buffers.el" (0 0 0 0))
-;;; Generated autoloads from helm-buffers.el
+;;;### (autoloads nil "helm-buffers" "../../../../../../.emacs.d/straight/build/helm/helm-buffers.el"
+;;;;;;  "921983c07530406d50588d78710802cc")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "helm-buffers" "\
 Preconfigured `helm' to list buffers.
@@ -59,28 +76,43 @@ Preconfigured `helm' to list buffers.
 \(fn)" t nil)
 
 (autoload 'helm-mini "helm-buffers" "\
-Preconfigured `helm' lightweight version (buffer -> recentf).
+Preconfigured `helm' displaying `helm-mini-default-sources'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-buffers"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-buffers.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-buffers.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-buffers" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-color" "helm-color.el" (0 0 0 0))
-;;; Generated autoloads from helm-color.el
+;;;### (autoloads nil "helm-color" "../../../../../../.emacs.d/straight/build/helm/helm-color.el"
+;;;;;;  "0032831ef5ff42345ff22968256dcde4")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-color.el
 
 (autoload 'helm-colors "helm-color" "\
 Preconfigured `helm' for color.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-color" "../../../../../../.emacs.d/straight/build/helm/helm-color.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-color.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-color" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-comint" "helm-comint.el" (0 0 0 0))
-;;; Generated autoloads from helm-comint.el
+;;;### (autoloads nil "helm-comint" "../../../../../../.emacs.d/straight/build/helm/helm-comint.el"
+;;;;;;  "847634af8e98833eb47e9874b2956347")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-comint.el
 
 (autoload 'helm-comint-prompts "helm-comint" "\
 Pre-configured `helm' to browse the prompts of the current comint buffer.
@@ -96,13 +128,21 @@ Pre-configured `helm' to browse the prompts of all comint sessions.
 Preconfigured `helm' that provide completion of `comint' history.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-comint"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-comint.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-comint.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-comint" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-command" "helm-command.el" (0 0 0 0))
-;;; Generated autoloads from helm-command.el
+;;;### (autoloads nil "helm-command" "../../../../../../.emacs.d/straight/build/helm/helm-command.el"
+;;;;;;  "948c24e9aa7309a060b345c19fa20c4a")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-command.el
 
 (autoload 'helm-M-x "helm-command" "\
 Preconfigured `helm' for Emacs commands.
@@ -115,38 +155,62 @@ while in `helm-M-x' session will disable it.
 
 You can get help on each command by persistent action.
 
-\(fn ARG &optional COMMAND-NAME)" t nil)
+\(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-command"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-command.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-command.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-command" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-config" "helm-config.el" (0 0 0 0))
-;;; Generated autoloads from helm-config.el
+;;;### (autoloads nil "helm-config" "../../../../../../.emacs.d/straight/build/helm/helm-config.el"
+;;;;;;  "6c44b4f3801b887fa6205183f4f95615")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-config.el
 
 (autoload 'helm-configuration "helm-config" "\
 Customize `helm'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-config"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-config.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-config.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-config" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-dabbrev" "helm-dabbrev.el" (0 0 0 0))
-;;; Generated autoloads from helm-dabbrev.el
+;;;### (autoloads nil "helm-dabbrev" "../../../../../../.emacs.d/straight/build/helm/helm-dabbrev.el"
+;;;;;;  "afae061b80458189ffe6d7b0fffb07b3")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "helm-dabbrev" "\
 Preconfigured helm for dynamic abbreviations.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-dabbrev"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-dabbrev.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-dabbrev.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-dabbrev" '("helm-dabbrev-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-elisp" "helm-elisp.el" (0 0 0 0))
-;;; Generated autoloads from helm-elisp.el
+;;;### (autoloads nil "helm-elisp" "../../../../../../.emacs.d/straight/build/helm/helm-elisp.el"
+;;;;;;  "7a60bcd49c135c44e3bf08c196fba8d5")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "helm-elisp" "\
 Preconfigured helm for lisp symbol completion at point.
@@ -195,14 +259,20 @@ Preconfigured `helm' for timers.
 Preconfigured helm for complex command history.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-elisp" "../../../../../../.emacs.d/straight/build/helm/helm-elisp.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-elisp.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-elisp" '("helm-" "with-helm-show-completion")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-elisp-package" "helm-elisp-package.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from helm-elisp-package.el
+;;;### (autoloads nil "helm-elisp-package" "../../../../../../.emacs.d/straight/build/helm/helm-elisp-package.el"
+;;;;;;  "7a783d14b525a0bbe4450a74698f103c")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "helm-elisp-package" "\
 Preconfigured helm for listing and handling emacs packages.
@@ -216,13 +286,21 @@ Same as `helm-list-elisp-packages' but don't fetch packages on remote.
 Called with a prefix ARG always fetch packages on remote.
 
 \(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-elisp-package"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-elisp-package.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-elisp-package.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-elisp-package" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-eshell" "helm-eshell.el" (0 0 0 0))
-;;; Generated autoloads from helm-eshell.el
+;;;### (autoloads nil "helm-eshell" "../../../../../../.emacs.d/straight/build/helm/helm-eshell.el"
+;;;;;;  "b8a33ce1dd89a0972c9f16bffc00e6c3")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "helm-eshell" "\
 Preconfigured helm to provide helm completion in eshell.
@@ -243,13 +321,21 @@ Pre-configured `helm' to browse the prompts of the current Eshell.
 Pre-configured `helm' to browse the prompts of all Eshell sessions.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-eshell"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-eshell.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-eshell.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-eshell" '("helm-e")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-eval" "helm-eval.el" (0 0 0 0))
-;;; Generated autoloads from helm-eval.el
+;;;### (autoloads nil "helm-eval" "../../../../../../.emacs.d/straight/build/helm/helm-eval.el"
+;;;;;;  "828b6d42dbb15ea5e6f8822b42c459c5")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-eval.el
 
 (autoload 'helm-eval-expression "helm-eval" "\
 Preconfigured helm for `helm-source-evaluation-result'.
@@ -265,13 +351,20 @@ Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support.
 Preconfigured helm for `helm-source-calculation-result'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-eval" "../../../../../../.emacs.d/straight/build/helm/helm-eval.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-eval.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-eval" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-external" "helm-external.el" (0 0 0 0))
-;;; Generated autoloads from helm-external.el
+;;;### (autoloads nil "helm-external" "../../../../../../.emacs.d/straight/build/helm/helm-external.el"
+;;;;;;  "d42f05eb4e5556a7aed0811556d4cb47")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-external.el
 
 (autoload 'helm-run-external-command "helm-external" "\
 Preconfigured `helm' to run External PROGRAM asyncronously from Emacs.
@@ -280,18 +373,26 @@ You can set your own list of commands with
 `helm-external-commands-list'.
 
 \(fn PROGRAM)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-external"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-external.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-external.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-external" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-files" "helm-files.el" (0 0 0 0))
-;;; Generated autoloads from helm-files.el
+;;;### (autoloads nil "helm-files" "../../../../../../.emacs.d/straight/build/helm/helm-files.el"
+;;;;;;  "d4d2cdab1ace4e891a1accfa181083ea")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-files.el
 
 (autoload 'helm-projects-history "helm-files" "\
 
 
-\(fn)" t nil)
+\(fn ARG)" t nil)
 
 (autoload 'helm-browse-project "helm-files" "\
 Preconfigured helm to browse projects.
@@ -329,13 +430,20 @@ emacs < to 25.1.50.1 (See Emacs Bug#24432).
 It allows additionally to delete more than one connection at once.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-files" "../../../../../../.emacs.d/straight/build/helm/helm-files.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-files.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-files" '("helm-" "eshell-command-aliases-list")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-find" "helm-find.el" (0 0 0 0))
-;;; Generated autoloads from helm-find.el
+;;;### (autoloads nil "helm-find" "../../../../../../.emacs.d/straight/build/helm/helm-find.el"
+;;;;;;  "80a877acc0fd6a596194e7945f7915ed")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-find.el
 
 (autoload 'helm-find "helm-find" "\
 Preconfigured `helm' for the find shell command.
@@ -356,13 +464,20 @@ the separator \"*\" plus any number of additional arguments that
 are passed to \"find\" literally.
 
 \(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-find" "../../../../../../.emacs.d/straight/build/helm/helm-find.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-find.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-find" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-font" "helm-font.el" (0 0 0 0))
-;;; Generated autoloads from helm-font.el
+;;;### (autoloads nil "helm-font" "../../../../../../.emacs.d/straight/build/helm/helm-font.el"
+;;;;;;  "a6137efe4781b97a21efef1503e7bdcb")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-font.el
 
 (autoload 'helm-select-xfont "helm-font" "\
 Preconfigured `helm' to select Xfont.
@@ -375,14 +490,20 @@ Preconfigured helm for `ucs-names'.
 Called with a prefix arg force reloading cache.
 
 \(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-font" "../../../../../../.emacs.d/straight/build/helm/helm-font.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-font.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-font" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-for-files" "helm-for-files.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from helm-for-files.el
+;;;### (autoloads nil "helm-for-files" "../../../../../../.emacs.d/straight/build/helm/helm-for-files.el"
+;;;;;;  "1799ff21eb243c3ec6c901370796aa63")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-for-files.el
 
 (autoload 'helm-for-files "helm-for-files" "\
 Preconfigured `helm' for opening files.
@@ -404,13 +525,21 @@ found.
 Preconfigured `helm' for `recentf'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-for-files"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-for-files.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-for-files.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-for-files" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-grep" "helm-grep.el" (0 0 0 0))
-;;; Generated autoloads from helm-grep.el
+;;;### (autoloads nil "helm-grep" "../../../../../../.emacs.d/straight/build/helm/helm-grep.el"
+;;;;;;  "3fcdd8ce9c8497349253365330674c4b")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "helm-grep" "\
 Go to precedent file in helm grep/etags buffers.
@@ -433,13 +562,20 @@ Preconfigured helm for git-grepping `default-directory'.
 With a prefix arg ARG git-grep the whole repository.
 
 \(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-grep" "../../../../../../.emacs.d/straight/build/helm/helm-grep.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-grep.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-grep" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-help" "helm-help.el" (0 0 0 0))
-;;; Generated autoloads from helm-help.el
+;;;### (autoloads nil "helm-help" "../../../../../../.emacs.d/straight/build/helm/helm-help.el"
+;;;;;;  "414b110c0a00d372d43197f7a9d38704")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-help.el
 
 (autoload 'helm-documentation "helm-help" "\
 Preconfigured Helm for Helm documentation.
@@ -455,13 +591,20 @@ Find here the documentation of all documented sources.
 String displayed in mode-line in `helm-source-find-files'.")
 
 (defvar helm-top-mode-line "\\<helm-top-map>\\[helm-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend \\[helm-customize-group]:Conf")
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-help" "../../../../../../.emacs.d/straight/build/helm/helm-help.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-help.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-help" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-id-utils" "helm-id-utils.el" (0 0 0 0))
-;;; Generated autoloads from helm-id-utils.el
+;;;### (autoloads nil "helm-id-utils" "../../../../../../.emacs.d/straight/build/helm/helm-id-utils.el"
+;;;;;;  "1203f7d6b3fed3b7deb2636d16fe17ae")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-id-utils.el
 
 (autoload 'helm-gid "helm-id-utils" "\
 Preconfigured helm for `gid' command line of `ID-Utils'.
@@ -471,13 +614,21 @@ Need id-utils as dependency which provide `mkid', `gid' etc...
 See <https://www.gnu.org/software/idutils/>.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-id-utils"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-id-utils.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-id-utils.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-id-utils" '("helm-gid-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-imenu" "helm-imenu.el" (0 0 0 0))
-;;; Generated autoloads from helm-imenu.el
+;;;### (autoloads nil "helm-imenu" "../../../../../../.emacs.d/straight/build/helm/helm-imenu.el"
+;;;;;;  "8394aa9161b29307b62fd656f2a33b42")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-imenu.el
 
 (autoload 'helm-imenu "helm-imenu" "\
 Preconfigured `helm' for `imenu'.
@@ -490,13 +641,20 @@ A mode is similar as current if it is the same, it is derived i.e `derived-mode-
 or it have an association in `helm-imenu-all-buffer-assoc'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-imenu" "../../../../../../.emacs.d/straight/build/helm/helm-imenu.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-imenu.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-imenu" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-info" "helm-info.el" (0 0 0 0))
-;;; Generated autoloads from helm-info.el
+;;;### (autoloads nil "helm-info" "../../../../../../.emacs.d/straight/build/helm/helm-info.el"
+;;;;;;  "1c2dfa3fcc4ef2e38ca4dfcc0c7f91b5")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-info.el
 
 (autoload 'helm-info "helm-info" "\
 Preconfigured `helm' for searching Info files' indices.
@@ -518,13 +676,20 @@ Info files are made available.
 Preconfigured `helm' for searching info at point.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-info" "../../../../../../.emacs.d/straight/build/helm/helm-info.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-info.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-info" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-locate" "helm-locate.el" (0 0 0 0))
-;;; Generated autoloads from helm-locate.el
+;;;### (autoloads nil "helm-locate" "../../../../../../.emacs.d/straight/build/helm/helm-locate.el"
+;;;;;;  "1966c560c26dadb2188bf0acb722ed2d")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-locate.el
 
 (autoload 'helm-projects-find-files "helm-locate" "\
 Find files with locate in `helm-locate-project-list'.
@@ -547,26 +712,41 @@ Where db_path is a filename matched by
 `helm-locate-db-file-regexp'.
 
 \(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-locate"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-locate.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-locate.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-locate" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-man" "helm-man.el" (0 0 0 0))
-;;; Generated autoloads from helm-man.el
+;;;### (autoloads nil "helm-man" "../../../../../../.emacs.d/straight/build/helm/helm-man.el"
+;;;;;;  "badc40ec695f2528da3bd07b70bb457b")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-man.el
 
 (autoload 'helm-man-woman "helm-man" "\
 Preconfigured `helm' for Man and Woman pages.
 With a prefix arg reinitialize the cache.
 
 \(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-man" "../../../../../../.emacs.d/straight/build/helm/helm-man.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-man.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-man" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-misc" "helm-misc.el" (0 0 0 0))
-;;; Generated autoloads from helm-misc.el
+;;;### (autoloads nil "helm-misc" "../../../../../../.emacs.d/straight/build/helm/helm-misc.el"
+;;;;;;  "d3c888f91f90e36a088ad28b707e98e5")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-misc.el
 
 (autoload 'helm-world-time "helm-misc" "\
 Preconfigured `helm' to show world time.
@@ -593,13 +773,20 @@ Preconfigured helm for stumpwm commands.
 Preconfigured `helm' for `minibuffer-history'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-misc" "../../../../../../.emacs.d/straight/build/helm/helm-misc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-misc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-misc" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-mode" "helm-mode.el" (0 0 0 0))
-;;; Generated autoloads from helm-mode.el
+;;;### (autoloads nil "helm-mode" "../../../../../../.emacs.d/straight/build/helm/helm-mode.el"
+;;;;;;  "5a0c2d083c18e23fd9b0c357a21c2bcf")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-mode.el
 
 (autoload 'helm-comp-read "helm-mode" "\
 Read a string in the minibuffer, with helm completion.
@@ -691,10 +878,15 @@ Keys description:
 - MATCH-PART: Allow matching only one part of candidate.
   See match-part documentation in `helm-source'.
 
+- MATCH-DYNAMIC: See match-dynamic in `helm-source-sync'
+  It have no effect when used with CANDIDATES-IN-BUFFER.
+
 - ALLOW-NEST: Allow nesting this `helm-comp-read' in a helm session.
   See `helm'.
 
 - MULTILINE: See multiline in `helm-source'.
+
+- COERCE: See coerce in `helm-source'.
 
 - GROUP: See group in `helm-source'.
 
@@ -704,7 +896,7 @@ in `helm-current-prefix-arg', otherwise if prefix args were given before
 That's mean you can pass prefix args before or after calling a command
 that use `helm-comp-read' See `helm-M-x' for example.
 
-\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (BUFFER \"*Helm Completions*\") MUST-MATCH FUZZY REVERSE-HISTORY (REQUIRES-PATTERN 0) HISTORY INPUT-HISTORY (CASE-FOLD helm-comp-read-case-fold-search) (DEL-INPUT t) (PERSISTENT-ACTION nil) (PERSISTENT-HELP \"DoNothing\") (MODE-LINE helm-comp-read-mode-line) HELP-MESSAGE (KEYMAP helm-comp-read-map) (NAME \"Helm Completions\") HEADER-NAME CANDIDATES-IN-BUFFER MATCH-PART EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (VOLATILE t) SORT FC-TRANSFORMER HIST-FC-TRANSFORMER MARKED-CANDIDATES NOMARK (ALISTP t) (CANDIDATE-NUMBER-LIMIT helm-candidate-number-limit) MULTILINE ALLOW-NEST (GROUP \\='helm))" nil nil)
+\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (BUFFER \"*Helm Completions*\") MUST-MATCH FUZZY REVERSE-HISTORY (REQUIRES-PATTERN 0) HISTORY INPUT-HISTORY (CASE-FOLD helm-comp-read-case-fold-search) (DEL-INPUT t) (PERSISTENT-ACTION nil) (PERSISTENT-HELP \"DoNothing\") (MODE-LINE helm-comp-read-mode-line) HELP-MESSAGE (KEYMAP helm-comp-read-map) (NAME \"Helm Completions\") HEADER-NAME CANDIDATES-IN-BUFFER MATCH-PART MATCH-DYNAMIC EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (VOLATILE t) SORT FC-TRANSFORMER HIST-FC-TRANSFORMER MARKED-CANDIDATES NOMARK (ALISTP t) (CANDIDATE-NUMBER-LIMIT helm-candidate-number-limit) MULTILINE ALLOW-NEST COERCE (GROUP \\='helm))" nil nil)
 
 (autoload 'helm-read-file-name "helm-mode" "\
 Read a file name with helm completion.
@@ -762,41 +954,39 @@ or call the function `helm-mode'.")
 (autoload 'helm-mode "helm-mode" "\
 Toggle generic helm completion.
 
-All functions in Emacs that use `completing-read'
-or `read-file-name' and friends will use helm interface
-when this mode is turned on.
+All functions in Emacs that use `completing-read',
+`read-file-name', `completion-in-region' and friends will use helm
+interface when this mode is turned on.
 
 However you can modify this behavior for functions of your choice
 with `helm-completing-read-handlers-alist'.
 
-Also commands using `completion-in-region' will be helmized when
-`helm-mode-handle-completion-in-region' is non nil, you can modify
-this behavior with `helm-mode-no-completion-in-region-in-modes'.
-
 Called with a positive arg, turn on unconditionally, with a
 negative arg turn off.
-You can turn it on with `helm-mode'.
-
-Some crap emacs functions may not be supported,
-e.g `ffap-alternate-file' and maybe others
-You can add such functions to `helm-completing-read-handlers-alist'
-with a nil value.
+You can toggle it with M-x `helm-mode'.
 
 About `ido-mode':
-When you are using `helm-mode', DO NOT use `ido-mode', instead if you
-want some commands use `ido', add these commands to
+DO NOT enable `ido-everywhere' when using `helm-mode' and instead of
+using `ido-mode', add the commands where you want to use ido to
 `helm-completing-read-handlers-alist' with `ido' as value.
 
 Note: This mode is incompatible with Emacs23.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-mode" "../../../../../../.emacs.d/straight/build/helm/helm-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-mode" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-net" "helm-net.el" (0 0 0 0))
-;;; Generated autoloads from helm-net.el
+;;;### (autoloads nil "helm-net" "../../../../../../.emacs.d/straight/build/helm/helm-net.el"
+;;;;;;  "60fd1f4bcb4c07975cca308a75d365e7")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-net.el
 
 (autoload 'helm-browse-url-firefox "helm-net" "\
 Same as `browse-url-firefox' but detach from emacs.
@@ -842,13 +1032,20 @@ Preconfigured `helm' to search PATTERN with search ENGINE.
 Preconfigured `helm' for google search with google suggest.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-net" "../../../../../../.emacs.d/straight/build/helm/helm-net.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-net.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-net" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-occur" "helm-occur.el" (0 0 0 0))
-;;; Generated autoloads from helm-occur.el
+;;;### (autoloads nil "helm-occur" "../../../../../../.emacs.d/straight/build/helm/helm-occur.el"
+;;;;;;  "e74b1d5038b61aac16ab21d091065e40")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-occur.el
 
 (autoload 'helm-occur "helm-occur" "\
 Preconfigured helm for searching lines matching pattern in `current-buffer'.
@@ -866,14 +1063,6 @@ buffers (i.e. a helm command using `helm-source-buffers-list' like
 This is the helm implementation that collect lines matching pattern
 like vanilla emacs `occur' but have nothing to do with it, the search
 engine beeing completely different and also much faster.
-
-\(fn)" t nil)
-
-(autoload 'helm-occur-mode "helm-occur" "\
-Major mode to provide actions in helm moccur saved buffer.
-
-Special commands:
-\\{helm-occur-mode-map}
 
 \(fn)" t nil)
 
@@ -895,66 +1084,41 @@ The prefix arg can be set before calling
 To use this bind it to a key in `isearch-mode-map'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-occur" "../../../../../../.emacs.d/straight/build/helm/helm-occur.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-occur.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-occur" '("helm-")))
 
 ;;;***
-
-;;;### (autoloads nil "helm-org" "helm-org.el" (0 0 0 0))
-;;; Generated autoloads from helm-org.el
-
-(autoload 'helm-org-agenda-files-headings "helm-org" "\
-Preconfigured helm for org files headings.
-
-\(fn)" t nil)
-
-(autoload 'helm-org-in-buffer-headings "helm-org" "\
-Preconfigured helm for org buffer headings.
-
-\(fn)" t nil)
-
-(autoload 'helm-org-parent-headings "helm-org" "\
-Preconfigured helm for org headings that are parents of the
-current heading.
-
-\(fn)" t nil)
-
-(autoload 'helm-org-capture-templates "helm-org" "\
-Preconfigured helm for org templates.
-
-\(fn)" t nil)
-
-(autoload 'helm-org-completing-read-tags "helm-org" "\
-Completing read function for Org tags.
-
-This function is used as a `completing-read' function in
-`helm-completing-read-handlers-alist' by `org-set-tags' and
-`org-capture'.
-
-NOTE: Org tag completion will work only if you disable org fast tag
-selection, see (info \"(org) setting tags\").
-
-\(fn PROMPT COLLECTION PRED REQ INITIAL HIST DEF INHERIT-INPUT-METHOD NAME BUFFER)" nil nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-org" '("helm-")))
 
 ;;;***
 
-;;;### (autoloads nil "helm-regexp" "helm-regexp.el" (0 0 0 0))
-;;; Generated autoloads from helm-regexp.el
+;;;### (autoloads nil "helm-regexp" "../../../../../../.emacs.d/straight/build/helm/helm-regexp.el"
+;;;;;;  "26de7474994fb3df4391e7dd0be9b7f0")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-regexp.el
 
 (autoload 'helm-regexp "helm-regexp" "\
 Preconfigured helm to build regexps.
 `query-replace-regexp' can be run from there against found regexp.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-regexp"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-regexp.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-regexp.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-regexp" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-ring" "helm-ring.el" (0 0 0 0))
-;;; Generated autoloads from helm-ring.el
+;;;### (autoloads nil "helm-ring" "../../../../../../.emacs.d/straight/build/helm/helm-ring.el"
+;;;;;;  "22c4fb768089855ab2ec8145eeb68589")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-ring.el
 
 (autoload 'helm-mark-ring "helm-ring" "\
 Preconfigured `helm' for `helm-source-mark-ring'.
@@ -991,13 +1155,20 @@ See (info \"(emacs) Keyboard Macros\") for detailed infos.
 This command is useful when used with persistent action.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-ring" "../../../../../../.emacs.d/straight/build/helm/helm-ring.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-ring.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-ring" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-semantic" "helm-semantic.el" (0 0 0 0))
-;;; Generated autoloads from helm-semantic.el
+;;;### (autoloads nil "helm-semantic" "../../../../../../.emacs.d/straight/build/helm/helm-semantic.el"
+;;;;;;  "dffab0213de2bce5c71e79464e1d6a94")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-semantic.el
 
 (autoload 'helm-semantic "helm-semantic" "\
 Preconfigured `helm' for `semantic'.
@@ -1015,13 +1186,21 @@ semantic for generating tags, otherwise fall back to `imenu'.
 Fill in the symbol at point by default.
 
 \(fn ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-semantic"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-semantic.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-semantic.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-semantic" '("helm-s")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-shell" "helm-shell.el" (0 0 0 0))
-;;; Generated autoloads from helm-shell.el
+;;;### (autoloads nil "helm-shell" "../../../../../../.emacs.d/straight/build/helm/helm-shell.el"
+;;;;;;  "3fc423062ed0661eb12a5d29886a6179")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-shell.el
 
 (defalias 'helm-shell-prompts 'helm-comint-prompts)
 
@@ -1029,8 +1208,9 @@ Fill in the symbol at point by default.
 
 ;;;***
 
-;;;### (autoloads nil "helm-sys" "helm-sys.el" (0 0 0 0))
-;;; Generated autoloads from helm-sys.el
+;;;### (autoloads nil "helm-sys" "../../../../../../.emacs.d/straight/build/helm/helm-sys.el"
+;;;;;;  "93068973d31ca7e52fd40f57e81781f4")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-sys.el
 
 (defvar helm-top-poll-mode nil "\
 Non-nil if Helm-Top-Poll mode is enabled.
@@ -1061,13 +1241,20 @@ Preconfigured `helm' for emacs process.
 Preconfigured helm for xrandr.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-sys" "../../../../../../.emacs.d/straight/build/helm/helm-sys.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-sys.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-sys" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-tags" "helm-tags.el" (0 0 0 0))
-;;; Generated autoloads from helm-tags.el
+;;;### (autoloads nil "helm-tags" "../../../../../../.emacs.d/straight/build/helm/helm-tags.el"
+;;;;;;  "be12c9cd5200f5f38378f2c9f3bb3160")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-tags.el
 
 (autoload 'helm-etags-select "helm-tags" "\
 Preconfigured helm for etags.
@@ -1082,20 +1269,28 @@ This function aggregates three sources of tag files:
   3) `tags-table-list' which is commonly set by `visit-tags-table' command.
 
 \(fn REINIT)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-tags" "../../../../../../.emacs.d/straight/build/helm/helm-tags.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-tags.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-tags" '("helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-types" "helm-types.el" (0 0 0 0))
-;;; Generated autoloads from helm-types.el
+;;;### (autoloads "actual autoloads are elsewhere" "helm-types" "../../../../../../.emacs.d/straight/build/helm/helm-types.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-types.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-types" '("helm-")))
 
 ;;;***
 
-;;;### (autoloads nil "helm-utils" "helm-utils.el" (0 0 0 0))
-;;; Generated autoloads from helm-utils.el
+;;;### (autoloads nil "helm-utils" "../../../../../../.emacs.d/straight/build/helm/helm-utils.el"
+;;;;;;  "c59d9441accd8018f1978202f4b396ea")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-utils.el
 
 (defvar helm-popup-tip-mode nil "\
 Non-nil if Helm-Popup-Tip mode is enabled.
@@ -1111,20 +1306,66 @@ or call the function `helm-popup-tip-mode'.")
 Show help-echo informations in a popup tip at end of line.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm-utils" "../../../../../../.emacs.d/straight/build/helm/helm-utils.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-utils.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-utils" '("helm-" "with-helm-display-marked-candidates")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-x-files" "helm-x-files.el" (0 0 0 0))
-;;; Generated autoloads from helm-x-files.el
+;;;### (autoloads "actual autoloads are elsewhere" "helm-x-files"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-x-files.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm/helm-x-files.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-x-files" '("helm-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("helm-easymenu.el" "helm-pkg.el") (0 0
-;;;;;;  0 0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/helm/helm-adaptive.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-bookmark.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-buffers.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-color.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-comint.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-command.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-config.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-dabbrev.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-easymenu.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-elisp-package.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-elisp.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-eshell.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-eval.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-external.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-files.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-find.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-font.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-for-files.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-grep.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-help.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-id-utils.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-imenu.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-info.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-locate.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-man.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-misc.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-net.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-occur.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-pkg.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-regexp.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-ring.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-semantic.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-shell.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-sys.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-tags.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-types.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-utils.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm/helm-x-files.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

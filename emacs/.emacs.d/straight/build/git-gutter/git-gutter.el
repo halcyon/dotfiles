@@ -1,1 +1,1 @@
-/home/ksm/.emacs.d/straight/repos/emacs-git-gutter/git-gutter.el
+/home/ksm/.emacs.d/straight/repos/git-gutter/git-gutter.el

@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "test-simple" "test-simple.el" (0 0 0 0))
-;;; Generated autoloads from test-simple.el
+;;;### (autoloads nil "test-simple" "../../../../../../.emacs.d/straight/build/test-simple/test-simple.el"
+;;;;;;  "8f2b36696268d1611b9cfe9b532cca44")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/test-simple/test-simple.el
 
 (autoload 'test-simple-start "test-simple" "\
 
@@ -28,8 +29,20 @@ It is preferable to write at the first line of test files as a comment, e.g,
 Calling this function interactively, COMMAND-LINE-FORMATS is set above.
 
 \(fn &rest COMMAND-LINE-FORMATS)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "test-simple"
+;;;;;;  "../../../../../../.emacs.d/straight/build/test-simple/test-simple.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/test-simple/test-simple.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "test-simple" '("test-simple-" "end-tests" "assert-" "note")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/test-simple/test-simple.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

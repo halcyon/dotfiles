@@ -1,1 +1,1 @@
-/home/ksm/.emacs.d/straight/repos/emacs-helm-ag/helm-ag.el
+/home/ksm/.emacs.d/straight/repos/helm-ag/helm-ag.el

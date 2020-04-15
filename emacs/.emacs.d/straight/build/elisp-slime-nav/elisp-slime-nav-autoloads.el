@@ -3,19 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "elisp-slime-nav" "elisp-slime-nav.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from elisp-slime-nav.el
+;;;### (autoloads nil "elisp-slime-nav" "../../../../../../.emacs.d/straight/build/elisp-slime-nav/elisp-slime-nav.el"
+;;;;;;  "7671936de36d56bcc9f652a3c6823f39")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/elisp-slime-nav/elisp-slime-nav.el
 
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav" "\
 Enable Slime-style navigation of elisp symbols using M-. and M-,
 
 \(fn &optional ARG)" t nil)
 
-(autoload 'turn-on-elisp-slime-nav-mode "elisp-slime-nav" "\
-Explicitly enable `elisp-slime-nav-mode'.
-
-\(fn)" nil nil)
+(define-obsolete-function-alias 'turn-on-elisp-slime-nav-mode 'elisp-slime-nav-mode "2020-01-30")
 
 (autoload 'elisp-slime-nav-find-elisp-thing-at-point "elisp-slime-nav" "\
 Find the elisp thing at point, be it a function, variable, library or face.
@@ -38,8 +35,20 @@ for the symbol to jump to.
 Argument SYM-NAME is the thing to find.
 
 \(fn SYM-NAME)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "elisp-slime-nav"
+;;;;;;  "../../../../../../.emacs.d/straight/build/elisp-slime-nav/elisp-slime-nav.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/elisp-slime-nav/elisp-slime-nav.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elisp-slime-nav" '("elisp-slime-nav-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/elisp-slime-nav/elisp-slime-nav.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

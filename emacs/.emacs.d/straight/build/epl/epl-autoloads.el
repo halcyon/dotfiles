@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "epl" "epl.el" (0 0 0 0))
-;;; Generated autoloads from epl.el
+;;;### (autoloads "actual autoloads are elsewhere" "epl" "../../../../../../.emacs.d/straight/build/epl/epl.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/epl/epl.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "epl" '("epl-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/epl/epl.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "which-key" "which-key.el" (0 0 0 0))
-;;; Generated autoloads from which-key.el
+;;;### (autoloads nil "which-key" "../../../../../../.emacs.d/straight/build/which-key/which-key.el"
+;;;;;;  "5695ef829d25c3a171a028e9043cae6a")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/which-key/which-key.el
 
 (defvar which-key-mode nil "\
 Non-nil if Which-Key mode is enabled.
@@ -129,6 +130,15 @@ This function will also detect evil bindings made using
 `evil-define-key' in this map. These bindings will depend on the
 current evil state. 
 
+\(fn &optional ALL)" t nil)
+
+(autoload 'which-key-show-full-major-mode "which-key" "\
+Show all bindings in the map of the current major mode.
+
+This function will also detect evil bindings made using
+`evil-define-key' in this map. These bindings will depend on the
+current evil state. 
+
 \(fn)" t nil)
 
 (autoload 'which-key-dump-bindings "which-key" "\
@@ -169,9 +179,26 @@ selected interactively from all available keymaps.
 Show the top-level bindings in KEYMAP using which-key. KEYMAP
 is selected interactively by mode in `minor-mode-map-alist'.
 
+\(fn &optional ALL)" t nil)
+
+(autoload 'which-key-show-full-minor-mode-keymap "which-key" "\
+Show all bindings in KEYMAP using which-key. KEYMAP
+is selected interactively by mode in `minor-mode-map-alist'.
+
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "which-key" "../../../../../../.emacs.d/straight/build/which-key/which-key.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/which-key/which-key.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "which-key" '("which-key-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/which-key/which-key.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

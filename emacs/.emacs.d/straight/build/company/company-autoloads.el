@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "company" "company.el" (0 0 0 0))
-;;; Generated autoloads from company.el
+;;;### (autoloads nil "company" "../../../../../../.emacs.d/straight/build/company/company.el"
+;;;;;;  "fbc11102a38c7cfc4b3bb014794d26e9")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company.el
 
 (autoload 'company-mode "company" "\
 \"complete anything\"; is an in-buffer completion framework.
@@ -70,85 +71,127 @@ time, or when the selection has been changed, the selected candidate is
 inserted.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company" "../../../../../../.emacs.d/straight/build/company/company.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company" '("company-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-abbrev" "company-abbrev.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from company-abbrev.el
+;;;### (autoloads nil "company-abbrev" "../../../../../../.emacs.d/straight/build/company/company-abbrev.el"
+;;;;;;  "5c53bd58b979c8d570d3e6f0f4e35579")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-abbrev.el
 
 (autoload 'company-abbrev "company-abbrev" "\
 `company-mode' completion backend for abbrev.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-abbrev"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-abbrev.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-abbrev.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-abbrev" '("company-abbrev-insert")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-bbdb" "company-bbdb.el" (0 0 0 0))
-;;; Generated autoloads from company-bbdb.el
+;;;### (autoloads nil "company-bbdb" "../../../../../../.emacs.d/straight/build/company/company-bbdb.el"
+;;;;;;  "a45e0ae40074765c5de148460d742142")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-bbdb.el
 
 (autoload 'company-bbdb "company-bbdb" "\
 `company-mode' completion backend for BBDB.
 
 \(fn COMMAND &optional ARG &rest IGNORE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-bbdb"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-bbdb.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-bbdb.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-bbdb" '("company-bbdb-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-capf" "company-capf.el" (0 0 0 0))
-;;; Generated autoloads from company-capf.el
+;;;### (autoloads "actual autoloads are elsewhere" "company-capf"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-capf.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-capf.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-capf" '("company-")))
 
 ;;;***
 
-;;;### (autoloads nil "company-clang" "company-clang.el" (0 0 0 0))
-;;; Generated autoloads from company-clang.el
+;;;### (autoloads "actual autoloads are elsewhere" "company-clang"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-clang.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-clang.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-clang" '("company-clang")))
 
 ;;;***
 
-;;;### (autoloads nil "company-cmake" "company-cmake.el" (0 0 0 0))
-;;; Generated autoloads from company-cmake.el
+;;;### (autoloads "actual autoloads are elsewhere" "company-cmake"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-cmake.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-cmake.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-cmake" '("company-cmake")))
 
 ;;;***
 
-;;;### (autoloads nil "company-css" "company-css.el" (0 0 0 0))
-;;; Generated autoloads from company-css.el
+;;;### (autoloads nil "company-css" "../../../../../../.emacs.d/straight/build/company/company-css.el"
+;;;;;;  "08908e649d5189c7a96e7e95c2bfdbff")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-css.el
 
 (autoload 'company-css "company-css" "\
 `company-mode' completion backend for `css-mode'.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-css"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-css.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-css.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-css" '("company-css-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-dabbrev" "company-dabbrev.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from company-dabbrev.el
+;;;### (autoloads nil "company-dabbrev" "../../../../../../.emacs.d/straight/build/company/company-dabbrev.el"
+;;;;;;  "789a195f95ddb9581c6b48f67a1e2d6c")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-dabbrev.el
 
 (autoload 'company-dabbrev "company-dabbrev" "\
 dabbrev-like `company-mode' completion backend.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-dabbrev"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-dabbrev.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-dabbrev.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-dabbrev" '("company-dabbrev-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-dabbrev-code" "company-dabbrev-code.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from company-dabbrev-code.el
+;;;### (autoloads nil "company-dabbrev-code" "../../../../../../.emacs.d/straight/build/company/company-dabbrev-code.el"
+;;;;;;  "48580f10fbb5c8b3aadae36f968ae8f5")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-dabbrev-code.el
 
 (autoload 'company-dabbrev-code "company-dabbrev-code" "\
 dabbrev-like `company-mode' backend for code.
@@ -156,44 +199,70 @@ The backend looks for all symbols in the current buffer that aren't in
 comments or strings.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-dabbrev-code"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-dabbrev-code.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-dabbrev-code.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-dabbrev-code" '("company-dabbrev-code-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-eclim" "company-eclim.el" (0 0 0 0))
-;;; Generated autoloads from company-eclim.el
+;;;### (autoloads "actual autoloads are elsewhere" "company-eclim"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-eclim.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-eclim.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-eclim" '("company-eclim")))
 
 ;;;***
 
-;;;### (autoloads nil "company-elisp" "company-elisp.el" (0 0 0 0))
-;;; Generated autoloads from company-elisp.el
+;;;### (autoloads nil "company-elisp" "../../../../../../.emacs.d/straight/build/company/company-elisp.el"
+;;;;;;  "37dc6d9a70d7c716c823e52868eb1293")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-elisp.el
 
 (autoload 'company-elisp "company-elisp" "\
 `company-mode' completion backend for Emacs Lisp.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-elisp"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-elisp.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-elisp.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-elisp" '("company-elisp-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-etags" "company-etags.el" (0 0 0 0))
-;;; Generated autoloads from company-etags.el
+;;;### (autoloads nil "company-etags" "../../../../../../.emacs.d/straight/build/company/company-etags.el"
+;;;;;;  "8594d62ca3f76d6bca1c70d3adc9dccb")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-etags.el
 
 (autoload 'company-etags "company-etags" "\
 `company-mode' completion backend for etags.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-etags"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-etags.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-etags.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-etags" '("company-etags-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-files" "company-files.el" (0 0 0 0))
-;;; Generated autoloads from company-files.el
+;;;### (autoloads nil "company-files" "../../../../../../.emacs.d/straight/build/company/company-files.el"
+;;;;;;  "a4d79fa0698ed9347b90f130cfc785ba")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-files.el
 
 (autoload 'company-files "company-files" "\
 `company-mode' completion backend existing file names.
@@ -201,109 +270,170 @@ Completions works for proper absolute and relative files paths.
 File paths with spaces are only supported inside strings.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-files"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-files.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-files.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-files" '("company-file")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-gtags" "company-gtags.el" (0 0 0 0))
-;;; Generated autoloads from company-gtags.el
+;;;### (autoloads nil "company-gtags" "../../../../../../.emacs.d/straight/build/company/company-gtags.el"
+;;;;;;  "f690d1989ec1fc8061c0caeefb8cad6c")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-gtags.el
 
 (autoload 'company-gtags "company-gtags" "\
 `company-mode' completion backend for GNU Global.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-gtags"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-gtags.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-gtags.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-gtags" '("company-gtags-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-ispell" "company-ispell.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from company-ispell.el
+;;;### (autoloads nil "company-ispell" "../../../../../../.emacs.d/straight/build/company/company-ispell.el"
+;;;;;;  "40ad97c8f82cc4fbdb17da0b429e5397")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-ispell.el
 
 (autoload 'company-ispell "company-ispell" "\
 `company-mode' completion backend using Ispell.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-ispell"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-ispell.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-ispell.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-ispell" '("company-ispell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-keywords" "company-keywords.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from company-keywords.el
+;;;### (autoloads nil "company-keywords" "../../../../../../.emacs.d/straight/build/company/company-keywords.el"
+;;;;;;  "79a00d9acfb11b20646caa237d66a029")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-keywords.el
 
 (autoload 'company-keywords "company-keywords" "\
 `company-mode' backend for programming language keywords.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-keywords"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-keywords.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-keywords.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-keywords" '("company-keywords-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-nxml" "company-nxml.el" (0 0 0 0))
-;;; Generated autoloads from company-nxml.el
+;;;### (autoloads nil "company-nxml" "../../../../../../.emacs.d/straight/build/company/company-nxml.el"
+;;;;;;  "296292d9e829c7cd40fcf0566f085ed8")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-nxml.el
 
 (autoload 'company-nxml "company-nxml" "\
 `company-mode' completion backend for `nxml-mode'.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-nxml"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-nxml.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-nxml.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-nxml" '("company-nxml-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-oddmuse" "company-oddmuse.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from company-oddmuse.el
+;;;### (autoloads nil "company-oddmuse" "../../../../../../.emacs.d/straight/build/company/company-oddmuse.el"
+;;;;;;  "4d585ed74b0f1654770bb4486c5554da")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-oddmuse.el
 
 (autoload 'company-oddmuse "company-oddmuse" "\
 `company-mode' completion backend for `oddmuse-mode'.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-oddmuse"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-oddmuse.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-oddmuse.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-oddmuse" '("company-oddmuse-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-semantic" "company-semantic.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from company-semantic.el
+;;;### (autoloads nil "company-semantic" "../../../../../../.emacs.d/straight/build/company/company-semantic.el"
+;;;;;;  "905ad8450f74fcdff3855d8544a47bfe")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-semantic.el
 
 (autoload 'company-semantic "company-semantic" "\
 `company-mode' completion backend using CEDET Semantic.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-semantic"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-semantic.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-semantic.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-semantic" '("company-semantic-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-template" "company-template.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from company-template.el
+;;;### (autoloads "actual autoloads are elsewhere" "company-template"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-template.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-template.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-template" '("company-template-")))
 
 ;;;***
 
-;;;### (autoloads nil "company-tempo" "company-tempo.el" (0 0 0 0))
-;;; Generated autoloads from company-tempo.el
+;;;### (autoloads nil "company-tempo" "../../../../../../.emacs.d/straight/build/company/company-tempo.el"
+;;;;;;  "ef7bf243940ad89d1f44ecffcfa3949c")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-tempo.el
 
 (autoload 'company-tempo "company-tempo" "\
 `company-mode' completion backend for tempo.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-tempo"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-tempo.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-tempo.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-tempo" '("company-tempo-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-tng" "company-tng.el" (0 0 0 0))
-;;; Generated autoloads from company-tng.el
+;;;### (autoloads nil "company-tng" "../../../../../../.emacs.d/straight/build/company/company-tng.el"
+;;;;;;  "a4699108045e505b9384c506c12bd612")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-tng.el
 
 (autoload 'company-tng-frontend "company-tng" "\
 When the user changes the selection at least once, this
@@ -317,26 +447,41 @@ confirm the selection and finish the completion.
 Applies the default configuration to enable company-tng.
 
 \(fn)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-tng"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-tng.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-tng.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-tng" '("company-tng--")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-xcode" "company-xcode.el" (0 0 0 0))
-;;; Generated autoloads from company-xcode.el
+;;;### (autoloads nil "company-xcode" "../../../../../../.emacs.d/straight/build/company/company-xcode.el"
+;;;;;;  "0106fec3041ec311c0850ad16a5d099a")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-xcode.el
 
 (autoload 'company-xcode "company-xcode" "\
 `company-mode' completion backend for Xcode projects.
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-xcode"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-xcode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-xcode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-xcode" '("company-xcode-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "company-yasnippet" "company-yasnippet.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from company-yasnippet.el
+;;;### (autoloads nil "company-yasnippet" "../../../../../../.emacs.d/straight/build/company/company-yasnippet.el"
+;;;;;;  "441999fbbc2ef58e47f3f0d5cab7f8df")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-yasnippet.el
 
 (autoload 'company-yasnippet "company-yasnippet" "\
 `company-mode' backend for `yasnippet'.
@@ -362,8 +507,43 @@ shadow backends that come after it.  Recommended usages:
   (global-set-key (kbd \"C-c y\") 'company-yasnippet)
 
 \(fn COMMAND &optional ARG &rest IGNORE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "company-yasnippet"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-yasnippet.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/company/company-yasnippet.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-yasnippet" '("company-yasnippet--")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-yasnippet" '("company-yasnippet-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/company/company-abbrev.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-bbdb.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-capf.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-clang.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-cmake.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-css.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-dabbrev-code.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-dabbrev.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-eclim.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-elisp.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-etags.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-files.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-gtags.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-ispell.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-keywords.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-nxml.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-oddmuse.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-semantic.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-template.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-tempo.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-tng.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-xcode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company-yasnippet.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/company/company.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

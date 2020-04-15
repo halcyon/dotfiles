@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "load-relative" "load-relative.el" (0 0 0 0))
-;;; Generated autoloads from load-relative.el
+;;;### (autoloads nil "load-relative" "../../../../../../.emacs.d/straight/build/load-relative/load-relative.el"
+;;;;;;  "3ff6c8bc664043cd53d2f732dc8c8026")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/load-relative/load-relative.el
 
 (autoload '__FILE__ "load-relative" "\
 Return the string name of file/buffer that is currently begin executed.
@@ -91,12 +92,21 @@ the previous example, if you write (provide-me \"bar-\") this is the
 same as writing (provide \\='bar-foo).
 
 \(fn &optional PREFIX)" nil t)
+
+;;;### (autoloads "actual autoloads are elsewhere" "load-relative"
+;;;;;;  "../../../../../../.emacs.d/straight/build/load-relative/load-relative.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/load-relative/load-relative.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "load-relative" '("autoload-relative")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil nil ("el-get-install.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/load-relative/el-get-install.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/load-relative/load-relative.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

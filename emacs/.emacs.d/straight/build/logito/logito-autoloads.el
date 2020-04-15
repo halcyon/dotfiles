@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "logito" "logito.el" (0 0 0 0))
-;;; Generated autoloads from logito.el
+;;;### (autoloads "actual autoloads are elsewhere" "logito" "../../../../../../.emacs.d/straight/build/logito/logito.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/logito/logito.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "logito" '("logito-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/logito/logito.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "emojify" "emojify.el" (0 0 0 0))
-;;; Generated autoloads from emojify.el
+;;;### (autoloads nil "emojify" "../../../../../../.emacs.d/straight/build/emojify/emojify.el"
+;;;;;;  "b7300ae0fa2d0370a68d81940178ec8c")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/emojify/emojify.el
 
 (autoload 'emojify-set-emoji-styles "emojify" "\
 Set the type of emojis that should be displayed.
@@ -78,8 +79,19 @@ Interactively prompt for Emojis and insert them in the current buffer.
 This respects the `emojify-emoji-styles' variable.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "emojify" "../../../../../../.emacs.d/straight/build/emojify/emojify.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/emojify/emojify.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "emojify" '("emojify-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/emojify/emojify.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

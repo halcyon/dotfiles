@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "diminish" "diminish.el" (0 0 0 0))
-;;; Generated autoloads from diminish.el
+;;;### (autoloads nil "diminish" "../../../../../../.emacs.d/straight/build/diminish/diminish.el"
+;;;;;;  "37729ba4482c3bf4ad0cda6095b387c1")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/diminish/diminish.el
 
 (autoload 'diminish "diminish" "\
 Diminish mode-line display of minor mode MODE to TO-WHAT (default \"\").
@@ -45,8 +46,19 @@ This doesn't change the status of any modes; it just lets you see
 what diminished modes would be on the mode-line if they were still minor.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "diminish" "../../../../../../.emacs.d/straight/build/diminish/diminish.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/diminish/diminish.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "diminish" '("diminish")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/diminish/diminish.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

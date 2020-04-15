@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "gnus-alias" "gnus-alias.el" (0 0 0 0))
-;;; Generated autoloads from gnus-alias.el
+;;;### (autoloads nil "gnus-alias" "../../../../../../.emacs.d/straight/build/gnus-alias/gnus-alias.el"
+;;;;;;  "8355d3e0e79ef483126baeeec6ee8653")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/gnus-alias/gnus-alias.el
 
 (autoload 'gnus-alias-init "gnus-alias" "\
 Add gnus-alias call to message mode hook.
@@ -58,8 +59,19 @@ for details).  If such an argument is not needed in the current
 context, `gnus-alias-determine-identity' may be used directly in a hook.
 
 \(fn WHICH-HEADER)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "gnus-alias" "../../../../../../.emacs.d/straight/build/gnus-alias/gnus-alias.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/gnus-alias/gnus-alias.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gnus-alias" '("gnus-alias-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/gnus-alias/gnus-alias.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

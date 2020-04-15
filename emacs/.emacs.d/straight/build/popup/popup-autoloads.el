@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "popup" "popup.el" (0 0 0 0))
-;;; Generated autoloads from popup.el
+;;;### (autoloads "actual autoloads are elsewhere" "popup" "../../../../../../.emacs.d/straight/build/popup/popup.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/popup/popup.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "popup" '("popup-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/popup/popup.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,15 +3,17 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "poly-lock" "poly-lock.el" (0 0 0 0))
-;;; Generated autoloads from poly-lock.el
+;;;### (autoloads "actual autoloads are elsewhere" "poly-lock" "../../../../../../.emacs.d/straight/build/polymode/poly-lock.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/poly-lock.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poly-lock" '("poly-lock-")))
 
 ;;;***
 
-;;;### (autoloads nil "polymode" "polymode.el" (0 0 0 0))
-;;; Generated autoloads from polymode.el
+;;;### (autoloads nil "polymode" "../../../../../../.emacs.d/straight/build/polymode/polymode.el"
+;;;;;;  "44d2ddd47df8c6005dd1a61f3e0cf083")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode.el
 
 (autoload 'define-polymode "polymode" "\
 Define a new polymode MODE.
@@ -82,36 +84,47 @@ most frequently used slots are:
 \(fn MODE &optional PARENT DOC &rest BODY)" nil t)
 
 (function-put 'define-polymode 'doc-string-elt '3)
+
+;;;### (autoloads "actual autoloads are elsewhere" "polymode" "../../../../../../.emacs.d/straight/build/polymode/polymode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode" '("pm-" "poly")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "polymode-base" "polymode-base.el" (0 0 0 0))
-;;; Generated autoloads from polymode-base.el
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-base"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-base.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-base.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-base" '("poly-")))
 
 ;;;***
 
-;;;### (autoloads nil "polymode-classes" "polymode-classes.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from polymode-classes.el
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-classes"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-classes.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-classes.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-classes" '("pm-")))
 
 ;;;***
 
-;;;### (autoloads nil "polymode-compat" "polymode-compat.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from polymode-compat.el
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-compat"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-compat.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-compat.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-compat" '("pm-" "polymode-" "*span*")))
 
 ;;;***
 
-;;;### (autoloads nil "polymode-core" "polymode-core.el" (0 0 0 0))
-;;; Generated autoloads from polymode-core.el
+;;;### (autoloads nil "polymode-core" "../../../../../../.emacs.d/straight/build/polymode/polymode-core.el"
+;;;;;;  "80b1654ec3001cd0bd8cf623b3a42044")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-core.el
 
 (defvar-local polymode-default-inner-mode nil "\
 Inner mode for chunks with unspecified modes.
@@ -155,14 +168,21 @@ key-value pairs. See the documentation of the class
 \(fn NAME &optional PARENT DOC &rest KEY-ARGS)" nil t)
 
 (function-put 'define-auto-innermode 'doc-string-elt '3)
+
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-core"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-core.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-core.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-core" '("polymode-" "*span*")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "polymode-debug" "polymode-debug.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from polymode-debug.el
+;;;### (autoloads nil "polymode-debug" "../../../../../../.emacs.d/straight/build/polymode/polymode-debug.el"
+;;;;;;  "6deb2466260bf01f948fb2b9c39df18a")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-debug.el
 
 (autoload 'pm-debug-minor-mode "polymode-debug" "\
 Turns on/off useful facilities for debugging polymode.
@@ -220,44 +240,67 @@ If OUT-TYPE is 'buffer, print the variables in the dedicated
 buffer, if 'message issue a message, if nil just return a list of values.
 
 \(fn &optional OUT-TYPE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-debug"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-debug.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-debug.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-debug" '("pm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "polymode-export" "polymode-export.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from polymode-export.el
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-export"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-export.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-export.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-export" '("pm-" "poly")))
 
 ;;;***
 
-;;;### (autoloads nil "polymode-methods" "polymode-methods.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from polymode-methods.el
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-methods"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-methods.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-methods.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-methods" '("pm-")))
 
 ;;;***
 
-;;;### (autoloads nil "polymode-test-utils" "polymode-test-utils.el"
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-test-utils"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-test-utils.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from polymode-test-utils.el
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-test-utils.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-test-utils" '("pm-")))
 
 ;;;***
 
-;;;### (autoloads nil "polymode-weave" "polymode-weave.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from polymode-weave.el
+;;;### (autoloads "actual autoloads are elsewhere" "polymode-weave"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-weave.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/polymode/polymode-weave.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-weave" '("pm-" "polymode-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("polymode-tangle.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/polymode/poly-lock.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-base.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-classes.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-compat.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-core.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-debug.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-export.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-methods.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-tangle.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-test-utils.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode-weave.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/polymode/polymode.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

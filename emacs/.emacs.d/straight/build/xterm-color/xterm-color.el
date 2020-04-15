@@ -1,0 +1,1 @@
+/home/ksm/.emacs.d/straight/repos/xterm-color/xterm-color.el

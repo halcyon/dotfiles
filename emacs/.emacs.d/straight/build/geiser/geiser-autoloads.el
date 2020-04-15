@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "geiser" "geiser.el" (0 0 0 0))
-;;; Generated autoloads from geiser.el
+;;;### (autoloads nil "geiser" "../../../../../../.emacs.d/straight/build/geiser/geiser.el"
+;;;;;;  "8141660ed4d375f7b917dc52dc4bcf47")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser.el
 
 (defconst geiser-elisp-dir (file-name-directory load-file-name) "\
 Directory containing Geiser's Elisp files.")
@@ -53,6 +54,15 @@ Start a Geiser Guile REPL, or switch to a running one." t)
 (autoload 'connect-to-guile "geiser-guile" "\
 Connect to a remote Geiser Guile REPL." t)
 
+(autoload 'run-gambit "geiser-gambit" "\
+Start a Geiser Gambit REPL." t)
+
+(autoload 'switch-to-gambit "geiser-gambit" "\
+Start a Geiser Gambit REPL, or switch to a running one." t)
+
+(autoload 'connect-to-gambit "geiser-gambit" "\
+Connect to a remote Geiser Gambit REPL." t)
+
 (autoload 'run-racket "geiser-racket" "\
 Start a Geiser Racket REPL." t)
 
@@ -97,7 +107,7 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 
 (autoload 'geiser-mode--maybe-activate "geiser-mode")
 
-(mapc (lambda (group) (custom-add-load group (symbol-name group)) (custom-add-load 'geiser (symbol-name group))) '(geiser geiser-repl geiser-autodoc geiser-doc geiser-debug geiser-faces geiser-mode geiser-guile geiser-image geiser-racket geiser-chicken geiser-chez geiser-chibi geiser-mit geiser-implementation geiser-xref))
+(mapc (lambda (group) (custom-add-load group (symbol-name group)) (custom-add-load 'geiser (symbol-name group))) '(geiser geiser-repl geiser-autodoc geiser-doc geiser-debug geiser-faces geiser-mode geiser-guile geiser-gambit geiser-image geiser-racket geiser-chicken geiser-chez geiser-chibi geiser-mit geiser-implementation geiser-xref))
 
 (add-hook 'scheme-mode-hook 'geiser-mode--maybe-activate)
 
@@ -105,213 +115,305 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 
 ;;;***
 
-;;;### (autoloads nil "geiser-autodoc" "geiser-autodoc.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from geiser-autodoc.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-autodoc"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-autodoc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-autodoc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-autodoc" '("geiser-autodoc-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-base" "geiser-base.el" (0 0 0 0))
-;;; Generated autoloads from geiser-base.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-base"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-base.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-base.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-base" '("geiser--")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-chez" "geiser-chez.el" (0 0 0 0))
-;;; Generated autoloads from geiser-chez.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-chez"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-chez.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-chez.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-chez" '("chez" "geiser-chez-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-chibi" "geiser-chibi.el" (0 0 0 0))
-;;; Generated autoloads from geiser-chibi.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-chibi"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-chibi.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-chibi.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-chibi" '("chibi" "geiser-chibi-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-chicken" "geiser-chicken.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from geiser-chicken.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-chicken"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-chicken.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-chicken.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-chicken" '("connect-to-chicken" "chicken" "geiser-chicken")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-company" "geiser-company.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from geiser-company.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-company"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-company.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-company.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-company" '("geiser-company--")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-compile" "geiser-compile.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from geiser-compile.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-compile"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-compile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-compile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-compile" '("geiser-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-completion" "geiser-completion.el"
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-completion"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-completion.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from geiser-completion.el
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-completion.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-completion" '("geiser-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-connection" "geiser-connection.el"
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-connection"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-connection.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from geiser-connection.el
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-connection.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-connection" '("geiser-con")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-custom" "geiser-custom.el" (0 0 0 0))
-;;; Generated autoloads from geiser-custom.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-custom"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-custom.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-custom.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-custom" '("geiser-custom-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-debug" "geiser-debug.el" (0 0 0 0))
-;;; Generated autoloads from geiser-debug.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-debug"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-debug.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-debug.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-debug" '("geiser-debug-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-doc" "geiser-doc.el" (0 0 0 0))
-;;; Generated autoloads from geiser-doc.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-doc" "../../../../../../.emacs.d/straight/build/geiser/geiser-doc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-doc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-doc" '("geiser-doc-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-edit" "geiser-edit.el" (0 0 0 0))
-;;; Generated autoloads from geiser-edit.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-edit"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-edit.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-edit.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-edit" '("geiser-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-eval" "geiser-eval.el" (0 0 0 0))
-;;; Generated autoloads from geiser-eval.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-eval"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-eval.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-eval.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-eval" '("geiser-eval--")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-guile" "geiser-guile.el" (0 0 0 0))
-;;; Generated autoloads from geiser-guile.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-gambit"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-gambit.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-gambit.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-gambit" '("geiser-gambit-" "gambit" "connect-to-gambit")))
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-guile"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-guile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-guile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-guile" '("geiser-guile-" "guile" "connect-to-guile")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-image" "geiser-image.el" (0 0 0 0))
-;;; Generated autoloads from geiser-image.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-image"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-image.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-image.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-image" '("geiser-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-impl" "geiser-impl.el" (0 0 0 0))
-;;; Generated autoloads from geiser-impl.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-impl"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-impl.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-impl.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-impl" '("geiser-" "with--geiser-implementation" "define-geiser-implementation")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-log" "geiser-log.el" (0 0 0 0))
-;;; Generated autoloads from geiser-log.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-log" "../../../../../../.emacs.d/straight/build/geiser/geiser-log.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-log.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-log" '("geiser-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-menu" "geiser-menu.el" (0 0 0 0))
-;;; Generated autoloads from geiser-menu.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-menu"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-menu.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-menu.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-menu" '("geiser-menu--")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-mit" "geiser-mit.el" (0 0 0 0))
-;;; Generated autoloads from geiser-mit.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-mit" "../../../../../../.emacs.d/straight/build/geiser/geiser-mit.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-mit.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-mit" '("mit" "geiser-mit-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-mode" "geiser-mode.el" (0 0 0 0))
-;;; Generated autoloads from geiser-mode.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-mode"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-mode" '("geiser-" "turn-o")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-popup" "geiser-popup.el" (0 0 0 0))
-;;; Generated autoloads from geiser-popup.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-popup"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-popup.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-popup.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-popup" '("geiser-popup-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-racket" "geiser-racket.el" (0 0 0 0))
-;;; Generated autoloads from geiser-racket.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-racket"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-racket.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-racket.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-racket" '("racket" "run-gracket" "geiser-racket-" "connect-to-racket")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-reload" "geiser-reload.el" (0 0 0 0))
-;;; Generated autoloads from geiser-reload.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-reload"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-reload.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-reload.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-reload" '("geiser-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-repl" "geiser-repl.el" (0 0 0 0))
-;;; Generated autoloads from geiser-repl.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-repl"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-repl.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-repl.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-repl" '("geiser" "switch-to-geiser" "run-geiser")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-syntax" "geiser-syntax.el" (0 0 0 0))
-;;; Generated autoloads from geiser-syntax.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-syntax"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-syntax.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-syntax.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-syntax" '("geiser-syntax--")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-table" "geiser-table.el" (0 0 0 0))
-;;; Generated autoloads from geiser-table.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-table"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-table.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-table.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-table" '("geiser-table-")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-version" "geiser-version.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from geiser-version.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-version"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-version.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-version.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-version" '("geiser-version")))
 
 ;;;***
 
-;;;### (autoloads nil "geiser-xref" "geiser-xref.el" (0 0 0 0))
-;;; Generated autoloads from geiser-xref.el
+;;;### (autoloads "actual autoloads are elsewhere" "geiser-xref"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-xref.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/geiser/geiser-xref.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-xref" '("geiser-xref-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/geiser/geiser-autodoc.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-base.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-chez.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-chibi.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-chicken.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-company.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-compile.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-completion.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-connection.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-custom.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-debug.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-doc.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-edit.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-eval.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-gambit.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-guile.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-image.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-impl.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-log.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-menu.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-mit.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-popup.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-racket.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-reload.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-repl.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-syntax.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-table.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-version.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser-xref.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/geiser/geiser.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

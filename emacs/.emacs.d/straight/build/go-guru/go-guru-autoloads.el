@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "go-guru" "go-guru.el" (0 0 0 0))
-;;; Generated autoloads from go-guru.el
+;;;### (autoloads nil "go-guru" "../../../../../../.emacs.d/straight/build/go-guru/go-guru.el"
+;;;;;;  "b4e82de1e4a36c260d29d41d9ab15ea1")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/go-guru/go-guru.el
 
 (autoload 'go-guru-set-scope "go-guru" "\
 Set the scope for the Go guru, prompting the user to edit the previous scope.
@@ -102,8 +103,19 @@ Highlight instances of the identifier at point after a short
 timeout.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "go-guru" "../../../../../../.emacs.d/straight/build/go-guru/go-guru.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/go-guru/go-guru.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-guru" '("go-guru-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/go-guru/go-guru.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

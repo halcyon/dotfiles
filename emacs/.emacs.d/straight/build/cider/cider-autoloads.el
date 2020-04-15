@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "cider" "cider.el" (0 0 0 0))
-;;; Generated autoloads from cider.el
+;;;### (autoloads nil "cider" "../../../../../../.emacs.d/straight/build/cider/cider.el"
+;;;;;;  "9b1cc5105c93318e932130efdb6620fd")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider.el
 
 (autoload 'cider-version "cider" "\
 Display CIDER's version.
@@ -102,13 +103,20 @@ Start a connection of any type interactively.
 (define-obsolete-function-alias 'cider-connect-sibling-clojurescript 'cider-connect-sibling-cljs "0.22")
 
 (with-eval-after-load 'clojure-mode (define-key clojure-mode-map (kbd "C-c M-x") #'cider) (define-key clojure-mode-map (kbd "C-c M-j") #'cider-jack-in-clj) (define-key clojure-mode-map (kbd "C-c M-J") #'cider-jack-in-cljs) (define-key clojure-mode-map (kbd "C-c M-c") #'cider-connect-clj) (define-key clojure-mode-map (kbd "C-c M-C") #'cider-connect-cljs) (define-key clojure-mode-map (kbd "C-c C-x") 'cider-start-map) (define-key clojure-mode-map (kbd "C-c C-s") 'sesman-map) (require 'sesman) (sesman-install-menu clojure-mode-map) (add-hook 'clojure-mode-hook (lambda nil (setq-local sesman-system 'CIDER))))
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider" "../../../../../../.emacs.d/straight/build/cider/cider.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-apropos" "cider-apropos.el" (0 0 0 0))
-;;; Generated autoloads from cider-apropos.el
+;;;### (autoloads nil "cider-apropos" "../../../../../../.emacs.d/straight/build/cider/cider-apropos.el"
+;;;;;;  "93a34045d4ecdfa5d9352db451fc0219")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-apropos.el
 
 (autoload 'cider-apropos "cider-apropos" "\
 Show all symbols whose names match QUERY, a regular expression.
@@ -140,14 +148,21 @@ optionally search doc strings (based on DOCS-P), include private vars
 Shortcut for (cider-apropos-select <query> nil t).
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-apropos"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-apropos.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-apropos.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-apropos" '("cider-" "apropos-special-form")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-browse-ns" "cider-browse-ns.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from cider-browse-ns.el
+;;;### (autoloads nil "cider-browse-ns" "../../../../../../.emacs.d/straight/build/cider/cider-browse-ns.el"
+;;;;;;  "0e34fd31908839a9eb96e29f7975244a")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-browse-ns.el
 
 (autoload 'cider-browse-ns "cider-browse-ns" "\
 List all NAMESPACE's vars in BUFFER.
@@ -158,14 +173,21 @@ List all NAMESPACE's vars in BUFFER.
 List all loaded namespaces in BUFFER.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-browse-ns"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-browse-ns.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-browse-ns.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-browse-ns" '("cider-browse-ns-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-browse-spec" "cider-browse-spec.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from cider-browse-spec.el
+;;;### (autoloads nil "cider-browse-spec" "../../../../../../.emacs.d/straight/build/cider/cider-browse-spec.el"
+;;;;;;  "b5971b9566949d9028e9940a9f8e42e1")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-browse-spec.el
 
 (autoload 'cider-browse-spec "cider-browse-spec" "\
 Browse SPEC definition.
@@ -179,14 +201,21 @@ With a prefix argument ARG, prompts for a regexp to filter specs.
 No filter applied if the regexp is the empty string.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-browse-spec"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-browse-spec.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-browse-spec.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-browse-spec" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-cheatsheet" "cider-cheatsheet.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from cider-cheatsheet.el
+;;;### (autoloads nil "cider-cheatsheet" "../../../../../../.emacs.d/straight/build/cider/cider-cheatsheet.el"
+;;;;;;  "5ef7fad4d07cd52bd20a594ee998c5c5")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-cheatsheet.el
 
 (autoload 'cider-cheatsheet "cider-cheatsheet" "\
 Navigate `cider-cheatsheet-hierarchy' with `completing-read'.
@@ -194,14 +223,21 @@ Navigate `cider-cheatsheet-hierarchy' with `completing-read'.
 When you make it to a Clojure var its doc buffer gets displayed.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-cheatsheet"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-cheatsheet.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-cheatsheet.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-cheatsheet" '("cider-cheatsheet-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-classpath" "cider-classpath.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from cider-classpath.el
+;;;### (autoloads nil "cider-classpath" "../../../../../../.emacs.d/straight/build/cider/cider-classpath.el"
+;;;;;;  "66dc46772e4dc7378f943571d0e2c64c")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-classpath.el
 
 (autoload 'cider-classpath "cider-classpath" "\
 List all classpath entries.
@@ -212,43 +248,95 @@ List all classpath entries.
 Open a classpath entry.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-classpath"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-classpath.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-classpath.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-classpath" '("cider-classpath-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-client" "cider-client.el" (0 0 0 0))
-;;; Generated autoloads from cider-client.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-client"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-client.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-client.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-client" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-common" "cider-common.el" (0 0 0 0))
-;;; Generated autoloads from cider-common.el
+;;;### (autoloads nil "cider-clojuredocs" "../../../../../../.emacs.d/straight/build/cider/cider-clojuredocs.el"
+;;;;;;  "f1ef6211d217e590194637d30c8db980")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-clojuredocs.el
+
+(autoload 'cider-clojuredocs-web "cider-clojuredocs" "\
+Open ClojureDocs documentation in the default web browser.
+
+Prompts for the symbol to use, or uses the symbol at point, depending on
+the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
+opposite of what that option dictates.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'cider-clojuredocs-refresh-cache "cider-clojuredocs" "\
+Refresh the ClojureDocs cache.
+
+\(fn)" t nil)
+
+(autoload 'cider-clojuredocs "cider-clojuredocs" "\
+Open ClojureDocs documentation in a popup buffer.
+
+Prompts for the symbol to use, or uses the symbol at point, depending on
+the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
+opposite of what that option dictates.
+
+\(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-clojuredocs"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-clojuredocs.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-clojuredocs.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-clojuredocs" '("cider-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-common"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-common.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-common.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-common" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-completion" "cider-completion.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from cider-completion.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-completion"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-completion.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-completion.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-completion" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-connection" "cider-connection.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from cider-connection.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-connection"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-connection.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-connection.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-connection" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-debug" "cider-debug.el" (0 0 0 0))
-;;; Generated autoloads from cider-debug.el
+;;;### (autoloads nil "cider-debug" "../../../../../../.emacs.d/straight/build/cider/cider-debug.el"
+;;;;;;  "682df4f27efd98ff47e579c8c7dd3f6d")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-debug.el
 
 (autoload 'cider-debug-defun-at-point "cider-debug" "\
 Instrument the \"top-level\" expression at point.
@@ -260,34 +348,46 @@ source code and displayed the value of various expressions.  At each step,
 a number of keys will be prompted to the user.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-debug"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-debug.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-debug.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-debug" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-doc" "cider-doc.el" (0 0 0 0))
-;;; Generated autoloads from cider-doc.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-doc" "../../../../../../.emacs.d/straight/build/cider/cider-doc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-doc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-doc" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-eldoc" "cider-eldoc.el" (0 0 0 0))
-;;; Generated autoloads from cider-eldoc.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-eldoc"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-eldoc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-eldoc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-eldoc" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-eval" "cider-eval.el" (0 0 0 0))
-;;; Generated autoloads from cider-eval.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-eval" "../../../../../../.emacs.d/straight/build/cider/cider-eval.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-eval.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-eval" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-find" "cider-find.el" (0 0 0 0))
-;;; Generated autoloads from cider-find.el
+;;;### (autoloads nil "cider-find" "../../../../../../.emacs.d/straight/build/cider/cider-find.el"
+;;;;;;  "3865033eaccf909cf7744a57c5541ec8")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-find.el
 
 (autoload 'cider-find-var "cider-find" "\
 Find definition for VAR at LINE.
@@ -347,13 +447,20 @@ the results to be displayed in a different window.  The default value is
 thing at point.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-find" "../../../../../../.emacs.d/straight/build/cider/cider-find.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-find.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-find" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-format" "cider-format.el" (0 0 0 0))
-;;; Generated autoloads from cider-format.el
+;;;### (autoloads nil "cider-format" "../../../../../../.emacs.d/straight/build/cider/cider-format.el"
+;;;;;;  "030b1492e34434b13f902f71655a85eb")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-format.el
 
 (autoload 'cider-format-region "cider-format" "\
 Format the Clojure code in the current region.
@@ -386,40 +493,21 @@ START and END represent the region's boundaries.
 Format the EDN data of the last sexp.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-format"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-format.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-format.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-format" '("cider--format-")))
 
 ;;;***
-
-;;;### (autoloads nil "cider-grimoire" "cider-grimoire.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from cider-grimoire.el
-
-(autoload 'cider-grimoire-web "cider-grimoire" "\
-Open grimoire documentation in the default web browser.
-
-Prompts for the symbol to use, or uses the symbol at point, depending on
-the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
-opposite of what that option dictates.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'cider-grimoire "cider-grimoire" "\
-Open grimoire documentation in a popup buffer.
-
-Prompts for the symbol to use, or uses the symbol at point, depending on
-the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
-opposite of what that option dictates.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-grimoire" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-inspector" "cider-inspector.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from cider-inspector.el
+;;;### (autoloads nil "cider-inspector" "../../../../../../.emacs.d/straight/build/cider/cider-inspector.el"
+;;;;;;  "0cc40605f99af8358e7eb3b11a46f4a3")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-inspector.el
 
 (autoload 'cider-inspect-last-sexp "cider-inspector" "\
 Inspect the result of the the expression preceding point.
@@ -450,14 +538,21 @@ Interactively, EXPR is read from the minibuffer, and NS the
 current buffer's namespace.
 
 \(fn EXPR NS)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-inspector"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-inspector.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-inspector.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-inspector" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-macroexpansion" "cider-macroexpansion.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from cider-macroexpansion.el
+;;;### (autoloads nil "cider-macroexpansion" "../../../../../../.emacs.d/straight/build/cider/cider-macroexpansion.el"
+;;;;;;  "3a66cfae811564207fe12d5d99b955df")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-macroexpansion.el
 
 (autoload 'cider-macroexpand-1 "cider-macroexpansion" "\
 Invoke \\=`macroexpand-1\\=` on the expression preceding point.
@@ -470,13 +565,21 @@ If invoked with a PREFIX argument, use \\=`macroexpand\\=` instead of
 Invoke \\=`macroexpand-all\\=` on the expression preceding point.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-macroexpansion"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-macroexpansion.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-macroexpansion.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-macroexpansion" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-mode" "cider-mode.el" (0 0 0 0))
-;;; Generated autoloads from cider-mode.el
+;;;### (autoloads nil "cider-mode" "../../../../../../.emacs.d/straight/build/cider/cider-mode.el"
+;;;;;;  "a08abb0b9ba45207b016f9013dc112b7")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-mode.el
 
 (defvar cider-mode-line '(:eval (format " cider[%s]" (cider--modeline-info))) "\
 Mode line lighter for cider mode.
@@ -499,13 +602,20 @@ Minor mode for REPL interaction from a Clojure buffer.
 \\{cider-mode-map}
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-mode" "../../../../../../.emacs.d/straight/build/cider/cider-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-mode" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-ns" "cider-ns.el" (0 0 0 0))
-;;; Generated autoloads from cider-ns.el
+;;;### (autoloads nil "cider-ns" "../../../../../../.emacs.d/straight/build/cider/cider-ns.el"
+;;;;;;  "44acc7edfd6ce263e34365c36ed13456")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-ns.el
 
 (autoload 'cider-ns-reload "cider-ns" "\
 Send a (require 'ns :reload) to the REPL.
@@ -550,28 +660,38 @@ refresh functions (defined in `cider-ns-refresh-before-fn' and
 \(fn &optional MODE)" t nil)
 
 (define-obsolete-function-alias 'cider-refresh 'cider-ns-refresh "0.18")
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-ns" "../../../../../../.emacs.d/straight/build/cider/cider-ns.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-ns.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-ns" '("cider-ns-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-overlays" "cider-overlays.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from cider-overlays.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-overlays"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-overlays.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-overlays.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-overlays" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-popup" "cider-popup.el" (0 0 0 0))
-;;; Generated autoloads from cider-popup.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-popup"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-popup.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-popup.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-popup" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-profile" "cider-profile.el" (0 0 0 0))
-;;; Generated autoloads from cider-profile.el
+;;;### (autoloads nil "cider-profile" "../../../../../../.emacs.d/straight/build/cider/cider-profile.el"
+;;;;;;  "13dadc0f09cdecf5e5ced340d10a3aee")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-profile.el
 
 (autoload 'cider-profile-samples "cider-profile" "\
 Displays current max-sample-count.
@@ -616,53 +736,78 @@ prompts for a var.
 Clear any collected profile data.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-profile"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-profile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-profile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-profile" '("cider-profile-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-repl" "cider-repl.el" (0 0 0 0))
-;;; Generated autoloads from cider-repl.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-repl" "../../../../../../.emacs.d/straight/build/cider/cider-repl.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-repl.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-repl" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-repl-history" "cider-repl-history.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from cider-repl-history.el
+;;;### (autoloads nil "cider-repl-history" "../../../../../../.emacs.d/straight/build/cider/cider-repl-history.el"
+;;;;;;  "7386c8c3dbad5463aa24c022e12e8f90")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-repl-history.el
 
 (autoload 'cider-repl-history "cider-repl-history" "\
 Display items in the CIDER command history in another buffer.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-repl-history"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-repl-history.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-repl-history.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-repl-history" '("cider-repl-history-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-resolve" "cider-resolve.el" (0 0 0 0))
-;;; Generated autoloads from cider-resolve.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-resolve"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-resolve.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-resolve.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-resolve" '("cider-resolve-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-scratch" "cider-scratch.el" (0 0 0 0))
-;;; Generated autoloads from cider-scratch.el
+;;;### (autoloads nil "cider-scratch" "../../../../../../.emacs.d/straight/build/cider/cider-scratch.el"
+;;;;;;  "12df16469b699df3e8e68061c70512dd")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-scratch.el
 
 (autoload 'cider-scratch "cider-scratch" "\
 Go to the scratch buffer named `cider-scratch-buffer-name'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-scratch"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-scratch.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-scratch.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-scratch" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-selector" "cider-selector.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from cider-selector.el
+;;;### (autoloads nil "cider-selector" "../../../../../../.emacs.d/straight/build/cider/cider-selector.el"
+;;;;;;  "8fb1fcbe48e5abff0df454c8da132b81")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-selector.el
 
 (autoload 'cider-selector "cider-selector" "\
 Select a new buffer by type, indicated by a single character.
@@ -672,21 +817,30 @@ available methods.  OTHER-WINDOW provides an optional target.
 See `def-cider-selector-method' for defining new methods.
 
 \(fn &optional OTHER-WINDOW)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-selector"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-selector.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-selector.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-selector" '("??" "?c" "?e" "?q" "?r" "?m" "?x" "?p" "?d" "?s" "def-cider-selector-method" "cider-selector-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-stacktrace" "cider-stacktrace.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from cider-stacktrace.el
+;;;### (autoloads "actual autoloads are elsewhere" "cider-stacktrace"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-stacktrace.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-stacktrace.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-stacktrace" '("cider-")))
 
 ;;;***
 
-;;;### (autoloads nil "cider-test" "cider-test.el" (0 0 0 0))
-;;; Generated autoloads from cider-test.el
+;;;### (autoloads nil "cider-test" "../../../../../../.emacs.d/straight/build/cider/cider-test.el"
+;;;;;;  "3c8d83640fe60f92f500b8418b21578c")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-test.el
 
 (defvar cider-auto-test-mode nil "\
 Non-nil if Cider-Auto-Test mode is enabled.
@@ -706,13 +860,20 @@ Only runs tests corresponding to the loaded file's namespace and does
 nothing if no tests are defined or if the file failed to load.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-test" "../../../../../../.emacs.d/straight/build/cider/cider-test.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-test.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-test" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-tracing" "cider-tracing.el" (0 0 0 0))
-;;; Generated autoloads from cider-tracing.el
+;;;### (autoloads nil "cider-tracing" "../../../../../../.emacs.d/straight/build/cider/cider-tracing.el"
+;;;;;;  "b927704ea9fcdc653b7849bbe73eb342")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-tracing.el
 
 (autoload 'cider-toggle-trace-var "cider-tracing" "\
 Toggle var tracing.
@@ -727,25 +888,40 @@ Toggle ns tracing.
 Defaults to the current ns.  With prefix arg QUERY, prompts for a ns.
 
 \(fn QUERY)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-tracing"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-tracing.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-tracing.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-tracing" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-util" "cider-util.el" (0 0 0 0))
-;;; Generated autoloads from cider-util.el
+;;;### (autoloads nil "cider-util" "../../../../../../.emacs.d/straight/build/cider/cider-util.el"
+;;;;;;  "42dfdee47d318dfd020d7753017c18ac")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-util.el
 
 (autoload 'cider-view-manual "cider-util" "\
 View the manual in your default browser.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-util" "../../../../../../.emacs.d/straight/build/cider/cider-util.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-util.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-util" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "cider-xref" "cider-xref.el" (0 0 0 0))
-;;; Generated autoloads from cider-xref.el
+;;;### (autoloads nil "cider-xref" "../../../../../../.emacs.d/straight/build/cider/cider-xref.el"
+;;;;;;  "667630bb5b807dedf1fab51f57071d62")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-xref.el
 
 (autoload 'cider-xref-fn-refs "cider-xref" "\
 Show all functions that reference the var matching NS and SYMBOL.
@@ -766,26 +942,72 @@ Displays the references for NS and SYMBOL using completing read.
 Displays the function dependencies for  NS and SYMBOL using completing read.
 
 \(fn &optional NS SYMBOL)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "cider-xref" "../../../../../../.emacs.d/straight/build/cider/cider-xref.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/cider-xref.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-xref" '("cider-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "nrepl-client" "nrepl-client.el" (0 0 0 0))
-;;; Generated autoloads from nrepl-client.el
+;;;### (autoloads "actual autoloads are elsewhere" "nrepl-client"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/nrepl-client.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/nrepl-client.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nrepl-client" '("nrepl-" "cider-enlighten-mode")))
 
 ;;;***
 
-;;;### (autoloads nil "nrepl-dict" "nrepl-dict.el" (0 0 0 0))
-;;; Generated autoloads from nrepl-dict.el
+;;;### (autoloads "actual autoloads are elsewhere" "nrepl-dict" "../../../../../../.emacs.d/straight/build/cider/nrepl-dict.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cider/nrepl-dict.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nrepl-dict" '("nrepl-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("cider-compat.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/cider/cider-apropos.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-browse-ns.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-browse-spec.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-cheatsheet.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-classpath.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-client.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-clojuredocs.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-common.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-compat.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-completion.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-connection.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-debug.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-doc.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-eldoc.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-eval.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-find.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-format.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-inspector.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-macroexpansion.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-ns.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-overlays.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-popup.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-profile.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-repl-history.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-repl.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-resolve.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-scratch.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-selector.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-stacktrace.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-test.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-tracing.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-util.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider-xref.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/cider.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/nrepl-client.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/cider/nrepl-dict.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

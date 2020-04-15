@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "ghc-core" "ghc-core.el" (0 0 0 0))
-;;; Generated autoloads from ghc-core.el
+;;;### (autoloads nil "ghc-core" "../../../../../../.emacs.d/straight/build/haskell-mode/ghc-core.el"
+;;;;;;  "c4288ea76ebf356c8ee4cb3c67785a93")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/ghc-core.el
 
 (let ((loads (get 'ghc-core 'custom-loads))) (if (member '"ghc-core" loads) nil (put 'ghc-core 'custom-loads (cons '"ghc-core" loads))))
 
@@ -21,14 +22,20 @@ Compile and load the current buffer as tidy core.
 Major mode for GHC Core files.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ghc-core" "../../../../../../.emacs.d/straight/build/haskell-mode/ghc-core.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/ghc-core.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ghc-core" '("ghc-core-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "ghci-script-mode" "ghci-script-mode.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from ghci-script-mode.el
+;;;### (autoloads nil "ghci-script-mode" "../../../../../../.emacs.d/straight/build/haskell-mode/ghci-script-mode.el"
+;;;;;;  "88ca63573fc26aea310d7d28a34395d0")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/ghci-script-mode.el
 
 (autoload 'ghci-script-mode "ghci-script-mode" "\
 Major mode for working with .ghci files.
@@ -36,13 +43,21 @@ Major mode for working with .ghci files.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.ghci\\'" . ghci-script-mode))
+
+;;;### (autoloads "actual autoloads are elsewhere" "ghci-script-mode"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/ghci-script-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/ghci-script-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ghci-script-mode" '("ghci-script-mode-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell" "haskell.el" (0 0 0 0))
-;;; Generated autoloads from haskell.el
+;;;### (autoloads nil "haskell" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell.el"
+;;;;;;  "dd61389a72b17603c1a37e048f851448")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell.el
 
 (autoload 'interactive-haskell-mode "haskell" "\
 Minor mode for enabling haskell-process interaction.
@@ -56,7 +71,6 @@ Handle the return key.
 
 (autoload 'haskell-session-kill "haskell" "\
 Kill the session process and buffer, delete the session.
-0. Prompt to kill all associated buffers.
 1. Kill the process.
 2. Kill the interactive buffer unless LEAVE-INTERACTIVE-BUFFER is not given.
 3. Walk through all the related buffers and set their haskell-session to nil.
@@ -151,26 +165,40 @@ Prompts for a Cabal command to run.
 Dump minimal imports.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell" '("haskell-" "xref-prompt-for-identifier" "interactive-haskell-mode-map")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-align-imports" "haskell-align-imports.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-align-imports.el
+;;;### (autoloads nil "haskell-align-imports" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-align-imports.el"
+;;;;;;  "41ea3dd92f1894369eca73112986e85b")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-align-imports.el
 
 (autoload 'haskell-align-imports "haskell-align-imports" "\
 Align all the imports in the buffer.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-align-imports"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-align-imports.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-align-imports.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-align-imports" '("haskell-align-imports-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-c2hs" "haskell-c2hs.el" (0 0 0 0))
-;;; Generated autoloads from haskell-c2hs.el
+;;;### (autoloads nil "haskell-c2hs" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-c2hs.el"
+;;;;;;  "7b5a3da21c2a5970b9cef4668338dc2f")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-c2hs.el
 
 (add-to-list 'auto-mode-alist '("\\.chs\\'" . haskell-c2hs-mode))
 
@@ -178,15 +206,23 @@ Align all the imports in the buffer.
 Mode for editing *.chs files of the c2hs haskell tool.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-c2hs"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-c2hs.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-c2hs.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-c2hs" '("haskell-c2hs-font-lock-keywords")))
 
 ;;;***
-
-;;;### (autoloads nil "haskell-cabal" "haskell-cabal.el" (0 0 0 0))
-;;; Generated autoloads from haskell-cabal.el
 
-(add-to-list 'auto-mode-alist '("\\.cabal\\'" . haskell-cabal-mode))
+;;;***
+
+;;;### (autoloads nil "haskell-cabal" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-cabal.el"
+;;;;;;  "2846649c4a20173247231945db2b740b")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-cabal.el
+
+(add-to-list 'auto-mode-alist '("\\.cabal\\'\\|/cabal\\.project\\|/\\.cabal/config\\'" . haskell-cabal-mode))
 
 (autoload 'haskell-cabal-mode "haskell-cabal" "\
 Major mode for Cabal package description files.
@@ -219,27 +255,41 @@ OTHER-WINDOW use `find-file-other-window'.
 \(fn OTHER-WINDOW)" t nil)
 
 (let ((loads (get 'haskell-cabal 'custom-loads))) (if (member '"haskell-cabal" loads) nil (put 'haskell-cabal 'custom-loads (cons '"haskell-cabal" loads))))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-cabal"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-cabal.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-cabal.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-cabal" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-collapse" "haskell-collapse.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from haskell-collapse.el
+;;;### (autoloads nil "haskell-collapse" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-collapse.el"
+;;;;;;  "dd16002465531f2f1031d4666a8df9d0")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-collapse.el
 
 (autoload 'haskell-collapse-mode "haskell-collapse" "\
 Minor mode to collapse and expand haskell expressions
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-collapse"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-collapse.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-collapse.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-collapse" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-commands" "haskell-commands.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from haskell-commands.el
+;;;### (autoloads nil "haskell-commands" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-commands.el"
+;;;;;;  "def616584d9602f8b2088d4f08a12511")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-commands.el
 
 (autoload 'haskell-process-restart "haskell-commands" "\
 Restart the inferior Haskell process.
@@ -349,7 +399,7 @@ Set the build TARGET for cabal REPL.
 Apply stylish-haskell to the current buffer.
 
 Use `haskell-mode-stylish-haskell-path' to know where to find
-stylish-haskell executable. This function tries to preserve
+stylish-haskell executable.  This function tries to preserve
 cursor position and markers by using
 `haskell-mode-buffer-apply-command'.
 
@@ -359,14 +409,21 @@ cursor position and markers by using
 Find use cases of the identifier at point and highlight them all.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-commands"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-commands.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-commands.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-commands" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-compile" "haskell-compile.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from haskell-compile.el
+;;;### (autoloads nil "haskell-compile" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-compile.el"
+;;;;;;  "a12bb05616c8bddefbc3f3eefcca50f0")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-compile.el
 
 (let ((loads (get 'haskell-compile 'custom-loads))) (if (member '"haskell-compile" loads) nil (put 'haskell-compile 'custom-loads (cons '"haskell-compile" loads))))
 
@@ -396,22 +453,30 @@ base directory for build tools, or the current buffer for
 `haskell-compile-command'.
 
 \(fn &optional EDIT-COMMAND)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-compile"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-compile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-compile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-compile" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-complete-module" "haskell-complete-module.el"
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-complete-module"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-complete-module.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-complete-module.el
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-complete-module.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-complete-module" '("haskell-complete-module")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-completions" "haskell-completions.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-completions.el
+;;;### (autoloads nil "haskell-completions" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-completions.el"
+;;;;;;  "c0ae6e1acdd8afe6b2a49bcd3a15bccb")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-completions.el
 
 (let ((loads (get 'haskell-completions 'custom-loads))) (if (member '"haskell-completions" loads) nil (put 'haskell-completions 'custom-loads (cons '"haskell-completions" loads))))
 
@@ -422,25 +487,40 @@ provides completions for haskell keywords, language pragmas,
 GHC's options, and language extensions, but not identifiers.
 
 \(fn)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-completions"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-completions.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-completions.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-completions" '("haskell-completions-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-customize" "haskell-customize.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-customize.el
+;;;### (autoloads nil "haskell-customize" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-customize.el"
+;;;;;;  "0885ecddfdc9a8dcda3232c29f10e80d")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-customize.el
 
 (let ((loads (get 'haskell 'custom-loads))) (if (member '"haskell-customize" loads) nil (put 'haskell 'custom-loads (cons '"haskell-customize" loads))))
 
 (let ((loads (get 'haskell-interactive 'custom-loads))) (if (member '"haskell-customize" loads) nil (put 'haskell-interactive 'custom-loads (cons '"haskell-customize" loads))))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-customize"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-customize.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-customize.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-customize" '("haskell-" "inferior-haskell-root-dir")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-debug" "haskell-debug.el" (0 0 0 0))
-;;; Generated autoloads from haskell-debug.el
+;;;### (autoloads nil "haskell-debug" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-debug.el"
+;;;;;;  "5e7e2a82e90df86e3bf5a9bf79e197b3")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-debug.el
 
 (let ((loads (get 'haskell-debug 'custom-loads))) (if (member '"haskell-debug" loads) nil (put 'haskell-debug 'custom-loads (cons '"haskell-debug" loads))))
 
@@ -461,14 +541,21 @@ Face for headings." :group (quote haskell-debug))
 
 (defface haskell-debug-muted-face '((t :foreground "#999")) "\
 Face for muteds." :group (quote haskell-debug))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-debug"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-debug.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-debug.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-debug" '("haskell-debug")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-decl-scan" "haskell-decl-scan.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-decl-scan.el
+;;;### (autoloads nil "haskell-decl-scan" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-decl-scan.el"
+;;;;;;  "ac39edac8627afa4f2883b25d2ad8b1d")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-decl-scan.el
 
 (let ((loads (get 'haskell-decl-scan 'custom-loads))) (if (member '"haskell-decl-scan" loads) nil (put 'haskell-decl-scan 'custom-loads (cons '"haskell-decl-scan" loads))))
 
@@ -513,7 +600,7 @@ declaration.  Therefore, using Haskell font locking with comments
 coloured in `font-lock-comment-face' improves declaration scanning.
 
 Literate Haskell scripts are supported: If the value of
-`haskell-literate' (set automatically by `literate-haskell-mode')
+`haskell-literate' (set automatically by `haskell-literate-mode')
 is `bird', a Bird-style literate script is assumed.  If it is nil
 or `tex', a non-literate or LaTeX-style literate script is
 assumed, respectively.
@@ -521,13 +608,21 @@ assumed, respectively.
 Invokes `haskell-decl-scan-mode-hook' on activation.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-decl-scan"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-decl-scan.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-decl-scan.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-decl-scan" '("haskell-d" "literate-haskell-ds-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-doc" "haskell-doc.el" (0 0 0 0))
-;;; Generated autoloads from haskell-doc.el
+;;;### (autoloads nil "haskell-doc" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-doc.el"
+;;;;;;  "e6e2c60ff2954bbbf0ddbf0afe859786")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-doc.el
 
 (let ((loads (get 'haskell-doc 'custom-loads))) (if (member '"haskell-doc" loads) nil (put 'haskell-doc 'custom-loads (cons '"haskell-doc" loads))))
 
@@ -555,14 +650,21 @@ of prelude functions and their types, or from the local functions in the
 current buffer.
 
 \(fn &optional SYM)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-doc"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-doc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-doc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-doc" '("inferior-haskell-" "haskell-" "turn-off-haskell-doc")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-font-lock" "haskell-font-lock.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-font-lock.el
+;;;### (autoloads nil "haskell-font-lock" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-font-lock.el"
+;;;;;;  "c1c77768e1580750044c7a268b08dfa0")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-font-lock.el
 
 (let ((loads (get 'haskell-appearance 'custom-loads))) (if (member '"haskell-font-lock" loads) nil (put 'haskell-appearance 'custom-loads (cons '"haskell-font-lock" loads))))
 
@@ -587,22 +689,30 @@ Face used to highlight LiquidHaskell annotations ({-@ ... @-})." :group (quote h
 (defface haskell-literate-comment-face '((t :inherit font-lock-doc-face)) "\
 Face with which to fontify literate comments.
 Inherit from `default' to avoid fontification of them." :group (quote haskell-appearance))
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-font-lock"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-font-lock.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-font-lock.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-font-lock" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-ghc-support" "haskell-ghc-support.el"
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-ghc-support"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-ghc-support.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-ghc-support.el
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-ghc-support.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-ghc-support" '("haskell-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-hoogle" "haskell-hoogle.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from haskell-hoogle.el
+;;;### (autoloads nil "haskell-hoogle" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-hoogle.el"
+;;;;;;  "984941d0c384e2ae9c50bcdf6df62b58")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-hoogle.el
 
 (autoload 'haskell-hoogle "haskell-hoogle" "\
 Do a Hoogle search for QUERY.
@@ -627,14 +737,21 @@ Do a Hayoo search for QUERY.
 \(fn QUERY)" t nil)
 
 (defalias 'hayoo 'haskell-hayoo)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-hoogle"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-hoogle.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-hoogle.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-hoogle" '("haskell-h")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-indent" "haskell-indent.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from haskell-indent.el
+;;;### (autoloads nil "haskell-indent" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indent.el"
+;;;;;;  "00fe30bc09bb187a29fc47ba2b3f14ea")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indent.el
 
 (let ((loads (get 'haskell-indent 'custom-loads))) (if (member '"haskell-indent" loads) nil (put 'haskell-indent 'custom-loads (cons '"haskell-indent" loads))))
 
@@ -671,14 +788,21 @@ If `ARG' is falsey, toggle `haskell-indent-mode'.  Else sets
 Invokes `haskell-indent-hook' if not nil.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-indent"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indent.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indent.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-indent" '("turn-off-haskell-indent" "haskell-indent-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-indentation" "haskell-indentation.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-indentation.el
+;;;### (autoloads nil "haskell-indentation" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indentation.el"
+;;;;;;  "c71989ab953f28fa9ced80603da7e89a")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indentation.el
 
 (let ((loads (get 'haskell-indentation 'custom-loads))) (if (member '"haskell-indentation" loads) nil (put 'haskell-indentation 'custom-loads (cons '"haskell-indentation" loads))))
 
@@ -693,20 +817,29 @@ set and deleted as if they were real tabs.
 Turn on the haskell-indentation minor mode.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-indentation"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indentation.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indentation.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-indentation" '("haskell-indentation-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-interactive-mode" "haskell-interactive-mode.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-interactive-mode.el
+;;;### (autoloads nil "haskell-interactive-mode" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-interactive-mode.el"
+;;;;;;  "f64bf6f604fb887108e21f9633008559")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-interactive-mode.el
 
 (defface haskell-interactive-face-prompt '((t :inherit font-lock-function-name-face)) "\
 Face for the prompt." :group (quote haskell-interactive))
 
-(defface haskell-interactive-face-prompt2 '((t :inherit font-lock-keyword-face)) "\
-Face for the prompt2 in multi-line mode." :group (quote haskell-interactive))
+(defface haskell-interactive-face-prompt-cont '((t :inherit font-lock-keyword-face)) "\
+Face for GHCi's prompt-cont in multi-line mode." :group (quote haskell-interactive))
+
+(define-obsolete-face-alias 'haskell-interactive-face-prompt2 'haskell-interactive-face-prompt-cont "16.2")
 
 (defface haskell-interactive-face-compile-error '((t :inherit compilation-error)) "\
 Face for compile errors." :group (quote haskell-interactive))
@@ -737,21 +870,30 @@ function `haskell-presentation-present', depending on variable
 `haskell-process-use-presentation-mode'.
 
 \(fn LINE)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-interactive-mode"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-interactive-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-interactive-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-interactive-mode" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-lexeme" "haskell-lexeme.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from haskell-lexeme.el
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-lexeme"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-lexeme.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-lexeme.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-lexeme" '("haskell-lexeme-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-load" "haskell-load.el" (0 0 0 0))
-;;; Generated autoloads from haskell-load.el
+;;;### (autoloads nil "haskell-load" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-load.el"
+;;;;;;  "df3efacd87482c63788bab21f8b191bf")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-load.el
 
 (defface haskell-error-face '((((supports :underline (:style wave))) :underline (:style wave :color "#dc322f")) (t :inherit error)) "\
 Face used for marking error lines." :group (quote haskell-mode))
@@ -772,25 +914,41 @@ new thread, and use the `foreign-store' package to access the
 running context across :load/:reloads in GHCi.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-load"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-load.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-load.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-load" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-menu" "haskell-menu.el" (0 0 0 0))
-;;; Generated autoloads from haskell-menu.el
+;;;### (autoloads nil "haskell-menu" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-menu.el"
+;;;;;;  "526348cfc437316493103137e70f7763")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-menu.el
 
 (autoload 'haskell-menu "haskell-menu" "\
 Launch the Haskell sessions menu.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-menu"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-menu.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-menu.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-menu" '("haskell-menu-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-mode" "haskell-mode.el" (0 0 0 0))
-;;; Generated autoloads from haskell-mode.el
+;;;### (autoloads nil "haskell-mode" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-mode.el"
+;;;;;;  "7c40cb3d6bff395597ac459c9e2217ee")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-mode.el
 
 (autoload 'haskell-version "haskell-mode" "\
 Show the `haskell-mode` version in the echo area.
@@ -808,7 +966,7 @@ Major mode for editing Haskell programs.
 
 \\<haskell-mode-map>
 
-Literate Haskell scripts are supported via `literate-haskell-mode'.
+Literate Haskell scripts are supported via `haskell-literate-mode'.
 The variable `haskell-literate' indicates the style of the script in the
 current buffer.  See the documentation on this variable for more details.
 
@@ -870,16 +1028,18 @@ list marker of some kind), and end of the obstacle.
 
 \(fn &optional ARG)" t nil)
 
-(autoload 'literate-haskell-mode "haskell-mode" "\
+(autoload 'haskell-literate-mode "haskell-mode" "\
 As `haskell-mode' but for literate scripts.
 
 \(fn)" t nil)
+
+(define-obsolete-function-alias 'literate-haskell-mode 'haskell-literate-mode "2020-04")
 
 (add-to-list 'auto-mode-alist '("\\.[gh]s\\'" . haskell-mode))
 
 (add-to-list 'auto-mode-alist '("\\.hsig\\'" . haskell-mode))
 
-(add-to-list 'auto-mode-alist '("\\.l[gh]s\\'" . literate-haskell-mode))
+(add-to-list 'auto-mode-alist '("\\.l[gh]s\\'" . haskell-literate-mode))
 
 (add-to-list 'auto-mode-alist '("\\.hsc\\'" . haskell-mode))
 
@@ -897,14 +1057,21 @@ with function `xref-find-definitions' after new table was
 generated.
 
 \(fn &optional AND-THEN-FIND-THIS-TAG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-mode"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-mode" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-modules" "haskell-modules.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from haskell-modules.el
+;;;### (autoloads nil "haskell-modules" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-modules.el"
+;;;;;;  "63ddc21c2c3189347004c6b96b3dd370")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-modules.el
 
 (autoload 'haskell-session-installed-modules "haskell-modules" "\
 Get the modules installed in the current package set.
@@ -922,14 +1089,21 @@ Get the modules of the current project.
 If DONTCREATE is non-nil don't create a new session.
 
 \(fn SESSION &optional DONTCREATE)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-modules"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-modules.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-modules.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-modules" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-move-nested" "haskell-move-nested.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-move-nested.el
+;;;### (autoloads nil "haskell-move-nested" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-move-nested.el"
+;;;;;;  "d0c100120ae2bb389d2854d1fc35b006")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-move-nested.el
 
 (autoload 'haskell-move-nested "haskell-move-nested" "\
 Shift the nested off-side-rule block adjacent to point by COLS columns to the right.
@@ -958,14 +1132,21 @@ In Transient Mark mode, if the mark is active, operate on the contents
 of the region instead.
 
 \(fn COLS)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-move-nested"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-move-nested.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-move-nested.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-move-nested" '("haskell-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-navigate-imports" "haskell-navigate-imports.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-navigate-imports.el
+;;;### (autoloads nil "haskell-navigate-imports" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-navigate-imports.el"
+;;;;;;  "a0eee690f9c980af33f7072c145b63b0")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-navigate-imports.el
 
 (autoload 'haskell-navigate-imports "haskell-navigate-imports" "\
 Cycle the Haskell import lines or return to point (with prefix arg).
@@ -982,45 +1163,57 @@ Return to the non-import point we were at before going to the module list.
    If we were originally at an import list, we can just cycle through easily.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-navigate-imports"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-navigate-imports.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-navigate-imports.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-navigate-imports" '("haskell-navigate-imports-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-presentation-mode" "haskell-presentation-mode.el"
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-presentation-mode"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-presentation-mode.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-presentation-mode.el
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-presentation-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-presentation-mode" '("haskell-presentation-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-process" "haskell-process.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from haskell-process.el
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-process"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-process.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-process.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-process" '("haskell-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-repl" "haskell-repl.el" (0 0 0 0))
-;;; Generated autoloads from haskell-repl.el
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-repl"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-repl.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-repl.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-repl" '("haskell-interactive-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-sandbox" "haskell-sandbox.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from haskell-sandbox.el
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-sandbox"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sandbox.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sandbox.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-sandbox" '("haskell-sandbox-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-session" "haskell-session.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from haskell-session.el
+;;;### (autoloads nil "haskell-session" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-session.el"
+;;;;;;  "e72d7b162c279e57b53b3bbbb237501b")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-session.el
 
 (autoload 'haskell-session-maybe "haskell-session" "\
 Maybe get the Haskell session, return nil if there isn't one.
@@ -1031,14 +1224,21 @@ Maybe get the Haskell session, return nil if there isn't one.
 Get the session process.
 
 \(fn S)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-session"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-session.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-session.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-session" '("haskell-session")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-sort-imports" "haskell-sort-imports.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-sort-imports.el
+;;;### (autoloads nil "haskell-sort-imports" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sort-imports.el"
+;;;;;;  "b33b23845070710f1afceb0c495f59ed")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sort-imports.el
 
 (autoload 'haskell-sort-imports "haskell-sort-imports" "\
 Sort the import list at point. It sorts the current group
@@ -1048,84 +1248,160 @@ If the region is active, it will restrict the imports to sort
 within that region.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-sort-imports"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sort-imports.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sort-imports.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-sort-imports" '("haskell-sort-imports-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "haskell-string" "haskell-string.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from haskell-string.el
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-string"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-string.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-string.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-string" '("haskell-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-svg" "haskell-svg.el" (0 0 0 0))
-;;; Generated autoloads from haskell-svg.el
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-svg"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-svg.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-svg.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-svg" '("haskell-svg-")))
 
 ;;;***
 
-;;;### (autoloads nil "haskell-unicode-input-method" "haskell-unicode-input-method.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from haskell-unicode-input-method.el
+;;;### (autoloads nil "haskell-unicode-input-method" "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-unicode-input-method.el"
+;;;;;;  "f1d7c7c83482df43f6e1a63cbecce71a")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-unicode-input-method.el
 
-(autoload 'turn-on-haskell-unicode-input-method "haskell-unicode-input-method" "\
+(autoload 'haskell-unicode-input-method-enable "haskell-unicode-input-method" "\
 Set input method `haskell-unicode'.
 
 \(fn)" t nil)
 
+(define-obsolete-function-alias 'turn-on-haskell-unicode-input-method 'haskell-unicode-input-method-enable "2020-04")
+
 ;;;***
 
-;;;### (autoloads nil "haskell-utils" "haskell-utils.el" (0 0 0 0))
-;;; Generated autoloads from haskell-utils.el
+;;;### (autoloads "actual autoloads are elsewhere" "haskell-utils"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-utils.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/haskell-utils.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-utils" '("haskell-")))
 
 ;;;***
 
-;;;### (autoloads nil "highlight-uses-mode" "highlight-uses-mode.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from highlight-uses-mode.el
+;;;### (autoloads nil "highlight-uses-mode" "../../../../../../.emacs.d/straight/build/haskell-mode/highlight-uses-mode.el"
+;;;;;;  "55334f1b8202e898a89d0be733b16421")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/highlight-uses-mode.el
 
 (autoload 'highlight-uses-mode "highlight-uses-mode" "\
 Minor mode for highlighting and jumping between uses.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "highlight-uses-mode"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/highlight-uses-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/highlight-uses-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "highlight-uses-mode" '("highlight-uses-mode-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "inf-haskell" "inf-haskell.el" (0 0 0 0))
-;;; Generated autoloads from inf-haskell.el
+;;;### (autoloads nil "inf-haskell" "../../../../../../.emacs.d/straight/build/haskell-mode/inf-haskell.el"
+;;;;;;  "df77e7a5cecb6653cbff26b75ab07cdb")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/inf-haskell.el
 
 (let ((loads (get 'inferior-haskell 'custom-loads))) (if (member '"inf-haskell" loads) nil (put 'inferior-haskell 'custom-loads (cons '"inf-haskell" loads))))
 
-(defalias 'run-haskell 'switch-to-haskell)
-
-(autoload 'switch-to-haskell "inf-haskell" "\
+(autoload 'run-haskell "inf-haskell" "\
 Show the inferior-haskell buffer.  Start the process if needed.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "inf-haskell"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/inf-haskell.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/inf-haskell.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "inf-haskell" '("haskell-" "inf")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "w3m-haddock" "w3m-haddock.el" (0 0 0 0))
-;;; Generated autoloads from w3m-haddock.el
+;;;### (autoloads nil "w3m-haddock" "../../../../../../.emacs.d/straight/build/haskell-mode/w3m-haddock.el"
+;;;;;;  "ec0b67a83e6141c2afdf8a5a4590a1aa")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/w3m-haddock.el
 
 (defface w3m-haddock-heading-face '((((class color)) :inherit highlight)) "\
 Face for quarantines." :group (quote haskell))
+
+;;;### (autoloads "actual autoloads are elsewhere" "w3m-haddock"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/w3m-haddock.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/haskell-mode/w3m-haddock.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "w3m-haddock" '("w3m-haddock-" "haskell-w3m-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil nil ("haskell-compat.el" "haskell-mode-pkg.el")
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/haskell-mode/ghc-core.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/ghci-script-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-align-imports.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-c2hs.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-cabal.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-collapse.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-commands.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-compile.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-complete-module.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-completions.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-customize.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-debug.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-decl-scan.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-doc.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-font-lock.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-ghc-support.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-hoogle.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indent.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-indentation.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-interactive-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-lexeme.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-load.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-menu.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-mode-pkg.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-modules.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-move-nested.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-navigate-imports.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-presentation-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-process.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-repl.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sandbox.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-session.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-sort-imports.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-string.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-svg.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-unicode-input-method.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell-utils.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/haskell.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/highlight-uses-mode.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/inf-haskell.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/haskell-mode/w3m-haddock.el")
 ;;;;;;  (0 0 0 0))
 
 ;;;***

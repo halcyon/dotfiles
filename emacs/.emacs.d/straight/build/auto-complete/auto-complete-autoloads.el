@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "auto-complete" "auto-complete.el" (0 0 0 0))
-;;; Generated autoloads from auto-complete.el
+;;;### (autoloads nil "auto-complete" "../../../../../../.emacs.d/straight/build/auto-complete/auto-complete.el"
+;;;;;;  "0f564b17b1ef2e700470197f0218dc22")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/auto-complete/auto-complete.el
 
 (autoload 'auto-complete "auto-complete" "\
 Start auto-completion at current point.
@@ -37,25 +38,42 @@ Auto-Complete mode is enabled in all buffers where
 See `auto-complete-mode' for more information on Auto-Complete mode.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "auto-complete"
+;;;;;;  "../../../../../../.emacs.d/straight/build/auto-complete/auto-complete.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/auto-complete/auto-complete.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-complete" '("auto-complete-mode" "ac-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "auto-complete-config" "auto-complete-config.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from auto-complete-config.el
+;;;### (autoloads nil "auto-complete-config" "../../../../../../.emacs.d/straight/build/auto-complete/auto-complete-config.el"
+;;;;;;  "ff41e174795402bf5f86dfbc7e9060d2")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/auto-complete/auto-complete-config.el
 
 (autoload 'ac-config-default "auto-complete-config" "\
 
 
 \(fn)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "auto-complete-config"
+;;;;;;  "../../../../../../.emacs.d/straight/build/auto-complete/auto-complete-config.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/auto-complete/auto-complete-config.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-complete-config" '("ac-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil nil ("auto-complete-pkg.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/auto-complete/auto-complete-config.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/auto-complete/auto-complete-pkg.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/auto-complete/auto-complete.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

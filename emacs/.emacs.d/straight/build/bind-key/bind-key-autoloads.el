@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "bind-key" "bind-key.el" (0 0 0 0))
-;;; Generated autoloads from bind-key.el
+;;;### (autoloads nil "bind-key" "../../../../../../.emacs.d/straight/build/bind-key/bind-key.el"
+;;;;;;  "fbecadd03b6d6a3cbe5ec5371be47d03")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/bind-key/bind-key.el
 
 (autoload 'bind-key "bind-key" "\
 Bind KEY-NAME to COMMAND in KEYMAP (`global-map' if not passed).
@@ -67,8 +68,19 @@ function symbol (unquoted).
 Display all the personal keybindings defined by `bind-key'.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "bind-key" "../../../../../../.emacs.d/straight/build/bind-key/bind-key.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/bind-key/bind-key.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "bind-key" '("compare-keybindings" "get-binding-description" "bind-key" "personal-keybindings" "override-global-m")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/bind-key/bind-key.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

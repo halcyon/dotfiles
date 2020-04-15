@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "transient" "transient.el" (0 0 0 0))
-;;; Generated autoloads from transient.el
+;;;### (autoloads "actual autoloads are elsewhere" "transient" "../../../../../../.emacs.d/straight/build/transient/transient.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/transient/transient.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "transient" '("transient-" "post-transient-hook" "current-transient-" "define-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/transient/transient.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -1,1 +1,1 @@
-/home/ksm/.emacs.d/straight/repos/pkg-info.el/pkg-info.el
+/home/ksm/.emacs.d/straight/repos/pkg-info/pkg-info.el

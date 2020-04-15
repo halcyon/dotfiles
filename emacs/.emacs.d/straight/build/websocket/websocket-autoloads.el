@@ -3,10 +3,16 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "websocket" "websocket.el" (0 0 0 0))
-;;; Generated autoloads from websocket.el
+;;;### (autoloads "actual autoloads are elsewhere" "websocket" "../../../../../../.emacs.d/straight/build/websocket/websocket.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/websocket/websocket.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "websocket" '("websocket-")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/websocket/websocket.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

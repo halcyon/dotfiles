@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "helm" "helm.el" (0 0 0 0))
-;;; Generated autoloads from helm.el
+;;;### (autoloads nil "helm" "../../../../../../.emacs.d/straight/build/helm-core/helm.el"
+;;;;;;  "3ece32e4c17e11e8482b340edfc76c29")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm-core/helm.el
 
 (autoload 'helm-define-multi-key "helm" "\
 In KEYMAP, define key sequence KEY for function list FUNCTIONS.
@@ -53,7 +54,8 @@ Arg OTHER-SUBKEYS is an alist specifying other short key-bindings
 to use once started e.g:
 
     (helm-define-key-with-subkeys global-map
-       (kbd \"C-x v n\") ?n 'git-gutter:next-hunk '((?p . git-gutter:previous-hunk)))
+       (kbd \"C-x v n\") ?n 'git-gutter:next-hunk
+       '((?p . git-gutter:previous-hunk)))
 
 
 In this example, `C-x v n' will run `git-gutter:next-hunk'
@@ -218,34 +220,49 @@ Simplified `helm' interface with other `helm-buffer'.
 Call `helm' only with ANY-SOURCES and ANY-BUFFER as args.
 
 \(fn ANY-SOURCES ANY-BUFFER)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "helm" "../../../../../../.emacs.d/straight/build/helm-core/helm.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm-core/helm.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm" '("helm-" "with-helm-")))
 
 ;;;***
+
+;;;***
 
-;;;### (autoloads nil "helm-lib" "helm-lib.el" (0 0 0 0))
-;;; Generated autoloads from helm-lib.el
+;;;### (autoloads "actual autoloads are elsewhere" "helm-lib" "../../../../../../.emacs.d/straight/build/helm-core/helm-lib.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm-core/helm-lib.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-lib" '("helm-" "with-helm-")))
 
 ;;;***
 
-;;;### (autoloads nil "helm-multi-match" "helm-multi-match.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from helm-multi-match.el
+;;;### (autoloads "actual autoloads are elsewhere" "helm-multi-match"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm-core/helm-multi-match.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm-core/helm-multi-match.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-multi-match" '("helm-m")))
 
 ;;;***
 
-;;;### (autoloads nil "helm-source" "helm-source.el" (0 0 0 0))
-;;; Generated autoloads from helm-source.el
+;;;### (autoloads "actual autoloads are elsewhere" "helm-source"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm-core/helm-source.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm-core/helm-source.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-source" '("helm-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("helm-core-pkg.el") (0 0 0 0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/helm-core/helm-core-pkg.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm-core/helm-lib.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm-core/helm-multi-match.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm-core/helm-source.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/helm-core/helm.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

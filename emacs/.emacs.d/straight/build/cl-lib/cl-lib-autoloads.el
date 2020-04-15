@@ -3,11 +3,17 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "cl-lib" "cl-lib.el" (0 0 0 0))
-;;; Generated autoloads from cl-lib.el
+;;;### (autoloads nil "cl-lib" "../../../../../../.emacs.d/straight/build/cl-lib/cl-lib.el"
+;;;;;;  "ca5ae50fcb5eb333f9330e074b5f8370")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/cl-lib/cl-lib.el
  (let ((d (file-name-directory #$)))
   (when (member d load-path)
     (setq load-path (append (remove d load-path) (list d)))))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/cl-lib/cl-lib.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

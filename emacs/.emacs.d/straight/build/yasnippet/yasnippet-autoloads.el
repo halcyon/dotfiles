@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "yasnippet" "yasnippet.el" (0 0 0 0))
-;;; Generated autoloads from yasnippet.el
+;;;### (autoloads nil "yasnippet" "../../../../../../.emacs.d/straight/build/yasnippet/yasnippet.el"
+;;;;;;  "342d21a9111a772ba22d8b85bc7310b9")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "yasnippet" "\
 Toggle YASnippet mode.
@@ -44,8 +45,19 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 \(fn &optional ARG)" t nil)
 (autoload 'snippet-mode "yasnippet" "A mode for editing yasnippets" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "yasnippet" "../../../../../../.emacs.d/straight/build/yasnippet/yasnippet.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/yasnippet/yasnippet.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yasnippet" '("yas" "help-snippet-def" "snippet-mode-map")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/yasnippet/yasnippet.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

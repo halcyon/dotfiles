@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "flycheck" "flycheck.el" (0 0 0 0))
-;;; Generated autoloads from flycheck.el
+;;;### (autoloads nil "flycheck" "../../../../../../.emacs.d/straight/build/flycheck/flycheck.el"
+;;;;;;  "5c2c76130581ac8ed04287bf6c20dcdb")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck.el
 
 (autoload 'flycheck-manual "flycheck" "\
 Open the Flycheck manual.
@@ -192,11 +193,12 @@ default `:verify' function of command checkers.
 Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
 
 SYMBOL is declared as customizable variable using `defcustom', to
-provide a configuration file for the given syntax CHECKER.
+provide configuration files for the given syntax CHECKER.
 CUSTOM-ARGS are forwarded to `defcustom'.
 
 FILE-NAME is the initial value of the new variable.  If omitted,
-the default value is nil.
+the default value is nil.  It can be either a string or a list of
+strings.
 
 Use this together with the `config-file' form in the `:command'
 argument to `flycheck-define-checker'.
@@ -224,22 +226,51 @@ Use this together with the `option', `option-list' and
 
 (function-put 'flycheck-def-option-var 'doc-string-elt '4)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck" '("flycheck-" "list-flycheck-errors" "locate-rebar3-project-root" "contains-rebar-config" "help-flycheck-checker-d" "read-flycheck-")))
+(autoload 'flycheck-define-checker "flycheck" "\
+Define SYMBOL as command syntax checker with DOCSTRING and PROPERTIES.
+
+Like `flycheck-define-command-checker', but PROPERTIES must not
+be quoted.  Also, implicitly define the executable variable for
+SYMBOL with `flycheck-def-executable-var'.
+
+\(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil t)
+
+(function-put 'flycheck-define-checker 'lisp-indent-function '1)
+
+(function-put 'flycheck-define-checker 'doc-string-elt '2)
+
+;;;### (autoloads "actual autoloads are elsewhere" "flycheck" "../../../../../../.emacs.d/straight/build/flycheck/flycheck.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck" '("flycheck-" "list-flycheck-errors" "help-flycheck-checker-d")))
+
+;;;***
 
 ;;;***
 
-;;;### (autoloads nil "flycheck-buttercup" "flycheck-buttercup.el"
+;;;### (autoloads "actual autoloads are elsewhere" "flycheck-buttercup"
+;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck-buttercup.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from flycheck-buttercup.el
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck-buttercup.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-buttercup" '("flycheck-buttercup-format-error-list")))
 
 ;;;***
 
-;;;### (autoloads nil "flycheck-ert" "flycheck-ert.el" (0 0 0 0))
-;;; Generated autoloads from flycheck-ert.el
+;;;### (autoloads "actual autoloads are elsewhere" "flycheck-ert"
+;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck-ert.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck-ert.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-ert" '("flycheck-er")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/flycheck/flycheck-buttercup.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck-ert.el"
+;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

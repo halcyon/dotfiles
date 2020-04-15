@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "rcirc-notify" "rcirc-notify.el" (0 0 0 0))
-;;; Generated autoloads from rcirc-notify.el
+;;;### (autoloads nil "rcirc-notify" "../../../../../../.emacs.d/straight/build/rcirc-notify/rcirc-notify.el"
+;;;;;;  "c306e390baf8b8a4c07c9a95b515e6f7")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/rcirc-notify/rcirc-notify.el
 
 (autoload 'rcirc-notify-me "rcirc-notify" "\
 Notify the current user when someone sends a message that
@@ -22,8 +23,20 @@ to them.
 Initialize rcirc-notify into rcirc with hooks.
 
 \(fn)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "rcirc-notify"
+;;;;;;  "../../../../../../.emacs.d/straight/build/rcirc-notify/rcirc-notify.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/rcirc-notify/rcirc-notify.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rcirc-notify" '("rcirc-notify")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/rcirc-notify/rcirc-notify.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

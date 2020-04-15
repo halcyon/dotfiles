@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "projectile" "projectile.el" (0 0 0 0))
-;;; Generated autoloads from projectile.el
+;;;### (autoloads nil "projectile" "../../../../../../.emacs.d/straight/build/projectile/projectile.el"
+;;;;;;  "49e3ed373014b31e91c6f6190988a686")
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/projectile/projectile.el
 
 (autoload 'projectile-version "projectile" "\
 Get the Projectile version as string.
@@ -350,33 +351,55 @@ Invoke `async-shell-command' in the project's root.
 
 \(fn)" t nil)
 
+(autoload 'projectile-run-gdb "projectile" "\
+Invoke `gdb' in the project's root.
+
+\(fn)" t nil)
+
 (autoload 'projectile-run-shell "projectile" "\
 Invoke `shell' in the project's root.
 
 Switch to the project specific shell buffer if it already exists.
 
-\(fn)" t nil)
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+\(fn ARG)" t nil)
 
 (autoload 'projectile-run-eshell "projectile" "\
 Invoke `eshell' in the project's root.
 
 Switch to the project specific eshell buffer if it already exists.
 
-\(fn)" t nil)
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+\(fn ARG)" t nil)
 
 (autoload 'projectile-run-ielm "projectile" "\
 Invoke `ielm' in the project's root.
 
 Switch to the project specific ielm buffer if it already exists.
 
-\(fn)" t nil)
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+\(fn ARG)" t nil)
 
 (autoload 'projectile-run-term "projectile" "\
 Invoke `term' in the project's root.
 
 Switch to the project specific term buffer if it already exists.
 
-\(fn PROGRAM)" t nil)
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+\(fn ARG)" t nil)
+
+(autoload 'projectile-run-vterm "projectile" "\
+Invoke `vterm' in the project's root.
+
+Switch to the project specific term buffer if it already exists.
+
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+\(fn &optional ARG)" t nil)
 
 (autoload 'projectile-replace "projectile" "\
 Replace literal string in project using non-regexp `tags-query-replace'.
@@ -535,6 +558,11 @@ Remove the current project from the list of known projects.
 
 \(fn)" t nil)
 
+(autoload 'projectile-add-known-project "projectile" "\
+Add PROJECT-ROOT to the list of known projects.
+
+\(fn PROJECT-ROOT)" t nil)
+
 (autoload 'projectile-ibuffer "projectile" "\
 Open an IBuffer window showing all buffers in the current project.
 
@@ -591,8 +619,19 @@ Otherwise behave as if called interactively.
 \(fn &optional ARG)" t nil)
 
 (define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0")
+
+;;;### (autoloads "actual autoloads are elsewhere" "projectile" "../../../../../../.emacs.d/straight/build/projectile/projectile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/projectile/projectile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "projectile" '("projectile-" "??" "delete-file-projectile-remove-from-cache" "def-projectile-commander-method" "compilation-find-file-projectile-find-compilation-buffer")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/projectile/projectile.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
