@@ -38,7 +38,11 @@ ZSH_THEME="halcyon"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker docker-compose fasd git helm kubectl asdf)
+
+# zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities id_ed25519
+plugins=(docker docker-compose fasd git ssh-agent helm kubectl asdf)
+
 
 source ${ZSH}/oh-my-zsh.sh
 
