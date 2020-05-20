@@ -185,14 +185,19 @@ Null prefix argument turns off the mode."
   (require 'ob-clojure)
   (require 'ol-notmuch)
   (setq org-src-fontify-natively t
-        org-babel-clojure-backend 'cider
-        org-directory "~/projects/org"
-        org-agenda-files `(,org-directory)
-        org-default-notes-file (concat org-directory "/notes.org")
-        org-refile-targets '((org-agenda-files :level . 3))
-        org-refile-allow-creating-parent-nodes 'confirm
-        org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
-        org-hierarchical-todo-statistics nil)
+      org-confirm-babel-evaluate nil
+      org-src-tab-acts-natively t
+      org-edit-src-content-indentation 2
+      org-babel-clojure-backend 'cider
+      org-directory "~/projects/org"
+      org-agenda-files `(,org-directory)
+      org-default-notes-file (concat org-directory "/notes.org")
+      org-refile-targets '((org-agenda-files :level . 3))
+      org-refile-allow-creating-parent-nodes 'confirm
+      org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
+      org-hierarchical-todo-statistics nil)
+  (org-defkey org-mode-map "\C-x\C-e"'cider-eval-last-sexp)
+  (org-defkey org-mode-map "\C-c\C-d" 'cider-doc)
   (let* ((target '(file+datetree+prompt ""))
          (underlying "* %^{Underlying} ")
          (headers "  |-\n%?")
@@ -532,18 +537,18 @@ Null prefix argument turns off the mode."
   (add-hook 'clojure-mode-hook #'configure-clojure-indent))
 
 
+(use-package eglot
+  :straight (:host github
+                   :repo "joaotavora/eglot")
+  :config (add-to-list 'eglot-server-programs '(rust-mode . ("rust-analyzer"))))
 
 (use-package rustic
   :straight (:host github
                    :repo "brotzeit/rustic")
-  :config
-  (setq rustic-lsp-server 'rust-analyzer
-        rustic-analyzer-command "rust-analyzer"
+  :init
+  (setq rustic-lsp-client 'eglot
+        rustic-lsp-server 'rust-analyzer
         rustic-test-arguments "-- --nocapture"))
-
-(use-package lsp-mode
-  :straight (:host github
-                   :repo "emacs-lsp/lsp-mode"))
 
 (use-package scala-mode)
 
