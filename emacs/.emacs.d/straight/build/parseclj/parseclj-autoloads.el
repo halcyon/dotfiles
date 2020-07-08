@@ -3,46 +3,32 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "parseclj" "../../../../../../.emacs.d/straight/build/parseclj/parseclj.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/parseclj/parseclj.el
+;;;### (autoloads nil "parseclj" "parseclj.el" (0 0 0 0))
+;;; Generated autoloads from parseclj.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj" '("parseclj-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "parseclj-ast"
-;;;;;;  "../../../../../../.emacs.d/straight/build/parseclj/parseclj-ast.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/parseclj/parseclj-ast.el
+;;;### (autoloads nil "parseclj-ast" "parseclj-ast.el" (0 0 0 0))
+;;; Generated autoloads from parseclj-ast.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-ast" '("parseclj-ast-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "parseclj-lex"
-;;;;;;  "../../../../../../.emacs.d/straight/build/parseclj/parseclj-lex.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/parseclj/parseclj-lex.el
+;;;### (autoloads nil "parseclj-lex" "parseclj-lex.el" (0 0 0 0))
+;;; Generated autoloads from parseclj-lex.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-lex" '("parseclj-lex-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "parseclj-parser"
-;;;;;;  "../../../../../../.emacs.d/straight/build/parseclj/parseclj-parser.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/parseclj/parseclj-parser.el
+;;;### (autoloads nil "parseclj-parser" "parseclj-parser.el" (0 0
+;;;;;;  0 0))
+;;; Generated autoloads from parseclj-parser.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-parser" '("parseclj-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/parseclj/parseclj-ast.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/parseclj/parseclj-lex.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/parseclj/parseclj-parser.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/parseclj/parseclj.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

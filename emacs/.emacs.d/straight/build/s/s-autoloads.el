@@ -3,16 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "s" "../../../../../../.emacs.d/straight/build/s/s.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/s/s.el
+;;;### (autoloads nil "s" "s.el" (0 0 0 0))
+;;; Generated autoloads from s.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "s" '("s-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/s/s.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

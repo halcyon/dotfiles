@@ -3,16 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "pcache" "../../../../../../.emacs.d/straight/build/pcache/pcache.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/pcache/pcache.el
+;;;### (autoloads nil "pcache" "pcache.el" (0 0 0 0))
+;;; Generated autoloads from pcache.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pcache" '("pcache-" "constructor" "*pcache-repositor")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/pcache/pcache.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

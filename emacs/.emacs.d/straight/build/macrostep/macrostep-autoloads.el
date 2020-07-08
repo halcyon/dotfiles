@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "macrostep" "../../../../../../.emacs.d/straight/build/macrostep/macrostep.el"
-;;;;;;  "71de44d1674608b347f37a365b03f61c")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/macrostep/macrostep.el
+;;;### (autoloads nil "macrostep" "macrostep.el" (0 0 0 0))
+;;; Generated autoloads from macrostep.el
 
 (autoload 'macrostep-mode "macrostep" "\
 Minor mode for inline expansion of macros in Emacs Lisp source buffers.
@@ -33,20 +32,13 @@ buffer instead of inline in the current buffer.  Setting
 behaviors.
 
 \(fn &optional TOGGLE-SEPARATE-BUFFER)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "macrostep" "../../../../../../.emacs.d/straight/build/macrostep/macrostep.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/macrostep/macrostep.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "macrostep" '("macrostep-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "macrostep-c" "../../../../../../.emacs.d/straight/build/macrostep/macrostep-c.el"
-;;;;;;  "69a7229b1a64aa4d3e8996b64c98d114")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/macrostep/macrostep-c.el
+;;;### (autoloads nil "macrostep-c" "macrostep-c.el" (0 0 0 0))
+;;; Generated autoloads from macrostep-c.el
 
 (autoload 'macrostep-c-mode-hook "macrostep-c" "\
 
@@ -54,21 +46,8 @@ behaviors.
 \(fn)" nil nil)
 
 (add-hook 'c-mode-hook #'macrostep-c-mode-hook)
-
-;;;### (autoloads "actual autoloads are elsewhere" "macrostep-c"
-;;;;;;  "../../../../../../.emacs.d/straight/build/macrostep/macrostep-c.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/macrostep/macrostep-c.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "macrostep-c" '("macrostep-c-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/macrostep/macrostep-c.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/macrostep/macrostep.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

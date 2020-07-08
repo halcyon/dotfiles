@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "restclient" "../../../../../../.emacs.d/straight/build/restclient/restclient.el"
-;;;;;;  "99917c3238cb7ff959a1683309427a93")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/restclient/restclient.el
+;;;### (autoloads nil "restclient" "restclient.el" (0 0 0 0))
+;;; Generated autoloads from restclient.el
 
 (autoload 'restclient-http-send-current "restclient" "\
 Sends current request.
@@ -28,19 +27,8 @@ Send current request and keep focus in request window.
 Turn on restclient mode.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "restclient" "../../../../../../.emacs.d/straight/build/restclient/restclient.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/restclient/restclient.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "restclient" '("restclient-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/restclient/restclient.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "gist" "../../../../../../.emacs.d/straight/build/gist/gist.el"
-;;;;;;  "2ccf2be88f7c963ef0ed38b5838f76b2")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/gist/gist.el
+;;;### (autoloads nil "gist" "gist.el" (0 0 0 0))
+;;; Generated autoloads from gist.el
 
 (autoload 'gist-region "gist" "\
 Post the current region as a new paste at gist.github.com
@@ -90,19 +89,8 @@ List your starred gists.
 Fork a gist.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "gist" "../../../../../../.emacs.d/straight/build/gist/gist.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/gist/gist.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gist" '("dired-do-gist" "gist-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/gist/gist.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

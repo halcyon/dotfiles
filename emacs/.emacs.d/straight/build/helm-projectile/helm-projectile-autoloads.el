@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "helm-projectile" "../../../../../../.emacs.d/straight/build/helm-projectile/helm-projectile.el"
-;;;;;;  "e4eef0dd1abee013407d47c3517cf5da")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm-projectile/helm-projectile.el
+;;;### (autoloads nil "helm-projectile" "helm-projectile.el" (0 0
+;;;;;;  0 0))
+;;; Generated autoloads from helm-projectile.el
 
 (defvar helm-projectile-fuzzy-match t "\
 Enable fuzzy matching for Helm Projectile commands.
@@ -70,20 +70,8 @@ If invoked outside of a project, displays a list of known projects to jump.
 \(fn &optional ARG)" t nil)
 
 (eval-after-load 'projectile '(progn (define-key projectile-command-map (kbd "h") #'helm-projectile)))
-
-;;;### (autoloads "actual autoloads are elsewhere" "helm-projectile"
-;;;;;;  "../../../../../../.emacs.d/straight/build/helm-projectile/helm-projectile.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/helm-projectile/helm-projectile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-projectile" '("helm-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/helm-projectile/helm-projectile.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -183,6 +183,7 @@ Null prefix argument turns off the mode."
   :straight nil
   :init
   (require 'ob-clojure)
+  (require 'ob-shell)
   (require 'ol-notmuch)
   (setq org-src-fontify-natively t
       org-confirm-babel-evaluate nil

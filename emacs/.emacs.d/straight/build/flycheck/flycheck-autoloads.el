@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "flycheck" "../../../../../../.emacs.d/straight/build/flycheck/flycheck.el"
-;;;;;;  "5c2c76130581ac8ed04287bf6c20dcdb")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck.el
+;;;### (autoloads nil "flycheck" "flycheck.el" (0 0 0 0))
+;;; Generated autoloads from flycheck.el
 
 (autoload 'flycheck-manual "flycheck" "\
 Open the Flycheck manual.
@@ -238,39 +237,23 @@ SYMBOL with `flycheck-def-executable-var'.
 (function-put 'flycheck-define-checker 'lisp-indent-function '1)
 
 (function-put 'flycheck-define-checker 'doc-string-elt '2)
-
-;;;### (autoloads "actual autoloads are elsewhere" "flycheck" "../../../../../../.emacs.d/straight/build/flycheck/flycheck.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck" '("flycheck-" "list-flycheck-errors" "help-flycheck-checker-d")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "flycheck-buttercup"
-;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck-buttercup.el"
+;;;### (autoloads nil "flycheck-buttercup" "flycheck-buttercup.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck-buttercup.el
+;;; Generated autoloads from flycheck-buttercup.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-buttercup" '("flycheck-buttercup-format-error-list")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "flycheck-ert"
-;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck-ert.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/flycheck/flycheck-ert.el
+;;;### (autoloads nil "flycheck-ert" "flycheck-ert.el" (0 0 0 0))
+;;; Generated autoloads from flycheck-ert.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-ert" '("flycheck-er")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/flycheck/flycheck-buttercup.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck-ert.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/flycheck/flycheck.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

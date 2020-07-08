@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "with-editor" "../../../../../../.emacs.d/straight/build/with-editor/with-editor.el"
-;;;;;;  "bae9c90e27f39cd3c34a50b4becff5b1")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/with-editor/with-editor.el
+;;;### (autoloads nil "with-editor" "with-editor.el" (0 0 0 0))
+;;; Generated autoloads from with-editor.el
 
 (autoload 'with-editor-export-editor "with-editor" "\
 Teach subsequent commands to use current Emacs instance as editor.
@@ -79,20 +78,8 @@ If COMMAND ends with \"&\" behave like the latter,
 else like the former.
 
 \(fn COMMAND &optional OUTPUT-BUFFER ERROR-BUFFER ENVVAR)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "with-editor"
-;;;;;;  "../../../../../../.emacs.d/straight/build/with-editor/with-editor.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/with-editor/with-editor.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "with-editor" '("with-editor" "start-file-process--with-editor-process-filter" "server-" "shell-command--shell-command-with-editor-mode")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/with-editor/with-editor.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "let-alist" "../../../../../../.emacs.d/straight/build/let-alist/let-alist.el"
-;;;;;;  "991420e4b2b99d18e7441fb8ad754eda")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/let-alist/let-alist.el
+;;;### (autoloads nil "let-alist" "let-alist.el" (0 0 0 0))
+;;; Generated autoloads from let-alist.el
 
 (autoload 'let-alist "let-alist" "\
 Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
@@ -39,19 +38,8 @@ displayed in the example above.
 \(fn ALIST &rest BODY)" nil t)
 
 (function-put 'let-alist 'lisp-indent-function '1)
-
-;;;### (autoloads "actual autoloads are elsewhere" "let-alist" "../../../../../../.emacs.d/straight/build/let-alist/let-alist.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/let-alist/let-alist.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "let-alist" '("let-alist--")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/let-alist/let-alist.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "org2jekyll" "../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll.el"
-;;;;;;  "f8b27ee8a36f060a2287d31edf8722ed")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll.el
+;;;### (autoloads nil "org2jekyll" "org2jekyll.el" (0 0 0 0))
+;;; Generated autoloads from org2jekyll.el
 
 (autoload 'org2jekyll-init-current-buffer "org2jekyll" "\
 Given an existing buffer, add the needed metadata to make it a post or page.
@@ -56,29 +55,16 @@ Commands:
 \\{org2jekyll-mode-map}
 
 \(fn &optional ARG)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "org2jekyll" "../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org2jekyll" '("org2jekyll-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "org2jekyll-utilities"
-;;;;;;  "../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll-utilities.el"
+;;;### (autoloads nil "org2jekyll-utilities" "org2jekyll-utilities.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll-utilities.el
+;;; Generated autoloads from org2jekyll-utilities.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org2jekyll-utilities" '("org2jekyll-tests-with-temp-buffer")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll-utilities.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/org2jekyll/org2jekyll.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

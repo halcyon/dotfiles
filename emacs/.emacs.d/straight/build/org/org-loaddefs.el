@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "ob-core" "../../../../../../.emacs.d/straight/build/org/ob-core.el"
-;;;;;;  "06125cd7e02831cf1fe1053c78ef368c")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ob-core.el
+;;;### (autoloads nil "ob-core" "ob-core.el" "06125cd7e02831cf1fe1053c78ef368c")
+;;; Generated autoloads from ob-core.el
 
 (autoload 'org-babel-execute-safely-maybe "ob-core" "\
 
@@ -238,9 +237,8 @@ Mark current source block.
 
 ;;;***
 
-;;;### (autoloads nil "ob-lob" "../../../../../../.emacs.d/straight/build/org/ob-lob.el"
-;;;;;;  "6d57273b1605eda4687aec918974697a")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ob-lob.el
+;;;### (autoloads nil "ob-lob" "ob-lob.el" "6d57273b1605eda4687aec918974697a")
+;;; Generated autoloads from ob-lob.el
 
 (autoload 'org-babel-lob-execute-maybe "ob-lob" "\
 Execute a Library of Babel source block, if appropriate.
@@ -262,9 +260,8 @@ see.
 
 ;;;***
 
-;;;### (autoloads nil "ob-tangle" "../../../../../../.emacs.d/straight/build/org/ob-tangle.el"
-;;;;;;  "c5efe758d83995f73ad2bc25336b52a7")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ob-tangle.el
+;;;### (autoloads nil "ob-tangle" "ob-tangle.el" "c5efe758d83995f73ad2bc25336b52a7")
+;;; Generated autoloads from ob-tangle.el
 
 (autoload 'org-babel-tangle-file "ob-tangle" "\
 Extract the bodies of source code blocks in FILE.
@@ -293,9 +290,8 @@ matching a regular expression.
 
 ;;;***
 
-;;;### (autoloads nil "ol" "../../../../../../.emacs.d/straight/build/org/ol.el"
-;;;;;;  "2d5cea1648fe378173f0e1a1f2261c67")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ol.el
+;;;### (autoloads nil "ol" "ol.el" "2d5cea1648fe378173f0e1a1f2261c67")
+;;; Generated autoloads from ol.el
 
 (autoload 'org-next-link "ol" "\
 Move forward to the next link.
@@ -404,9 +400,8 @@ Also refresh fontification if needed.
 
 ;;;***
 
-;;;### (autoloads nil "ol-bbdb" "../../../../../../.emacs.d/straight/build/org/ol-bbdb.el"
-;;;;;;  "b11a30105e559ea96b66bfe905bb13b6")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ol-bbdb.el
+;;;### (autoloads nil "ol-bbdb" "ol-bbdb.el" "b11a30105e559ea96b66bfe905bb13b6")
+;;; Generated autoloads from ol-bbdb.el
 
 (autoload 'org-bbdb-anniversaries "ol-bbdb" "\
 Extract anniversaries from BBDB for display in the agenda.
@@ -417,9 +412,8 @@ variable to be globally bound.
 
 ;;;***
 
-;;;### (autoloads nil "ol-irc" "../../../../../../.emacs.d/straight/build/org/ol-irc.el"
-;;;;;;  "a29483142a0dc2c1751da488f36f2565")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ol-irc.el
+;;;### (autoloads nil "ol-irc" "ol-irc.el" "a29483142a0dc2c1751da488f36f2565")
+;;; Generated autoloads from ol-irc.el
 
 (autoload 'org-irc-store-link "ol-irc" "\
 Dispatch to the appropriate function to store a link to an IRC session.
@@ -428,9 +422,8 @@ Dispatch to the appropriate function to store a link to an IRC session.
 
 ;;;***
 
-;;;### (autoloads nil "org" "../../../../../../.emacs.d/straight/build/org/org.el"
-;;;;;;  "e778d7f5caa745780df372f434f9ca17")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org.el
+;;;### (autoloads nil "org" "org.el" "e778d7f5caa745780df372f434f9ca17")
+;;; Generated autoloads from org.el
 
 (autoload 'org-babel-do-load-languages "org" "\
 Load the languages defined in `org-babel-load-languages'.
@@ -631,9 +624,8 @@ Call the customize function with org as argument.
 
 ;;;***
 
-;;;### (autoloads nil "org-agenda" "../../../../../../.emacs.d/straight/build/org/org-agenda.el"
-;;;;;;  "4b2a13441c663b7640fc77a73a5fb9d6")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-agenda.el
+;;;### (autoloads nil "org-agenda" "org-agenda.el" "4b2a13441c663b7640fc77a73a5fb9d6")
+;;; Generated autoloads from org-agenda.el
 
 (autoload 'org-toggle-sticky-agenda "org-agenda" "\
 Toggle `org-agenda-sticky'.
@@ -908,9 +900,8 @@ to override `appt-message-warning-time'.
 
 ;;;***
 
-;;;### (autoloads nil "org-archive" "../../../../../../.emacs.d/straight/build/org/org-archive.el"
-;;;;;;  "c048f8520a3ad28fb1f7476c04692eb8")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-archive.el
+;;;### (autoloads nil "org-archive" "org-archive.el" "c048f8520a3ad28fb1f7476c04692eb8")
+;;; Generated autoloads from org-archive.el
 
 (autoload 'org-add-archive-files "org-archive" "\
 Splice the archive files into the list of files.
@@ -969,9 +960,8 @@ This command is set with the variable `org-archive-default-command'.
 
 ;;;***
 
-;;;### (autoloads nil "org-attach" "../../../../../../.emacs.d/straight/build/org/org-attach.el"
-;;;;;;  "3144ea9789ce68b8c3597ea0851263b5")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-attach.el
+;;;### (autoloads nil "org-attach" "org-attach.el" "3144ea9789ce68b8c3597ea0851263b5")
+;;; Generated autoloads from org-attach.el
 
 (autoload 'org-attach "org-attach" "\
 The dispatcher for attachment commands.
@@ -989,9 +979,8 @@ Idea taken from `gnus-dired-attach'.
 
 ;;;***
 
-;;;### (autoloads nil "org-capture" "../../../../../../.emacs.d/straight/build/org/org-capture.el"
-;;;;;;  "b69cf992f31fab3fc7076814b007e11a")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-capture.el
+;;;### (autoloads nil "org-capture" "org-capture.el" "b69cf992f31fab3fc7076814b007e11a")
+;;; Generated autoloads from org-capture.el
 
 (autoload 'org-capture-string "org-capture" "\
 Capture STRING with the template selected by KEYS.
@@ -1036,9 +1025,8 @@ Set `org-capture-templates' to be similar to `org-remember-templates'.
 
 ;;;***
 
-;;;### (autoloads nil "org-clock" "../../../../../../.emacs.d/straight/build/org/org-clock.el"
-;;;;;;  "3c1b456e0c85542619963850bd3896d4")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-clock.el
+;;;### (autoloads nil "org-clock" "org-clock.el" "3c1b456e0c85542619963850bd3896d4")
+;;; Generated autoloads from org-clock.el
 
 (autoload 'org-resolve-clocks "org-clock" "\
 Resolve all currently open Org clocks.
@@ -1197,9 +1185,8 @@ Otherwise, return nil.
 
 ;;;***
 
-;;;### (autoloads nil "org-colview" "../../../../../../.emacs.d/straight/build/org/org-colview.el"
-;;;;;;  "70f2f4d322a5444e57c5100382e4035a")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-colview.el
+;;;### (autoloads nil "org-colview" "org-colview.el" "70f2f4d322a5444e57c5100382e4035a")
+;;; Generated autoloads from org-colview.el
 
 (autoload 'org-columns-remove-overlays "org-colview" "\
 Remove all currently active column overlays.
@@ -1296,9 +1283,8 @@ Turn on or update column view in the agenda.
 
 ;;;***
 
-;;;### (autoloads nil "org-compat" "../../../../../../.emacs.d/straight/build/org/org-compat.el"
-;;;;;;  "9c39742059b77885d93892f063794000")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-compat.el
+;;;### (autoloads nil "org-compat" "org-compat.el" "9c39742059b77885d93892f063794000")
+;;; Generated autoloads from org-compat.el
 
 (autoload 'org-check-version "org-compat" "\
 Try very hard to provide sensible version strings.
@@ -1307,9 +1293,8 @@ Try very hard to provide sensible version strings.
 
 ;;;***
 
-;;;### (autoloads nil "org-datetree" "../../../../../../.emacs.d/straight/build/org/org-datetree.el"
-;;;;;;  "8c823c1c5c488ca383f671c23b63d85f")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-datetree.el
+;;;### (autoloads nil "org-datetree" "org-datetree.el" "8c823c1c5c488ca383f671c23b63d85f")
+;;; Generated autoloads from org-datetree.el
 
 (autoload 'org-datetree-find-date-create "org-datetree" "\
 Find or create a day entry for date D.
@@ -1343,9 +1328,8 @@ will be built under the headline at point.
 
 ;;;***
 
-;;;### (autoloads nil "org-duration" "../../../../../../.emacs.d/straight/build/org/org-duration.el"
-;;;;;;  "533a3fb7cb801076ac818035e05b9b1f")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-duration.el
+;;;### (autoloads nil "org-duration" "org-duration.el" "533a3fb7cb801076ac818035e05b9b1f")
+;;; Generated autoloads from org-duration.el
 
 (autoload 'org-duration-set-regexps "org-duration" "\
 Set duration related regexps.
@@ -1398,9 +1382,8 @@ with \"H:MM:SS\" format, return `h:mm:ss'.  Otherwise, return
 
 ;;;***
 
-;;;### (autoloads nil "org-element" "../../../../../../.emacs.d/straight/build/org/org-element.el"
-;;;;;;  "f7e6d2f65a7f0ced4bd7d3a9b65f52d9")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-element.el
+;;;### (autoloads nil "org-element" "org-element.el" "f7e6d2f65a7f0ced4bd7d3a9b65f52d9")
+;;; Generated autoloads from org-element.el
 
 (autoload 'org-element-update-syntax "org-element" "\
 Update parser internals.
@@ -1471,9 +1454,8 @@ Providing it allows for quicker computation.
 
 ;;;***
 
-;;;### (autoloads nil "org-feed" "../../../../../../.emacs.d/straight/build/org/org-feed.el"
-;;;;;;  "2787ca4db1e1837f4182bb7d9d759a08")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-feed.el
+;;;### (autoloads nil "org-feed" "org-feed.el" "2787ca4db1e1837f4182bb7d9d759a08")
+;;; Generated autoloads from org-feed.el
 
 (autoload 'org-feed-update-all "org-feed" "\
 Get inbox items from all feeds in `org-feed-alist'.
@@ -1499,9 +1481,8 @@ Show the raw feed buffer of a feed.
 
 ;;;***
 
-;;;### (autoloads nil "org-footnote" "../../../../../../.emacs.d/straight/build/org/org-footnote.el"
-;;;;;;  "367213d77f17760a0cee9c0afea7e57e")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-footnote.el
+;;;### (autoloads nil "org-footnote" "org-footnote.el" "367213d77f17760a0cee9c0afea7e57e")
+;;; Generated autoloads from org-footnote.el
 
 (autoload 'org-footnote-action "org-footnote" "\
 Do the right thing for footnotes.
@@ -1521,9 +1502,8 @@ offer additional commands in a menu.
 
 ;;;***
 
-;;;### (autoloads nil "org-goto" "../../../../../../.emacs.d/straight/build/org/org-goto.el"
-;;;;;;  "a2547f4c51750b08aa654656dd06bef0")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-goto.el
+;;;### (autoloads nil "org-goto" "org-goto.el" "a2547f4c51750b08aa654656dd06bef0")
+;;; Generated autoloads from org-goto.el
 
 (autoload 'org-goto-location "org-goto" "\
 Let the user select a location in current buffer.
@@ -1556,9 +1536,8 @@ With a prefix argument, use the alternative interface: e.g., if
 
 ;;;***
 
-;;;### (autoloads nil "org-id" "../../../../../../.emacs.d/straight/build/org/org-id.el"
-;;;;;;  "b95b811da68a92e7943482684311bb10")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-id.el
+;;;### (autoloads nil "org-id" "org-id.el" "b95b811da68a92e7943482684311bb10")
+;;; Generated autoloads from org-id.el
 
 (autoload 'org-id-get-create "org-id" "\
 Create an ID for the current entry and return it.
@@ -1649,9 +1628,8 @@ Store a link to the current entry, using its ID.
 
 ;;;***
 
-;;;### (autoloads nil "org-indent" "../../../../../../.emacs.d/straight/build/org/org-indent.el"
-;;;;;;  "4e9dfac6bee510dc47f12998e392f9f8")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-indent.el
+;;;### (autoloads nil "org-indent" "org-indent.el" "4e9dfac6bee510dc47f12998e392f9f8")
+;;; Generated autoloads from org-indent.el
 
 (autoload 'org-indent-mode "org-indent" "\
 When active, indent text according to outline structure.
@@ -1667,9 +1645,8 @@ during idle time.
 
 ;;;***
 
-;;;### (autoloads nil "org-keys" "../../../../../../.emacs.d/straight/build/org/org-keys.el"
-;;;;;;  "a5062df5c1b4bec1e8496df95a1f008e")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-keys.el
+;;;### (autoloads nil "org-keys" "org-keys.el" "a5062df5c1b4bec1e8496df95a1f008e")
+;;; Generated autoloads from org-keys.el
 
 (autoload 'org-babel-describe-bindings "org-keys" "\
 Describe all keybindings behind `org-babel-key-prefix'.
@@ -1678,9 +1655,8 @@ Describe all keybindings behind `org-babel-key-prefix'.
 
 ;;;***
 
-;;;### (autoloads nil "org-lint" "../../../../../../.emacs.d/straight/build/org/org-lint.el"
-;;;;;;  "26941b244d9c0b40174f3497c5f3edb8")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-lint.el
+;;;### (autoloads nil "org-lint" "org-lint.el" "26941b244d9c0b40174f3497c5f3edb8")
+;;; Generated autoloads from org-lint.el
 
 (autoload 'org-lint "org-lint" "\
 Check current Org buffer for syntax mistakes.
@@ -1695,9 +1671,8 @@ ARG can also be a list of checker names, as symbols, to run.
 
 ;;;***
 
-;;;### (autoloads nil "org-list" "../../../../../../.emacs.d/straight/build/org/org-list.el"
-;;;;;;  "fef974ece4a5fd348cbf890d9a69c3e1")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-list.el
+;;;### (autoloads nil "org-list" "org-list.el" "fef974ece4a5fd348cbf890d9a69c3e1")
+;;; Generated autoloads from org-list.el
 
 (autoload 'org-list-checkbox-radio-mode "org-list" "\
 When turned on, use list checkboxes as radio buttons.
@@ -1706,9 +1681,8 @@ When turned on, use list checkboxes as radio buttons.
 
 ;;;***
 
-;;;### (autoloads nil "org-macs" "../../../../../../.emacs.d/straight/build/org/org-macs.el"
-;;;;;;  "aa477ac08b06b8d83530886304ffa437")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-macs.el
+;;;### (autoloads nil "org-macs" "org-macs.el" "aa477ac08b06b8d83530886304ffa437")
+;;; Generated autoloads from org-macs.el
 
 (autoload 'org-load-noerror-mustsuffix "org-macs" "\
 Load FILE with optional arguments NOERROR and MUSTSUFFIX.
@@ -1717,9 +1691,8 @@ Load FILE with optional arguments NOERROR and MUSTSUFFIX.
 
 ;;;***
 
-;;;### (autoloads nil "org-mobile" "../../../../../../.emacs.d/straight/build/org/org-mobile.el"
-;;;;;;  "cb9f1699657ee3caa5e7279b30323bde")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-mobile.el
+;;;### (autoloads nil "org-mobile" "org-mobile.el" "cb9f1699657ee3caa5e7279b30323bde")
+;;; Generated autoloads from org-mobile.el
 
 (autoload 'org-mobile-push "org-mobile" "\
 Push the current state of Org affairs to the target directory.
@@ -1737,9 +1710,8 @@ agenda view showing the flagged items.
 
 ;;;***
 
-;;;### (autoloads nil "org-num" "../../../../../../.emacs.d/straight/build/org/org-num.el"
-;;;;;;  "81134b18a330bfe73fe225677c2f652f")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-num.el
+;;;### (autoloads nil "org-num" "org-num.el" "81134b18a330bfe73fe225677c2f652f")
+;;; Generated autoloads from org-num.el
 
 (autoload 'org-num-default-format "org-num" "\
 Default numbering display function.
@@ -1754,9 +1726,8 @@ Dynamic numbering of headlines in an Org buffer.
 
 ;;;***
 
-;;;### (autoloads nil "org-plot" "../../../../../../.emacs.d/straight/build/org/org-plot.el"
-;;;;;;  "209be18c48176be1738fadcb478f00ea")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-plot.el
+;;;### (autoloads nil "org-plot" "org-plot.el" "209be18c48176be1738fadcb478f00ea")
+;;; Generated autoloads from org-plot.el
 
 (autoload 'org-plot/gnuplot "org-plot" "\
 Plot table using gnuplot.  Gnuplot options can be specified with PARAMS.
@@ -1767,9 +1738,8 @@ line directly before or after the table.
 
 ;;;***
 
-;;;### (autoloads nil "org-refile" "../../../../../../.emacs.d/straight/build/org/org-refile.el"
-;;;;;;  "b615a6d5575b27c9f6ca45f0cf06d8cf")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-refile.el
+;;;### (autoloads nil "org-refile" "org-refile.el" "b615a6d5575b27c9f6ca45f0cf06d8cf")
+;;; Generated autoloads from org-refile.el
 
 (autoload 'org-refile-copy "org-refile" "\
 Like `org-refile', but preserve the refiled subtree.
@@ -1819,9 +1789,8 @@ prefix argument (`C-u C-u C-u C-c C-w').
 
 ;;;***
 
-;;;### (autoloads nil "org-table" "../../../../../../.emacs.d/straight/build/org/org-table.el"
-;;;;;;  "649d88dad0b161ca468717e9d68d7f12")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-table.el
+;;;### (autoloads nil "org-table" "org-table.el" "649d88dad0b161ca468717e9d68d7f12")
+;;; Generated autoloads from org-table.el
 
 (autoload 'org-table-header-line-mode "org-table" "\
 Display the first row of the table at point in the header line.
@@ -2596,9 +2565,8 @@ which will prompt for the width.
 
 ;;;***
 
-;;;### (autoloads nil "org-timer" "../../../../../../.emacs.d/straight/build/org/org-timer.el"
-;;;;;;  "abbafa059d33aa97ce4010c59f3e3bea")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/org-timer.el
+;;;### (autoloads nil "org-timer" "org-timer.el" "abbafa059d33aa97ce4010c59f3e3bea")
+;;; Generated autoloads from org-timer.el
 
 (autoload 'org-timer-start "org-timer" "\
 Set the starting time for the relative timer to now.
@@ -2674,9 +2642,8 @@ using three `C-u' prefix arguments.
 
 ;;;***
 
-;;;### (autoloads nil "ox" "../../../../../../.emacs.d/straight/build/org/ox.el"
-;;;;;;  "9c463f77ea02441898b6da90ec381785")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox.el
+;;;### (autoloads nil "ox" "ox.el" "9c463f77ea02441898b6da90ec381785")
+;;; Generated autoloads from ox.el
 
 (autoload 'org-export-get-backend "ox" "\
 Return export back-end named after NAME.
@@ -2864,9 +2831,8 @@ When ARG is `\\[universal-argument] \\[universal-argument]', display the asynchr
 
 ;;;***
 
-;;;### (autoloads nil "ox-ascii" "../../../../../../.emacs.d/straight/build/org/ox-ascii.el"
-;;;;;;  "94a67ae2fda33070e09c3b249818a37c")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-ascii.el
+;;;### (autoloads nil "ox-ascii" "ox-ascii.el" "94a67ae2fda33070e09c3b249818a37c")
+;;; Generated autoloads from ox-ascii.el
 
 (autoload 'org-ascii-convert-region-to-ascii "ox-ascii" "\
 Assume region has Org syntax, and convert it to plain ASCII.
@@ -2975,9 +2941,8 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-beamer" "../../../../../../.emacs.d/straight/build/org/ox-beamer.el"
-;;;;;;  "5d554ce972e36362e5c94d5424b90a74")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-beamer.el
+;;;### (autoloads nil "ox-beamer" "ox-beamer.el" "5d554ce972e36362e5c94d5424b90a74")
+;;; Generated autoloads from ox-beamer.el
 
 (autoload 'org-beamer-mode "ox-beamer" "\
 Support for editing Beamer oriented Org mode files.
@@ -3111,9 +3076,8 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-html" "../../../../../../.emacs.d/straight/build/org/ox-html.el"
-;;;;;;  "17145e335b85370a28795cbe4a43dd97")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-html.el
+;;;### (autoloads nil "ox-html" "ox-html.el" "17145e335b85370a28795cbe4a43dd97")
+;;; Generated autoloads from ox-html.el
 
 (put 'org-html-head-include-default-style 'safe-local-variable 'booleanp)
 
@@ -3218,9 +3182,8 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-icalendar" "../../../../../../.emacs.d/straight/build/org/ox-icalendar.el"
-;;;;;;  "e03a390e0431c4e4aafdd65b9d07e77c")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-icalendar.el
+;;;### (autoloads nil "ox-icalendar" "ox-icalendar.el" "e03a390e0431c4e4aafdd65b9d07e77c")
+;;; Generated autoloads from ox-icalendar.el
 
 (autoload 'org-icalendar-export-to-ics "ox-icalendar" "\
 Export current buffer to an iCalendar file.
@@ -3269,9 +3232,8 @@ The file is stored under the name chosen in
 
 ;;;***
 
-;;;### (autoloads nil "ox-latex" "../../../../../../.emacs.d/straight/build/org/ox-latex.el"
-;;;;;;  "ae5c642c5090c1f04f2c9f81c41ac634")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-latex.el
+;;;### (autoloads nil "ox-latex" "ox-latex.el" "ae5c642c5090c1f04f2c9f81c41ac634")
+;;; Generated autoloads from ox-latex.el
 
 (autoload 'org-latex-make-preamble "ox-latex" "\
 Return a formatted LaTeX preamble.
@@ -3406,9 +3368,8 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-md" "../../../../../../.emacs.d/straight/build/org/ox-md.el"
-;;;;;;  "b15e8f0c74569cb2049c62f07954fb07")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-md.el
+;;;### (autoloads nil "ox-md" "ox-md.el" "b15e8f0c74569cb2049c62f07954fb07")
+;;; Generated autoloads from ox-md.el
 
 (autoload 'org-md-export-as-markdown "ox-md" "\
 Export current buffer to a Markdown buffer.
@@ -3479,9 +3440,8 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-odt" "../../../../../../.emacs.d/straight/build/org/ox-odt.el"
-;;;;;;  "b5dc2dbc590c3d1607b0926a186bc318")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-odt.el
+;;;### (autoloads nil "ox-odt" "ox-odt.el" "b5dc2dbc590c3d1607b0926a186bc318")
+;;; Generated autoloads from ox-odt.el
 
 (put 'org-odt-preferred-output-format 'safe-local-variable 'stringp)
 
@@ -3542,9 +3502,8 @@ is non-nil then the newly converted file is opened using
 
 ;;;***
 
-;;;### (autoloads nil "ox-org" "../../../../../../.emacs.d/straight/build/org/ox-org.el"
-;;;;;;  "46c2335a0076c22ba434bc5ad91e64e6")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-org.el
+;;;### (autoloads nil "ox-org" "ox-org.el" "46c2335a0076c22ba434bc5ad91e64e6")
+;;; Generated autoloads from ox-org.el
 
 (autoload 'org-org-export-as-org "ox-org" "\
 Export current buffer to an Org buffer.
@@ -3621,9 +3580,8 @@ Return output file name.
 
 ;;;***
 
-;;;### (autoloads nil "ox-publish" "../../../../../../.emacs.d/straight/build/org/ox-publish.el"
-;;;;;;  "869d8ac650d969aa76d5fe4fe7a08bfd")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-publish.el
+;;;### (autoloads nil "ox-publish" "ox-publish.el" "869d8ac650d969aa76d5fe4fe7a08bfd")
+;;; Generated autoloads from ox-publish.el
 
 (defalias 'org-publish-project 'org-publish)
 
@@ -3665,9 +3623,8 @@ the project.
 
 ;;;***
 
-;;;### (autoloads nil "ox-texinfo" "../../../../../../.emacs.d/straight/build/org/ox-texinfo.el"
-;;;;;;  "0e53478c69c8a6e3e1db19fca0ac161d")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/org/ox-texinfo.el
+;;;### (autoloads nil "ox-texinfo" "ox-texinfo.el" "0e53478c69c8a6e3e1db19fca0ac161d")
+;;; Generated autoloads from ox-texinfo.el
 
 (autoload 'org-texinfo-export-to-texinfo "ox-texinfo" "\
 Export current buffer to a Texinfo file.

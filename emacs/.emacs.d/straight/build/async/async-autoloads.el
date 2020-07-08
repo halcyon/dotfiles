@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "async" "../../../../../../.emacs.d/straight/build/async/async.el"
-;;;;;;  "75a6a8542b0c3876e45847b6b093638f")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/async/async.el
+;;;### (autoloads nil "async" "async.el" (0 0 0 0))
+;;; Generated autoloads from async.el
 
 (autoload 'async-start-process "async" "\
 Start the executable PROGRAM asynchronously named NAME.  See `async-start'.
@@ -66,20 +65,14 @@ returns nil.  It can still be useful, however, as an argument to
 `async-ready' or `async-wait'.
 
 \(fn START-FUNC &optional FINISH-FUNC)" nil nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "async" "../../../../../../.emacs.d/straight/build/async/async.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/async/async.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "async" '("async-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "async-bytecomp" "../../../../../../.emacs.d/straight/build/async/async-bytecomp.el"
-;;;;;;  "4ad669005e483f7c3bcdce885c752808")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/async/async-bytecomp.el
+;;;### (autoloads nil "async-bytecomp" "async-bytecomp.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from async-bytecomp.el
 
 (autoload 'async-byte-recompile-directory "async-bytecomp" "\
 Compile all *.el files in DIRECTORY asynchronously.
@@ -110,21 +103,13 @@ Byte compile Lisp code FILE asynchronously.
 Same as `byte-compile-file' but asynchronous.
 
 \(fn FILE)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "async-bytecomp"
-;;;;;;  "../../../../../../.emacs.d/straight/build/async/async-bytecomp.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/async/async-bytecomp.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "async-bytecomp" '("async-byte")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "dired-async" "../../../../../../.emacs.d/straight/build/async/dired-async.el"
-;;;;;;  "fa79509fc62b6f3bbf969df9f4080203")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/async/dired-async.el
+;;;### (autoloads nil "dired-async" "dired-async.el" (0 0 0 0))
+;;; Generated autoloads from dired-async.el
 
 (defvar dired-async-mode nil "\
 Non-nil if Dired-Async mode is enabled.
@@ -160,33 +145,20 @@ Run ‘dired-do-hardlink’ asynchronously.
 Run ‘dired-do-rename’ asynchronously.
 
 \(fn &optional ARG)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "dired-async"
-;;;;;;  "../../../../../../.emacs.d/straight/build/async/dired-async.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/async/dired-async.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dired-async" '("dired-async-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "smtpmail-async"
-;;;;;;  "../../../../../../.emacs.d/straight/build/async/smtpmail-async.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/async/smtpmail-async.el
+;;;### (autoloads nil "smtpmail-async" "smtpmail-async.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from smtpmail-async.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "smtpmail-async" '("async-smtpmail-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/async/async-bytecomp.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/async/async-pkg.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/async/async.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/async/dired-async.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/async/smtpmail-async.el")
-;;;;;;  (0 0 0 0))
+;;;### (autoloads nil nil ("async-pkg.el") (0 0 0 0))
 
 ;;;***
 

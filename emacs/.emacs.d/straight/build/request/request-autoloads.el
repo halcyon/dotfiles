@@ -3,16 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "request" "../../../../../../.emacs.d/straight/build/request/request.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/request/request.el
+;;;### (autoloads nil "request" "request.el" (0 0 0 0))
+;;; Generated autoloads from request.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "request" '("request-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/request/request.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

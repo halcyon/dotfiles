@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "direnv" "../../../../../../.emacs.d/straight/build/direnv/direnv.el"
-;;;;;;  "012aa42033f1194321babe04ffcef5ff")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/direnv/direnv.el
+;;;### (autoloads nil "direnv" "direnv.el" (0 0 0 0))
+;;; Generated autoloads from direnv.el
 
 (autoload 'direnv-update-environment "direnv" "\
 Update the environment for FILE-NAME.
@@ -54,19 +53,8 @@ Since .envrc files are shell scripts, this mode inherits from sh-mode.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.envrc\\'" . direnv-envrc-mode))
-
-;;;### (autoloads "actual autoloads are elsewhere" "direnv" "../../../../../../.emacs.d/straight/build/direnv/direnv.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/direnv/direnv.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "direnv" '("direnv-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/direnv/direnv.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

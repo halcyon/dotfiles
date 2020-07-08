@@ -3,17 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "loc-changes"
-;;;;;;  "../../../../../../.emacs.d/straight/build/loc-changes/loc-changes.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/loc-changes/loc-changes.el
+;;;### (autoloads nil "loc-changes" "loc-changes.el" (0 0 0 0))
+;;; Generated autoloads from loc-changes.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "loc-changes" '("loc-changes")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/loc-changes/loc-changes.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

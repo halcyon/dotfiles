@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "htmlize" "../../../../../../.emacs.d/straight/build/htmlize/htmlize.el"
-;;;;;;  "3fcd575bd70b4af3383dc9bfb8dc49e1")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/htmlize/htmlize.el
+;;;### (autoloads nil "htmlize" "htmlize.el" (0 0 0 0))
+;;; Generated autoloads from htmlize.el
 
 (autoload 'htmlize-buffer "htmlize" "\
 Convert BUFFER to HTML, preserving colors and decorations.
@@ -66,19 +65,8 @@ corresponding source file.
 HTMLize dired-marked files.
 
 \(fn ARG &optional TARGET-DIRECTORY)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "htmlize" "../../../../../../.emacs.d/straight/build/htmlize/htmlize.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/htmlize/htmlize.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "htmlize" '("htmlize-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/htmlize/htmlize.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

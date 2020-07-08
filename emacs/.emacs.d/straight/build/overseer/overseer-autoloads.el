@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "overseer" "../../../../../../.emacs.d/straight/build/overseer/overseer.el"
-;;;;;;  "c991f6809b79aca21a531a20a0615fb4")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/overseer/overseer.el
+;;;### (autoloads nil "overseer" "overseer.el" (0 0 0 0))
+;;; Generated autoloads from overseer.el
 
 (autoload 'overseer-version "overseer" "\
 Get the Overseer version as string.
@@ -36,19 +35,8 @@ Key bindings:
 \(fn)" nil nil)
 
 (dolist (hook '(emacs-lisp-mode-hook)) (add-hook hook 'overseer-enable-mode))
-
-;;;### (autoloads "actual autoloads are elsewhere" "overseer" "../../../../../../.emacs.d/straight/build/overseer/overseer.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/overseer/overseer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "overseer" '("overseer-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/overseer/overseer.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

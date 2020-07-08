@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "hindent" "../../../../../../.emacs.d/straight/build/hindent/hindent.el"
-;;;;;;  "64ce34881581409df84c82a9e79a5416")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/hindent/hindent.el
+;;;### (autoloads nil "hindent" "hindent.el" (0 0 0 0))
+;;; Generated autoloads from hindent.el
 
 (autoload 'hindent-mode "hindent" "\
 Indent code with the hindent program.
@@ -47,19 +46,8 @@ the file.
 \(fn BEG END &optional DROP-NEWLINE)" t nil)
 
 (define-obsolete-function-alias 'hindent/reformat-decl 'hindent-reformat-decl)
-
-;;;### (autoloads "actual autoloads are elsewhere" "hindent" "../../../../../../.emacs.d/straight/build/hindent/hindent.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/hindent/hindent.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hindent" '("hindent-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/hindent/hindent.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

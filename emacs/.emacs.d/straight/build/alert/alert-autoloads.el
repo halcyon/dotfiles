@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "alert" "../../../../../../.emacs.d/straight/build/alert/alert.el"
-;;;;;;  "a6b2d656718d1b239d1d3200e3c5cdf6")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/alert/alert.el
+;;;### (autoloads nil "alert" "alert.el" (0 0 0 0))
+;;; Generated autoloads from alert.el
 
 (autoload 'alert-add-rule "alert" "\
 Programmatically add an alert configuration rule.
@@ -84,19 +83,8 @@ Here are some more typical examples of usage:
          :category \\='some-category-or-other)
 
 \(fn MESSAGE &key (SEVERITY \\='normal) TITLE ICON CATEGORY BUFFER MODE DATA STYLE PERSISTENT NEVER-PERSIST ID)" nil nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "alert" "../../../../../../.emacs.d/straight/build/alert/alert.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/alert/alert.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "alert" '("alert-" "x-urgen")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/alert/alert.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

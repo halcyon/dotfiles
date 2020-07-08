@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "sesman" "../../../../../../.emacs.d/straight/build/sesman/sesman.el"
-;;;;;;  "8c89768102b95bb7d32b08a233c4afe4")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/sesman/sesman.el
+;;;### (autoloads nil "sesman" "sesman.el" (0 0 0 0))
+;;; Generated autoloads from sesman.el
 
 (autoload 'sesman-start "sesman" "\
 Start a Sesman session.
@@ -72,41 +71,22 @@ Break any of the previously created links.
 
 \(fn)" t nil)
  (autoload 'sesman-map "sesman" "Session management prefix keymap." t 'keymap)
-
-;;;### (autoloads "actual autoloads are elsewhere" "sesman" "../../../../../../.emacs.d/straight/build/sesman/sesman.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/sesman/sesman.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sesman" '("sesman-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "sesman-browser" "../../../../../../.emacs.d/straight/build/sesman/sesman-browser.el"
-;;;;;;  "85974a460384de6ced9a4af86228d06a")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/sesman/sesman-browser.el
+;;;### (autoloads nil "sesman-browser" "sesman-browser.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from sesman-browser.el
 
 (autoload 'sesman-browser "sesman-browser" "\
 Display an interactive session browser.
 See `sesman-browser-mode' for more details.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "sesman-browser"
-;;;;;;  "../../../../../../.emacs.d/straight/build/sesman/sesman-browser.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/sesman/sesman-browser.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sesman-browser" '("sesman-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/sesman/sesman-browser.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/sesman/sesman.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

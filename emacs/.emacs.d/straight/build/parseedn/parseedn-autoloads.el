@@ -3,16 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "parseedn" "../../../../../../.emacs.d/straight/build/parseedn/parseedn.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/parseedn/parseedn.el
+;;;### (autoloads nil "parseedn" "parseedn.el" (0 0 0 0))
+;;; Generated autoloads from parseedn.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseedn" '("parseedn-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/parseedn/parseedn.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

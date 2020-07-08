@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "slack" "../../../../../../.emacs.d/straight/build/slack/slack.el"
-;;;;;;  "82dc663345b7bef5edf0c07cd8885e03")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack.el
+;;;### (autoloads nil "slack" "slack.el" (0 0 0 0))
+;;; Generated autoloads from slack.el
 
 (autoload 'slack-start "slack" "\
 
@@ -39,752 +38,577 @@ Available options (property name, type, default value)
   if t, animate gif images.
 
 \(fn &rest PLIST)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "slack" "../../../../../../.emacs.d/straight/build/slack/slack.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack" '("slack-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-action"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-action.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-action.el
+;;;### (autoloads nil "slack-action" "slack-action.el" (0 0 0 0))
+;;; Generated autoloads from slack-action.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-action" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-all-threads-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-all-threads-buffer.el"
+;;;### (autoloads nil "slack-all-threads-buffer" "slack-all-threads-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-all-threads-buffer.el
+;;; Generated autoloads from slack-all-threads-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-all-threads-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-attachment"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-attachment.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-attachment.el
+;;;### (autoloads nil "slack-attachment" "slack-attachment.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from slack-attachment.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-attachment" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-block"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-block.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-block.el
+;;;### (autoloads nil "slack-block" "slack-block.el" (0 0 0 0))
+;;; Generated autoloads from slack-block.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-block" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-bot" "../../../../../../.emacs.d/straight/build/slack/slack-bot.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-bot.el
+;;;### (autoloads nil "slack-bot" "slack-bot.el" (0 0 0 0))
+;;; Generated autoloads from slack-bot.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-bot" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-bot-message"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-bot-message.el"
+;;;### (autoloads nil "slack-bot-message" "slack-bot-message.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-bot-message.el
+;;; Generated autoloads from slack-bot-message.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-bot-message" '("slack-bot-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-buffer.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-buffer.el
+;;;### (autoloads nil "slack-buffer" "slack-buffer.el" (0 0 0 0))
+;;; Generated autoloads from slack-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-buffer" '("slack-" "lui-prompt-string")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-channel"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-channel.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-channel.el
+;;;### (autoloads nil "slack-channel" "slack-channel.el" (0 0 0 0))
+;;; Generated autoloads from slack-channel.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-channel" '("slack-c")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-company"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-company.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-company.el
+;;;### (autoloads nil "slack-company" "slack-company.el" (0 0 0 0))
+;;; Generated autoloads from slack-company.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-company" '("company-slack-backend")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-conversations"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-conversations.el"
+;;;### (autoloads nil "slack-conversations" "slack-conversations.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-conversations.el
+;;; Generated autoloads from slack-conversations.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-conversations" '("slack-conversations-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-counts"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-counts.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-counts.el
+;;;### (autoloads nil "slack-counts" "slack-counts.el" (0 0 0 0))
+;;; Generated autoloads from slack-counts.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-counts" '("slack-c")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-create-message"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-create-message.el"
+;;;### (autoloads nil "slack-create-message" "slack-create-message.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-create-message.el
+;;; Generated autoloads from slack-create-message.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-create-message" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-dialog"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dialog.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-dialog.el
+;;;### (autoloads nil "slack-dialog" "slack-dialog.el" (0 0 0 0))
+;;; Generated autoloads from slack-dialog.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dialog" '("slack-dialog")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-dialog-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dialog-buffer.el"
+;;;### (autoloads nil "slack-dialog-buffer" "slack-dialog-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-dialog-buffer.el
+;;; Generated autoloads from slack-dialog-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dialog-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-dialog-edit-element-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dialog-edit-element-buffer.el"
+;;;### (autoloads nil "slack-dialog-edit-element-buffer" "slack-dialog-edit-element-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-dialog-edit-element-buffer.el
+;;; Generated autoloads from slack-dialog-edit-element-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dialog-edit-element-buffer" '("slack-dialog-edit-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-dnd-status"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dnd-status.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-dnd-status.el
+;;;### (autoloads nil "slack-dnd-status" "slack-dnd-status.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from slack-dnd-status.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dnd-status" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-emoji"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-emoji.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-emoji.el
+;;;### (autoloads nil "slack-emoji" "slack-emoji.el" (0 0 0 0))
+;;; Generated autoloads from slack-emoji.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-emoji" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-event"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-event.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-event.el
+;;;### (autoloads nil "slack-event" "slack-event.el" (0 0 0 0))
+;;; Generated autoloads from slack-event.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-event" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-file" "../../../../../../.emacs.d/straight/build/slack/slack-file.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-file.el
+;;;### (autoloads nil "slack-file" "slack-file.el" (0 0 0 0))
+;;; Generated autoloads from slack-file.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file" '("slack-file")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-file-info-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-file-info-buffer.el"
+;;;### (autoloads nil "slack-file-info-buffer" "slack-file-info-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-file-info-buffer.el
+;;; Generated autoloads from slack-file-info-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file-info-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-file-list-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-file-list-buffer.el"
+;;;### (autoloads nil "slack-file-list-buffer" "slack-file-list-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-file-list-buffer.el
+;;; Generated autoloads from slack-file-list-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file-list-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-group"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-group.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-group.el
+;;;### (autoloads nil "slack-group" "slack-group.el" (0 0 0 0))
+;;; Generated autoloads from slack-group.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-group" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-im" "../../../../../../.emacs.d/straight/build/slack/slack-im.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-im.el
+;;;### (autoloads nil "slack-im" "slack-im.el" (0 0 0 0))
+;;; Generated autoloads from slack-im.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-im" '("slack-im")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-image"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-image.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-image.el
+;;;### (autoloads nil "slack-image" "slack-image.el" (0 0 0 0))
+;;; Generated autoloads from slack-image.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-image" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-log" "../../../../../../.emacs.d/straight/build/slack/slack-log.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-log.el
+;;;### (autoloads nil "slack-log" "slack-log.el" (0 0 0 0))
+;;; Generated autoloads from slack-log.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-log" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message.el
+;;;### (autoloads nil "slack-message" "slack-message.el" (0 0 0 0))
+;;; Generated autoloads from slack-message.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-attachment-preview-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-attachment-preview-buffer.el"
+;;;### (autoloads nil "slack-message-attachment-preview-buffer" "slack-message-attachment-preview-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-attachment-preview-buffer.el
+;;; Generated autoloads from slack-message-attachment-preview-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-attachment-preview-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-buffer.el"
+;;;### (autoloads nil "slack-message-buffer" "slack-message-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-buffer.el
+;;; Generated autoloads from slack-message-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-compose-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-compose-buffer.el"
+;;;### (autoloads nil "slack-message-compose-buffer" "slack-message-compose-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-compose-buffer.el
+;;; Generated autoloads from slack-message-compose-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-compose-buffer" '("slack-message-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-edit-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-edit-buffer.el"
+;;;### (autoloads nil "slack-message-edit-buffer" "slack-message-edit-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-edit-buffer.el
+;;; Generated autoloads from slack-message-edit-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-edit-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-editor"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-editor.el"
+;;;### (autoloads nil "slack-message-editor" "slack-message-editor.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-editor.el
+;;; Generated autoloads from slack-message-editor.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-editor" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-event"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-event.el"
+;;;### (autoloads nil "slack-message-event" "slack-message-event.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-event.el
+;;; Generated autoloads from slack-message-event.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-event" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-faces"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-faces.el"
+;;;### (autoloads nil "slack-message-faces" "slack-message-faces.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-faces.el
+;;; Generated autoloads from slack-message-faces.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-faces" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-formatter"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-formatter.el"
+;;;### (autoloads nil "slack-message-formatter" "slack-message-formatter.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-formatter.el
+;;; Generated autoloads from slack-message-formatter.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-formatter" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-notification"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-notification.el"
+;;;### (autoloads nil "slack-message-notification" "slack-message-notification.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-notification.el
+;;; Generated autoloads from slack-message-notification.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-notification" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-reaction"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-reaction.el"
+;;;### (autoloads nil "slack-message-reaction" "slack-message-reaction.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-reaction.el
+;;; Generated autoloads from slack-message-reaction.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-reaction" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-sender"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-sender.el"
+;;;### (autoloads nil "slack-message-sender" "slack-message-sender.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-sender.el
+;;; Generated autoloads from slack-message-sender.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-sender" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-message-share-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-share-buffer.el"
+;;;### (autoloads nil "slack-message-share-buffer" "slack-message-share-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-message-share-buffer.el
+;;; Generated autoloads from slack-message-share-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-share-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-modeline"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-modeline.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-modeline.el
+;;;### (autoloads nil "slack-modeline" "slack-modeline.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from slack-modeline.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-modeline" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-mrkdwn"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-mrkdwn.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-mrkdwn.el
+;;;### (autoloads nil "slack-mrkdwn" "slack-mrkdwn.el" (0 0 0 0))
+;;; Generated autoloads from slack-mrkdwn.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-mrkdwn" '("slack-mrkdwn-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-pinned-item"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-pinned-item.el"
+;;;### (autoloads nil "slack-pinned-item" "slack-pinned-item.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-pinned-item.el
+;;; Generated autoloads from slack-pinned-item.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-pinned-item" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-pinned-items-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-pinned-items-buffer.el"
+;;;### (autoloads nil "slack-pinned-items-buffer" "slack-pinned-items-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-pinned-items-buffer.el
+;;; Generated autoloads from slack-pinned-items-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-pinned-items-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-reaction"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reaction.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-reaction.el
+;;;### (autoloads nil "slack-reaction" "slack-reaction.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from slack-reaction.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reaction" '("slack-reaction")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-reaction-event"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reaction-event.el"
+;;;### (autoloads nil "slack-reaction-event" "slack-reaction-event.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-reaction-event.el
+;;; Generated autoloads from slack-reaction-event.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reaction-event" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-reminder"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reminder.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-reminder.el
+;;;### (autoloads nil "slack-reminder" "slack-reminder.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from slack-reminder.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reminder" '("slack-re")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-reply-event"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reply-event.el"
+;;;### (autoloads nil "slack-reply-event" "slack-reply-event.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-reply-event.el
+;;; Generated autoloads from slack-reply-event.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reply-event" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-request"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-request.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-request.el
+;;;### (autoloads nil "slack-request" "slack-request.el" (0 0 0 0))
+;;; Generated autoloads from slack-request.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-request" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-room" "../../../../../../.emacs.d/straight/build/slack/slack-room.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-room.el
+;;;### (autoloads nil "slack-room" "slack-room.el" (0 0 0 0))
+;;; Generated autoloads from slack-room.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room" '("slack-room")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-room-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-buffer.el"
+;;;### (autoloads nil "slack-room-buffer" "slack-room-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-room-buffer.el
+;;; Generated autoloads from slack-room-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-room-event"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-event.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-room-event.el
+;;;### (autoloads nil "slack-room-event" "slack-room-event.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from slack-room-event.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room-event" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-room-info-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-info-buffer.el"
+;;;### (autoloads nil "slack-room-info-buffer" "slack-room-info-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-room-info-buffer.el
+;;; Generated autoloads from slack-room-info-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room-info-buffer" '("slack-room-info-buffer")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-room-message-compose-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-message-compose-buffer.el"
+;;;### (autoloads nil "slack-room-message-compose-buffer" "slack-room-message-compose-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-room-message-compose-buffer.el
+;;; Generated autoloads from slack-room-message-compose-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room-message-compose-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-search"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-search.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-search.el
+;;;### (autoloads nil "slack-search" "slack-search.el" (0 0 0 0))
+;;; Generated autoloads from slack-search.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-search" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-search-result-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-search-result-buffer.el"
+;;;### (autoloads nil "slack-search-result-buffer" "slack-search-result-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-search-result-buffer.el
+;;; Generated autoloads from slack-search-result-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-search-result-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-selectable"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-selectable.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-selectable.el
+;;;### (autoloads nil "slack-selectable" "slack-selectable.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from slack-selectable.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-selectable" '("slack-selectable")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-slash-commands"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-slash-commands.el"
+;;;### (autoloads nil "slack-slash-commands" "slack-slash-commands.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-slash-commands.el
+;;; Generated autoloads from slack-slash-commands.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-slash-commands" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-star" "../../../../../../.emacs.d/straight/build/slack/slack-star.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-star.el
+;;;### (autoloads nil "slack-star" "slack-star.el" (0 0 0 0))
+;;; Generated autoloads from slack-star.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-star" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-star-event"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-star-event.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-star-event.el
+;;;### (autoloads nil "slack-star-event" "slack-star-event.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from slack-star-event.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-star-event" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-stars-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-stars-buffer.el"
+;;;### (autoloads nil "slack-stars-buffer" "slack-stars-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-stars-buffer.el
+;;; Generated autoloads from slack-stars-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-stars-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-team" "../../../../../../.emacs.d/straight/build/slack/slack-team.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-team.el
+;;;### (autoloads nil "slack-team" "slack-team.el" (0 0 0 0))
+;;; Generated autoloads from slack-team.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-team" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-team-ws"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-team-ws.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-team-ws.el
+;;;### (autoloads nil "slack-team-ws" "slack-team-ws.el" (0 0 0 0))
+;;; Generated autoloads from slack-team-ws.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-team-ws" '("slack-team-ws")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-thread"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-thread.el
+;;;### (autoloads nil "slack-thread" "slack-thread.el" (0 0 0 0))
+;;; Generated autoloads from slack-thread.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-thread-event"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread-event.el"
+;;;### (autoloads nil "slack-thread-event" "slack-thread-event.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-thread-event.el
+;;; Generated autoloads from slack-thread-event.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread-event" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-thread-message-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread-message-buffer.el"
+;;;### (autoloads nil "slack-thread-message-buffer" "slack-thread-message-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-thread-message-buffer.el
+;;; Generated autoloads from slack-thread-message-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread-message-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-thread-message-compose-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread-message-compose-buffer.el"
+;;;### (autoloads nil "slack-thread-message-compose-buffer" "slack-thread-message-compose-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-thread-message-compose-buffer.el
+;;; Generated autoloads from slack-thread-message-compose-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread-message-compose-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-typing"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-typing.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-typing.el
+;;;### (autoloads nil "slack-typing" "slack-typing.el" (0 0 0 0))
+;;; Generated autoloads from slack-typing.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-typing" '("slack-typing")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-unescape"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-unescape.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-unescape.el
+;;;### (autoloads nil "slack-unescape" "slack-unescape.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from slack-unescape.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-unescape" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-unread"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-unread.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-unread.el
+;;;### (autoloads nil "slack-unread" "slack-unread.el" (0 0 0 0))
+;;; Generated autoloads from slack-unread.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-unread" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-user" "../../../../../../.emacs.d/straight/build/slack/slack-user.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-user.el
+;;;### (autoloads nil "slack-user" "slack-user.el" (0 0 0 0))
+;;; Generated autoloads from slack-user.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-user" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-user-message"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-user-message.el"
+;;;### (autoloads nil "slack-user-message" "slack-user-message.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-user-message.el
+;;; Generated autoloads from slack-user-message.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-user-message" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-user-profile-buffer"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-user-profile-buffer.el"
+;;;### (autoloads nil "slack-user-profile-buffer" "slack-user-profile-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-user-profile-buffer.el
+;;; Generated autoloads from slack-user-profile-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-user-profile-buffer" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-usergroup"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-usergroup.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-usergroup.el
+;;;### (autoloads nil "slack-usergroup" "slack-usergroup.el" (0 0
+;;;;;;  0 0))
+;;; Generated autoloads from slack-usergroup.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-usergroup" '("slack-usergroup")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-util" "../../../../../../.emacs.d/straight/build/slack/slack-util.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-util.el
+;;;### (autoloads nil "slack-util" "slack-util.el" (0 0 0 0))
+;;; Generated autoloads from slack-util.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-util" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "slack-websocket"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-websocket.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/slack/slack-websocket.el
+;;;### (autoloads nil "slack-websocket" "slack-websocket.el" (0 0
+;;;;;;  0 0))
+;;; Generated autoloads from slack-websocket.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-websocket" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/slack/slack-action.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-all-threads-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-attachment.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-authorize.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-block.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-bot-message.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-bot.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-channel.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-company.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-conversations.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-counts.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-create-message.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dialog-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dialog-edit-element-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dialog.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-dnd-status.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-emoji.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-event.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-file-info-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-file-list-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-file.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-group.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-im.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-image.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-log.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-attachment-preview-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-compose-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-edit-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-editor.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-event.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-faces.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-formatter.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-notification.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-reaction.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-sender.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message-share-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-message.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-modeline.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-mrkdwn.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-pinned-item.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-pinned-items-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-pkg.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reaction-event.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reaction.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reminder.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-reply-event.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-request.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-event.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-info-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room-message-compose-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-room.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-search-result-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-search.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-selectable.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-slash-commands.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-star-event.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-star.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-stars-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-team-ws.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-team.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread-event.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread-message-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread-message-compose-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-thread.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-typing.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-unescape.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-unread.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-user-message.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-user-profile-buffer.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-user.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-usergroup.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-util.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack-websocket.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/slack/slack.el")
-;;;;;;  (0 0 0 0))
+;;;### (autoloads nil nil ("slack-authorize.el" "slack-pkg.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 

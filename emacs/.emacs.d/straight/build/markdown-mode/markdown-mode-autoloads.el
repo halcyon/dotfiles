@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "markdown-mode" "../../../../../../.emacs.d/straight/build/markdown-mode/markdown-mode.el"
-;;;;;;  "9c6b097c9fffcf11ec1617bc84959bf6")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/markdown-mode/markdown-mode.el
+;;;### (autoloads nil "markdown-mode" "markdown-mode.el" (0 0 0 0))
+;;; Generated autoloads from markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode" "\
 Major mode for editing Markdown files.
@@ -35,20 +34,8 @@ Major mode for viewing GitHub Flavored Markdown content.
 Toggle native previewing on save for a specific markdown file.
 
 \(fn &optional ARG)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "markdown-mode"
-;;;;;;  "../../../../../../.emacs.d/straight/build/markdown-mode/markdown-mode.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/markdown-mode/markdown-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "markdown-mode" '("gfm-" "markdown" "defun-markdown-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/markdown-mode/markdown-mode.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

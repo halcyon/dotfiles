@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "circe" "../../../../../../.emacs.d/straight/build/circe/circe.el"
-;;;;;;  "1607129e2db8f7d880f62b0682237aaf")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe.el
+;;;### (autoloads nil "circe" "circe.el" (0 0 0 0))
+;;; Generated autoloads from circe.el
 
 (autoload 'circe-version "circe" "\
 Display Circe's version.
@@ -33,71 +32,48 @@ locally in the server buffer.
 See `circe-network-options' for a list of common options.
 
 \(fn NETWORK-OR-SERVER &rest SERVER-OPTIONS)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "circe" "../../../../../../.emacs.d/straight/build/circe/circe.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "circe" '("circe-" "lui-logging-format-arguments" "with-circe-server-buffer")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "circe-chanop"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-chanop.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-chanop.el
+;;;### (autoloads nil "circe-chanop" "circe-chanop.el" (0 0 0 0))
+;;; Generated autoloads from circe-chanop.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "circe-chanop" '("circe-command-")))
 
 ;;;***
 
-;;;### (autoloads nil "circe-color-nicks" "../../../../../../.emacs.d/straight/build/circe/circe-color-nicks.el"
-;;;;;;  "292d0e32d86489f61cf30cfc359f8600")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-color-nicks.el
+;;;### (autoloads nil "circe-color-nicks" "circe-color-nicks.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from circe-color-nicks.el
 
 (autoload 'enable-circe-color-nicks "circe-color-nicks" "\
 Enable the Color Nicks module for Circe.
 This module colors all encountered nicks in a cross-server fashion.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "circe-color-nicks"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-color-nicks.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-color-nicks.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "circe-color-nicks" '("circe-" "remove-circe-color-nicks" "add-circe-color-nicks" "disable-circe-color-nicks")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "circe-display-images" "../../../../../../.emacs.d/straight/build/circe/circe-display-images.el"
-;;;;;;  "6373a260f0a2709accec8a76325e3753")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-display-images.el
+;;;### (autoloads nil "circe-display-images" "circe-display-images.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from circe-display-images.el
 
 (autoload 'enable-circe-display-images "circe-display-images" "\
 Enable the Display Images module for Circe.
 This module displays various image types when they are linked in a channel
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "circe-display-images"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-display-images.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-display-images.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "circe-display-images" '("circe-display-images" "remove-circe-display-images" "add-circe-display-images" "disable-circe-display-images")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "circe-lagmon" "../../../../../../.emacs.d/straight/build/circe/circe-lagmon.el"
-;;;;;;  "06a237500c8f3f288edc02869c33c999")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-lagmon.el
+;;;### (autoloads nil "circe-lagmon" "circe-lagmon.el" (0 0 0 0))
+;;; Generated autoloads from circe-lagmon.el
 
 (defvar circe-lagmon-mode nil "\
 Non-nil if Circe-Lagmon mode is enabled.
@@ -115,21 +91,14 @@ connection to each server, and displays the lag time in seconds
 in the mode-line.
 
 \(fn &optional ARG)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "circe-lagmon"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-lagmon.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-lagmon.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "circe-lagmon" '("circe-lagmon-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "circe-new-day-notifier" "../../../../../../.emacs.d/straight/build/circe/circe-new-day-notifier.el"
-;;;;;;  "6fbf23b69b569a2a6388a7e7a0d0af2f")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-new-day-notifier.el
+;;;### (autoloads nil "circe-new-day-notifier" "circe-new-day-notifier.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from circe-new-day-notifier.el
 
 (autoload 'enable-circe-new-day-notifier "circe-new-day-notifier" "\
 
@@ -140,45 +109,34 @@ in the mode-line.
 
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "circe-new-day-notifier"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-new-day-notifier.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/circe-new-day-notifier.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "circe-new-day-notifier" '("circe-new-day-notifi")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "irc" "../../../../../../.emacs.d/straight/build/circe/irc.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/irc.el
+;;;### (autoloads nil "irc" "irc.el" (0 0 0 0))
+;;; Generated autoloads from irc.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "irc" '("irc-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "lcs" "../../../../../../.emacs.d/straight/build/circe/lcs.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lcs.el
+;;;### (autoloads nil "lcs" "lcs.el" (0 0 0 0))
+;;; Generated autoloads from lcs.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lcs" '("lcs-")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "lui" "../../../../../../.emacs.d/straight/build/circe/lui.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui.el
+;;;### (autoloads nil "lui" "lui.el" (0 0 0 0))
+;;; Generated autoloads from lui.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui" '("lui-")))
 
 ;;;***
 
-;;;### (autoloads nil "lui-autopaste" "../../../../../../.emacs.d/straight/build/circe/lui-autopaste.el"
-;;;;;;  "660ae5f315d39e7624ff292e0eb10172")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-autopaste.el
+;;;### (autoloads nil "lui-autopaste" "lui-autopaste.el" (0 0 0 0))
+;;; Generated autoloads from lui-autopaste.el
 
 (autoload 'enable-lui-autopaste "lui-autopaste" "\
 Enable the lui autopaste feature.
@@ -194,58 +152,40 @@ replace it with the resulting URL.
 Disable the lui autopaste feature.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "lui-autopaste"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-autopaste.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-autopaste.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui-autopaste" '("lui-autopaste")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "lui-format" "../../../../../../.emacs.d/straight/build/circe/lui-format.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-format.el
+;;;### (autoloads nil "lui-format" "lui-format.el" (0 0 0 0))
+;;; Generated autoloads from lui-format.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui-format" '("lui-")))
 
 ;;;***
 
-;;;### (autoloads nil "lui-irc-colors" "../../../../../../.emacs.d/straight/build/circe/lui-irc-colors.el"
-;;;;;;  "e683324e291df157de021070fae37250")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-irc-colors.el
+;;;### (autoloads nil "lui-irc-colors" "lui-irc-colors.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from lui-irc-colors.el
 
 (autoload 'enable-lui-irc-colors "lui-irc-colors" "\
 Enable IRC color interpretation for Lui.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "lui-irc-colors"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-irc-colors.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-irc-colors.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui-irc-colors" '("lui-irc-" "disable-lui-irc-colors")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "lui-logging"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-logging.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-logging.el
+;;;### (autoloads nil "lui-logging" "lui-logging.el" (0 0 0 0))
+;;; Generated autoloads from lui-logging.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui-logging" '("lui-" "disable-lui-logging" "enable-lui-logging")))
 
 ;;;***
 
-;;;### (autoloads nil "lui-track" "../../../../../../.emacs.d/straight/build/circe/lui-track.el"
-;;;;;;  "8c3514646f29bdb621a86eb5e136d081")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-track.el
+;;;### (autoloads nil "lui-track" "lui-track.el" (0 0 0 0))
+;;; Generated autoloads from lui-track.el
 
 (autoload 'enable-lui-track "lui-track" "\
 Enable a bar or fringe indicator in Lui buffers that shows
@@ -259,20 +199,13 @@ Move the point to the first unread line in this buffer.
 If point is already there, jump back to the end of the buffer.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "lui-track" "../../../../../../.emacs.d/straight/build/circe/lui-track.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-track.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui-track" '("lui-track-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "lui-track-bar" "../../../../../../.emacs.d/straight/build/circe/lui-track-bar.el"
-;;;;;;  "894a6a16cabcc470de36c5dfd465a185")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/lui-track-bar.el
+;;;### (autoloads nil "lui-track-bar" "lui-track-bar.el" (0 0 0 0))
+;;; Generated autoloads from lui-track-bar.el
 
 (autoload 'enable-lui-track-bar "lui-track-bar" "\
 Enable a bar indicator in Lui buffers that shows
@@ -282,18 +215,16 @@ where you stopped reading.
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "make-tls-process"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/make-tls-process.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/make-tls-process.el
+;;;### (autoloads nil "make-tls-process" "make-tls-process.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from make-tls-process.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "make-tls-process" '("tls-" "make-tls-process")))
 
 ;;;***
 
-;;;### (autoloads nil "shorten" "../../../../../../.emacs.d/straight/build/circe/shorten.el"
-;;;;;;  "5aa9929f07f13fd911f9914900b73b65")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/shorten.el
+;;;### (autoloads nil "shorten" "shorten.el" (0 0 0 0))
+;;; Generated autoloads from shorten.el
 
 (autoload 'shorten-strings "shorten" "\
 Takes a list of strings and returns an alist ((STRING
@@ -303,20 +234,13 @@ components back together into SHORTENED-STRING.  See also
 `shorten-validate-component-function'.
 
 \(fn STRINGS)" nil nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "shorten" "../../../../../../.emacs.d/straight/build/circe/shorten.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/shorten.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "shorten" '("shorten-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "tracking" "../../../../../../.emacs.d/straight/build/circe/tracking.el"
-;;;;;;  "9b1cf092ea656b29b23312d6de27b854")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/tracking.el
+;;;### (autoloads nil "tracking" "tracking.el" (0 0 0 0))
+;;; Generated autoloads from tracking.el
 
 (defvar tracking-mode nil "\
 Non-nil if Tracking mode is enabled.
@@ -367,38 +291,13 @@ Switch to the next active buffer.
 Switch to the last active buffer.
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "tracking" "../../../../../../.emacs.d/straight/build/circe/tracking.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/circe/tracking.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "tracking" '("tracking-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/circe/circe-chanop.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-color-nicks.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-compat.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-display-images.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-lagmon.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-new-day-notifier.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe-pkg.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/circe.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/irc.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lcs.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-autopaste.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-format.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-irc-colors.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-logging.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-track-bar.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui-track.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/lui.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/make-tls-process.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/shorten.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/circe/tracking.el")
-;;;;;;  (0 0 0 0))
+;;;### (autoloads nil nil ("circe-compat.el" "circe-pkg.el") (0 0
+;;;;;;  0 0))
 
 ;;;***
 

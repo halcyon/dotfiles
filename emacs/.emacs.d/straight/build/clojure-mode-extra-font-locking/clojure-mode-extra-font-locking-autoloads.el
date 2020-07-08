@@ -3,17 +3,11 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "clojure-mode-extra-font-locking"
-;;;;;;  "../../../../../../.emacs.d/straight/build/clojure-mode-extra-font-locking/clojure-mode-extra-font-locking.el"
+;;;### (autoloads nil "clojure-mode-extra-font-locking" "clojure-mode-extra-font-locking.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/clojure-mode-extra-font-locking/clojure-mode-extra-font-locking.el
+;;; Generated autoloads from clojure-mode-extra-font-locking.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clojure-mode-extra-font-locking" '("clojure-built-in-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/clojure-mode-extra-font-locking/clojure-mode-extra-font-locking.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

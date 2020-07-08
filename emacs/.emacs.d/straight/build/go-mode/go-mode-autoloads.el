@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "go-mode" "../../../../../../.emacs.d/straight/build/go-mode/go-mode.el"
-;;;;;;  "fa98df7de954f9ec90e49058edff422f")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/go-mode/go-mode.el
+;;;### (autoloads nil "go-mode" "go-mode.el" (0 0 0 0))
+;;; Generated autoloads from go-mode.el
 
 (autoload 'go-mode "go-mode" "\
 Major mode for editing Go source text.
@@ -100,19 +99,8 @@ A major mode for editing go.mod files.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("go\\.mod\\'" . go-dot-mod-mode))
-
-;;;### (autoloads "actual autoloads are elsewhere" "go-mode" "../../../../../../.emacs.d/straight/build/go-mode/go-mode.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/go-mode/go-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-mode" '("gofmt" "god" "go-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/go-mode/go-mode.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "avy" "../../../../../../.emacs.d/straight/build/avy/avy.el"
-;;;;;;  "d0d651c02212fea7070fd03e4f499576")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/avy/avy.el
+;;;### (autoloads nil "avy" "avy.el" (0 0 0 0))
+;;; Generated autoloads from avy.el
 
 (autoload 'avy-goto-char "avy" "\
 Jump to the currently visible CHAR.
@@ -256,19 +255,8 @@ Read one or many consecutive chars and jump to the first one.
 The window scope is determined by `avy-all-windows' (ARG negates it).
 
 \(fn &optional ARG)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "avy" "../../../../../../.emacs.d/straight/build/avy/avy.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/avy/avy.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "avy" '("avy-")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/avy/avy.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

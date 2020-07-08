@@ -3,17 +3,11 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "dash-functional"
-;;;;;;  "../../../../../../.emacs.d/straight/build/dash-functional/dash-functional.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/dash-functional/dash-functional.el
+;;;### (autoloads nil "dash-functional" "dash-functional.el" (0 0
+;;;;;;  0 0))
+;;; Generated autoloads from dash-functional.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dash-functional" '("-rpartial" "-juxt" "-not" "-o" "-a" "-iteratefn" "-c" "-f" "-p")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/dash-functional/dash-functional.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

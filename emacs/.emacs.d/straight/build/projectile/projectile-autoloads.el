@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "projectile" "../../../../../../.emacs.d/straight/build/projectile/projectile.el"
-;;;;;;  "49e3ed373014b31e91c6f6190988a686")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/projectile/projectile.el
+;;;### (autoloads nil "projectile" "projectile.el" (0 0 0 0))
+;;; Generated autoloads from projectile.el
 
 (autoload 'projectile-version "projectile" "\
 Get the Projectile version as string.
@@ -619,19 +618,8 @@ Otherwise behave as if called interactively.
 \(fn &optional ARG)" t nil)
 
 (define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0")
-
-;;;### (autoloads "actual autoloads are elsewhere" "projectile" "../../../../../../.emacs.d/straight/build/projectile/projectile.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/projectile/projectile.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "projectile" '("projectile-" "??" "delete-file-projectile-remove-from-cache" "def-projectile-commander-method" "compilation-find-file-projectile-find-compilation-buffer")))
-
-;;;***
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/projectile/projectile.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

@@ -3,16 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "lv" "../../../../../../.emacs.d/straight/build/lv/lv.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/lv/lv.el
+;;;### (autoloads nil "lv" "lv.el" (0 0 0 0))
+;;; Generated autoloads from lv.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lv" '("lv-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/lv/lv.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 
