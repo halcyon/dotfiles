@@ -37,7 +37,7 @@ fi
 if [ -x ~/.pyenv/shims/gcalcli ]
   then
   while true; do
-    ~/.pyenv/shims/gcalcli --configFolder ~/.gcalcli-rentpath --calendar="smcleod@rentpath.com" --calendar="IDG Services" remind 120
+    # ~/.pyenv/shims/gcalcli --configFolder ~/.gcalcli-rentpath --calendar="smcleod@rentpath.com" --calendar="IDG Services" remind 120
     ~/.pyenv/shims/gcalcli --configFolder ~/.gcalcli-halcyonblue --calendar="halcyonblue@gmail.com" remind 120
     sleep 300
   done &
@@ -60,4 +60,4 @@ export GNOME_KEYRING_PID
 /usr/bin/xbindkeys
 #/usr/bin/ssh-agent
 
-exec sbcl --load ~/dotfiles/stumpwm/startstump > stumpwm.log 2>&1
+#exec sbcl --load ~/dotfiles/stumpwm/startstump > stumpwm.log 2>&1
