@@ -11,50 +11,7 @@
 
 \(fn &optional TEAM)" t nil)
 
-(autoload 'slack-register-team "slack" "\
-PLIST must contain :name and :token.
-Available options (property name, type, default value)
-:subscribed-channels [ list symbol ] '()
-  notified when new message arrived in these channels.
-:default [boolean] nil
-  if `slack-prefer-current-team' is t,
-  some functions use this team without asking.
-:full-and-display-names [boolean] nil
-  if t, use full name to display user name.
-:mark-as-read-immediately [boolean] these
-  if t, mark messages as read when open channel.
-  if nil, mark messages as read when cursor hovered.
-:modeline-enabled [boolean] nil
-  if t, display mention count and has unread in modeline.
-:modeline-name [or nil string] nil
-  use this value in modeline.
-  if nil, use team name.
-:visible-threads [boolean] nil
-  if t, thread replies are also displayed in channel buffer.
-:websocket-event-log-enabled [boolean] nil
-  if t, websocket event is logged.
-  use `slack-log-open-event-buffer' to open the buffer.
-:animate-image [boolean] nil
-  if t, animate gif images.
-
-\(fn &rest PLIST)" t nil)
-
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-action" "slack-action.el" (0 0 0 0))
-;;; Generated autoloads from slack-action.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-action" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-all-threads-buffer" "slack-all-threads-buffer.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-all-threads-buffer.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-all-threads-buffer" '("slack-")))
 
 ;;;***
 
@@ -66,25 +23,11 @@ Available options (property name, type, default value)
 
 ;;;***
 
-;;;### (autoloads nil "slack-block" "slack-block.el" (0 0 0 0))
-;;; Generated autoloads from slack-block.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-block" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-bot" "slack-bot.el" (0 0 0 0))
-;;; Generated autoloads from slack-bot.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-bot" '("slack-")))
-
-;;;***
-
 ;;;### (autoloads nil "slack-bot-message" "slack-bot-message.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from slack-bot-message.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-bot-message" '("slack-bot-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-bot-message" '("slack-")))
 
 ;;;***
 
@@ -98,68 +41,15 @@ Available options (property name, type, default value)
 ;;;### (autoloads nil "slack-channel" "slack-channel.el" (0 0 0 0))
 ;;; Generated autoloads from slack-channel.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-channel" '("slack-c")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-channel" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads nil "slack-company" "slack-company.el" (0 0 0 0))
-;;; Generated autoloads from slack-company.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-company" '("company-slack-backend")))
-
-;;;***
-
-;;;### (autoloads nil "slack-conversations" "slack-conversations.el"
+;;;### (autoloads nil "slack-edit-file-comment-buffer" "slack-edit-file-comment-buffer.el"
 ;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-conversations.el
+;;; Generated autoloads from slack-edit-file-comment-buffer.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-conversations" '("slack-conversations-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-counts" "slack-counts.el" (0 0 0 0))
-;;; Generated autoloads from slack-counts.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-counts" '("slack-c")))
-
-;;;***
-
-;;;### (autoloads nil "slack-create-message" "slack-create-message.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-create-message.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-create-message" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-dialog" "slack-dialog.el" (0 0 0 0))
-;;; Generated autoloads from slack-dialog.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dialog" '("slack-dialog")))
-
-;;;***
-
-;;;### (autoloads nil "slack-dialog-buffer" "slack-dialog-buffer.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-dialog-buffer.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dialog-buffer" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-dialog-edit-element-buffer" "slack-dialog-edit-element-buffer.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-dialog-edit-element-buffer.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dialog-edit-element-buffer" '("slack-dialog-edit-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-dnd-status" "slack-dnd-status.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from slack-dnd-status.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-dnd-status" '("slack-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-edit-file-comment-buffer" '("slack-")))
 
 ;;;***
 
@@ -170,17 +60,26 @@ Available options (property name, type, default value)
 
 ;;;***
 
-;;;### (autoloads nil "slack-event" "slack-event.el" (0 0 0 0))
-;;; Generated autoloads from slack-event.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-event" '("slack-")))
-
-;;;***
-
 ;;;### (autoloads nil "slack-file" "slack-file.el" (0 0 0 0))
 ;;; Generated autoloads from slack-file.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file" '("slack-file")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file" '("slack-")))
+
+;;;***
+
+;;;### (autoloads nil "slack-file-comment" "slack-file-comment.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from slack-file-comment.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file-comment" '("slack-")))
+
+;;;***
+
+;;;### (autoloads nil "slack-file-comment-compose-buffer" "slack-file-comment-compose-buffer.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from slack-file-comment-compose-buffer.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file-comment-compose-buffer" '("slack-")))
 
 ;;;***
 
@@ -200,6 +99,14 @@ Available options (property name, type, default value)
 
 ;;;***
 
+;;;### (autoloads nil "slack-file-share-message" "slack-file-share-message.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from slack-file-share-message.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-file-share-message" '("slack-")))
+
+;;;***
+
 ;;;### (autoloads nil "slack-group" "slack-group.el" (0 0 0 0))
 ;;; Generated autoloads from slack-group.el
 
@@ -210,21 +117,7 @@ Available options (property name, type, default value)
 ;;;### (autoloads nil "slack-im" "slack-im.el" (0 0 0 0))
 ;;; Generated autoloads from slack-im.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-im" '("slack-im")))
-
-;;;***
-
-;;;### (autoloads nil "slack-image" "slack-image.el" (0 0 0 0))
-;;; Generated autoloads from slack-image.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-image" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-log" "slack-log.el" (0 0 0 0))
-;;; Generated autoloads from slack-log.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-log" '("slack-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-im" '("slack-")))
 
 ;;;***
 
@@ -232,14 +125,6 @@ Available options (property name, type, default value)
 ;;; Generated autoloads from slack-message.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-message-attachment-preview-buffer" "slack-message-attachment-preview-buffer.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-message-attachment-preview-buffer.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-attachment-preview-buffer" '("slack-")))
 
 ;;;***
 
@@ -255,7 +140,7 @@ Available options (property name, type, default value)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from slack-message-compose-buffer.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-compose-buffer" '("slack-message-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-compose-buffer" '("slack-")))
 
 ;;;***
 
@@ -272,22 +157,6 @@ Available options (property name, type, default value)
 ;;; Generated autoloads from slack-message-editor.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-editor" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-message-event" "slack-message-event.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-message-event.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-event" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-message-faces" "slack-message-faces.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-message-faces.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-message-faces" '("slack-")))
 
 ;;;***
 
@@ -331,21 +200,6 @@ Available options (property name, type, default value)
 
 ;;;***
 
-;;;### (autoloads nil "slack-modeline" "slack-modeline.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from slack-modeline.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-modeline" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-mrkdwn" "slack-mrkdwn.el" (0 0 0 0))
-;;; Generated autoloads from slack-mrkdwn.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-mrkdwn" '("slack-mrkdwn-")))
-
-;;;***
-
 ;;;### (autoloads nil "slack-pinned-item" "slack-pinned-item.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from slack-pinned-item.el
@@ -366,15 +220,7 @@ Available options (property name, type, default value)
 ;;;;;;  0))
 ;;; Generated autoloads from slack-reaction.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reaction" '("slack-reaction")))
-
-;;;***
-
-;;;### (autoloads nil "slack-reaction-event" "slack-reaction-event.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-reaction-event.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reaction-event" '("slack-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reaction" '("slack-")))
 
 ;;;***
 
@@ -382,15 +228,14 @@ Available options (property name, type, default value)
 ;;;;;;  0))
 ;;; Generated autoloads from slack-reminder.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reminder" '("slack-re")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reminder" '("slack-")))
 
 ;;;***
 
-;;;### (autoloads nil "slack-reply-event" "slack-reply-event.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-reply-event.el
+;;;### (autoloads nil "slack-reply" "slack-reply.el" (0 0 0 0))
+;;; Generated autoloads from slack-reply.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reply-event" '("slack-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-reply" '("slack-message-")))
 
 ;;;***
 
@@ -401,10 +246,18 @@ Available options (property name, type, default value)
 
 ;;;***
 
+;;;### (autoloads nil "slack-request-worker" "slack-request-worker.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from slack-request-worker.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-request-worker" '("slack-request-worker")))
+
+;;;***
+
 ;;;### (autoloads nil "slack-room" "slack-room.el" (0 0 0 0))
 ;;; Generated autoloads from slack-room.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room" '("slack-room")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room" '("slack-")))
 
 ;;;***
 
@@ -413,22 +266,6 @@ Available options (property name, type, default value)
 ;;; Generated autoloads from slack-room-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room-buffer" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-room-event" "slack-room-event.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from slack-room-event.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room-event" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-room-info-buffer" "slack-room-info-buffer.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-room-info-buffer.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-room-info-buffer" '("slack-room-info-buffer")))
 
 ;;;***
 
@@ -455,19 +292,11 @@ Available options (property name, type, default value)
 
 ;;;***
 
-;;;### (autoloads nil "slack-selectable" "slack-selectable.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from slack-selectable.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-selectable" '("slack-selectable")))
-
-;;;***
-
 ;;;### (autoloads nil "slack-slash-commands" "slack-slash-commands.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from slack-slash-commands.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-slash-commands" '("slack-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-slash-commands" '("slack-slash-commands-")))
 
 ;;;***
 
@@ -475,14 +304,6 @@ Available options (property name, type, default value)
 ;;; Generated autoloads from slack-star.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-star" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-star-event" "slack-star-event.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from slack-star-event.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-star-event" '("slack-")))
 
 ;;;***
 
@@ -497,29 +318,23 @@ Available options (property name, type, default value)
 ;;;### (autoloads nil "slack-team" "slack-team.el" (0 0 0 0))
 ;;; Generated autoloads from slack-team.el
 
+(autoload 'slack-register-team "slack-team" "\
+PLIST must contain :name :client-id :client-secret with value.
+setting :token will reduce your configuration step.
+you will notified when receive message with channel included in subscribed-channels.
+if :default is t and `slack-prefer-current-team' is t, skip selecting team when channels listed.
+you can change current-team with `slack-change-current-team'
+
+\(fn &rest PLIST)" t nil)
+
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-team" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-team-ws" "slack-team-ws.el" (0 0 0 0))
-;;; Generated autoloads from slack-team-ws.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-team-ws" '("slack-team-ws")))
 
 ;;;***
 
 ;;;### (autoloads nil "slack-thread" "slack-thread.el" (0 0 0 0))
 ;;; Generated autoloads from slack-thread.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-thread-event" "slack-thread-event.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from slack-thread-event.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread-event" '("slack-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread" '("slack-" "thread-mark-url" "all-threads-url" "lui-prompt-string")))
 
 ;;;***
 
@@ -536,28 +351,6 @@ Available options (property name, type, default value)
 ;;; Generated autoloads from slack-thread-message-compose-buffer.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-thread-message-compose-buffer" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-typing" "slack-typing.el" (0 0 0 0))
-;;; Generated autoloads from slack-typing.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-typing" '("slack-typing")))
-
-;;;***
-
-;;;### (autoloads nil "slack-unescape" "slack-unescape.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from slack-unescape.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-unescape" '("slack-")))
-
-;;;***
-
-;;;### (autoloads nil "slack-unread" "slack-unread.el" (0 0 0 0))
-;;; Generated autoloads from slack-unread.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-unread" '("slack-")))
 
 ;;;***
 
@@ -584,18 +377,10 @@ Available options (property name, type, default value)
 
 ;;;***
 
-;;;### (autoloads nil "slack-usergroup" "slack-usergroup.el" (0 0
-;;;;;;  0 0))
-;;; Generated autoloads from slack-usergroup.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-usergroup" '("slack-usergroup")))
-
-;;;***
-
 ;;;### (autoloads nil "slack-util" "slack-util.el" (0 0 0 0))
 ;;; Generated autoloads from slack-util.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-util" '("slack-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slack-util" '("slack-" "company-slack-backend")))
 
 ;;;***
 
@@ -607,8 +392,7 @@ Available options (property name, type, default value)
 
 ;;;***
 
-;;;### (autoloads nil nil ("slack-authorize.el" "slack-pkg.el") (0
-;;;;;;  0 0 0))
+;;;### (autoloads nil nil ("slack-pkg.el") (0 0 0 0))
 
 ;;;***
 

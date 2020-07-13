@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "js2-imenu-extras" "../../../../../../.emacs.d/straight/build/js2-mode/js2-imenu-extras.el"
-;;;;;;  "a7580f86032a9ca1d6f6e543cf770ba7")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/js2-mode/js2-imenu-extras.el
+;;;### (autoloads nil "js2-imenu-extras" "js2-imenu-extras.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from js2-imenu-extras.el
 
 (autoload 'js2-imenu-extras-setup "js2-imenu-extras" "\
 
@@ -16,21 +16,13 @@
 Toggle Imenu support for frameworks and structural patterns.
 
 \(fn &optional ARG)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "js2-imenu-extras"
-;;;;;;  "../../../../../../.emacs.d/straight/build/js2-mode/js2-imenu-extras.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/js2-mode/js2-imenu-extras.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "js2-imenu-extras" '("js2-imenu-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads nil "js2-mode" "../../../../../../.emacs.d/straight/build/js2-mode/js2-mode.el"
-;;;;;;  "40762916ae88730baa1ea8e76883481e")
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/js2-mode/js2-mode.el
+;;;### (autoloads nil "js2-mode" "js2-mode.el" (0 0 0 0))
+;;; Generated autoloads from js2-mode.el
 
 (autoload 'js2-highlight-unused-variables-mode "js2-mode" "\
 Toggle highlight of unused variables.
@@ -64,30 +56,16 @@ variables (`sgml-basic-offset' et al) locally, like so:
   (add-hook \\='js2-jsx-mode-hook #\\='set-jsx-indentation)
 
 \(fn)" t nil)
-
-;;;### (autoloads "actual autoloads are elsewhere" "js2-mode" "../../../../../../.emacs.d/straight/build/js2-mode/js2-mode.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/js2-mode/js2-mode.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "js2-mode" '("js2-")))
 
 ;;;***
-
-;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "js2-old-indent"
-;;;;;;  "../../../../../../.emacs.d/straight/build/js2-mode/js2-old-indent.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/js2-mode/js2-old-indent.el
+;;;### (autoloads nil "js2-old-indent" "js2-old-indent.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from js2-old-indent.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "js2-old-indent" '("js2-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/js2-mode/js2-imenu-extras.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/js2-mode/js2-mode.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/js2-mode/js2-old-indent.el")
-;;;;;;  (0 0 0 0))
 
 ;;;***
 

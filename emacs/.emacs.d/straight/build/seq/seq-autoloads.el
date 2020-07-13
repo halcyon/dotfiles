@@ -3,26 +3,21 @@
 ;;; Code:
 
 
-;;;### (autoloads "actual autoloads are elsewhere" "seq-24" "../../../../../../.emacs.d/straight/build/seq/seq-24.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/seq/seq-24.el
+;;;### (autoloads nil "seq-24" "seq-24.el" (0 0 0 0))
+;;; Generated autoloads from seq-24.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "seq-24" '("seq")))
 
 ;;;***
 
-;;;### (autoloads "actual autoloads are elsewhere" "seq-25" "../../../../../../.emacs.d/straight/build/seq/seq-25.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../../../../../../.emacs.d/straight/build/seq/seq-25.el
+;;;### (autoloads nil "seq-25" "seq-25.el" (0 0 0 0))
+;;; Generated autoloads from seq-25.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "seq-25" '("seq--when-emacs-25-p")))
 
 ;;;***
 
-;;;### (autoloads nil nil ("../../../../../../.emacs.d/straight/build/seq/seq-24.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/seq/seq-25.el"
-;;;;;;  "../../../../../../.emacs.d/straight/build/seq/seq.el") (0
-;;;;;;  0 0 0))
+;;;### (autoloads nil nil ("seq.el") (0 0 0 0))
 
 ;;;***
 

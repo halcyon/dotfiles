@@ -12,7 +12,10 @@ Enable Slime-style navigation of elisp symbols using M-. and M-,
 
 \(fn &optional ARG)" t nil)
 
-(define-obsolete-function-alias 'turn-on-elisp-slime-nav-mode 'elisp-slime-nav-mode "2020-01-30")
+(autoload 'turn-on-elisp-slime-nav-mode "elisp-slime-nav" "\
+Explicitly enable `elisp-slime-nav-mode'.
+
+\(fn)" nil nil)
 
 (autoload 'elisp-slime-nav-find-elisp-thing-at-point "elisp-slime-nav" "\
 Find the elisp thing at point, be it a function, variable, library or face.

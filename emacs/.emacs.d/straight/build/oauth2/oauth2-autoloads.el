@@ -20,7 +20,7 @@ Authenticate application via OAuth2.
 (autoload 'oauth2-auth-and-store "oauth2" "\
 Request access to a resource and store it using `plstore'.
 
-\(fn AUTH-URL TOKEN-URL SCOPE CLIENT-ID CLIENT-SECRET &optional REDIRECT-URI STATE)" nil nil)
+\(fn AUTH-URL TOKEN-URL RESOURCE-URL CLIENT-ID CLIENT-SECRET &optional REDIRECT-URI)" nil nil)
 
 (autoload 'oauth2-url-retrieve-synchronously "oauth2" "\
 Retrieve an URL synchronously using TOKEN to access it.

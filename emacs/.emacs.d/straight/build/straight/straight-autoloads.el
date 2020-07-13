@@ -26,11 +26,6 @@ action, just return it).
 
 \(fn &optional SOURCES ACTION)" t nil)
 
-(autoload 'straight-visit-package-website "straight" "\
-Interactively select a recipe, and visit the package's website.
-
-\(fn)" t nil)
-
 (autoload 'straight-use-package "straight" "\
 Register, clone, build, and activate a package and its dependencies.
 This is the main entry point to the functionality of straight.el.
