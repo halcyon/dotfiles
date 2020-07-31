@@ -3,13 +3,6 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "ob-scala" "ob-scala.el" (0 0 0 0))
-;;; Generated autoloads from ob-scala.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-scala" '("org-babel-")))
-
-;;;***
-
 ;;;### (autoloads nil "scala-mode" "scala-mode.el" (0 0 0 0))
 ;;; Generated autoloads from scala-mode.el
 

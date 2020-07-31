@@ -224,7 +224,15 @@ bisect run'.
 ;;;;;;  0))
 ;;; Generated autoloads from magit-bookmark.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-bookmark" '("magit--")))
+(autoload 'magit--handle-bookmark "magit-bookmark" "\
+Open a bookmark created by `magit--make-bookmark'.
+Call the `magit-*-setup-buffer' function of the the major-mode
+with the variables' values as arguments, which were recorded by
+`magit--make-bookmark'.  Ignore `magit-display-buffer-function'.
+
+\(fn BOOKMARK)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-bookmark" '("magit--make-bookmark")))
 
 ;;;***
 
@@ -750,9 +758,9 @@ Run `gitk --all' in the current repository.
 (autoload 'ido-enter-magit-status "magit-extras" "\
 Drop into `magit-status' from file switching.
 
-This command does not work in Emacs 26.  It does work in Emacs 25
-and Emacs 27.  See https://github.com/magit/magit/issues/3634 and
-https://debbugs.gnu.org/cgi/bugreport.cgi?bug=31707.
+This command does not work in Emacs 26.1.
+See https://github.com/magit/magit/issues/3634
+and https://debbugs.gnu.org/cgi/bugreport.cgi?bug=31707.
 
 To make this command available use something like:
 
@@ -878,7 +886,7 @@ use `magit-rebase-edit-command' instead of this command.
 Change the author and committer dates of the commits since REV.
 
 Ask the user for the first reachable commit whose dates should
-be changed.  The read the new date for that commit.  The initial
+be changed.  Then read the new date for that commit.  The initial
 minibuffer input and the previous history element offer good
 values.  The next commit will be created one minute later and so
 on.
@@ -922,6 +930,10 @@ the current section is a commit, branch, or tag section, push
 the (referenced) revision to the `magit-revision-stack' for use
 with `magit-pop-revision-stack'.
 
+When `magit-copy-revision-abbreviated' is non-nil, save the
+abbreviated revision to the `kill-ring' and the
+`magit-revision-stack'.
+
 When the current section is a branch or a tag, and a prefix
 argument is used, then save the revision at its tip to the
 `kill-ring' instead of the reference name.
@@ -954,6 +966,10 @@ the current section instead, using `magit-copy-section-value'.
 When the region is active, then save that to the `kill-ring',
 like `kill-ring-save' would, instead of behaving as described
 above.
+
+When `magit-copy-revision-abbreviated' is non-nil, save the
+abbreviated revision to the `kill-ring' and the
+`magit-revision-stack'.
 
 \(fn)" t nil)
 
@@ -1130,12 +1146,22 @@ Rules that are defined in that file affect all local repositories.
 \(fn RULE)" t nil)
 
 (autoload 'magit-skip-worktree "magit-gitignore" "\
-Call \"git update-index --skip-worktree FILE\".
+Call \"git update-index --skip-worktree -- FILE\".
 
 \(fn FILE)" t nil)
 
 (autoload 'magit-no-skip-worktree "magit-gitignore" "\
-Call \"git update-index --no-skip-worktree FILE\".
+Call \"git update-index --no-skip-worktree -- FILE\".
+
+\(fn FILE)" t nil)
+
+(autoload 'magit-assume-unchanged "magit-gitignore" "\
+Call \"git update-index --assume-unchanged -- FILE\".
+
+\(fn FILE)" t nil)
+
+(autoload 'magit-no-assume-unchanged "magit-gitignore" "\
+Call \"git update-index --no-assume-unchanged -- FILE\".
 
 \(fn FILE)" t nil)
 
@@ -1292,6 +1318,16 @@ Show log for all local branches and `HEAD'.
 
 \(fn &optional ARGS FILES)" t nil)
 
+(autoload 'magit-log-matching-branches "magit-log" "\
+Show log for all branches matching PATTERN and `HEAD'.
+
+\(fn PATTERN &optional ARGS FILES)" t nil)
+
+(autoload 'magit-log-matching-tags "magit-log" "\
+Show log for all tags matching PATTERN and `HEAD'.
+
+\(fn PATTERN &optional ARGS FILES)" t nil)
+
 (autoload 'magit-log-all-branches "magit-log" "\
 Show log for all local and remote branches and `HEAD'.
 
@@ -1304,9 +1340,9 @@ Show log for all references and `HEAD'.
 
 (autoload 'magit-log-buffer-file "magit-log" "\
 Show log for the blob or file visited in the current buffer.
-With a prefix argument or when `--follow' is part of
-`magit-log-arguments', then follow renames.  When the region is
-active, restrict the log to the lines that the region touches.
+With a prefix argument or when `--follow' is an active log
+argument, then follow renames.  When the region is active,
+restrict the log to the lines that the region touches.
 
 \(fn &optional FOLLOW BEG END)" t nil)
 
@@ -1488,7 +1524,7 @@ same differences as those shown in the buffer are always used.
 (autoload 'magit-request-pull "magit-patch" "\
 Request upstream to pull from you public repository.
 
-URL is the url of your publically accessible repository.
+URL is the url of your publicly accessible repository.
 START is a commit that already is in the upstream repository.
 END is the last commit, usually a branch name, which upstream
 is asked to pull.  START has to be reachable from that commit.
@@ -1566,6 +1602,11 @@ branch as default.
 Push a tag to another repository.
 
 \(fn TAG REMOTE &optional ARGS)" t nil)
+
+(autoload 'magit-push-notes-ref "magit-push" "\
+Push a notes ref to another repository.
+
+\(fn REF REMOTE &optional ARGS)" t nil)
 
 (autoload 'magit-push-implicitly "magit-push" "\
 Push somewhere without using an explicit refspec.
@@ -2048,8 +2089,8 @@ Create and checkout a new BRANCH from STASH.
 
 (autoload 'magit-stash-branch-here "magit-stash" "\
 Create and checkout a new BRANCH and apply STASH.
-The branch is created using `magit-branch', using the current
-branch or `HEAD' as the string-point.
+The branch is created using `magit-branch-and-checkout', using the
+current branch or `HEAD' as the start-point.
 
 \(fn STASH BRANCH)" t nil)
 
@@ -2122,12 +2163,25 @@ prefix arguments:
 
 \(fn &optional DIRECTORY CACHE)" t nil)
 
+(defalias 'magit 'magit-status "\
+An alias for `magit-status' for better discoverability.
+
+Instead of invoking this alias for `magit-status' using
+\"M-x magit RET\", you should bind a key to `magit-status'
+and read the info node `(magit)Getting Started', which
+also contains other useful hints.")
+
+(autoload 'magit-status-here "magit-status" "\
+Like `magit-status' but with non-nil `magit-status-goto-file-position'.
+
+\(fn)" t nil)
+
 (autoload 'magit-status-setup-buffer "magit-status" "\
 
 
 \(fn &optional DIRECTORY)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-status" '("magit")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-status" '("magit-")))
 
 ;;;***
 
@@ -2336,7 +2390,7 @@ See info node `(magit)Debugging Tools' for more information.
 
 (advice-add 'org-man-export :around 'org-man-export--magit-gitman)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-utils" '("magit-" "whitespace-dont-turn-on-in-magit-mode")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-utils" '("magit-")))
 
 ;;;***
 
@@ -2442,6 +2496,11 @@ Checkout BRANCH in a new worktree at PATH.
 Create a new BRANCH and check it out in a new worktree at PATH.
 
 \(fn PATH BRANCH START-POINT &optional FORCE)" t nil)
+
+(autoload 'magit-worktree-move "magit-worktree" "\
+Move WORKTREE to PATH.
+
+\(fn WORKTREE PATH)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-worktree" '("magit-")))
 

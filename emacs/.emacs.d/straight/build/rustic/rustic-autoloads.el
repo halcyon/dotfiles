@@ -22,7 +22,7 @@ Major mode for Rust code.
 ;;;### (autoloads nil "rustic-babel" "rustic-babel.el" (0 0 0 0))
 ;;; Generated autoloads from rustic-babel.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-babel" '("org-babel-execute:rustic" "rustic-babel-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-babel" '("org-babel-execute:rustic" "rustic-")))
 
 ;;;***
 
@@ -39,8 +39,53 @@ Start compilation process for 'cargo test' with optional TEST-ARGS.
 
 \(fn &optional TEST-ARGS)" t nil)
 
+(autoload 'rustic-cargo-test "rustic-cargo" "\
+Run 'cargo test'.
+
+If ARG is not nil, use value as argument and store it in `rustic-test-arguments'.
+When calling this function from `rustic-popup-mode', always use the value of
+`rustic-test-arguments'.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'rustic-cargo-test-rerun "rustic-cargo" "\
+Run 'cargo test' with `rustic-test-arguments'.
+
+\(fn)" t nil)
+
 (autoload 'rustic-cargo-current-test "rustic-cargo" "\
 Run 'cargo test' for the test near point.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-outdated "rustic-cargo" "\
+Use 'cargo outdated' to list outdated packages in `tabulated-list-mode'.
+Execute process in PATH.
+
+\(fn &optional PATH)" t nil)
+
+(autoload 'rustic-cargo-reload-outdated "rustic-cargo" "\
+Update list of outdated packages.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-mark-upgrade "rustic-cargo" "\
+Mark an upgradable package.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-mark-all-upgrades "rustic-cargo" "\
+Mark all upgradable packages in the Package Menu.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-menu-mark-unmark "rustic-cargo" "\
+Clear any marks on a package.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-upgrade-execute "rustic-cargo" "\
+Perform marked menu actions.
 
 \(fn)" t nil)
 
@@ -90,6 +135,13 @@ The documentation is built if necessary.
 
 ;;;***
 
+;;;### (autoloads nil "rustic-common" "rustic-common.el" (0 0 0 0))
+;;; Generated autoloads from rustic-common.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-common" '("rustic-")))
+
+;;;***
+
 ;;;### (autoloads nil "rustic-compile" "rustic-compile.el" (0 0 0
 ;;;;;;  0))
 ;;; Generated autoloads from rustic-compile.el
@@ -132,6 +184,46 @@ Flycheck according to the Cargo project layout.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from rustic-interaction.el
 
+(autoload 'rustic-indent-line "rustic-interaction" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rustic-promote-module-into-dir "rustic-interaction" "\
+Promote the module file visited by the current buffer into its own directory.
+
+For example, if the current buffer is visiting the file `foo.rs',
+then this function creates the directory `foo' and renames the
+file to `foo/mod.rs'.  The current buffer will be updated to
+visit the new file.
+
+\(fn)" t nil)
+
+(autoload 'rustic-beginning-of-defun "rustic-interaction" "\
+Move backward to the beginning of the current defun.
+
+With ARG, move backward multiple defuns.  Negative ARG means
+move forward.
+
+This is written mainly to be used as `beginning-of-defun-function' for Rust.
+Don't move to the beginning of the line. `beginning-of-defun',
+which calls this, does that afterwards.
+
+\(fn &optional ARG REGEX)" t nil)
+
+(autoload 'rustic-end-of-defun "rustic-interaction" "\
+Move forward to the next end of defun.
+
+With argument, do it that many times.
+Negative argument -N means move back to Nth preceding end of defun.
+
+Assume that this is called after beginning-of-defun. So point is
+at the beginning of the defun body.
+
+This is written mainly to be used as `end-of-defun-function' for Rust.
+
+\(fn)" t nil)
+
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-interaction" '("rustic-")))
 
 ;;;***
@@ -139,12 +231,44 @@ Flycheck according to the Cargo project layout.
 ;;;### (autoloads nil "rustic-popup" "rustic-popup.el" (0 0 0 0))
 ;;; Generated autoloads from rustic-popup.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-popup" '("rustic-popup")))
+(autoload 'rustic-popup "rustic-popup" "\
+Setup popup.
+If directory is not in a rust project call `read-directory-name'.
+
+\(fn)" t nil)
+
+(autoload 'rustic-popup-invoke-popup-action "rustic-popup" "\
+Execute commands which are listed in `rustic-popup-commands'.
+
+\(fn EVENT)" t nil)
+
+(autoload 'rustic-popup-default-action "rustic-popup" "\
+Change backtrace and `compilation-arguments' when executed on
+corresponding line.
+
+\(fn)" t nil)
+
+(autoload 'rustic-popup-cargo-command-help "rustic-popup" "\
+Display help buffer for cargo command at point.
+
+\(fn)" t nil)
+
+(autoload 'rustic-popup-kill-help-buffer "rustic-popup" "\
+Kill popup help buffer and switch to popup buffer.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-popup" '("rustic-popup-")))
 
 ;;;***
 
 ;;;### (autoloads nil "rustic-racer" "rustic-racer.el" (0 0 0 0))
 ;;; Generated autoloads from rustic-racer.el
+
+(autoload 'rustic-racer-describe "rustic-racer" "\
+Show a *Racer Help* buffer for the function or type at point.
+
+\(fn)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-racer" '("racer-src-button" "rustic-racer-")))
 
@@ -157,6 +281,19 @@ Flycheck according to the Cargo project layout.
 Use rustfmt via cargo.
 
 \(fn)" t nil)
+
+(autoload 'rustic-format-buffer "rustic-util" "\
+Format the current buffer using rustfmt.
+
+Provide optional argument NO-STDIN for `rustic-before-save-hook' since there
+were issues when using stdin for formatting.
+
+\(fn &optional NO-STDIN)" t nil)
+
+(autoload 'rustic-analyzer-macro-expand "rustic-util" "\
+Default method for displaying macro expansion results.
+
+\(fn RESULT)" t nil)
 
 (autoload 'rustic-rustfix "rustic-util" "\
 Run 'cargo fix'.

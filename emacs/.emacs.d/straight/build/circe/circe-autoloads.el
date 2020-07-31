@@ -184,15 +184,34 @@ Enable IRC color interpretation for Lui.
 
 ;;;***
 
+;;;### (autoloads nil "lui-track" "lui-track.el" (0 0 0 0))
+;;; Generated autoloads from lui-track.el
+
+(autoload 'enable-lui-track "lui-track" "\
+Enable a bar or fringe indicator in Lui buffers that shows
+where you stopped reading.
+
+\(fn)" t nil)
+
+(autoload 'lui-track-jump-to-indicator "lui-track" "\
+Move the point to the first unread line in this buffer.
+
+If point is already there, jump back to the end of the buffer.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui-track" '("lui-track-")))
+
+;;;***
+
 ;;;### (autoloads nil "lui-track-bar" "lui-track-bar.el" (0 0 0 0))
 ;;; Generated autoloads from lui-track-bar.el
 
 (autoload 'enable-lui-track-bar "lui-track-bar" "\
-Enable a bar in Lui buffers that shows where you stopped reading.
+Enable a bar indicator in Lui buffers that shows
+where you stopped reading.
 
 \(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lui-track-bar" '("lui-track-bar-")))
 
 ;;;***
 

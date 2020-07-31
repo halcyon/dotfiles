@@ -129,6 +129,15 @@ This function will also detect evil bindings made using
 `evil-define-key' in this map. These bindings will depend on the
 current evil state. 
 
+\(fn &optional ALL)" t nil)
+
+(autoload 'which-key-show-full-major-mode "which-key" "\
+Show all bindings in the map of the current major mode.
+
+This function will also detect evil bindings made using
+`evil-define-key' in this map. These bindings will depend on the
+current evil state. 
+
 \(fn)" t nil)
 
 (autoload 'which-key-dump-bindings "which-key" "\
@@ -167,6 +176,12 @@ selected interactively from all available keymaps.
 
 (autoload 'which-key-show-minor-mode-keymap "which-key" "\
 Show the top-level bindings in KEYMAP using which-key. KEYMAP
+is selected interactively by mode in `minor-mode-map-alist'.
+
+\(fn &optional ALL)" t nil)
+
+(autoload 'which-key-show-full-minor-mode-keymap "which-key" "\
+Show all bindings in KEYMAP using which-key. KEYMAP
 is selected interactively by mode in `minor-mode-map-alist'.
 
 \(fn)" t nil)

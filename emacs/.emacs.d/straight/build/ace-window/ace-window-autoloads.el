@@ -26,11 +26,19 @@ Ace delete other windows.
 
 \(fn)" t nil)
 
+(autoload 'ace-display-buffer "ace-window" "\
+Make `display-buffer' and `pop-to-buffer' select using `ace-window'.
+See sample config for `display-buffer-base-action' and `display-buffer-alist':
+https://github.com/abo-abo/ace-window/wiki/display-buffer.
+
+\(fn BUFFER ALIST)" nil nil)
+
 (autoload 'ace-window "ace-window" "\
 Select a window.
 Perform an action based on ARG described below.
 
 By default, behaves like extended `other-window'.
+See `aw-scope' which extends it to work with frames.
 
 Prefixed with one \\[universal-argument], does a swap between the
 selected window and the current window, so that the selected

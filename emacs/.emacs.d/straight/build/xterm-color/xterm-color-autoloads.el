@@ -21,10 +21,10 @@ Return new STRING with text properties applied.
 This function will check if `xterm-color-preserve-properties' is
 set to T and only call `xterm-color-filter-strip' on substrings
 that do not have text properties applied (passing through the rest
-unmodified).  Preserving properties in this fashion is really a hack
-and not very robust as there may be situations where text properties
-are applied on ANSI data, which will mess up the state machine.
-It works fine with and is really meant for eshell though.
+unmodified). Preserving properties in this fashion is not very robust
+as there may be situations where text properties are applied on ANSI
+data, which will desync the state machine. Preserving properties works
+ok and is really meant for eshell.
 
 This can be inserted into `comint-preoutput-filter-functions'.
 
@@ -58,8 +58,8 @@ Create/display and render a new buffer that contains ANSI control sequences.
 
 (autoload 'xterm-color-test-raw "xterm-color" "\
 Create and display a new buffer that contains ANSI SGR control sequences.
-The ANSI sequences will not be processed.  One can use a different Emacs
-package (e.g. ansi-color.el) to do so.  This is really meant to be used for
+ANSI sequences will not be processed. One can use a different Emacs package
+\(e.g. ansi-color.el) to do so. This is really meant to be used for
 easy comparisons/benchmarks with libraries that offer similar functionality.
 
 \(fn)" t nil)

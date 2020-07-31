@@ -1,9 +1,9 @@
 
 :kak
 
-"26.1"
+"26.3"
 
-#s(hash-table size 145 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2020-07-12 23:14:45" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2020-07-12 23:14:46" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2020-07-12 23:14:46" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2020-07-12 23:14:48" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2020-07-12 23:14:46" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2020-07-12 23:14:46" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2020-07-12 23:14:46" nil (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "zenburn-theme" ("2020-07-12 23:14:46" nil (:type git :flavor melpa :host github :repo "bbatsov/zenburn-emacs" :package "zenburn-theme" :local-repo "zenburn-emacs")) "pinentry" ("2020-07-12 23:14:46" nil (:type git :host github :repo "emacs-straight/pinentry" :package "pinentry" :local-repo "pinentry")) "diminish" ("2020-07-12 23:14:46" nil (:type git :flavor melpa :host github :repo "myrjola/diminish.el" :package "diminish" :local-repo "diminish.el")) "gnus-alias" ("2020-07-12 23:14:46" nil (:host github :repo "hexmode/gnus-alias" :package "gnus-alias" :type git :local-repo "gnus-alias")) "notmuch" ("2020-07-12 23:14:46" nil (:type git :flavor melpa :files ("emacs/*.el" "emacs/*.png" "notmuch-pkg.el") :repo "https://git.notmuchmail.org/git/notmuch" :package "notmuch" :local-repo "notmuch")) "cider" ("2020-07-12 23:14:46" ("emacs" "clojure-mode" "parseedn" "pkg-info" "queue" "spinner" "seq" "sesman") (:type git :flavor melpa :files ("*.el" (:exclude ".dir-locals.el") "cider-pkg.el") :host github :repo "clojure-emacs/cider" :package "cider" :local-repo "cider")) "clojure-mode" ("2020-07-12 23:14:46" ("emacs") (:type git :flavor melpa :files ("clojure-mode.el" "clojure-mode-pkg.el") :host github :repo "clojure-emacs/clojure-mode" :package "clojure-mode" :local-repo "clojure-mode")) "parseedn" ("2020-07-12 23:14:46" ("emacs" "a" "parseclj") (:type git :flavor melpa :host github :repo "clojure-emacs/parseedn" :package "parseedn" :local-repo "parseedn")) "a" ("2020-07-12 23:14:46" ("emacs") (:type git :flavor melpa :host github :repo "plexus/a.el" :package "a" :local-repo "a.el")) "parseclj" ("2020-07-12 23:14:46" ("emacs" "a") (:type git :flavor melpa :host github :repo "clojure-emacs/parseclj" :package "parseclj" :local-repo "parseclj")) "pkg-info" ("2020-07-12 23:14:46" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2020-07-12 23:14:46" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "cl-lib" ("2020-07-12 23:14:46" nil (:type git :host github :repo "emacs-straight/cl-lib" :package "cl-lib" :local-repo "cl-lib")) "queue" ("2020-07-12 23:14:46" nil (:type git :host github :repo "emacs-straight/queue" :package "queue" :local-repo "queue")) "spinner" ("2020-07-12 23:14:46" nil (:type git :host github :repo "emacs-straight/spinner" :package "spinner" :local-repo "spinner")) "seq" ("2020-07-12 23:14:46" nil (:type git :host github :repo "emacs-straight/seq" :package "seq" :local-repo "seq")) "sesman" ("2020-07-12 23:14:46" ("emacs") (:type git :flavor melpa :host github :repo "vspinu/sesman" :package "sesman" :local-repo "sesman")) "company" ("2020-07-12 23:14:46" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "org-plus-contrib" ("2020-07-12 23:14:46" nil (:type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :files (:defaults "contrib/lisp/*.el") :package "org-plus-contrib")) "htmlize" ("2020-07-12 23:14:46" nil (:type git :flavor melpa :host github :repo "hniksic/emacs-htmlize" :package "htmlize" :local-repo "emacs-htmlize")) "org2jekyll" ("2020-07-12 23:14:47" ("dash-functional" "s" "deferred" "kv") (:host github :repo "ardumont/org2jekyll" :package "org2jekyll" :type git :local-repo "org2jekyll")) "dash-functional" ("2020-07-12 23:14:47" ("dash" "emacs") (:type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el" :package "dash-functional" :local-repo "dash.el")) "dash" ("2020-07-12 23:14:47" nil (:flavor melpa :files ("dash.el" "dash-pkg.el") :package "dash" :local-repo "dash.el" :type git :repo "magnars/dash.el" :host github)) "s" ("2020-07-12 23:14:47" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "deferred" ("2020-07-12 23:14:47" ("emacs") (:type git :flavor melpa :files ("deferred.el" "deferred-pkg.el") :host github :repo "kiwanami/emacs-deferred" :package "deferred" :local-repo "emacs-deferred")) "kv" ("2020-07-12 23:14:47" nil (:type git :flavor melpa :files ("kv.el" "kv-pkg.el") :host github :repo "nicferrier/emacs-kv" :package "kv" :local-repo "emacs-kv")) "ox-reveal" ("2020-07-12 23:14:47" ("org") (:host github :repo "yjwen/org-reveal" :package "ox-reveal" :type git :local-repo "org-reveal")) "org" ("2020-07-12 23:14:47" nil (:local-repo "org" :package "org" :type git :repo "https://code.orgmode.org/bzg/org-mode.git")) "yaml-mode" ("2020-07-12 23:14:47" ("emacs") (:type git :flavor melpa :host github :repo "yoshiki/yaml-mode" :package "yaml-mode" :local-repo "yaml-mode")) "which-key" ("2020-07-12 23:14:47" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "avy" ("2020-07-12 23:14:47" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "abo-abo/avy" :package "avy" :local-repo "avy")) "ace-window" ("2020-07-12 23:14:47" ("avy") (:type git :flavor melpa :host github :repo "abo-abo/ace-window" :package "ace-window" :local-repo "ace-window")) "helm" ("2020-07-12 23:14:47" ("emacs" "async" "popup" "helm-core") (:type git :flavor melpa :files ("*.el" "emacs-helm.sh" (:exclude "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") "helm-pkg.el") :host github :repo "emacs-helm/helm" :package "helm" :local-repo "helm")) "async" ("2020-07-12 23:14:47" nil (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "popup" ("2020-07-12 23:14:47" ("cl-lib") (:type git :flavor melpa :files ("popup.el" "popup-pkg.el") :host github :repo "auto-complete/popup-el" :package "popup" :local-repo "popup-el")) "helm-core" ("2020-07-12 23:14:47" ("emacs" "async") (:flavor melpa :files ("helm-core-pkg.el" "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") :package "helm-core" :local-repo "helm" :type git :repo "emacs-helm/helm" :host github)) "helm-ag" ("2020-07-12 23:14:47" ("emacs" "helm") (:type git :flavor melpa :host github :repo "syohex/emacs-helm-ag" :package "helm-ag" :local-repo "emacs-helm-ag")) "projectile" ("2020-07-12 23:14:47" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "helm-projectile" ("2020-07-12 23:14:47" ("helm" "projectile" "cl-lib") (:type git :flavor melpa :host github :repo "bbatsov/helm-projectile" :package "helm-projectile" :local-repo "helm-projectile")) "multiple-cursors" ("2020-07-12 23:14:47" ("cl-lib") (:type git :flavor melpa :host github :repo "magnars/multiple-cursors.el" :package "multiple-cursors" :local-repo "multiple-cursors.el")) "goto-last-change" ("2020-07-12 23:14:47" nil (:type git :flavor melpa :host github :repo "camdez/goto-last-change.el" :package "goto-last-change" :local-repo "goto-last-change.el")) "ag" ("2020-07-12 23:14:47" ("dash" "s" "cl-lib") (:type git :flavor melpa :host github :repo "Wilfred/ag.el" :package "ag" :local-repo "ag.el")) "undo-tree" ("2020-07-12 23:14:47" nil (:type git :host github :repo "emacs-straight/undo-tree" :package "undo-tree" :local-repo "undo-tree")) "browse-kill-ring" ("2020-07-12 23:14:47" nil (:type git :flavor melpa :host github :repo "browse-kill-ring/browse-kill-ring" :package "browse-kill-ring" :local-repo "browse-kill-ring")) "xclip" ("2020-07-12 23:14:47" nil (:type git :host github :repo "emacs-straight/xclip" :package "xclip" :local-repo "xclip")) "gradle-mode" ("2020-07-12 23:14:47" ("s") (:type git :flavor melpa :host github :repo "jacobono/emacs-gradle-mode" :package "gradle-mode" :local-repo "emacs-gradle-mode")) "restclient" ("2020-07-12 23:14:47" nil (:host github :repo "pashky/restclient.el" :files ("restclient.el") :package "restclient" :type git :local-repo "restclient.el")) "ein" ("2020-07-12 23:14:47" ("emacs" "websocket" "auto-complete" "request" "deferred" "polymode" "markdown-mode" "dash" "s" "skewer-mode") (:type git :flavor melpa :files ("lisp/*" (:exclude "lisp/zeroein.el") "ein-pkg.el") :host github :repo "millejoh/emacs-ipython-notebook" :package "ein" :local-repo "emacs-ipython-notebook")) "websocket" ("2020-07-12 23:14:47" ("cl-lib") (:type git :flavor melpa :host github :repo "ahyatt/emacs-websocket" :package "websocket" :local-repo "emacs-websocket")) "auto-complete" ("2020-07-12 23:14:47" ("popup" "cl-lib") (:type git :flavor melpa :files ("*.el" "dict" "auto-complete-pkg.el") :host github :repo "auto-complete/auto-complete" :package "auto-complete" :local-repo "auto-complete")) "request" ("2020-07-12 23:14:47" ("emacs") (:type git :flavor melpa :files ("request.el" "request-pkg.el") :host github :repo "tkf/emacs-request" :package "request" :local-repo "emacs-request")) "polymode" ("2020-07-12 23:14:47" ("emacs") (:type git :flavor melpa :host github :repo "polymode/polymode" :package "polymode" :local-repo "polymode")) "markdown-mode" ("2020-07-12 23:14:47" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "skewer-mode" ("2020-07-12 23:14:47" ("simple-httpd" "js2-mode" "emacs") (:type git :flavor melpa :files ("*.html" "*.js" "*.el" "skewer-mode-pkg.el") :host github :repo "skeeto/skewer-mode" :package "skewer-mode" :local-repo "skewer-mode")) "simple-httpd" ("2020-07-12 23:14:47" ("cl-lib") (:type git :flavor melpa :host github :repo "skeeto/emacs-web-server" :package "simple-httpd" :local-repo "emacs-web-server")) "js2-mode" ("2020-07-12 23:14:47" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "mooz/js2-mode" :package "js2-mode" :local-repo "js2-mode")) "elisp-slime-nav" ("2020-07-12 23:14:47" ("cl-lib") (:type git :flavor melpa :host github :repo "purcell/elisp-slime-nav" :package "elisp-slime-nav" :local-repo "elisp-slime-nav")) "overseer" ("2020-07-12 23:14:47" ("emacs" "dash" "pkg-info" "f") (:host github :repo "tonini/overseer.el" :package "overseer" :type git :local-repo "overseer.el")) "f" ("2020-07-12 23:14:47" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "slime-company" ("2020-07-12 23:14:47" ("emacs" "slime" "company") (:type git :flavor melpa :host github :repo "anwyn/slime-company" :package "slime-company" :local-repo "slime-company")) "slime" ("2020-07-12 23:14:47" ("cl-lib" "macrostep") (:type git :flavor melpa :files ("*.el" ("lib" "lib/hyperspec.el") "swank" "*.lisp" "*.asd" ("contrib" "contrib/*") (:exclude "contrib/test" "contrib/Makefile") "doc/slime.texi" "doc/slime.info" "doc/dir" "ChangeLog" "slime-pkg.el") :host github :repo "slime/slime" :package "slime" :local-repo "slime")) "macrostep" ("2020-07-12 23:14:47" ("cl-lib") (:type git :flavor melpa :host github :repo "joddie/macrostep" :package "macrostep" :local-repo "macrostep")) "go-mode" ("2020-07-12 23:14:48" nil (:type git :flavor melpa :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el" :package "go-mode" :local-repo "go-mode.el")) "go-guru" ("2020-07-12 23:14:48" ("go-mode" "cl-lib") (:flavor melpa :files ("go-guru.el" "go-guru-pkg.el") :package "go-guru" :local-repo "go-mode.el" :type git :repo "dominikh/go-mode.el" :host github)) "company-go" ("2020-07-12 23:14:48" ("company" "go-mode") (:type git :flavor melpa :files ("emacs-company/company-go.el" "company-go-pkg.el") :host github :repo "mdempsky/gocode" :package "company-go" :local-repo "gocode")) "go-eldoc" ("2020-07-12 23:14:48" ("emacs" "go-mode") (:type git :flavor melpa :host github :repo "syohex/emacs-go-eldoc" :package "go-eldoc" :local-repo "emacs-go-eldoc")) "go-dlv" ("2020-07-12 23:14:48" ("go-mode") (:type git :flavor melpa :host github :repo "benma/go-dlv.el" :package "go-dlv" :local-repo "go-dlv.el")) "geiser" ("2020-07-12 23:14:48" nil (:type git :flavor melpa :files ("elisp/*.el" "elisp/geiser-version.el.in" "doc/*.texi" ("bin" "bin/*") (:exclude "bin/Makefile.am") ("scheme" "scheme/*") (:exclude "scheme/Makefile.am") "geiser-pkg.el") :host gitlab :repo "jaor/geiser" :package "geiser" :local-repo "geiser")) "clojure-mode-extra-font-locking" ("2020-07-12 23:14:48" ("clojure-mode") (:flavor melpa :files ("clojure-mode-extra-font-locking.el" "clojure-mode-extra-font-locking-pkg.el") :package "clojure-mode-extra-font-locking" :local-repo "clojure-mode" :type git :repo "clojure-emacs/clojure-mode" :host github)) "eglot" ("2020-07-12 23:14:48" ("emacs" "jsonrpc" "flymake" "project" "xref" "eldoc") (:host github :repo "joaotavora/eglot" :package "eglot" :type git :local-repo "eglot")) "jsonrpc" ("2020-07-12 23:14:48" ("emacs") (:type git :host github :repo "emacs-straight/jsonrpc" :package "jsonrpc" :local-repo "jsonrpc")) "flymake" ("2020-07-12 23:14:48" ("emacs" "eldoc") (:type git :host github :repo "emacs-straight/flymake" :package "flymake" :local-repo "flymake")) "rustic" ("2020-07-12 23:14:48" ("emacs" "xterm-color" "dash" "s" "f" "projectile" "markdown-mode" "spinner" "let-alist" "seq" "ht") (:host github :repo "brotzeit/rustic" :package "rustic" :type git :local-repo "rustic")) "xterm-color" ("2020-07-12 23:14:48" ("cl-lib") (:type git :flavor melpa :host github :repo "atomontage/xterm-color" :package "xterm-color" :local-repo "xterm-color")) "let-alist" ("2020-07-12 23:14:48" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :package "let-alist" :local-repo "let-alist")) "ht" ("2020-07-12 23:14:48" ("dash") (:type git :flavor melpa :files ("ht.el" "ht-pkg.el") :host github :repo "Wilfred/ht.el" :package "ht" :local-repo "ht.el")) "scala-mode" ("2020-07-12 23:14:48" nil (:type git :flavor melpa :host github :repo "ensime/emacs-scala-mode" :package "scala-mode" :local-repo "emacs-scala-mode")) "ensime" ("2020-07-12 23:14:48" ("scala-mode" "sbt-mode" "yasnippet" "company" "dash" "s" "popup") (:host github :repo "ensime/ensime-emacs" :branch "2.0" :package "ensime" :type git :local-repo "ensime-emacs")) "sbt-mode" ("2020-07-12 23:14:48" ("emacs") (:type git :flavor melpa :host github :repo "ensime/emacs-sbt-mode" :package "sbt-mode" :local-repo "emacs-sbt-mode")) "yasnippet" ("2020-07-12 23:14:48" ("cl-lib") (:type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet" :package "yasnippet" :local-repo "yasnippet")) "realgud" ("2020-07-12 23:14:49" ("load-relative" "loc-changes" "test-simple" "emacs") (:type git :flavor melpa :files ("realgud.el" "realgud/.nosearch" ("realgud/common" "realgud/common/*.el") ("realgud/common/buffer" "realgud/common/buffer/*.el") ("realgud/debugger/bashdb" "realgud/debugger/bashdb/*.el") ("realgud/debugger/gdb" "realgud/debugger/gdb/*.el") ("realgud/debugger/gub" "realgud/debugger/gub/*.el") ("realgud/debugger/ipdb" "realgud/debugger/ipdb/*.el") ("realgud/debugger/jdb" "realgud/debugger/jdb/*.el") ("realgud/debugger/kshdb" "realgud/debugger/kshdb/*.el") ("realgud/debugger/nodejs" "realgud/debugger/nodejs/*.el") ("realgud/debugger/pdb" "realgud/debugger/pdb/*.el") ("realgud/debugger/perldb" "realgud/debugger/perldb/*.el") ("realgud/debugger/rdebug" "realgud/debugger/rdebug/*.el") ("realgud/debugger/remake" "realgud/debugger/remake/*.el") ("realgud/debugger/trepan" "realgud/debugger/trepan/*.el") ("realgud/debugger/trepan.pl" "realgud/debugger/trepan.pl/*.el") ("realgud/debugger/trepan2" "realgud/debugger/trepan2/*.el") ("realgud/debugger/trepan3k" "realgud/debugger/trepan3k/*.el") ("realgud/debugger/trepanjs" "realgud/debugger/trepanjs/*.el") ("realgud/debugger/zshdb" "realgud/debugger/zshdb/*.el") ("realgud/lang" "realgud/lang/*.el") "realgud-pkg.el") :host github :repo "realgud/realgud" :package "realgud" :local-repo "realgud")) "load-relative" ("2020-07-12 23:14:49" nil (:type git :flavor melpa :host github :repo "rocky/emacs-load-relative" :package "load-relative" :local-repo "emacs-load-relative")) "loc-changes" ("2020-07-12 23:14:49" nil (:type git :flavor melpa :files ("loc-changes.el" "loc-changes-pkg.el") :host github :repo "rocky/emacs-loc-changes" :package "loc-changes" :local-repo "emacs-loc-changes")) "test-simple" ("2020-07-12 23:14:49" ("cl-lib") (:type git :flavor melpa :host github :repo "rocky/emacs-test-simple" :package "test-simple" :local-repo "emacs-test-simple")) "realgud-jdb" ("2020-07-12 23:14:49" ("realgud" "load-relative" "cl-lib" "emacs") (:type git :flavor melpa :files (:defaults ("realgud-jdb" "realgud-jdb/*.el") "realgud-jdb-pkg.el") :host github :repo "realgud/realgud-jdb" :package "realgud-jdb" :local-repo "realgud-jdb")) "meghanada" ("2020-07-12 23:14:49" ("emacs" "yasnippet" "company" "flycheck") (:host github :repo "mopemope/meghanada-emacs" :package "meghanada" :type git :local-repo "meghanada-emacs")) "flycheck" ("2020-07-12 23:14:49" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "hydra" ("2020-07-12 23:14:50" ("cl-lib" "lv") (:host github :repo "abo-abo/hydra" :package "hydra" :type git :local-repo "hydra")) "lv" ("2020-07-12 23:14:50" nil (:flavor melpa :files ("lv.el" "lv-pkg.el") :package "lv" :local-repo "hydra" :type git :repo "abo-abo/hydra" :host github)) "haskell-mode" ("2020-07-12 23:14:50" ("emacs") (:type git :flavor melpa :files (:defaults "NEWS" "logo.svg" "haskell-mode-pkg.el") :host github :repo "haskell/haskell-mode" :package "haskell-mode" :local-repo "haskell-mode")) "hindent" ("2020-07-12 23:14:50" ("cl-lib") (:type git :flavor melpa :files ("elisp/*.el" "hindent-pkg.el") :host github :repo "commercialhaskell/hindent" :package "hindent" :local-repo "hindent")) "rainbow-delimiters" ("2020-07-12 23:14:50" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "smartparens" ("2020-07-12 23:14:50" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "magit" ("2020-07-12 23:14:50" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "git-commit" ("2020-07-12 23:14:50" ("emacs" "dash" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "with-editor" ("2020-07-12 23:14:50" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "transient" ("2020-07-12 23:14:50" ("emacs" "dash") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "gh" ("2020-07-12 23:14:50" ("emacs" "pcache" "logito" "marshal") (:type git :flavor melpa :host github :repo "sigma/gh.el" :package "gh" :local-repo "gh.el")) "pcache" ("2020-07-12 23:14:50" ("eieio") (:type git :flavor melpa :host github :repo "sigma/pcache" :package "pcache" :local-repo "pcache")) "logito" ("2020-07-12 23:14:50" ("eieio") (:type git :flavor melpa :host github :repo "sigma/logito" :package "logito" :local-repo "logito")) "marshal" ("2020-07-12 23:14:50" ("eieio" "json" "ht") (:type git :flavor melpa :host github :repo "sigma/marshal.el" :package "marshal" :local-repo "marshal.el")) "gist" ("2020-07-12 23:14:50" ("emacs" "gh") (:type git :flavor melpa :host github :repo "defunkt/gist.el" :package "gist" :local-repo "gist.el")) "git-gutter" ("2020-07-12 23:14:50" ("emacs") (:type git :flavor melpa :host github :repo "syohex/emacs-git-gutter" :package "git-gutter" :local-repo "emacs-git-gutter")) "rcirc-notify" ("2020-07-12 23:14:50" nil (:host github :repo "nicferrier/rcirc-notify" :package "rcirc-notify" :type git :local-repo "rcirc-notify")) "slack" ("2020-07-12 23:14:50" ("websocket" "request" "oauth2" "circe" "alert" "emojify") (:host github :repo "yuya373/emacs-slack" :package "slack" :type git :local-repo "emacs-slack")) "oauth2" ("2020-07-12 23:14:50" nil (:type git :host github :repo "emacs-straight/oauth2" :package "oauth2" :local-repo "oauth2")) "circe" ("2020-07-12 23:14:50" ("cl-lib") (:type git :flavor melpa :host github :repo "jorgenschaefer/circe" :package "circe" :local-repo "circe")) "alert" ("2020-07-12 23:14:50" ("gntp" "log4e" "cl-lib") (:type git :flavor melpa :host github :repo "jwiegley/alert" :package "alert" :local-repo "alert")) "gntp" ("2020-07-12 23:14:50" nil (:type git :flavor melpa :host github :repo "tekai/gntp.el" :package "gntp" :local-repo "gntp.el")) "log4e" ("2020-07-12 23:14:50" nil (:type git :flavor melpa :host github :repo "aki2o/log4e" :package "log4e" :local-repo "log4e")) "emojify" ("2020-07-12 23:14:50" ("seq" "ht" "emacs") (:type git :flavor melpa :files (:defaults "data" "images" "emojify-pkg.el") :host github :repo "iqbalansari/emacs-emojify" :package "emojify" :local-repo "emacs-emojify")) "direnv" ("2020-07-12 23:14:50" ("emacs" "dash") (:host github :repo "wbolster/emacs-direnv" :package "direnv" :type git :local-repo "emacs-direnv"))))
+#s(hash-table size 145 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2020-07-31 10:10:00" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2020-07-31 10:10:00" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2020-07-31 10:10:00" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2020-07-31 10:10:00" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2020-07-31 10:10:00" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2020-07-31 10:10:00" ("emacs" "bind-key") (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "bind-key" ("2020-07-31 10:10:00" nil (:flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :package "bind-key" :local-repo "use-package" :type git :repo "jwiegley/use-package" :host github)) "zenburn-theme" ("2020-07-31 10:10:00" nil (:type git :flavor melpa :host github :repo "bbatsov/zenburn-emacs" :package "zenburn-theme" :local-repo "zenburn-emacs")) "pinentry" ("2020-07-31 10:10:01" nil (:type git :host github :repo "emacs-straight/pinentry" :files ("*" (:exclude ".git")) :package "pinentry" :local-repo "pinentry")) "diminish" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "myrjola/diminish.el" :package "diminish" :local-repo "diminish.el")) "gnus-alias" ("2020-07-31 10:10:01" nil (:host github :repo "hexmode/gnus-alias" :package "gnus-alias" :type git :local-repo "gnus-alias")) "notmuch" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :files ("emacs/*.el" "emacs/*.png" "notmuch-pkg.el") :repo "https://git.notmuchmail.org/git/notmuch" :package "notmuch" :local-repo "notmuch")) "cider" ("2020-07-31 10:10:01" ("emacs" "clojure-mode" "parseedn" "pkg-info" "queue" "spinner" "seq" "sesman") (:type git :flavor melpa :files ("*.el" (:exclude ".dir-locals.el") "cider-pkg.el") :host github :repo "clojure-emacs/cider" :package "cider" :local-repo "cider")) "clojure-mode" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :files ("clojure-mode.el" "clojure-mode-pkg.el") :host github :repo "clojure-emacs/clojure-mode" :package "clojure-mode" :local-repo "clojure-mode")) "parseedn" ("2020-07-31 10:10:01" ("emacs" "a" "parseclj") (:type git :flavor melpa :host github :repo "clojure-emacs/parseedn" :package "parseedn" :local-repo "parseedn")) "a" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "plexus/a.el" :package "a" :local-repo "a.el")) "parseclj" ("2020-07-31 10:10:01" ("emacs" "a") (:type git :flavor melpa :host github :repo "clojure-emacs/parseclj" :package "parseclj" :local-repo "parseclj")) "pkg-info" ("2020-07-31 10:10:01" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2020-07-31 10:10:01" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "queue" ("2020-07-31 10:10:01" nil (:type git :host github :repo "emacs-straight/queue" :files ("*" (:exclude ".git")) :package "queue" :local-repo "queue")) "spinner" ("2020-07-31 10:10:01" nil (:type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git")) :package "spinner" :local-repo "spinner")) "sesman" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "vspinu/sesman" :package "sesman" :local-repo "sesman")) "company" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "org-plus-contrib" ("2020-07-31 10:10:01" nil (:type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :files (:defaults "contrib/lisp/*.el") :package "org-plus-contrib")) "htmlize" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :host github :repo "hniksic/emacs-htmlize" :package "htmlize" :local-repo "emacs-htmlize")) "org2jekyll" ("2020-07-31 10:10:01" ("dash-functional" "s" "deferred" "kv") (:host github :repo "ardumont/org2jekyll" :package "org2jekyll" :type git :local-repo "org2jekyll")) "dash-functional" ("2020-07-31 10:10:01" ("dash" "emacs") (:type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el" :package "dash-functional" :local-repo "dash.el")) "dash" ("2020-07-31 10:10:01" nil (:flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :package "dash" :local-repo "dash.el" :type git :repo "magnars/dash.el" :host github)) "s" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "deferred" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :files ("deferred.el" "deferred-pkg.el") :host github :repo "kiwanami/emacs-deferred" :package "deferred" :local-repo "emacs-deferred")) "kv" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :files ("kv.el" "kv-pkg.el") :host github :repo "nicferrier/emacs-kv" :package "kv" :local-repo "emacs-kv")) "ox-reveal" ("2020-07-31 10:10:01" ("org") (:host github :repo "yjwen/org-reveal" :package "ox-reveal" :type git :local-repo "org-reveal")) "org" ("2020-07-31 10:10:01" nil (:local-repo "org" :package "org" :type git :repo "https://code.orgmode.org/bzg/org-mode.git")) "yaml-mode" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "yoshiki/yaml-mode" :package "yaml-mode" :local-repo "yaml-mode")) "which-key" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "avy" ("2020-07-31 10:10:01" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "abo-abo/avy" :package "avy" :local-repo "avy")) "ace-window" ("2020-07-31 10:10:01" ("avy") (:type git :flavor melpa :host github :repo "abo-abo/ace-window" :package "ace-window" :local-repo "ace-window")) "helm" ("2020-07-31 10:10:01" ("emacs" "async" "popup" "helm-core") (:type git :flavor melpa :files ("*.el" "emacs-helm.sh" (:exclude "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") "helm-pkg.el") :host github :repo "emacs-helm/helm" :package "helm" :local-repo "helm")) "async" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "popup" ("2020-07-31 10:10:01" ("cl-lib") (:type git :flavor melpa :files ("popup.el" "popup-pkg.el") :host github :repo "auto-complete/popup-el" :package "popup" :local-repo "popup-el")) "helm-core" ("2020-07-31 10:10:01" ("emacs" "async") (:flavor melpa :files ("helm-core-pkg.el" "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") :package "helm-core" :local-repo "helm" :type git :repo "emacs-helm/helm" :host github)) "helm-ag" ("2020-07-31 10:10:01" ("emacs" "helm") (:type git :flavor melpa :host github :repo "emacsorphanage/helm-ag" :package "helm-ag" :local-repo "helm-ag")) "projectile" ("2020-07-31 10:10:01" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "helm-projectile" ("2020-07-31 10:10:01" ("helm" "projectile" "cl-lib") (:type git :flavor melpa :host github :repo "bbatsov/helm-projectile" :package "helm-projectile" :local-repo "helm-projectile")) "multiple-cursors" ("2020-07-31 10:10:01" ("cl-lib") (:type git :flavor melpa :host github :repo "magnars/multiple-cursors.el" :package "multiple-cursors" :local-repo "multiple-cursors.el")) "goto-last-change" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :host github :repo "camdez/goto-last-change.el" :package "goto-last-change" :local-repo "goto-last-change.el")) "ag" ("2020-07-31 10:10:01" ("dash" "s" "cl-lib") (:type git :flavor melpa :host github :repo "Wilfred/ag.el" :package "ag" :local-repo "ag.el")) "undo-tree" ("2020-07-31 10:10:01" nil (:type git :host github :repo "emacs-straight/undo-tree" :files ("*" (:exclude ".git")) :package "undo-tree" :local-repo "undo-tree")) "browse-kill-ring" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :host github :repo "browse-kill-ring/browse-kill-ring" :package "browse-kill-ring" :local-repo "browse-kill-ring")) "xclip" ("2020-07-31 10:10:01" nil (:type git :host github :repo "emacs-straight/xclip" :files ("*" (:exclude ".git")) :package "xclip" :local-repo "xclip")) "gradle-mode" ("2020-07-31 10:10:01" ("s") (:type git :flavor melpa :host github :repo "jacobono/emacs-gradle-mode" :package "gradle-mode" :local-repo "emacs-gradle-mode")) "restclient" ("2020-07-31 10:10:01" nil (:host github :repo "pashky/restclient.el" :files ("restclient.el") :package "restclient" :type git :local-repo "restclient.el")) "ein" ("2020-07-31 10:10:01" ("emacs" "websocket" "anaphora" "request" "deferred" "polymode" "dash") (:type git :flavor melpa :files ("lisp/*" (:exclude "lisp/zeroein.el") "ein-pkg.el") :host github :repo "millejoh/emacs-ipython-notebook" :package "ein" :local-repo "emacs-ipython-notebook")) "websocket" ("2020-07-31 10:10:01" ("cl-lib") (:type git :flavor melpa :host github :repo "ahyatt/emacs-websocket" :package "websocket" :local-repo "emacs-websocket")) "anaphora" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :host github :repo "rolandwalker/anaphora" :package "anaphora" :local-repo "anaphora")) "request" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :files ("request.el" "request-pkg.el") :host github :repo "tkf/emacs-request" :package "request" :local-repo "emacs-request")) "polymode" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "polymode/polymode" :package "polymode" :local-repo "polymode")) "elisp-slime-nav" ("2020-07-31 10:10:01" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/elisp-slime-nav" :package "elisp-slime-nav" :local-repo "elisp-slime-nav")) "overseer" ("2020-07-31 10:10:01" ("emacs" "dash" "pkg-info" "f") (:host github :repo "tonini/overseer.el" :package "overseer" :type git :local-repo "overseer.el")) "f" ("2020-07-31 10:10:01" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "slime-company" ("2020-07-31 10:10:01" ("emacs" "slime" "company") (:type git :flavor melpa :host github :repo "anwyn/slime-company" :package "slime-company" :local-repo "slime-company")) "slime" ("2020-07-31 10:10:01" ("cl-lib" "macrostep") (:type git :flavor melpa :files ("*.el" ("lib" "lib/hyperspec.el") "swank" "*.lisp" "*.asd" ("contrib" "contrib/*") (:exclude "contrib/test" "contrib/Makefile") "doc/slime.texi" "doc/slime.info" "doc/dir" "ChangeLog" "slime-pkg.el") :host github :repo "slime/slime" :package "slime" :local-repo "slime")) "macrostep" ("2020-07-31 10:10:01" ("cl-lib") (:type git :flavor melpa :host github :repo "joddie/macrostep" :package "macrostep" :local-repo "macrostep")) "go-mode" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el" :package "go-mode" :local-repo "go-mode.el")) "go-guru" ("2020-07-31 10:10:01" ("go-mode" "cl-lib") (:flavor melpa :files ("go-guru.el" "go-guru-pkg.el") :package "go-guru" :local-repo "go-mode.el" :type git :repo "dominikh/go-mode.el" :host github)) "company-go" ("2020-07-31 10:10:01" ("company" "go-mode") (:type git :flavor melpa :files ("emacs-company/company-go.el" "company-go-pkg.el") :host github :repo "mdempsky/gocode" :package "company-go" :local-repo "gocode")) "go-eldoc" ("2020-07-31 10:10:01" ("emacs" "go-mode") (:type git :flavor melpa :host github :repo "emacsorphanage/go-eldoc" :package "go-eldoc" :local-repo "go-eldoc")) "go-dlv" ("2020-07-31 10:10:01" ("go-mode") (:type git :flavor melpa :host github :repo "benma/go-dlv.el" :package "go-dlv" :local-repo "go-dlv.el")) "geiser" ("2020-07-31 10:10:01" nil (:type git :flavor melpa :files ("elisp/*.el" "elisp/geiser-version.el.in" "doc/*.texi" ("bin" "bin/*") (:exclude "bin/Makefile.am") ("scheme" "scheme/*") (:exclude "scheme/Makefile.am") "geiser-pkg.el") :host gitlab :repo "jaor/geiser" :package "geiser" :local-repo "geiser")) "clojure-mode-extra-font-locking" ("2020-07-31 10:10:01" ("clojure-mode") (:flavor melpa :files ("clojure-mode-extra-font-locking.el" "clojure-mode-extra-font-locking-pkg.el") :package "clojure-mode-extra-font-locking" :local-repo "clojure-mode" :type git :repo "clojure-emacs/clojure-mode" :host github)) "rustic" ("2020-07-31 10:10:01" ("emacs" "xterm-color" "dash" "s" "f" "projectile" "markdown-mode" "spinner" "let-alist" "seq" "ht") (:host github :repo "brotzeit/rustic" :package "rustic" :type git :local-repo "rustic")) "xterm-color" ("2020-07-31 10:10:01" ("cl-lib") (:type git :flavor melpa :host github :repo "atomontage/xterm-color" :package "xterm-color" :local-repo "xterm-color")) "markdown-mode" ("2020-07-31 10:10:01" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "let-alist" ("2020-07-31 10:10:01" ("emacs") (:type git :host github :repo "emacsmirror/let-alist" :package "let-alist" :local-repo "let-alist")) "ht" ("2020-07-31 10:10:01" ("dash") (:type git :flavor melpa :files ("ht.el" "ht-pkg.el") :host github :repo "Wilfred/ht.el" :package "ht" :local-repo "ht.el")) "lsp-mode" ("2020-07-06 20:03:47" ("emacs" "dash" "dash-functional" "f" "ht" "spinner" "markdown-mode" "lv") (:host github :repo "emacs-lsp/lsp-mode" :package "lsp-mode" :type git :local-repo "lsp-mode")) "lv" ("2020-07-31 10:10:02" nil (:flavor melpa :files ("lv.el" "lv-pkg.el") :package "lv" :local-repo "hydra" :type git :repo "abo-abo/hydra" :host github)) "scala-mode" ("2020-07-31 10:10:02" nil (:type git :flavor melpa :host github :repo "hvesalai/emacs-scala-mode" :package "scala-mode" :local-repo "emacs-scala-mode")) "ensime" ("2020-07-31 10:10:02" ("scala-mode" "sbt-mode" "yasnippet" "company" "dash" "s" "popup") (:host github :repo "ensime/ensime-emacs" :branch "2.0" :package "ensime" :type git :local-repo "ensime-emacs")) "sbt-mode" ("2020-07-31 10:10:02" ("emacs") (:type git :flavor melpa :host github :repo "hvesalai/emacs-sbt-mode" :package "sbt-mode" :local-repo "emacs-sbt-mode")) "yasnippet" ("2020-07-31 10:10:02" ("cl-lib") (:type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet" :package "yasnippet" :local-repo "yasnippet")) "realgud" ("2020-07-31 10:10:02" ("load-relative" "loc-changes" "test-simple" "emacs") (:type git :flavor melpa :files ("realgud.el" "realgud/.nosearch" ("realgud/common" "realgud/common/*.el") ("realgud/common/buffer" "realgud/common/buffer/*.el") ("realgud/debugger/bashdb" "realgud/debugger/bashdb/*.el") ("realgud/debugger/gdb" "realgud/debugger/gdb/*.el") ("realgud/debugger/gub" "realgud/debugger/gub/*.el") ("realgud/debugger/ipdb" "realgud/debugger/ipdb/*.el") ("realgud/debugger/jdb" "realgud/debugger/jdb/*.el") ("realgud/debugger/kshdb" "realgud/debugger/kshdb/*.el") ("realgud/debugger/nodejs" "realgud/debugger/nodejs/*.el") ("realgud/debugger/pdb" "realgud/debugger/pdb/*.el") ("realgud/debugger/perldb" "realgud/debugger/perldb/*.el") ("realgud/debugger/rdebug" "realgud/debugger/rdebug/*.el") ("realgud/debugger/remake" "realgud/debugger/remake/*.el") ("realgud/debugger/trepan" "realgud/debugger/trepan/*.el") ("realgud/debugger/trepan.pl" "realgud/debugger/trepan.pl/*.el") ("realgud/debugger/trepan2" "realgud/debugger/trepan2/*.el") ("realgud/debugger/trepan3k" "realgud/debugger/trepan3k/*.el") ("realgud/debugger/trepanjs" "realgud/debugger/trepanjs/*.el") ("realgud/debugger/zshdb" "realgud/debugger/zshdb/*.el") ("realgud/lang" "realgud/lang/*.el") "realgud-pkg.el") :host github :repo "realgud/realgud" :package "realgud" :local-repo "realgud")) "load-relative" ("2020-07-31 10:10:02" nil (:type git :flavor melpa :host github :repo "rocky/emacs-load-relative" :package "load-relative" :local-repo "emacs-load-relative")) "loc-changes" ("2020-07-31 10:10:02" nil (:type git :flavor melpa :files ("loc-changes.el" "loc-changes-pkg.el") :host github :repo "rocky/emacs-loc-changes" :package "loc-changes" :local-repo "emacs-loc-changes")) "test-simple" ("2020-07-31 10:10:02" ("cl-lib") (:type git :flavor melpa :host github :repo "rocky/emacs-test-simple" :package "test-simple" :local-repo "emacs-test-simple")) "realgud-jdb" ("2020-07-31 10:10:02" ("realgud" "load-relative" "emacs") (:type git :flavor melpa :files (:defaults ("realgud-jdb" "realgud-jdb/*.el") "realgud-jdb-pkg.el") :host github :repo "realgud/realgud-jdb" :package "realgud-jdb" :local-repo "realgud-jdb")) "meghanada" ("2020-07-31 10:10:02" ("emacs" "yasnippet" "company" "flycheck") (:host github :repo "mopemope/meghanada-emacs" :package "meghanada" :type git :local-repo "meghanada-emacs")) "flycheck" ("2020-07-31 10:10:02" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "hydra" ("2020-07-31 10:10:02" ("cl-lib" "lv") (:host github :repo "abo-abo/hydra" :files (:defaults (:exclude "lv.el") "hydra-pkg.el") :package "hydra" :type git :local-repo "hydra")) "haskell-mode" ("2020-07-31 10:10:02" ("emacs") (:type git :flavor melpa :files (:defaults "NEWS" "logo.svg" "haskell-mode-pkg.el") :host github :repo "haskell/haskell-mode" :package "haskell-mode" :local-repo "haskell-mode")) "hindent" ("2020-07-31 10:10:02" ("cl-lib") (:type git :flavor melpa :files ("elisp/*.el" "hindent-pkg.el") :host github :repo "commercialhaskell/hindent" :package "hindent" :local-repo "hindent")) "rainbow-delimiters" ("2020-07-31 10:10:02" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "smartparens" ("2020-07-31 10:10:02" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "magit" ("2020-07-31 10:10:02" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "git-commit" ("2020-07-31 10:10:02" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2020-07-31 10:10:02" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2020-07-31 10:10:02" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "gh" ("2020-07-31 10:10:02" ("emacs" "pcache" "logito" "marshal") (:type git :flavor melpa :host github :repo "sigma/gh.el" :package "gh" :local-repo "gh.el")) "pcache" ("2020-07-31 10:10:02" ("eieio") (:type git :flavor melpa :host github :repo "sigma/pcache" :package "pcache" :local-repo "pcache")) "logito" ("2020-07-31 10:10:02" ("eieio") (:type git :flavor melpa :host github :repo "sigma/logito" :package "logito" :local-repo "logito")) "marshal" ("2020-07-31 10:10:02" ("eieio" "json" "ht") (:type git :flavor melpa :host github :repo "sigma/marshal.el" :package "marshal" :local-repo "marshal.el")) "gist" ("2020-07-31 10:10:02" ("emacs" "gh") (:type git :flavor melpa :host github :repo "defunkt/gist.el" :package "gist" :local-repo "gist.el")) "git-gutter" ("2020-07-31 10:10:02" ("emacs") (:type git :flavor melpa :host github :repo "emacsorphanage/git-gutter" :package "git-gutter" :local-repo "git-gutter")) "rcirc-notify" ("2020-07-31 10:10:02" nil (:host github :repo "nicferrier/rcirc-notify" :package "rcirc-notify" :type git :local-repo "rcirc-notify")) "slack" ("2020-07-31 10:10:02" ("websocket" "request" "oauth2" "circe" "alert" "emojify") (:host github :repo "yuya373/emacs-slack" :package "slack" :type git :local-repo "emacs-slack")) "oauth2" ("2020-07-31 10:10:02" nil (:type git :host github :repo "emacs-straight/oauth2" :files ("*" (:exclude ".git")) :package "oauth2" :local-repo "oauth2")) "circe" ("2020-07-31 10:10:02" ("cl-lib") (:type git :flavor melpa :host github :repo "jorgenschaefer/circe" :package "circe" :local-repo "circe")) "alert" ("2020-07-31 10:10:02" ("gntp" "log4e" "cl-lib") (:type git :flavor melpa :host github :repo "jwiegley/alert" :package "alert" :local-repo "alert")) "gntp" ("2020-07-31 10:10:02" nil (:type git :flavor melpa :host github :repo "tekai/gntp.el" :package "gntp" :local-repo "gntp.el")) "log4e" ("2020-07-31 10:10:02" nil (:type git :flavor melpa :host github :repo "aki2o/log4e" :package "log4e" :local-repo "log4e")) "emojify" ("2020-07-31 10:10:02" ("seq" "ht" "emacs") (:type git :flavor melpa :files (:defaults "data" "images" "emojify-pkg.el") :host github :repo "iqbalansari/emacs-emojify" :package "emojify" :local-repo "emacs-emojify")) "direnv" ("2020-07-31 10:10:02" ("emacs" "dash") (:host github :repo "wbolster/emacs-direnv" :package "direnv" :type git :local-repo "emacs-direnv")) "eglot" ("2020-07-31 10:10:01" ("emacs" "jsonrpc" "flymake" "project" "xref" "eldoc") (:host github :repo "joaotavora/eglot" :package "eglot" :type git :local-repo "eglot")) "jsonrpc" ("2020-07-31 10:10:01" ("emacs") (:type git :host github :repo "emacs-straight/jsonrpc" :files ("*" (:exclude ".git")) :package "jsonrpc" :local-repo "jsonrpc")) "flymake" ("2020-07-31 10:10:01" ("emacs") (:type git :host github :repo "emacsmirror/flymake" :package "flymake" :local-repo "flymake"))))
 
 #s(hash-table size 145 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight straight-autoloads straight-x) (autoload (quote straight-get-recipe) "straight" "Interactively select a recipe from one of the recipe repositories.
 All recipe repositories in `straight-recipe-repositories' will
@@ -22,7 +22,9 @@ is used for the value of SOURCES. ACTION may be `copy' (copy
 recipe to the kill ring), `insert' (insert at point), or nil (no
 action, just return it).
 
-(fn &optional SOURCES ACTION)" t nil) (autoload (quote straight-use-package) "straight" "Register, clone, build, and activate a package and its dependencies.
+(fn &optional SOURCES ACTION)" t nil) (autoload (quote straight-visit-package-website) "straight" "Interactively select a recipe, and visit the package's website.
+
+(fn)" t nil) (autoload (quote straight-use-package) "straight" "Register, clone, build, and activate a package and its dependencies.
 This is the main entry point to the functionality of straight.el.
 
 MELPA-STYLE-RECIPE is either a symbol naming a package, or a list
@@ -258,7 +260,7 @@ according to the value of `straight-profiles'.
 
 (fn &optional FORCE)" t nil) (autoload (quote straight-thaw-versions) "straight" "Read version lockfiles and restore package versions to those listed.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "straight" (quote ("straight-")))) (defvar straight-x-pinned-packages nil "List of pinned packages.") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "straight-x" (quote ("straight-x-")))) (provide (quote straight-autoloads))) "bind-key" ((bind-key bind-key-autoloads) (autoload (quote bind-key) "bind-key" "Bind KEY-NAME to COMMAND in KEYMAP (`global-map' if not passed).
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "straight" (quote ("straight-")))) (defvar straight-x-pinned-packages nil "List of pinned packages.") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "straight-x" (quote ("straight-x-")))) (provide (quote straight-autoloads))) "bind-key" ((bind-key-autoloads bind-key) (autoload (quote bind-key) "bind-key" "Bind KEY-NAME to COMMAND in KEYMAP (`global-map' if not passed).
 
 KEY-NAME may be a vector, in which case it is passed straight to
 `define-key'. Or it may be a string to be interpreted as
@@ -302,7 +304,7 @@ function symbol (unquoted).
 
 (fn &rest ARGS)" nil t) (autoload (quote describe-personal-keybindings) "bind-key" "Display all the personal keybindings defined by `bind-key'.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "bind-key" (quote ("compare-keybindings" "get-binding-description" "bind-key" "personal-keybindings" "override-global-m")))) (provide (quote bind-key-autoloads))) "use-package" ((use-package-jump use-package-delight use-package-autoloads use-package-bind-key use-package use-package-ensure use-package-lint use-package-diminish use-package-core) (autoload (quote use-package-autoload-keymap) "use-package-bind-key" "Loads PACKAGE and then binds the key sequence used to invoke
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "bind-key" (quote ("compare-keybindings" "get-binding-description" "bind-key" "personal-keybindings" "override-global-m")))) (provide (quote bind-key-autoloads))) "use-package" ((use-package-autoloads use-package-lint use-package-jump use-package use-package-bind-key use-package-diminish use-package-ensure use-package-delight use-package-core) (autoload (quote use-package-autoload-keymap) "use-package-bind-key" "Loads PACKAGE and then binds the key sequence used to invoke
 this function to KEYMAP-SYMBOL. It then simulates pressing the
 same key sequence a again, so that the next key pressed is routed
 to the newly loaded keymap.
@@ -360,9 +362,11 @@ this file.  Usage:
                  `:magic-fallback', or `:interpreter'.  This can be an integer,
                  to force loading after N seconds of idle time, if the package
                  has not already been loaded.
-:after           Defer loading of a package until after any of the named
-                 features are loaded.
-:demand          Prevent deferred loading in all cases.
+:after           Delay the use-package declaration until after the named modules
+                 have loaded. Once load, it will be as though the use-package
+                 declaration (without `:after') had been seen at that moment.
+:demand          Prevent the automatic deferred loading introduced by constructs
+                 such as `:bind' (see `:defer' for the complete list).
 
 :if EXPR         Initialize and load only if EXPR evaluates to a non-nil value.
 :disabled        The package is ignored completely if this keyword is present.
@@ -398,7 +402,7 @@ instead.
 For example, if the module's `:if' condition is met, but even
 with the specified `:load-path' the module cannot be found.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "use-package-lint" (quote ("use-package-lint-declaration")))) (provide (quote use-package-autoloads))) "zenburn-theme" ((zenburn-theme-autoloads zenburn-theme) (defvar zenburn-override-colors-alist (quote nil) "Place to override default theme colors.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "use-package-lint" (quote ("use-package-lint-declaration")))) (provide (quote use-package-autoloads))) "zenburn-theme" ((zenburn-theme zenburn-theme-autoloads) (defvar zenburn-override-colors-alist (quote nil) "Place to override default theme colors.
 
 You can override a subset of the theme's default colors by
 defining them in this alist.") (custom-autoload (quote zenburn-override-colors-alist) "zenburn-theme" t) (and load-file-name (boundp (quote custom-theme-load-path)) (add-to-list (quote custom-theme-load-path) (file-name-as-directory (file-name-directory load-file-name)))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "zenburn-theme" (quote ("zenburn")))) (provide (quote zenburn-theme-autoloads))) "pinentry" ((pinentry-autoloads pinentry) (autoload (quote pinentry-start) "pinentry" "Start a Pinentry service.
@@ -409,7 +413,7 @@ the gpg command will interact with Emacs for passphrase input.
 If the optional QUIET argument is non-nil, messages at startup
 will not be shown.
 
-(fn &optional QUIET)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pinentry" (quote ("pinentry-")))) (provide (quote pinentry-autoloads))) "diminish" ((diminish diminish-autoloads) (autoload (quote diminish) "diminish" "Diminish mode-line display of minor mode MODE to TO-WHAT (default \"\").
+(fn &optional QUIET)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pinentry" (quote ("pinentry-")))) (provide (quote pinentry-autoloads))) "diminish" ((diminish-autoloads diminish) (autoload (quote diminish) "diminish" "Diminish mode-line display of minor mode MODE to TO-WHAT (default \"\").
 
 Interactively, enter (with completion) the name of any minor mode, followed
 on the next line by what you want it diminished to (default empty string).
@@ -440,7 +444,7 @@ you can see the whole thing in the *Messages* buffer.
 This doesn't change the status of any modes; it just lets you see
 what diminished modes would be on the mode-line if they were still minor.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "diminish" (quote ("diminish")))) (provide (quote diminish-autoloads))) "gnus-alias" ((gnus-alias gnus-alias-autoloads) (autoload (quote gnus-alias-init) "gnus-alias" "Add gnus-alias call to message mode hook.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "diminish" (quote ("diminish")))) (provide (quote diminish-autoloads))) "gnus-alias" ((gnus-alias-autoloads gnus-alias) (autoload (quote gnus-alias-init) "gnus-alias" "Add gnus-alias call to message mode hook.
 
 (fn)" t nil) (autoload (quote gnus-alias-select-identity) "gnus-alias" "Prompt user for an identity and use it.
 
@@ -478,7 +482,7 @@ This should be place in the `message-load-hook' (see gnus-alias file
 for details).  If such an argument is not needed in the current
 context, `gnus-alias-determine-identity' may be used directly in a hook.
 
-(fn WHICH-HEADER)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gnus-alias" (quote ("gnus-alias-")))) (provide (quote gnus-alias-autoloads))) "notmuch" ((notmuch-crypto notmuch notmuch-jump notmuch-message notmuch-compat notmuch-draft notmuch-print notmuch-tag notmuch-maildir-fcc notmuch-address coolj notmuch-hello notmuch-autoloads notmuch-show notmuch-parser notmuch-tree notmuch-company rstdoc notmuch-lib notmuch-query notmuch-mua notmuch-wash make-deps) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "coolj" (quote ("coolj-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "make-deps" (quote ("make-deps" "batch-make-deps")))) (autoload (quote notmuch-search) "notmuch" "Display threads matching QUERY in a notmuch-search buffer.
+(fn WHICH-HEADER)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gnus-alias" (quote ("gnus-alias-")))) (provide (quote gnus-alias-autoloads))) "notmuch" ((notmuch-hello notmuch-lib notmuch-print notmuch-maildir-fcc notmuch-query notmuch-autoloads notmuch-parser notmuch-address notmuch notmuch-jump notmuch-draft make-deps notmuch-company notmuch-message notmuch-crypto notmuch-compat notmuch-show notmuch-wash notmuch-tree notmuch-mua notmuch-tag coolj rstdoc) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "coolj" (quote ("coolj-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "make-deps" (quote ("make-deps" "batch-make-deps")))) (autoload (quote notmuch-search) "notmuch" "Display threads matching QUERY in a notmuch-search buffer.
 
 If QUERY is nil, it is read interactively from the minibuffer.
 Other optional parameters are used as follows:
@@ -536,7 +540,7 @@ function is used.
 Returns the buffer containing the messages, or NIL if no messages
 matched.
 
-(fn THREAD-ID &optional ELIDE-TOGGLE PARENT-BUFFER QUERY-CONTEXT BUFFER-NAME)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-show" (quote ("notmuch-" "with-current-notmuch-show-message")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-tag" (quote ("notmuch-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-tree" (quote ("notmuch-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-wash" (quote ("notmuch-wash-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rstdoc" (quote ("rst")))) (provide (quote notmuch-autoloads))) "clojure-mode" ((clojure-mode-autoloads clojure-mode) (autoload (quote clojure-mode) "clojure-mode" "Major mode for editing Clojure code.
+(fn THREAD-ID &optional ELIDE-TOGGLE PARENT-BUFFER QUERY-CONTEXT BUFFER-NAME)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-show" (quote ("notmuch-" "with-current-notmuch-show-message")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-tag" (quote ("notmuch-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-tree" (quote ("notmuch-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "notmuch-wash" (quote ("notmuch-wash-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rstdoc" (quote ("rst")))) (provide (quote notmuch-autoloads))) "clojure-mode" ((clojure-mode clojure-mode-autoloads) (autoload (quote clojure-mode) "clojure-mode" "Major mode for editing Clojure code.
 
 \\{clojure-mode-map}
 
@@ -601,7 +605,7 @@ With a numeric prefix argument the let is introduced N lists up.
 
 \\{clojurec-mode-map}
 
-(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.\\(clj\\|dtm\\|edn\\)\\'" . clojure-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.cljc\\'" . clojurec-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.cljs\\'" . clojurescript-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\(?:build\\|profile\\)\\.boot\\'" . clojure-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "clojure-mode" (quote ("clojure" "add-custom-clojure-indents" "define-clojure-indent" "put-clojure-indent")))) (provide (quote clojure-mode-autoloads))) "a" ((a a-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "a" (quote ("a-")))) (provide (quote a-autoloads))) "parseclj" ((parseclj-parser parseclj-autoloads parseclj-ast parseclj parseclj-lex) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj" (quote ("parseclj-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj-ast" (quote ("parseclj-ast-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj-lex" (quote ("parseclj-lex-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj-parser" (quote ("parseclj-")))) (provide (quote parseclj-autoloads))) "parseedn" ((parseedn-autoloads parseedn) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseedn" (quote ("parseedn-")))) (provide (quote parseedn-autoloads))) "cl-lib" ((cl-lib-autoloads cl-lib) (let ((d (file-name-directory "/home/ksm/.emacs.d/straight/build/cl-lib/cl-lib-autoloads.el"))) (when (member d load-path) (setq load-path (append (remove d load-path) (list d))))) (provide (quote cl-lib-autoloads))) "epl" ((epl epl-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "epl" (quote ("epl-")))) (provide (quote epl-autoloads))) "pkg-info" ((pkg-info-autoloads pkg-info) (autoload (quote pkg-info-library-original-version) "pkg-info" "Get the original version in the header of LIBRARY.
+(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.\\(clj\\|dtm\\|edn\\)\\'" . clojure-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.cljc\\'" . clojurec-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.cljs\\'" . clojurescript-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\(?:build\\|profile\\)\\.boot\\'" . clojure-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "clojure-mode" (quote ("clojure" "add-custom-clojure-indents" "define-clojure-indent" "put-clojure-indent")))) (provide (quote clojure-mode-autoloads))) "a" ((a a-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "a" (quote ("a-")))) (provide (quote a-autoloads))) "parseclj" ((parseclj-lex parseclj-parser parseclj parseclj-ast parseclj-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj" (quote ("parseclj-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj-ast" (quote ("parseclj-ast-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj-lex" (quote ("parseclj-lex-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseclj-parser" (quote ("parseclj-")))) (provide (quote parseclj-autoloads))) "parseedn" ((parseedn parseedn-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "parseedn" (quote ("parseedn-")))) (provide (quote parseedn-autoloads))) "epl" ((epl-autoloads epl) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "epl" (quote ("epl-")))) (provide (quote epl-autoloads))) "pkg-info" ((pkg-info-autoloads pkg-info) (autoload (quote pkg-info-library-original-version) "pkg-info" "Get the original version in the header of LIBRARY.
 
 The original version is stored in the X-Original-Version header.
 This header is added by the MELPA package archive to preserve
@@ -688,7 +692,7 @@ part of.  If PACKAGE is not installed, or if the PACKAGE version
 is the same as the LIBRARY version, do not include a package
 version.
 
-(fn LIBRARY &optional PACKAGE SHOW)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pkg-info" (quote ("pkg-info-")))) (provide (quote pkg-info-autoloads))) "queue" ((queue-autoloads queue) (defalias (quote make-queue) (quote queue-create) "Create an empty queue data structure.") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "queue" (quote ("queue")))) (provide (quote queue-autoloads))) "spinner" ((spinner spinner-autoloads) (autoload (quote spinner-create) "spinner" "Create a spinner of the given TYPE.
+(fn LIBRARY &optional PACKAGE SHOW)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pkg-info" (quote ("pkg-info-")))) (provide (quote pkg-info-autoloads))) "queue" ((queue queue-autoloads) (defalias (quote make-queue) (quote queue-create) "Create an empty queue data structure.") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "queue" (quote ("queue")))) (provide (quote queue-autoloads))) "spinner" ((spinner-autoloads spinner) (autoload (quote spinner-create) "spinner" "Create a spinner of the given TYPE.
 The possible TYPEs are described in `spinner--type-to-frames'.
 
 FPS, if given, is the number of desired frames per second.
@@ -733,7 +737,7 @@ DELAY, if given, is the number of seconds to wait until actually
 displaying the spinner. It is safe to cancel the spinner before
 this time, in which case it won't display at all.
 
-(fn &optional TYPE-OR-OBJECT FPS DELAY)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "spinner" (quote ("spinner")))) (provide (quote spinner-autoloads))) "seq" ((seq-25 seq-autoloads seq-24 seq) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "seq-24" (quote ("seq")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "seq-25" (quote ("seq--when-emacs-25-p")))) (provide (quote seq-autoloads))) "sesman" ((sesman-autoloads sesman-browser sesman) (autoload (quote sesman-start) "sesman" "Start a Sesman session.
+(fn &optional TYPE-OR-OBJECT FPS DELAY)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "spinner" (quote ("spinner")))) (provide (quote spinner-autoloads))) "sesman" ((sesman-browser sesman sesman-autoloads) (autoload (quote sesman-start) "sesman" "Start a Sesman session.
 
 (fn)" t nil) (autoload (quote sesman-restart) "sesman" "Restart sesman session.
 When WHICH is nil, restart the current session; when a single universal
@@ -774,7 +778,7 @@ buffer.
 (fn)" t nil) (autoload (quote sesman-map) "sesman" "Session management prefix keymap." t (quote keymap)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "sesman" (quote ("sesman-")))) (autoload (quote sesman-browser) "sesman-browser" "Display an interactive session browser.
 See `sesman-browser-mode' for more details.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "sesman-browser" (quote ("sesman-")))) (provide (quote sesman-autoloads))) "cider" ((cider-clojuredocs cider-find cider-test cider-autoloads cider-apropos cider-completion cider-common cider-util cider-resolve cider cider-repl cider-eldoc cider-compat cider-cheatsheet cider-overlays cider-mode cider-client cider-selector cider-profile cider-connection cider-format cider-scratch cider-browse-spec cider-doc cider-ns cider-classpath cider-popup cider-xref cider-repl-history cider-inspector cider-debug cider-tracing cider-browse-ns cider-stacktrace cider-macroexpansion nrepl-dict cider-eval nrepl-client) (autoload (quote cider-version) "cider" "Display CIDER's version.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "sesman-browser" (quote ("sesman-")))) (provide (quote sesman-autoloads))) "cider" ((cider-profile cider-popup cider-mode cider-doc cider-inspector cider-autoloads cider-completion cider-cheatsheet cider cider-browse-ns nrepl-dict cider-util cider-repl-history cider-eldoc cider-scratch cider-tracing cider-connection cider-common cider-clojuredocs cider-selector cider-client cider-macroexpansion cider-ns cider-test cider-overlays cider-debug cider-xref cider-classpath cider-find cider-stacktrace nrepl-client cider-apropos cider-resolve cider-browse-spec cider-eval cider-compat cider-repl cider-format) (autoload (quote cider-version) "cider" "Display CIDER's version.
 
 (fn)" t nil) (autoload (quote cider-start-map) "cider" "CIDER jack-in and connect keymap." t (quote keymap)) (autoload (quote cider-jack-in-clj) "cider" "Start an nREPL server for the current project and connect to it.
 PARAMS is a plist optionally containing :project-dir and :jack-in-cmd.
@@ -866,7 +870,9 @@ Prompts for the symbol to use, or uses the symbol at point, depending on
 the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
 opposite of what that option dictates.
 
-(fn &optional ARG)" t nil) (autoload (quote cider-clojuredocs) "cider-clojuredocs" "Open ClojureDocs documentation in a popup buffer.
+(fn &optional ARG)" t nil) (autoload (quote cider-clojuredocs-refresh-cache) "cider-clojuredocs" "Refresh the ClojureDocs cache.
+
+(fn)" t nil) (autoload (quote cider-clojuredocs) "cider-clojuredocs" "Open ClojureDocs documentation in a popup buffer.
 
 Prompts for the symbol to use, or uses the symbol at point, depending on
 the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
@@ -1064,7 +1070,7 @@ Defaults to the current ns.  With prefix arg QUERY, prompts for a ns.
 
 (fn &optional NS SYMBOL)" t nil) (autoload (quote cider-xref-fn-deps-select) "cider-xref" "Displays the function dependencies for  NS and SYMBOL using completing read.
 
-(fn &optional NS SYMBOL)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "cider-xref" (quote ("cider-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "nrepl-client" (quote ("nrepl-" "cider-enlighten-mode")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "nrepl-dict" (quote ("nrepl-")))) (provide (quote cider-autoloads))) "company" ((company-clang company-etags company-abbrev company-template company-capf company-keywords company-files company-nxml company-gtags company-dabbrev-code company-cmake company-eclim company-yasnippet company company-elisp company-css company-bbdb company-autoloads company-tempo company-xcode company-tng company-dabbrev company-ispell company-semantic company-oddmuse) (autoload (quote company-mode) "company" "\"complete anything\"; is an in-buffer completion framework.
+(fn &optional NS SYMBOL)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "cider-xref" (quote ("cider-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "nrepl-client" (quote ("nrepl-" "cider-enlighten-mode")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "nrepl-dict" (quote ("nrepl-")))) (provide (quote cider-autoloads))) "company" ((company-autoloads company-eclim company-template company-oddmuse company-tempo company-xcode company-clang company-dabbrev-code company-tng company-dabbrev company-elisp company-etags company-capf company-keywords company-abbrev company-bbdb company-yasnippet company-ispell company company-cmake company-gtags company-files company-nxml company-semantic company-css) (autoload (quote company-mode) "company" "\"complete anything\"; is an in-buffer completion framework.
 Completion starts automatically, depending on the values
 `company-idle-delay' and `company-minimum-prefix-length'.
 
@@ -1177,9 +1183,9 @@ shadow backends that come after it.  Recommended usages:
 
   (global-set-key (kbd \"C-c y\") 'company-yasnippet)
 
-(fn COMMAND &optional ARG &rest IGNORE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-yasnippet" (quote ("company-yasnippet--")))) (provide (quote company-autoloads))) "org-plus-contrib" ((ob-tcl ol-bookmark ob-perl ob-makefile org-mac-iCal ob-sclang ob-octave ol-mhe ob-coq org-mobile org-mairix ob-julia org-src ox-rss ox-taskjuggler ol-notmuch org-license ob-lilypond ol-w3m ox-html ob-arduino ob-calc ob-groovy ol-elisp-symbol ob-fomus ol-wl org-footnote ob-matlab org-wikinodes org-table org-agenda ob-maxima ob-C org-link-edit org-macs ob-eshell ob-abc ob-lob ob-sed org-attach-embedded-images ox-texinfo org-archive ol-mew ob-plantuml org-effectiveness ob-forth ob-lua ob-exp ox-bibtex ob-clojure org-secretary ob-tangle ox-groff ob-asymptote org-passwords org-bibtex-extras ox-beamer ob-gnuplot org-checklist org-track ox-extra ob-org ol-man org-mac-link org-indent ob-java org-element ox-deck org-learn org-feed ob-eukleides ob-mathematica ob-vala org-lint org-tempo ob-core ob-oz org-keys ob-shen org-timer ob-ocaml ob-emacs-lisp org-datetree org-eldoc org-ctags org-collector org-static-mathjax org-clock org-contacts org-faces ob-table ol-vm org-velocity org-panel ob-stan org-contribdir org-num org ol-bbdb org-eval ox-freemind ob-comint ox-s5 org-mouse ol-rmail ob-clojure-literate org-loaddefs ob-css ox-ascii org-id org-choose ob-processing org-expiry ob-awk ob-hledger ob-ebnf ob-fortran ob-sqlite org-registry ox-icalendar org-colview org-crypt org-duration orgtbl-sqlinsert ob-sql ob-mscgen ol-git-link ob-haskell ol-gnus ox-publish org-pcomplete ol-bibtex ol-irc org-macro ob-dot ol-eww ob-spice org-plus-contrib-autoloads org-attach-git ox-md org-inlinetask ob-ditaa ox-latex org-capture ob-J ox-org ob-sass ol-docview org-notify org-screenshot ob-ledger org-interactive-query org-toc org-annotate-file ob-latex ob-js ob-io org-screen ob-python ox ob-R org-depend org-goto ob ob-shell ob-eval org-list ox-confluence org-protocol ol-info ob-screen ob-stata org-sudoku ox-man ob-vbnet org-compat ob-smiles org-attach org-install org-invoice ob-lisp ob-php ob-redis org-plot ob-ref ox-odt ob-picolisp ox-koma-letter org-habit ol-eshell ob-mathomatic ob-scheme ob-ruby ob-csharp ol org-entities org-eval-light) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-C" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-J" (quote ("obj-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-R" (quote ("ob-R-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-abc" (quote ("org-babel-")))) (autoload (quote org-babel-execute:arduino) "ob-arduino" "org-babel arduino hook.
+(fn COMMAND &optional ARG &rest IGNORE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-yasnippet" (quote ("company-yasnippet-")))) (provide (quote company-autoloads))) "org-plus-contrib" ((ob-processing org-interactive-query org-contacts org-goto ob-ruby ob-hledger ol-w3m org-static-mathjax ob-ditaa org-protocol org-indent ox-confluence ob-coq ob-perl ob-exp org-compat org-colview ob-awk ob-lob ob ob-io org-src ox-publish ol-notmuch ox-html ox-koma-letter org-keys ob-org org-element ob-julia org-contribdir ob-latex ob-asymptote ob-sqlite ob-arduino ob-python ob-mscgen ol-rmail ob-matlab ob-picolisp org-link-edit org-plus-contrib-autoloads org-timer ox-texinfo org-notify org-screen ob-stata org-plot org-crypt ob-screen org-screenshot ol-bibtex ox-icalendar ob-maxima ob-ref org-license ob-comint ob-haskell org-bibtex-extras ox-groff org-mouse ox-org ol-vm ol-wl ob-ocaml ob-dot ob-R org-track ob-lua org-attach-embedded-images org-learn ob-gnuplot ob-css ob-sclang org-install ob-tcl org-eldoc ol ob-abc org-secretary org-eval org-attach-git org-mac-iCal org-mairix ob-shell org-entities ob-eukleides org-macro ob-mathematica ob-plantuml ob-lilypond org-toc org-effectiveness ob-js ob-csharp ol-git-link org-feed org-faces org-attach org-invoice ob-php ob-vala ob-makefile ox-ascii ox-bibtex ol-eww orgtbl-sqlinsert org-table org-loaddefs ol-irc ob-ebnf ol-eshell org-macs ob-groovy ob-fomus ox-md ob-fortran org-archive org-checklist org-footnote ox-extra ob-J org-datetree ox-odt ob-vbnet ox-rss ol-bbdb ob-stan org org-mobile org-agenda ol-info org-velocity ob-sass org-clock ob-smiles ob-core ox-freemind ob-C ob-table ob-octave org-passwords org-collector ob-redis ob-spice org-inlinetask ob-eval ob-scheme org-ctags ob-java ox-man org-eval-light org-capture ol-docview org-choose ob-forth ol-mew ol-elisp-symbol ox-beamer ob-sed ob-ledger ol-bookmark ob-tangle ol-gnus ob-clojure-literate org-list org-mac-link org-id ob-lisp org-duration ob-emacs-lisp ob-oz org-registry org-lint ob-sql org-tempo org-expiry ob-calc ox ox-s5 ox-taskjuggler org-panel org-depend org-sudoku ob-clojure org-habit ob-eshell org-annotate-file ox-deck ob-mathomatic ol-man org-pcomplete ox-latex ol-mhe ob-shen org-refile org-wikinodes org-num) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-C" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-J" (quote ("obj-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-R" (quote ("ob-R-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-abc" (quote ("org-babel-")))) (autoload (quote org-babel-execute:arduino) "ob-arduino" "org-babel arduino hook.
 
-(fn BODY PARAMS)" nil nil) (eval-after-load (quote org) (quote (add-to-list (quote org-src-lang-modes) (quote ("arduino" . arduino))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-arduino" (quote ("ob-arduino:" "org-babel-default-header-args:sclang")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-asymptote" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-awk" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-calc" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-clojure" (quote ("org-babel-")))) (defvar ob-clojure-literate-auto-jackin-p nil "Auto jack in ob-clojure project.
+(fn BODY PARAMS)" nil nil) (eval-after-load (quote org) (quote (add-to-list (quote org-src-lang-modes) (quote ("arduino" . arduino))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-arduino" (quote ("ob-arduino:" "org-babel-default-header-args:sclang")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-asymptote" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-awk" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-calc" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-clojure" (quote ("ob-clojure-" "org-babel-")))) (defvar ob-clojure-literate-auto-jackin-p nil "Auto jack in ob-clojure project.
 Don't auto jack in by default for not rude.") (custom-autoload (quote ob-clojure-literate-auto-jackin-p) "ob-clojure-literate" t) (autoload (quote ob-clojure-literate-specify-session) "ob-clojure-literate" "Specify ob-clojure header argument :session with value selected from a list of available sessions.
 
 (fn)" t nil) (autoload (quote ob-clojure-literate-auto-jackin) "ob-clojure-literate" "Auto setup ob-clojure-literate scaffold and jack-in Clojure project.
@@ -1192,463 +1198,13 @@ Don't auto jack in by default for not rude.") (custom-autoload (quote ob-clojure
 
 (fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-clojure-literate" (quote ("ob-clojure-literate-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-comint" (quote ("org-babel-comint-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-coq" (quote ("org-babel-" "coq-program-name")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-core" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-csharp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-css" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ditaa" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-dot" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ebnf" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-emacs-lisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-eshell" (quote ("ob-eshell-session-live-p" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-eukleides" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-eval" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-exp" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-fomus" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-forth" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-fortran" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-gnuplot" (quote ("org-babel-" "*org-babel-gnuplot-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-groovy" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-haskell" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-hledger" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-io" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-java" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-js" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-julia" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-latex" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ledger" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lilypond" (quote ("org-babel-" "lilypond-mode")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lob" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lua" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-makefile" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-mathematica" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-mathomatic" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-maxima" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-mscgen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ocaml" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-octave" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-org" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-oz" (quote ("oz-send-string-expression" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-perl" (quote ("org-babel-")))) (autoload (quote org-babel-execute:php) "ob-php" "Orgmode Babel PHP evaluate function for `BODY' with `PARAMS'.
 
-(fn BODY PARAMS)" nil nil) (eval-after-load "org" (quote (add-to-list (quote org-src-lang-modes) (quote ("php" . php))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-php" (quote ("ob-php:inf-php-buffer" "org-babel-default-header-args:php")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-picolisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-plantuml" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-processing" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-python" (quote ("org-babel-")))) (autoload (quote org-babel-execute:redis) "ob-redis" "org-babel redis hook.
+(fn BODY PARAMS)" nil nil) (eval-after-load "org" (quote (add-to-list (quote org-src-lang-modes) (quote ("php" . php))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-php" (quote ("ob-php:inf-php-buffer" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-picolisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-plantuml" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-processing" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-python" (quote ("org-babel-")))) (autoload (quote org-babel-execute:redis) "ob-redis" "org-babel redis hook.
 
 (fn BODY PARAMS)" nil nil) (eval-after-load "org" (quote (add-to-list (quote org-src-lang-modes) (quote ("redis" . redis))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-redis" (quote ("ob-redis:default-db")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ref" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ruby" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sass" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-scheme" (quote ("org-babel-")))) (autoload (quote org-babel-execute:sclang) "ob-sclang" "Org-mode Babel sclang hook for evaluate `BODY' with `PARAMS'.
 
 (fn BODY PARAMS)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sclang" (quote ("org-babel-default-header-args:sclang")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-screen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sed" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-shell" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-shen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-smiles" (quote ("molecule-" "org-babel-execute:smiles")))) (autoload (quote org-babel-execute:spice) "ob-spice" "Execute a block of Spice code `BODY' with org-babel and `PARAMS'.
 
-(fn BODY PARAMS)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-spice" (quote ("ob-spice-concat" "org-babel-expand-body:spice")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sql" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sqlite" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-stan" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-stata" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-table" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-tangle" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-tcl" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-vala" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-vbnet" (quote ("org-babel-")))) (autoload (quote org-next-link) "ol" "Move forward to the next link.
-If the link is in hidden text, expose it.  When SEARCH-BACKWARD
-is non-nil, move backward.
-
-(fn &optional SEARCH-BACKWARD)" t nil) (autoload (quote org-previous-link) "ol" "Move backward to the previous link.
-If the link is in hidden text, expose it.
-
-(fn)" t nil) (autoload (quote org-toggle-link-display) "ol" "Toggle the literal or descriptive display of links.
-
-(fn)" t nil) (autoload (quote org-store-link) "ol" "Store a link to the current location.
-\\<org-mode-map>
-This link is added to `org-stored-links' and can later be inserted
-into an Org buffer with `org-insert-link' (`\\[org-insert-link]').
-
-For some link types, a `\\[universal-argument]' prefix ARG is interpreted.  A single
-`\\[universal-argument]' negates `org-context-in-file-links' for file links or
-`org-gnus-prefer-web-links' for links to Usenet articles.
-
-A `\\[universal-argument] \\[universal-argument]' prefix ARG forces skipping storing functions that are not
-part of Org core.
-
-A `\\[universal-argument] \\[universal-argument] \\[universal-argument]' prefix ARG forces storing a link for each line in the
-active region.
-
-Assume the function is called interactively if INTERACTIVE? is
-non-nil.
-
-(fn ARG &optional INTERACTIVE\\=\\?)" t nil) (autoload (quote org-insert-link) "ol" "Insert a link.  At the prompt, enter the link.
-
-Completion can be used to insert any of the link protocol prefixes in use.
-
-The history can be used to select a link previously stored with
-`org-store-link'.  When the empty string is entered (i.e. if you just
-press `RET' at the prompt), the link defaults to the most recently
-stored link.  As `SPC' triggers completion in the minibuffer, you need to
-use `M-SPC' or `C-q SPC' to force the insertion of a space character.
-
-You will also be prompted for a description, and if one is given, it will
-be displayed in the buffer instead of the link.
-
-If there is already a link at point, this command will allow you to edit
-link and description parts.
-
-With a `\\[universal-argument]' prefix, prompts for a file to link to.  The file name can be
-selected using completion.  The path to the file will be relative to the
-current directory if the file is in the current directory or a subdirectory.
-Otherwise, the link will be the absolute path as completed in the minibuffer
-(i.e. normally ~/path/to/file).  You can configure this behavior using the
-option `org-link-file-path-type'.
-
-With a `\\[universal-argument] \\[universal-argument]' prefix, enforce an absolute path even if the file is in
-the current directory or below.
-
-A `\\[universal-argument] \\[universal-argument] \\[universal-argument]' prefix negates `org-link-keep-stored-after-insertion'.
-
-If the LINK-LOCATION parameter is non-nil, this value will be used as
-the link location instead of reading one interactively.
-
-If the DESCRIPTION parameter is non-nil, this value will be used as the
-default description.  Otherwise, if `org-link-make-description-function'
-is non-nil, this function will be called with the link target, and the
-result will be the default link description.  When called non-interactively,
-don't allow to edit the default description.
-
-(fn &optional COMPLETE-FILE LINK-LOCATION DESCRIPTION)" t nil) (autoload (quote org-insert-all-links) "ol" "Insert all links in `org-stored-links'.
-When a universal prefix, do not delete the links from `org-stored-links'.
-When `ARG' is a number, insert the last N link(s).
-`PRE' and `POST' are optional arguments to define a string to
-prepend or to append.
-
-(fn ARG &optional PRE POST)" t nil) (autoload (quote org-insert-last-stored-link) "ol" "Insert the last link stored in `org-stored-links'.
-
-(fn ARG)" t nil) (autoload (quote org-insert-link-global) "ol" "Insert a link like Org mode does.
-This command can be called in any mode to insert a link in Org syntax.
-
-(fn)" t nil) (autoload (quote org-update-radio-target-regexp) "ol" "Find all radio targets in this file and update the regular expression.
-Also refresh fontification if needed.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bbdb" (quote ("org-bbdb-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bibtex" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bookmark" (quote ("org-bookmark-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-docview" (quote ("org-docview-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-elisp-symbol" (quote ("org-elisp-symbol-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eshell" (quote ("org-eshell-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eww" (quote ("org-eww-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-git-link" (quote ("org-git")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-gnus" (quote ("org-gnus-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-info" (quote ("org-info-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-irc" (quote ("org-irc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-man" (quote ("org-man-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-mew" (quote ("org-mew-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-mhe" (quote ("org-mhe-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-notmuch" (quote ("org-notmuch-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-rmail" (quote ("org-rmail-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-vm" (quote ("org-vm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-w3m" (quote ("org-w3m-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-wl" (quote ("org-wl-")))) (autoload (quote org-babel-do-load-languages) "org" "Load the languages defined in `org-babel-load-languages'.
-
-(fn SYM VALUE)" nil nil) (autoload (quote org-babel-load-file) "org" "Load Emacs Lisp source code blocks in the Org FILE.
-This function exports the source code using `org-babel-tangle'
-and then loads the resulting file using `load-file'.  With
-optional prefix argument COMPILE, the tangled Emacs Lisp file is
-byte-compiled before it is loaded.
-
-(fn FILE &optional COMPILE)" t nil) (autoload (quote org-version) "org" "Show the Org version.
-Interactively, or when MESSAGE is non-nil, show it in echo area.
-With prefix argument, or when HERE is non-nil, insert it at point.
-In non-interactive uses, a reduced version string is output unless
-FULL is given.
-
-(fn &optional HERE FULL MESSAGE)" t nil) (autoload (quote org-clock-persistence-insinuate) "org" "Set up hooks for clock persistence.
-
-(fn)" nil nil) (autoload (quote org-mode) "org" "Outline-based notes management and organizer, alias
-\"Carsten's outline-mode for keeping track of everything.\"
-
-Org mode develops organizational tasks around a NOTES file which
-contains information about projects as plain text.  Org mode is
-implemented on top of Outline mode, which is ideal to keep the content
-of large files well structured.  It supports ToDo items, deadlines and
-time stamps, which magically appear in the diary listing of the Emacs
-calendar.  Tables are easily created with a built-in table editor.
-Plain text URL-like links connect to websites, emails (VM), Usenet
-messages (Gnus), BBDB entries, and any files related to the project.
-For printing and sharing of notes, an Org file (or a part of it)
-can be exported as a structured ASCII or HTML file.
-
-The following commands are available:
-
-\\{org-mode-map}
-
-(fn)" t nil) (autoload (quote org-cycle) "org" "TAB-action and visibility cycling for Org mode.
-
-This is the command invoked in Org mode by the `TAB' key.  Its main
-purpose is outline visibility cycling, but it also invokes other actions
-in special contexts.
-
-When this function is called with a `\\[universal-argument]' prefix, rotate the entire
-buffer through 3 states (global cycling)
-  1. OVERVIEW: Show only top-level headlines.
-  2. CONTENTS: Show all headlines of all levels, but no body text.
-  3. SHOW ALL: Show everything.
-
-With a `\\[universal-argument] \\[universal-argument]' prefix argument, switch to the startup visibility,
-determined by the variable `org-startup-folded', and by any VISIBILITY
-properties in the buffer.
-
-With a `\\[universal-argument] \\[universal-argument] \\[universal-argument]' prefix argument, show the entire buffer, including
-any drawers.
-
-When inside a table, re-align the table and move to the next field.
-
-When point is at the beginning of a headline, rotate the subtree started
-by this line through 3 different states (local cycling)
-  1. FOLDED:   Only the main headline is shown.
-  2. CHILDREN: The main headline and the direct children are shown.
-               From this state, you can move to one of the children
-               and zoom in further.
-  3. SUBTREE:  Show the entire subtree, including body text.
-If there is no subtree, switch directly from CHILDREN to FOLDED.
-
-When point is at the beginning of an empty headline and the variable
-`org-cycle-level-after-item/entry-creation' is set, cycle the level
-of the headline by demoting and promoting it to likely levels.  This
-speeds up creation document structure by pressing `TAB' once or several
-times right after creating a new headline.
-
-When there is a numeric prefix, go up to a heading with level ARG, do
-a `show-subtree' and return to the previous cursor position.  If ARG
-is negative, go up that many levels.
-
-When point is not at the beginning of a headline, execute the global
-binding for `TAB', which is re-indenting the line.  See the option
-`org-cycle-emulate-tab' for details.
-
-As a special case, if point is at the beginning of the buffer and there is
-no headline in line 1, this function will act as if called with prefix arg
-(`\\[universal-argument] TAB', same as `S-TAB') also when called without prefix arg, but only
-if the variable `org-cycle-global-at-bob' is t.
-
-(fn &optional ARG)" t nil) (autoload (quote org-global-cycle) "org" "Cycle the global visibility.  For details see `org-cycle'.
-With `\\[universal-argument]' prefix ARG, switch to startup visibility.
-With a numeric prefix, show all headlines up to that level.
-
-(fn &optional ARG)" t nil) (autoload (quote org-run-like-in-org-mode) "org" "Run a command, pretending that the current buffer is in Org mode.
-This will temporarily bind local variables that are typically bound in
-Org mode to the values they have in Org mode, and then interactively
-call CMD.
-
-(fn CMD)" nil nil) (autoload (quote org-open-file) "org" "Open the file at PATH.
-First, this expands any special file name abbreviations.  Then the
-configuration variable `org-file-apps' is checked if it contains an
-entry for this file type, and if yes, the corresponding command is launched.
-
-If no application is found, Emacs simply visits the file.
-
-With optional prefix argument IN-EMACS, Emacs will visit the file.
-With a double \\[universal-argument] \\[universal-argument] prefix arg, Org tries to avoid opening in Emacs
-and to use an external application to visit the file.
-
-Optional LINE specifies a line to go to, optional SEARCH a string
-to search for.  If LINE or SEARCH is given, the file will be
-opened in Emacs, unless an entry from `org-file-apps' that makes
-use of groups in a regexp matches.
-
-If you want to change the way frames are used when following a
-link, please customize `org-link-frame-setup'.
-
-If the file does not exist, throw an error.
-
-(fn PATH &optional IN-EMACS LINE SEARCH)" nil nil) (autoload (quote org-open-at-point-global) "org" "Follow a link or a time-stamp like Org mode does.
-Also follow links and emails as seen by `thing-at-point'.
-This command can be called in any mode to follow an external
-link or a time-stamp that has Org mode syntax.  Its behavior
-is undefined when called on internal links like fuzzy links.
-Raise a user error when there is nothing to follow.
-
-(fn)" t nil) (autoload (quote org-offer-links-in-entry) "org" "Offer links in the current entry and return the selected link.
-If there is only one link, return it.
-If NTH is an integer, return the NTH link found.
-If ZERO is a string, check also this string for a link, and if
-there is one, return it.
-
-(fn BUFFER MARKER &optional NTH ZERO)" nil nil) (autoload (quote org-switchb) "org" "Switch between Org buffers.
-
-With `\\[universal-argument]' prefix, restrict available buffers to files.
-
-With `\\[universal-argument] \\[universal-argument]' prefix, restrict available buffers to agenda files.
-
-(fn &optional ARG)" t nil) (autoload (quote org-cycle-agenda-files) "org" "Cycle through the files in `org-agenda-files'.
-If the current buffer visits an agenda file, find the next one in the list.
-If the current buffer does not, find the first agenda file.
-
-(fn)" t nil) (autoload (quote org-submit-bug-report) "org" "Submit a bug report on Org via mail.
-
-Don't hesitate to report any problems or inaccurate documentation.
-
-If you don't have setup sending mail from (X)Emacs, please copy the
-output buffer into your mail program, as it gives us important
-information about your Org version and configuration.
-
-(fn)" t nil) (autoload (quote org-reload) "org" "Reload all Org Lisp files.
-With prefix arg UNCOMPILED, load the uncompiled versions.
-
-(fn &optional UNCOMPILED)" t nil) (autoload (quote org-customize) "org" "Call the customize function with org as argument.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org" (quote ("org-" "turn-on-org-cdlatex")))) (autoload (quote org-toggle-sticky-agenda) "org-agenda" "Toggle `org-agenda-sticky'.
-
-(fn &optional ARG)" t nil) (autoload (quote org-agenda) "org-agenda" "Dispatch agenda commands to collect entries to the agenda buffer.
-Prompts for a command to execute.  Any prefix arg will be passed
-on to the selected command.  The default selections are:
-
-a     Call `org-agenda-list' to display the agenda for current day or week.
-t     Call `org-todo-list' to display the global todo list.
-T     Call `org-todo-list' to display the global todo list, select only
-      entries with a specific TODO keyword (the user gets a prompt).
-m     Call `org-tags-view' to display headlines with tags matching
-      a condition  (the user is prompted for the condition).
-M     Like `m', but select only TODO entries, no ordinary headlines.
-e     Export views to associated files.
-s     Search entries for keywords.
-S     Search entries for keywords, only with TODO keywords.
-/     Multi occur across all agenda files and also files listed
-      in `org-agenda-text-search-extra-files'.
-<     Restrict agenda commands to buffer, subtree, or region.
-      Press several times to get the desired effect.
->     Remove a previous restriction.
-#     List \"stuck\" projects.
-!     Configure what \"stuck\" means.
-C     Configure custom agenda commands.
-
-More commands can be added by configuring the variable
-`org-agenda-custom-commands'.  In particular, specific tags and TODO keyword
-searches can be pre-defined in this way.
-
-If the current buffer is in Org mode and visiting a file, you can also
-first press `<' once to indicate that the agenda should be temporarily
-(until the next use of `\\[org-agenda]') restricted to the current file.
-Pressing `<' twice means to restrict to the current subtree or region
-(if active).
-
-(fn &optional ARG ORG-KEYS RESTRICTION)" t nil) (autoload (quote org-batch-agenda) "org-agenda" "Run an agenda command in batch mode and send the result to STDOUT.
-If CMD-KEY is a string of length 1, it is used as a key in
-`org-agenda-custom-commands' and triggers this command.  If it is a
-longer string it is used as a tags/todo match string.
-Parameters are alternating variable names and values that will be bound
-before running the agenda command.
-
-(fn CMD-KEY &rest PARAMETERS)" nil t) (autoload (quote org-batch-agenda-csv) "org-agenda" "Run an agenda command in batch mode and send the result to STDOUT.
-If CMD-KEY is a string of length 1, it is used as a key in
-`org-agenda-custom-commands' and triggers this command.  If it is a
-longer string it is used as a tags/todo match string.
-Parameters are alternating variable names and values that will be bound
-before running the agenda command.
-
-The output gives a line for each selected agenda item.  Each
-item is a list of comma-separated values, like this:
-
-category,head,type,todo,tags,date,time,extra,priority-l,priority-n
-
-category     The category of the item
-head         The headline, without TODO kwd, TAGS and PRIORITY
-type         The type of the agenda entry, can be
-                todo               selected in TODO match
-                tagsmatch          selected in tags match
-                diary              imported from diary
-                deadline           a deadline on given date
-                scheduled          scheduled on given date
-                timestamp          entry has timestamp on given date
-                closed             entry was closed on given date
-                upcoming-deadline  warning about deadline
-                past-scheduled     forwarded scheduled item
-                block              entry has date block including g. date
-todo         The todo keyword, if any
-tags         All tags including inherited ones, separated by colons
-date         The relevant date, like 2007-2-14
-time         The time, like 15:00-16:50
-extra        Sting with extra planning info
-priority-l   The priority letter if any was given
-priority-n   The computed numerical priority
-agenda-day   The day in the agenda where this is listed
-
-(fn CMD-KEY &rest PARAMETERS)" nil t) (autoload (quote org-store-agenda-views) "org-agenda" "Store agenda views.
-
-(fn &rest PARAMETERS)" t nil) (autoload (quote org-batch-store-agenda-views) "org-agenda" "Run all custom agenda commands that have a file argument.
-
-(fn &rest PARAMETERS)" nil t) (autoload (quote org-agenda-list) "org-agenda" "Produce a daily/weekly view from all files in variable `org-agenda-files'.
-The view will be for the current day or week, but from the overview buffer
-you will be able to go to other days/weeks.
-
-With a numeric prefix argument in an interactive call, the agenda will
-span ARG days.  Lisp programs should instead specify SPAN to change
-the number of days.  SPAN defaults to `org-agenda-span'.
-
-START-DAY defaults to TODAY, or to the most recent match for the weekday
-given in `org-agenda-start-on-weekday'.
-
-When WITH-HOUR is non-nil, only include scheduled and deadline
-items if they have an hour specification like [h]h:mm.
-
-(fn &optional ARG START-DAY SPAN WITH-HOUR)" t nil) (autoload (quote org-search-view) "org-agenda" "Show all entries that contain a phrase or words or regular expressions.
-
-With optional prefix argument TODO-ONLY, only consider entries that are
-TODO entries.  The argument STRING can be used to pass a default search
-string into this function.  If EDIT-AT is non-nil, it means that the
-user should get a chance to edit this string, with cursor at position
-EDIT-AT.
-
-The search string can be viewed either as a phrase that should be found as
-is, or it can be broken into a number of snippets, each of which must match
-in a Boolean way to select an entry.  The default depends on the variable
-`org-agenda-search-view-always-boolean'.
-Even if this is turned off (the default) you can always switch to
-Boolean search dynamically by preceding the first word with  \"+\" or \"-\".
-
-The default is a direct search of the whole phrase, where each space in
-the search string can expand to an arbitrary amount of whitespace,
-including newlines.
-
-If using a Boolean search, the search string is split on whitespace and
-each snippet is searched separately, with logical AND to select an entry.
-Words prefixed with a minus must *not* occur in the entry.  Words without
-a prefix or prefixed with a plus must occur in the entry.  Matching is
-case-insensitive.  Words are enclosed by word delimiters (i.e. they must
-match whole words, not parts of a word) if
-`org-agenda-search-view-force-full-words' is set (default is nil).
-
-Boolean search snippets enclosed by curly braces are interpreted as
-regular expressions that must or (when preceded with \"-\") must not
-match in the entry.  Snippets enclosed into double quotes will be taken
-as a whole, to include whitespace.
-
-- If the search string starts with an asterisk, search only in headlines.
-- If (possibly after the leading star) the search string starts with an
-  exclamation mark, this also means to look at TODO entries only, an effect
-  that can also be achieved with a prefix argument.
-- If (possibly after star and exclamation mark) the search string starts
-  with a colon, this will mean that the (non-regexp) snippets of the
-  Boolean search must match as full words.
-
-This command searches the agenda files, and in addition the files
-listed in `org-agenda-text-search-extra-files' unless a restriction lock
-is active.
-
-(fn &optional TODO-ONLY STRING EDIT-AT)" t nil) (autoload (quote org-todo-list) "org-agenda" "Show all (not done) TODO entries from all agenda file in a single list.
-The prefix arg can be used to select a specific TODO keyword and limit
-the list to these.  When using `\\[universal-argument]', you will be prompted
-for a keyword.  A numeric prefix directly selects the Nth keyword in
-`org-todo-keywords-1'.
-
-(fn &optional ARG)" t nil) (autoload (quote org-tags-view) "org-agenda" "Show all headlines for all `org-agenda-files' matching a TAGS criterion.
-The prefix arg TODO-ONLY limits the search to TODO entries.
-
-(fn &optional TODO-ONLY MATCH)" t nil) (autoload (quote org-agenda-list-stuck-projects) "org-agenda" "Create agenda view for projects that are stuck.
-Stuck projects are project that have no next actions.  For the definitions
-of what a project is and how to check if it stuck, customize the variable
-`org-stuck-projects'.
-
-(fn &rest IGNORE)" t nil) (autoload (quote org-diary) "org-agenda" "Return diary information from org files.
-This function can be used in a \"sexp\" diary entry in the Emacs calendar.
-It accesses org files and extracts information from those files to be
-listed in the diary.  The function accepts arguments specifying what
-items should be listed.  For a list of arguments allowed here, see the
-variable `org-agenda-entry-types'.
-
-The call in the diary file should look like this:
-
-   &%%(org-diary) ~/path/to/some/orgfile.org
-
-Use a separate line for each org file to check.  Or, if you omit the file name,
-all files listed in `org-agenda-files' will be checked automatically:
-
-   &%%(org-diary)
-
-If you don't give any arguments (as in the example above), the default value
-of `org-agenda-entry-types' is used: (:deadline :scheduled :timestamp :sexp).
-So the example above may also be written as
-
-   &%%(org-diary :deadline :timestamp :sexp :scheduled)
-
-The function expects the lisp variables `entry' and `date' to be provided
-by the caller, because this is how the calendar works.  Don't use this
-function from a program - use `org-agenda-get-day-entries' instead.
-
-(fn &rest ARGS)" nil nil) (autoload (quote org-agenda-check-for-timestamp-as-reason-to-ignore-todo-item) "org-agenda" "Do we have a reason to ignore this TODO entry because it has a time stamp?
-
-(fn &optional END)" nil nil) (autoload (quote org-agenda-set-restriction-lock) "org-agenda" "Set restriction lock for agenda to current subtree or file.
-When in a restricted subtree, remove it.
-
-The restriction will span over the entire file if TYPE is `file',
-or if type is '(4), or if the cursor is before the first headline
-in the file. Otherwise, only apply the restriction to the current
-subtree.
-
-(fn &optional TYPE)" t nil) (autoload (quote org-calendar-goto-agenda) "org-agenda" "Compute the Org agenda for the calendar date displayed at the cursor.
-This is a command that has to be installed in `calendar-mode-map'.
-
-(fn)" t nil) (autoload (quote org-agenda-to-appt) "org-agenda" "Activate appointments found in `org-agenda-files'.
-
-With a `\\[universal-argument]' prefix, refresh the list of appointments.
-
-If FILTER is t, interactively prompt the user for a regular
-expression, and filter out entries that don't match it.
-
-If FILTER is a string, use this string as a regular expression
-for filtering entries out.
-
-If FILTER is a function, filter out entries against which
-calling the function returns nil.  This function takes one
-argument: an entry from `org-agenda-get-day-entries'.
-
-FILTER can also be an alist with the car of each cell being
-either `headline' or `category'.  For example:
-
-  \\='((headline \"IMPORTANT\")
-    (category \"Work\"))
-
-will only add headlines containing IMPORTANT or headlines
-belonging to the \"Work\" category.
-
-ARGS are symbols indicating what kind of entries to consider.
-By default `org-agenda-to-appt' will use :deadline*, :scheduled*
-(i.e., deadlines and scheduled items with a hh:mm specification)
-and :timestamp entries.  See the docstring of `org-diary' for
-details and examples.
-
-If an entry has a APPT_WARNTIME property, its value will be used
-to override `appt-message-warning-time'.
-
-(fn &optional REFRESH FILTER &rest ARGS)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-agenda" (quote ("org-")))) (autoload (quote org-annotate-file) "org-annotate-file" "Visit `org-annotate-file-storage-file` and add a new annotation section.
+(fn BODY PARAMS)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-spice" (quote ("ob-spice-concat" "org-babel-expand-body:spice")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sql" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sqlite" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-stan" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-stata" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-table" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-tangle" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-tcl" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-vala" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-vbnet" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bbdb" (quote ("org-bbdb-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bibtex" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bookmark" (quote ("org-bookmark-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-docview" (quote ("org-docview-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-elisp-symbol" (quote ("org-elisp-symbol-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eshell" (quote ("org-eshell-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eww" (quote ("org-eww-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-git-link" (quote ("org-git")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-gnus" (quote ("org-gnus-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-info" (quote ("org-info-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-irc" (quote ("org-irc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-man" (quote ("org-man-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-mew" (quote ("org-mew-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-mhe" (quote ("org-mhe-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-notmuch" (quote ("org-notmuch-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-rmail" (quote ("org-rmail-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-vm" (quote ("org-vm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-w3m" (quote ("org-w3m-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-wl" (quote ("org-wl-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org" (quote ("org-" "turn-on-org-cdlatex")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-agenda" (quote ("org-")))) (autoload (quote org-annotate-file) "org-annotate-file" "Visit `org-annotate-file-storage-file` and add a new annotation section.
 The annotation is opened at the new section which will be referencing
 the point in the current file.
 
@@ -1658,176 +1214,11 @@ The annotation will link to ANNOTATED-BUFFER if specified,
 
 (fn STORAGE-FILE &optional ANNOTATED-BUFFER)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-annotate-file" (quote ("org-annotate-file-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-archive" (quote ("org-a")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach" (quote ("org-attach-")))) (autoload (quote org-attach-embedded-images-in-subtree) "org-attach-embedded-images" "Save the displayed images as attachments and insert links to them.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach-embedded-images" (quote ("org-attach-embedded-images--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach-git" (quote ("org-attach-git-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-bibtex-extras" (quote ("obe-")))) (autoload (quote org-capture-string) "org-capture" "Capture STRING with the template selected by KEYS.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach-embedded-images" (quote ("org-attach-embedded-images--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach-git" (quote ("org-attach-git-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-bibtex-extras" (quote ("obe-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-capture" (quote ("org-capture-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-checklist" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-choose" (quote ("org-choose-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-clock" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-collector" (quote ("org-" "and-rest")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-colview" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-compat" (quote ("org-")))) (autoload (quote org-contacts) "org-contacts" "Create agenda view for contacts matching NAME.
 
-(fn STRING &optional KEYS)" t nil) (autoload (quote org-capture) "org-capture" "Capture something.
-\\<org-capture-mode-map>
-This will let you select a template from `org-capture-templates', and
-then file the newly captured information.  The text is immediately
-inserted at the target location, and an indirect buffer is shown where
-you can edit it.  Pressing `\\[org-capture-finalize]' brings you back to the previous
-state of Emacs, so that you can continue your work.
+(fn NAME)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-contacts" (quote ("org-co" "erc-nicknames-list")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-crypt" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-ctags" (quote ("org-ctags-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-datetree" (quote ("org-datetree-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-depend" (quote ("org-depend-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-duration" (quote ("org-duration-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-effectiveness" (quote ("org-effectiveness-")))) (autoload (quote org-eldoc-load) "org-eldoc" "Set up org-eldoc documentation function.
 
-When called interactively with a `\\[universal-argument]' prefix argument GOTO, don't
-capture anything, just go to the file/headline where the selected
-template stores its notes.
-
-With a `\\[universal-argument] \\[universal-argument]' prefix argument, go to the last note stored.
-
-When called with a `C-0' (zero) prefix, insert a template at point.
-
-When called with a `C-1' (one) prefix, force prompting for a date when
-a datetree entry is made.
-
-ELisp programs can set KEYS to a string associated with a template
-in `org-capture-templates'.  In this case, interactive selection
-will be bypassed.
-
-If `org-capture-use-agenda-date' is non-nil, capturing from the
-agenda will use the date at point as the default date.  Then, a
-`C-1' prefix will tell the capture process to use the HH:MM time
-of the day at point (if any) or the current HH:MM time.
-
-(fn &optional GOTO KEYS)" t nil) (autoload (quote org-capture-import-remember-templates) "org-capture" "Set `org-capture-templates' to be similar to `org-remember-templates'.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-capture" (quote ("org-capture-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-checklist" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-choose" (quote ("org-choose-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-clock" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-collector" (quote ("org-" "and-rest")))) (autoload (quote org-columns-remove-overlays) "org-colview" "Remove all currently active column overlays.
-
-(fn)" t nil) (autoload (quote org-columns-get-format-and-top-level) "org-colview" "
-
-(fn)" nil nil) (autoload (quote org-columns) "org-colview" "Turn on column view on an Org mode file.
-
-Column view applies to the whole buffer if point is before the
-first headline.  Otherwise, it applies to the first ancestor
-setting \"COLUMNS\" property.  If there is none, it defaults to
-the current headline.  With a `\\[universal-argument]' prefix argument, turn on column
-view for the whole buffer unconditionally.
-
-When COLUMNS-FMT-STRING is non-nil, use it as the column format.
-
-(fn &optional GLOBAL COLUMNS-FMT-STRING)" t nil) (autoload (quote org-columns-compute) "org-colview" "Summarize the values of PROPERTY hierarchically.
-Also update existing values for PROPERTY according to the first
-column specification.
-
-(fn PROPERTY)" t nil) (autoload (quote org-dblock-write:columnview) "org-colview" "Write the column view table.
-
-PARAMS is a property list of parameters:
-
-`:id' (mandatory)
-
-    The ID property of the entry where the columns view should be
-    built.  When the symbol `local', call locally.  When `global'
-    call column view with the cursor at the beginning of the
-    buffer (usually this means that the whole buffer switches to
-    column view).  When \"file:path/to/file.org\", invoke column
-    view at the start of that file.  Otherwise, the ID is located
-    using `org-id-find'.
-
-`:exclude-tags'
-
-    List of tags to exclude from column view table.
-
-`:format'
-
-    When non-nil, specify the column view format to use.
-
-`:hlines'
-
-    When non-nil, insert a hline before each item.  When
-    a number, insert a hline before each level inferior or equal
-    to that number.
-
-`:indent'
-
-    When non-nil, indent each ITEM field according to its level.
-
-`:match'
-
-    When set to a string, use this as a tags/property match filter.
-
-`:maxlevel'
-
-    When set to a number, don't capture headlines below this level.
-
-`:skip-empty-rows'
-
-    When non-nil, skip rows where all specifiers other than ITEM
-    are empty.
-
-`:vlines'
-
-    When non-nil, make each column a column group to enforce
-    vertical lines.
-
-(fn PARAMS)" nil nil) (autoload (quote org-columns-insert-dblock) "org-colview" "Create a dynamic block capturing a column view table.
-
-(fn)" t nil) (autoload (quote org-agenda-columns) "org-colview" "Turn on or update column view in the agenda.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-colview" (quote ("org-")))) (autoload (quote org-check-version) "org-compat" "Try very hard to provide sensible version strings.
-
-(fn)" nil t) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-compat" (quote ("org-")))) (autoload (quote org-contacts) "org-contacts" "Create agenda view for contacts matching NAME.
-
-(fn NAME)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-contacts" (quote ("org-co" "erc-nicknames-list")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-crypt" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-ctags" (quote ("org-ctags-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-datetree" (quote ("org-datetree-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-depend" (quote ("org-depend-")))) (autoload (quote org-duration-set-regexps) "org-duration" "Set duration related regexps.
-
-(fn)" t nil) (autoload (quote org-duration-p) "org-duration" "Non-nil when string S is a time duration.
-
-(fn S)" nil nil) (autoload (quote org-duration-to-minutes) "org-duration" "Return number of minutes of DURATION string.
-
-When optional argument CANONICAL is non-nil, ignore
-`org-duration-units' and use standard time units value.
-
-A bare number is translated into minutes.  The empty string is
-translated into 0.0.
-
-Return value as a float.  Raise an error if duration format is
-not recognized.
-
-(fn DURATION &optional CANONICAL)" nil nil) (autoload (quote org-duration-from-minutes) "org-duration" "Return duration string for a given number of MINUTES.
-
-Format duration according to `org-duration-format' or FMT, when
-non-nil.
-
-When optional argument CANONICAL is non-nil, ignore
-`org-duration-units' and use standard time units value.
-
-Raise an error if expected format is unknown.
-
-(fn MINUTES &optional FMT CANONICAL)" nil nil) (autoload (quote org-duration-h:mm-only-p) "org-duration" "Non-nil when every duration in TIMES has \"H:MM\" or \"H:MM:SS\" format.
-
-TIMES is a list of duration strings.
-
-Return nil if any duration is expressed with units, as defined in
-`org-duration-units'.  Otherwise, if any duration is expressed
-with \"H:MM:SS\" format, return `h:mm:ss'.  Otherwise, return
-`h:mm'.
-
-(fn TIMES)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-duration" (quote ("org-duration-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-effectiveness" (quote ("org-effectiveness-")))) (autoload (quote org-eldoc-load) "org-eldoc" "Set up org-eldoc documentation function.
-
-(fn)" t nil) (add-hook (quote org-mode-hook) (function org-eldoc-load)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-eldoc" (quote ("org-eldoc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-element" (quote ("org-element-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-entities" (quote ("org-entit")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-eval" (quote ("org-eval-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-eval-light" (quote ("org-eval-light-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-expiry" (quote ("org-expiry-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-faces" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-feed" (quote ("org-feed-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-footnote" (quote ("org-footnote-")))) (autoload (quote org-goto-location) "org-goto" "Let the user select a location in current buffer.
-This function uses a recursive edit.  It returns the selected
-position or nil.
-
-(fn &optional BUF HELP)" nil nil) (autoload (quote org-goto) "org-goto" "Look up a different location in the current file, keeping current visibility.
-
-When you want look-up or go to a different location in a
-document, the fastest way is often to fold the entire buffer and
-then dive into the tree.  This method has the disadvantage, that
-the previous location will be folded, which may not be what you
-want.
-
-This command works around this by showing a copy of the current
-buffer in an indirect buffer, in overview mode.  You can dive
-into the tree in that copy, use org-occur and incremental search
-to find a location.  When pressing RET or `Q', the command
-returns to the original buffer in which the visibility is still
-unchanged.  After RET it will also jump to the location selected
-in the indirect buffer and expose the headline hierarchy above.
-
-With a prefix argument, use the alternative interface: e.g., if
-`org-goto-interface' is `outline' use `outline-path-completion'.
-
-(fn &optional ALTERNATIVE-INTERFACE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-goto" (quote ("org-goto-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-habit" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-id" (quote ("org-id-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-indent" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-inlinetask" (quote ("org-inlinetask-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-interactive-query" (quote ("org-agenda-query-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-invoice" (quote ("org-")))) (autoload (quote org-babel-describe-bindings) "org-keys" "Describe all keybindings behind `org-babel-key-prefix'.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-keys" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-learn" (quote ("org-" "determine-next-interval" "inter-repetition-interval" "initial-" "calculate-new-optimal-factor" "modify-" "set-optimal-factor" "get-optimal-factor")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-license" (quote ("org-license-")))) (autoload (quote org-link-edit-forward-slurp) "org-link-edit" "Slurp N trailing blobs into link's description.
+(fn)" t nil) (add-hook (quote org-mode-hook) (function org-eldoc-load)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-eldoc" (quote ("org-eldoc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-element" (quote ("org-element-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-entities" (quote ("org-entit")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-eval" (quote ("org-eval-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-eval-light" (quote ("org-eval-light-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-expiry" (quote ("org-expiry-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-faces" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-feed" (quote ("org-feed-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-footnote" (quote ("org-footnote-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-goto" (quote ("org-goto-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-habit" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-id" (quote ("org-id-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-indent" (quote ("org-indent-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-inlinetask" (quote ("org-inlinetask-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-interactive-query" (quote ("org-agenda-query-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-invoice" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-keys" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-learn" (quote ("org-" "determine-next-interval" "inter-repetition-interval" "initial-" "calculate-new-optimal-factor" "modify-" "set-optimal-factor" "get-optimal-factor")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-license" (quote ("org-license-")))) (autoload (quote org-link-edit-forward-slurp) "org-link-edit" "Slurp N trailing blobs into link's description.
 
   The [[https://orgmode.org/][Org mode]] site
 
@@ -1905,15 +1296,7 @@ Non-interactively, use the text between BEG and END as the
 description, moving the next (or previous) link relative BEG and
 END.
 
-(fn &optional PREVIOUS BEG END)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-link-edit" (quote ("org-link-edit--")))) (autoload (quote org-lint) "org-lint" "Check current Org buffer for syntax mistakes.
-
-By default, run all checkers.  With a `\\[universal-argument]' prefix ARG, select one
-category of checkers only.  With a `\\[universal-argument] \\[universal-argument]' prefix, run one precise
-checker by its name.
-
-ARG can also be a list of checker names, as symbols, to run.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-lint" (quote ("org-lint-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-list" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mac-iCal" (quote ("org-mac-iCal" "omi-")))) (autoload (quote org-mac-grab-link) "org-mac-link" "Prompt for an application to grab a link from.
+(fn &optional PREVIOUS BEG END)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-link-edit" (quote ("org-link-edit--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-lint" (quote ("org-lint-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-list" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mac-iCal" (quote ("org-mac-iCal" "omi-")))) (autoload (quote org-mac-grab-link) "org-mac-link" "Prompt for an application to grab a link from.
 When done, go grab the link, and insert it at point.
 
 (fn)" t nil) (autoload (quote org-mac-firefox-get-frontmost-url) "org-mac-link" "
@@ -1998,14 +1381,7 @@ If heading exists, delete all message:// links within heading's first
 level.  If heading doesn't exist, create it at point-max.  Insert
 list of message:// links to flagged mail after heading.
 
-(fn ORG-BUFFER ORG-HEADING)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mac-link" (quote ("org-" "as-get-s")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macro" (quote ("org-macro-")))) (autoload (quote org-load-noerror-mustsuffix) "org-macs" "Load FILE with optional arguments NOERROR and MUSTSUFFIX.
-
-(fn FILE)" nil t) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macs" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mairix" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mobile" (quote ("org-mobile-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mouse" (quote ("org-mouse-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-notify" (quote ("org-notify-")))) (autoload (quote org-num-default-format) "org-num" "Default numbering display function.
-NUMBERING is a list of numbers.
-
-(fn NUMBERING)" nil nil) (autoload (quote org-num-mode) "org-num" "Dynamic numbering of headlines in an Org buffer.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-num" (quote ("org-num-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-panel" (quote ("orgpan-")))) (autoload (quote org-passwords-mode) "org-passwords" "Mode for storing passwords
+(fn ORG-BUFFER ORG-HEADING)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mac-link" (quote ("org-" "as-get-s")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macro" (quote ("org-macro-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macs" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mairix" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mobile" (quote ("org-mobile-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mouse" (quote ("org-mouse-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-notify" (quote ("org-notify-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-num" (quote ("org-num-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-panel" (quote ("orgpan-")))) (autoload (quote org-passwords-mode) "org-passwords" "Mode for storing passwords
 
 (fn)" t nil) (autoload (quote org-passwords) "org-passwords" "Open the password file. Open the password file defined by the
 variable `org-password-file' in read-only mode and kill that
@@ -2018,7 +1394,7 @@ With prefix arg ARG, the command does not set up a timer to kill the buffer.
 
 With a double prefix arg \\[universal-argument] \\[universal-argument], open the file for editing.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-passwords" (quote ("org-passwords-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-pcomplete" (quote ("pcomplete/org-mode/" "org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-plot" (quote ("org-plot")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-protocol" (quote ("org-protocol-")))) (autoload (quote org-registry-show) "org-registry" "Show Org files where there are links pointing to the current
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-passwords" (quote ("org-passwords-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-pcomplete" (quote ("pcomplete/org-mode/" "org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-plot" (quote ("org-plot")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-protocol" (quote ("org-protocol-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-refile" (quote ("org-")))) (autoload (quote org-registry-show) "org-registry" "Show Org files where there are links pointing to the current
 buffer.
 
 (fn &optional VISIT)" t nil) (autoload (quote org-registry-visit) "org-registry" "If an Org file contains a link to the current location, visit
@@ -2121,7 +1497,7 @@ contents of hidden elements.
 When optional argument BODY-ONLY is non-nil, only write code
 between \"\\begin{letter}\" and \"\\end{letter}\".
 
-EXT-PLIST, when provided, is a proeprty list with external
+EXT-PLIST, when provided, is a property list with external
 parameters overriding Org default settings, but still inferior to
 file-local settings.
 
@@ -2308,7 +1684,7 @@ If you are targeting TaskJuggler 2.4 (see
 `org-taskjuggler-target-version') the processing and display of
 the reports is done using the TaskJuggler GUI.
 
-(fn &optional SUBTREEP VISIBLE-ONLY)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-taskjuggler" (quote ("org-taskjuggler-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-texinfo" (quote ("org-texinfo-")))) (provide (quote org-plus-contrib-autoloads))) "htmlize" ((htmlize htmlize-autoloads) (autoload (quote htmlize-buffer) "htmlize" "Convert BUFFER to HTML, preserving colors and decorations.
+(fn &optional SUBTREEP VISIBLE-ONLY)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-taskjuggler" (quote ("org-taskjuggler-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-texinfo" (quote ("org-texinfo-")))) (provide (quote org-plus-contrib-autoloads))) "htmlize" ((htmlize-autoloads htmlize) (autoload (quote htmlize-buffer) "htmlize" "Convert BUFFER to HTML, preserving colors and decorations.
 
 The generated HTML is available in a new buffer, which is returned.
 When invoked interactively, the new buffer is selected in the current
@@ -2353,7 +1729,7 @@ corresponding source file.
 
 (fn FILES &optional TARGET-DIRECTORY)" t nil) (autoload (quote htmlize-many-files-dired) "htmlize" "HTMLize dired-marked files.
 
-(fn ARG &optional TARGET-DIRECTORY)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "htmlize" (quote ("htmlize-")))) (provide (quote htmlize-autoloads))) "dash" ((dash dash-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "dash" (quote ("dash-" "-keep" "-butlast" "-non" "-only-some" "-zip" "-e" "->" "-a" "-gr" "-when-let" "-d" "-l" "-s" "-p" "-r" "-m" "-i" "-f" "-u" "-value-to-list" "-t" "--" "-c" "!cons" "!cdr")))) (provide (quote dash-autoloads))) "dash-functional" ((dash-functional dash-functional-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "dash-functional" (quote ("-rpartial" "-juxt" "-not" "-o" "-a" "-iteratefn" "-c" "-f" "-p")))) (provide (quote dash-functional-autoloads))) "s" ((s s-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "s" (quote ("s-")))) (provide (quote s-autoloads))) "deferred" ((deferred-autoloads deferred) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "deferred" (quote ("deferred:")))) (provide (quote deferred-autoloads))) "kv" ((kv kv-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "kv" (quote ("keyword->symbol" "map-bind" "dotass")))) (provide (quote kv-autoloads))) "org2jekyll" ((org2jekyll org2jekyll-utilities org2jekyll-autoloads) (autoload (quote org2jekyll-init-current-buffer) "org2jekyll" "Given an existing buffer, add the needed metadata to make it a post or page.
+(fn ARG &optional TARGET-DIRECTORY)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "htmlize" (quote ("htmlize-")))) (provide (quote htmlize-autoloads))) "dash" ((dash-autoloads dash) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "dash" (quote ("dash-" "-keep" "-butlast" "-non" "-only-some" "-zip" "-e" "->" "-a" "-gr" "-when-let" "-d" "-l" "-s" "-p" "-r" "-m" "-i" "-f" "-u" "-value-to-list" "-t" "--" "-c" "!cons" "!cdr")))) (provide (quote dash-autoloads))) "dash-functional" ((dash-functional-autoloads dash-functional) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "dash-functional" (quote ("-rpartial" "-juxt" "-not" "-o" "-a" "-iteratefn" "-c" "-f" "-p")))) (provide (quote dash-functional-autoloads))) "s" ((s-autoloads s) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "s" (quote ("s-")))) (provide (quote s-autoloads))) "deferred" ((deferred-autoloads deferred) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "deferred" (quote ("deferred:")))) (provide (quote deferred-autoloads))) "kv" ((kv kv-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "kv" (quote ("keyword->symbol" "map-bind" "dotass")))) (provide (quote kv-autoloads))) "org2jekyll" ((org2jekyll org2jekyll-autoloads org2jekyll-utilities) (autoload (quote org2jekyll-init-current-buffer) "org2jekyll" "Given an existing buffer, add the needed metadata to make it a post or page.
 
 (fn)" t nil) (autoload (quote org2jekyll-create-draft) "org2jekyll" "Create a new Jekyll blog post with TITLE.
 The `'%s`' will be replaced respectively by the blog entry name, the author, the
@@ -2379,637 +1755,7 @@ Nil argument turns mode off.
 Commands:
 \\{org2jekyll-mode-map}
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org2jekyll" (quote ("org2jekyll-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org2jekyll-utilities" (quote ("org2jekyll-tests-with-temp-buffer")))) (provide (quote org2jekyll-autoloads))) "org" ((ob-perl ob-makefile ob-octave org-autoloads ol-mhe ob-coq org-mobile org-src ob-lilypond ol-w3m ox-html ob-calc ob-groovy org-footnote ob-matlab org-table org-agenda ob-maxima ob-C org-macs ob-eshell ob-abc ob-lob ob-sed ox-texinfo org-archive ob-plantuml ob-forth ob-lua ob-exp ob-clojure ob-tangle ob-asymptote ox-beamer ob-gnuplot ob-org org-indent ob-java org-element org-feed ob-vala org-lint org-tempo ob-core org-keys ob-shen org-timer ob-ocaml ob-emacs-lisp org-datetree org-ctags org-clock org-faces ob-table ob-stan org-num org ol-bbdb ob-comint org-mouse ol-rmail org-loaddefs ob-css ox-ascii org-id ob-processing ob-awk ob-hledger ob-ebnf ob-fortran ob-sqlite ox-icalendar org-colview org-crypt org-duration ob-sql ob-mscgen ob-haskell ol-gnus ox-publish org-pcomplete ol-bibtex ol-irc org-macro ob-dot ol-eww org-attach-git ox-md org-inlinetask ob-ditaa ox-latex org-capture ob-J ox-org ob-sass ol-docview ob-ledger ob-latex ob-js ob-io ob-python ox ob-R org-goto ob ob-shell ob-eval org-list org-protocol ol-info ob-screen ox-man org-compat org-attach org-install ob-lisp org-plot ob-ref ox-odt ob-picolisp org-habit ol-eshell ob-scheme ob-ruby ol org-entities) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-C" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-J" (quote ("obj-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-R" (quote ("ob-R-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-abc" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-asymptote" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-awk" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-calc" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-clojure" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-comint" (quote ("org-babel-comint-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-coq" (quote ("org-babel-" "coq-program-name")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-core" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-css" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ditaa" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-dot" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ebnf" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-emacs-lisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-eshell" (quote ("ob-eshell-session-live-p" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-eval" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-exp" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-forth" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-fortran" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-gnuplot" (quote ("org-babel-" "*org-babel-gnuplot-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-groovy" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-haskell" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-hledger" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-io" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-java" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-js" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-latex" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ledger" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lilypond" (quote ("org-babel-" "lilypond-mode")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lob" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lua" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-makefile" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-maxima" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-mscgen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ocaml" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-octave" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-org" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-perl" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-picolisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-plantuml" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-processing" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-python" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ref" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ruby" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sass" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-scheme" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-screen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sed" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-shell" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-shen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sql" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sqlite" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-stan" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-table" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-tangle" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-vala" (quote ("org-babel-")))) (autoload (quote org-next-link) "ol" "Move forward to the next link.
-If the link is in hidden text, expose it.  When SEARCH-BACKWARD
-is non-nil, move backward.
-
-(fn &optional SEARCH-BACKWARD)" t nil) (autoload (quote org-previous-link) "ol" "Move backward to the previous link.
-If the link is in hidden text, expose it.
-
-(fn)" t nil) (autoload (quote org-toggle-link-display) "ol" "Toggle the literal or descriptive display of links.
-
-(fn)" t nil) (autoload (quote org-store-link) "ol" "Store a link to the current location.
-\\<org-mode-map>
-This link is added to `org-stored-links' and can later be inserted
-into an Org buffer with `org-insert-link' (`\\[org-insert-link]').
-
-For some link types, a `\\[universal-argument]' prefix ARG is interpreted.  A single
-`\\[universal-argument]' negates `org-context-in-file-links' for file links or
-`org-gnus-prefer-web-links' for links to Usenet articles.
-
-A `\\[universal-argument] \\[universal-argument]' prefix ARG forces skipping storing functions that are not
-part of Org core.
-
-A `\\[universal-argument] \\[universal-argument] \\[universal-argument]' prefix ARG forces storing a link for each line in the
-active region.
-
-Assume the function is called interactively if INTERACTIVE? is
-non-nil.
-
-(fn ARG &optional INTERACTIVE\\=\\?)" t nil) (autoload (quote org-insert-link) "ol" "Insert a link.  At the prompt, enter the link.
-
-Completion can be used to insert any of the link protocol prefixes in use.
-
-The history can be used to select a link previously stored with
-`org-store-link'.  When the empty string is entered (i.e. if you just
-press `RET' at the prompt), the link defaults to the most recently
-stored link.  As `SPC' triggers completion in the minibuffer, you need to
-use `M-SPC' or `C-q SPC' to force the insertion of a space character.
-
-You will also be prompted for a description, and if one is given, it will
-be displayed in the buffer instead of the link.
-
-If there is already a link at point, this command will allow you to edit
-link and description parts.
-
-With a `\\[universal-argument]' prefix, prompts for a file to link to.  The file name can be
-selected using completion.  The path to the file will be relative to the
-current directory if the file is in the current directory or a subdirectory.
-Otherwise, the link will be the absolute path as completed in the minibuffer
-(i.e. normally ~/path/to/file).  You can configure this behavior using the
-option `org-link-file-path-type'.
-
-With a `\\[universal-argument] \\[universal-argument]' prefix, enforce an absolute path even if the file is in
-the current directory or below.
-
-A `\\[universal-argument] \\[universal-argument] \\[universal-argument]' prefix negates `org-link-keep-stored-after-insertion'.
-
-If the LINK-LOCATION parameter is non-nil, this value will be used as
-the link location instead of reading one interactively.
-
-If the DESCRIPTION parameter is non-nil, this value will be used as the
-default description.  Otherwise, if `org-link-make-description-function'
-is non-nil, this function will be called with the link target, and the
-result will be the default link description.  When called non-interactively,
-don't allow to edit the default description.
-
-(fn &optional COMPLETE-FILE LINK-LOCATION DESCRIPTION)" t nil) (autoload (quote org-insert-all-links) "ol" "Insert all links in `org-stored-links'.
-When a universal prefix, do not delete the links from `org-stored-links'.
-When `ARG' is a number, insert the last N link(s).
-`PRE' and `POST' are optional arguments to define a string to
-prepend or to append.
-
-(fn ARG &optional PRE POST)" t nil) (autoload (quote org-insert-last-stored-link) "ol" "Insert the last link stored in `org-stored-links'.
-
-(fn ARG)" t nil) (autoload (quote org-insert-link-global) "ol" "Insert a link like Org mode does.
-This command can be called in any mode to insert a link in Org syntax.
-
-(fn)" t nil) (autoload (quote org-update-radio-target-regexp) "ol" "Find all radio targets in this file and update the regular expression.
-Also refresh fontification if needed.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bbdb" (quote ("org-bbdb-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bibtex" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-docview" (quote ("org-docview-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eshell" (quote ("org-eshell-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eww" (quote ("org-eww-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-gnus" (quote ("org-gnus-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-info" (quote ("org-info-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-irc" (quote ("org-irc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-mhe" (quote ("org-mhe-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-rmail" (quote ("org-rmail-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-w3m" (quote ("org-w3m-")))) (autoload (quote org-babel-do-load-languages) "org" "Load the languages defined in `org-babel-load-languages'.
-
-(fn SYM VALUE)" nil nil) (autoload (quote org-babel-load-file) "org" "Load Emacs Lisp source code blocks in the Org FILE.
-This function exports the source code using `org-babel-tangle'
-and then loads the resulting file using `load-file'.  With
-optional prefix argument COMPILE, the tangled Emacs Lisp file is
-byte-compiled before it is loaded.
-
-(fn FILE &optional COMPILE)" t nil) (autoload (quote org-version) "org" "Show the Org version.
-Interactively, or when MESSAGE is non-nil, show it in echo area.
-With prefix argument, or when HERE is non-nil, insert it at point.
-In non-interactive uses, a reduced version string is output unless
-FULL is given.
-
-(fn &optional HERE FULL MESSAGE)" t nil) (autoload (quote org-clock-persistence-insinuate) "org" "Set up hooks for clock persistence.
-
-(fn)" nil nil) (autoload (quote org-mode) "org" "Outline-based notes management and organizer, alias
-\"Carsten's outline-mode for keeping track of everything.\"
-
-Org mode develops organizational tasks around a NOTES file which
-contains information about projects as plain text.  Org mode is
-implemented on top of Outline mode, which is ideal to keep the content
-of large files well structured.  It supports ToDo items, deadlines and
-time stamps, which magically appear in the diary listing of the Emacs
-calendar.  Tables are easily created with a built-in table editor.
-Plain text URL-like links connect to websites, emails (VM), Usenet
-messages (Gnus), BBDB entries, and any files related to the project.
-For printing and sharing of notes, an Org file (or a part of it)
-can be exported as a structured ASCII or HTML file.
-
-The following commands are available:
-
-\\{org-mode-map}
-
-(fn)" t nil) (autoload (quote org-cycle) "org" "TAB-action and visibility cycling for Org mode.
-
-This is the command invoked in Org mode by the `TAB' key.  Its main
-purpose is outline visibility cycling, but it also invokes other actions
-in special contexts.
-
-When this function is called with a `\\[universal-argument]' prefix, rotate the entire
-buffer through 3 states (global cycling)
-  1. OVERVIEW: Show only top-level headlines.
-  2. CONTENTS: Show all headlines of all levels, but no body text.
-  3. SHOW ALL: Show everything.
-
-With a `\\[universal-argument] \\[universal-argument]' prefix argument, switch to the startup visibility,
-determined by the variable `org-startup-folded', and by any VISIBILITY
-properties in the buffer.
-
-With a `\\[universal-argument] \\[universal-argument] \\[universal-argument]' prefix argument, show the entire buffer, including
-any drawers.
-
-When inside a table, re-align the table and move to the next field.
-
-When point is at the beginning of a headline, rotate the subtree started
-by this line through 3 different states (local cycling)
-  1. FOLDED:   Only the main headline is shown.
-  2. CHILDREN: The main headline and the direct children are shown.
-               From this state, you can move to one of the children
-               and zoom in further.
-  3. SUBTREE:  Show the entire subtree, including body text.
-If there is no subtree, switch directly from CHILDREN to FOLDED.
-
-When point is at the beginning of an empty headline and the variable
-`org-cycle-level-after-item/entry-creation' is set, cycle the level
-of the headline by demoting and promoting it to likely levels.  This
-speeds up creation document structure by pressing `TAB' once or several
-times right after creating a new headline.
-
-When there is a numeric prefix, go up to a heading with level ARG, do
-a `show-subtree' and return to the previous cursor position.  If ARG
-is negative, go up that many levels.
-
-When point is not at the beginning of a headline, execute the global
-binding for `TAB', which is re-indenting the line.  See the option
-`org-cycle-emulate-tab' for details.
-
-As a special case, if point is at the beginning of the buffer and there is
-no headline in line 1, this function will act as if called with prefix arg
-(`\\[universal-argument] TAB', same as `S-TAB') also when called without prefix arg, but only
-if the variable `org-cycle-global-at-bob' is t.
-
-(fn &optional ARG)" t nil) (autoload (quote org-global-cycle) "org" "Cycle the global visibility.  For details see `org-cycle'.
-With `\\[universal-argument]' prefix ARG, switch to startup visibility.
-With a numeric prefix, show all headlines up to that level.
-
-(fn &optional ARG)" t nil) (autoload (quote org-run-like-in-org-mode) "org" "Run a command, pretending that the current buffer is in Org mode.
-This will temporarily bind local variables that are typically bound in
-Org mode to the values they have in Org mode, and then interactively
-call CMD.
-
-(fn CMD)" nil nil) (autoload (quote org-open-file) "org" "Open the file at PATH.
-First, this expands any special file name abbreviations.  Then the
-configuration variable `org-file-apps' is checked if it contains an
-entry for this file type, and if yes, the corresponding command is launched.
-
-If no application is found, Emacs simply visits the file.
-
-With optional prefix argument IN-EMACS, Emacs will visit the file.
-With a double \\[universal-argument] \\[universal-argument] prefix arg, Org tries to avoid opening in Emacs
-and to use an external application to visit the file.
-
-Optional LINE specifies a line to go to, optional SEARCH a string
-to search for.  If LINE or SEARCH is given, the file will be
-opened in Emacs, unless an entry from `org-file-apps' that makes
-use of groups in a regexp matches.
-
-If you want to change the way frames are used when following a
-link, please customize `org-link-frame-setup'.
-
-If the file does not exist, throw an error.
-
-(fn PATH &optional IN-EMACS LINE SEARCH)" nil nil) (autoload (quote org-open-at-point-global) "org" "Follow a link or a time-stamp like Org mode does.
-Also follow links and emails as seen by `thing-at-point'.
-This command can be called in any mode to follow an external
-link or a time-stamp that has Org mode syntax.  Its behavior
-is undefined when called on internal links like fuzzy links.
-Raise a user error when there is nothing to follow.
-
-(fn)" t nil) (autoload (quote org-offer-links-in-entry) "org" "Offer links in the current entry and return the selected link.
-If there is only one link, return it.
-If NTH is an integer, return the NTH link found.
-If ZERO is a string, check also this string for a link, and if
-there is one, return it.
-
-(fn BUFFER MARKER &optional NTH ZERO)" nil nil) (autoload (quote org-switchb) "org" "Switch between Org buffers.
-
-With `\\[universal-argument]' prefix, restrict available buffers to files.
-
-With `\\[universal-argument] \\[universal-argument]' prefix, restrict available buffers to agenda files.
-
-(fn &optional ARG)" t nil) (autoload (quote org-cycle-agenda-files) "org" "Cycle through the files in `org-agenda-files'.
-If the current buffer visits an agenda file, find the next one in the list.
-If the current buffer does not, find the first agenda file.
-
-(fn)" t nil) (autoload (quote org-submit-bug-report) "org" "Submit a bug report on Org via mail.
-
-Don't hesitate to report any problems or inaccurate documentation.
-
-If you don't have setup sending mail from (X)Emacs, please copy the
-output buffer into your mail program, as it gives us important
-information about your Org version and configuration.
-
-(fn)" t nil) (autoload (quote org-reload) "org" "Reload all Org Lisp files.
-With prefix arg UNCOMPILED, load the uncompiled versions.
-
-(fn &optional UNCOMPILED)" t nil) (autoload (quote org-customize) "org" "Call the customize function with org as argument.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org" (quote ("org-" "turn-on-org-cdlatex")))) (autoload (quote org-toggle-sticky-agenda) "org-agenda" "Toggle `org-agenda-sticky'.
-
-(fn &optional ARG)" t nil) (autoload (quote org-agenda) "org-agenda" "Dispatch agenda commands to collect entries to the agenda buffer.
-Prompts for a command to execute.  Any prefix arg will be passed
-on to the selected command.  The default selections are:
-
-a     Call `org-agenda-list' to display the agenda for current day or week.
-t     Call `org-todo-list' to display the global todo list.
-T     Call `org-todo-list' to display the global todo list, select only
-      entries with a specific TODO keyword (the user gets a prompt).
-m     Call `org-tags-view' to display headlines with tags matching
-      a condition  (the user is prompted for the condition).
-M     Like `m', but select only TODO entries, no ordinary headlines.
-e     Export views to associated files.
-s     Search entries for keywords.
-S     Search entries for keywords, only with TODO keywords.
-/     Multi occur across all agenda files and also files listed
-      in `org-agenda-text-search-extra-files'.
-<     Restrict agenda commands to buffer, subtree, or region.
-      Press several times to get the desired effect.
->     Remove a previous restriction.
-#     List \"stuck\" projects.
-!     Configure what \"stuck\" means.
-C     Configure custom agenda commands.
-
-More commands can be added by configuring the variable
-`org-agenda-custom-commands'.  In particular, specific tags and TODO keyword
-searches can be pre-defined in this way.
-
-If the current buffer is in Org mode and visiting a file, you can also
-first press `<' once to indicate that the agenda should be temporarily
-(until the next use of `\\[org-agenda]') restricted to the current file.
-Pressing `<' twice means to restrict to the current subtree or region
-(if active).
-
-(fn &optional ARG ORG-KEYS RESTRICTION)" t nil) (autoload (quote org-batch-agenda) "org-agenda" "Run an agenda command in batch mode and send the result to STDOUT.
-If CMD-KEY is a string of length 1, it is used as a key in
-`org-agenda-custom-commands' and triggers this command.  If it is a
-longer string it is used as a tags/todo match string.
-Parameters are alternating variable names and values that will be bound
-before running the agenda command.
-
-(fn CMD-KEY &rest PARAMETERS)" nil t) (autoload (quote org-batch-agenda-csv) "org-agenda" "Run an agenda command in batch mode and send the result to STDOUT.
-If CMD-KEY is a string of length 1, it is used as a key in
-`org-agenda-custom-commands' and triggers this command.  If it is a
-longer string it is used as a tags/todo match string.
-Parameters are alternating variable names and values that will be bound
-before running the agenda command.
-
-The output gives a line for each selected agenda item.  Each
-item is a list of comma-separated values, like this:
-
-category,head,type,todo,tags,date,time,extra,priority-l,priority-n
-
-category     The category of the item
-head         The headline, without TODO kwd, TAGS and PRIORITY
-type         The type of the agenda entry, can be
-                todo               selected in TODO match
-                tagsmatch          selected in tags match
-                diary              imported from diary
-                deadline           a deadline on given date
-                scheduled          scheduled on given date
-                timestamp          entry has timestamp on given date
-                closed             entry was closed on given date
-                upcoming-deadline  warning about deadline
-                past-scheduled     forwarded scheduled item
-                block              entry has date block including g. date
-todo         The todo keyword, if any
-tags         All tags including inherited ones, separated by colons
-date         The relevant date, like 2007-2-14
-time         The time, like 15:00-16:50
-extra        Sting with extra planning info
-priority-l   The priority letter if any was given
-priority-n   The computed numerical priority
-agenda-day   The day in the agenda where this is listed
-
-(fn CMD-KEY &rest PARAMETERS)" nil t) (autoload (quote org-store-agenda-views) "org-agenda" "Store agenda views.
-
-(fn &rest PARAMETERS)" t nil) (autoload (quote org-batch-store-agenda-views) "org-agenda" "Run all custom agenda commands that have a file argument.
-
-(fn &rest PARAMETERS)" nil t) (autoload (quote org-agenda-list) "org-agenda" "Produce a daily/weekly view from all files in variable `org-agenda-files'.
-The view will be for the current day or week, but from the overview buffer
-you will be able to go to other days/weeks.
-
-With a numeric prefix argument in an interactive call, the agenda will
-span ARG days.  Lisp programs should instead specify SPAN to change
-the number of days.  SPAN defaults to `org-agenda-span'.
-
-START-DAY defaults to TODAY, or to the most recent match for the weekday
-given in `org-agenda-start-on-weekday'.
-
-When WITH-HOUR is non-nil, only include scheduled and deadline
-items if they have an hour specification like [h]h:mm.
-
-(fn &optional ARG START-DAY SPAN WITH-HOUR)" t nil) (autoload (quote org-search-view) "org-agenda" "Show all entries that contain a phrase or words or regular expressions.
-
-With optional prefix argument TODO-ONLY, only consider entries that are
-TODO entries.  The argument STRING can be used to pass a default search
-string into this function.  If EDIT-AT is non-nil, it means that the
-user should get a chance to edit this string, with cursor at position
-EDIT-AT.
-
-The search string can be viewed either as a phrase that should be found as
-is, or it can be broken into a number of snippets, each of which must match
-in a Boolean way to select an entry.  The default depends on the variable
-`org-agenda-search-view-always-boolean'.
-Even if this is turned off (the default) you can always switch to
-Boolean search dynamically by preceding the first word with  \"+\" or \"-\".
-
-The default is a direct search of the whole phrase, where each space in
-the search string can expand to an arbitrary amount of whitespace,
-including newlines.
-
-If using a Boolean search, the search string is split on whitespace and
-each snippet is searched separately, with logical AND to select an entry.
-Words prefixed with a minus must *not* occur in the entry.  Words without
-a prefix or prefixed with a plus must occur in the entry.  Matching is
-case-insensitive.  Words are enclosed by word delimiters (i.e. they must
-match whole words, not parts of a word) if
-`org-agenda-search-view-force-full-words' is set (default is nil).
-
-Boolean search snippets enclosed by curly braces are interpreted as
-regular expressions that must or (when preceded with \"-\") must not
-match in the entry.  Snippets enclosed into double quotes will be taken
-as a whole, to include whitespace.
-
-- If the search string starts with an asterisk, search only in headlines.
-- If (possibly after the leading star) the search string starts with an
-  exclamation mark, this also means to look at TODO entries only, an effect
-  that can also be achieved with a prefix argument.
-- If (possibly after star and exclamation mark) the search string starts
-  with a colon, this will mean that the (non-regexp) snippets of the
-  Boolean search must match as full words.
-
-This command searches the agenda files, and in addition the files
-listed in `org-agenda-text-search-extra-files' unless a restriction lock
-is active.
-
-(fn &optional TODO-ONLY STRING EDIT-AT)" t nil) (autoload (quote org-todo-list) "org-agenda" "Show all (not done) TODO entries from all agenda file in a single list.
-The prefix arg can be used to select a specific TODO keyword and limit
-the list to these.  When using `\\[universal-argument]', you will be prompted
-for a keyword.  A numeric prefix directly selects the Nth keyword in
-`org-todo-keywords-1'.
-
-(fn &optional ARG)" t nil) (autoload (quote org-tags-view) "org-agenda" "Show all headlines for all `org-agenda-files' matching a TAGS criterion.
-The prefix arg TODO-ONLY limits the search to TODO entries.
-
-(fn &optional TODO-ONLY MATCH)" t nil) (autoload (quote org-agenda-list-stuck-projects) "org-agenda" "Create agenda view for projects that are stuck.
-Stuck projects are project that have no next actions.  For the definitions
-of what a project is and how to check if it stuck, customize the variable
-`org-stuck-projects'.
-
-(fn &rest IGNORE)" t nil) (autoload (quote org-diary) "org-agenda" "Return diary information from org files.
-This function can be used in a \"sexp\" diary entry in the Emacs calendar.
-It accesses org files and extracts information from those files to be
-listed in the diary.  The function accepts arguments specifying what
-items should be listed.  For a list of arguments allowed here, see the
-variable `org-agenda-entry-types'.
-
-The call in the diary file should look like this:
-
-   &%%(org-diary) ~/path/to/some/orgfile.org
-
-Use a separate line for each org file to check.  Or, if you omit the file name,
-all files listed in `org-agenda-files' will be checked automatically:
-
-   &%%(org-diary)
-
-If you don't give any arguments (as in the example above), the default value
-of `org-agenda-entry-types' is used: (:deadline :scheduled :timestamp :sexp).
-So the example above may also be written as
-
-   &%%(org-diary :deadline :timestamp :sexp :scheduled)
-
-The function expects the lisp variables `entry' and `date' to be provided
-by the caller, because this is how the calendar works.  Don't use this
-function from a program - use `org-agenda-get-day-entries' instead.
-
-(fn &rest ARGS)" nil nil) (autoload (quote org-agenda-check-for-timestamp-as-reason-to-ignore-todo-item) "org-agenda" "Do we have a reason to ignore this TODO entry because it has a time stamp?
-
-(fn &optional END)" nil nil) (autoload (quote org-agenda-set-restriction-lock) "org-agenda" "Set restriction lock for agenda to current subtree or file.
-When in a restricted subtree, remove it.
-
-The restriction will span over the entire file if TYPE is `file',
-or if type is '(4), or if the cursor is before the first headline
-in the file. Otherwise, only apply the restriction to the current
-subtree.
-
-(fn &optional TYPE)" t nil) (autoload (quote org-calendar-goto-agenda) "org-agenda" "Compute the Org agenda for the calendar date displayed at the cursor.
-This is a command that has to be installed in `calendar-mode-map'.
-
-(fn)" t nil) (autoload (quote org-agenda-to-appt) "org-agenda" "Activate appointments found in `org-agenda-files'.
-
-With a `\\[universal-argument]' prefix, refresh the list of appointments.
-
-If FILTER is t, interactively prompt the user for a regular
-expression, and filter out entries that don't match it.
-
-If FILTER is a string, use this string as a regular expression
-for filtering entries out.
-
-If FILTER is a function, filter out entries against which
-calling the function returns nil.  This function takes one
-argument: an entry from `org-agenda-get-day-entries'.
-
-FILTER can also be an alist with the car of each cell being
-either `headline' or `category'.  For example:
-
-  \\='((headline \"IMPORTANT\")
-    (category \"Work\"))
-
-will only add headlines containing IMPORTANT or headlines
-belonging to the \"Work\" category.
-
-ARGS are symbols indicating what kind of entries to consider.
-By default `org-agenda-to-appt' will use :deadline*, :scheduled*
-(i.e., deadlines and scheduled items with a hh:mm specification)
-and :timestamp entries.  See the docstring of `org-diary' for
-details and examples.
-
-If an entry has a APPT_WARNTIME property, its value will be used
-to override `appt-message-warning-time'.
-
-(fn &optional REFRESH FILTER &rest ARGS)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-agenda" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-archive" (quote ("org-a")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach" (quote ("org-attach-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach-git" (quote ("org-attach-git-")))) (autoload (quote org-capture-string) "org-capture" "Capture STRING with the template selected by KEYS.
-
-(fn STRING &optional KEYS)" t nil) (autoload (quote org-capture) "org-capture" "Capture something.
-\\<org-capture-mode-map>
-This will let you select a template from `org-capture-templates', and
-then file the newly captured information.  The text is immediately
-inserted at the target location, and an indirect buffer is shown where
-you can edit it.  Pressing `\\[org-capture-finalize]' brings you back to the previous
-state of Emacs, so that you can continue your work.
-
-When called interactively with a `\\[universal-argument]' prefix argument GOTO, don't
-capture anything, just go to the file/headline where the selected
-template stores its notes.
-
-With a `\\[universal-argument] \\[universal-argument]' prefix argument, go to the last note stored.
-
-When called with a `C-0' (zero) prefix, insert a template at point.
-
-When called with a `C-1' (one) prefix, force prompting for a date when
-a datetree entry is made.
-
-ELisp programs can set KEYS to a string associated with a template
-in `org-capture-templates'.  In this case, interactive selection
-will be bypassed.
-
-If `org-capture-use-agenda-date' is non-nil, capturing from the
-agenda will use the date at point as the default date.  Then, a
-`C-1' prefix will tell the capture process to use the HH:MM time
-of the day at point (if any) or the current HH:MM time.
-
-(fn &optional GOTO KEYS)" t nil) (autoload (quote org-capture-import-remember-templates) "org-capture" "Set `org-capture-templates' to be similar to `org-remember-templates'.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-capture" (quote ("org-capture-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-clock" (quote ("org-")))) (autoload (quote org-columns-remove-overlays) "org-colview" "Remove all currently active column overlays.
-
-(fn)" t nil) (autoload (quote org-columns-get-format-and-top-level) "org-colview" "
-
-(fn)" nil nil) (autoload (quote org-columns) "org-colview" "Turn on column view on an Org mode file.
-
-Column view applies to the whole buffer if point is before the
-first headline.  Otherwise, it applies to the first ancestor
-setting \"COLUMNS\" property.  If there is none, it defaults to
-the current headline.  With a `\\[universal-argument]' prefix argument, turn on column
-view for the whole buffer unconditionally.
-
-When COLUMNS-FMT-STRING is non-nil, use it as the column format.
-
-(fn &optional GLOBAL COLUMNS-FMT-STRING)" t nil) (autoload (quote org-columns-compute) "org-colview" "Summarize the values of PROPERTY hierarchically.
-Also update existing values for PROPERTY according to the first
-column specification.
-
-(fn PROPERTY)" t nil) (autoload (quote org-dblock-write:columnview) "org-colview" "Write the column view table.
-
-PARAMS is a property list of parameters:
-
-`:id' (mandatory)
-
-    The ID property of the entry where the columns view should be
-    built.  When the symbol `local', call locally.  When `global'
-    call column view with the cursor at the beginning of the
-    buffer (usually this means that the whole buffer switches to
-    column view).  When \"file:path/to/file.org\", invoke column
-    view at the start of that file.  Otherwise, the ID is located
-    using `org-id-find'.
-
-`:exclude-tags'
-
-    List of tags to exclude from column view table.
-
-`:format'
-
-    When non-nil, specify the column view format to use.
-
-`:hlines'
-
-    When non-nil, insert a hline before each item.  When
-    a number, insert a hline before each level inferior or equal
-    to that number.
-
-`:indent'
-
-    When non-nil, indent each ITEM field according to its level.
-
-`:match'
-
-    When set to a string, use this as a tags/property match filter.
-
-`:maxlevel'
-
-    When set to a number, don't capture headlines below this level.
-
-`:skip-empty-rows'
-
-    When non-nil, skip rows where all specifiers other than ITEM
-    are empty.
-
-`:vlines'
-
-    When non-nil, make each column a column group to enforce
-    vertical lines.
-
-(fn PARAMS)" nil nil) (autoload (quote org-columns-insert-dblock) "org-colview" "Create a dynamic block capturing a column view table.
-
-(fn)" t nil) (autoload (quote org-agenda-columns) "org-colview" "Turn on or update column view in the agenda.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-colview" (quote ("org-")))) (autoload (quote org-check-version) "org-compat" "Try very hard to provide sensible version strings.
-
-(fn)" nil t) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-compat" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-crypt" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-ctags" (quote ("org-ctags-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-datetree" (quote ("org-datetree-")))) (autoload (quote org-duration-set-regexps) "org-duration" "Set duration related regexps.
-
-(fn)" t nil) (autoload (quote org-duration-p) "org-duration" "Non-nil when string S is a time duration.
-
-(fn S)" nil nil) (autoload (quote org-duration-to-minutes) "org-duration" "Return number of minutes of DURATION string.
-
-When optional argument CANONICAL is non-nil, ignore
-`org-duration-units' and use standard time units value.
-
-A bare number is translated into minutes.  The empty string is
-translated into 0.0.
-
-Return value as a float.  Raise an error if duration format is
-not recognized.
-
-(fn DURATION &optional CANONICAL)" nil nil) (autoload (quote org-duration-from-minutes) "org-duration" "Return duration string for a given number of MINUTES.
-
-Format duration according to `org-duration-format' or FMT, when
-non-nil.
-
-When optional argument CANONICAL is non-nil, ignore
-`org-duration-units' and use standard time units value.
-
-Raise an error if expected format is unknown.
-
-(fn MINUTES &optional FMT CANONICAL)" nil nil) (autoload (quote org-duration-h:mm-only-p) "org-duration" "Non-nil when every duration in TIMES has \"H:MM\" or \"H:MM:SS\" format.
-
-TIMES is a list of duration strings.
-
-Return nil if any duration is expressed with units, as defined in
-`org-duration-units'.  Otherwise, if any duration is expressed
-with \"H:MM:SS\" format, return `h:mm:ss'.  Otherwise, return
-`h:mm'.
-
-(fn TIMES)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-duration" (quote ("org-duration-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-element" (quote ("org-element-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-entities" (quote ("org-entit")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-faces" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-feed" (quote ("org-feed-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-footnote" (quote ("org-footnote-")))) (autoload (quote org-goto-location) "org-goto" "Let the user select a location in current buffer.
-This function uses a recursive edit.  It returns the selected
-position or nil.
-
-(fn &optional BUF HELP)" nil nil) (autoload (quote org-goto) "org-goto" "Look up a different location in the current file, keeping current visibility.
-
-When you want look-up or go to a different location in a
-document, the fastest way is often to fold the entire buffer and
-then dive into the tree.  This method has the disadvantage, that
-the previous location will be folded, which may not be what you
-want.
-
-This command works around this by showing a copy of the current
-buffer in an indirect buffer, in overview mode.  You can dive
-into the tree in that copy, use org-occur and incremental search
-to find a location.  When pressing RET or `Q', the command
-returns to the original buffer in which the visibility is still
-unchanged.  After RET it will also jump to the location selected
-in the indirect buffer and expose the headline hierarchy above.
-
-With a prefix argument, use the alternative interface: e.g., if
-`org-goto-interface' is `outline' use `outline-path-completion'.
-
-(fn &optional ALTERNATIVE-INTERFACE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-goto" (quote ("org-goto-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-habit" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-id" (quote ("org-id-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-indent" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-inlinetask" (quote ("org-inlinetask-")))) (autoload (quote org-babel-describe-bindings) "org-keys" "Describe all keybindings behind `org-babel-key-prefix'.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-keys" (quote ("org-")))) (autoload (quote org-lint) "org-lint" "Check current Org buffer for syntax mistakes.
-
-By default, run all checkers.  With a `\\[universal-argument]' prefix ARG, select one
-category of checkers only.  With a `\\[universal-argument] \\[universal-argument]' prefix, run one precise
-checker by its name.
-
-ARG can also be a list of checker names, as symbols, to run.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-lint" (quote ("org-lint-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-list" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macro" (quote ("org-macro-")))) (autoload (quote org-load-noerror-mustsuffix) "org-macs" "Load FILE with optional arguments NOERROR and MUSTSUFFIX.
-
-(fn FILE)" nil t) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macs" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mobile" (quote ("org-mobile-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mouse" (quote ("org-mouse-")))) (autoload (quote org-num-default-format) "org-num" "Default numbering display function.
-NUMBERING is a list of numbers.
-
-(fn NUMBERING)" nil nil) (autoload (quote org-num-mode) "org-num" "Dynamic numbering of headlines in an Org buffer.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-num" (quote ("org-num-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-pcomplete" (quote ("pcomplete/org-mode/" "org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-plot" (quote ("org-plot")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-protocol" (quote ("org-protocol-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-src" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-table" (quote ("org")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-tempo" (quote ("org-tempo-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-timer" (quote ("org-timer-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox" (quote ("org-export-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-ascii" (quote ("org-ascii-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-beamer" (quote ("org-beamer-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-html" (quote ("org-html-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-icalendar" (quote ("org-icalendar-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-latex" (quote ("org-latex-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-man" (quote ("org-man-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-md" (quote ("org-md-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-odt" (quote ("org-odt-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-org" (quote ("org-org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-publish" (quote ("org-publish-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-texinfo" (quote ("org-texinfo-")))) (provide (quote org-autoloads))) "ox-reveal" ((ox-reveal ox-reveal-autoloads) (autoload (quote org-reveal-publish-to-reveal) "ox-reveal" "Publish an org file to Html.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org2jekyll" (quote ("org2jekyll-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org2jekyll-utilities" (quote ("org2jekyll-tests-with-temp-buffer")))) (provide (quote org2jekyll-autoloads))) "org" ((ob-processing org-goto ob-ruby ob-hledger ol-w3m ob-ditaa org-protocol org-indent ob-coq ob-perl ob-exp org-compat org-colview ob-awk ob-lob ob ob-io org-src ox-publish ox-html org-keys ob-org org-element ob-latex ob-asymptote ob-sqlite ob-python ob-mscgen ol-rmail ob-matlab ob-picolisp org-timer ox-texinfo org-plot org-crypt ob-screen ol-bibtex ox-icalendar ob-maxima ob-ref ob-comint ob-haskell org-mouse ox-org ob-ocaml ob-dot ob-R ob-lua ob-gnuplot ob-css org-install ol ob-abc org-attach-git ob-shell org-entities org-macro ob-plantuml ob-lilypond ob-js org-feed org-faces org-attach ob-vala ob-makefile ox-ascii ol-eww org-table org-loaddefs ol-irc ob-ebnf ol-eshell org-macs ob-groovy ox-md ob-fortran org-archive org-footnote ob-J org-datetree ox-odt ol-bbdb ob-stan org org-mobile org-agenda ol-info ob-sass org-clock ob-core ob-C ob-table ob-octave org-inlinetask ob-eval ob-scheme org-ctags org-autoloads ob-java ox-man org-capture ol-docview ob-forth ox-beamer ob-sed ob-ledger ob-tangle ol-gnus org-list org-id ob-lisp org-duration ob-emacs-lisp org-lint ob-sql org-tempo ob-calc ox ob-clojure org-habit ob-eshell org-pcomplete ox-latex ol-mhe ob-shen org-refile org-num) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-C" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-J" (quote ("obj-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-R" (quote ("ob-R-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-abc" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-asymptote" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-awk" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-calc" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-clojure" (quote ("ob-clojure-" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-comint" (quote ("org-babel-comint-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-coq" (quote ("org-babel-" "coq-program-name")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-core" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-css" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ditaa" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-dot" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ebnf" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-emacs-lisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-eshell" (quote ("ob-eshell-session-live-p" "org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-eval" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-exp" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-forth" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-fortran" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-gnuplot" (quote ("org-babel-" "*org-babel-gnuplot-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-groovy" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-haskell" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-hledger" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-io" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-java" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-js" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-latex" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ledger" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lilypond" (quote ("org-babel-" "lilypond-mode")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lob" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-lua" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-makefile" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-maxima" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-mscgen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ocaml" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-octave" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-org" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-perl" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-picolisp" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-plantuml" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-processing" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-python" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ref" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ruby" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sass" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-scheme" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-screen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sed" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-shell" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-shen" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sql" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-sqlite" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-stan" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-table" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-tangle" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-vala" (quote ("org-babel-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bbdb" (quote ("org-bbdb-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-bibtex" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-docview" (quote ("org-docview-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eshell" (quote ("org-eshell-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-eww" (quote ("org-eww-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-gnus" (quote ("org-gnus-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-info" (quote ("org-info-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-irc" (quote ("org-irc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-mhe" (quote ("org-mhe-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-rmail" (quote ("org-rmail-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ol-w3m" (quote ("org-w3m-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org" (quote ("org-" "turn-on-org-cdlatex")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-agenda" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-archive" (quote ("org-a")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach" (quote ("org-attach-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-attach-git" (quote ("org-attach-git-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-capture" (quote ("org-capture-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-clock" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-colview" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-compat" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-crypt" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-ctags" (quote ("org-ctags-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-datetree" (quote ("org-datetree-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-duration" (quote ("org-duration-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-element" (quote ("org-element-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-entities" (quote ("org-entit")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-faces" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-feed" (quote ("org-feed-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-footnote" (quote ("org-footnote-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-goto" (quote ("org-goto-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-habit" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-id" (quote ("org-id-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-indent" (quote ("org-indent-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-inlinetask" (quote ("org-inlinetask-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-keys" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-lint" (quote ("org-lint-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-list" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macro" (quote ("org-macro-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-macs" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mobile" (quote ("org-mobile-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-mouse" (quote ("org-mouse-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-num" (quote ("org-num-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-pcomplete" (quote ("pcomplete/org-mode/" "org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-plot" (quote ("org-plot")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-protocol" (quote ("org-protocol-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-refile" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-src" (quote ("org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-table" (quote ("org")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-tempo" (quote ("org-tempo-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "org-timer" (quote ("org-timer-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox" (quote ("org-export-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-ascii" (quote ("org-ascii-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-beamer" (quote ("org-beamer-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-html" (quote ("org-html-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-icalendar" (quote ("org-icalendar-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-latex" (quote ("org-latex-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-man" (quote ("org-man-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-md" (quote ("org-md-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-odt" (quote ("org-odt-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-org" (quote ("org-org-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-publish" (quote ("org-publish-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ox-texinfo" (quote ("org-texinfo-")))) (provide (quote org-autoloads))) "ox-reveal" ((ox-reveal ox-reveal-autoloads) (autoload (quote org-reveal-publish-to-reveal) "ox-reveal" "Publish an org file to Html.
 
 FILENAME is the filename of the Org file to be published.  PLIST
 is the property list for the given project.  PUB-DIR is the
@@ -3096,6 +1842,12 @@ This function will also detect evil bindings made using
 `evil-define-key' in this map. These bindings will depend on the
 current evil state. 
 
+(fn &optional ALL)" t nil) (autoload (quote which-key-show-full-major-mode) "which-key" "Show all bindings in the map of the current major mode.
+
+This function will also detect evil bindings made using
+`evil-define-key' in this map. These bindings will depend on the
+current evil state. 
+
 (fn)" t nil) (autoload (quote which-key-dump-bindings) "which-key" "Dump bindings from PREFIX into buffer named BUFFER-NAME.
 
 PREFIX should be a string suitable for `kbd'.
@@ -3118,7 +1870,10 @@ selected interactively from all available keymaps.
 (fn KEYMAP)" t nil) (autoload (quote which-key-show-minor-mode-keymap) "which-key" "Show the top-level bindings in KEYMAP using which-key. KEYMAP
 is selected interactively by mode in `minor-mode-map-alist'.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "which-key" (quote ("which-key-")))) (provide (quote which-key-autoloads))) "avy" ((avy-autoloads avy) (autoload (quote avy-goto-char) "avy" "Jump to the currently visible CHAR.
+(fn &optional ALL)" t nil) (autoload (quote which-key-show-full-minor-mode-keymap) "which-key" "Show all bindings in KEYMAP using which-key. KEYMAP
+is selected interactively by mode in `minor-mode-map-alist'.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "which-key" (quote ("which-key-")))) (provide (quote which-key-autoloads))) "avy" ((avy avy-autoloads) (autoload (quote avy-goto-char) "avy" "Jump to the currently visible CHAR.
 The window scope is determined by `avy-all-windows' (ARG negates it).
 
 (fn CHAR &optional ARG)" t nil) (autoload (quote avy-goto-char-in-line) "avy" "Jump to the currently visible CHAR in the current line.
@@ -3275,7 +2030,7 @@ newline.
 (fn)" nil nil) (autoload (quote avy-goto-char-timer) "avy" "Read one or many consecutive chars and jump to the first one.
 The window scope is determined by `avy-all-windows' (ARG negates it).
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "avy" (quote ("avy-")))) (provide (quote avy-autoloads))) "ace-window" ((ace-window ace-window-autoloads) (autoload (quote ace-select-window) "ace-window" "Ace select window.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "avy" (quote ("avy-")))) (provide (quote avy-autoloads))) "ace-window" ((ace-window-autoloads ace-window) (autoload (quote ace-select-window) "ace-window" "Ace select window.
 
 (fn)" t nil) (autoload (quote ace-delete-window) "ace-window" "Ace delete window.
 
@@ -3283,10 +2038,15 @@ The window scope is determined by `avy-all-windows' (ARG negates it).
 
 (fn)" t nil) (autoload (quote ace-delete-other-windows) "ace-window" "Ace delete other windows.
 
-(fn)" t nil) (autoload (quote ace-window) "ace-window" "Select a window.
+(fn)" t nil) (autoload (quote ace-display-buffer) "ace-window" "Make `display-buffer' and `pop-to-buffer' select using `ace-window'.
+See sample config for `display-buffer-base-action' and `display-buffer-alist':
+https://github.com/abo-abo/ace-window/wiki/display-buffer.
+
+(fn BUFFER ALIST)" nil nil) (autoload (quote ace-window) "ace-window" "Select a window.
 Perform an action based on ARG described below.
 
 By default, behaves like extended `other-window'.
+See `aw-scope' which extends it to work with frames.
 
 Prefixed with one \\[universal-argument], does a swap between the
 selected window and the current window, so that the selected
@@ -3303,7 +2063,7 @@ Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `ace-window-display-mode'.") (custom-autoload (quote ace-window-display-mode) "ace-window" nil) (autoload (quote ace-window-display-mode) "ace-window" "Minor mode for showing the ace window key in the mode line.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ace-window" (quote ("ace-window-mode" "aw-")))) (provide (quote ace-window-autoloads))) "async" ((smtpmail-async async-autoloads async-bytecomp async async-pkg dired-async) (autoload (quote async-start-process) "async" "Start the executable PROGRAM asynchronously.  See `async-start'.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ace-window" (quote ("ace-window-mode" "aw-")))) (provide (quote ace-window-autoloads))) "async" ((async-autoloads async async-bytecomp async-pkg smtpmail-async dired-async) (autoload (quote async-start-process) "async" "Start the executable PROGRAM asynchronously named NAME.  See `async-start'.
 PROGRAM is passed PROGRAM-ARGS, calling FINISH-FUNC with the
 process object when done.  If FINISH-FUNC is nil, the future
 object will return the process object when the program is
@@ -3388,7 +2148,7 @@ or call the function `dired-async-mode'.") (custom-autoload (quote dired-async-m
 
 (fn &optional ARG)" t nil) (autoload (quote dired-async-do-rename) "dired-async" "Run \342\200\230dired-do-rename\342\200\231 asynchronously.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "dired-async" (quote ("dired-async-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smtpmail-async" (quote ("async-smtpmail-")))) (provide (quote async-autoloads))) "popup" ((popup-autoloads popup) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "popup" (quote ("popup-")))) (provide (quote popup-autoloads))) "helm-core" ((helm-core-pkg helm-source helm helm-multi-match helm-core-autoloads helm-lib) (autoload (quote helm-define-multi-key) "helm" "In KEYMAP, define key sequence KEY for function list FUNCTIONS.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "dired-async" (quote ("dired-async-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smtpmail-async" (quote ("async-smtpmail-")))) (provide (quote async-autoloads))) "popup" ((popup popup-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "popup" (quote ("popup-")))) (provide (quote popup-autoloads))) "helm-core" ((helm-lib helm-multi-match helm-core-autoloads helm-source helm helm-core-pkg) (autoload (quote helm-define-multi-key) "helm" "In KEYMAP, define key sequence KEY for function list FUNCTIONS.
 Each function runs sequentially for each KEY press.
 If DELAY is specified, switch back to initial function of FUNCTIONS list
 after DELAY seconds.
@@ -3426,7 +2186,8 @@ Arg OTHER-SUBKEYS is an alist specifying other short key-bindings
 to use once started e.g:
 
     (helm-define-key-with-subkeys global-map
-       (kbd \"C-x v n\") ?n 'git-gutter:next-hunk '((?p . git-gutter:previous-hunk)))
+       (kbd \"C-x v n\") ?n 'git-gutter:next-hunk
+       '((?p . git-gutter:previous-hunk)))
 
 
 In this example, `C-x v n' will run `git-gutter:next-hunk'
@@ -3576,7 +2337,7 @@ However, the use of non-keyword args is deprecated.
 (fn)" t nil) (autoload (quote helm-other-buffer) "helm" "Simplified `helm' interface with other `helm-buffer'.
 Call `helm' only with ANY-SOURCES and ANY-BUFFER as args.
 
-(fn ANY-SOURCES ANY-BUFFER)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm" (quote ("helm-" "with-helm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-lib" (quote ("helm-" "with-helm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-multi-match" (quote ("helm-m")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-source" (quote ("helm-")))) (provide (quote helm-core-autoloads))) "helm" ((helm-id-utils helm-occur helm-dabbrev helm-eshell helm-net helm-for-files helm-comint helm-files helm-elisp-package helm-tags helm-buffers helm-font helm-man helm-locate helm-external helm-sys helm-command helm-eval helm-ring helm-info helm-regexp helm-color helm-semantic helm-pkg helm-autoloads helm-types helm-mode helm-imenu helm-grep helm-x-files helm-easymenu helm-help helm-elisp helm-misc helm-adaptive helm-utils helm-shell helm-config helm-bookmark helm-find) (defvar helm-adaptive-mode nil "Non-nil if Helm-Adaptive mode is enabled.
+(fn ANY-SOURCES ANY-BUFFER)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm" (quote ("helm-" "with-helm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-lib" (quote ("helm-" "with-helm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-multi-match" (quote ("helm-m")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-source" (quote ("helm-")))) (provide (quote helm-core-autoloads))) "helm" ((helm-utils helm-net helm-eval helm-sys helm-elisp helm-buffers helm-pkg helm-ring helm-semantic helm-mode helm-x-files helm-occur helm-autoloads helm-man helm-external helm-id-utils helm-command helm-eshell helm-dabbrev helm-help helm-locate helm-color helm-tags helm-adaptive helm-bookmark helm-elisp-package helm-files helm-misc helm-for-files helm-info helm-find helm-imenu helm-types helm-font helm-comint helm-config helm-grep helm-shell helm-regexp helm-easymenu) (defvar helm-adaptive-mode nil "Non-nil if Helm-Adaptive mode is enabled.
 See the `helm-adaptive-mode' command
 for a description of this minor mode.
 Setting this variable directly does not take effect;
@@ -3614,7 +2375,7 @@ while in `helm-M-x' session will disable it.
 
 You can get help on each command by persistent action.
 
-(fn ARG &optional COMMAND-NAME)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-command" (quote ("helm-")))) (autoload (quote helm-configuration) "helm-config" "Customize `helm'.
+(fn ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-command" (quote ("helm-")))) (autoload (quote helm-configuration) "helm-config" "Customize `helm'.
 
 (fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-config" (quote ("helm-")))) (autoload (quote helm-dabbrev) "helm-dabbrev" "Preconfigured helm for dynamic abbreviations.
 
@@ -3891,10 +2652,15 @@ Keys description:
 - MATCH-PART: Allow matching only one part of candidate.
   See match-part documentation in `helm-source'.
 
+- MATCH-DYNAMIC: See match-dynamic in `helm-source-sync'
+  It have no effect when used with CANDIDATES-IN-BUFFER.
+
 - ALLOW-NEST: Allow nesting this `helm-comp-read' in a helm session.
   See `helm'.
 
 - MULTILINE: See multiline in `helm-source'.
+
+- COERCE: See coerce in `helm-source'.
 
 - GROUP: See group in `helm-source'.
 
@@ -3904,7 +2670,7 @@ in `helm-current-prefix-arg', otherwise if prefix args were given before
 That's mean you can pass prefix args before or after calling a command
 that use `helm-comp-read' See `helm-M-x' for example.
 
-(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (BUFFER \"*Helm Completions*\") MUST-MATCH FUZZY REVERSE-HISTORY (REQUIRES-PATTERN 0) HISTORY INPUT-HISTORY (CASE-FOLD helm-comp-read-case-fold-search) (DEL-INPUT t) (PERSISTENT-ACTION nil) (PERSISTENT-HELP \"DoNothing\") (MODE-LINE helm-comp-read-mode-line) HELP-MESSAGE (KEYMAP helm-comp-read-map) (NAME \"Helm Completions\") HEADER-NAME CANDIDATES-IN-BUFFER MATCH-PART EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (VOLATILE t) SORT FC-TRANSFORMER HIST-FC-TRANSFORMER MARKED-CANDIDATES NOMARK (ALISTP t) (CANDIDATE-NUMBER-LIMIT helm-candidate-number-limit) MULTILINE ALLOW-NEST (GROUP \\='helm))" nil nil) (autoload (quote helm-read-file-name) "helm-mode" "Read a file name with helm completion.
+(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (BUFFER \"*Helm Completions*\") MUST-MATCH FUZZY REVERSE-HISTORY (REQUIRES-PATTERN 0) HISTORY INPUT-HISTORY (CASE-FOLD helm-comp-read-case-fold-search) (DEL-INPUT t) (PERSISTENT-ACTION nil) (PERSISTENT-HELP \"DoNothing\") (MODE-LINE helm-comp-read-mode-line) HELP-MESSAGE (KEYMAP helm-comp-read-map) (NAME \"Helm Completions\") HEADER-NAME CANDIDATES-IN-BUFFER MATCH-PART MATCH-DYNAMIC EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (VOLATILE t) SORT FC-TRANSFORMER HIST-FC-TRANSFORMER MARKED-CANDIDATES NOMARK (ALISTP t) (CANDIDATE-NUMBER-LIMIT helm-candidate-number-limit) MULTILINE ALLOW-NEST COERCE (GROUP \\='helm))" nil nil) (autoload (quote helm-read-file-name) "helm-mode" "Read a file name with helm completion.
 It is helm `read-file-name' emulation.
 
 Argument PROMPT is the default prompt to use.
@@ -3951,29 +2717,20 @@ Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `helm-mode'.") (custom-autoload (quote helm-mode) "helm-mode" nil) (autoload (quote helm-mode) "helm-mode" "Toggle generic helm completion.
 
-All functions in Emacs that use `completing-read'
-or `read-file-name' and friends will use helm interface
-when this mode is turned on.
+All functions in Emacs that use `completing-read',
+`read-file-name', `completion-in-region' and friends will use helm
+interface when this mode is turned on.
 
 However you can modify this behavior for functions of your choice
 with `helm-completing-read-handlers-alist'.
 
-Also commands using `completion-in-region' will be helmized when
-`helm-mode-handle-completion-in-region' is non nil, you can modify
-this behavior with `helm-mode-no-completion-in-region-in-modes'.
-
 Called with a positive arg, turn on unconditionally, with a
 negative arg turn off.
-You can turn it on with `helm-mode'.
-
-Some crap emacs functions may not be supported,
-e.g `ffap-alternate-file' and maybe others
-You can add such functions to `helm-completing-read-handlers-alist'
-with a nil value.
+You can toggle it with M-x `helm-mode'.
 
 About `ido-mode':
-When you are using `helm-mode', DO NOT use `ido-mode', instead if you
-want some commands use `ido', add these commands to
+DO NOT enable `ido-everywhere' when using `helm-mode' and instead of
+using `ido-mode', add the commands where you want to use ido to
 `helm-completing-read-handlers-alist' with `ido' as value.
 
 Note: This mode is incompatible with Emacs23.
@@ -4017,11 +2774,6 @@ buffers (i.e. a helm command using `helm-source-buffers-list' like
 This is the helm implementation that collect lines matching pattern
 like vanilla emacs `occur' but have nothing to do with it, the search
 engine beeing completely different and also much faster.
-
-(fn)" t nil) (autoload (quote helm-occur-mode) "helm-occur" "Major mode to provide actions in helm moccur saved buffer.
-
-Special commands:
-\\{helm-occur-mode-map}
 
 (fn)" t nil) (autoload (quote helm-occur-from-isearch) "helm-occur" "Invoke `helm-occur' from isearch.
 
@@ -4099,27 +2851,27 @@ Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `helm-popup-tip-mode'.") (custom-autoload (quote helm-popup-tip-mode) "helm-utils" nil) (autoload (quote helm-popup-tip-mode) "helm-utils" "Show help-echo informations in a popup tip at end of line.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-utils" (quote ("helm-" "with-helm-display-marked-candidates")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-x-files" (quote ("helm-")))) (provide (quote helm-autoloads))) "helm-ag" ((helm-ag helm-ag-autoloads) (autoload (quote helm-ag-pop-stack) "helm-ag" "
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-utils" (quote ("helm-" "with-helm-display-marked-candidates")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-x-files" (quote ("helm-")))) (provide (quote helm-autoloads))) "helm-ag" ((helm-ag-autoloads helm-ag) (autoload (quote helm-ag-pop-stack) "helm-ag" "Not documented.
 
-(fn)" t nil) (autoload (quote helm-ag-clear-stack) "helm-ag" "
+(fn)" t nil) (autoload (quote helm-ag-clear-stack) "helm-ag" "Not documented.
 
-(fn)" t nil) (autoload (quote helm-ag-this-file) "helm-ag" "
+(fn)" t nil) (autoload (quote helm-ag-this-file) "helm-ag" "Do ag with in this file with QUERY.
 
-(fn)" t nil) (autoload (quote helm-ag) "helm-ag" "
+(fn &optional QUERY)" t nil) (autoload (quote helm-ag) "helm-ag" "Do ag with in BASEDIR and with QUERY.
 
-(fn &optional BASEDIR)" t nil) (autoload (quote helm-do-ag-this-file) "helm-ag" "
+(fn &optional BASEDIR QUERY)" t nil) (autoload (quote helm-do-ag-this-file) "helm-ag" "Not documented.
 
-(fn)" t nil) (autoload (quote helm-do-ag) "helm-ag" "
+(fn &optional QUERY)" t nil) (autoload (quote helm-do-ag) "helm-ag" "Not documented.
 
-(fn &optional BASEDIR TARGETS)" t nil) (autoload (quote helm-ag-project-root) "helm-ag" "
+(fn &optional BASEDIR TARGETS QUERY)" t nil) (autoload (quote helm-ag-project-root) "helm-ag" "Not documented.
 
-(fn)" t nil) (autoload (quote helm-do-ag-project-root) "helm-ag" "
+(fn &optional QUERY)" t nil) (autoload (quote helm-do-ag-project-root) "helm-ag" "Not documented.
 
-(fn)" t nil) (autoload (quote helm-ag-buffers) "helm-ag" "
+(fn &optional QUERY)" t nil) (autoload (quote helm-ag-buffers) "helm-ag" "Not documented.
 
-(fn)" t nil) (autoload (quote helm-do-ag-buffers) "helm-ag" "
+(fn &optional QUERY)" t nil) (autoload (quote helm-do-ag-buffers) "helm-ag" "Not documented.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-ag" (quote ("helm-")))) (provide (quote helm-ag-autoloads))) "projectile" ((projectile projectile-autoloads) (autoload (quote projectile-version) "projectile" "Get the Projectile version as string.
+(fn &optional QUERY)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-ag" (quote ("helm-")))) (provide (quote helm-ag-autoloads))) "projectile" ((projectile-autoloads projectile) (autoload (quote projectile-version) "projectile" "Get the Projectile version as string.
 
 If called interactively or if SHOW-VERSION is non-nil, show the
 version in the echo area and the messages buffer.
@@ -4325,23 +3077,39 @@ regular expression.
 
 (fn)" t nil) (autoload (quote projectile-run-async-shell-command-in-root) "projectile" "Invoke `async-shell-command' in the project's root.
 
+(fn)" t nil) (autoload (quote projectile-run-gdb) "projectile" "Invoke `gdb' in the project's root.
+
 (fn)" t nil) (autoload (quote projectile-run-shell) "projectile" "Invoke `shell' in the project's root.
 
 Switch to the project specific shell buffer if it already exists.
 
-(fn)" t nil) (autoload (quote projectile-run-eshell) "projectile" "Invoke `eshell' in the project's root.
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn ARG)" t nil) (autoload (quote projectile-run-eshell) "projectile" "Invoke `eshell' in the project's root.
 
 Switch to the project specific eshell buffer if it already exists.
 
-(fn)" t nil) (autoload (quote projectile-run-ielm) "projectile" "Invoke `ielm' in the project's root.
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn ARG)" t nil) (autoload (quote projectile-run-ielm) "projectile" "Invoke `ielm' in the project's root.
 
 Switch to the project specific ielm buffer if it already exists.
 
-(fn)" t nil) (autoload (quote projectile-run-term) "projectile" "Invoke `term' in the project's root.
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn ARG)" t nil) (autoload (quote projectile-run-term) "projectile" "Invoke `term' in the project's root.
 
 Switch to the project specific term buffer if it already exists.
 
-(fn PROGRAM)" t nil) (autoload (quote projectile-replace) "projectile" "Replace literal string in project using non-regexp `tags-query-replace'.
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn ARG)" t nil) (autoload (quote projectile-run-vterm) "projectile" "Invoke `vterm' in the project's root.
+
+Switch to the project specific term buffer if it already exists.
+
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-replace) "projectile" "Replace literal string in project using non-regexp `tags-query-replace'.
 
 With a prefix argument ARG prompts you for a directory on which
 to run the replacement.
@@ -4432,7 +3200,9 @@ This command will first prompt for the directory the file is in.
 
 (fn &optional PROJECT)" t nil) (autoload (quote projectile-remove-current-project-from-known-projects) "projectile" "Remove the current project from the list of known projects.
 
-(fn)" t nil) (autoload (quote projectile-ibuffer) "projectile" "Open an IBuffer window showing all buffers in the current project.
+(fn)" t nil) (autoload (quote projectile-add-known-project) "projectile" "Add PROJECT-ROOT to the list of known projects.
+
+(fn PROJECT-ROOT)" t nil) (autoload (quote projectile-ibuffer) "projectile" "Open an IBuffer window showing all buffers in the current project.
 
 Let user choose another project when PROMPT-FOR-PROJECT is supplied.
 
@@ -4494,7 +3264,7 @@ DIR is the project root, if not set then current directory is used
 With a prefix ARG invalidates the cache first.
 If invoked outside of a project, displays a list of known projects to jump.
 
-(fn &optional ARG)" t nil) (eval-after-load (quote projectile) (quote (progn (define-key projectile-command-map (kbd "h") (function helm-projectile))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-projectile" (quote ("helm-")))) (provide (quote helm-projectile-autoloads))) "multiple-cursors" ((mc-hide-unmatched-lines-mode mc-cycle-cursors mc-separate-operations multiple-cursors-pkg mc-mark-more multiple-cursors multiple-cursors-core mc-edit-lines multiple-cursors-autoloads rectangular-region-mode mc-mark-pop) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "mc-cycle-cursors" (quote ("mc/")))) (autoload (quote mc/edit-lines) "mc-edit-lines" "Add one cursor to each line of the active region.
+(fn &optional ARG)" t nil) (eval-after-load (quote projectile) (quote (progn (define-key projectile-command-map (kbd "h") (function helm-projectile))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "helm-projectile" (quote ("helm-")))) (provide (quote helm-projectile-autoloads))) "multiple-cursors" ((multiple-cursors-pkg mc-separate-operations multiple-cursors-autoloads rectangular-region-mode mc-mark-more mc-hide-unmatched-lines-mode mc-edit-lines mc-cycle-cursors multiple-cursors-core mc-mark-pop multiple-cursors) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "mc-cycle-cursors" (quote ("mc/")))) (autoload (quote mc/edit-lines) "mc-edit-lines" "Add one cursor to each line of the active region.
 Starts from mark and moves in straight down or up towards the
 line point is on.
 
@@ -4638,7 +3408,7 @@ to the popped mark.
 (fn)" t nil) (autoload (quote mc/sort-regions) "mc-separate-operations" "
 
 (fn)" t nil) (autoload (quote mc/vertical-align) "mc-separate-operations" "Aligns all cursors vertically with a given CHARACTER to the one with the
-highest colum number (the rightest).
+highest column number (the rightest).
 Might not behave as intended if more than one cursors are on the same line.
 
 (fn CHARACTER)" t nil) (autoload (quote mc/vertical-align-with-space) "mc-separate-operations" "Aligns all cursors with whitespace like `mc/vertical-align' does
@@ -4652,7 +3422,7 @@ an exceedingly quick way of adding multiple cursors to multiple lines.
 
 (fn)" t nil) (autoload (quote rectangular-region-mode) "rectangular-region-mode" "A mode for creating a rectangular region to edit
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rectangular-region-mode" (quote ("rectangular-region-mode" "rrm/")))) (provide (quote multiple-cursors-autoloads))) "goto-last-change" ((goto-last-change goto-last-change-autoloads) (autoload (quote goto-last-change) "goto-last-change" "Set point to the position of the last change.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rectangular-region-mode" (quote ("rectangular-region-mode" "rrm/")))) (provide (quote multiple-cursors-autoloads))) "goto-last-change" ((goto-last-change-autoloads goto-last-change) (autoload (quote goto-last-change) "goto-last-change" "Set point to the position of the last change.
 Consecutive calls set point to the position of the previous change.
 With a prefix arg (optional arg MARK-POINT non-nil), set mark so \\[exchange-point-and-mark]
 will return point to the current position.
@@ -4723,7 +3493,7 @@ See also `ag-dired-regexp'.
 
 (fn)" t nil) (autoload (quote ag-kill-other-buffers) "ag" "Kill all `ag-mode' buffers other than the current buffer.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ag" (quote ("ag-" "ag/")))) (provide (quote ag-autoloads))) "undo-tree" ((undo-tree-autoloads undo-tree) (autoload (quote undo-tree-mode) "undo-tree" "Toggle undo-tree mode.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ag" (quote ("ag-" "ag/")))) (provide (quote ag-autoloads))) "undo-tree" ((undo-tree undo-tree-autoloads) (autoload (quote undo-tree-mode) "undo-tree" "Toggle undo-tree mode.
 With no argument, this command toggles the mode.
 A positive prefix argument turns the mode on.
 A negative prefix argument turns it off.
@@ -4768,13 +3538,13 @@ Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `xclip-mode'.") (custom-autoload (quote xclip-mode) "xclip" nil) (autoload (quote xclip-mode) "xclip" "Minor mode to use the `xclip' program to copy&paste.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "xclip" (quote ("xclip-")))) (provide (quote xclip-autoloads))) "gradle-mode" ((gradle-mode-autoloads gradle-mode) (defvar gradle-mode nil "Non-nil if Gradle mode is enabled.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "xclip" (quote ("xclip-")))) (provide (quote xclip-autoloads))) "gradle-mode" ((gradle-mode gradle-mode-autoloads) (defvar gradle-mode nil "Non-nil if Gradle mode is enabled.
 See the `gradle-mode' command
 for a description of this minor mode.") (custom-autoload (quote gradle-mode) "gradle-mode" nil) (autoload (quote gradle-mode) "gradle-mode" "Emacs minor mode for integrating Gradle into compile.
 Run gradle tasks from any buffer, scanning up to nearest gradle
 directory to run tasks.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gradle-mode" (quote ("gradle-")))) (provide (quote gradle-mode-autoloads))) "restclient" ((restclient restclient-autoloads) (autoload (quote restclient-http-send-current) "restclient" "Sends current request.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gradle-mode" (quote ("gradle-")))) (provide (quote gradle-mode-autoloads))) "restclient" ((restclient-autoloads restclient) (autoload (quote restclient-http-send-current) "restclient" "Sends current request.
 Optional argument RAW don't reformat response if t.
 Optional argument STAY-IN-WINDOW do not move focus to response buffer if t.
 
@@ -4784,27 +3554,123 @@ Optional argument STAY-IN-WINDOW do not move focus to response buffer if t.
 
 (fn)" t nil) (autoload (quote restclient-mode) "restclient" "Turn on restclient mode.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "restclient" (quote ("restclient-")))) (provide (quote restclient-autoloads))) "websocket" ((websocket websocket-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "websocket" (quote ("websocket-")))) (provide (quote websocket-autoloads))) "auto-complete" ((auto-complete-pkg auto-complete auto-complete-autoloads auto-complete-config) (autoload (quote auto-complete) "auto-complete" "Start auto-completion at current point.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "restclient" (quote ("restclient-")))) (provide (quote restclient-autoloads))) "websocket" ((websocket-autoloads websocket) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "websocket" (quote ("websocket-")))) (provide (quote websocket-autoloads))) "anaphora" ((anaphora-autoloads anaphora) (let ((loads (get (quote anaphora) (quote custom-loads)))) (if (member (quote "anaphora") loads) nil (put (quote anaphora) (quote custom-loads) (cons (quote "anaphora") loads)))) (defvar anaphora-use-long-names-only nil "Use only long names such as `anaphoric-if' instead of traditional `aif'.") (custom-autoload (quote anaphora-use-long-names-only) "anaphora" t) (defun anaphora--install-traditional-aliases (&optional arg) "Install traditional short aliases for anaphoric macros.
 
-(fn &optional SOURCES)" t nil) (autoload (quote auto-complete-mode) "auto-complete" "AutoComplete mode
+With negative numeric ARG, remove traditional aliases." (let ((syms (quote ((if . t) (prog1 . t) (prog2 . t) (when . when) (while . t) (and . t) (cond . cond) (lambda . lambda) (block . block) (case . case) (ecase . ecase) (typecase . typecase) (etypecase . etypecase) (let . let) (+ . t) (- . t) (* . t) (/ . t))))) (cond ((and (numberp arg) (< arg 0)) (dolist (cell syms) (when (ignore-errors (eq (symbol-function (intern-soft (format "a%s" (car cell)))) (intern-soft (format "anaphoric-%s" (car cell))))) (fmakunbound (intern (format "a%s" (car cell))))))) (t (dolist (cell syms) (let* ((builtin (car cell)) (traditional (intern (format "a%s" builtin))) (long (intern (format "anaphoric-%s" builtin)))) (defalias traditional long) (put traditional (quote lisp-indent-function) (get builtin (quote lisp-indent-function))) (put traditional (quote edebug-form-spec) (cdr cell)))))))) (unless anaphora-use-long-names-only (anaphora--install-traditional-aliases)) (autoload (quote anaphoric-if) "anaphora" "Like `if', but the result of evaluating COND is bound to `it'.
 
-(fn &optional ARG)" t nil) (defvar global-auto-complete-mode nil "Non-nil if Global Auto-Complete mode is enabled.
-See the `global-auto-complete-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-auto-complete-mode'.") (custom-autoload (quote global-auto-complete-mode) "auto-complete" nil) (autoload (quote global-auto-complete-mode) "auto-complete" "Toggle Auto-Complete mode in all buffers.
-With prefix ARG, enable Global Auto-Complete mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
+The variable `it' is available within THEN and ELSE.
 
-Auto-Complete mode is enabled in all buffers where
-`auto-complete-mode-maybe' would do it.
-See `auto-complete-mode' for more information on Auto-Complete mode.
+COND, THEN, and ELSE are otherwise as documented for `if'.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "auto-complete" (quote ("auto-complete-mode" "ac-")))) (autoload (quote ac-config-default) "auto-complete-config" "
+(fn COND THEN &rest ELSE)" nil t) (function-put (quote anaphoric-if) (quote lisp-indent-function) (quote 2)) (autoload (quote anaphoric-prog1) "anaphora" "Like `prog1', but the result of evaluating FIRST is bound to `it'.
 
-(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "auto-complete-config" (quote ("ac-")))) (provide (quote auto-complete-autoloads))) "request" ((request request-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "request" (quote ("request-")))) (provide (quote request-autoloads))) "polymode" ((polymode-weave polymode-compat polymode-debug polymode-base polymode-methods polymode polymode-export polymode-test-utils polymode-tangle polymode-autoloads polymode-classes poly-lock polymode-core) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "poly-lock" (quote ("poly-lock-")))) (autoload (quote define-polymode) "polymode" "Define a new polymode MODE.
+The variable `it' is available within BODY.
+
+FIRST and BODY are otherwise as documented for `prog1'.
+
+(fn FIRST &rest BODY)" nil t) (function-put (quote anaphoric-prog1) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-prog2) "anaphora" "Like `prog2', but the result of evaluating FORM2 is bound to `it'.
+
+The variable `it' is available within BODY.
+
+FORM1, FORM2, and BODY are otherwise as documented for `prog2'.
+
+(fn FORM1 FORM2 &rest BODY)" nil t) (function-put (quote anaphoric-prog2) (quote lisp-indent-function) (quote 2)) (autoload (quote anaphoric-when) "anaphora" "Like `when', but the result of evaluating COND is bound to `it'.
+
+The variable `it' is available within BODY.
+
+COND and BODY are otherwise as documented for `when'.
+
+(fn COND &rest BODY)" nil t) (function-put (quote anaphoric-when) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-while) "anaphora" "Like `while', but the result of evaluating TEST is bound to `it'.
+
+The variable `it' is available within BODY.
+
+TEST and BODY are otherwise as documented for `while'.
+
+(fn TEST &rest BODY)" nil t) (function-put (quote anaphoric-while) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-and) "anaphora" "Like `and', but the result of the previous condition is bound to `it'.
+
+The variable `it' is available within all CONDITIONS after the
+initial one.
+
+CONDITIONS are otherwise as documented for `and'.
+
+Note that some implementations of this macro bind only the first
+condition to `it', rather than each successive condition.
+
+(fn &rest CONDITIONS)" nil t) (autoload (quote anaphoric-cond) "anaphora" "Like `cond', but the result of each condition is bound to `it'.
+
+The variable `it' is available within the remainder of each of CLAUSES.
+
+CLAUSES are otherwise as documented for `cond'.
+
+(fn &rest CLAUSES)" nil t) (autoload (quote anaphoric-lambda) "anaphora" "Like `lambda', but the function may refer to itself as `self'.
+
+ARGS and BODY are otherwise as documented for `lambda'.
+
+(fn ARGS &rest BODY)" nil t) (function-put (quote anaphoric-lambda) (quote lisp-indent-function) (quote defun)) (autoload (quote anaphoric-block) "anaphora" "Like `block', but the result of the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions of BODY
+except the initial one.
+
+NAME and BODY are otherwise as documented for `block'.
+
+(fn NAME &rest BODY)" nil t) (function-put (quote anaphoric-block) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-case) "anaphora" "Like `case', but the result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `case'.
+
+(fn EXPR &rest CLAUSES)" nil t) (function-put (quote anaphoric-case) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-ecase) "anaphora" "Like `ecase', but the result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `ecase'.
+
+(fn EXPR &rest CLAUSES)" nil t) (function-put (quote anaphoric-ecase) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-typecase) "anaphora" "Like `typecase', but the result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `typecase'.
+
+(fn EXPR &rest CLAUSES)" nil t) (function-put (quote anaphoric-typecase) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-etypecase) "anaphora" "Like `etypecase', but result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `etypecase'.
+
+(fn EXPR &rest CLAUSES)" nil t) (function-put (quote anaphoric-etypecase) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-let) "anaphora" "Like `let', but the result of evaluating FORM is bound to `it'.
+
+FORM and BODY are otherwise as documented for `let'.
+
+(fn FORM &rest BODY)" nil t) (function-put (quote anaphoric-let) (quote lisp-indent-function) (quote 1)) (autoload (quote anaphoric-+) "anaphora" "Like `+', but the result of evaluating the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions after the
+initial one.
+
+NUMBERS-OR-MARKERS are otherwise as documented for `+'.
+
+(fn &rest NUMBERS-OR-MARKERS)" nil t) (autoload (quote anaphoric--) "anaphora" "Like `-', but the result of evaluating the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions after the
+initial one.
+
+NUMBER-OR-MARKER and NUMBERS-OR-MARKERS are otherwise as
+documented for `-'.
+
+(fn &optional NUMBER-OR-MARKER &rest NUMBERS-OR-MARKERS)" nil t) (autoload (quote anaphoric-*) "anaphora" "Like `*', but the result of evaluating the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions after the
+initial one.
+
+NUMBERS-OR-MARKERS are otherwise as documented for `*'.
+
+(fn &rest NUMBERS-OR-MARKERS)" nil t) (autoload (quote anaphoric-/) "anaphora" "Like `/', but the result of evaluating the previous divisor is bound to `it'.
+
+The variable `it' is available within all expressions after the
+first divisor.
+
+DIVIDEND, DIVISOR, and DIVISORS are otherwise as documented for `/'.
+
+(fn DIVIDEND DIVISOR &rest DIVISORS)" nil t) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "anaphora" (quote ("anaphora-install-font-lock-keywords")))) (provide (quote anaphora-autoloads))) "request" ((request-autoloads request) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "request" (quote ("request-")))) (provide (quote request-autoloads))) "polymode" ((polymode-export poly-lock polymode-core polymode-compat polymode-test-utils polymode-classes polymode polymode-tangle polymode-methods polymode-debug polymode-autoloads polymode-weave polymode-base) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "poly-lock" (quote ("poly-lock-")))) (autoload (quote define-polymode) "polymode" "Define a new polymode MODE.
 This macro defines command MODE and an indicator variable MODE
 which becomes t when MODE is active and nil otherwise.
 
@@ -4926,108 +3792,7 @@ currently traced functions.
 If OUT-TYPE is 'buffer, print the variables in the dedicated
 buffer, if 'message issue a message, if nil just return a list of values.
 
-(fn &optional OUT-TYPE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-debug" (quote ("pm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-export" (quote ("pm-" "poly")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-methods" (quote ("pm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-test-utils" (quote ("pm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-weave" (quote ("pm-" "polymode-")))) (provide (quote polymode-autoloads))) "markdown-mode" ((markdown-mode-autoloads markdown-mode) (autoload (quote markdown-mode) "markdown-mode" "Major mode for editing Markdown files.
-
-(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.markdown\\'" . markdown-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.md\\'" . markdown-mode))) (autoload (quote gfm-mode) "markdown-mode" "Major mode for editing GitHub Flavored Markdown files.
-
-(fn)" t nil) (autoload (quote markdown-view-mode) "markdown-mode" "Major mode for viewing Markdown content.
-
-(fn)" t nil) (autoload (quote gfm-view-mode) "markdown-mode" "Major mode for viewing GitHub Flavored Markdown content.
-
-(fn)" t nil) (autoload (quote markdown-live-preview-mode) "markdown-mode" "Toggle native previewing on save for a specific markdown file.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "markdown-mode" (quote ("gfm-" "markdown" "defun-markdown-")))) (provide (quote markdown-mode-autoloads))) "simple-httpd" ((simple-httpd simple-httpd-autoloads) (autoload (quote httpd-start) "simple-httpd" "Start the web server process. If the server is already
-running, this will restart the server. There is only one server
-instance per Emacs instance.
-
-(fn)" t nil) (autoload (quote httpd-stop) "simple-httpd" "Stop the web server if it is currently running, otherwise do nothing.
-
-(fn)" t nil) (autoload (quote httpd-running-p) "simple-httpd" "Return non-nil if the simple-httpd server is running.
-
-(fn)" nil nil) (autoload (quote httpd-serve-directory) "simple-httpd" "Start the web server with given `directory' as `httpd-root'.
-
-(fn DIRECTORY)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "simple-httpd" (quote ("httpd" "defservlet" "with-httpd-buffer")))) (provide (quote simple-httpd-autoloads))) "js2-mode" ((js2-mode js2-imenu-extras js2-mode-autoloads js2-old-indent) (autoload (quote js2-imenu-extras-setup) "js2-imenu-extras" "
-
-(fn)" nil nil) (autoload (quote js2-imenu-extras-mode) "js2-imenu-extras" "Toggle Imenu support for frameworks and structural patterns.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "js2-imenu-extras" (quote ("js2-imenu-")))) (autoload (quote js2-highlight-unused-variables-mode) "js2-mode" "Toggle highlight of unused variables.
-
-(fn &optional ARG)" t nil) (autoload (quote js2-minor-mode) "js2-mode" "Minor mode for running js2 as a background linter.
-This allows you to use a different major mode for JavaScript editing,
-such as `js-mode', while retaining the asynchronous error/warning
-highlighting features of `js2-mode'.
-
-(fn &optional ARG)" t nil) (autoload (quote js2-mode) "js2-mode" "Major mode for editing JavaScript code.
-
-(fn)" t nil) (autoload (quote js2-jsx-mode) "js2-mode" "Major mode for editing JSX code in Emacs 26 and earlier.
-
-To edit JSX code in Emacs 27, use `js-mode' as your major mode
-with `js2-minor-mode' enabled.
-
-To customize the indentation for this mode, set the SGML offset
-variables (`sgml-basic-offset' et al) locally, like so:
-
-  (defun set-jsx-indentation ()
-    (setq-local sgml-basic-offset js2-basic-offset))
-  (add-hook \\='js2-jsx-mode-hook #\\='set-jsx-indentation)
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "js2-mode" (quote ("js2-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "js2-old-indent" (quote ("js2-")))) (provide (quote js2-mode-autoloads))) "skewer-mode" ((skewer-repl skewer-css skewer-setup skewer-bower skewer-html skewer-mode cache-table skewer-mode-autoloads skewer-mode-pkg) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "cache-table" (quote ("cache-table-")))) (autoload (quote skewer-bower-refresh) "skewer-bower" "Update the package listing and packages synchronously.
-
-(fn)" t nil) (autoload (quote skewer-bower-load) "skewer-bower" "Dynamically load a library from bower into the current page.
-
-(fn PACKAGE &optional VERSION)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "skewer-bower" (quote ("skewer")))) (autoload (quote skewer-css-mode) "skewer-css" "Minor mode for interactively loading new CSS rules.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "skewer-css" (quote ("skewer-css")))) (autoload (quote skewer-html-mode) "skewer-html" "Minor mode for interactively loading new HTML.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "skewer-html" (quote ("skewer-html-")))) (autoload (quote list-skewer-clients) "skewer-mode" "List the attached browsers in a buffer.
-
-(fn)" t nil) (autoload (quote skewer-mode) "skewer-mode" "Minor mode for interacting with a browser.
-
-(fn &optional ARG)" t nil) (autoload (quote run-skewer) "skewer-mode" "Attach a browser to Emacs for a skewer JavaScript REPL. Uses
-`browse-url' to launch a browser.
-
-With a prefix arugment (C-u), it will ask the filename of the
-root document.  With two prefix arguments (C-u C-u), it will use
-the contents of the current buffer as the root document.
-
-(fn &optional ARG)" t nil) (autoload (quote skewer-run-phantomjs) "skewer-mode" "Connect an inferior PhantomJS process to Skewer, returning the process.
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "skewer-mode" (quote ("skewer" "phantomjs-program-name" "httpd/skewer/")))) (autoload (quote skewer-repl--response-hook) "skewer-repl" "Catches all browser messages logging some to the REPL.
-
-(fn RESPONSE)" nil nil) (autoload (quote skewer-repl) "skewer-repl" "Start a JavaScript REPL to be evaluated in the visiting browser.
-
-(fn)" t nil) (eval-after-load (quote skewer-mode) (quote (progn (add-hook (quote skewer-response-hook) (function skewer-repl--response-hook)) (add-hook (quote skewer-repl-mode-hook) (function skewer-repl-mode-compilation-shell-hook)) (define-key skewer-mode-map (kbd "C-c C-z") (function skewer-repl))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "skewer-repl" (quote ("skewer-" "company-skewer-repl")))) (autoload (quote skewer-setup) "skewer-setup" "Fully integrate Skewer into js2-mode, css-mode, and html-mode buffers.
-
-(fn)" nil nil) (provide (quote skewer-mode-autoloads))) "ein" ((ein-kernelinfo ein-notification ein-hy ein-jupyterhub ein-pkg ein-traceback ein-query ein-core ein-classes ein-iexec ein-completer ein-websocket ein-python ein-multilang ein-kernel ob-ein ein-cell ein-scratchsheet ein-output-area ein-jupyter ein-helm ein-pytools ein-process ein-org ein-utils ein-log ein-pager ein-shared-output ein-inspector ein-connect ein-ac ein-timestamp ein-dev ein-kill-ring ein ein-contents-api ein-worksheet ein-node ein-smartrep ein-multilang-fontify ein-cell-output ein-autoloads ein-pseudo-console ein-events ein-skewer ein-file ein-cell-edit ein-subpackages ein-company poly-ein ein-console ein-ipynb-mode ein-notebooklist ein-ipdb ein-notebook) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-ac" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-cell" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-cell-edit" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-cell-output" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-classes" (quote ("ein:")))) (autoload (quote ein:company-backend) "ein-company" "
-
-(fn COMMAND &optional ARG &rest _)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-company" (quote ("ein:comp")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-completer" (quote ("ein:complet")))) (autoload (quote ein:connect-to-notebook-command) "ein-connect" "Connect to notebook.  When the prefix argument is given,
-you can choose any notebook on your server including the ones
-not yet opened.  Otherwise, already chose from already opened
-notebooks.
-
-(fn &optional NOT-YET-OPENED)" t nil) (autoload (quote ein:connect-to-notebook) "ein-connect" "Connect any buffer to notebook and its kernel.
-
-(fn NBPATH &optional BUFFER NO-RECONNECTION)" t nil) (autoload (quote ein:connect-to-notebook-buffer) "ein-connect" "Connect any buffer to opened notebook and its kernel.
-
-(fn BUFFER-OR-NAME)" t nil) (autoload (quote ein:connect-buffer-to-notebook) "ein-connect" "Connect BUFFER to NOTEBOOK.
-
-(fn NOTEBOOK &optional BUFFER NO-RECONNECTION)" nil nil) (autoload (quote ein:connect-to-default-notebook) "ein-connect" "Connect to the default notebook specified by
-`ein:connect-default-notebook'.  Set this to `python-mode-hook'
-to automatically connect any python-mode buffer to the
-notebook.
-
-(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-connect" (quote ("ein:")))) (autoload (quote ein:console-open) "ein-console" "Open IPython console.
-To use this function, `ein:console-security-dir' and
-`ein:console-args' must be set properly.
-This function works best with the new python.el_ which is shipped
-with Emacs 24.2 or later.  If you don't have it, this function
-opens a \"plain\" command line interpreter (comint) buffer where
-you cannot use fancy stuff such as TAB completion.
-It should be possible to support python-mode.el.  Patches are welcome!
-
-.. _python.el: https://github.com/fgallina/python.el
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-console" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-contents-api" (quote ("ein:" "update-content-path" "*ein:content-hierarchy*")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-core" (quote ("ein:" "*ein:")))) (autoload (quote ein:dev-insert-mode-map) "ein-dev" "Insert mode-map into rst document.  For README.rst.
+(fn &optional OUT-TYPE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-debug" (quote ("pm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-export" (quote ("pm-" "poly")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-methods" (quote ("pm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-test-utils" (quote ("pm-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "polymode-weave" (quote ("pm-" "polymode-")))) (provide (quote polymode-autoloads))) "ein" ((ein-shared-output ein-file ein-query ein-events ein-node ein-output-area ein ein-completer ob-ein ein-notebooklist ein-jupyterhub ein-kill-ring ein-process ein-kernel ein-ipdb ein-pkg ein-python-send ein-log ein-cell ein-ipynb-mode ein-autoloads ein-utils ein-scratchsheet ein-pytools ein-dev ein-classes ein-jupyter ein-websocket ein-pager ein-markdown-mode ein-notification ein-worksheet ein-core ein-kernelinfo poly-ein ein-contents-api ein-traceback ein-notebook) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-cell" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-classes" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-contents-api" (quote ("ein:" "*ein:content-hierarchy*")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-core" (quote ("ein:" "*ein:")))) (autoload (quote ein:dev-insert-mode-map) "ein-dev" "Insert mode-map into rst document.  For README.rst.
 
 (fn MAP-STRING)" nil nil) (autoload (quote ein:dev-start-debug) "ein-dev" "Enable EIN debugging support.
 When the prefix argument is given, debugging support for websocket
@@ -5037,49 +3802,29 @@ callback (`websocket-callback-debug-on-error') is enabled.
 
 (fn)" t nil) (autoload (quote ein:dev-bug-report-template) "ein-dev" "Open a buffer with bug report template.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-dev" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-events" (quote ("ein:events-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-file" (quote ("ein:" "*ein:file-buffername-template*")))) (autoload (quote anything-ein-kernel-history) "ein-helm" "Search kernel execution history then insert the selected one.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-dev" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-events" (quote ("ein:events-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-file" (quote ("ein:" "*ein:file-buffername-template*")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-ipdb" (quote ("ein:" "*ein:ipdb-")))) (autoload (quote ein:ipynb-mode) "ein-ipynb-mode" "A simple mode for ipynb file.
 
-(fn)" t nil) (autoload (quote helm-ein-kernel-history) "ein-helm" "Search kernel execution history then insert the selected one.
+(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote (".*\\.ipynb\\'" . ein:ipynb-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-ipynb-mode" (quote ("ein:ipynb-parent-mode")))) (autoload (quote ein:jupyter-crib-token) "ein-jupyter" "Shell out to jupyter for its credentials knowledge.  Return list of (PASSWORD TOKEN).
 
-(fn)" t nil) (autoload (quote anything-ein-notebook-buffers) "ein-helm" "Choose opened notebook using anything.el interface.
+(fn URL-OR-PORT)" nil nil) (autoload (quote ein:jupyter-crib-running-servers) "ein-jupyter" "Shell out to jupyter for running servers.
 
-(fn)" t nil) (autoload (quote helm-ein-notebook-buffers) "ein-helm" "Choose opened notebook using helm interface.
+(fn)" nil nil) (autoload (quote ein:jupyter-server-start) "ein-jupyter" "Start SERVER-COMMAND with `--notebook-dir' NOTEBOOK-DIRECTORY.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-helm" (quote ("ein:helm-")))) (autoload (quote ein:iexec-mode) "ein-iexec" "Instant cell execution minor mode.
-Code cell at point will be automatically executed after any
-change in its input area.
+Login after connection established unless NO-LOGIN-P is set.
+LOGIN-CALLBACK takes two arguments, the buffer created by
+`ein:notebooklist-open--finish', and the url-or-port argument
+of `ein:notebooklist-open*'.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-iexec" (quote ("ein:iexec-")))) (autoload (quote ein:inspect-object) "ein-inspector" "
+With \\[universal-argument] prefix arg, prompt the user for the
+server command.
 
-(fn KERNEL OBJECT)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-inspector" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-ipdb" (quote ("ein:" "*ein:ipdb-")))) (autoload (quote ein:ipynb-mode) "ein-ipynb-mode" "A simple mode for ipynb file.
+(fn SERVER-COMMAND NOTEBOOK-DIRECTORY &optional NO-LOGIN-P LOGIN-CALLBACK PORT)" t nil) (defalias (quote ein:run) (quote ein:jupyter-server-start)) (defalias (quote ein:stop) (quote ein:jupyter-server-stop)) (autoload (quote ein:jupyter-server-stop) "ein-jupyter" "
 
-(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote (".*\\.ipynb\\'" . ein:ipynb-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-ipynb-mode" (quote ("ein:ipynb-parent-mode")))) (autoload (quote ein:jupyter-server-start) "ein-jupyter" "Start SERVER-CMD_PATH with `--notebook-dir' NOTEBOOK-DIRECTORY.  Login after connection established unless NO-LOGIN-P is set.  LOGIN-CALLBACK takes two arguments, the buffer created by ein:notebooklist-open--finish, and the url-or-port argument of ein:notebooklist-open*.
+(fn &optional FORCE LOG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-jupyter" (quote ("ein:" "*ein:jupyter-server-")))) (autoload (quote ein:jupyterhub-connect) "ein-jupyterhub" "Log on to a jupyterhub server using PAM authentication. Requires jupyterhub version 0.8 or greater.  CALLBACK takes two arguments, the resulting buffer and the singleuser url-or-port
 
-This command opens an asynchronous process running the jupyter
-notebook server and then tries to detect the url and password to
-generate automatic calls to `ein:notebooklist-login' and
-`ein:notebooklist-open'.
+(fn URL-OR-PORT USERNAME PASSWORD CALLBACK)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-jupyterhub" (quote ("ein:" "*ein:jupyterhub-connections*")))) (defalias (quote ein:kernel-url-or-port) (quote ein:$kernel-url-or-port)) (defalias (quote ein:kernel-id) (quote ein:$kernel-kernel-id)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-kernel" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-kernelinfo" (quote ("ein:kernelinfo")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-kill-ring" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-log" (quote ("ein:")))) (autoload (quote ein:markdown-mode) "ein-markdown-mode" "Major mode for editing ein:markdown files.
 
-With \\[universal-argument] prefix arg, it will prompt the user for the path to
-the jupyter executable first. Else, it will try to use the
-value of `*ein:last-jupyter-command*' or the value of the
-customizable variable `ein:jupyter-default-server-command'.
-
-Then it prompts the user for the path of the root directory
-containing the notebooks the user wants to access.
-
-The buffer named by `ein:jupyter-server-buffer-name' will contain
-the log of the running jupyter server.
-
-(fn SERVER-CMD-PATH NOTEBOOK-DIRECTORY &optional NO-LOGIN-P LOGIN-CALLBACK PORT)" t nil) (defalias (quote ein:run) (quote ein:jupyter-server-start)) (defalias (quote ein:stop) (quote ein:jupyter-server-stop)) (autoload (quote ein:jupyter-server-stop) "ein-jupyter" "
-
-(fn &optional FORCE LOG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-jupyter" (quote ("ein:" "*ein:")))) (autoload (quote ein:jupyterhub-connect) "ein-jupyterhub" "Log on to a jupyterhub server using PAM authentication. Requires jupyterhub version 0.8 or greater.  CALLBACK takes two arguments, the resulting buffer and the singleuser url-or-port
-
-(fn URL-OR-PORT USERNAME PASSWORD CALLBACK)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-jupyterhub" (quote ("ein:" "*ein:jupyterhub-connections*")))) (defalias (quote ein:kernel-url-or-port) (quote ein:$kernel-url-or-port)) (defalias (quote ein:kernel-id) (quote ein:$kernel-kernel-id)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-kernel" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-kernelinfo" (quote ("ein:kernelinfo")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-kill-ring" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-log" (quote ("ein:")))) (autoload (quote ein:notebook-multilang-mode) "ein-multilang" "A mode for fontifying multiple languages.
-
-\\{ein:notebook-multilang-mode-map}
-
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-multilang" (quote ("ein:" "python-imenu-format-parent-item-jump-label")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-multilang-fontify" (quote ("ein:mlf-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-node" (quote ("ein:")))) (defalias (quote ein:notebook-name) (quote ein:$notebook-notebook-name)) (autoload (quote ein:notebook-jump-to-opened-notebook) "ein-notebook" "List all opened notebook buffers and switch to one that the user selects.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-markdown-mode" (quote ("ein:markdown" "defun-markdown-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-node" (quote ("ein:")))) (defalias (quote ein:notebook-name) (quote ein:$notebook-notebook-name)) (autoload (quote ein:notebook-jump-to-opened-notebook) "ein-notebook" "List all opened notebook buffers and switch to one that the user selects.
 
 (fn NOTEBOOK)" t nil) (autoload (quote ein:notebook-open) "ein-notebook" "Returns notebook at URL-OR-PORT/PATH.
 
@@ -5091,21 +3836,9 @@ After the notebook is opened, CALLBACK is called as::
 
 where `created' indicates a new notebook or an existing one.
 
-(fn URL-OR-PORT PATH &optional KERNELSPEC CALLBACK ERRBACK NO-POP)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-notebook" (quote ("ein:" "*ein:notebook--pending-query*")))) (autoload (quote ein:notebooklist-enable-keepalive) "ein-notebooklist" "Enable periodic calls to the notebook server to keep long running sessions from expiring.
-By long running we mean sessions to last days, or weeks. The
-frequency of the refresh (which is very similar to a call to
-`ein:notebooklist-open`) is controlled by
-`ein:notebooklist-keepalive-refresh-time`, and is measured in
-terms of hours. If `ein:enable-keepalive' is non-nil this will
-automatically be called during calls to `ein:notebooklist-open`.
+(fn URL-OR-PORT PATH &optional KERNELSPEC CALLBACK ERRBACK NO-POP)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-notebook" (quote ("ein:" "*ein:notebook--pending-query*")))) (autoload (quote ein:notebooklist-reload) "ein-notebooklist" "Reload current Notebook list.
 
-(fn &optional URL-OR-PORT)" t nil) (autoload (quote ein:notebooklist-disable-keepalive) "ein-notebooklist" "Disable the notebooklist keepalive calls to the jupyter notebook server.
-
-(fn)" t nil) (autoload (quote ein:notebooklist-reload) "ein-notebooklist" "Reload current Notebook list.
-
-(fn &optional NBLIST RESYNC CALLBACK)" t nil) (autoload (quote ein:notebooklist-upload-file) "ein-notebooklist" "
-
-(fn UPLOAD-PATH)" t nil) (autoload (quote ein:notebooklist-new-notebook) "ein-notebooklist" "
+(fn &optional NBLIST RESYNC CALLBACK)" t nil) (autoload (quote ein:notebooklist-new-notebook) "ein-notebooklist" "
 
 (fn URL-OR-PORT KERNELSPEC &optional CALLBACK NO-POP RETRY)" t nil) (autoload (quote ein:notebooklist-new-notebook-with-name) "ein-notebooklist" "Upon notebook-open, rename the notebook, then funcall CALLBACK.
 
@@ -5123,12 +3856,6 @@ or even this (if you want fast Emacs start-up)::
   ;; load notebook list if Emacs is idle for 3 sec after start-up
   (run-with-idle-timer 3 nil #'ein:notebooklist-load)
 
-You should setup `ein:url-or-port' or `ein:default-url-or-port'
-in order to make this code work.
-
-See also:
-`ein:connect-to-default-notebook', `ein:connect-default-notebook'.
-
 (fn &optional URL-OR-PORT)" nil nil) (autoload (quote ein:notebooklist-open) "ein-notebooklist" "This is now an alias for ein:notebooklist-login
 
 (fn URL-OR-PORT CALLBACK)" t nil) (defalias (quote ein:login) (quote ein:notebooklist-login)) (autoload (quote ein:notebooklist-login) "ein-notebooklist" "Deal with security before main entry of ein:notebooklist-open*.
@@ -5136,58 +3863,19 @@ See also:
 CALLBACK takes two arguments, the buffer created by ein:notebooklist-open--success
 and the url-or-port argument of ein:notebooklist-open*.
 
-(fn URL-OR-PORT CALLBACK &optional COOKIE-PLIST)" t nil) (autoload (quote ein:notebooklist-change-url-port) "ein-notebooklist" "Update the ipython/jupyter notebook server URL for all the
-notebooks currently opened from the current notebooklist buffer.
-
-This function works by calling `ein:notebook-update-url-or-port'
-on all the notebooks opened from the current notebooklist.
-
-(fn NEW-URL-OR-PORT)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-notebooklist" (quote ("ein:" "render-" "generate-breadcrumbs")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-notification" (quote ("ein:")))) (autoload (quote ein:org-open) "ein-org" "Open IPython notebook specified by LINK-PATH.
-This function is to be used for FOLLOW function of
-`org-add-link-type'.
-
-(fn LINK-PATH)" nil nil) (autoload (quote ein:org-store-link) "ein-org" "Call `org-store-link-props' when in notebook buffer.
-This function is to be used for `org-store-link-functions'.
-
-Examples::
-
-  ipynb:(:url-or-port 8888 :name \"My_Notebook\")
-  ipynb:(:url-or-port \"http://notebook-server\" :name \"My_Notebook\")
-
-Note that spaces will be escaped in org files.
-
-As how IPython development team supports multiple directory in
-IPython notebook server is unclear, it is not easy to decide the
-format for notebook links.  Current approach is to use
-S-expression based (rather verbose) serialization, so that
-extending link spec without loosing backward compatibility is
-easier.  For the examples of link format in general, see Info
-node `(org) External links' and Info node `(org) Search options'
-
-(fn)" nil nil) (eval-after-load "org" (quote (if (fboundp (quote org-link-set-parameters)) (org-link-set-parameters "ipynb" :follow (quote ein:org-open) :help-echo "Open ipython notebook." :store (quote ein:org-store-link)) (org-add-link-type "ipynb" :follow (quote ein:org-open)) (add-hook (quote org-store-link-functions) (quote ein:org-store-link))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-org" (quote ("ein:org-goto-link")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-output-area" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-pager" (quote ("ein:pager-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-process" (quote ("ein:")))) (autoload (quote ein:pseudo-console-mode) "ein-pseudo-console" "Pseudo console mode.  Hit RET to execute code.
-
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-pseudo-console" (quote ("ein:pseudo-console-mode-map")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-python" (quote ("ein:python-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-pytools" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-query" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-scratchsheet" (quote ("ein:scratchsheet")))) (autoload (quote ein:shared-output-pop-to-buffer) "ein-shared-output" "Open shared output buffer.
+(fn URL-OR-PORT CALLBACK &optional COOKIE-PLIST TOKEN)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-notebooklist" (quote ("ein:" "render-" "generate-breadcrumbs")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-notification" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-output-area" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-pager" (quote ("ein:pager-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-process" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-python-send" (quote ("ein:python-send-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-pytools" (quote ("ein:pytools-jump-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-query" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-scratchsheet" (quote ("ein:scratchsheet")))) (autoload (quote ein:shared-output-pop-to-buffer) "ein-shared-output" "Open shared output buffer.
 
 (fn)" t nil) (autoload (quote ein:shared-output-show-code-cell-at-point) "ein-shared-output" "Show code cell at point in shared-output buffer.
 It is useful when the output of the cell at point is truncated.
 See also `ein:cell-max-num-outputs'.
 
-(fn)" t nil) (autoload (quote ein:shared-output-eval-string) "ein-shared-output" "Evaluate a piece of code.  Prompt will appear asking the code to run.
-This is handy when you want to execute something quickly without
-making a cell.  If the code outputs something, it will go to the
-shared output buffer.  You can open the buffer by the command
-`ein:shared-output-pop-to-buffer'.
+(fn)" t nil) (autoload (quote ein:shared-output-eval-string) "ein-shared-output" "Entry to `ein:cell-execute-internal' from the shared output cell.
 
-.. ARGS is passed to `ein:kernel-execute'.  Unlike `ein:kernel-execute',
-   `:silent' is `nil' by default.
+(fn KERNEL CODE &rest ARGS)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-shared-output" (quote ("ein:" "*ein:shared-output*")))) (autoload (quote ein:tb-show) "ein-traceback" "Show full traceback in traceback viewer.
 
-(fn KERNEL CODE POPUP &rest ARGS)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-shared-output" (quote ("ein:" "*ein:shared-output*")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-skewer" (quote ("ein:" "*ein:skewer-" "current-jupyter-cell-output")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-smartrep" (quote ("ein:smartrep-notebook-mode-alist")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-subpackages" (quote ("ein:completion-backend")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-timestamp" (quote ("ein:timestamp-")))) (autoload (quote ein:tb-show) "ein-traceback" "Show full traceback in traceback viewer.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-traceback" (quote ("ein:t")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-utils" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-websocket" (quote ("ein:" "fix-request-netscape-cookie-parse")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-worksheet" (quote ("ein:" "hof-add")))) (if (featurep (quote org)) (let* ((orig (get (quote org-babel-load-languages) (quote custom-type))) (orig-cdr (cdr orig)) (choices (plist-get orig-cdr :key-type))) (push (quote (const :tag "Ein" ein)) (nthcdr 1 choices)) (put (quote org-babel-load-languages) (quote custom-type) (cons (car orig) (plist-put orig-cdr :key-type choices))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ein" (quote ("ob-ein-" "*ob-ein-sentinel*")))) (autoload (quote poly-ein-mode) "poly-ein") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "poly-ein" (quote ("pm-" "poly-ein-")))) (provide (quote ein-autoloads))) "elisp-slime-nav" ((elisp-slime-nav elisp-slime-nav-autoloads) (autoload (quote elisp-slime-nav-mode) "elisp-slime-nav" "Enable Slime-style navigation of elisp symbols using M-. and M-,
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-traceback" (quote ("ein:t")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-utils" (quote ("ein:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-websocket" (quote ("ein:" "fix-request-netscape-cookie-parse")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ein-worksheet" (quote ("ein:" "hof-add")))) (if (featurep (quote org)) (let* ((orig (get (quote org-babel-load-languages) (quote custom-type))) (orig-cdr (cdr orig)) (choices (plist-get orig-cdr :key-type))) (push (quote (const :tag "Ein" ein)) (nthcdr 1 choices)) (put (quote org-babel-load-languages) (quote custom-type) (cons (car orig) (plist-put orig-cdr :key-type choices))))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-ein" (quote ("ob-ein-" "org-babel-edit-prep:ein" "*ob-ein-sentinel*")))) (autoload (quote poly-ein-mode) "poly-ein") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "poly-ein" (quote ("pm-" "poly-ein-" "ein:polymode")))) (provide (quote ein-autoloads))) "elisp-slime-nav" ((elisp-slime-nav elisp-slime-nav-autoloads) (autoload (quote elisp-slime-nav-mode) "elisp-slime-nav" "Enable Slime-style navigation of elisp symbols using M-. and M-,
-
-(fn &optional ARG)" t nil) (autoload (quote turn-on-elisp-slime-nav-mode) "elisp-slime-nav" "Explicitly enable `elisp-slime-nav-mode'.
-
-(fn)" nil nil) (autoload (quote elisp-slime-nav-find-elisp-thing-at-point) "elisp-slime-nav" "Find the elisp thing at point, be it a function, variable, library or face.
+(fn &optional ARG)" t nil) (define-obsolete-function-alias (quote turn-on-elisp-slime-nav-mode) (quote elisp-slime-nav-mode) "2020-01-30") (autoload (quote elisp-slime-nav-find-elisp-thing-at-point) "elisp-slime-nav" "Find the elisp thing at point, be it a function, variable, library or face.
 
 With a prefix arg, or if there is no thing at point, prompt for
 the symbol to jump to.
@@ -5203,7 +3891,7 @@ for the symbol to jump to.
 
 Argument SYM-NAME is the thing to find.
 
-(fn SYM-NAME)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elisp-slime-nav" (quote ("elisp-slime-nav-")))) (provide (quote elisp-slime-nav-autoloads))) "f" ((f-autoloads f) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "f" (quote ("f-")))) (provide (quote f-autoloads))) "overseer" ((overseer overseer-autoloads) (autoload (quote overseer-version) "overseer" "Get the Overseer version as string.
+(fn SYM-NAME)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elisp-slime-nav" (quote ("elisp-slime-nav-")))) (provide (quote elisp-slime-nav-autoloads))) "f" ((f-autoloads f) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "f" (quote ("f-")))) (provide (quote f-autoloads))) "overseer" ((overseer-autoloads overseer) (autoload (quote overseer-version) "overseer" "Get the Overseer version as string.
 
 If called interactively or if SHOW-VERSION is non-nil, show the
 version in the echo area and the messages buffer.
@@ -5222,7 +3910,7 @@ Key bindings:
 
 (fn &optional ARG)" t nil) (autoload (quote overseer-enable-mode) "overseer" "
 
-(fn)" nil nil) (dolist (hook (quote (emacs-lisp-mode-hook))) (add-hook hook (quote overseer-enable-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "overseer" (quote ("overseer-")))) (provide (quote overseer-autoloads))) "macrostep" ((macrostep-autoloads macrostep macrostep-c) (autoload (quote macrostep-mode) "macrostep" "Minor mode for inline expansion of macros in Emacs Lisp source buffers.
+(fn)" nil nil) (dolist (hook (quote (emacs-lisp-mode-hook))) (add-hook hook (quote overseer-enable-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "overseer" (quote ("overseer-")))) (provide (quote overseer-autoloads))) "macrostep" ((macrostep macrostep-autoloads macrostep-c) (autoload (quote macrostep-mode) "macrostep" "Minor mode for inline expansion of macros in Emacs Lisp source buffers.
 
 \\<macrostep-keymap>Progressively expand macro forms with \\[macrostep-expand], collapse them with \\[macrostep-collapse],
 and move back and forth with \\[macrostep-next-macro] and \\[macrostep-prev-macro].
@@ -5245,7 +3933,7 @@ behaviors.
 
 (fn &optional TOGGLE-SEPARATE-BUFFER)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "macrostep" (quote ("macrostep-")))) (autoload (quote macrostep-c-mode-hook) "macrostep-c" "
 
-(fn)" nil nil) (add-hook (quote c-mode-hook) (function macrostep-c-mode-hook)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "macrostep-c" (quote ("macrostep-c-")))) (provide (quote macrostep-autoloads))) "slime" ((slime-tests slime slime-autoloads) (add-to-list (quote load-path) (directory-file-name (or (file-name-directory "/home/ksm/.emacs.d/straight/build/slime/slime-autoloads.el") (car load-path)))) (autoload (quote slime) "slime" "Start a Lisp subprocess and connect to its Swank server." t) (autoload (quote slime-mode) "slime" "SLIME: The Superior Lisp Interaction (Minor) Mode for Emacs." t) (autoload (quote slime-connect) "slime" "Connect to a running Swank server." t) (autoload (quote slime-selector) "slime" "Select a new by type, indicated by a single character." t) (autoload (quote hyperspec-lookup) "lib/hyperspec" nil t) (autoload (quote slime-lisp-mode-hook) "slime") (autoload (quote slime-scheme-mode-hook) "slime") (defvar slime-contribs nil "A list of contrib packages to load with SLIME.") (autoload (quote slime-setup) "slime" "Setup some SLIME contribs.") (define-obsolete-variable-alias (quote slime-setup-contribs) (quote slime-contribs) "2.3.2") (add-hook (quote lisp-mode-hook) (quote slime-lisp-mode-hook)) (provide (quote slime-autoloads))) "slime-company" ((slime-company-autoloads slime-company) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slime-company" (quote ("company-slime" "slime-company")))) (provide (quote slime-company-autoloads))) "go-mode" ((go-mode-autoloads go-mode) (autoload (quote go-mode) "go-mode" "Major mode for editing Go source text.
+(fn)" nil nil) (add-hook (quote c-mode-hook) (function macrostep-c-mode-hook)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "macrostep-c" (quote ("macrostep-c-")))) (provide (quote macrostep-autoloads))) "slime" ((slime-tests slime slime-autoloads) (add-to-list (quote load-path) (directory-file-name (or (file-name-directory "/home/ksm/.emacs.d/straight/build/slime/slime-autoloads.el") (car load-path)))) (autoload (quote slime) "slime" "Start a Lisp subprocess and connect to its Swank server." t) (autoload (quote slime-mode) "slime" "SLIME: The Superior Lisp Interaction (Minor) Mode for Emacs." t) (autoload (quote slime-connect) "slime" "Connect to a running Swank server." t) (autoload (quote slime-selector) "slime" "Select a new by type, indicated by a single character." t) (autoload (quote hyperspec-lookup) "lib/hyperspec" nil t) (autoload (quote slime-lisp-mode-hook) "slime") (autoload (quote slime-scheme-mode-hook) "slime") (defvar slime-contribs (quote (slime-fancy)) "A list of contrib packages to load with SLIME.") (autoload (quote slime-setup) "slime" "Setup some SLIME contribs.") (define-obsolete-variable-alias (quote slime-setup-contribs) (quote slime-contribs) "2.3.2") (add-hook (quote lisp-mode-hook) (quote slime-lisp-mode-hook)) (provide (quote slime-autoloads))) "slime-company" ((slime-company slime-company-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slime-company" (quote ("company-slime" "slime-company")))) (provide (quote slime-company-autoloads))) "go-mode" ((go-mode-autoloads go-mode) (autoload (quote go-mode) "go-mode" "Major mode for editing Go source text.
 
 This mode provides (not just) basic editing capabilities for
 working with Go code. It offers almost complete syntax
@@ -5318,7 +4006,9 @@ you save any file, kind of defeating the point of autoloading.
 (fn QUERY)" t nil) (autoload (quote go-download-play) "go-mode" "Download a paste from the playground and insert it in a Go buffer.
 Tries to look for a URL at point.
 
-(fn URL)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-mode" (quote ("gofmt" "god" "go-")))) (provide (quote go-mode-autoloads))) "go-guru" ((go-guru-autoloads go-guru) (autoload (quote go-guru-set-scope) "go-guru" "Set the scope for the Go guru, prompting the user to edit the previous scope.
+(fn URL)" t nil) (autoload (quote go-dot-mod-mode) "go-mode" "A major mode for editing go.mod files.
+
+(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("go\\.mod\\'" . go-dot-mod-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-mode" (quote ("gofmt" "god" "go-")))) (provide (quote go-mode-autoloads))) "go-guru" ((go-guru go-guru-autoloads) (autoload (quote go-guru-set-scope) "go-guru" "Set the scope for the Go guru, prompting the user to edit the previous scope.
 
 The scope restricts analysis to the specified packages.
 Its value is a comma-separated list of patterns of these forms:
@@ -5367,110 +4057,17 @@ highlights from previously highlighted identifier.
 (fn)" t nil) (autoload (quote go-guru-hl-identifier-mode) "go-guru" "Highlight instances of the identifier at point after a short
 timeout.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-guru" (quote ("go-guru-")))) (provide (quote go-guru-autoloads))) "company-go" ((company-go-autoloads company-go) (autoload (quote company-go) "company-go" "
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-guru" (quote ("go-guru-")))) (provide (quote go-guru-autoloads))) "company-go" ((company-go company-go-autoloads) (autoload (quote company-go) "company-go" "
 
-(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-go" (quote ("company-go-")))) (provide (quote company-go-autoloads))) "go-eldoc" ((go-eldoc-autoloads go-eldoc) (autoload (quote go-eldoc-setup) "go-eldoc" "Set up eldoc function and enable eldoc-mode.
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-go" (quote ("company-go-")))) (provide (quote company-go-autoloads))) "go-eldoc" ((go-eldoc go-eldoc-autoloads) (autoload (quote go-eldoc-setup) "go-eldoc" "Set up eldoc function and enable eldoc-mode.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-eldoc" (quote ("go-eldoc-")))) (provide (quote go-eldoc-autoloads))) "go-dlv" ((go-dlv go-dlv-autoloads) (autoload (quote dlv) "go-dlv" "Run dlv on program FILE in buffer `*gud-FILE*'.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-eldoc" (quote ("go-eldoc-")))) (provide (quote go-eldoc-autoloads))) "go-dlv" ((go-dlv-autoloads go-dlv) (autoload (quote dlv) "go-dlv" "Run dlv on program FILE in buffer `*gud-FILE*'.
 The directory containing FILE becomes the initial working directory
 and source-file directory for your debugger.
 
 (fn COMMAND-LINE)" t nil) (autoload (quote dlv-current-func) "go-dlv" "Debug the current program or test stopping at the beginning of the current function.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-dlv" (quote ("go-dlv-")))) (provide (quote go-dlv-autoloads))) "geiser" ((geiser-connection geiser-custom geiser-menu geiser-log geiser-racket geiser-doc geiser-reload geiser-chez geiser-eval geiser-repl geiser-autoloads geiser-mode geiser-chicken geiser-xref geiser-autodoc geiser-chibi geiser-image geiser-base geiser-popup geiser geiser-syntax geiser-completion geiser-mit geiser-version geiser-compile geiser-impl geiser-debug geiser-company geiser-edit geiser-guile geiser-table geiser-gambit) (defconst geiser-elisp-dir (file-name-directory load-file-name) "Directory containing Geiser's Elisp files.") (defconst geiser-scheme-dir (let ((d (expand-file-name "./scheme/" geiser-elisp-dir))) (if (file-directory-p d) d (expand-file-name "../scheme/" geiser-elisp-dir))) "Directory containing Geiser's Scheme files.") (add-to-list (quote load-path) (directory-file-name geiser-elisp-dir)) (autoload (quote geiser-version) "geiser-version" "Echo Geiser's version." t) (autoload (quote geiser-unload) "geiser-reload" "Unload all Geiser code." t) (autoload (quote geiser-reload) "geiser-reload" "Reload Geiser code." t) (autoload (quote geiser) "geiser-repl" "Start a Geiser REPL, or switch to a running one." t) (autoload (quote run-geiser) "geiser-repl" "Start a Geiser REPL." t) (autoload (quote geiser-connect) "geiser-repl" "Start a Geiser REPL connected to a remote server." t) (autoload (quote geiser-connect-local) "geiser-repl" "Start a Geiser REPL connected to a remote server over a Unix-domain socket." t) (autoload (quote switch-to-geiser) "geiser-repl" "Switch to a running one Geiser REPL." t) (autoload (quote run-chez) "geiser-chez" "Start a Geiser Chez REPL." t) (autoload (quote switch-to-chez) "geiser-chez" "Start a Geiser Chez REPL, or switch to a running one." t) (autoload (quote run-guile) "geiser-guile" "Start a Geiser Guile REPL." t) (autoload (quote switch-to-guile) "geiser-guile" "Start a Geiser Guile REPL, or switch to a running one." t) (autoload (quote connect-to-guile) "geiser-guile" "Connect to a remote Geiser Guile REPL." t) (autoload (quote run-gambit) "geiser-gambit" "Start a Geiser Gambit REPL." t) (autoload (quote switch-to-gambit) "geiser-gambit" "Start a Geiser Gambit REPL, or switch to a running one." t) (autoload (quote connect-to-gambit) "geiser-gambit" "Connect to a remote Geiser Gambit REPL." t) (autoload (quote run-racket) "geiser-racket" "Start a Geiser Racket REPL." t) (autoload (quote run-gracket) "geiser-racket" "Start a Geiser GRacket REPL." t) (autoload (quote switch-to-racket) "geiser-racket" "Start a Geiser Racket REPL, or switch to a running one." t) (autoload (quote connect-to-racket) "geiser-racket" "Connect to a remote Geiser Racket REPL." t) (autoload (quote run-chicken) "geiser-chicken" "Start a Geiser Chicken REPL." t) (autoload (quote switch-to-chicken) "geiser-chicken" "Start a Geiser Chicken REPL, or switch to a running one." t) (autoload (quote connect-to-chicken) "geiser-chicken" "Connect to a remote Geiser Chicken REPL." t) (autoload (quote run-mit) "geiser-mit" "Start a Geiser MIT/GNU Scheme REPL." t) (autoload (quote switch-to-mit) "geiser-mit" "Start a Geiser MIT/GNU Scheme REPL, or switch to a running one." t) (autoload (quote run-chibi) "geiser-chibi" "Start a Geiser Chibi Scheme REPL." t) (autoload (quote switch-to-chibi) "geiser-chibi" "Start a Geiser Chibi Scheme REPL, or switch to a running one." t) (autoload (quote geiser-mode) "geiser-mode" "Minor mode adding Geiser REPL interaction to Scheme buffers." t) (autoload (quote turn-on-geiser-mode) "geiser-mode" "Enable Geiser's mode (useful in Scheme buffers)." t) (autoload (quote turn-off-geiser-mode) "geiser-mode" "Disable Geiser's mode (useful in Scheme buffers)." t) (autoload (quote geiser-mode--maybe-activate) "geiser-mode") (mapc (lambda (group) (custom-add-load group (symbol-name group)) (custom-add-load (quote geiser) (symbol-name group))) (quote (geiser geiser-repl geiser-autodoc geiser-doc geiser-debug geiser-faces geiser-mode geiser-guile geiser-gambit geiser-image geiser-racket geiser-chicken geiser-chez geiser-chibi geiser-mit geiser-implementation geiser-xref))) (add-hook (quote scheme-mode-hook) (quote geiser-mode--maybe-activate)) (add-to-list (quote auto-mode-alist) (quote ("\\.rkt\\'" . scheme-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-autodoc" (quote ("geiser-autodoc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-base" (quote ("geiser--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-chez" (quote ("chez" "geiser-chez-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-chibi" (quote ("chibi" "geiser-chibi-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-chicken" (quote ("connect-to-chicken" "chicken" "geiser-chicken")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-company" (quote ("geiser-company--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-compile" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-completion" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-connection" (quote ("geiser-con")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-custom" (quote ("geiser-custom-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-debug" (quote ("geiser-debug-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-doc" (quote ("geiser-doc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-edit" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-eval" (quote ("geiser-eval--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-gambit" (quote ("geiser-gambit-" "gambit" "connect-to-gambit")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-guile" (quote ("geiser-guile-" "guile" "connect-to-guile")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-image" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-impl" (quote ("geiser-" "with--geiser-implementation" "define-geiser-implementation")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-log" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-menu" (quote ("geiser-menu--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-mit" (quote ("mit" "geiser-mit-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-mode" (quote ("geiser-" "turn-o")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-popup" (quote ("geiser-popup-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-racket" (quote ("racket" "run-gracket" "geiser-racket-" "connect-to-racket")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-reload" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-repl" (quote ("geiser" "switch-to-geiser" "run-geiser")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-syntax" (quote ("geiser-syntax--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-table" (quote ("geiser-table-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-version" (quote ("geiser-version")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-xref" (quote ("geiser-xref-")))) (provide (quote geiser-autoloads))) "clojure-mode-extra-font-locking" ((clojure-mode-extra-font-locking clojure-mode-extra-font-locking-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "clojure-mode-extra-font-locking" (quote ("clojure-built-in-")))) (provide (quote clojure-mode-extra-font-locking-autoloads))) "jsonrpc" ((jsonrpc-autoloads jsonrpc) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "jsonrpc" (quote ("jrpc-default-request-timeout" "jsonrpc-")))) (provide (quote jsonrpc-autoloads))) "flymake" ((flymake-autoloads flymake) (autoload (quote flymake-log) "flymake" "Log, at level LEVEL, the message MSG formatted with ARGS.
-LEVEL is passed to `display-warning', which is used to display
-the warning.  If this form is included in a byte-compiled file,
-the generated warning contains an indication of the file that
-generated it.
-
-(fn LEVEL MSG &rest ARGS)" nil t) (autoload (quote flymake-make-diagnostic) "flymake" "Make a Flymake diagnostic for BUFFER's region from BEG to END.
-TYPE is a diagnostic symbol and TEXT is string describing the
-problem detected in this region.  DATA is any object that the
-caller wishes to attach to the created diagnostic for later
-retrieval.
-
-OVERLAY-PROPERTIES is an alist of properties attached to the
-created diagnostic, overriding the default properties and any
-properties of `flymake-overlay-control' of the diagnostic's
-type.
-
-(fn BUFFER BEG END TYPE TEXT &optional DATA OVERLAY-PROPERTIES)" nil nil) (autoload (quote flymake-diagnostics) "flymake" "Get Flymake diagnostics in region determined by BEG and END.
-
-If neither BEG or END is supplied, use the whole buffer,
-otherwise if BEG is non-nil and END is nil, consider only
-diagnostics at BEG.
-
-(fn &optional BEG END)" nil nil) (autoload (quote flymake-diag-region) "flymake" "Compute BUFFER's region (BEG . END) corresponding to LINE and COL.
-If COL is nil, return a region just for LINE.  Return nil if the
-region is invalid.
-
-(fn BUFFER LINE &optional COL)" nil nil) (autoload (quote flymake-mode) "flymake" "Toggle Flymake mode on or off.
-
-Flymake is an Emacs minor mode for on-the-fly syntax checking.
-Flymake collects diagnostic information from multiple sources,
-called backends, and visually annotates the buffer with the
-results.
-
-Flymake performs these checks while the user is editing.
-The customization variables `flymake-start-on-flymake-mode',
-`flymake-no-changes-timeout' determine the exact circumstances
-whereupon Flymake decides to initiate a check of the buffer.
-
-The commands `flymake-goto-next-error' and
-`flymake-goto-prev-error' can be used to navigate among Flymake
-diagnostics annotated in the buffer.
-
-The visual appearance of each type of diagnostic can be changed
-by setting properties `flymake-overlay-control', `flymake-bitmap'
-and `flymake-severity' on the symbols of diagnostic types (like
-`:error', `:warning' and `:note').
-
-Activation or deactivation of backends used by Flymake in each
-buffer happens via the special hook
-`flymake-diagnostic-functions'.
-
-Some backends may take longer than others to respond or complete,
-and some may decide to disable themselves if they are not
-suitable for the current buffer.  The commands
-`flymake-running-backends', `flymake-disabled-backends' and
-`flymake-reporting-backends' summarize the situation, as does the
-special *Flymake log* buffer.
-
-(fn &optional ARG)" t nil) (autoload (quote flymake-mode-on) "flymake" "Turn Flymake mode on.
-
-(fn)" nil nil) (autoload (quote flymake-mode-off) "flymake" "Turn Flymake mode off.
-
-(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flymake" (quote ("flymake-")))) (provide (quote flymake-autoloads))) "eglot" ((eglot-autoloads eglot) (autoload (quote eglot) "eglot" "Manage a project with a Language Server Protocol (LSP) server.
-
-The LSP server of CLASS started (or contacted) via CONTACT.  If
-this operation is successful, current *and future* file buffers
-of MANAGED-MAJOR-MODE inside PROJECT automatically become
-\"managed\" by the LSP server, meaning information about their
-contents is exchanged periodically to provide enhanced
-code-analysis via `xref-find-definitions', `flymake-mode',
-`eldoc-mode', `completion-at-point', among others.
-
-Interactively, the command attempts to guess MANAGED-MAJOR-MODE
-from current buffer, CLASS and CONTACT from
-`eglot-server-programs' and PROJECT from `project-current'.  If
-it can't guess, the user is prompted.  With a single
-\\[universal-argument] prefix arg, it always prompt for COMMAND.
-With two \\[universal-argument] prefix args, also prompts for
-MANAGED-MAJOR-MODE.
-
-PROJECT is a project instance as returned by `project-current'.
-
-CLASS is a subclass of symbol `eglot-lsp-server'.
-
-CONTACT specifies how to contact the server.  It is a
-keyword-value plist used to initialize CLASS or a plain list as
-described in `eglot-server-programs', which see.
-
-INTERACTIVE is t if called interactively.
-
-(fn MANAGED-MAJOR-MODE PROJECT CLASS CONTACT &optional INTERACTIVE)" t nil) (autoload (quote eglot-ensure) "eglot" "Start Eglot session for current buffer if there isn't one.
-
-(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "eglot" (quote ("eglot-")))) (provide (quote eglot-autoloads))) "xterm-color" ((xterm-color-autoloads xterm-color) (autoload (quote xterm-color-filter-strip) "xterm-color" "Translate ANSI color sequences in STRING into text properties.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "go-dlv" (quote ("go-dlv-")))) (provide (quote go-dlv-autoloads))) "geiser" ((geiser-chicken geiser-syntax geiser-mode geiser-reload geiser-eval geiser-popup geiser-autoloads geiser-compile geiser-image geiser-gambit geiser-menu geiser-table geiser-connection geiser-xref geiser-chez geiser-impl geiser-edit geiser-autodoc geiser-debug geiser-chibi geiser-version geiser-mit geiser-log geiser-base geiser-company geiser-doc geiser-custom geiser-guile geiser-repl geiser geiser-racket geiser-completion) (defconst geiser-elisp-dir (file-name-directory load-file-name) "Directory containing Geiser's Elisp files.") (defconst geiser-scheme-dir (let ((d (expand-file-name "./scheme/" geiser-elisp-dir))) (if (file-directory-p d) d (expand-file-name "../scheme/" geiser-elisp-dir))) "Directory containing Geiser's Scheme files.") (add-to-list (quote load-path) (directory-file-name geiser-elisp-dir)) (autoload (quote geiser-version) "geiser-version" "Echo Geiser's version." t) (autoload (quote geiser-unload) "geiser-reload" "Unload all Geiser code." t) (autoload (quote geiser-reload) "geiser-reload" "Reload Geiser code." t) (autoload (quote geiser) "geiser-repl" "Start a Geiser REPL, or switch to a running one." t) (autoload (quote run-geiser) "geiser-repl" "Start a Geiser REPL." t) (autoload (quote geiser-connect) "geiser-repl" "Start a Geiser REPL connected to a remote server." t) (autoload (quote geiser-connect-local) "geiser-repl" "Start a Geiser REPL connected to a remote server over a Unix-domain socket." t) (autoload (quote switch-to-geiser) "geiser-repl" "Switch to a running one Geiser REPL." t) (autoload (quote run-chez) "geiser-chez" "Start a Geiser Chez REPL." t) (autoload (quote switch-to-chez) "geiser-chez" "Start a Geiser Chez REPL, or switch to a running one." t) (autoload (quote run-guile) "geiser-guile" "Start a Geiser Guile REPL." t) (autoload (quote switch-to-guile) "geiser-guile" "Start a Geiser Guile REPL, or switch to a running one." t) (autoload (quote connect-to-guile) "geiser-guile" "Connect to a remote Geiser Guile REPL." t) (autoload (quote run-gambit) "geiser-gambit" "Start a Geiser Gambit REPL." t) (autoload (quote switch-to-gambit) "geiser-gambit" "Start a Geiser Gambit REPL, or switch to a running one." t) (autoload (quote connect-to-gambit) "geiser-gambit" "Connect to a remote Geiser Gambit REPL." t) (autoload (quote run-racket) "geiser-racket" "Start a Geiser Racket REPL." t) (autoload (quote run-gracket) "geiser-racket" "Start a Geiser GRacket REPL." t) (autoload (quote switch-to-racket) "geiser-racket" "Start a Geiser Racket REPL, or switch to a running one." t) (autoload (quote connect-to-racket) "geiser-racket" "Connect to a remote Geiser Racket REPL." t) (autoload (quote run-chicken) "geiser-chicken" "Start a Geiser Chicken REPL." t) (autoload (quote switch-to-chicken) "geiser-chicken" "Start a Geiser Chicken REPL, or switch to a running one." t) (autoload (quote connect-to-chicken) "geiser-chicken" "Connect to a remote Geiser Chicken REPL." t) (autoload (quote run-mit) "geiser-mit" "Start a Geiser MIT/GNU Scheme REPL." t) (autoload (quote switch-to-mit) "geiser-mit" "Start a Geiser MIT/GNU Scheme REPL, or switch to a running one." t) (autoload (quote run-chibi) "geiser-chibi" "Start a Geiser Chibi Scheme REPL." t) (autoload (quote switch-to-chibi) "geiser-chibi" "Start a Geiser Chibi Scheme REPL, or switch to a running one." t) (autoload (quote geiser-mode) "geiser-mode" "Minor mode adding Geiser REPL interaction to Scheme buffers." t) (autoload (quote turn-on-geiser-mode) "geiser-mode" "Enable Geiser's mode (useful in Scheme buffers)." t) (autoload (quote turn-off-geiser-mode) "geiser-mode" "Disable Geiser's mode (useful in Scheme buffers)." t) (autoload (quote geiser-mode--maybe-activate) "geiser-mode") (mapc (lambda (group) (custom-add-load group (symbol-name group)) (custom-add-load (quote geiser) (symbol-name group))) (quote (geiser geiser-repl geiser-autodoc geiser-doc geiser-debug geiser-faces geiser-mode geiser-guile geiser-gambit geiser-image geiser-racket geiser-chicken geiser-chez geiser-chibi geiser-mit geiser-implementation geiser-xref))) (add-hook (quote scheme-mode-hook) (quote geiser-mode--maybe-activate)) (add-to-list (quote auto-mode-alist) (quote ("\\.rkt\\'" . scheme-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-autodoc" (quote ("geiser-autodoc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-base" (quote ("geiser--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-chez" (quote ("chez" "geiser-chez-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-chibi" (quote ("chibi" "geiser-chibi-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-chicken" (quote ("connect-to-chicken" "chicken" "geiser-chicken")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-company" (quote ("geiser-company--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-compile" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-completion" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-connection" (quote ("geiser-con")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-custom" (quote ("geiser-custom-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-debug" (quote ("geiser-debug-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-doc" (quote ("geiser-doc-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-edit" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-eval" (quote ("geiser-eval--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-gambit" (quote ("geiser-gambit-" "gambit" "connect-to-gambit")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-guile" (quote ("geiser-guile-" "guile" "connect-to-guile")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-image" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-impl" (quote ("geiser-" "with--geiser-implementation" "define-geiser-implementation")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-log" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-menu" (quote ("geiser-menu--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-mit" (quote ("mit" "geiser-mit-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-mode" (quote ("geiser-" "turn-o")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-popup" (quote ("geiser-popup-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-racket" (quote ("racket" "run-gracket" "geiser-racket-" "connect-to-racket")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-reload" (quote ("geiser-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-repl" (quote ("geiser" "switch-to-geiser" "run-geiser")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-syntax" (quote ("geiser-syntax--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-table" (quote ("geiser-table-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-version" (quote ("geiser-version")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "geiser-xref" (quote ("geiser-xref-")))) (provide (quote geiser-autoloads))) "clojure-mode-extra-font-locking" ((clojure-mode-extra-font-locking-autoloads clojure-mode-extra-font-locking) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "clojure-mode-extra-font-locking" (quote ("clojure-built-in-")))) (provide (quote clojure-mode-extra-font-locking-autoloads))) "xterm-color" ((xterm-color-autoloads xterm-color) (autoload (quote xterm-color-filter-strip) "xterm-color" "Translate ANSI color sequences in STRING into text properties.
 Return new STRING with text properties applied.
 
 This function strips text properties that may be present in STRING.
@@ -5481,10 +4078,10 @@ Return new STRING with text properties applied.
 This function will check if `xterm-color-preserve-properties' is
 set to T and only call `xterm-color-filter-strip' on substrings
 that do not have text properties applied (passing through the rest
-unmodified).  Preserving properties in this fashion is really a hack
-and not very robust as there may be situations where text properties
-are applied on ANSI data, which will mess up the state machine.
-It works fine with and is really meant for eshell though.
+unmodified). Preserving properties in this fashion is not very robust
+as there may be situations where text properties are applied on ANSI
+data, which will desync the state machine. Preserving properties works
+ok and is really meant for eshell.
 
 This can be inserted into `comint-preoutput-filter-functions'.
 
@@ -5503,11 +4100,21 @@ effect when called from a buffer that does not have a cache.
 (fn)" t nil) (autoload (quote xterm-color-test) "xterm-color" "Create/display and render a new buffer that contains ANSI control sequences.
 
 (fn)" t nil) (autoload (quote xterm-color-test-raw) "xterm-color" "Create and display a new buffer that contains ANSI SGR control sequences.
-The ANSI sequences will not be processed.  One can use a different Emacs
-package (e.g. ansi-color.el) to do so.  This is really meant to be used for
+ANSI sequences will not be processed. One can use a different Emacs package
+(e.g. ansi-color.el) to do so. This is really meant to be used for
 easy comparisons/benchmarks with libraries that offer similar functionality.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "xterm-color" (quote ("xterm-color-" "+xterm-color--table-256+")))) (provide (quote xterm-color-autoloads))) "let-alist" ((let-alist-autoloads let-alist) (autoload (quote let-alist) "let-alist" "Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "xterm-color" (quote ("xterm-color-" "+xterm-color--table-256+")))) (provide (quote xterm-color-autoloads))) "markdown-mode" ((markdown-mode markdown-mode-autoloads) (autoload (quote markdown-mode) "markdown-mode" "Major mode for editing Markdown files.
+
+(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.markdown\\'" . markdown-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.md\\'" . markdown-mode))) (autoload (quote gfm-mode) "markdown-mode" "Major mode for editing GitHub Flavored Markdown files.
+
+(fn)" t nil) (autoload (quote markdown-view-mode) "markdown-mode" "Major mode for viewing Markdown content.
+
+(fn)" t nil) (autoload (quote gfm-view-mode) "markdown-mode" "Major mode for viewing GitHub Flavored Markdown content.
+
+(fn)" t nil) (autoload (quote markdown-live-preview-mode) "markdown-mode" "Toggle native previewing on save for a specific markdown file.
+
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "markdown-mode" (quote ("gfm-" "markdown" "defun-markdown-")))) (provide (quote markdown-mode-autoloads))) "let-alist" ((let-alist let-alist-autoloads) (autoload (quote let-alist) "let-alist" "Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
 Dotted symbol is any symbol starting with a `.'.  Only those present
 in BODY are let-bound and this search is done at compile time.
 
@@ -5535,15 +4142,36 @@ the variables of the outer one. You can, however, access alists
 inside the original alist by using dots inside the symbol, as
 displayed in the example above.
 
-(fn ALIST &rest BODY)" nil t) (function-put (quote let-alist) (quote lisp-indent-function) (quote 1)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "let-alist" (quote ("let-alist--")))) (provide (quote let-alist-autoloads))) "ht" ((ht ht-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ht" (quote nil))) (provide (quote ht-autoloads))) "rustic" ((rustic-interaction rustic-autoloads rustic-flycheck rustic-util rustic-racer rustic-cargo rustic rustic-babel rustic-compile rustic-popup) (autoload (quote rustic-mode) "rustic" "Major mode for Rust code.
+(fn ALIST &rest BODY)" nil t) (function-put (quote let-alist) (quote lisp-indent-function) (quote 1)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "let-alist" (quote ("let-alist--")))) (provide (quote let-alist-autoloads))) "ht" ((ht ht-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ht" (quote nil))) (provide (quote ht-autoloads))) "rustic" ((rustic-compile rustic-babel rustic-util rustic-racer rustic-interaction rustic-popup rustic-flycheck rustic-autoloads rustic-cargo rustic-common rustic) (autoload (quote rustic-mode) "rustic" "Major mode for Rust code.
 
 \\{rustic-mode-map}
 
-(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.rs\\'" . rustic-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic" (quote ("rust")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-babel" (quote ("org-babel-execute:rustic" "rustic-babel-")))) (autoload (quote rustic-cargo-clippy) "rustic-cargo" "Run `cargo clippy'.
+(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.rs\\'" . rustic-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic" (quote ("rust")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-babel" (quote ("org-babel-execute:rustic" "rustic-")))) (autoload (quote rustic-cargo-clippy) "rustic-cargo" "Run `cargo clippy'.
 
 (fn)" t nil) (autoload (quote rustic-cargo-test-run) "rustic-cargo" "Start compilation process for 'cargo test' with optional TEST-ARGS.
 
-(fn &optional TEST-ARGS)" t nil) (autoload (quote rustic-cargo-current-test) "rustic-cargo" "Run 'cargo test' for the test near point.
+(fn &optional TEST-ARGS)" t nil) (autoload (quote rustic-cargo-test) "rustic-cargo" "Run 'cargo test'.
+
+If ARG is not nil, use value as argument and store it in `rustic-test-arguments'.
+When calling this function from `rustic-popup-mode', always use the value of
+`rustic-test-arguments'.
+
+(fn &optional ARG)" t nil) (autoload (quote rustic-cargo-test-rerun) "rustic-cargo" "Run 'cargo test' with `rustic-test-arguments'.
+
+(fn)" t nil) (autoload (quote rustic-cargo-current-test) "rustic-cargo" "Run 'cargo test' for the test near point.
+
+(fn)" t nil) (autoload (quote rustic-cargo-outdated) "rustic-cargo" "Use 'cargo outdated' to list outdated packages in `tabulated-list-mode'.
+Execute process in PATH.
+
+(fn &optional PATH)" t nil) (autoload (quote rustic-cargo-reload-outdated) "rustic-cargo" "Update list of outdated packages.
+
+(fn)" t nil) (autoload (quote rustic-cargo-mark-upgrade) "rustic-cargo" "Mark an upgradable package.
+
+(fn)" t nil) (autoload (quote rustic-cargo-mark-all-upgrades) "rustic-cargo" "Mark all upgradable packages in the Package Menu.
+
+(fn)" t nil) (autoload (quote rustic-cargo-menu-mark-unmark) "rustic-cargo" "Clear any marks on a package.
+
+(fn)" t nil) (autoload (quote rustic-cargo-upgrade-execute) "rustic-cargo" "Perform marked menu actions.
 
 (fn)" t nil) (autoload (quote rustic-cargo-new) "rustic-cargo" "Run 'cargo new' to start a new package in the path specified by PROJECT-PATH.
 If BIN is not nil, create a binary application, otherwise a library.
@@ -5563,7 +4191,7 @@ If BIN is not nil, create a binary application, otherwise a library.
 (fn)" t nil) (autoload (quote rustic-cargo-doc) "rustic-cargo" "Open the documentation for the current project in a browser.
 The documentation is built if necessary.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-cargo" (quote ("rustic-")))) (autoload (quote rustic-compile) "rustic-compile" "Compile rust project.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-cargo" (quote ("rustic-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-common" (quote ("rustic-")))) (autoload (quote rustic-compile) "rustic-compile" "Compile rust project.
 If called without arguments use `rustic-compile-command'.
 
 Otherwise use provided argument ARG and store it in
@@ -5576,9 +4204,58 @@ Otherwise use provided argument ARG and store it in
 If the current file is part of a Cargo project, configure
 Flycheck according to the Cargo project layout.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-flycheck" (quote ("rustic-flycheck-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-interaction" (quote ("rustic-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-popup" (quote ("rustic-popup")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-racer" (quote ("racer-src-button" "rustic-racer-")))) (autoload (quote rustic-cargo-fmt) "rustic-util" "Use rustfmt via cargo.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-flycheck" (quote ("rustic-flycheck-")))) (autoload (quote rustic-indent-line) "rustic-interaction" "
 
-(fn)" t nil) (autoload (quote rustic-rustfix) "rustic-util" "Run 'cargo fix'.
+(fn)" t nil) (autoload (quote rustic-promote-module-into-dir) "rustic-interaction" "Promote the module file visited by the current buffer into its own directory.
+
+For example, if the current buffer is visiting the file `foo.rs',
+then this function creates the directory `foo' and renames the
+file to `foo/mod.rs'.  The current buffer will be updated to
+visit the new file.
+
+(fn)" t nil) (autoload (quote rustic-beginning-of-defun) "rustic-interaction" "Move backward to the beginning of the current defun.
+
+With ARG, move backward multiple defuns.  Negative ARG means
+move forward.
+
+This is written mainly to be used as `beginning-of-defun-function' for Rust.
+Don't move to the beginning of the line. `beginning-of-defun',
+which calls this, does that afterwards.
+
+(fn &optional ARG REGEX)" t nil) (autoload (quote rustic-end-of-defun) "rustic-interaction" "Move forward to the next end of defun.
+
+With argument, do it that many times.
+Negative argument -N means move back to Nth preceding end of defun.
+
+Assume that this is called after beginning-of-defun. So point is
+at the beginning of the defun body.
+
+This is written mainly to be used as `end-of-defun-function' for Rust.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-interaction" (quote ("rustic-")))) (autoload (quote rustic-popup) "rustic-popup" "Setup popup.
+If directory is not in a rust project call `read-directory-name'.
+
+(fn)" t nil) (autoload (quote rustic-popup-invoke-popup-action) "rustic-popup" "Execute commands which are listed in `rustic-popup-commands'.
+
+(fn EVENT)" t nil) (autoload (quote rustic-popup-default-action) "rustic-popup" "Change backtrace and `compilation-arguments' when executed on
+corresponding line.
+
+(fn)" t nil) (autoload (quote rustic-popup-cargo-command-help) "rustic-popup" "Display help buffer for cargo command at point.
+
+(fn)" t nil) (autoload (quote rustic-popup-kill-help-buffer) "rustic-popup" "Kill popup help buffer and switch to popup buffer.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-popup" (quote ("rustic-popup-")))) (autoload (quote rustic-racer-describe) "rustic-racer" "Show a *Racer Help* buffer for the function or type at point.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-racer" (quote ("racer-src-button" "rustic-racer-")))) (autoload (quote rustic-cargo-fmt) "rustic-util" "Use rustfmt via cargo.
+
+(fn)" t nil) (autoload (quote rustic-format-buffer) "rustic-util" "Format the current buffer using rustfmt.
+
+Provide optional argument NO-STDIN for `rustic-before-save-hook' since there
+were issues when using stdin for formatting.
+
+(fn &optional NO-STDIN)" t nil) (autoload (quote rustic-analyzer-macro-expand) "rustic-util" "Default method for displaying macro expansion results.
+
+(fn RESULT)" t nil) (autoload (quote rustic-rustfix) "rustic-util" "Run 'cargo fix'.
 
 (fn)" t nil) (autoload (quote rustic-playpen) "rustic-util" "Create a shareable URL for the contents of the current region,
 src-block or buffer on the Rust playpen.
@@ -5586,7 +4263,22 @@ src-block or buffer on the Rust playpen.
 (fn BEGIN END)" t nil) (autoload (quote rustic-open-dependency-file) "rustic-util" "Open the 'Cargo.toml' file at the project root if the current buffer is
 visiting a project.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-util" (quote ("rustic-")))) (provide (quote rustic-autoloads))) "scala-mode" ((scala-mode-lib scala-mode-syntax scala-mode-fontlock scala-mode-autoloads scala-mode-imenu scala-mode-map scala-mode-prettify-symbols scala-mode-paragraph scala-mode-indent ob-scala scala-mode) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ob-scala" (quote ("org-babel-")))) (autoload (quote scala-mode:set-scala-syntax-mode) "scala-mode" "Sets the syntax-table and other related variables for the current buffer to those of scala-mode. Can be used to make some other major mode (such as sbt-mode) use scala syntax-table.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rustic-util" (quote ("rustic-")))) (provide (quote rustic-autoloads))) "lv" ((lv-autoloads lv) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lv" (quote ("lv-")))) (provide (quote lv-autoloads))) "lsp-mode" ((lsp-html lsp-csharp lsp-terraform lsp-haxe lsp-elm lsp-mode lsp-perl lsp-go lsp-vhdl lsp-rust lsp-xml lsp-gdscript lsp-verilog lsp-mode-autoloads lsp-erlang lsp-css lsp-intelephense lsp-json lsp-clojure lsp-clients lsp-yaml lsp-vetur lsp-solargraph lsp lsp-fsharp lsp-pwsh lsp-pyls lsp-cpp lsp-metals lsp-eslint) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-clients" (quote ("parse-rf-language-server-" "expand-start-command" "lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-clojure" (quote ("lsp-cl")))) (autoload (quote lsp-cpp-flycheck-clang-tidy-error-explainer) "lsp-cpp" "Explain a clang-tidy ERROR by scraping documentation from llvm.org.
+
+(fn ERROR)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-cpp" (quote ("lsp-cpp-flycheck-clang-tidy--")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-csharp" (quote ("lsp-csharp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-css" (quote ("lsp-c")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-elm" (quote ("lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-erlang" (quote ("lsp-erlang-server-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-eslint" (quote ("lsp-")))) (autoload (quote lsp-fsharp--workspace-load) "lsp-fsharp" "Load all of the provided PROJECTS.
+
+(fn PROJECTS)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-fsharp" (quote ("lsp-fsharp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-gdscript" (quote ("lsp-gdscript-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-go" (quote ("lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-haxe" (quote ("lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-html" (quote ("lsp-html-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-intelephense" (quote ("lsp-intelephense-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-json" (quote ("lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-metals" (quote ("lsp-metals-")))) (put (quote lsp-enable-file-watchers) (quote safe-local-variable) (function booleanp)) (put (quote lsp-file-watch-threshold) (quote safe-local-variable) (lambda (i) (or (numberp i) (not i)))) (autoload (quote lsp) "lsp-mode" "Entry point for the server startup.
+When ARG is t the lsp mode will start new language server even if
+there is language server which can handle current language. When
+ARG is nil current file will be opened in multi folder language
+server if there is such. When `lsp' is called with prefix
+argument ask the user to select which language server to start. 
+
+(fn &optional ARG)" t nil) (autoload (quote lsp-deferred) "lsp-mode" "Entry point that defers server startup until buffer is visible.
+`lsp-deferred' will wait until the buffer is visible before invoking `lsp'.
+This avoids overloading the server with many files when starting Emacs.
+
+(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-mode" (quote ("lsp-" "dash-expand:&lsp-" "make-lsp-client" "with-lsp-workspace" "when-lsp-workspace")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-perl" (quote ("lsp-perl-language-server-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-pwsh" (quote ("lsp-pwsh-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-pyls" (quote ("lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-rust" (quote ("lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-solargraph" (quote ("lsp-solargraph-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-terraform" (quote ("lsp-terraform-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-verilog" (quote ("lsp-clients-verilog-executable")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-vetur" (quote ("lsp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-vhdl" (quote ("lsp-vhdl-" "ghdl-ls-bin-name" "vhdl-" "hdl-checker-bin-name")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-xml" (quote ("lsp-xml-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lsp-yaml" (quote ("lsp-yaml-")))) (provide (quote lsp-mode-autoloads))) "scala-mode" ((scala-mode-paragraph scala-mode scala-mode-fontlock scala-mode-lib scala-mode-prettify-symbols scala-mode-indent scala-mode-autoloads scala-mode-syntax scala-mode-map scala-mode-imenu) (autoload (quote scala-mode:set-scala-syntax-mode) "scala-mode" "Sets the syntax-table and other related variables for the current buffer to those of scala-mode. Can be used to make some other major mode (such as sbt-mode) use scala syntax-table.
 
 (fn)" nil nil) (autoload (quote scala-mode:goto-start-of-code) "scala-mode" "Go to the start of the real code in the file: object, class or trait.
 
@@ -5596,7 +4288,7 @@ When started, runs `scala-mode-hook'.
 
 \\{scala-mode-map}
 
-(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.\\(scala\\|sbt\\)\\'" . scala-mode))) (modify-coding-system-alist (quote file) "\\.\\(scala\\|sbt\\)\\'" (quote utf-8)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode" (quote ("scala-mode:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-fontlock" (quote ("scala-font-lock:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-imenu" (quote ("scala-imenu:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-indent" (quote ("scala-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-lib" (quote ("scala-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-map" (quote ("scala-mode-map")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-paragraph" (quote ("scala-paragraph:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-syntax" (quote ("scala-syntax:")))) (provide (quote scala-mode-autoloads))) "sbt-mode" ((sbt-mode-autoloads sbt-mode sbt-mode-vars sbt-mode-project sbt-mode-buffer sbt-mode-hydra sbt-mode-comint sbt-mode-rgrep) (autoload (quote sbt-start) "sbt-mode" "Start sbt
+(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.\\(scala\\|sbt\\)\\'" . scala-mode))) (modify-coding-system-alist (quote file) "\\.\\(scala\\|sbt\\)\\'" (quote utf-8)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode" (quote ("scala-mode:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-fontlock" (quote ("scala-font-lock:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-imenu" (quote ("scala-imenu:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-indent" (quote ("scala-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-lib" (quote ("scala-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-map" (quote ("scala-mode-map")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-paragraph" (quote ("scala-paragraph:")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "scala-mode-syntax" (quote ("scala-syntax:")))) (provide (quote scala-mode-autoloads))) "sbt-mode" ((sbt-mode-vars sbt-mode-hydra sbt-mode-project sbt-mode-rgrep sbt-mode-buffer sbt-mode-autoloads sbt-mode-comint sbt-mode) (autoload (quote sbt-start) "sbt-mode" "Start sbt
 
 (fn)" t nil) (autoload (quote run-scala) "sbt-mode" "Pop up Scala REPL buffer.
 
@@ -5660,7 +4352,7 @@ Yas minor mode is enabled in all buffers where
 `yas-minor-mode-on' would do it.
 See `yas-minor-mode' for more information on Yas minor mode.
 
-(fn &optional ARG)" t nil) (autoload (quote snippet-mode) "yasnippet" "A mode for editing yasnippets" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "yasnippet" (quote ("yas" "help-snippet-def" "snippet-mode-map")))) (provide (quote yasnippet-autoloads))) "ensime" ((ensime-compat ensime-auto-complete ensime-http ensime-completion-util ensime-undo ensime-stacktrace ensime-popup ensime-refactor ensime-inf ensime-debug ensime-vars ensime-editor ensime-expand-region ensime-autoloads ensime-doc ensime-company ensime-notes ensime-model ensime-ivy ensime-macros ensime-semantic-highlight ensime-util ensime-mode ensime-ui ensime-overlay ensime-startup ensime-comint-utils ensime-client ensime-eldoc ensime-sbt ensime-helm ensime-config ensime ensime-search) (autoload (quote ensime) "ensime" "Read config file for settings then start an ensime-server and connect.
+(fn &optional ARG)" t nil) (autoload (quote snippet-mode) "yasnippet" "A mode for editing yasnippets" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "yasnippet" (quote ("yas" "help-snippet-def" "snippet-mode-map")))) (provide (quote yasnippet-autoloads))) "ensime" ((ensime-refactor ensime-auto-complete ensime-doc ensime-popup ensime-overlay ensime-semantic-highlight ensime-macros ensime-inf ensime-notes ensime-model ensime-helm ensime-completion-util ensime-http ensime-search ensime-company ensime-comint-utils ensime-sbt ensime-expand-region ensime-editor ensime-mode ensime-compat ensime-undo ensime-client ensime-util ensime-startup ensime-ivy ensime ensime-vars ensime-autoloads ensime-debug ensime-eldoc ensime-stacktrace ensime-config ensime-ui) (autoload (quote ensime) "ensime" "Read config file for settings then start an ensime-server and connect.
 
 (fn)" t nil) (autoload (quote ensime-remote) "ensime" "Read config file for settings. Then connect to an existing ENSIME server.
 
@@ -5673,7 +4365,7 @@ See `yas-minor-mode' for more information on Yas minor mode.
 (fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-ivy" (quote ("ensime-ivy-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-macros" (quote ("ensime-" "with-struct" "destructure-case")))) (autoload (quote ensime-mode) "ensime-mode" "ENSIME: The ENhanced Scala Interaction Mode for Emacs (minor-mode).
 \\{ensime-mode-map}
 
-(fn &optional ARG)" t nil) (add-hook (quote scala-mode-hook) (lambda nil (when (fboundp (quote ensime)) (ensime-mode)))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-mode" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-model" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-notes" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-overlay" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-popup" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-refactor" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-sbt" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-search" (quote ("ensime-search")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-semantic-highlight" (quote ("ensime-sem-high-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-stacktrace" (quote ("ensime-stacktrace-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-startup" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-ui" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-undo" (quote ("ensime-undo-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-util" (quote ("ensime-" "buffer-file-name-with-indirect")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-vars" (quote ("ensime-")))) (provide (quote ensime-autoloads))) "load-relative" ((el-get-install load-relative-autoloads load-relative) (autoload (quote __FILE__) "load-relative" "Return the string name of file/buffer that is currently begin executed.
+(fn &optional ARG)" t nil) (add-hook (quote scala-mode-hook) (lambda nil (when (fboundp (quote ensime)) (ensime-mode)))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-mode" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-model" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-notes" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-overlay" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-popup" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-refactor" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-sbt" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-search" (quote ("ensime-search")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-semantic-highlight" (quote ("ensime-sem-high-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-stacktrace" (quote ("ensime-stacktrace-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-startup" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-ui" (quote ("ensime-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-undo" (quote ("ensime-undo-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-util" (quote ("ensime-" "buffer-file-name-with-indirect")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "ensime-vars" (quote ("ensime-")))) (provide (quote ensime-autoloads))) "load-relative" ((load-relative load-relative-autoloads el-get-install) (autoload (quote __FILE__) "load-relative" "Return the string name of file/buffer that is currently begin executed.
 
 The first approach for getting this information is perhaps the
 most pervasive and reliable.  But it the most low-level and not
@@ -5750,7 +4442,7 @@ It is preferable to write at the first line of test files as a comment, e.g,
 
 Calling this function interactively, COMMAND-LINE-FORMATS is set above.
 
-(fn &rest COMMAND-LINE-FORMATS)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "test-simple" (quote ("test-simple-" "end-tests" "assert-" "note")))) (provide (quote test-simple-autoloads))) "realgud" ((realgud-autoloads realgud) (defconst realgud--recursive-autoloads-file-name "realgud-recursive-autoloads.el" "Where to store autoloads for subdirectory contents.") (defconst realgud--recursive-autoloads-base-directory (file-name-directory (if load-in-progress load-file-name buffer-file-name))) (with-demoted-errors "Error in RealGUD's autoloads: %s" (load (expand-file-name realgud--recursive-autoloads-file-name realgud--recursive-autoloads-base-directory) t t)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "realgud" (quote ("realgud--rebuild-recursive-autoloads")))) (provide (quote realgud-autoloads))) "flycheck" ((flycheck-ert flycheck-buttercup flycheck-autoloads flycheck) (autoload (quote flycheck-manual) "flycheck" "Open the Flycheck manual.
+(fn &rest COMMAND-LINE-FORMATS)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "test-simple" (quote ("test-simple-" "end-tests" "assert-" "note")))) (provide (quote test-simple-autoloads))) "realgud" ((realgud realgud-autoloads) (defconst realgud--recursive-autoloads-file-name "realgud-recursive-autoloads.el" "Where to store autoloads for subdirectory contents.") (defconst realgud--recursive-autoloads-base-directory (file-name-directory (if load-in-progress load-file-name buffer-file-name))) (with-demoted-errors "Error in RealGUD's autoloads: %s" (load (expand-file-name realgud--recursive-autoloads-file-name realgud--recursive-autoloads-base-directory) t t)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "realgud" (quote ("realgud--rebuild-recursive-autoloads")))) (provide (quote realgud-autoloads))) "flycheck" ((flycheck-buttercup flycheck-ert flycheck-autoloads flycheck) (autoload (quote flycheck-manual) "flycheck" "Open the Flycheck manual.
 
 (fn)" t nil) (autoload (quote flycheck-mode) "flycheck" "Minor mode for on-the-fly syntax checking.
 
@@ -5909,11 +4601,12 @@ default `:verify' function of command checkers.
 (fn SYMBOL DOCSTRING &rest PROPERTIES)" nil nil) (function-put (quote flycheck-define-command-checker) (quote lisp-indent-function) (quote 1)) (function-put (quote flycheck-define-command-checker) (quote doc-string-elt) (quote 2)) (autoload (quote flycheck-def-config-file-var) "flycheck" "Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
 
 SYMBOL is declared as customizable variable using `defcustom', to
-provide a configuration file for the given syntax CHECKER.
+provide configuration files for the given syntax CHECKER.
 CUSTOM-ARGS are forwarded to `defcustom'.
 
 FILE-NAME is the initial value of the new variable.  If omitted,
-the default value is nil.
+the default value is nil.  It can be either a string or a list of
+strings.
 
 Use this together with the `config-file' form in the `:command'
 argument to `flycheck-define-checker'.
@@ -5930,7 +4623,13 @@ Use this together with the `option', `option-list' and
 `option-flag' forms in the `:command' argument to
 `flycheck-define-checker'.
 
-(fn SYMBOL INIT-VALUE CHECKERS DOCSTRING &rest CUSTOM-ARGS)" nil t) (function-put (quote flycheck-def-option-var) (quote lisp-indent-function) (quote 3)) (function-put (quote flycheck-def-option-var) (quote doc-string-elt) (quote 4)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flycheck" (quote ("flycheck-" "list-flycheck-errors" "locate-rebar3-project-root" "contains-rebar-config" "help-flycheck-checker-d" "read-flycheck-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flycheck-buttercup" (quote ("flycheck-buttercup-format-error-list")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flycheck-ert" (quote ("flycheck-er")))) (provide (quote flycheck-autoloads))) "meghanada" ((eldoc-meghanada meghanada flycheck-meghanada company-meghanada meghanada-autoloads) (autoload (quote meghanada-company-enable) "company-meghanada" "Enable auto completion with company.
+(fn SYMBOL INIT-VALUE CHECKERS DOCSTRING &rest CUSTOM-ARGS)" nil t) (function-put (quote flycheck-def-option-var) (quote lisp-indent-function) (quote 3)) (function-put (quote flycheck-def-option-var) (quote doc-string-elt) (quote 4)) (autoload (quote flycheck-define-checker) "flycheck" "Define SYMBOL as command syntax checker with DOCSTRING and PROPERTIES.
+
+Like `flycheck-define-command-checker', but PROPERTIES must not
+be quoted.  Also, implicitly define the executable variable for
+SYMBOL with `flycheck-def-executable-var'.
+
+(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil t) (function-put (quote flycheck-define-checker) (quote lisp-indent-function) (quote 1)) (function-put (quote flycheck-define-checker) (quote doc-string-elt) (quote 2)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flycheck" (quote ("flycheck-" "list-flycheck-errors" "help-flycheck-checker-d")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flycheck-buttercup" (quote ("flycheck-buttercup-format-error-list")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flycheck-ert" (quote ("flycheck-er")))) (provide (quote flycheck-autoloads))) "meghanada" ((meghanada-autoloads meghanada flycheck-meghanada eldoc-meghanada company-meghanada) (autoload (quote meghanada-company-enable) "company-meghanada" "Enable auto completion with company.
 
 (fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-meghanada" (quote ("company-meghanada" "make-icon-hash" "meghanada--")))) (autoload (quote eldoc-meghanada-setup) "eldoc-meghanada" "Set up eldoc function and enable 'eldoc-mode'.
 
@@ -5957,7 +4656,7 @@ Use this together with the `option', `option-list' and
 (fn)" t nil) (autoload (quote meghanada-mode) "meghanada" "A better java development mode for Emacs (minor-mode).
 \\{meghanada-mode-map}
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "meghanada" (quote ("meghanada-")))) (provide (quote meghanada-autoloads))) "lv" ((lv lv-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lv" (quote ("lv-")))) (provide (quote lv-autoloads))) "hydra" ((hydra-ox lv hydra-autoloads hydra-examples hydra) (autoload (quote defhydra) "hydra" "Create a Hydra - a family of functions with prefix NAME.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "meghanada" (quote ("meghanada-")))) (provide (quote meghanada-autoloads))) "hydra" ((hydra-examples hydra-autoloads hydra hydra-ox) (autoload (quote defhydra) "hydra" "Create a Hydra - a family of functions with prefix NAME.
 
 NAME should be a symbol, it will be the prefix of all functions
 defined here.
@@ -6008,7 +4707,7 @@ want to bind anything.  In that case, typically you will bind the
 generated NAME/body command.  This command is also the return
 result of `defhydra'.
 
-(fn NAME BODY &optional DOCSTRING &rest HEADS)" nil t) (function-put (quote defhydra) (quote lisp-indent-function) (quote defun)) (function-put (quote defhydra) (quote doc-string-elt) (quote 3)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hydra" (quote ("hydra-" "defhydra")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hydra-examples" (quote ("hydra-" "org-agenda-cts" "whitespace-mode")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hydra-ox" (quote ("hydra-ox")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lv" (quote ("lv-")))) (provide (quote hydra-autoloads))) "haskell-mode" ((haskell-move-nested haskell-collapse haskell-modules haskell-ghc-support haskell-compat haskell-menu haskell-unicode-input-method ghci-script-mode haskell-utils haskell-doc haskell-cabal haskell-align-imports inf-haskell haskell-indentation ghc-core haskell-mode haskell-repl haskell-navigate-imports haskell-svg haskell-presentation-mode haskell-mode-pkg haskell-string haskell-session haskell-mode-autoloads w3m-haddock haskell-process haskell-debug haskell-sandbox haskell-load haskell-customize haskell-interactive-mode haskell-commands highlight-uses-mode haskell-indent haskell-c2hs haskell-completions haskell-hoogle haskell-sort-imports haskell haskell-compile haskell-complete-module haskell-decl-scan haskell-font-lock haskell-lexeme) (let ((loads (get (quote ghc-core) (quote custom-loads)))) (if (member (quote "ghc-core") loads) nil (put (quote ghc-core) (quote custom-loads) (cons (quote "ghc-core") loads)))) (autoload (quote ghc-core-create-core) "ghc-core" "Compile and load the current buffer as tidy core.
+(fn NAME BODY &optional DOCSTRING &rest HEADS)" nil t) (function-put (quote defhydra) (quote lisp-indent-function) (quote defun)) (function-put (quote defhydra) (quote doc-string-elt) (quote 3)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hydra" (quote ("hydra-" "defhydra")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hydra-examples" (quote ("hydra-" "org-agenda-cts" "whitespace-mode")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hydra-ox" (quote ("hydra-ox")))) (provide (quote hydra-autoloads))) "haskell-mode" ((haskell-align-imports ghci-script-mode haskell-debug haskell-indent haskell-completions haskell-sandbox haskell-mode haskell-font-lock haskell-ghc-support haskell-complete-module haskell-move-nested haskell-lexeme haskell-process haskell-interactive-mode haskell-compile haskell-customize haskell-sort-imports ghc-core haskell-repl haskell-hoogle haskell-string w3m-haddock highlight-uses-mode haskell-c2hs haskell-indentation haskell-commands haskell-cabal haskell-mode-pkg inf-haskell haskell haskell-menu haskell-modules haskell-doc haskell-presentation-mode haskell-navigate-imports haskell-mode-autoloads haskell-collapse haskell-decl-scan haskell-utils haskell-svg haskell-session haskell-load haskell-unicode-input-method) (let ((loads (get (quote ghc-core) (quote custom-loads)))) (if (member (quote "ghc-core") loads) nil (put (quote ghc-core) (quote custom-loads) (cons (quote "ghc-core") loads)))) (autoload (quote ghc-core-create-core) "ghc-core" "Compile and load the current buffer as tidy core.
 
 (fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.hcr\\'" . ghc-core-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.dump-simpl\\'" . ghc-core-mode))) (autoload (quote ghc-core-mode) "ghc-core" "Major mode for GHC Core files.
 
@@ -6019,7 +4718,6 @@ result of `defhydra'.
 (fn &optional ARG)" t nil) (autoload (quote haskell-interactive-mode-return) "haskell" "Handle the return key.
 
 (fn)" t nil) (autoload (quote haskell-session-kill) "haskell" "Kill the session process and buffer, delete the session.
-0. Prompt to kill all associated buffers.
 1. Kill the process.
 2. Kill the interactive buffer unless LEAVE-INTERACTIVE-BUFFER is not given.
 3. Walk through all the related buffers and set their haskell-session to nil.
@@ -6066,7 +4764,7 @@ Give optional NEXT-P parameter to override value of
 
 (fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-align-imports" (quote ("haskell-align-imports-")))) (add-to-list (quote auto-mode-alist) (quote ("\\.chs\\'" . haskell-c2hs-mode))) (autoload (quote haskell-c2hs-mode) "haskell-c2hs" "Mode for editing *.chs files of the c2hs haskell tool.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-c2hs" (quote ("haskell-c2hs-font-lock-keywords")))) (add-to-list (quote auto-mode-alist) (quote ("\\.cabal\\'" . haskell-cabal-mode))) (autoload (quote haskell-cabal-mode) "haskell-cabal" "Major mode for Cabal package description files.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-c2hs" (quote ("haskell-c2hs-font-lock-keywords")))) (add-to-list (quote auto-mode-alist) (quote ("\\.cabal\\'\\|/cabal\\.project\\|/\\.cabal/config\\'" . haskell-cabal-mode))) (autoload (quote haskell-cabal-mode) "haskell-cabal" "Major mode for Cabal package description files.
 
 (fn)" t nil) (autoload (quote haskell-cabal-get-field) "haskell-cabal" "Read the value of field with NAME from project's cabal file.
 If there is no valid .cabal file to get the setting from (or
@@ -6148,7 +4846,7 @@ inferior GHCi process.
 (fn TARGET)" t nil) (autoload (quote haskell-mode-stylish-buffer) "haskell-commands" "Apply stylish-haskell to the current buffer.
 
 Use `haskell-mode-stylish-haskell-path' to know where to find
-stylish-haskell executable. This function tries to preserve
+stylish-haskell executable.  This function tries to preserve
 cursor position and markers by using
 `haskell-mode-buffer-apply-command'.
 
@@ -6217,7 +4915,7 @@ declaration.  Therefore, using Haskell font locking with comments
 coloured in `font-lock-comment-face' improves declaration scanning.
 
 Literate Haskell scripts are supported: If the value of
-`haskell-literate' (set automatically by `literate-haskell-mode')
+`haskell-literate' (set automatically by `haskell-literate-mode')
 is `bird', a Bird-style literate script is assumed.  If it is nil
 or `tex', a non-literate or LaTeX-style literate script is
 assumed, respectively.
@@ -6282,7 +4980,7 @@ set and deleted as if they were real tabs.
 
 (fn &optional ARG)" t nil) (autoload (quote turn-on-haskell-indentation) "haskell-indentation" "Turn on the haskell-indentation minor mode.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-indentation" (quote ("haskell-indentation-")))) (defface haskell-interactive-face-prompt (quote ((t :inherit font-lock-function-name-face))) "Face for the prompt." :group (quote haskell-interactive)) (defface haskell-interactive-face-prompt2 (quote ((t :inherit font-lock-keyword-face))) "Face for the prompt2 in multi-line mode." :group (quote haskell-interactive)) (defface haskell-interactive-face-compile-error (quote ((t :inherit compilation-error))) "Face for compile errors." :group (quote haskell-interactive)) (defface haskell-interactive-face-compile-warning (quote ((t :inherit compilation-warning))) "Face for compiler warnings." :group (quote haskell-interactive)) (defface haskell-interactive-face-result (quote ((t :inherit font-lock-string-face))) "Face for the result." :group (quote haskell-interactive)) (defface haskell-interactive-face-garbage (quote ((t :inherit font-lock-string-face))) "Face for trailing garbage after a command has completed." :group (quote haskell-interactive)) (autoload (quote haskell-interactive-mode-reset-error) "haskell-interactive-mode" "Reset the error cursor position.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-indentation" (quote ("haskell-indentation-")))) (defface haskell-interactive-face-prompt (quote ((t :inherit font-lock-function-name-face))) "Face for the prompt." :group (quote haskell-interactive)) (defface haskell-interactive-face-prompt-cont (quote ((t :inherit font-lock-keyword-face))) "Face for GHCi's prompt-cont in multi-line mode." :group (quote haskell-interactive)) (define-obsolete-face-alias (quote haskell-interactive-face-prompt2) (quote haskell-interactive-face-prompt-cont) "16.2") (defface haskell-interactive-face-compile-error (quote ((t :inherit compilation-error))) "Face for compile errors." :group (quote haskell-interactive)) (defface haskell-interactive-face-compile-warning (quote ((t :inherit compilation-warning))) "Face for compiler warnings." :group (quote haskell-interactive)) (defface haskell-interactive-face-result (quote ((t :inherit font-lock-string-face))) "Face for the result." :group (quote haskell-interactive)) (defface haskell-interactive-face-garbage (quote ((t :inherit font-lock-string-face))) "Face for trailing garbage after a command has completed." :group (quote haskell-interactive)) (autoload (quote haskell-interactive-mode-reset-error) "haskell-interactive-mode" "Reset the error cursor position.
 
 (fn SESSION)" t nil) (autoload (quote haskell-interactive-mode-echo) "haskell-interactive-mode" "Echo a read only piece of text before the prompt.
 
@@ -6310,7 +5008,7 @@ With prefix argument HERE, insert it at point.
 
 \\<haskell-mode-map>
 
-Literate Haskell scripts are supported via `literate-haskell-mode'.
+Literate Haskell scripts are supported via `haskell-literate-mode'.
 The variable `haskell-literate' indicates the style of the script in the
 current buffer.  See the documentation on this variable for more details.
 
@@ -6367,9 +5065,9 @@ If unable to move over a sexp, signal `scan-error' with three
 arguments: a message, the start of the obstacle (a parenthesis or
 list marker of some kind), and end of the obstacle.
 
-(fn &optional ARG)" t nil) (autoload (quote literate-haskell-mode) "haskell-mode" "As `haskell-mode' but for literate scripts.
+(fn &optional ARG)" t nil) (autoload (quote haskell-literate-mode) "haskell-mode" "As `haskell-mode' but for literate scripts.
 
-(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.[gh]s\\'" . haskell-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.hsig\\'" . haskell-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.l[gh]s\\'" . literate-haskell-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.hsc\\'" . haskell-mode))) (add-to-list (quote interpreter-mode-alist) (quote ("runghc" . haskell-mode))) (add-to-list (quote interpreter-mode-alist) (quote ("runhaskell" . haskell-mode))) (add-to-list (quote completion-ignored-extensions) ".hi") (autoload (quote haskell-mode-generate-tags) "haskell-mode" "Generate tags using Hasktags.  This is synchronous function.
+(fn)" t nil) (define-obsolete-function-alias (quote literate-haskell-mode) (quote haskell-literate-mode) "2020-04") (add-to-list (quote auto-mode-alist) (quote ("\\.[gh]s\\'" . haskell-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.hsig\\'" . haskell-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.l[gh]s\\'" . haskell-literate-mode))) (add-to-list (quote auto-mode-alist) (quote ("\\.hsc\\'" . haskell-mode))) (add-to-list (quote interpreter-mode-alist) (quote ("runghc" . haskell-mode))) (add-to-list (quote interpreter-mode-alist) (quote ("runhaskell" . haskell-mode))) (add-to-list (quote completion-ignored-extensions) ".hi") (autoload (quote haskell-mode-generate-tags) "haskell-mode" "Generate tags using Hasktags.  This is synchronous function.
 
 If optional AND-THEN-FIND-THIS-TAG argument is present it is used
 with function `xref-find-definitions' after new table was
@@ -6419,13 +5117,13 @@ i.e. an import list separated by blank lines on either side.
 If the region is active, it will restrict the imports to sort
 within that region.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-sort-imports" (quote ("haskell-sort-imports-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-string" (quote ("haskell-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-svg" (quote ("haskell-svg-")))) (autoload (quote turn-on-haskell-unicode-input-method) "haskell-unicode-input-method" "Set input method `haskell-unicode'.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-sort-imports" (quote ("haskell-sort-imports-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-string" (quote ("haskell-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-svg" (quote ("haskell-svg-")))) (autoload (quote haskell-unicode-input-method-enable) "haskell-unicode-input-method" "Set input method `haskell-unicode'.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-utils" (quote ("haskell-")))) (autoload (quote highlight-uses-mode) "highlight-uses-mode" "Minor mode for highlighting and jumping between uses.
+(fn)" t nil) (define-obsolete-function-alias (quote turn-on-haskell-unicode-input-method) (quote haskell-unicode-input-method-enable) "2020-04") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "haskell-utils" (quote ("haskell-")))) (autoload (quote highlight-uses-mode) "highlight-uses-mode" "Minor mode for highlighting and jumping between uses.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "highlight-uses-mode" (quote ("highlight-uses-mode-")))) (let ((loads (get (quote inferior-haskell) (quote custom-loads)))) (if (member (quote "inf-haskell") loads) nil (put (quote inferior-haskell) (quote custom-loads) (cons (quote "inf-haskell") loads)))) (defalias (quote run-haskell) (quote switch-to-haskell)) (autoload (quote switch-to-haskell) "inf-haskell" "Show the inferior-haskell buffer.  Start the process if needed.
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "highlight-uses-mode" (quote ("highlight-uses-mode-")))) (let ((loads (get (quote inferior-haskell) (quote custom-loads)))) (if (member (quote "inf-haskell") loads) nil (put (quote inferior-haskell) (quote custom-loads) (cons (quote "inf-haskell") loads)))) (autoload (quote run-haskell) "inf-haskell" "Show the inferior-haskell buffer.  Start the process if needed.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "inf-haskell" (quote ("haskell-" "inf")))) (defface w3m-haddock-heading-face (quote ((((class color)) :inherit highlight))) "Face for quarantines." :group (quote haskell)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "w3m-haddock" (quote ("w3m-haddock-" "haskell-w3m-")))) (provide (quote haskell-mode-autoloads))) "hindent" ((hindent hindent-autoloads) (autoload (quote hindent-mode) "hindent" "Indent code with the hindent program.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "inf-haskell" (quote ("haskell-" "inf")))) (defface w3m-haddock-heading-face (quote ((((class color)) :inherit highlight))) "Face for quarantines." :group (quote haskell)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "w3m-haddock" (quote ("w3m-haddock-" "haskell-w3m-")))) (provide (quote haskell-mode-autoloads))) "hindent" ((hindent-autoloads hindent) (autoload (quote hindent-mode) "hindent" "Indent code with the hindent program.
 
 Provide the following keybindings:
 
@@ -6449,13 +5147,13 @@ cause the text to be justified, as per `fill-paragraph'.
 If DROP-NEWLINE is non-nil, don't require a newline at the end of
 the file.
 
-(fn BEG END &optional DROP-NEWLINE)" t nil) (define-obsolete-function-alias (quote hindent/reformat-decl) (quote hindent-reformat-decl)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hindent" (quote ("hindent-")))) (provide (quote hindent-autoloads))) "rainbow-delimiters" ((rainbow-delimiters rainbow-delimiters-autoloads) (autoload (quote rainbow-delimiters-mode) "rainbow-delimiters" "Highlight nested parentheses, brackets, and braces according to their depth.
+(fn BEG END &optional DROP-NEWLINE)" t nil) (define-obsolete-function-alias (quote hindent/reformat-decl) (quote hindent-reformat-decl)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "hindent" (quote ("hindent-")))) (provide (quote hindent-autoloads))) "rainbow-delimiters" ((rainbow-delimiters-autoloads rainbow-delimiters) (autoload (quote rainbow-delimiters-mode) "rainbow-delimiters" "Highlight nested parentheses, brackets, and braces according to their depth.
 
 (fn &optional ARG)" t nil) (autoload (quote rainbow-delimiters-mode-enable) "rainbow-delimiters" "Enable `rainbow-delimiters-mode'.
 
 (fn)" nil nil) (autoload (quote rainbow-delimiters-mode-disable) "rainbow-delimiters" "Disable `rainbow-delimiters-mode'.
 
-(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rainbow-delimiters" (quote ("rainbow-delimiters-")))) (provide (quote rainbow-delimiters-autoloads))) "smartparens" ((smartparens-javascript smartparens-org smartparens-python smartparens-rst smartparens-html smartparens-crystal smartparens-text smartparens-scala smartparens-config smartparens-rust smartparens-haskell smartparens-lua smartparens-clojure smartparens-ruby smartparens-racket smartparens-latex smartparens-markdown smartparens-pkg smartparens-elixir smartparens smartparens-ml smartparens-autoloads smartparens-ess) (autoload (quote sp-cheat-sheet) "smartparens" "Generate a cheat sheet of all the smartparens interactive functions.
+(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rainbow-delimiters" (quote ("rainbow-delimiters-")))) (provide (quote rainbow-delimiters-autoloads))) "smartparens" ((smartparens-ess smartparens-latex smartparens-autoloads smartparens-lua smartparens-python smartparens-ruby smartparens-crystal smartparens smartparens-ml smartparens-pkg smartparens-c smartparens-javascript smartparens-scala smartparens-haskell smartparens-org smartparens-text smartparens-markdown smartparens-config smartparens-racket smartparens-html smartparens-clojure smartparens-rust smartparens-rst smartparens-elixir) (autoload (quote sp-cheat-sheet) "smartparens" "Generate a cheat sheet of all the smartparens interactive functions.
 
 Without a prefix argument, print only the short documentation and examples.
 
@@ -6566,7 +5264,7 @@ See `show-smartparens-mode' for more information on Show-Smartparens mode.
 
 (fn)" t nil) (autoload (quote turn-off-show-smartparens-mode) "smartparens" "Turn off `show-smartparens-mode'.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens" (quote ("smartparens-" "sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-clojure" (quote ("sp-clojure-prefix")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-config" (quote ("sp-lisp-invalid-hyperlink-p")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-crystal" (quote ("sp-crystal-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-elixir" (quote ("sp-elixir-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-ess" (quote ("sp-ess-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-haskell" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-html" (quote ("sp-html-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-latex" (quote ("sp-latex-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-lua" (quote ("sp-lua-post-keyword-insert")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-markdown" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-org" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-python" (quote ("sp-python-fix-tripple-quotes")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-ruby" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-rust" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-scala" (quote ("sp-scala-wrap-with-indented-newlines")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-text" (quote ("sp-text-mode-")))) (provide (quote smartparens-autoloads))) "with-editor" ((with-editor-autoloads with-editor) (autoload (quote with-editor-export-editor) "with-editor" "Teach subsequent commands to use current Emacs instance as editor.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens" (quote ("smartparens-" "sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-clojure" (quote ("sp-clojure-prefix")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-config" (quote ("sp-lisp-invalid-hyperlink-p")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-crystal" (quote ("sp-crystal-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-elixir" (quote ("sp-elixir-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-ess" (quote ("sp-ess-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-haskell" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-html" (quote ("sp-html-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-latex" (quote ("sp-latex-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-lua" (quote ("sp-lua-post-keyword-insert")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-markdown" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-org" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-python" (quote ("sp-python-fix-tripple-quotes")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-ruby" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-rust" (quote ("sp-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-scala" (quote ("sp-scala-wrap-with-indented-newlines")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "smartparens-text" (quote ("sp-text-mode-")))) (provide (quote smartparens-autoloads))) "transient" ((transient-autoloads transient) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "transient" (quote ("transient-" "post-transient-hook" "current-transient-" "define-")))) (provide (quote transient-autoloads))) "with-editor" ((with-editor-autoloads with-editor) (autoload (quote with-editor-export-editor) "with-editor" "Teach subsequent commands to use current Emacs instance as editor.
 
 Set and export the environment variable ENVVAR, by default
 \"EDITOR\".  The value is automatically generated to teach
@@ -6616,7 +5314,7 @@ Also see `async-shell-command' and `shell-command'.
 If COMMAND ends with \"&\" behave like the latter,
 else like the former.
 
-(fn COMMAND &optional OUTPUT-BUFFER ERROR-BUFFER ENVVAR)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "with-editor" (quote ("with-editor" "start-file-process--with-editor-process-filter" "server-" "shell-command--shell-command-with-editor-mode")))) (provide (quote with-editor-autoloads))) "git-commit" ((git-commit git-commit-autoloads) (defvar global-git-commit-mode t "Non-nil if Global Git-Commit mode is enabled.
+(fn COMMAND &optional OUTPUT-BUFFER ERROR-BUFFER ENVVAR)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "with-editor" (quote ("with-editor" "start-file-process--with-editor-process-filter" "server-" "shell-command--shell-command-with-editor-mode")))) (provide (quote with-editor-autoloads))) "git-commit" ((git-commit-autoloads git-commit) (defvar global-git-commit-mode t "Non-nil if Global Git-Commit mode is enabled.
 See the `global-git-commit-mode' command
 for a description of this minor mode.
 Setting this variable directly does not take effect;
@@ -6631,7 +5329,7 @@ provide such a commit message.
 
 (fn)" nil nil) (autoload (quote git-commit-setup) "git-commit" "
 
-(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "git-commit" (quote ("git-commit-")))) (provide (quote git-commit-autoloads))) "transient" ((transient transient-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "transient" (quote ("transient-" "post-transient-hook" "current-transient-" "define-")))) (provide (quote transient-autoloads))) "magit" ((magit-merge magit-submodule magit-refs magit magit-autorevert magit-repos magit-utils magit-bookmark magit-gitignore magit-core magit-notes magit-extras magit-blame magit-diff magit-push magit-clone magit-pkg magit-commit magit-section magit-reset magit-remote magit-apply magit-status magit-sequence magit-mode magit-subtree magit-imenu magit-patch magit-tag magit-bisect magit-worktree magit-git magit-stash magit-obsolete magit-fetch magit-branch magit-margin magit-reflog magit-files magit-transient magit-pull magit-autoloads magit-wip magit-log magit-process git-rebase magit-ediff) (autoload (quote git-rebase-current-line) "git-rebase" "Parse current line into a `git-rebase-action' instance.
+(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "git-commit" (quote ("git-commit-")))) (provide (quote git-commit-autoloads))) "magit" ((magit-mode magit-ediff magit-obsolete magit-stash magit-imenu magit-extras magit-worktree magit-section magit-git magit-patch magit-commit magit-autoloads magit-autorevert magit-branch magit-notes magit-transient magit-repos magit-process magit-pkg magit-subtree magit-tag magit-remote magit-apply magit-diff magit-core magit-submodule magit-files magit-gitignore magit magit-push magit-utils magit-reflog magit-bisect magit-blame magit-sequence magit-fetch magit-bookmark git-rebase magit-reset magit-clone magit-refs magit-log magit-status magit-wip magit-pull magit-margin magit-merge) (autoload (quote git-rebase-current-line) "git-rebase" "Parse current line into a `git-rebase-action' instance.
 If the current line isn't recognized as a rebase line, an
 instance with all nil values is returned.
 
@@ -6734,7 +5432,12 @@ Unlike `git bisect run' this can be used before bisecting has
 begun.  In that case it behaves like `git bisect start; git
 bisect run'.
 
-(fn CMDLINE &optional BAD GOOD)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-bisect" (quote ("magit-")))) (autoload (quote magit-blame-echo) "magit-blame" nil t) (autoload (quote magit-blame-addition) "magit-blame" nil t) (autoload (quote magit-blame-removal) "magit-blame" nil t) (autoload (quote magit-blame-reverse) "magit-blame" nil t) (autoload (quote magit-blame) "magit-blame" nil t) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-blame" (quote ("magit-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-bookmark" (quote ("magit--")))) (autoload (quote magit-branch) "magit" nil t) (autoload (quote magit-checkout) "magit-branch" "Checkout REVISION, updating the index and the working tree.
+(fn CMDLINE &optional BAD GOOD)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-bisect" (quote ("magit-")))) (autoload (quote magit-blame-echo) "magit-blame" nil t) (autoload (quote magit-blame-addition) "magit-blame" nil t) (autoload (quote magit-blame-removal) "magit-blame" nil t) (autoload (quote magit-blame-reverse) "magit-blame" nil t) (autoload (quote magit-blame) "magit-blame" nil t) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-blame" (quote ("magit-")))) (autoload (quote magit--handle-bookmark) "magit-bookmark" "Open a bookmark created by `magit--make-bookmark'.
+Call the `magit-*-setup-buffer' function of the the major-mode
+with the variables' values as arguments, which were recorded by
+`magit--make-bookmark'.  Ignore `magit-display-buffer-function'.
+
+(fn BOOKMARK)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-bookmark" (quote ("magit--make-bookmark")))) (autoload (quote magit-branch) "magit" nil t) (autoload (quote magit-checkout) "magit-branch" "Checkout REVISION, updating the index and the working tree.
 If REVISION is a local branch, then that becomes the current
 branch.  If it is something else, then `HEAD' becomes detached.
 Checkout fails if the working tree or the staging area contain
@@ -7050,9 +5753,9 @@ blame to center around the line point is on.
 
 (fn)" t nil) (autoload (quote ido-enter-magit-status) "magit-extras" "Drop into `magit-status' from file switching.
 
-This command does not work in Emacs 26.  It does work in Emacs 25
-and Emacs 27.  See https://github.com/magit/magit/issues/3634 and
-https://debbugs.gnu.org/cgi/bugreport.cgi?bug=31707.
+This command does not work in Emacs 26.1.
+See https://github.com/magit/magit/issues/3634
+and https://debbugs.gnu.org/cgi/bugreport.cgi?bug=31707.
 
 To make this command available use something like:
 
@@ -7141,7 +5844,7 @@ use `magit-rebase-edit-command' instead of this command.
 (fn FILE)" t nil) (autoload (quote magit-reshelve-since) "magit-extras" "Change the author and committer dates of the commits since REV.
 
 Ask the user for the first reachable commit whose dates should
-be changed.  The read the new date for that commit.  The initial
+be changed.  Then read the new date for that commit.  The initial
 minibuffer input and the previous history element offer good
 values.  The next commit will be created one minute later and so
 on.
@@ -7179,6 +5882,10 @@ the current section is a commit, branch, or tag section, push
 the (referenced) revision to the `magit-revision-stack' for use
 with `magit-pop-revision-stack'.
 
+When `magit-copy-revision-abbreviated' is non-nil, save the
+abbreviated revision to the `kill-ring' and the
+`magit-revision-stack'.
+
 When the current section is a branch or a tag, and a prefix
 argument is used, then save the revision at its tip to the
 `kill-ring' instead of the reference name.
@@ -7208,6 +5915,10 @@ the current section instead, using `magit-copy-section-value'.
 When the region is active, then save that to the `kill-ring',
 like `kill-ring-save' would, instead of behaving as described
 above.
+
+When `magit-copy-revision-abbreviated' is non-nil, save the
+abbreviated revision to the `kill-ring' and the
+`magit-revision-stack'.
 
 (fn)" t nil) (autoload (quote magit-abort-dwim) "magit-extras" "Abort current operation.
 Depending on the context, this will abort a merge, a rebase, a
@@ -7288,9 +5999,13 @@ Rules in that file only affects this clone of the repository.
 (fn RULE)" t nil) (autoload (quote magit-gitignore-on-system) "magit-gitignore" "Add the Git ignore RULE to the file specified by `core.excludesFile'.
 Rules that are defined in that file affect all local repositories.
 
-(fn RULE)" t nil) (autoload (quote magit-skip-worktree) "magit-gitignore" "Call \"git update-index --skip-worktree FILE\".
+(fn RULE)" t nil) (autoload (quote magit-skip-worktree) "magit-gitignore" "Call \"git update-index --skip-worktree -- FILE\".
 
-(fn FILE)" t nil) (autoload (quote magit-no-skip-worktree) "magit-gitignore" "Call \"git update-index --no-skip-worktree FILE\".
+(fn FILE)" t nil) (autoload (quote magit-no-skip-worktree) "magit-gitignore" "Call \"git update-index --no-skip-worktree -- FILE\".
+
+(fn FILE)" t nil) (autoload (quote magit-assume-unchanged) "magit-gitignore" "Call \"git update-index --assume-unchanged -- FILE\".
+
+(fn FILE)" t nil) (autoload (quote magit-no-assume-unchanged) "magit-gitignore" "Call \"git update-index --no-assume-unchanged -- FILE\".
 
 (fn FILE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-gitignore" (quote ("magit-")))) (autoload (quote magit-imenu--log-prev-index-position-function) "magit-imenu" "Move point to previous line in current buffer.
 This function is used as a value for
@@ -7372,14 +6087,18 @@ completion candidates.
 
 (fn &optional ARGS FILES)" t nil) (autoload (quote magit-log-branches) "magit-log" "Show log for all local branches and `HEAD'.
 
-(fn &optional ARGS FILES)" t nil) (autoload (quote magit-log-all-branches) "magit-log" "Show log for all local and remote branches and `HEAD'.
+(fn &optional ARGS FILES)" t nil) (autoload (quote magit-log-matching-branches) "magit-log" "Show log for all branches matching PATTERN and `HEAD'.
+
+(fn PATTERN &optional ARGS FILES)" t nil) (autoload (quote magit-log-matching-tags) "magit-log" "Show log for all tags matching PATTERN and `HEAD'.
+
+(fn PATTERN &optional ARGS FILES)" t nil) (autoload (quote magit-log-all-branches) "magit-log" "Show log for all local and remote branches and `HEAD'.
 
 (fn &optional ARGS FILES)" t nil) (autoload (quote magit-log-all) "magit-log" "Show log for all references and `HEAD'.
 
 (fn &optional ARGS FILES)" t nil) (autoload (quote magit-log-buffer-file) "magit-log" "Show log for the blob or file visited in the current buffer.
-With a prefix argument or when `--follow' is part of
-`magit-log-arguments', then follow renames.  When the region is
-active, restrict the log to the lines that the region touches.
+With a prefix argument or when `--follow' is an active log
+argument, then follow renames.  When the region is active,
+restrict the log to the lines that the region touches.
 
 (fn &optional FOLLOW BEG END)" t nil) (autoload (quote magit-log-trace-definition) "magit-log" "Show log for the definition at point.
 
@@ -7471,7 +6190,7 @@ same differences as those shown in the buffer are always used.
 
 (fn FILE &optional ARG)" t nil) (autoload (quote magit-request-pull) "magit-patch" "Request upstream to pull from you public repository.
 
-URL is the url of your publically accessible repository.
+URL is the url of your publicly accessible repository.
 START is a commit that already is in the upstream repository.
 END is the last commit, usually a branch name, which upstream
 is asked to pull.  START has to be reachable from that commit.
@@ -7500,7 +6219,9 @@ branch as default.
 
 (fn REMOTE &optional ARGS)" t nil) (autoload (quote magit-push-tag) "magit-push" "Push a tag to another repository.
 
-(fn TAG REMOTE &optional ARGS)" t nil) (autoload (quote magit-push-implicitly) "magit-push" "Push somewhere without using an explicit refspec.
+(fn TAG REMOTE &optional ARGS)" t nil) (autoload (quote magit-push-notes-ref) "magit-push" "Push a notes ref to another repository.
+
+(fn REF REMOTE &optional ARGS)" t nil) (autoload (quote magit-push-implicitly) "magit-push" "Push somewhere without using an explicit refspec.
 
 This command simply runs \"git push -v [ARGS]\".  ARGS are the
 arguments specified in the popup buffer.  No explicit refspec
@@ -7732,8 +6453,8 @@ When the region is active offer to drop all contained stashes.
 (fn REF)" t nil) (autoload (quote magit-stash-branch) "magit-stash" "Create and checkout a new BRANCH from STASH.
 
 (fn STASH BRANCH)" t nil) (autoload (quote magit-stash-branch-here) "magit-stash" "Create and checkout a new BRANCH and apply STASH.
-The branch is created using `magit-branch', using the current
-branch or `HEAD' as the string-point.
+The branch is created using `magit-branch-and-checkout', using the
+current branch or `HEAD' as the start-point.
 
 (fn STASH BRANCH)" t nil) (autoload (quote magit-stash-format-patch) "magit-stash" "Create a patch from STASH
 
@@ -7782,9 +6503,16 @@ prefix arguments:
   then fall back to the same behavior as with two prefix
   arguments.
 
-(fn &optional DIRECTORY CACHE)" t nil) (autoload (quote magit-status-setup-buffer) "magit-status" "
+(fn &optional DIRECTORY CACHE)" t nil) (defalias (quote magit) (quote magit-status) "An alias for `magit-status' for better discoverability.
 
-(fn &optional DIRECTORY)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-status" (quote ("magit")))) (autoload (quote magit-submodule) "magit-submodule" nil t) (autoload (quote magit-submodule-add) "magit-submodule" nil t) (autoload (quote magit-submodule-read-name-for-path) "magit-submodule" "
+Instead of invoking this alias for `magit-status' using
+\"M-x magit RET\", you should bind a key to `magit-status'
+and read the info node `(magit)Getting Started', which
+also contains other useful hints.") (autoload (quote magit-status-here) "magit-status" "Like `magit-status' but with non-nil `magit-status-goto-file-position'.
+
+(fn)" t nil) (autoload (quote magit-status-setup-buffer) "magit-status" "
+
+(fn &optional DIRECTORY)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-status" (quote ("magit-")))) (autoload (quote magit-submodule) "magit-submodule" nil t) (autoload (quote magit-submodule-add) "magit-submodule" nil t) (autoload (quote magit-submodule-read-name-for-path) "magit-submodule" "
 
 (fn PATH &optional PREFER-SHORT)" nil nil) (autoload (quote magit-submodule-register) "magit-submodule" nil t) (autoload (quote magit-submodule-populate) "magit-submodule" nil t) (autoload (quote magit-submodule-update) "magit-submodule" nil t) (autoload (quote magit-submodule-synchronize) "magit-submodule" nil t) (autoload (quote magit-submodule-unpopulate) "magit-submodule" nil t) (autoload (quote magit-submodule-remove) "magit-submodule" "Unregister MODULES and remove their working directories.
 
@@ -7875,7 +6603,7 @@ See info node `(magit)Debugging Tools' for more information.
 
 (fn FN &optional FORK)" nil nil) (advice-add (quote Info-follow-nearest-node) :around (quote Info-follow-nearest-node--magit-gitman)) (autoload (quote org-man-export--magit-gitman) "magit-utils" "
 
-(fn FN LINK DESCRIPTION FORMAT)" nil nil) (advice-add (quote org-man-export) :around (quote org-man-export--magit-gitman)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-utils" (quote ("magit-" "whitespace-dont-turn-on-in-magit-mode")))) (defvar magit-wip-after-save-mode nil "Non-nil if Magit-Wip-After-Save mode is enabled.
+(fn FN LINK DESCRIPTION FORMAT)" nil nil) (advice-add (quote org-man-export) :around (quote org-man-export--magit-gitman)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-utils" (quote ("magit-")))) (defvar magit-wip-after-save-mode nil "Non-nil if Magit-Wip-After-Save mode is enabled.
 See the `magit-wip-after-save-mode' command
 for a description of this minor mode.
 Setting this variable directly does not take effect;
@@ -7933,17 +6661,19 @@ a Git repository.
 
 (fn PATH BRANCH)" t nil) (autoload (quote magit-worktree-branch) "magit-worktree" "Create a new BRANCH and check it out in a new worktree at PATH.
 
-(fn PATH BRANCH START-POINT &optional FORCE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-worktree" (quote ("magit-")))) (provide (quote magit-autoloads))) "pcache" ((pcache-autoloads pcache) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pcache" (quote ("pcache-" "constructor" "*pcache-repositor")))) (provide (quote pcache-autoloads))) "logito" ((logito-autoloads logito) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "logito" (quote ("logito-")))) (provide (quote logito-autoloads))) "marshal" ((marshal marshal-autoloads) (autoload (quote marshal) "marshal" "
+(fn PATH BRANCH START-POINT &optional FORCE)" t nil) (autoload (quote magit-worktree-move) "magit-worktree" "Move WORKTREE to PATH.
+
+(fn WORKTREE PATH)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "magit-worktree" (quote ("magit-")))) (provide (quote magit-autoloads))) "pcache" ((pcache-autoloads pcache) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pcache" (quote ("pcache-" "constructor" "*pcache-repositor")))) (provide (quote pcache-autoloads))) "logito" ((logito logito-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "logito" (quote ("logito-")))) (provide (quote logito-autoloads))) "marshal" ((marshal-autoloads marshal) (autoload (quote marshal) "marshal" "
 
 (fn OBJ TYPE)" nil nil) (autoload (quote unmarshal) "marshal" "
 
 (fn OBJ BLOB TYPE)" nil nil) (autoload (quote marshal-defclass) "marshal" "
 
-(fn NAME SUPERCLASS SLOTS &rest OPTIONS-AND-DOC)" nil t) (function-put (quote marshal-defclass) (quote lisp-indent-function) (quote 2)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "marshal" (quote ("unmarshal-" "marshal-")))) (provide (quote marshal-autoloads))) "gh" ((gh-autoloads gh-oauth gh-pkg gh-common gh-gist gh-issue-comments gh-cache gh gh-url gh-auth gh-users gh-api gh-pull-comments gh-pulls gh-issues gh-repos gh-profile gh-comments gh-orgs gh-search) (require (quote eieio)) (eieio-defclass-autoload (quote gh-api) (quote nil) "gh-api" "Github API") (eieio-defclass-autoload (quote gh-api-v3) (quote (gh-api)) "gh-api" "Github API v3") (eieio-defclass-autoload (quote gh-api-request) (quote (gh-url-request)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-response) (quote (gh-url-response)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-paged-request) (quote (gh-api-request)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-paged-response) (quote (gh-api-response)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-callback) (quote (gh-url-callback)) "gh-api" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-api" (quote ("gh-" "initialize-instance" "logito-log")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-authenticator) (quote nil) "gh-auth" "Abstract authenticator") (eieio-defclass-autoload (quote gh-auth-2fa-callback) (quote (gh-url-callback)) "gh-auth" "2-factor callback") (eieio-defclass-autoload (quote gh-password-authenticator) (quote (gh-authenticator)) "gh-auth" "Password-based authenticator") (eieio-defclass-autoload (quote gh-oauth-authenticator) (quote (gh-authenticator)) "gh-auth" "Oauth-based authenticator") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-auth" (quote ("gh-" "initialize-instance")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-cache) (quote (pcache-repository)) "gh-cache" nil) (eieio-defclass-autoload (quote gh-cache-entry) (quote (pcache-entry)) "gh-cache" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-cache" (quote ("gh-cache-" "pcache-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-comments-api-mixin) (quote nil) "gh-comments" :abstract) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-comments" (quote ("gh-comments-")))) (require (quote eieio)) (autoload (quote gh-marshal-default-spec) "gh-common" "
+(fn NAME SUPERCLASS SLOTS &rest OPTIONS-AND-DOC)" nil t) (function-put (quote marshal-defclass) (quote lisp-indent-function) (quote 2)) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "marshal" (quote ("unmarshal-" "marshal-")))) (provide (quote marshal-autoloads))) "gh" ((gh-gist gh-cache gh-users gh-comments gh-common gh-search gh-pull-comments gh gh-url gh-orgs gh-pulls gh-api gh-auth gh-profile gh-pkg gh-issues gh-repos gh-autoloads gh-oauth gh-issue-comments) (require (quote eieio)) (eieio-defclass-autoload (quote gh-api) (quote nil) "gh-api" "Github API") (eieio-defclass-autoload (quote gh-api-v3) (quote (gh-api)) "gh-api" "Github API v3") (eieio-defclass-autoload (quote gh-api-request) (quote (gh-url-request)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-response) (quote (gh-url-response)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-paged-request) (quote (gh-api-request)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-paged-response) (quote (gh-api-response)) "gh-api" nil) (eieio-defclass-autoload (quote gh-api-callback) (quote (gh-url-callback)) "gh-api" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-api" (quote ("gh-" "initialize-instance" "logito-log")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-authenticator) (quote nil) "gh-auth" "Abstract authenticator") (eieio-defclass-autoload (quote gh-auth-2fa-callback) (quote (gh-url-callback)) "gh-auth" "2-factor callback") (eieio-defclass-autoload (quote gh-password-authenticator) (quote (gh-authenticator)) "gh-auth" "Password-based authenticator") (eieio-defclass-autoload (quote gh-oauth-authenticator) (quote (gh-authenticator)) "gh-auth" "Oauth-based authenticator") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-auth" (quote ("gh-" "initialize-instance")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-cache) (quote (pcache-repository)) "gh-cache" nil) (eieio-defclass-autoload (quote gh-cache-entry) (quote (pcache-entry)) "gh-cache" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-cache" (quote ("gh-cache-" "pcache-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-comments-api-mixin) (quote nil) "gh-comments" :abstract) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-comments" (quote ("gh-comments-")))) (require (quote eieio)) (autoload (quote gh-marshal-default-spec) "gh-common" "
 
 (fn SLOT)" nil nil) (autoload (quote gh-defclass) "gh-common" "
 
-(fn NAME SUPERCLASS SLOTS &rest OPTIONS-AND-DOC)" nil t) (gh-defclass gh-object nil nil) (gh-defclass gh-ref-object (gh-object) ((id :initarg :id) (url :initarg :url) (html-url :initarg :html-url))) (gh-defclass gh-user (gh-ref-object) ((login :initarg :login) (gravatar-url :initarg :gravatar-url)) "Github user object") (gh-defclass gh-comment (gh-ref-object) ((body :initarg :body) (user :initarg :user :initform nil :marshal-type gh-user) (created-at :initarg :created_at) (updated-at :initarg :updated_at)) "Github comment object") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-common" (quote ("gh-" "slot-unbound")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-gist-api) (quote (gh-api-v3)) "gh-gist" "Gist API") (gh-defclass gh-gist-gist-stub (gh-object) ((files :initarg :files :type list :initform nil :marshal-type (list gh-gist-gist-file)) (public :initarg :public :marshal-type bool) (description :initarg :description)) "Class for user-created gist objects") (gh-defclass gh-gist-history-change (gh-object) ((total :initarg :total) (additions :initarg :additions) (deletions :initarg :deletions))) (gh-defclass gh-gist-history-entry (gh-object) ((user :initarg :user :initform nil :marshal-type gh-user) (version :initarg :version) (committed :initarg :committed :marshal ((alist . committed_at))) (change :initarg :change :marshal ((alist . change_status)) :marshal-type gh-gist-history-change) (url :initarg :url))) (gh-defclass gh-gist-fork-entry (gh-ref-object) ((user :initarg :user :initform nil :marshal-type gh-user) (created :initarg :created :marshal ((alist . created_at))) (updated :initarg :updated :marshal ((alist . updated_at))))) (gh-defclass gh-gist-gist (gh-ref-object gh-gist-gist-stub) ((date :initarg :date :marshal ((alist . created_at))) (update :initarg :update :marshal ((alist . updated_at))) (push-url :initarg :push-url :marshal ((alist . git_push_url))) (pull-url :initarg :pull-url :marshal ((alist . git_pull_url))) (comments :initarg :comments) (user :initarg :user :initform nil :marshal-type gh-user :marshal ((alist . owner))) (history :initarg :history :initform nil :type list :marshal-type (list gh-gist-history-entry)) (forks :initarg :forks :initform nil :type list :marshal-type (list gh-gist-fork-entry))) "Gist object") (gh-defclass gh-gist-gist-file (gh-object) ((filename :initarg :filename) (size :initarg :size) (url :initarg :url :marshal ((alist . raw_url))) (content :initarg :content))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-gist" (quote ("gh-gist-" "constructor")))) (require (quote eieio)) (require (quote eieio)) (eieio-defclass-autoload (quote gh-issues-api) (quote (gh-api-v3 gh-comments-api-mixin)) "gh-issues" "Github Issues api") (gh-defclass gh-issues-issue (gh-ref-object) ((number :initarg :number) (state :initarg :state) (title :initarg :title) (body :initarg :body) (user :initarg :user :initform nil :marshal-type gh-user) (labels :initarg :labels :initform nil :marshal-type (list gh-issues-label)) (assignees :initarg :assignees :initform nil :marshal-type (list gh-user)) (assignee :initarg :assignee :initform nil :marshal-type gh-user) (milestone :initarg :milestone :initform nil :marshal-type gh-issues-milestone) (comments :initarg :comments :initform 0) (pull-request :initarg :pull-request :marshal-type gh-issues-pull-request) (closed-at :initarg :closed-at) (created-at :initarg :created-at) (updated-at :initarg :updated-at)) "issues request") (gh-defclass gh-issues-pull-request (gh-object) ((html-url :initarg :html-url) (diff-url :initarg :diff-url) (patch-url :initarg :patch-url))) (gh-defclass gh-issues-label (gh-ref-object) ((name :initarg :name) (color :initarg :color))) (gh-defclass gh-issues-milestone (gh-ref-object) ((number :initarg :number) (state :initarg :state) (title :initarg :title) (description :initarg :description) (creator :initarg :creator :initform nil :marshal-type gh-user) (open-issues :initarg :open-issues) (closed-issues :initarg :closed-issues) (created-at :initarg :created-at) (due-on :initarg :due-on)) "github milestone") (gh-defclass gh-issues-comment (gh-comment) nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-issues" (quote ("gh-issues-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-oauth-api) (quote (gh-api-v3)) "gh-oauth" "OAuth API") (eieio-defclass-autoload (quote gh-oauth-password-authenticator) (quote (gh-password-authenticator)) "gh-oauth" nil) (gh-defclass gh-oauth-authorization (gh-ref-object) ((scopes :initarg :scopes) (token :initarg :token) (app :initarg :app :initform nil :marshal-type gh-oauth-app) (updated-at :initarg :updated-at) (created-at :initarg :created-at))) (gh-defclass gh-oauth-app (gh-object) ((url :initarg :url) (name :initarg :name))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-oauth" (quote ("gh-oauth-auth-" "initialize-instance")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-orgs-api) (quote (gh-api-v3)) "gh-orgs" "Orgs API") (gh-defclass gh-orgs-org-stub (gh-ref-object) ((login :initarg :login) (avatar-url :initarg :avatar-url) (description :initarg :description))) (gh-defclass gh-orgs-plan (gh-object) ((name :initarg :name) (space :initarg :space) (private-repos :initarg :private-repos))) (gh-defclass gh-orgs-org (gh-orgs-org-stub) ((name :initarg :name) (company :initarg :company) (blog :initarg :blog) (location :initarg :location) (email :initarg :email) (public-repos :initarg :public-repos) (public-gists :initarg :public-gists) (followers :initarg :followers) (following :initarg :following) (created-at :initarg :created-at) (type :initarg :type) (total-private-repos :initarg :total-private-repos) (owned-private-repos :initarg :owned-private-repos) (private-gists :initarg :private-gists) (disk-usage :initarg :disk-usage) (collaborators :initarg :collaborators) (billing-email :initarg :billing-email) (plan :initarg :plan :initform nil :marshal-type gh-orgs-plan)) "Class for GitHub organizations") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-orgs" (quote ("gh-orgs-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-profile" (quote ("gh-profile-")))) (require (quote eieio)) (require (quote eieio)) (eieio-defclass-autoload (quote gh-pulls-cache) (quote (gh-cache)) "gh-pulls" nil) (eieio-defclass-autoload (quote gh-pulls-api) (quote (gh-api-v3 gh-comments-api-mixin)) "gh-pulls" "Git pull requests API") (gh-defclass gh-pulls-comment (gh-comment) ((path :initarg :path) (diff-hunk :initarg :diff-hunk) (position :initarg :position) (original-position :initarg :original-position) (commit-id :initarg :commit-id) (original-commit-id :initarg :original-commit-id) (in-reply-to :initarg :in-reply-to :initform nil))) (gh-defclass gh-pulls-request-stub (gh-ref-object) ((diff-url :initarg :diff-url) (patch-url :initarg :patch-url) (issue-url :initarg :issue-url) (number :initarg :number) (state :initarg :state) (title :initarg :title) (body :initarg :body) (created-at :initarg :created-at) (updated-at :initarg :updated-at) (closed-at :initarg :closed-at) (merged-at :initarg :merged-at) (head :initarg :head :initform nil :marshal-type gh-repos-ref) (base :initarg :base :initform nil :marshal-type gh-repos-ref))) (gh-defclass gh-pulls-request (gh-pulls-request-stub) ((merged :initarg :merged) (mergeable :initarg :mergeable) (merged-by :initarg :merged-by) (comments :initarg :comments) (user :initarg :user :initform nil :marshal-type gh-user) (commits :initarg :commits) (additions :initarg :additions) (deletions :initarg :deletions) (changed-files :initarg :changed-files)) "Git pull requests API") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-pulls" (quote ("gh-pulls-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-repos-api) (quote (gh-api-v3)) "gh-repos" "Repos API") (gh-defclass gh-repos-repo-stub (gh-object) ((name :initarg :name) (description :initarg :description) (homepage :initarg :homepage) (private :initarg :private)) "Class for user-created repository objects") (gh-defclass gh-repos-repo (gh-ref-object gh-repos-repo-stub) ((clone-url :initarg :clone-url) (git-url :initarg :git-url) (ssh-url :initarg :ssh-url) (svn-url :initarg :svn-url) (mirror-url :initarg :mirror-url) (owner :initarg :owner :initform nil :marshal-type gh-user) (full-name :initarg :full-name) (language :initarg :language) (fork :initarg :fork) (forks :initarg :forks) (forks-count :initarg :forks-count) (watchers :initarg :watchers) (watchers-count :initarg :watchers-count) (stargazers-count :initarg :stargazers-count) (size :initarg :size) (master-branch :initarg :master-branch) (open-issues :initarg :open-issues) (pushed-at :initarg :pushed-at) (created-at :initarg :created-at) (updated-at :initarg :updated-at) (organisation :initarg :organisation :initform nil :marshal-type gh-user) (parent :initarg :parent :marshal-type gh-repos-repo) (source :initarg :source :marshal-type gh-repos-repo) (has-issues :initarg :has-issues) (has-wiki :initarg :has-wiki) (has-downloads :initarg :has-downloads)) "Class for GitHub repositories") (gh-defclass gh-repos-ref (gh-object) ((label :initarg :label) (ref :initarg :ref :initform nil) (sha :initarg :sha :initform nil) (user :initarg :user :initform nil :marshal-type gh-user) (repo :initarg :repo :initform nil :marshal-type gh-repos-repo))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-repos" (quote ("gh-repos-")))) (eieio-defclass-autoload (quote gh-search-api) (quote (gh-api-v3)) "gh-search" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-search" (quote ("gh-search-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-url-request) (quote nil) "gh-url" nil) (eieio-defclass-autoload (quote gh-url-response) (quote nil) "gh-url" nil) (eieio-defclass-autoload (quote gh-url-callback) (quote nil) "gh-url" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-url" (quote ("gh-url-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-users-api) (quote (gh-api-v3)) "gh-users" "Users API") (gh-defclass gh-users-user (gh-user) ((gravatar-id :initarg :gravatar-id) (html-url :initarg :html-url) (followers-url :initarg :followers-url) (following-url :initarg :following-url) (gists-url :initarg :gists-url) (starred-url :initarg :starred-url) (subscriptions-url :initarg :subscriptions-url) (organizations-url :initarg :organizations-url) (repos-url :initarg :repos-url) (events-url :initarg :events-url) (received-events-url :initarg :received-events-url) (type :initarg :type) (site-admin :initarg :site-admin) (name :initarg :name) (company :initarg :company) (blog :initarg :blog) (location :initarg :location) (email :initarg :email) (hireable :initarg :hireable) (bio :initarg :bio) (public-repos :initarg :public-repos) (public-gists :initarg :public-gists) (followers :initarg :followers) (following :initarg :following) (created-at :initarg :created-at) (update-at :initarg :update-at))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-users" (quote ("gh-users-")))) (provide (quote gh-autoloads))) "gist" ((gist gist-autoloads) (autoload (quote gist-region) "gist" "Post the current region as a new paste at gist.github.com
+(fn NAME SUPERCLASS SLOTS &rest OPTIONS-AND-DOC)" nil t) (gh-defclass gh-object nil nil) (gh-defclass gh-ref-object (gh-object) ((id :initarg :id) (url :initarg :url) (html-url :initarg :html-url))) (gh-defclass gh-user (gh-ref-object) ((login :initarg :login) (gravatar-url :initarg :gravatar-url)) "Github user object") (gh-defclass gh-comment (gh-ref-object) ((body :initarg :body) (user :initarg :user :initform nil :marshal-type gh-user) (created-at :initarg :created_at) (updated-at :initarg :updated_at)) "Github comment object") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-common" (quote ("gh-" "slot-unbound")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-gist-api) (quote (gh-api-v3)) "gh-gist" "Gist API") (gh-defclass gh-gist-gist-stub (gh-object) ((files :initarg :files :type list :initform nil :marshal-type (list gh-gist-gist-file)) (public :initarg :public :marshal-type bool) (description :initarg :description)) "Class for user-created gist objects") (gh-defclass gh-gist-history-change (gh-object) ((total :initarg :total) (additions :initarg :additions) (deletions :initarg :deletions))) (gh-defclass gh-gist-history-entry (gh-object) ((user :initarg :user :initform nil :marshal-type gh-user) (version :initarg :version) (committed :initarg :committed :marshal ((alist . committed_at))) (change :initarg :change :marshal ((alist . change_status)) :marshal-type gh-gist-history-change) (url :initarg :url))) (gh-defclass gh-gist-fork-entry (gh-ref-object) ((user :initarg :user :initform nil :marshal-type gh-user) (created :initarg :created :marshal ((alist . created_at))) (updated :initarg :updated :marshal ((alist . updated_at))))) (gh-defclass gh-gist-gist (gh-ref-object gh-gist-gist-stub) ((date :initarg :date :marshal ((alist . created_at))) (update :initarg :update :marshal ((alist . updated_at))) (push-url :initarg :push-url :marshal ((alist . git_push_url))) (pull-url :initarg :pull-url :marshal ((alist . git_pull_url))) (comments :initarg :comments) (user :initarg :user :initform nil :marshal-type gh-user :marshal ((alist . owner))) (history :initarg :history :initform nil :type list :marshal-type (list gh-gist-history-entry)) (forks :initarg :forks :initform nil :type list :marshal-type (list gh-gist-fork-entry))) "Gist object") (gh-defclass gh-gist-gist-file (gh-object) ((filename :initarg :filename) (size :initarg :size) (url :initarg :url :marshal ((alist . raw_url))) (content :initarg :content))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-gist" (quote ("gh-gist-" "constructor")))) (require (quote eieio)) (require (quote eieio)) (eieio-defclass-autoload (quote gh-issues-api) (quote (gh-api-v3 gh-comments-api-mixin)) "gh-issues" "Github Issues api") (gh-defclass gh-issues-issue (gh-ref-object) ((number :initarg :number) (state :initarg :state) (title :initarg :title) (body :initarg :body) (user :initarg :user :initform nil :marshal-type gh-user) (labels :initarg :labels :initform nil :marshal-type (list gh-issues-label)) (assignees :initarg :assignees :initform nil :marshal-type (list gh-user)) (assignee :initarg :assignee :initform nil :marshal-type gh-user) (milestone :initarg :milestone :initform nil :marshal-type gh-issues-milestone) (comments :initarg :comments :initform 0) (pull-request :initarg :pull-request :marshal-type gh-issues-pull-request) (closed-at :initarg :closed-at) (created-at :initarg :created-at) (updated-at :initarg :updated-at)) "issues request") (gh-defclass gh-issues-pull-request (gh-object) ((html-url :initarg :html-url) (diff-url :initarg :diff-url) (patch-url :initarg :patch-url))) (gh-defclass gh-issues-label (gh-ref-object) ((name :initarg :name) (color :initarg :color))) (gh-defclass gh-issues-milestone (gh-ref-object) ((number :initarg :number) (state :initarg :state) (title :initarg :title) (description :initarg :description) (creator :initarg :creator :initform nil :marshal-type gh-user) (open-issues :initarg :open-issues) (closed-issues :initarg :closed-issues) (created-at :initarg :created-at) (due-on :initarg :due-on)) "github milestone") (gh-defclass gh-issues-comment (gh-comment) nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-issues" (quote ("gh-issues-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-oauth-api) (quote (gh-api-v3)) "gh-oauth" "OAuth API") (eieio-defclass-autoload (quote gh-oauth-password-authenticator) (quote (gh-password-authenticator)) "gh-oauth" nil) (gh-defclass gh-oauth-authorization (gh-ref-object) ((scopes :initarg :scopes) (token :initarg :token) (app :initarg :app :initform nil :marshal-type gh-oauth-app) (updated-at :initarg :updated-at) (created-at :initarg :created-at))) (gh-defclass gh-oauth-app (gh-object) ((url :initarg :url) (name :initarg :name))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-oauth" (quote ("gh-oauth-auth-" "initialize-instance")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-orgs-api) (quote (gh-api-v3)) "gh-orgs" "Orgs API") (gh-defclass gh-orgs-org-stub (gh-ref-object) ((login :initarg :login) (avatar-url :initarg :avatar-url) (description :initarg :description))) (gh-defclass gh-orgs-plan (gh-object) ((name :initarg :name) (space :initarg :space) (private-repos :initarg :private-repos))) (gh-defclass gh-orgs-org (gh-orgs-org-stub) ((name :initarg :name) (company :initarg :company) (blog :initarg :blog) (location :initarg :location) (email :initarg :email) (public-repos :initarg :public-repos) (public-gists :initarg :public-gists) (followers :initarg :followers) (following :initarg :following) (created-at :initarg :created-at) (type :initarg :type) (total-private-repos :initarg :total-private-repos) (owned-private-repos :initarg :owned-private-repos) (private-gists :initarg :private-gists) (disk-usage :initarg :disk-usage) (collaborators :initarg :collaborators) (billing-email :initarg :billing-email) (plan :initarg :plan :initform nil :marshal-type gh-orgs-plan)) "Class for GitHub organizations") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-orgs" (quote ("gh-orgs-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-profile" (quote ("gh-profile-")))) (require (quote eieio)) (require (quote eieio)) (eieio-defclass-autoload (quote gh-pulls-cache) (quote (gh-cache)) "gh-pulls" nil) (eieio-defclass-autoload (quote gh-pulls-api) (quote (gh-api-v3 gh-comments-api-mixin)) "gh-pulls" "Git pull requests API") (gh-defclass gh-pulls-comment (gh-comment) ((path :initarg :path) (diff-hunk :initarg :diff-hunk) (position :initarg :position) (original-position :initarg :original-position) (commit-id :initarg :commit-id) (original-commit-id :initarg :original-commit-id) (in-reply-to :initarg :in-reply-to :initform nil))) (gh-defclass gh-pulls-request-stub (gh-ref-object) ((diff-url :initarg :diff-url) (patch-url :initarg :patch-url) (issue-url :initarg :issue-url) (number :initarg :number) (state :initarg :state) (title :initarg :title) (body :initarg :body) (created-at :initarg :created-at) (updated-at :initarg :updated-at) (closed-at :initarg :closed-at) (merged-at :initarg :merged-at) (head :initarg :head :initform nil :marshal-type gh-repos-ref) (base :initarg :base :initform nil :marshal-type gh-repos-ref))) (gh-defclass gh-pulls-request (gh-pulls-request-stub) ((merged :initarg :merged) (mergeable :initarg :mergeable) (merged-by :initarg :merged-by) (comments :initarg :comments) (user :initarg :user :initform nil :marshal-type gh-user) (commits :initarg :commits) (additions :initarg :additions) (deletions :initarg :deletions) (changed-files :initarg :changed-files)) "Git pull requests API") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-pulls" (quote ("gh-pulls-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-repos-api) (quote (gh-api-v3)) "gh-repos" "Repos API") (gh-defclass gh-repos-repo-stub (gh-object) ((name :initarg :name) (description :initarg :description) (homepage :initarg :homepage) (private :initarg :private)) "Class for user-created repository objects") (gh-defclass gh-repos-repo (gh-ref-object gh-repos-repo-stub) ((clone-url :initarg :clone-url) (git-url :initarg :git-url) (ssh-url :initarg :ssh-url) (svn-url :initarg :svn-url) (mirror-url :initarg :mirror-url) (owner :initarg :owner :initform nil :marshal-type gh-user) (full-name :initarg :full-name) (language :initarg :language) (fork :initarg :fork) (forks :initarg :forks) (forks-count :initarg :forks-count) (watchers :initarg :watchers) (watchers-count :initarg :watchers-count) (stargazers-count :initarg :stargazers-count) (size :initarg :size) (master-branch :initarg :master-branch) (open-issues :initarg :open-issues) (pushed-at :initarg :pushed-at) (created-at :initarg :created-at) (updated-at :initarg :updated-at) (organisation :initarg :organisation :initform nil :marshal-type gh-user) (parent :initarg :parent :marshal-type gh-repos-repo) (source :initarg :source :marshal-type gh-repos-repo) (has-issues :initarg :has-issues) (has-wiki :initarg :has-wiki) (has-downloads :initarg :has-downloads)) "Class for GitHub repositories") (gh-defclass gh-repos-ref (gh-object) ((label :initarg :label) (ref :initarg :ref :initform nil) (sha :initarg :sha :initform nil) (user :initarg :user :initform nil :marshal-type gh-user) (repo :initarg :repo :initform nil :marshal-type gh-repos-repo))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-repos" (quote ("gh-repos-")))) (eieio-defclass-autoload (quote gh-search-api) (quote (gh-api-v3)) "gh-search" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-search" (quote ("gh-search-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-url-request) (quote nil) "gh-url" nil) (eieio-defclass-autoload (quote gh-url-response) (quote nil) "gh-url" nil) (eieio-defclass-autoload (quote gh-url-callback) (quote nil) "gh-url" nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-url" (quote ("gh-url-")))) (require (quote eieio)) (eieio-defclass-autoload (quote gh-users-api) (quote (gh-api-v3)) "gh-users" "Users API") (gh-defclass gh-users-user (gh-user) ((gravatar-id :initarg :gravatar-id) (html-url :initarg :html-url) (followers-url :initarg :followers-url) (following-url :initarg :following-url) (gists-url :initarg :gists-url) (starred-url :initarg :starred-url) (subscriptions-url :initarg :subscriptions-url) (organizations-url :initarg :organizations-url) (repos-url :initarg :repos-url) (events-url :initarg :events-url) (received-events-url :initarg :received-events-url) (type :initarg :type) (site-admin :initarg :site-admin) (name :initarg :name) (company :initarg :company) (blog :initarg :blog) (location :initarg :location) (email :initarg :email) (hireable :initarg :hireable) (bio :initarg :bio) (public-repos :initarg :public-repos) (public-gists :initarg :public-gists) (followers :initarg :followers) (following :initarg :following) (created-at :initarg :created-at) (update-at :initarg :update-at))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gh-users" (quote ("gh-users-")))) (provide (quote gh-autoloads))) "gist" ((gist-autoloads gist) (autoload (quote gist-region) "gist" "Post the current region as a new paste at gist.github.com
 Copies the URL into the kill ring.
 
 With a prefix argument, makes a private paste.
@@ -7988,7 +6718,7 @@ Copies the URL into the kill ring.
 
 (fn &optional BACKGROUND)" t nil) (autoload (quote gist-fork) "gist" "Fork a gist.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gist" (quote ("dired-do-gist" "gist-")))) (provide (quote gist-autoloads))) "git-gutter" ((git-gutter-autoloads git-gutter) (autoload (quote git-gutter:linum-setup) "git-gutter" "Setup for linum-mode.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gist" (quote ("dired-do-gist" "gist-")))) (provide (quote gist-autoloads))) "git-gutter" ((git-gutter git-gutter-autoloads) (autoload (quote git-gutter:linum-setup) "git-gutter" "Setup for linum-mode.
 
 (fn)" nil nil) (autoload (quote git-gutter-mode) "git-gutter" "Git-Gutter mode
 
@@ -8018,21 +6748,21 @@ to them.
 
 (fn PROC SENDER RESPONSE TARGET TEXT)" t nil) (autoload (quote rcirc-notify-add-hooks) "rcirc-notify" "Initialize rcirc-notify into rcirc with hooks.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rcirc-notify" (quote ("rcirc-notify")))) (provide (quote rcirc-notify-autoloads))) "oauth2" ((oauth2-autoloads oauth2) (autoload (quote oauth2-refresh-access) "oauth2" "Refresh OAuth access TOKEN.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "rcirc-notify" (quote ("rcirc-notify")))) (provide (quote rcirc-notify-autoloads))) "oauth2" ((oauth2 oauth2-autoloads) (autoload (quote oauth2-refresh-access) "oauth2" "Refresh OAuth access TOKEN.
 TOKEN should be obtained with `oauth2-request-access'.
 
 (fn TOKEN)" nil nil) (autoload (quote oauth2-auth) "oauth2" "Authenticate application via OAuth2.
 
 (fn AUTH-URL TOKEN-URL CLIENT-ID CLIENT-SECRET &optional SCOPE STATE REDIRECT-URI)" nil nil) (autoload (quote oauth2-auth-and-store) "oauth2" "Request access to a resource and store it using `plstore'.
 
-(fn AUTH-URL TOKEN-URL RESOURCE-URL CLIENT-ID CLIENT-SECRET &optional REDIRECT-URI)" nil nil) (autoload (quote oauth2-url-retrieve-synchronously) "oauth2" "Retrieve an URL synchronously using TOKEN to access it.
+(fn AUTH-URL TOKEN-URL SCOPE CLIENT-ID CLIENT-SECRET &optional REDIRECT-URI STATE)" nil nil) (autoload (quote oauth2-url-retrieve-synchronously) "oauth2" "Retrieve an URL synchronously using TOKEN to access it.
 TOKEN can be obtained with `oauth2-auth'.
 
 (fn TOKEN URL &optional REQUEST-METHOD REQUEST-DATA REQUEST-EXTRA-HEADERS)" nil nil) (autoload (quote oauth2-url-retrieve) "oauth2" "Retrieve an URL asynchronously using TOKEN to access it.
 TOKEN can be obtained with `oauth2-auth'.  CALLBACK gets called with CBARGS
 when finished.  See `url-retrieve'.
 
-(fn TOKEN URL CALLBACK &optional CBARGS REQUEST-METHOD REQUEST-DATA REQUEST-EXTRA-HEADERS)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "oauth2" (quote ("oauth")))) (provide (quote oauth2-autoloads))) "circe" ((circe-chanop lui lui-track-bar circe-color-nicks circe-display-images circe-autoloads lui-format circe-compat lui-irc-colors tracking lui-logging make-tls-process lcs circe circe-lagmon irc circe-new-day-notifier circe-pkg lui-autopaste shorten) (autoload (quote circe-version) "circe" "Display Circe's version.
+(fn TOKEN URL CALLBACK &optional CBARGS REQUEST-METHOD REQUEST-DATA REQUEST-EXTRA-HEADERS)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "oauth2" (quote ("oauth")))) (provide (quote oauth2-autoloads))) "circe" ((circe-autoloads circe-pkg lui lui-logging circe-compat lui-format circe-new-day-notifier shorten lui-irc-colors irc circe-color-nicks circe-display-images circe-chanop lui-track-bar lui-autopaste lcs tracking circe circe-lagmon make-tls-process lui-track) (autoload (quote circe-version) "circe" "Display Circe's version.
 
 (fn)" t nil) (autoload (quote circe) "circe" "Connect to IRC.
 
@@ -8083,9 +6813,17 @@ replace it with the resulting URL.
 
 (fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-autopaste" (quote ("lui-autopaste")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-format" (quote ("lui-")))) (autoload (quote enable-lui-irc-colors) "lui-irc-colors" "Enable IRC color interpretation for Lui.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-irc-colors" (quote ("lui-irc-" "disable-lui-irc-colors")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-logging" (quote ("lui-" "disable-lui-logging" "enable-lui-logging")))) (autoload (quote enable-lui-track-bar) "lui-track-bar" "Enable a bar in Lui buffers that shows where you stopped reading.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-irc-colors" (quote ("lui-irc-" "disable-lui-irc-colors")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-logging" (quote ("lui-" "disable-lui-logging" "enable-lui-logging")))) (autoload (quote enable-lui-track) "lui-track" "Enable a bar or fringe indicator in Lui buffers that shows
+where you stopped reading.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-track-bar" (quote ("lui-track-bar-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "make-tls-process" (quote ("tls-" "make-tls-process")))) (autoload (quote shorten-strings) "shorten" "Takes a list of strings and returns an alist ((STRING
+(fn)" t nil) (autoload (quote lui-track-jump-to-indicator) "lui-track" "Move the point to the first unread line in this buffer.
+
+If point is already there, jump back to the end of the buffer.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "lui-track" (quote ("lui-track-")))) (autoload (quote enable-lui-track-bar) "lui-track-bar" "Enable a bar indicator in Lui buffers that shows
+where you stopped reading.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "make-tls-process" (quote ("tls-" "make-tls-process")))) (autoload (quote shorten-strings) "shorten" "Takes a list of strings and returns an alist ((STRING
 . SHORTENED-STRING) ...).  Uses `shorten-split-function' to split
 the strings, and `shorten-join-function' to join shortened
 components back together into SHORTENED-STRING.  See also
@@ -8121,7 +6859,7 @@ face set will be stable-sorted before any buffers with no face set.
 
 (fn)" t nil) (autoload (quote tracking-previous-buffer) "tracking" "Switch to the last active buffer.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "tracking" (quote ("tracking-")))) (provide (quote circe-autoloads))) "gntp" ((gntp-autoloads gntp) (autoload (quote gntp-notify) "gntp" "Send notification NAME with TITLE, TEXT, PRIORITY and ICON to SERVER:PORT.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "tracking" (quote ("tracking-")))) (provide (quote circe-autoloads))) "gntp" ((gntp gntp-autoloads) (autoload (quote gntp-notify) "gntp" "Send notification NAME with TITLE, TEXT, PRIORITY and ICON to SERVER:PORT.
 PORT defaults to `gntp-server-port'
 
 (fn NAME TITLE TEXT SERVER &optional PORT PRIORITY ICON)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "gntp" (quote ("gntp-")))) (provide (quote gntp-autoloads))) "log4e" ((log4e-autoloads log4e) (autoload (quote log4e-mode) "log4e" "Major mode for browsing a buffer made by log4e.
@@ -8131,7 +6869,7 @@ PORT defaults to `gntp-server-port'
 
 (fn)" t nil) (autoload (quote log4e:insert-start-log-quickly) "log4e" "Insert logging statment for trace level log at start of current function/macro.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "log4e" (quote ("log4e")))) (provide (quote log4e-autoloads))) "alert" ((alert-autoloads alert) (autoload (quote alert-add-rule) "alert" "Programmatically add an alert configuration rule.
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "log4e" (quote ("log4e")))) (provide (quote log4e-autoloads))) "alert" ((alert alert-autoloads) (autoload (quote alert-add-rule) "alert" "Programmatically add an alert configuration rule.
 
 Normally, users should custoimze `alert-user-configuration'.
 This facility is for module writers and users that need to do
@@ -8203,7 +6941,7 @@ Here are some more typical examples of usage:
   (alert \"This is an alert\" :title \"My Alert\"
          :category \\='some-category-or-other)
 
-(fn MESSAGE &key (SEVERITY \\='normal) TITLE ICON CATEGORY BUFFER MODE DATA STYLE PERSISTENT NEVER-PERSIST ID)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "alert" (quote ("alert-" "x-urgen")))) (provide (quote alert-autoloads))) "emojify" ((emojify emojify-autoloads) (autoload (quote emojify-set-emoji-styles) "emojify" "Set the type of emojis that should be displayed.
+(fn MESSAGE &key (SEVERITY \\='normal) TITLE ICON CATEGORY BUFFER MODE DATA STYLE PERSISTENT NEVER-PERSIST ID)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "alert" (quote ("alert-" "x-urgen")))) (provide (quote alert-autoloads))) "emojify" ((emojify-autoloads emojify) (autoload (quote emojify-set-emoji-styles) "emojify" "Set the type of emojis that should be displayed.
 
 STYLES is the styles emoji styles that should be used, see `emojify-emoji-styles'
 
@@ -8245,15 +6983,34 @@ See `emojify-mode-line-mode' for more information on Emojify-Mode-Line mode.
 
 This respects the `emojify-emoji-styles' variable.
 
-(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "emojify" (quote ("emojify-")))) (provide (quote emojify-autoloads))) "slack" ((slack-file slack-websocket slack-message-formatter slack-util slack-request-worker slack-message-edit-buffer slack-message-compose-buffer slack-file-share-message slack-bot-message slack-stars-buffer slack-room-message-compose-buffer slack-message-share-buffer slack-pinned-items-buffer slack-pinned-item slack-request slack-message-buffer slack-thread slack-buffer slack-message-sender slack-autoloads slack-file-info-buffer slack-user-profile-buffer slack-message-reaction slack-file-comment-compose-buffer slack-team slack-emoji slack-pkg slack-search slack-file-list-buffer slack-im slack-message-notification slack-room slack-star slack-thread-message-compose-buffer slack-reply slack-user slack-reaction slack slack-channel slack-attachment slack-search-result-buffer slack-reminder slack-thread-message-buffer slack-group slack-slash-commands slack-message-editor slack-user-message slack-message slack-edit-file-comment-buffer slack-room-buffer slack-file-comment) (autoload (quote slack-start) "slack" "
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "emojify" (quote ("emojify-")))) (provide (quote emojify-autoloads))) "slack" ((slack-counts slack-message-attachment-preview-buffer slack-block slack-dialog-edit-element-buffer slack-star slack-thread-message-buffer slack-selectable slack-pinned-items-buffer slack-all-threads-buffer slack-reminder slack-usergroup slack-room-buffer slack-user-profile-buffer slack-action slack-group slack-message-formatter slack-pkg slack-conversations slack-message-buffer slack-request slack-channel slack-message-editor slack-reaction-event slack-dnd-status slack-message-event slack-message-compose-buffer slack-user slack-room-info-buffer slack-message-notification slack-im slack-reply-event slack-event slack-dialog-buffer slack-bot-message slack-typing slack-message-edit-buffer slack-file-list-buffer slack-stars-buffer slack-user-message slack-emoji slack-message-faces slack-unescape slack-message-share-buffer slack-file slack-pinned-item slack-thread slack-file-info-buffer slack-unread slack-message-sender slack-thread-message-compose-buffer slack-team-ws slack-websocket slack-create-message slack-room-message-compose-buffer slack-util slack-buffer slack-attachment slack-team slack-log slack-authorize slack-image slack-slash-commands slack-bot slack-message-reaction slack-reaction slack-star-event slack-company slack-room-event slack-modeline slack-message slack-dialog slack slack-room slack-autoloads slack-search slack-search-result-buffer slack-mrkdwn slack-thread-event) (autoload (quote slack-start) "slack" "
 
-(fn &optional TEAM)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-attachment" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-bot-message" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-buffer" (quote ("slack-" "lui-prompt-string")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-channel" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-edit-file-comment-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-emoji" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file-comment" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file-comment-compose-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file-info-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file-list-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file-share-message" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-group" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-im" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-compose-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-edit-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-editor" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-formatter" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-notification" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-reaction" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-sender" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-share-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-pinned-item" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-pinned-items-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-reaction" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-reminder" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-reply" (quote ("slack-message-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-request" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-request-worker" (quote ("slack-request-worker")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room-message-compose-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-search" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-search-result-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-slash-commands" (quote ("slack-slash-commands-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-star" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-stars-buffer" (quote ("slack-")))) (autoload (quote slack-register-team) "slack-team" "PLIST must contain :name :client-id :client-secret with value.
-setting :token will reduce your configuration step.
-you will notified when receive message with channel included in subscribed-channels.
-if :default is t and `slack-prefer-current-team' is t, skip selecting team when channels listed.
-you can change current-team with `slack-change-current-team'
+(fn &optional TEAM)" t nil) (autoload (quote slack-register-team) "slack" "PLIST must contain :name and :token.
+Available options (property name, type, default value)
+:subscribed-channels [ list symbol ] '()
+  notified when new message arrived in these channels.
+:default [boolean] nil
+  if `slack-prefer-current-team' is t,
+  some functions use this team without asking.
+:full-and-display-names [boolean] nil
+  if t, use full name to display user name.
+:mark-as-read-immediately [boolean] these
+  if t, mark messages as read when open channel.
+  if nil, mark messages as read when cursor hovered.
+:modeline-enabled [boolean] nil
+  if t, display mention count and has unread in modeline.
+:modeline-name [or nil string] nil
+  use this value in modeline.
+  if nil, use team name.
+:visible-threads [boolean] nil
+  if t, thread replies are also displayed in channel buffer.
+:websocket-event-log-enabled [boolean] nil
+  if t, websocket event is logged.
+  use `slack-log-open-event-buffer' to open the buffer.
+:animate-image [boolean] nil
+  if t, animate gif images.
 
-(fn &rest PLIST)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-team" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-thread" (quote ("slack-" "thread-mark-url" "all-threads-url" "lui-prompt-string")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-thread-message-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-thread-message-compose-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-user" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-user-message" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-user-profile-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-util" (quote ("slack-" "company-slack-backend")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-websocket" (quote ("slack-")))) (provide (quote slack-autoloads))) "direnv" ((direnv direnv-autoloads) (autoload (quote direnv-update-environment) "direnv" "Update the environment for FILE-NAME.
+(fn &rest PLIST)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-action" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-all-threads-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-attachment" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-block" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-bot" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-bot-message" (quote ("slack-bot-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-buffer" (quote ("slack-" "lui-prompt-string")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-channel" (quote ("slack-c")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-company" (quote ("company-slack-backend")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-conversations" (quote ("slack-conversations-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-counts" (quote ("slack-c")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-create-message" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-dialog" (quote ("slack-dialog")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-dialog-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-dialog-edit-element-buffer" (quote ("slack-dialog-edit-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-dnd-status" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-emoji" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-event" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file" (quote ("slack-file")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file-info-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-file-list-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-group" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-im" (quote ("slack-im")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-image" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-log" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-attachment-preview-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-compose-buffer" (quote ("slack-message-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-edit-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-editor" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-event" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-faces" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-formatter" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-notification" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-reaction" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-sender" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-message-share-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-modeline" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-mrkdwn" (quote ("slack-mrkdwn-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-pinned-item" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-pinned-items-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-reaction" (quote ("slack-reaction")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-reaction-event" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-reminder" (quote ("slack-re")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-reply-event" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-request" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room" (quote ("slack-room")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room-event" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room-info-buffer" (quote ("slack-room-info-buffer")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-room-message-compose-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-search" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-search-result-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-selectable" (quote ("slack-selectable")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-slash-commands" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-star" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-star-event" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-stars-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-team" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-team-ws" (quote ("slack-team-ws")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-thread" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-thread-event" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-thread-message-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-thread-message-compose-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-typing" (quote ("slack-typing")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-unescape" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-unread" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-user" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-user-message" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-user-profile-buffer" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-usergroup" (quote ("slack-usergroup")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-util" (quote ("slack-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "slack-websocket" (quote ("slack-")))) (provide (quote slack-autoloads))) "direnv" ((direnv-autoloads direnv) (autoload (quote direnv-update-environment) "direnv" "Update the environment for FILE-NAME.
 
 See `direnv-update-directory-environment' for FORCE-SUMMARY.
 
@@ -8279,10 +7036,103 @@ visited (local) file.
 Since .envrc files are shell scripts, this mode inherits from sh-mode.
 \\{direnv-envrc-mode-map}
 
-(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.envrc\\'" . direnv-envrc-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "direnv" (quote ("direnv-")))) (provide (quote direnv-autoloads))) "realgud-jdb" ((realgud-jdb))))
+(fn)" t nil) (add-to-list (quote auto-mode-alist) (quote ("\\.envrc\\'" . direnv-envrc-mode))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "direnv" (quote ("direnv-")))) (provide (quote direnv-autoloads))) "realgud-jdb" ((realgud-jdb)) "jsonrpc" ((jsonrpc-autoloads jsonrpc) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "jsonrpc" (quote ("jrpc-default-request-timeout" "jsonrpc-")))) (provide (quote jsonrpc-autoloads))) "flymake" ((flymake flymake-autoloads) (autoload (quote flymake-log) "flymake" "Log, at level LEVEL, the message MSG formatted with ARGS.
+LEVEL is passed to `display-warning', which is used to display
+the warning.  If this form is included in a byte-compiled file,
+the generated warning contains an indication of the file that
+generated it.
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 145 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "use-package" nil "bind-key" nil "zenburn-theme" nil "pinentry" nil "diminish" nil "notmuch" nil "cider" nil "clojure-mode" nil "parseedn" nil "a" nil "parseclj" nil "pkg-info" nil "epl" nil "cl-lib" nil "queue" nil "spinner" nil "seq" nil "sesman" nil "company" nil "org-plus-contrib" (org-plus-contrib :type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :files (:defaults "contrib/lisp/*.el")) "htmlize" nil "dash-functional" nil "dash" nil "s" nil "deferred" nil "kv" nil "org" (org :type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org") "yaml-mode" nil "which-key" nil "avy" nil "ace-window" nil "helm" nil "async" nil "popup" nil "helm-core" nil "helm-ag" nil "projectile" nil "helm-projectile" nil "multiple-cursors" nil "goto-last-change" nil "ag" nil "undo-tree" nil "browse-kill-ring" nil "xclip" nil "gradle-mode" nil "ein" nil "websocket" nil "auto-complete" nil "request" nil "polymode" nil "markdown-mode" nil "skewer-mode" nil "simple-httpd" nil "js2-mode" nil "elisp-slime-nav" nil "f" nil "slime-company" nil "slime" nil "macrostep" nil "go-mode" nil "go-guru" nil "company-go" nil "go-eldoc" nil "go-dlv" nil "geiser" nil "clojure-mode-extra-font-locking" nil "jsonrpc" nil "flymake" nil "eldoc" nil "project" nil "xref" nil "xterm-color" nil "let-alist" nil "ht" nil "scala-mode" nil "sbt-mode" nil "yasnippet" nil "realgud" nil "load-relative" nil "loc-changes" nil "test-simple" nil "realgud-jdb" nil "flycheck" nil "lv" nil "haskell-mode" nil "hindent" nil "rainbow-delimiters" nil "smartparens" nil "magit" nil "git-commit" nil "with-editor" nil "transient" nil "gh" nil "pcache" nil "eieio" nil "logito" nil "marshal" nil "json" nil "gist" nil "git-gutter" nil "oauth2" nil "circe" nil "alert" nil "gntp" nil "log4e" nil "emojify" nil)) melpa #s(hash-table size 145 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "zenburn-theme" (zenburn-theme :type git :flavor melpa :host github :repo "bbatsov/zenburn-emacs") "pinentry" nil "diminish" (diminish :type git :flavor melpa :host github :repo "myrjola/diminish.el") "notmuch" (notmuch :type git :flavor melpa :files ("emacs/*.el" "emacs/*.png" "notmuch-pkg.el") :repo "https://git.notmuchmail.org/git/notmuch") "cider" (cider :type git :flavor melpa :files ("*.el" (:exclude ".dir-locals.el") "cider-pkg.el") :host github :repo "clojure-emacs/cider") "clojure-mode" (clojure-mode :type git :flavor melpa :files ("clojure-mode.el" "clojure-mode-pkg.el") :host github :repo "clojure-emacs/clojure-mode") "parseedn" (parseedn :type git :flavor melpa :host github :repo "clojure-emacs/parseedn") "a" (a :type git :flavor melpa :host github :repo "plexus/a.el") "parseclj" (parseclj :type git :flavor melpa :host github :repo "clojure-emacs/parseclj") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "cl-lib" nil "queue" nil "spinner" nil "seq" nil "sesman" (sesman :type git :flavor melpa :host github :repo "vspinu/sesman") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "htmlize" (htmlize :type git :flavor melpa :host github :repo "hniksic/emacs-htmlize") "dash-functional" (dash-functional :type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash-pkg.el") :host github :repo "magnars/dash.el") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "deferred" (deferred :type git :flavor melpa :files ("deferred.el" "deferred-pkg.el") :host github :repo "kiwanami/emacs-deferred") "kv" (kv :type git :flavor melpa :files ("kv.el" "kv-pkg.el") :host github :repo "nicferrier/emacs-kv") "yaml-mode" (yaml-mode :type git :flavor melpa :host github :repo "yoshiki/yaml-mode") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "avy" (avy :type git :flavor melpa :host github :repo "abo-abo/avy") "ace-window" (ace-window :type git :flavor melpa :host github :repo "abo-abo/ace-window") "helm" (helm :type git :flavor melpa :files ("*.el" "emacs-helm.sh" (:exclude "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") "helm-pkg.el") :host github :repo "emacs-helm/helm") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "popup" (popup :type git :flavor melpa :files ("popup.el" "popup-pkg.el") :host github :repo "auto-complete/popup-el") "helm-core" (helm-core :type git :flavor melpa :files ("helm-core-pkg.el" "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") :host github :repo "emacs-helm/helm") "helm-ag" (helm-ag :type git :flavor melpa :host github :repo "syohex/emacs-helm-ag") "projectile" (projectile :type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile") "helm-projectile" (helm-projectile :type git :flavor melpa :host github :repo "bbatsov/helm-projectile") "multiple-cursors" (multiple-cursors :type git :flavor melpa :host github :repo "magnars/multiple-cursors.el") "goto-last-change" (goto-last-change :type git :flavor melpa :host github :repo "camdez/goto-last-change.el") "ag" (ag :type git :flavor melpa :host github :repo "Wilfred/ag.el") "undo-tree" nil "browse-kill-ring" (browse-kill-ring :type git :flavor melpa :host github :repo "browse-kill-ring/browse-kill-ring") "xclip" nil "gradle-mode" (gradle-mode :type git :flavor melpa :host github :repo "jacobono/emacs-gradle-mode") "ein" (ein :type git :flavor melpa :files ("lisp/*" (:exclude "lisp/zeroein.el") "ein-pkg.el") :host github :repo "millejoh/emacs-ipython-notebook") "websocket" (websocket :type git :flavor melpa :host github :repo "ahyatt/emacs-websocket") "auto-complete" (auto-complete :type git :flavor melpa :files ("*.el" "dict" "auto-complete-pkg.el") :host github :repo "auto-complete/auto-complete") "request" (request :type git :flavor melpa :files ("request.el" "request-pkg.el") :host github :repo "tkf/emacs-request") "polymode" (polymode :type git :flavor melpa :host github :repo "polymode/polymode") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "skewer-mode" (skewer-mode :type git :flavor melpa :files ("*.html" "*.js" "*.el" "skewer-mode-pkg.el") :host github :repo "skeeto/skewer-mode") "simple-httpd" (simple-httpd :type git :flavor melpa :host github :repo "skeeto/emacs-web-server") "js2-mode" (js2-mode :type git :flavor melpa :host github :repo "mooz/js2-mode") "elisp-slime-nav" (elisp-slime-nav :type git :flavor melpa :host github :repo "purcell/elisp-slime-nav") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "slime-company" (slime-company :type git :flavor melpa :host github :repo "anwyn/slime-company") "slime" (slime :type git :flavor melpa :files ("*.el" ("lib" "lib/hyperspec.el") "swank" "*.lisp" "*.asd" ("contrib" "contrib/*") (:exclude "contrib/test" "contrib/Makefile") "doc/slime.texi" "doc/slime.info" "doc/dir" "ChangeLog" "slime-pkg.el") :host github :repo "slime/slime") "macrostep" (macrostep :type git :flavor melpa :host github :repo "joddie/macrostep") "go-mode" (go-mode :type git :flavor melpa :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el") "go-guru" (go-guru :type git :flavor melpa :files ("go-guru.el" "go-guru-pkg.el") :host github :repo "dominikh/go-mode.el") "company-go" (company-go :type git :flavor melpa :files ("emacs-company/company-go.el" "company-go-pkg.el") :host github :repo "mdempsky/gocode") "go-eldoc" (go-eldoc :type git :flavor melpa :host github :repo "syohex/emacs-go-eldoc") "go-dlv" (go-dlv :type git :flavor melpa :host github :repo "benma/go-dlv.el") "geiser" (geiser :type git :flavor melpa :files ("elisp/*.el" "elisp/geiser-version.el.in" "doc/*.texi" ("bin" "bin/*") (:exclude "bin/Makefile.am") ("scheme" "scheme/*") (:exclude "scheme/Makefile.am") "geiser-pkg.el") :host gitlab :repo "jaor/geiser") "clojure-mode-extra-font-locking" (clojure-mode-extra-font-locking :type git :flavor melpa :files ("clojure-mode-extra-font-locking.el" "clojure-mode-extra-font-locking-pkg.el") :host github :repo "clojure-emacs/clojure-mode") "jsonrpc" nil "flymake" nil "eldoc" nil "project" nil "xref" nil "xterm-color" (xterm-color :type git :flavor melpa :host github :repo "atomontage/xterm-color") "let-alist" nil "ht" (ht :type git :flavor melpa :files ("ht.el" "ht-pkg.el") :host github :repo "Wilfred/ht.el") "scala-mode" (scala-mode :type git :flavor melpa :host github :repo "ensime/emacs-scala-mode") "sbt-mode" (sbt-mode :type git :flavor melpa :host github :repo "ensime/emacs-sbt-mode") "yasnippet" (yasnippet :type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet") "realgud" (realgud :type git :flavor melpa :files ("realgud.el" "realgud/.nosearch" ("realgud/common" "realgud/common/*.el") ("realgud/common/buffer" "realgud/common/buffer/*.el") ("realgud/debugger/bashdb" "realgud/debugger/bashdb/*.el") ("realgud/debugger/gdb" "realgud/debugger/gdb/*.el") ("realgud/debugger/gub" "realgud/debugger/gub/*.el") ("realgud/debugger/ipdb" "realgud/debugger/ipdb/*.el") ("realgud/debugger/jdb" "realgud/debugger/jdb/*.el") ("realgud/debugger/kshdb" "realgud/debugger/kshdb/*.el") ("realgud/debugger/nodejs" "realgud/debugger/nodejs/*.el") ("realgud/debugger/pdb" "realgud/debugger/pdb/*.el") ("realgud/debugger/perldb" "realgud/debugger/perldb/*.el") ("realgud/debugger/rdebug" "realgud/debugger/rdebug/*.el") ("realgud/debugger/remake" "realgud/debugger/remake/*.el") ("realgud/debugger/trepan" "realgud/debugger/trepan/*.el") ("realgud/debugger/trepan.pl" "realgud/debugger/trepan.pl/*.el") ("realgud/debugger/trepan2" "realgud/debugger/trepan2/*.el") ("realgud/debugger/trepan3k" "realgud/debugger/trepan3k/*.el") ("realgud/debugger/trepanjs" "realgud/debugger/trepanjs/*.el") ("realgud/debugger/zshdb" "realgud/debugger/zshdb/*.el") ("realgud/lang" "realgud/lang/*.el") "realgud-pkg.el") :host github :repo "realgud/realgud") "load-relative" (load-relative :type git :flavor melpa :host github :repo "rocky/emacs-load-relative") "loc-changes" (loc-changes :type git :flavor melpa :files ("loc-changes.el" "loc-changes-pkg.el") :host github :repo "rocky/emacs-loc-changes") "test-simple" (test-simple :type git :flavor melpa :host github :repo "rocky/emacs-test-simple") "realgud-jdb" (realgud-jdb :type git :flavor melpa :files (:defaults ("realgud-jdb" "realgud-jdb/*.el") "realgud-jdb-pkg.el") :host github :repo "realgud/realgud-jdb") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "lv" (lv :type git :flavor melpa :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra") "haskell-mode" (haskell-mode :type git :flavor melpa :files (:defaults "NEWS" "logo.svg" "haskell-mode-pkg.el") :host github :repo "haskell/haskell-mode") "hindent" (hindent :type git :flavor melpa :files ("elisp/*.el" "hindent-pkg.el") :host github :repo "commercialhaskell/hindent") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "gh" (gh :type git :flavor melpa :host github :repo "sigma/gh.el") "pcache" (pcache :type git :flavor melpa :host github :repo "sigma/pcache") "eieio" nil "logito" (logito :type git :flavor melpa :host github :repo "sigma/logito") "marshal" (marshal :type git :flavor melpa :host github :repo "sigma/marshal.el") "json" nil "gist" (gist :type git :flavor melpa :host github :repo "defunkt/gist.el") "git-gutter" (git-gutter :type git :flavor melpa :host github :repo "syohex/emacs-git-gutter") "oauth2" nil "circe" (circe :type git :flavor melpa :host github :repo "jorgenschaefer/circe") "alert" (alert :type git :flavor melpa :host github :repo "jwiegley/alert") "gntp" (gntp :type git :flavor melpa :host github :repo "tekai/gntp.el") "log4e" (log4e :type git :flavor melpa :host github :repo "aki2o/log4e") "emojify" (emojify :type git :flavor melpa :files (:defaults "data" "images" "emojify-pkg.el") :host github :repo "iqbalansari/emacs-emojify"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "pinentry" (pinentry :type git :host github :repo "emacs-straight/pinentry") "cl-lib" (cl-lib :type git :host github :repo "emacs-straight/cl-lib") "queue" (queue :type git :host github :repo "emacs-straight/queue") "spinner" (spinner :type git :host github :repo "emacs-straight/spinner") "seq" (seq :type git :host github :repo "emacs-straight/seq") "undo-tree" (undo-tree :type git :host github :repo "emacs-straight/undo-tree") "xclip" (xclip :type git :host github :repo "emacs-straight/xclip") "jsonrpc" (jsonrpc :type git :host github :repo "emacs-straight/jsonrpc") "flymake" (flymake :type git :host github :repo "emacs-straight/flymake") "eldoc" nil "project" nil "xref" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist") "eieio" nil "json" nil "oauth2" (oauth2 :type git :host github :repo "emacs-straight/oauth2"))) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("eldoc" nil "project" nil "xref" nil "eieio" nil "json" nil))))
+(fn LEVEL MSG &rest ARGS)" nil t) (autoload (quote flymake-make-diagnostic) "flymake" "Make a Flymake diagnostic for BUFFER's region from BEG to END.
+TYPE is a diagnostic symbol and TEXT is string describing the
+problem detected in this region.  DATA is any object that the
+caller wishes to attach to the created diagnostic for later
+retrieval.
 
-("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "use-package" "bind-key" "zenburn-theme" "pinentry" "diminish" "gnus-alias" "notmuch" "cider" "clojure-mode" "parseedn" "a" "parseclj" "pkg-info" "epl" "cl-lib" "queue" "spinner" "seq" "sesman" "company" "org-plus-contrib" "htmlize" "org2jekyll" "dash-functional" "dash" "s" "deferred" "kv" "ox-reveal" "org" "yaml-mode" "which-key" "avy" "ace-window" "helm" "async" "popup" "helm-core" "helm-ag" "projectile" "helm-projectile" "multiple-cursors" "goto-last-change" "ag" "undo-tree" "browse-kill-ring" "xclip" "gradle-mode" "restclient" "ein" "websocket" "auto-complete" "request" "polymode" "markdown-mode" "skewer-mode" "simple-httpd" "js2-mode" "elisp-slime-nav" "overseer" "f" "slime-company" "slime" "macrostep" "go-mode" "go-guru" "company-go" "go-eldoc" "go-dlv" "geiser" "clojure-mode-extra-font-locking" "eglot" "jsonrpc" "flymake" "eldoc" "project" "xref" "rustic" "xterm-color" "let-alist" "ht" "scala-mode" "ensime" "sbt-mode" "yasnippet" "realgud" "load-relative" "loc-changes" "test-simple" "realgud-jdb" "meghanada" "flycheck" "hydra" "lv" "haskell-mode" "hindent" "rainbow-delimiters" "smartparens" "magit" "git-commit" "with-editor" "transient" "gh" "pcache" "eieio" "logito" "marshal" "json" "gist" "git-gutter" "rcirc-notify" "slack" "oauth2" "circe" "alert" "gntp" "log4e" "emojify" "direnv")
+OVERLAY-PROPERTIES is an alist of properties attached to the
+created diagnostic, overriding the default properties and any
+properties of `flymake-overlay-control' of the diagnostic's
+type.
+
+(fn BUFFER BEG END TYPE TEXT &optional DATA OVERLAY-PROPERTIES)" nil nil) (autoload (quote flymake-diagnostics) "flymake" "Get Flymake diagnostics in region determined by BEG and END.
+
+If neither BEG or END is supplied, use the whole buffer,
+otherwise if BEG is non-nil and END is nil, consider only
+diagnostics at BEG.
+
+(fn &optional BEG END)" nil nil) (autoload (quote flymake-diag-region) "flymake" "Compute BUFFER's region (BEG . END) corresponding to LINE and COL.
+If COL is nil, return a region just for LINE.  Return nil if the
+region is invalid.
+
+(fn BUFFER LINE &optional COL)" nil nil) (autoload (quote flymake-mode) "flymake" "Toggle Flymake mode on or off.
+
+Flymake is an Emacs minor mode for on-the-fly syntax checking.
+Flymake collects diagnostic information from multiple sources,
+called backends, and visually annotates the buffer with the
+results.
+
+Flymake performs these checks while the user is editing.
+The customization variables `flymake-start-on-flymake-mode',
+`flymake-no-changes-timeout' determine the exact circumstances
+whereupon Flymake decides to initiate a check of the buffer.
+
+The commands `flymake-goto-next-error' and
+`flymake-goto-prev-error' can be used to navigate among Flymake
+diagnostics annotated in the buffer.
+
+The visual appearance of each type of diagnostic can be changed
+by setting properties `flymake-overlay-control', `flymake-bitmap'
+and `flymake-severity' on the symbols of diagnostic types (like
+`:error', `:warning' and `:note').
+
+Activation or deactivation of backends used by Flymake in each
+buffer happens via the special hook
+`flymake-diagnostic-functions'.
+
+Some backends may take longer than others to respond or complete,
+and some may decide to disable themselves if they are not
+suitable for the current buffer.  The commands
+`flymake-running-backends', `flymake-disabled-backends' and
+`flymake-reporting-backends' summarize the situation, as does the
+special *Flymake log* buffer.
+
+(fn &optional ARG)" t nil) (autoload (quote flymake-mode-on) "flymake" "Turn Flymake mode on.
+
+(fn)" nil nil) (autoload (quote flymake-mode-off) "flymake" "Turn Flymake mode off.
+
+(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "flymake" (quote ("flymake-")))) (provide (quote flymake-autoloads))) "eglot" ((eglot eglot-autoloads) (autoload (quote eglot) "eglot" "Manage a project with a Language Server Protocol (LSP) server.
+
+The LSP server of CLASS started (or contacted) via CONTACT.  If
+this operation is successful, current *and future* file buffers
+of MANAGED-MAJOR-MODE inside PROJECT automatically become
+\"managed\" by the LSP server, meaning information about their
+contents is exchanged periodically to provide enhanced
+code-analysis via `xref-find-definitions', `flymake-mode',
+`eldoc-mode', `completion-at-point', among others.
+
+Interactively, the command attempts to guess MANAGED-MAJOR-MODE
+from current buffer, CLASS and CONTACT from
+`eglot-server-programs' and PROJECT from `project-current'.  If
+it can't guess, the user is prompted.  With a single
+\\[universal-argument] prefix arg, it always prompt for COMMAND.
+With two \\[universal-argument] prefix args, also prompts for
+MANAGED-MAJOR-MODE.
+
+PROJECT is a project instance as returned by `project-current'.
+
+CLASS is a subclass of symbol `eglot-lsp-server'.
+
+CONTACT specifies how to contact the server.  It is a
+keyword-value plist used to initialize CLASS or a plain list as
+described in `eglot-server-programs', which see.
+
+INTERACTIVE is t if called interactively.
+
+(fn MANAGED-MAJOR-MODE PROJECT CLASS CONTACT &optional INTERACTIVE)" t nil) (autoload (quote eglot-ensure) "eglot" "Start Eglot session for current buffer if there isn't one.
+
+(fn)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "eglot" (quote ("eglot-")))) (provide (quote eglot-autoloads)))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 145 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "bind-key" nil "zenburn-theme" nil "pinentry" nil "diminish" nil "gnus-alias" nil "notmuch" nil "cider" nil "clojure-mode" nil "parseedn" nil "a" nil "parseclj" nil "pkg-info" nil "epl" nil "cl-lib" nil "queue" nil "spinner" nil "seq" nil "sesman" nil "company" nil "org-plus-contrib" (org-plus-contrib :type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :files (:defaults "contrib/lisp/*.el")) "htmlize" nil "org2jekyll" nil "dash-functional" nil "dash" nil "s" nil "deferred" nil "kv" nil "ox-reveal" nil "org" (org :type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org") "yaml-mode" nil "which-key" nil "avy" nil "ace-window" nil "helm" nil "async" nil "popup" nil "helm-core" nil "helm-ag" nil "projectile" nil "helm-projectile" nil "multiple-cursors" nil "goto-last-change" nil "ag" nil "undo-tree" nil "browse-kill-ring" nil "xclip" nil "gradle-mode" nil "restclient" nil "ein" nil "websocket" nil "anaphora" nil "request" nil "polymode" nil "elisp-slime-nav" nil "overseer" nil "f" nil "slime-company" nil "slime" nil "macrostep" nil "go-mode" nil "go-guru" nil "company-go" nil "go-eldoc" nil "go-dlv" nil "geiser" nil "clojure-mode-extra-font-locking" nil "rustic" nil "xterm-color" nil "markdown-mode" nil "let-alist" nil "ht" nil "lsp-mode" nil "lv" nil "scala-mode" nil "ensime" nil "sbt-mode" nil "yasnippet" nil "realgud" nil "load-relative" nil "loc-changes" nil "test-simple" nil "realgud-jdb" nil "meghanada" nil "flycheck" nil "hydra" nil "haskell-mode" nil "hindent" nil "rainbow-delimiters" nil "smartparens" nil "magit" nil "git-commit" nil "transient" nil "with-editor" nil "gh" nil "pcache" nil "eieio" nil "logito" nil "marshal" nil "json" nil "gist" nil "git-gutter" nil "rcirc-notify" nil "slack" nil "oauth2" nil "circe" nil "alert" nil "gntp" nil "log4e" nil "emojify" nil "direnv" nil "eglot" nil "jsonrpc" nil "flymake" nil "project" nil "xref" nil "eldoc" nil)) melpa #s(hash-table size 145 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "zenburn-theme" (zenburn-theme :type git :flavor melpa :host github :repo "bbatsov/zenburn-emacs") "pinentry" nil "diminish" (diminish :type git :flavor melpa :host github :repo "myrjola/diminish.el") "cider" (cider :type git :flavor melpa :files ("*.el" (:exclude ".dir-locals.el") "cider-pkg.el") :host github :repo "clojure-emacs/cider") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "htmlize" (htmlize :type git :flavor melpa :host github :repo "hniksic/emacs-htmlize") "org2jekyll" (org2jekyll :type git :flavor melpa :host github :repo "ardumont/org2jekyll") "ox-reveal" (ox-reveal :type git :flavor melpa :host github :repo "yjwen/org-reveal") "yaml-mode" (yaml-mode :type git :flavor melpa :host github :repo "yoshiki/yaml-mode") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "avy" (avy :type git :flavor melpa :host github :repo "abo-abo/avy") "ace-window" (ace-window :type git :flavor melpa :host github :repo "abo-abo/ace-window") "helm" (helm :type git :flavor melpa :files ("*.el" "emacs-helm.sh" (:exclude "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") "helm-pkg.el") :host github :repo "emacs-helm/helm") "helm-ag" (helm-ag :type git :flavor melpa :host github :repo "emacsorphanage/helm-ag") "projectile" (projectile :type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile") "helm-projectile" (helm-projectile :type git :flavor melpa :host github :repo "bbatsov/helm-projectile") "multiple-cursors" (multiple-cursors :type git :flavor melpa :host github :repo "magnars/multiple-cursors.el") "goto-last-change" (goto-last-change :type git :flavor melpa :host github :repo "camdez/goto-last-change.el") "ag" (ag :type git :flavor melpa :host github :repo "Wilfred/ag.el") "undo-tree" nil "browse-kill-ring" (browse-kill-ring :type git :flavor melpa :host github :repo "browse-kill-ring/browse-kill-ring") "xclip" nil "gradle-mode" (gradle-mode :type git :flavor melpa :host github :repo "jacobono/emacs-gradle-mode") "restclient" (restclient :type git :flavor melpa :files ("restclient.el" "restclient-pkg.el") :host github :repo "pashky/restclient.el") "ein" (ein :type git :flavor melpa :files ("lisp/*" (:exclude "lisp/zeroein.el") "ein-pkg.el") :host github :repo "millejoh/emacs-ipython-notebook") "elisp-slime-nav" (elisp-slime-nav :type git :flavor melpa :host github :repo "purcell/elisp-slime-nav") "overseer" (overseer :type git :flavor melpa :host github :repo "tonini/overseer.el") "slime-company" (slime-company :type git :flavor melpa :host github :repo "anwyn/slime-company") "slime" (slime :type git :flavor melpa :files ("*.el" ("lib" "lib/hyperspec.el") "swank" "*.lisp" "*.asd" ("contrib" "contrib/*") (:exclude "contrib/test" "contrib/Makefile") "doc/slime.texi" "doc/slime.info" "doc/dir" "ChangeLog" "slime-pkg.el") :host github :repo "slime/slime") "go-mode" (go-mode :type git :flavor melpa :files ("go-mode.el" "go-mode-pkg.el") :host github :repo "dominikh/go-mode.el") "go-guru" (go-guru :type git :flavor melpa :files ("go-guru.el" "go-guru-pkg.el") :host github :repo "dominikh/go-mode.el") "company-go" (company-go :type git :flavor melpa :files ("emacs-company/company-go.el" "company-go-pkg.el") :host github :repo "mdempsky/gocode") "go-eldoc" (go-eldoc :type git :flavor melpa :host github :repo "emacsorphanage/go-eldoc") "go-dlv" (go-dlv :type git :flavor melpa :host github :repo "benma/go-dlv.el") "geiser" (geiser :type git :flavor melpa :files ("elisp/*.el" "elisp/geiser-version.el.in" "doc/*.texi" ("bin" "bin/*") (:exclude "bin/Makefile.am") ("scheme" "scheme/*") (:exclude "scheme/Makefile.am") "geiser-pkg.el") :host gitlab :repo "jaor/geiser") "clojure-mode-extra-font-locking" (clojure-mode-extra-font-locking :type git :flavor melpa :files ("clojure-mode-extra-font-locking.el" "clojure-mode-extra-font-locking-pkg.el") :host github :repo "clojure-emacs/clojure-mode") "clojure-mode" (clojure-mode :type git :flavor melpa :files ("clojure-mode.el" "clojure-mode-pkg.el") :host github :repo "clojure-emacs/clojure-mode") "eglot" (eglot :type git :flavor melpa :host github :repo "joaotavora/eglot") "rustic" (rustic :type git :flavor melpa :host github :repo "brotzeit/rustic") "scala-mode" (scala-mode :type git :flavor melpa :host github :repo "hvesalai/emacs-scala-mode") "ensime" nil "realgud" (realgud :type git :flavor melpa :files ("realgud.el" "realgud/.nosearch" ("realgud/common" "realgud/common/*.el") ("realgud/common/buffer" "realgud/common/buffer/*.el") ("realgud/debugger/bashdb" "realgud/debugger/bashdb/*.el") ("realgud/debugger/gdb" "realgud/debugger/gdb/*.el") ("realgud/debugger/gub" "realgud/debugger/gub/*.el") ("realgud/debugger/ipdb" "realgud/debugger/ipdb/*.el") ("realgud/debugger/jdb" "realgud/debugger/jdb/*.el") ("realgud/debugger/kshdb" "realgud/debugger/kshdb/*.el") ("realgud/debugger/nodejs" "realgud/debugger/nodejs/*.el") ("realgud/debugger/pdb" "realgud/debugger/pdb/*.el") ("realgud/debugger/perldb" "realgud/debugger/perldb/*.el") ("realgud/debugger/rdebug" "realgud/debugger/rdebug/*.el") ("realgud/debugger/remake" "realgud/debugger/remake/*.el") ("realgud/debugger/trepan" "realgud/debugger/trepan/*.el") ("realgud/debugger/trepan.pl" "realgud/debugger/trepan.pl/*.el") ("realgud/debugger/trepan2" "realgud/debugger/trepan2/*.el") ("realgud/debugger/trepan3k" "realgud/debugger/trepan3k/*.el") ("realgud/debugger/trepanjs" "realgud/debugger/trepanjs/*.el") ("realgud/debugger/zshdb" "realgud/debugger/zshdb/*.el") ("realgud/lang" "realgud/lang/*.el") "realgud-pkg.el") :host github :repo "realgud/realgud") "realgud-jdb" (realgud-jdb :type git :flavor melpa :files (:defaults ("realgud-jdb" "realgud-jdb/*.el") "realgud-jdb-pkg.el") :host github :repo "realgud/realgud-jdb") "meghanada" (meghanada :type git :flavor melpa :host github :repo "mopemope/meghanada-emacs") "yasnippet" (yasnippet :type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "let-alist" nil "seq" nil "hydra" (hydra :type git :flavor melpa :files (:defaults (:exclude "lv.el") "hydra-pkg.el") :host github :repo "abo-abo/hydra") "cl-lib" nil "lv" (lv :type git :flavor melpa :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra") "haskell-mode" (haskell-mode :type git :flavor melpa :files (:defaults "NEWS" "logo.svg" "haskell-mode-pkg.el") :host github :repo "haskell/haskell-mode") "hindent" (hindent :type git :flavor melpa :files ("elisp/*.el" "hindent-pkg.el") :host github :repo "commercialhaskell/hindent") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "gh" (gh :type git :flavor melpa :host github :repo "sigma/gh.el") "pcache" (pcache :type git :flavor melpa :host github :repo "sigma/pcache") "eieio" nil "logito" (logito :type git :flavor melpa :host github :repo "sigma/logito") "marshal" (marshal :type git :flavor melpa :host github :repo "sigma/marshal.el") "json" nil "ht" (ht :type git :flavor melpa :files ("ht.el" "ht-pkg.el") :host github :repo "Wilfred/ht.el") "gist" (gist :type git :flavor melpa :host github :repo "defunkt/gist.el") "git-gutter" (git-gutter :type git :flavor melpa :host github :repo "emacsorphanage/git-gutter") "rcirc-notify" (rcirc-notify :type git :flavor melpa :host github :repo "nicferrier/rcirc-notify") "slack" (slack :type git :flavor melpa :host github :repo "yuya373/emacs-slack") "websocket" (websocket :type git :flavor melpa :host github :repo "ahyatt/emacs-websocket") "request" (request :type git :flavor melpa :files ("request.el" "request-pkg.el") :host github :repo "tkf/emacs-request") "oauth2" nil "circe" (circe :type git :flavor melpa :host github :repo "jorgenschaefer/circe") "alert" (alert :type git :flavor melpa :host github :repo "jwiegley/alert") "gntp" (gntp :type git :flavor melpa :host github :repo "tekai/gntp.el") "log4e" (log4e :type git :flavor melpa :host github :repo "aki2o/log4e") "emojify" (emojify :type git :flavor melpa :files (:defaults "data" "images" "emojify-pkg.el") :host github :repo "iqbalansari/emacs-emojify") "direnv" (direnv :type git :flavor melpa :host github :repo "wbolster/emacs-direnv") "load-relative" (load-relative :type git :flavor melpa :host github :repo "rocky/emacs-load-relative") "bind-key" (bind-key :type git :flavor melpa :files ("bind-key.el" "bind-key-pkg.el") :host github :repo "jwiegley/use-package") "gnus-alias" (gnus-alias :type git :flavor melpa :host github :repo "hexmode/gnus-alias") "notmuch" (notmuch :type git :flavor melpa :files ("emacs/*.el" "emacs/*.png" "notmuch-pkg.el") :repo "https://git.notmuchmail.org/git/notmuch") "parseedn" (parseedn :type git :flavor melpa :host github :repo "clojure-emacs/parseedn") "a" (a :type git :flavor melpa :host github :repo "plexus/a.el") "parseclj" (parseclj :type git :flavor melpa :host github :repo "clojure-emacs/parseclj") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "queue" nil "spinner" nil "sesman" (sesman :type git :flavor melpa :host github :repo "vspinu/sesman") "dash-functional" (dash-functional :type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "deferred" (deferred :type git :flavor melpa :files ("deferred.el" "deferred-pkg.el") :host github :repo "kiwanami/emacs-deferred") "kv" (kv :type git :flavor melpa :files ("kv.el" "kv-pkg.el") :host github :repo "nicferrier/emacs-kv") "popup" (popup :type git :flavor melpa :files ("popup.el" "popup-pkg.el") :host github :repo "auto-complete/popup-el") "helm-core" (helm-core :type git :flavor melpa :files ("helm-core-pkg.el" "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") :host github :repo "emacs-helm/helm") "anaphora" (anaphora :type git :flavor melpa :host github :repo "rolandwalker/anaphora") "polymode" (polymode :type git :flavor melpa :host github :repo "polymode/polymode") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "macrostep" (macrostep :type git :flavor melpa :host github :repo "joddie/macrostep") "jsonrpc" nil "flymake" nil "project" nil "xref" nil "eldoc" nil "xterm-color" (xterm-color :type git :flavor melpa :host github :repo "atomontage/xterm-color") "sbt-mode" (sbt-mode :type git :flavor melpa :host github :repo "hvesalai/emacs-sbt-mode") "loc-changes" (loc-changes :type git :flavor melpa :files ("loc-changes.el" "loc-changes-pkg.el") :host github :repo "rocky/emacs-loc-changes") "test-simple" (test-simple :type git :flavor melpa :host github :repo "rocky/emacs-test-simple"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "pinentry" (pinentry :type git :host github :repo "emacs-straight/pinentry" :files ("*" (:exclude ".git"))) "undo-tree" (undo-tree :type git :host github :repo "emacs-straight/undo-tree" :files ("*" (:exclude ".git"))) "xclip" (xclip :type git :host github :repo "emacs-straight/xclip" :files ("*" (:exclude ".git"))) "ensime" nil "let-alist" nil "seq" nil "cl-lib" nil "eieio" nil "json" nil "oauth2" (oauth2 :type git :host github :repo "emacs-straight/oauth2" :files ("*" (:exclude ".git"))) "queue" (queue :type git :host github :repo "emacs-straight/queue" :files ("*" (:exclude ".git"))) "spinner" (spinner :type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git"))) "jsonrpc" (jsonrpc :type git :host github :repo "emacs-straight/jsonrpc" :files ("*" (:exclude ".git"))) "flymake" nil "project" nil "xref" nil "eldoc" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "ensime" (ensime :type git :host github :repo "emacsattic/ensime") "let-alist" (let-alist :type git :host github :repo "emacsmirror/let-alist") "seq" nil "cl-lib" nil "eieio" nil "json" nil "flymake" (flymake :type git :host github :repo "emacsmirror/flymake") "project" nil "xref" nil "eldoc" nil))))
+
+("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "use-package" "bind-key" "zenburn-theme" "pinentry" "diminish" "gnus-alias" "notmuch" "cider" "clojure-mode" "parseedn" "a" "parseclj" "pkg-info" "epl" "cl-lib" "queue" "spinner" "seq" "sesman" "company" "org-plus-contrib" "htmlize" "org2jekyll" "dash-functional" "dash" "s" "deferred" "kv" "ox-reveal" "org" "yaml-mode" "which-key" "avy" "ace-window" "helm" "async" "popup" "helm-core" "helm-ag" "projectile" "helm-projectile" "multiple-cursors" "goto-last-change" "ag" "undo-tree" "browse-kill-ring" "xclip" "gradle-mode" "restclient" "ein" "websocket" "anaphora" "request" "polymode" "elisp-slime-nav" "overseer" "f" "slime-company" "slime" "macrostep" "go-mode" "go-guru" "company-go" "go-eldoc" "go-dlv" "geiser" "clojure-mode-extra-font-locking" "eglot" "jsonrpc" "flymake" "project" "xref" "eldoc" "rustic" "xterm-color" "markdown-mode" "let-alist" "ht" "scala-mode" "ensime" "sbt-mode" "yasnippet" "realgud" "load-relative" "loc-changes" "test-simple" "realgud-jdb" "meghanada" "flycheck" "hydra" "lv" "haskell-mode" "hindent" "rainbow-delimiters" "smartparens" "magit" "git-commit" "transient" "with-editor" "gh" "pcache" "eieio" "logito" "marshal" "json" "gist" "git-gutter" "rcirc-notify" "slack" "oauth2" "circe" "alert" "gntp" "log4e" "emojify" "direnv")
 
 t
