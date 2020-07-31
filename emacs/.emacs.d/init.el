@@ -746,5 +746,30 @@ Null prefix argument turns off the mode."
   :straight nil
   :config (setq js-indent-level 2))
 
+(use-package jet
+  :straight nil
+  :init
+  (defun jet-pretty ()
+    (interactive)
+    (shell-command-on-region
+     (region-beginning)
+     (region-end)
+     "jet --pretty --edn-reader-opts '{:default tagged-literal}'"
+     (current-buffer)
+     t
+     "*jet error buffer*"
+     t))
+  (defun jet-json-edn ()
+    (interactive)
+    (shell-command-on-region
+     (region-beginning)
+     (region-end)
+     "jet --pretty --from json --to edn --keywordize"
+     (current-buffer)
+     t
+     "*jet error buffer*"
+     t))
+  (provide 'jet))
+
 ;; (provide 'init)
 ;;; init.el ends here
