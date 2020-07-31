@@ -186,17 +186,17 @@ Null prefix argument turns off the mode."
   (require 'ob-shell)
   (require 'ol-notmuch)
   (setq org-src-fontify-natively t
-      org-confirm-babel-evaluate nil
-      org-src-tab-acts-natively t
-      org-edit-src-content-indentation 2
-      org-babel-clojure-backend 'cider
-      org-directory "~/projects/org"
-      org-agenda-files `(,org-directory)
-      org-default-notes-file (concat org-directory "/notes.org")
-      org-refile-targets '((org-agenda-files :level . 3))
-      org-refile-allow-creating-parent-nodes 'confirm
-      org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
-      org-hierarchical-todo-statistics nil)
+        org-confirm-babel-evaluate nil
+        org-src-tab-acts-natively t
+        org-edit-src-content-indentation 2
+        org-babel-clojure-backend 'cider
+        org-directory "~/projects/org"
+        org-agenda-files `(,org-directory)
+        org-default-notes-file (concat org-directory "/notes.org")
+        org-refile-targets '((org-agenda-files :level . 3))
+        org-refile-allow-creating-parent-nodes 'confirm
+        org-todo-keywords '((sequence "TODO(t)" "STARTED(s)" "HOLD(h)" "|" "DONE(d)"))
+        org-hierarchical-todo-statistics nil)
   (org-defkey org-mode-map "\C-x\C-e"'cider-eval-last-sexp)
   (org-defkey org-mode-map "\C-c\C-d" 'cider-doc)
   (let* ((target '(file+datetree+prompt ""))
@@ -416,8 +416,6 @@ Null prefix argument turns off the mode."
   (defun configure-ag-clojure ()
     (set (make-local-variable 'ag-arguments)
          (list "--clojure"
-               "--line-number"
-               "--smart-case"
                "--nogroup"
                "--column"
                "--")))
