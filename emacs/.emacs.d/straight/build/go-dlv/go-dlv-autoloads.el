@@ -18,7 +18,7 @@ Debug the current program or test stopping at the beginning of the current funct
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-dlv" '("go-dlv-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-dlv" '("go-dlv-marker-" "gud-dlv-command-name")))
 
 ;;;***
 

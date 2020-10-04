@@ -12,7 +12,7 @@ Enable auto completion with company.
 
 \(fn)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-meghanada" '("company-meghanada" "make-icon-hash" "meghanada--")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-meghanada" '("company-meghanada" "make-icon-hash" "meghanada--" "substring--candidate")))
 
 ;;;***
 
@@ -61,27 +61,27 @@ Update meghanada-server's jar file from bintray .
 \(fn)" t nil)
 
 (autoload 'meghanada-server-start "meghanada" "\
-TODO: FIX DOC .
+Start the meghanada server.
 
 \(fn)" t nil)
 
 (autoload 'meghanada-server-kill "meghanada" "\
-TODO: FIX DOC .
+Kill the meghanada server.
 
 \(fn)" t nil)
 
 (autoload 'meghanada-client-direct-connect "meghanada" "\
-TODO: FIX DOC .
+Connect the client to a server that is already running.
 
 \(fn)" t nil)
 
 (autoload 'meghanada-client-connect "meghanada" "\
-TODO: FIX DOC .
+Start the server and connect the client
 
 \(fn)" t nil)
 
 (autoload 'meghanada-client-disconnect "meghanada" "\
-TODO: FIX DOC .
+Disconnecting the client.
 
 \(fn)" t nil)
 

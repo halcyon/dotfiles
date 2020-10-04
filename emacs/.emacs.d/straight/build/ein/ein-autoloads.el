@@ -75,6 +75,13 @@ Open a buffer with bug report template.
 
 ;;;***
 
+;;;### (autoloads nil "ein-gat" "ein-gat.el" (0 0 0 0))
+;;; Generated autoloads from ein-gat.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-gat" '("ein:gat-")))
+
+;;;***
+
 ;;;### (autoloads nil "ein-ipdb" "ein-ipdb.el" (0 0 0 0))
 ;;; Generated autoloads from ein-ipdb.el
 
@@ -91,7 +98,7 @@ A simple mode for ipynb file.
 
 \(fn)" t nil)
 
-(add-to-list 'auto-mode-alist '(".*\\.ipynb\\'" . ein:ipynb-mode))
+(add-to-list 'auto-mode-alist '("\\.ipynb\\'" . ein:ipynb-mode))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-ipynb-mode" '("ein:ipynb-parent-mode")))
 
@@ -133,19 +140,6 @@ server command.
 \(fn &optional FORCE LOG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-jupyter" '("ein:" "*ein:jupyter-server-")))
-
-;;;***
-
-;;;### (autoloads nil "ein-jupyterhub" "ein-jupyterhub.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from ein-jupyterhub.el
-
-(autoload 'ein:jupyterhub-connect "ein-jupyterhub" "\
-Log on to a jupyterhub server using PAM authentication. Requires jupyterhub version 0.8 or greater.  CALLBACK takes two arguments, the resulting buffer and the singleuser url-or-port
-
-\(fn URL-OR-PORT USERNAME PASSWORD CALLBACK)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-jupyterhub" '("ein:" "*ein:jupyterhub-connections*")))
 
 ;;;***
 
@@ -198,7 +192,7 @@ Major mode for editing ein:markdown files.
 ;;;### (autoloads nil "ein-node" "ein-node.el" (0 0 0 0))
 ;;; Generated autoloads from ein-node.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-node" '("ein:")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-node" '("ein:node-")))
 
 ;;;***
 
@@ -241,7 +235,7 @@ Reload current Notebook list.
 (autoload 'ein:notebooklist-new-notebook "ein-notebooklist" "\
 
 
-\(fn URL-OR-PORT KERNELSPEC &optional CALLBACK NO-POP RETRY)" t nil)
+\(fn URL-OR-PORT KERNELSPEC &optional CALLBACK NO-POP RETRY EXPLICIT-PATH)" t nil)
 
 (autoload 'ein:notebooklist-new-notebook-with-name "ein-notebooklist" "\
 Upon notebook-open, rename the notebook, then funcall CALLBACK.
@@ -313,7 +307,7 @@ and the url-or-port argument of ein:notebooklist-open*.
 ;;;### (autoloads nil "ein-process" "ein-process.el" (0 0 0 0))
 ;;; Generated autoloads from ein-process.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-process" '("ein:")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-process" '("ein:process-")))
 
 ;;;***
 
@@ -408,7 +402,7 @@ Show full traceback in traceback viewer.
 ;;;### (autoloads nil "ob-ein" "ob-ein.el" (0 0 0 0))
 ;;; Generated autoloads from ob-ein.el
 
-(if (featurep 'org) (let* ((orig (get 'org-babel-load-languages 'custom-type)) (orig-cdr (cdr orig)) (choices (plist-get orig-cdr :key-type))) (push '(const :tag "Ein" ein) (nthcdr 1 choices)) (put 'org-babel-load-languages 'custom-type (cons (car orig) (plist-put orig-cdr :key-type choices)))))
+(when (featurep 'org) (let* ((orig (get 'org-babel-load-languages 'custom-type)) (orig-cdr (cdr orig)) (choices (plist-get orig-cdr :key-type))) (push '(const :tag "Ein" ein) (nthcdr 1 choices)) (put 'org-babel-load-languages 'custom-type (cons (car orig) (plist-put orig-cdr :key-type choices)))))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ein" '("ob-ein-" "*ob-ein-sentinel*")))
 

@@ -581,6 +581,31 @@
 ;;;### (autoloads nil "org-crypt" "org-crypt.el" (0 0 0 0))
 ;;; Generated autoloads from org-crypt.el
 
+(autoload 'org-encrypt-entry "org-crypt" "\
+Encrypt the content of the current headline.
+
+\(fn)" t nil)
+
+(autoload 'org-decrypt-entry "org-crypt" "\
+Decrypt the content of the current headline.
+
+\(fn)" t nil)
+
+(autoload 'org-encrypt-entries "org-crypt" "\
+Encrypt all top-level entries in the current buffer.
+
+\(fn)" t nil)
+
+(autoload 'org-decrypt-entries "org-crypt" "\
+Decrypt all entries in the current buffer.
+
+\(fn)" t nil)
+
+(autoload 'org-crypt-use-before-save-magic "org-crypt" "\
+Add a hook to automatically encrypt entries before a file is saved to disk.
+
+\(fn)" nil nil)
+
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-crypt" '("org-")))
 
 ;;;***

@@ -22,7 +22,7 @@ Major mode for Rust code.
 ;;;### (autoloads nil "rustic-babel" "rustic-babel.el" (0 0 0 0))
 ;;; Generated autoloads from rustic-babel.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-babel" '("org-babel-execute:rustic" "rustic-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-babel" '("org-babel-execute:rust" "rustic-")))
 
 ;;;***
 
@@ -131,6 +131,24 @@ The documentation is built if necessary.
 
 \(fn)" t nil)
 
+(autoload 'rustic-cargo-add "rustic-cargo" "\
+Add crate to Cargo.toml using 'cargo add'.
+If running with prefix command `C-u', read whole command from minibuffer.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'rustic-cargo-rm "rustic-cargo" "\
+Remove crate from Cargo.toml using 'cargo rm'.
+If running with prefix command `C-u', read whole command from minibuffer.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'rustic-cargo-upgrade "rustic-cargo" "\
+Upgrade dependencies as specified in the local manifest file using 'cargo upgrade'.
+If running with prefix command `C-u', read whole command from minibuffer.
+
+\(fn &optional ARG)" t nil)
+
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-cargo" '("rustic-")))
 
 ;;;***
@@ -161,6 +179,49 @@ Re-compile the program using `compilation-arguments'.
 \(fn)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-compile" '("rust")))
+
+;;;***
+
+;;;### (autoloads nil "rustic-doc" "rustic-doc.el" (0 0 0 0))
+;;; Generated autoloads from rustic-doc.el
+
+(autoload 'rustic-doc-dumb-search "rustic-doc" "\
+Search all projects and std for SEARCH-TERM.
+Use this when `rustic-doc-search' does not find what you're looking for.
+Add `universal-argument' to only search level 1 headers.
+See `rustic-doc-search' for more information.
+
+\(fn SEARCH-TERM)" t nil)
+
+(autoload 'rustic-doc-search "rustic-doc" "\
+Search the rust documentation for SEARCH-TERM.
+Only searches in headers (structs, functions, traits, enums, etc)
+to limit the number of results.
+To limit search results to only level 1 headers, add `universal-argument'
+Level 1 headers are things like struct or enum names.
+if ROOT is non-nil the search is performed from the root dir.
+This function tries to be smart and limits the search results
+as much as possible. If it ends up being so smart that
+it doesn't manage to find what you're looking for, try `rustic-doc-dumb-search'.
+
+\(fn SEARCH-TERM &optional ROOT)" t nil)
+
+(autoload 'rustic-doc-convert-current-package "rustic-doc" "\
+Convert the documentation for a project and its dependencies.
+
+\(fn)" t nil)
+
+(autoload 'rustic-doc-setup "rustic-doc" "\
+Setup or update rustic-doc filter and convert script. Convert std.
+
+\(fn)" t nil)
+
+(autoload 'rustic-doc-mode "rustic-doc" "\
+Convert rust html docs to .org, and browse the converted docs.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-doc" '("rustic-doc-")))
 
 ;;;***
 

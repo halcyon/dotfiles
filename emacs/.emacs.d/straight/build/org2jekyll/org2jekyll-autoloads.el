@@ -6,15 +6,24 @@
 ;;;### (autoloads nil "org2jekyll" "org2jekyll.el" (0 0 0 0))
 ;;; Generated autoloads from org2jekyll.el
 
+(autoload 'org2jekyll-input-directory "org2jekyll" "\
+Compute the input folder from the FOLDER-NAME.
+
+\(fn &optional FOLDER-NAME)" nil nil)
+
+(autoload 'org2jekyll-output-directory "org2jekyll" "\
+Compute the output folder from the optional FOLDER-NAME.
+
+\(fn &optional FOLDER-NAME)" nil nil)
+
 (autoload 'org2jekyll-init-current-buffer "org2jekyll" "\
 Given an existing buffer, add the needed metadata to make it a post or page.
 
 \(fn)" t nil)
 
 (autoload 'org2jekyll-create-draft "org2jekyll" "\
-Create a new Jekyll blog post with TITLE.
-The `'%s`' will be replaced respectively by the blog entry name, the author, the
- generated date, the title, the description, the tags and the categories.
+Prompt the user for org metadata and then create a new Jekyll blog post.
+The specified title will be used as the name of the file.
 
 \(fn)" t nil)
 
@@ -31,17 +40,17 @@ List the drafts folder.
 (autoload 'org2jekyll-publish "org2jekyll" "\
 Publish the current org file as post or page depending on the chosen layout.
 Layout `'post`' is a jekyll post.
-Layout `'default`' is a page.
+Layout `'default`' is a page (depending on the user customs).
 
 \(fn)" t nil)
 
 (autoload 'org2jekyll-publish-posts "org2jekyll" "\
-Publish all the posts.
+Publish all posts.
 
 \(fn)" t nil)
 
 (autoload 'org2jekyll-publish-pages "org2jekyll" "\
-Publish all the pages.
+Publish all pages.
 
 \(fn)" t nil)
 

@@ -17,6 +17,11 @@ Where to store autoloads for subdirectory contents.")
 
 ;;;***
 
+;;;### (autoloads nil nil ("realgud-recursive-autoloads.el") (0 0
+;;;;;;  0 0))
+
+;;;***
+
 (provide 'realgud-autoloads)
 ;; Local Variables:
 ;; version-control: never

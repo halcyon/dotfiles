@@ -371,10 +371,7 @@ Find use cases of the identifier at point and highlight them all.
 
 (autoload 'haskell-compile "haskell-compile" "\
 Run a compile command for the current Haskell buffer.
-
-Locates stack or cabal definitions and, if found, invokes the
-default build command for that build tool. Cabal is preferred
-but may be ignored with `haskell-compile-ignore-cabal'.
+Obeys haskell-compiler-type to choose the appropriate build command.
 
 If prefix argument EDIT-COMMAND is non-nil (and not a negative
 prefix `-'), prompt for a custom compile command.
@@ -605,8 +602,6 @@ Inherit from `default' to avoid fontification of them." :group (quote haskell-ap
 
 (autoload 'haskell-hoogle "haskell-hoogle" "\
 Do a Hoogle search for QUERY.
-When `haskell-hoogle-command' is non-nil, this command runs
-that.  Otherwise, it opens a hoogle search result in the browser.
 
 If prefix argument INFO is given, then `haskell-hoogle-command'
 is asked to show extra info for the items matching QUERY..
@@ -615,19 +610,17 @@ is asked to show extra info for the items matching QUERY..
 
 (defalias 'hoogle 'haskell-hoogle)
 
-(autoload 'haskell-hoogle-lookup-from-local "haskell-hoogle" "\
-Lookup by local hoogle.
-
-\(fn)" t nil)
-
-(autoload 'haskell-hayoo "haskell-hoogle" "\
-Do a Hayoo search for QUERY.
+(autoload 'haskell-hoogle-lookup-from-website "haskell-hoogle" "\
+Lookup QUERY at `haskell-hoogle-url'.
 
 \(fn QUERY)" t nil)
 
-(defalias 'hayoo 'haskell-hayoo)
+(autoload 'haskell-hoogle-lookup-from-local "haskell-hoogle" "\
+Lookup QUERY on local hoogle server.
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-hoogle" '("haskell-h")))
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-hoogle" '("hoogle-prompt" "haskell-hoogle-")))
 
 ;;;***
 

@@ -25,9 +25,9 @@ When started, runs `scala-mode-hook'.
 
 \(fn)" t nil)
 
-(add-to-list 'auto-mode-alist '("\\.\\(scala\\|sbt\\)\\'" . scala-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(scala\\|sbt\\|worksheet\\.sc\\)\\'" . scala-mode))
 
-(modify-coding-system-alist 'file "\\.\\(scala\\|sbt\\)\\'" 'utf-8)
+(modify-coding-system-alist 'file "\\.\\(scala\\|sbt\\|worksheet\\.sc\\)\\'" 'utf-8)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode" '("scala-mode:")))
 

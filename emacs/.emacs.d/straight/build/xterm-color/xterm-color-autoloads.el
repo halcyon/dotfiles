@@ -10,7 +10,8 @@
 Translate ANSI color sequences in STRING into text properties.
 Return new STRING with text properties applied.
 
-This function strips text properties that may be present in STRING.
+In order to get maximum performance, this function strips text properties
+if they are present in STRING.
 
 \(fn STRING)" nil nil)
 
@@ -18,13 +19,14 @@ This function strips text properties that may be present in STRING.
 Translate ANSI color sequences in STRING into text properties.
 Return new STRING with text properties applied.
 
-This function will check if `xterm-color-preserve-properties' is
-set to T and only call `xterm-color-filter-strip' on substrings
-that do not have text properties applied (passing through the rest
-unmodified). Preserving properties in this fashion is not very robust
-as there may be situations where text properties are applied on ANSI
-data, which will desync the state machine. Preserving properties works
-ok and is really meant for eshell.
+This function checks if `xterm-color-preserve-properties' is non-nil
+and only calls `xterm-color-filter-strip' on substrings that do not
+have text properties applied (passing through the rest unmodified).
+Preserving properties in this fashion is not very robust as there may
+be situations where text properties are applied on ANSI data, which
+will desync the state machine.
+
+Preserving properties works ok with and is really meant for eshell.
 
 This can be inserted into `comint-preoutput-filter-functions'.
 
@@ -37,8 +39,14 @@ This can be inserted into `comint-preoutput-filter-functions'.
 
 (autoload 'xterm-color-colorize-buffer "xterm-color" "\
 Apply `xterm-color-filter' to current buffer, and replace its contents.
+Colors are applied using 'face, unless font-lock-mode is active, in
+which case 'font-lock-face is used. Operation with font-lock mode active
+is not recommended.
 
-\(fn)" t nil)
+If USE-OVERLAYS is non-nil, colors are applied to the buffer using overlays
+instead of text properties. A C-u prefix arg causes overlays to be used.
+
+\(fn &optional USE-OVERLAYS)" t nil)
 
 (autoload 'xterm-color-clear-cache "xterm-color" "\
 Clear xterm color face attribute cache.
@@ -52,15 +60,15 @@ effect when called from a buffer that does not have a cache.
 \(fn)" t nil)
 
 (autoload 'xterm-color-test "xterm-color" "\
-Create/display and render a new buffer that contains ANSI control sequences.
+Create, display and render a new buffer containing ANSI control sequences.
 
 \(fn)" t nil)
 
 (autoload 'xterm-color-test-raw "xterm-color" "\
-Create and display a new buffer that contains ANSI SGR control sequences.
-ANSI sequences will not be processed. One can use a different Emacs package
-\(e.g. ansi-color.el) to do so. This is really meant to be used for
-easy comparisons/benchmarks with libraries that offer similar functionality.
+Create and display a new buffer containing ANSI SGR control sequences.
+ANSI sequences are not processed. One can use a different Emacs package,
+such as ansi-color.el to do so. This is really meant to be used for easy
+comparisons/benchmarks with libraries that offer similar functionality.
 
 \(fn)" t nil)
 

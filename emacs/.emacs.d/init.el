@@ -707,27 +707,24 @@ Null prefix argument turns off the mode."
   :straight (:host github
              :repo "nicferrier/rcirc-notify"))
 
-(use-package slack
-  :bind (:map slack-mode-map ("C-c C-o" . browse-url)
-         :map slack-message-buffer-mode-map ("C-c C-o" . browse-url)
-         :map slack-file-info-buffer-mode-map ("C-c C-o" . browse-url))
-  :straight (:host github
-                 :repo "yuya373/emacs-slack"
-             ;; :repo "halcyon/emacs-slack"
-	     ;; :branch "halcyon-fix-terminal"
-             )
-  :commands slack-start
-  :config
-  (add-hook 'slack-mode-hook
-            (lambda ()
-              (display-line-numbers-mode -1)
-              (turn-off-smartparens-strict-mode)))
-  (setq slack-buffer-emojify nil
-        slack-prefer-current-team t)
-  (defadvice slack-start
-      (before register-slack-teams activate)
-    "Registers slack teams before starting slack."
-    (require 'slack-connections "~/gitlab/dotfiles-private/emacs/slack-connections.el.gpg")))
+;; (use-package slack
+;;   :bind (:map slack-mode-map ("C-c C-o" . browse-url)
+;;          :map slack-message-buffer-mode-map ("C-c C-o" . browse-url)
+;;          :map slack-file-info-buffer-mode-map ("C-c C-o" . browse-url))
+;;   :straight (:host github
+;;                    :repo "yuya373/emacs-slack")
+;;   :commands slack-start
+;;   :config
+;;   (add-hook 'slack-mode-hook
+;;             (lambda ()
+;;               (display-line-numbers-mode -1)
+;;               (turn-off-smartparens-strict-mode)))
+;;   (setq slack-buffer-emojify nil
+;;         slack-prefer-current-team t)
+;;   (defadvice slack-start
+;;       (before register-slack-teams activate)
+;;     "Registers slack teams before starting slack."
+;;     (require 'slack-connections "~/gitlab/dotfiles-private/emacs/slack-connections.el.gpg")))
 
 (use-package direnv
   :straight (:host github
