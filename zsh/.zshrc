@@ -40,8 +40,8 @@ ZSH_THEME="halcyon"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 # zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent identities id_ed25519
-plugins=(docker docker-compose fasd git ssh-agent helm kubectl asdf)
+# zstyle :omz:plugins:ssh-agent identities id_ed25519
+plugins=(docker docker-compose fasd git gpg-agent helm kubectl asdf)
 
 
 source ${ZSH}/oh-my-zsh.sh
@@ -53,7 +53,7 @@ ulimit -c unlimited
 # Unbinds C-\ from SIGQUIT
 stty quit undef
 
-export GPG_TTY=${TTY}
+#export GPG_TTY=${TTY}
 export ALTERNATE_EDITOR=""
 
 export EDITOR="emacs" #"${HOME}/bin/emacsclient"
