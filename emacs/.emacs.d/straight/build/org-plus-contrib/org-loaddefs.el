@@ -422,7 +422,7 @@ Dispatch to the appropriate function to store a link to an IRC session.
 
 ;;;***
 
-;;;### (autoloads nil "org" "org.el" "0366182a51f614735675596216d680f4")
+;;;### (autoloads nil "org" "org.el" "679a29ffa36eb84517a7c0c49d6caea9")
 ;;; Generated autoloads from org.el
 
 (autoload 'org-babel-do-load-languages "org" "\
@@ -979,7 +979,7 @@ Idea taken from `gnus-dired-attach'.
 
 ;;;***
 
-;;;### (autoloads nil "org-capture" "org-capture.el" "078543cb96cbe362d77ff37ae6678961")
+;;;### (autoloads nil "org-capture" "org-capture.el" "d6807ebdb692c0b80ef39d6205a60cf3")
 ;;; Generated autoloads from org-capture.el
 
 (autoload 'org-capture-string "org-capture" "\

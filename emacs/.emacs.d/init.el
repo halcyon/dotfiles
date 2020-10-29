@@ -521,6 +521,7 @@ Null prefix argument turns off the mode."
   (setq geiser-active-implementations '(mit)))
 
 (use-package clojure-mode-extra-font-locking)
+(use-package flycheck-clj-kondo)
 (use-package clojure-mode
   :config
   (defun configure-clojure-indent ()
@@ -584,7 +585,9 @@ Null prefix argument turns off the mode."
              :repo "abo-abo/hydra"))
 
 (use-package flycheck
-  :diminish flycheck-mode)
+  :diminish flycheck-mode
+  :config
+  (global-flycheck-mode))
 
 (use-package haskell-mode
   :config

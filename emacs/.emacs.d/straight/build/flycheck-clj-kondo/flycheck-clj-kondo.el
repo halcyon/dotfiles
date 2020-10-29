@@ -1,0 +1,1 @@
+/home/ksm/.emacs.d/straight/repos/flycheck-clj-kondo/flycheck-clj-kondo.el

@@ -349,7 +349,12 @@ Format the current buffer using rustfmt.
 Provide optional argument NO-STDIN for `rustic-before-save-hook' since there
 were issues when using stdin for formatting.
 
-\(fn &optional NO-STDIN)" t nil)
+\(fn)" t nil)
+
+(autoload 'rustic-format-file "rustic-util" "\
+Unlike `rustic-format-buffer' format file directly and revert the buffer.
+
+\(fn &optional FILE)" t nil)
 
 (autoload 'rustic-analyzer-macro-expand "rustic-util" "\
 Default method for displaying macro expansion results.
