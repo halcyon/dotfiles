@@ -69,7 +69,7 @@
 ;;;### (autoloads nil "ob-coq" "ob-coq.el" (0 0 0 0))
 ;;; Generated autoloads from ob-coq.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-coq" '("org-babel-" "coq-program-name")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-coq" '("coq-program-name" "org-babel-")))
 
 ;;;***
 
@@ -154,7 +154,7 @@
 ;;;### (autoloads nil "ob-gnuplot" "ob-gnuplot.el" (0 0 0 0))
 ;;; Generated autoloads from ob-gnuplot.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-gnuplot" '("org-babel-" "*org-babel-gnuplot-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-gnuplot" '("*org-babel-gnuplot-" "org-babel-")))
 
 ;;;***
 
@@ -217,7 +217,7 @@
 ;;;### (autoloads nil "ob-lilypond" "ob-lilypond.el" (0 0 0 0))
 ;;; Generated autoloads from ob-lilypond.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lilypond" '("org-babel-" "lilypond-mode")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lilypond" '("lilypond-mode" "org-babel-")))
 
 ;;;***
 
@@ -582,29 +582,19 @@
 ;;; Generated autoloads from org-crypt.el
 
 (autoload 'org-encrypt-entry "org-crypt" "\
-Encrypt the content of the current headline.
-
-\(fn)" t nil)
+Encrypt the content of the current headline." t nil)
 
 (autoload 'org-decrypt-entry "org-crypt" "\
-Decrypt the content of the current headline.
-
-\(fn)" t nil)
+Decrypt the content of the current headline." t nil)
 
 (autoload 'org-encrypt-entries "org-crypt" "\
-Encrypt all top-level entries in the current buffer.
-
-\(fn)" t nil)
+Encrypt all top-level entries in the current buffer." t nil)
 
 (autoload 'org-decrypt-entries "org-crypt" "\
-Decrypt all entries in the current buffer.
-
-\(fn)" t nil)
+Decrypt all entries in the current buffer." t nil)
 
 (autoload 'org-crypt-use-before-save-magic "org-crypt" "\
-Add a hook to automatically encrypt entries before a file is saved to disk.
-
-\(fn)" nil nil)
+Add a hook to automatically encrypt entries before a file is saved to disk." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-crypt" '("org-")))
 
@@ -775,7 +765,7 @@ Add a hook to automatically encrypt entries before a file is saved to disk.
 ;;;### (autoloads nil "org-pcomplete" "org-pcomplete.el" (0 0 0 0))
 ;;; Generated autoloads from org-pcomplete.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-pcomplete" '("pcomplete/org-mode/" "org-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-pcomplete" '("org-" "pcomplete/org-mode/")))
 
 ;;;***
 

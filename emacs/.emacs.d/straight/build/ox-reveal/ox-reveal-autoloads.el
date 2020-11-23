@@ -17,7 +17,7 @@ Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-reveal" '("org-reveal-" "frag-" "if-format")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-reveal" '("frag-" "if-format" "org-reveal-")))
 
 ;;;***
 

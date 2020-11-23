@@ -7,9 +7,7 @@
 ;;; Generated autoloads from go-eldoc.el
 
 (autoload 'go-eldoc-setup "go-eldoc" "\
-Set up eldoc function and enable eldoc-mode.
-
-\(fn)" t nil)
+Set up eldoc function and enable eldoc-mode." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-eldoc" '("go-eldoc-")))
 

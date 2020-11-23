@@ -106,3 +106,5 @@ eval "$(direnv hook zsh)"
 
 # added by travis gem
 [ -f /home/ksm/.travis/travis.sh ] && source /home/ksm/.travis/travis.sh
+
+export PATH=$PATH:${HOME}/projects/securex-cli

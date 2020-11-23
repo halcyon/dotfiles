@@ -24,15 +24,17 @@ just return nil.
 (autoload 'overseer-mode "overseer" "\
 Minor mode for emacs lisp files to test through ert-runner.
 
+If called interactively, enable overseer mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
 Key bindings:
 \\{overseer-mode-map}
 
 \(fn &optional ARG)" t nil)
 
-(autoload 'overseer-enable-mode "overseer" "\
-
-
-\(fn)" nil nil)
+(autoload 'overseer-enable-mode "overseer" nil nil nil)
 
 (dolist (hook '(emacs-lisp-mode-hook)) (add-hook hook 'overseer-enable-mode))
 

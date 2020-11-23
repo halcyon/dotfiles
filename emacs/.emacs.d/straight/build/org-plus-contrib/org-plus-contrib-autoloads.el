@@ -84,29 +84,26 @@ Don't auto jack in by default for not rude.")
 (custom-autoload 'ob-clojure-literate-auto-jackin-p "ob-clojure-literate" t)
 
 (autoload 'ob-clojure-literate-specify-session "ob-clojure-literate" "\
-Specify ob-clojure header argument :session with value selected from a list of available sessions.
-
-\(fn)" t nil)
+Specify ob-clojure header argument :session with value selected from a list of available sessions." t nil)
 
 (autoload 'ob-clojure-literate-auto-jackin "ob-clojure-literate" "\
-Auto setup ob-clojure-literate scaffold and jack-in Clojure project.
-
-\(fn)" t nil)
+Auto setup ob-clojure-literate scaffold and jack-in Clojure project." t nil)
 
 (autoload 'ob-clojure-literate-enable "ob-clojure-literate" "\
-Enable Org-mode buffer locally for `ob-clojure-literate'.
-
-\(fn)" nil nil)
+Enable Org-mode buffer locally for `ob-clojure-literate'." nil nil)
 
 (autoload 'ob-clojure-literate-disable "ob-clojure-literate" "\
-Disable Org-mode buffer locally for `ob-clojure-literate'.
-
-\(fn)" nil nil)
+Disable Org-mode buffer locally for `ob-clojure-literate'." nil nil)
 
 (if ob-clojure-literate-auto-jackin-p (ob-clojure-literate-auto-jackin))
 
 (autoload 'ob-clojure-literate-mode "ob-clojure-literate" "\
 A minor mode to toggle `ob-clojure-literate'.
+
+If called interactively, enable Ob-Clojure-Literate mode if ARG
+is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 
@@ -124,7 +121,7 @@ A minor mode to toggle `ob-clojure-literate'.
 ;;;### (autoloads nil "ob-coq" "ob-coq.el" (0 0 0 0))
 ;;; Generated autoloads from ob-coq.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-coq" '("org-babel-" "coq-program-name")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-coq" '("coq-program-name" "org-babel-")))
 
 ;;;***
 
@@ -230,7 +227,7 @@ A minor mode to toggle `ob-clojure-literate'.
 ;;;### (autoloads nil "ob-gnuplot" "ob-gnuplot.el" (0 0 0 0))
 ;;; Generated autoloads from ob-gnuplot.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-gnuplot" '("org-babel-" "*org-babel-gnuplot-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-gnuplot" '("*org-babel-gnuplot-" "org-babel-")))
 
 ;;;***
 
@@ -300,7 +297,7 @@ A minor mode to toggle `ob-clojure-literate'.
 ;;;### (autoloads nil "ob-lilypond" "ob-lilypond.el" (0 0 0 0))
 ;;; Generated autoloads from ob-lilypond.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lilypond" '("org-babel-" "lilypond-mode")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lilypond" '("lilypond-mode" "org-babel-")))
 
 ;;;***
 
@@ -386,7 +383,7 @@ A minor mode to toggle `ob-clojure-literate'.
 ;;;### (autoloads nil "ob-oz" "ob-oz.el" (0 0 0 0))
 ;;; Generated autoloads from ob-oz.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-oz" '("oz-send-string-expression" "org-babel-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-oz" '("org-babel-" "oz-send-string-expression")))
 
 ;;;***
 
@@ -405,7 +402,7 @@ Orgmode Babel PHP evaluate function for `BODY' with `PARAMS'.
 
 \(fn BODY PARAMS)" nil nil)
 
-(eval-after-load "org" '(add-to-list 'org-src-lang-modes '("php" . php)))
+(eval-after-load 'org '(add-to-list 'org-src-lang-modes '("php" . php)))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-php" '("ob-php:inf-php-buffer" "org-babel-")))
 
@@ -447,7 +444,7 @@ org-babel redis hook.
 
 \(fn BODY PARAMS)" nil nil)
 
-(eval-after-load "org" '(add-to-list 'org-src-lang-modes '("redis" . redis)))
+(eval-after-load 'org '(add-to-list 'org-src-lang-modes '("redis" . redis)))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-redis" '("ob-redis:default-db")))
 
@@ -771,9 +768,7 @@ Execute a block of Spice code `BODY' with org-babel and `PARAMS'.
 (autoload 'org-annotate-file "org-annotate-file" "\
 Visit `org-annotate-file-storage-file` and add a new annotation section.
 The annotation is opened at the new section which will be referencing
-the point in the current file.
-
-\(fn)" t nil)
+the point in the current file." t nil)
 
 (autoload 'org-annotate-file-show-section "org-annotate-file" "\
 Add or show annotation entry in STORAGE-FILE and return the buffer.
@@ -807,9 +802,7 @@ The annotation will link to ANNOTATED-BUFFER if specified,
 ;;; Generated autoloads from org-attach-embedded-images.el
 
 (autoload 'org-attach-embedded-images-in-subtree "org-attach-embedded-images" "\
-Save the displayed images as attachments and insert links to them.
-
-\(fn)" t nil)
+Save the displayed images as attachments and insert links to them." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-attach-embedded-images" '("org-attach-embedded-images--")))
 
@@ -864,7 +857,7 @@ Save the displayed images as attachments and insert links to them.
 ;;;### (autoloads nil "org-collector" "org-collector.el" (0 0 0 0))
 ;;; Generated autoloads from org-collector.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-collector" '("org-" "and-rest")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-collector" '("and-rest" "org-")))
 
 ;;;***
 
@@ -892,7 +885,7 @@ Create agenda view for contacts matching NAME.
 
 \(fn NAME)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-contacts" '("org-co" "erc-nicknames-list")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-contacts" '("erc-nicknames-list" "org-co")))
 
 ;;;***
 
@@ -900,29 +893,19 @@ Create agenda view for contacts matching NAME.
 ;;; Generated autoloads from org-crypt.el
 
 (autoload 'org-encrypt-entry "org-crypt" "\
-Encrypt the content of the current headline.
-
-\(fn)" t nil)
+Encrypt the content of the current headline." t nil)
 
 (autoload 'org-decrypt-entry "org-crypt" "\
-Decrypt the content of the current headline.
-
-\(fn)" t nil)
+Decrypt the content of the current headline." t nil)
 
 (autoload 'org-encrypt-entries "org-crypt" "\
-Encrypt all top-level entries in the current buffer.
-
-\(fn)" t nil)
+Encrypt all top-level entries in the current buffer." t nil)
 
 (autoload 'org-decrypt-entries "org-crypt" "\
-Decrypt all entries in the current buffer.
-
-\(fn)" t nil)
+Decrypt all entries in the current buffer." t nil)
 
 (autoload 'org-crypt-use-before-save-magic "org-crypt" "\
-Add a hook to automatically encrypt entries before a file is saved to disk.
-
-\(fn)" nil nil)
+Add a hook to automatically encrypt entries before a file is saved to disk." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-crypt" '("org-")))
 
@@ -970,9 +953,7 @@ Add a hook to automatically encrypt entries before a file is saved to disk.
 ;;; Generated autoloads from org-eldoc.el
 
 (autoload 'org-eldoc-load "org-eldoc" "\
-Set up org-eldoc documentation function.
-
-\(fn)" t nil)
+Set up org-eldoc documentation function." t nil)
 
 (add-hook 'org-mode-hook #'org-eldoc-load)
 
@@ -1105,7 +1086,7 @@ Set up org-eldoc documentation function.
 ;;;### (autoloads nil "org-learn" "org-learn.el" (0 0 0 0))
 ;;; Generated autoloads from org-learn.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-learn" '("org-" "determine-next-interval" "inter-repetition-interval" "initial-" "calculate-new-optimal-factor" "modify-" "set-optimal-factor" "get-optimal-factor")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-learn" '("calculate-new-optimal-factor" "determine-next-interval" "get-optimal-factor" "initial-" "inter-repetition-interval" "modify-" "org-" "set-optimal-factor")))
 
 ;;;***
 
@@ -1238,7 +1219,7 @@ without asking.
 ;;;### (autoloads nil "org-mac-iCal" "org-mac-iCal.el" (0 0 0 0))
 ;;; Generated autoloads from org-mac-iCal.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-mac-iCal" '("org-mac-iCal" "omi-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-mac-iCal" '("omi-" "org-mac-iCal")))
 
 ;;;***
 
@@ -1247,109 +1228,47 @@ without asking.
 
 (autoload 'org-mac-grab-link "org-mac-link" "\
 Prompt for an application to grab a link from.
-When done, go grab the link, and insert it at point.
+When done, go grab the link, and insert it at point." t nil)
 
-\(fn)" t nil)
+(autoload 'org-mac-firefox-get-frontmost-url "org-mac-link" nil t nil)
 
-(autoload 'org-mac-firefox-get-frontmost-url "org-mac-link" "\
+(autoload 'org-mac-firefox-insert-frontmost-url "org-mac-link" nil t nil)
 
+(autoload 'org-mac-vimperator-get-frontmost-url "org-mac-link" nil t nil)
 
-\(fn)" t nil)
+(autoload 'org-mac-vimperator-insert-frontmost-url "org-mac-link" nil t nil)
 
-(autoload 'org-mac-firefox-insert-frontmost-url "org-mac-link" "\
+(autoload 'org-mac-chrome-get-frontmost-url "org-mac-link" nil t nil)
 
+(autoload 'org-mac-chrome-insert-frontmost-url "org-mac-link" nil t nil)
 
-\(fn)" t nil)
+(autoload 'org-mac-brave-get-frontmost-url "org-mac-link" nil t nil)
 
-(autoload 'org-mac-vimperator-get-frontmost-url "org-mac-link" "\
+(autoload 'org-mac-brave-insert-frontmost-url "org-mac-link" nil t nil)
 
+(autoload 'org-mac-safari-get-frontmost-url "org-mac-link" nil t nil)
 
-\(fn)" t nil)
+(autoload 'org-mac-safari-insert-frontmost-url "org-mac-link" nil t nil)
 
-(autoload 'org-mac-vimperator-insert-frontmost-url "org-mac-link" "\
+(autoload 'org-mac-together-get-selected "org-mac-link" nil t nil)
 
+(autoload 'org-mac-together-insert-selected "org-mac-link" nil t nil)
 
-\(fn)" t nil)
+(autoload 'org-mac-finder-item-get-selected "org-mac-link" nil t nil)
 
-(autoload 'org-mac-chrome-get-frontmost-url "org-mac-link" "\
+(autoload 'org-mac-finder-insert-selected "org-mac-link" nil t nil)
 
+(autoload 'org-mac-addressbook-item-get-selected "org-mac-link" nil t nil)
 
-\(fn)" t nil)
+(autoload 'org-mac-addressbook-insert-selected "org-mac-link" nil t nil)
 
-(autoload 'org-mac-chrome-insert-frontmost-url "org-mac-link" "\
+(autoload 'org-mac-skim-get-page "org-mac-link" nil t nil)
 
+(autoload 'org-mac-skim-insert-page "org-mac-link" nil t nil)
 
-\(fn)" t nil)
+(autoload 'org-mac-acrobat-get-page "org-mac-link" nil t nil)
 
-(autoload 'org-mac-brave-get-frontmost-url "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-brave-insert-frontmost-url "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-safari-get-frontmost-url "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-safari-insert-frontmost-url "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-together-get-selected "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-together-insert-selected "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-finder-item-get-selected "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-finder-insert-selected "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-addressbook-item-get-selected "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-addressbook-insert-selected "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-skim-get-page "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-skim-insert-page "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-acrobat-get-page "org-mac-link" "\
-
-
-\(fn)" t nil)
-
-(autoload 'org-mac-acrobat-insert-page "org-mac-link" "\
-
-
-\(fn)" t nil)
+(autoload 'org-mac-acrobat-insert-page "org-mac-link" nil t nil)
 
 (autoload 'org-mac-outlook-message-get-links "org-mac-link" "\
 Create links to the messages currently selected or flagged in Microsoft Outlook.app.
@@ -1365,9 +1284,7 @@ The Org-syntax text will be pushed to the kill ring, and also returned.
 Insert a link to the messages currently selected in Microsoft Outlook.app.
 This will use AppleScript to get the message-id and the subject
 of the active mail in Microsoft Outlook.app and make a link out
-of it.
-
-\(fn)" t nil)
+of it." t nil)
 
 (autoload 'org-mac-outlook-message-insert-flagged "org-mac-link" "\
 Asks for an org buffer and a heading within it, and replace message links.
@@ -1381,16 +1298,12 @@ after heading.
 (autoload 'org-mac-evernote-note-insert-selected "org-mac-link" "\
 Insert a link to the notes currently selected in Evernote.app.
 This will use AppleScript to get the note id and the title of the
-note(s) in Evernote.app and make a link out of it/them.
-
-\(fn)" t nil)
+note(s) in Evernote.app and make a link out of it/them." t nil)
 
 (autoload 'org-mac-devonthink-item-insert-selected "org-mac-link" "\
 Insert a link to the item(s) currently selected in DEVONthink Pro Office.
 This will use AppleScript to get the `uuid'(s) and the name(s) of the
-selected items in DEVONthink Pro Office and make link(s) out of it/them.
-
-\(fn)" t nil)
+selected items in DEVONthink Pro Office and make link(s) out of it/them." t nil)
 
 (autoload 'org-mac-message-get-links "org-mac-link" "\
 Create links to the messages currently selected or flagged in Mail.app.
@@ -1405,9 +1318,7 @@ The Org-syntax text will be pushed to the kill ring, and also returned.
 (autoload 'org-mac-message-insert-selected "org-mac-link" "\
 Insert a link to the messages currently selected in Mail.app.
 This will use AppleScript to get the message-id and the subject of the
-active mail in Mail.app and make a link out of it.
-
-\(fn)" t nil)
+active mail in Mail.app and make a link out of it." t nil)
 
 (autoload 'org-mac-message-insert-flagged "org-mac-link" "\
 Asks for an org buffer and a heading within it, and replace message links.
@@ -1417,7 +1328,7 @@ list of message:// links to flagged mail after heading.
 
 \(fn ORG-BUFFER ORG-HEADING)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-mac-link" '("org-" "as-get-s")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-mac-link" '("as-get-s" "org-")))
 
 ;;;***
 
@@ -1509,7 +1420,7 @@ With a double prefix arg \\[universal-argument] \\[universal-argument], open the
 ;;;### (autoloads nil "org-pcomplete" "org-pcomplete.el" (0 0 0 0))
 ;;; Generated autoloads from org-pcomplete.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-pcomplete" '("pcomplete/org-mode/" "org-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-pcomplete" '("org-" "pcomplete/org-mode/")))
 
 ;;;***
 
@@ -1547,9 +1458,7 @@ buffer.
 
 (autoload 'org-registry-visit "org-registry" "\
 If an Org file contains a link to the current location, visit
-this file.
-
-\(fn)" t nil)
+this file." t nil)
 
 (autoload 'org-registry-initialize "org-registry" "\
 Initialize `org-registry-alist'.
@@ -1562,14 +1471,10 @@ exists, eval `org-registry-file' and make it the new value for
 
 (autoload 'org-registry-insinuate "org-registry" "\
 Call `org-registry-update' after saving in Org-mode.
-Use with caution.  This could slow down things a bit.
-
-\(fn)" t nil)
+Use with caution.  This could slow down things a bit." t nil)
 
 (autoload 'org-registry-update "org-registry" "\
-Update the registry for the current Org file.
-
-\(fn)" t nil)
+Update the registry for the current Org file." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-registry" '("org-registry-")))
 
@@ -1620,9 +1525,7 @@ in the other direction
 \(fn DIR)" t nil)
 
 (autoload 'org-screenshot-show-unused "org-screenshot" "\
-Open A Dired buffer with unused screenshots marked
-
-\(fn)" t nil)
+Open A Dired buffer with unused screenshots marked" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-screenshot" '("org-screenshot-")))
 
@@ -1631,7 +1534,7 @@ Open A Dired buffer with unused screenshots marked
 ;;;### (autoloads nil "org-secretary" "org-secretary.el" (0 0 0 0))
 ;;; Generated autoloads from org-secretary.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-secretary" '("org-sec-" "join")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-secretary" '("join" "org-sec-")))
 
 ;;;***
 

@@ -14,9 +14,7 @@ and source-file directory for your debugger.
 \(fn COMMAND-LINE)" t nil)
 
 (autoload 'dlv-current-func "go-dlv" "\
-Debug the current program or test stopping at the beginning of the current function.
-
-\(fn)" t nil)
+Debug the current program or test stopping at the beginning of the current function." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-dlv" '("go-dlv-marker-" "gud-dlv-command-name")))
 

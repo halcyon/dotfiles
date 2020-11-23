@@ -13,7 +13,7 @@
 ;;;### (autoloads nil "make-deps" "make-deps.el" (0 0 0 0))
 ;;; Generated autoloads from make-deps.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "make-deps" '("make-deps" "batch-make-deps")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "make-deps" '("batch-make-deps" "make-deps")))
 
 ;;;***
 
@@ -41,17 +41,13 @@ the configured default sort order.
 \(fn &optional QUERY OLDEST-FIRST TARGET-THREAD TARGET-LINE NO-DISPLAY)" t nil)
 
 (autoload 'notmuch "notmuch" "\
-Run notmuch and display saved searches, known tags, etc.
-
-\(fn)" t nil)
+Run notmuch and display saved searches, known tags, etc." t nil)
 
 (autoload 'notmuch-cycle-notmuch-buffers "notmuch" "\
 Cycle through any existing notmuch buffers (search, show or hello).
 
 If the current buffer is the only notmuch buffer, bury it. If no
-notmuch buffers exist, run `notmuch'.
-
-\(fn)" t nil)
+notmuch buffers exist, run `notmuch'." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch" '("notmuch-")))
 
@@ -69,10 +65,7 @@ notmuch buffers exist, run `notmuch'.
 ;;;;;;  0 0))
 ;;; Generated autoloads from notmuch-company.el
 
-(autoload 'notmuch-company-setup "notmuch-company" "\
-
-
-\(fn)" nil nil)
+(autoload 'notmuch-company-setup "notmuch-company" nil nil nil)
 
 (autoload 'notmuch-company "notmuch-company" "\
 `company-mode' completion back-end for `notmuch'.
@@ -127,9 +120,7 @@ Jump to a saved search by shortcut key.
 This prompts for and performs a saved search using the shortcut
 keys configured in the :key property of `notmuch-saved-searches'.
 Typically these shortcuts are a single key long, so this is a
-fast way to jump to a saved search from anywhere in Notmuch.
-
-\(fn)" t nil)
+fast way to jump to a saved search from anywhere in Notmuch." t nil)
 
 (autoload 'notmuch-jump "notmuch-jump" "\
 Interactively prompt for one of the keys in ACTION-MAP.
@@ -156,7 +147,7 @@ not appear in the pop-up buffer.
 ;;;### (autoloads nil "notmuch-lib" "notmuch-lib.el" (0 0 0 0))
 ;;; Generated autoloads from notmuch-lib.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-lib" '("notmuch-" "mm-shr")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "notmuch-lib" '("mm-shr" "notmuch-")))
 
 ;;;***
 

@@ -18,6 +18,11 @@ Emacs minor mode for integrating Gradle into compile.
 Run gradle tasks from any buffer, scanning up to nearest gradle
 directory to run tasks.
 
+If called interactively, enable Gradle mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gradle-mode" '("gradle-")))

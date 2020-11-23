@@ -27,9 +27,7 @@ action, just return it).
 \(fn &optional SOURCES ACTION)" t nil)
 
 (autoload 'straight-visit-package-website "straight" "\
-Interactively select a recipe, and visit the package's website.
-
-\(fn)" t nil)
+Interactively select a recipe, and visit the package's website." t nil)
 
 (autoload 'straight-use-package "straight" "\
 Register, clone, build, and activate a package and its dependencies.
@@ -127,9 +125,7 @@ using `completing-read'. See also `straight-rebuild-package' and
 (autoload 'straight-check-all "straight" "\
 Rebuild any packages that have been modified.
 See also `straight-rebuild-all' and `straight-check-package'.
-This function should not be called during init.
-
-\(fn)" t nil)
+This function should not be called during init." t nil)
 
 (autoload 'straight-rebuild-package "straight" "\
 Rebuild a PACKAGE.
@@ -143,35 +139,27 @@ all dependencies as well. See also `straight-check-package' and
 
 (autoload 'straight-rebuild-all "straight" "\
 Rebuild all packages.
-See also `straight-check-all' and `straight-rebuild-package'.
-
-\(fn)" t nil)
+See also `straight-check-all' and `straight-rebuild-package'." t nil)
 
 (autoload 'straight-prune-build-cache "straight" "\
 Prune the build cache.
 This means that only packages that were built in the last init
 run and subsequent interactive session will remain; other
 packages will have their build mtime information and any cached
-autoloads discarded.
-
-\(fn)" nil nil)
+autoloads discarded." nil nil)
 
 (autoload 'straight-prune-build-directory "straight" "\
 Prune the build directory.
 This means that only packages that were built in the last init
 run and subsequent interactive session will remain; other
-packages will have their build directories deleted.
-
-\(fn)" nil nil)
+packages will have their build directories deleted." nil nil)
 
 (autoload 'straight-prune-build "straight" "\
 Prune the build cache and build directory.
 This means that only packages that were built in the last init
 run and subsequent interactive session will remain; other
 packages will have their build mtime information discarded and
-their build directories deleted.
-
-\(fn)" t nil)
+their build directories deleted." t nil)
 
 (autoload 'straight-normalize-package "straight" "\
 Normalize a PACKAGE's local repository to its recipe's configuration.
@@ -347,9 +335,7 @@ according to the value of `straight-profiles'.
 \(fn &optional FORCE)" t nil)
 
 (autoload 'straight-thaw-versions "straight" "\
-Read version lockfiles and restore package versions to those listed.
-
-\(fn)" t nil)
+Read version lockfiles and restore package versions to those listed." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight" '("straight-")))
 

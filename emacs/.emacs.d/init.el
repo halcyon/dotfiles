@@ -67,7 +67,9 @@
   (provide 'display-settings))
 
 (use-package zenburn-theme
-  :config (set-face-background 'hl-line "color-240"))
+  :config
+  (set-face-background 'hl-line "color-240")
+  (load-theme 'zenburn t))
 
 (use-package backup-settings
   :straight nil
@@ -130,7 +132,9 @@ Null prefix argument turns off the mode."
               ("C-c C-p" . cider-pprint-eval-last-sexp))
   :config
   (setq cider-repl-history-size 100000
-        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld"))
+        cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
+  (setq-local eldoc-documentation-function #'cider-eldoc) ;; Necessary until new eldoc API in emacs 28 is released
+  )
 
 (use-package company
   :diminish company-mode
@@ -523,18 +527,19 @@ Null prefix argument turns off the mode."
 (use-package clojure-mode-extra-font-locking)
 (use-package flycheck-clj-kondo)
 (use-package clojure-mode
-  :config
-  (defun configure-clojure-indent ()
-    (define-clojure-indent
-                (GET 'defun)
-                (POST 'defun)
-                (PUT 'defun)
-                (DELETE 'defun)
-                (HEAD 'defun)
-                (ANY 'defun)
-                (context 'defun)
-                (checking 'defun)))
-  (add-hook 'clojure-mode-hook #'configure-clojure-indent))
+  ;; :config
+  ;; (defun configure-clojure-indent ()
+  ;;   (define-clojure-indent
+  ;;               (GET 'defun)
+  ;;               (POST 'defun)
+  ;;               (PUT 'defun)
+  ;;               (DELETE 'defun)
+  ;;               (HEAD 'defun)
+  ;;               (ANY 'defun)
+  ;;               (context 'defun)
+  ;;               (checking 'defun)))
+  ;; (add-hook 'clojure-mode-hook #'configure-clojure-indent)
+  )
 
 
 (use-package eglot

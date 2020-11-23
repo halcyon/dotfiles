@@ -14,6 +14,11 @@ String to display in mode line when ElDoc Mode is enabled; nil for none.")
 (autoload 'eldoc-mode "eldoc" "\
 Toggle echo area display of Lisp objects at point (ElDoc mode).
 
+If called interactively, enable Eldoc mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
 ElDoc mode is a buffer-local minor mode.  When enabled, the echo
 area displays information about a function or variable in the
 text where point is.  If point is on a documented variable, it
@@ -22,6 +27,8 @@ it displays the argument list of the function called in the
 expression point is on.
 
 \(fn &optional ARG)" t nil)
+
+(put 'global-eldoc-mode 'globalized-minor-mode t)
 
 (defvar global-eldoc-mode t "\
 Non-nil if Global Eldoc mode is enabled.
@@ -47,9 +54,7 @@ See `eldoc-mode' for more information on Eldoc mode.
 
 (autoload 'turn-on-eldoc-mode "eldoc" "\
 Turn on `eldoc-mode' if the buffer has ElDoc support enabled.
-See `eldoc-documentation-strategy' for more detail.
-
-\(fn)" nil nil)
+See `eldoc-documentation-strategy' for more detail." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eldoc" '("eldoc")))
 

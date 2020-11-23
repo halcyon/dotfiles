@@ -9,6 +9,11 @@
 (autoload 'hindent-mode "hindent" "\
 Indent code with the hindent program.
 
+If called interactively, enable Hindent mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
 Provide the following keybindings:
 
 \\{hindent-mode-map}
@@ -19,14 +24,10 @@ Provide the following keybindings:
 Re-format the current declaration.
 
 The declaration is parsed and pretty printed.  Comments are
-preserved, although placement may be funky.
-
-\(fn)" t nil)
+preserved, although placement may be funky." t nil)
 
 (autoload 'hindent-reformat-buffer "hindent" "\
-Reformat the whole buffer.
-
-\(fn)" t nil)
+Reformat the whole buffer." t nil)
 
 (autoload 'hindent-reformat-decl-or-fill "hindent" "\
 Re-format current declaration, or fill paragraph.

@@ -48,6 +48,11 @@ region is invalid.
 (autoload 'flymake-mode "flymake" "\
 Toggle Flymake mode on or off.
 
+If called interactively, enable Flymake mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
 Flymake is an Emacs minor mode for on-the-fly syntax checking.
 Flymake collects diagnostic information from multiple sources,
 called backends, and visually annotates the buffer with the
@@ -81,14 +86,10 @@ special *Flymake log* buffer.
 \(fn &optional ARG)" t nil)
 
 (autoload 'flymake-mode-on "flymake" "\
-Turn Flymake mode on.
-
-\(fn)" nil nil)
+Turn Flymake mode on." nil nil)
 
 (autoload 'flymake-mode-off "flymake" "\
-Turn Flymake mode off.
-
-\(fn)" nil nil)
+Turn Flymake mode off." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake" '("flymake-")))
 

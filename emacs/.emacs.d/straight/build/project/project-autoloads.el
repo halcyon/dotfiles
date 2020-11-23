@@ -35,9 +35,7 @@ Run project command, displaying resultant buffer in another window.
 The following commands are available:
 
 \\{project-prefix-map}
-\\{project-other-window-map}
-
-\(fn)" t nil)
+\\{project-other-window-map}" t nil)
  (define-key ctl-x-4-map "p" #'project-other-window-command)
 
 (autoload 'project-other-frame-command "project" "\
@@ -46,9 +44,7 @@ Run project command, displaying resultant buffer in another frame.
 The following commands are available:
 
 \\{project-prefix-map}
-\\{project-other-frame-map}
-
-\(fn)" t nil)
+\\{project-other-frame-map}" t nil)
  (define-key ctl-x-5-map "p" #'project-other-frame-command)
 
 (autoload 'project-other-tab-command "project" "\
@@ -56,9 +52,7 @@ Run project command, displaying resultant buffer in a new tab.
 
 The following commands are available:
 
-\\{project-prefix-map}
-
-\(fn)" t nil)
+\\{project-prefix-map}" t nil)
 
 (when (bound-and-true-p tab-prefix-map) (define-key tab-prefix-map "p" #'project-other-tab-command))
 
@@ -82,55 +76,37 @@ pattern to search for.
 
 (autoload 'project-find-file "project" "\
 Visit a file (with completion) in the current project.
-The completion default is the filename at point, if one is
-recognized.
-
-\(fn)" t nil)
+The completion default is the string at point." t nil)
 
 (autoload 'project-or-external-find-file "project" "\
 Visit a file (with completion) in the current project or external roots.
-The completion default is the filename at point, if one is
-recognized.
-
-\(fn)" t nil)
+The completion default is the string at point." t nil)
 
 (autoload 'project-dired "project" "\
-Start Dired in the current project's root.
-
-\(fn)" t nil)
+Start Dired in the current project's root." t nil)
 
 (autoload 'project-vc-dir "project" "\
-Run VC-Dir in the current project's root.
-
-\(fn)" t nil)
+Run VC-Dir in the current project's root." t nil)
 
 (autoload 'project-shell "project" "\
 Start an inferior shell in the current project's root directory.
 If a buffer already exists for running a shell in the project's root,
 switch to it.  Otherwise, create a new shell buffer.
 With \\[universal-argument] prefix arg, create a new inferior shell buffer even
-if one already exists.
-
-\(fn)" t nil)
+if one already exists." t nil)
 
 (autoload 'project-eshell "project" "\
 Start Eshell in the current project's root directory.
 If a buffer already exists for running Eshell in the project's root,
 switch to it.  Otherwise, create a new Eshell buffer.
 With \\[universal-argument] prefix arg, create a new Eshell buffer even
-if one already exists.
-
-\(fn)" t nil)
+if one already exists." t nil)
 
 (autoload 'project-async-shell-command "project" "\
-Run `async-shell-command' in the current project's root directory.
-
-\(fn)" t nil)
+Run `async-shell-command' in the current project's root directory." t nil)
 
 (autoload 'project-shell-command "project" "\
-Run `shell-command' in the current project's root directory.
-
-\(fn)" t nil)
+Run `shell-command' in the current project's root directory." t nil)
 
 (autoload 'project-search "project" "\
 Search for REGEXP in all the files of the project.
@@ -207,9 +183,7 @@ Save the result in `project-list-file' if the list of projects has changed.
 \(fn PR)" nil nil)
 
 (autoload 'project-known-project-roots "project" "\
-Return the list of root directories of all known projects.
-
-\(fn)" nil nil)
+Return the list of root directories of all known projects." nil nil)
 
 (defvar project-switch-commands '((102 "Find file" project-find-file) (103 "Find regexp" project-find-regexp) (100 "Dired" project-dired) (118 "VC-Dir" project-vc-dir) (101 "Eshell" project-eshell)) "\
 Alist mapping keys to project switching menu entries.
@@ -223,9 +197,7 @@ the menu entries in the dispatch menu.")
 (autoload 'project-switch-project "project" "\
 \"Switch\" to another project by running an Emacs command.
 The available commands are presented as a dispatch menu
-made from `project-switch-commands'.
-
-\(fn)" t nil)
+made from `project-switch-commands'." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "project" '("project-")))
 

@@ -7,9 +7,7 @@
 ;;; Generated autoloads from ensime.el
 
 (autoload 'ensime "ensime" "\
-Read config file for settings then start an ensime-server and connect.
-
-\(fn)" t nil)
+Read config file for settings then start an ensime-server and connect." t nil)
 
 (autoload 'ensime-remote "ensime" "\
 Read config file for settings. Then connect to an existing ENSIME server.
@@ -24,10 +22,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ensime-auto-complete.el
 
-(autoload 'ensime-ac-enable "ensime-auto-complete" "\
-
-
-\(fn)" nil nil)
+(autoload 'ensime-ac-enable "ensime-auto-complete" nil nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-auto-complete" '("ensime-")))
 
@@ -52,10 +47,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;;;;;  0))
 ;;; Generated autoloads from ensime-company.el
 
-(autoload 'ensime-company-enable "ensime-company" "\
-
-
-\(fn)" nil nil)
+(autoload 'ensime-company-enable "ensime-company" nil nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-company" '("ensime-")))
 
@@ -137,9 +129,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;; Generated autoloads from ensime-ivy.el
 
 (autoload 'ensime-search-ivy "ensime-ivy" "\
-Search ensime with ivy.
-
-\(fn)" t nil)
+Search ensime with ivy." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-ivy" '("ensime-ivy-")))
 
@@ -148,7 +138,7 @@ Search ensime with ivy.
 ;;;### (autoloads nil "ensime-macros" "ensime-macros.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-macros.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-macros" '("ensime-" "with-struct" "destructure-case")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-macros" '("destructure-case" "ensime-" "with-struct")))
 
 ;;;***
 
@@ -158,6 +148,11 @@ Search ensime with ivy.
 (autoload 'ensime-mode "ensime-mode" "\
 ENSIME: The ENhanced Scala Interaction Mode for Emacs (minor-mode).
 \\{ensime-mode-map}
+
+If called interactively, enable Ensime mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 
@@ -259,7 +254,7 @@ ENSIME: The ENhanced Scala Interaction Mode for Emacs (minor-mode).
 ;;;### (autoloads nil "ensime-util" "ensime-util.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-util.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-util" '("ensime-" "buffer-file-name-with-indirect")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-util" '("buffer-file-name-with-indirect" "ensime-")))
 
 ;;;***
 

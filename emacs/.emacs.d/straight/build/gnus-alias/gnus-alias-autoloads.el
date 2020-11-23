@@ -7,14 +7,10 @@
 ;;; Generated autoloads from gnus-alias.el
 
 (autoload 'gnus-alias-init "gnus-alias" "\
-Add gnus-alias call to message mode hook.
-
-\(fn)" t nil)
+Add gnus-alias call to message mode hook." t nil)
 
 (autoload 'gnus-alias-select-identity "gnus-alias" "\
-Prompt user for an identity and use it.
-
-\(fn)" t nil)
+Prompt user for an identity and use it." t nil)
 
 (autoload 'gnus-alias-use-identity "gnus-alias" "\
 Use an Identity defined in `gnus-alias-identity-alist'.

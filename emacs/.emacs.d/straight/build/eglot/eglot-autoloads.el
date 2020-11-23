@@ -38,9 +38,7 @@ INTERACTIVE is t if called interactively.
 \(fn MANAGED-MAJOR-MODE PROJECT CLASS CONTACT &optional INTERACTIVE)" t nil)
 
 (autoload 'eglot-ensure "eglot" "\
-Start Eglot session for current buffer if there isn't one.
-
-\(fn)" nil nil)
+Start Eglot session for current buffer if there isn't one." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eglot" '("eglot-")))
 

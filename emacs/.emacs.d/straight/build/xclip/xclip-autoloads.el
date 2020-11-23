@@ -19,6 +19,11 @@ or call the function `xclip-mode'.")
 (autoload 'xclip-mode "xclip" "\
 Minor mode to use the `xclip' program to copy&paste.
 
+If called interactively, enable Xclip mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "xclip" '("xclip-")))

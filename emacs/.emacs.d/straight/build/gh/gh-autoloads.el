@@ -113,7 +113,7 @@
 
 (gh-defclass gh-gist-gist-file (gh-object) ((filename :initarg :filename) (size :initarg :size) (url :initarg :url :marshal ((alist . raw_url))) (content :initarg :content)))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-gist" '("gh-gist-" "constructor")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gh-gist" '("constructor" "gh-gist-")))
 
 ;;;***
 

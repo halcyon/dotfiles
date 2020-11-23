@@ -14,9 +14,7 @@ This needs to be set before loading helm-projectile.el.")
 (custom-autoload 'helm-projectile-fuzzy-match "helm-projectile" t)
 
 (autoload 'helm-projectile-find-file-dwim "helm-projectile" "\
-Find file at point based on context.
-
-\(fn)" t nil)
+Find file at point based on context." t nil)
 
 (autoload 'helm-projectile-find-other-file "helm-projectile" "\
 Switch between files with the same name but different extensions using Helm.
@@ -26,14 +24,10 @@ Other file extensions can be customized with the variable `projectile-other-file
 \(fn &optional FLEX-MATCHING)" t nil)
 
 (autoload 'helm-projectile-on "helm-projectile" "\
-Turn on `helm-projectile' key bindings.
-
-\(fn)" t nil)
+Turn on `helm-projectile' key bindings." t nil)
 
 (autoload 'helm-projectile-off "helm-projectile" "\
-Turn off `helm-projectile' key bindings.
-
-\(fn)" t nil)
+Turn off `helm-projectile' key bindings." t nil)
 
 (autoload 'helm-projectile-grep "helm-projectile" "\
 Helm version of `projectile-grep'.
@@ -52,9 +46,7 @@ Helm version of `projectile-ag'.
 \(fn &optional OPTIONS)" t nil)
 
 (autoload 'helm-projectile-rg "helm-projectile" "\
-Projectile version of `helm-rg'.
-
-\(fn)" t nil)
+Projectile version of `helm-rg'." t nil)
 
 (autoload 'helm-projectile-toggle "helm-projectile" "\
 Toggle Helm version of Projectile commands.

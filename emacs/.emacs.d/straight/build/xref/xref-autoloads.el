@@ -6,20 +6,13 @@
 ;;;### (autoloads nil "xref" "xref.el" (0 0 0 0))
 ;;; Generated autoloads from xref.el
 
-(autoload 'xref-find-backend "xref" "\
-
-
-\(fn)" nil nil)
+(autoload 'xref-find-backend "xref" nil nil nil)
 
 (autoload 'xref-pop-marker-stack "xref" "\
-Pop back to where \\[xref-find-definitions] was last invoked.
-
-\(fn)" t nil)
+Pop back to where \\[xref-find-definitions] was last invoked." t nil)
 
 (autoload 'xref-marker-stack-empty-p "xref" "\
-Return t if the marker stack is empty; nil otherwise.
-
-\(fn)" nil nil)
+Return t if the marker stack is empty; nil otherwise." nil nil)
 
 (autoload 'xref-find-definitions "xref" "\
 Find the definition of the identifier at point.

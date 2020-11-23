@@ -14,14 +14,10 @@ Optional argument STAY-IN-WINDOW do not move focus to response buffer if t.
 \(fn &optional RAW STAY-IN-WINDOW)" t nil)
 
 (autoload 'restclient-http-send-current-raw "restclient" "\
-Sends current request and get raw result (no reformatting or syntax highlight of XML, JSON or images).
-
-\(fn)" t nil)
+Sends current request and get raw result (no reformatting or syntax highlight of XML, JSON or images)." t nil)
 
 (autoload 'restclient-http-send-current-stay-in-window "restclient" "\
-Send current request and keep focus in request window.
-
-\(fn)" t nil)
+Send current request and keep focus in request window." t nil)
 
 (autoload 'restclient-mode "restclient" "\
 Turn on restclient mode.

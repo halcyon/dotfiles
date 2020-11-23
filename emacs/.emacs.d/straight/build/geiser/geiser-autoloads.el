@@ -147,7 +147,7 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 ;;;;;;  0))
 ;;; Generated autoloads from geiser-chicken.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-chicken" '("connect-to-chicken" "chicken" "geiser-chicken")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-chicken" '("chicken" "connect-to-chicken" "geiser-chicken")))
 
 ;;;***
 
@@ -221,14 +221,14 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 ;;;### (autoloads nil "geiser-gambit" "geiser-gambit.el" (0 0 0 0))
 ;;; Generated autoloads from geiser-gambit.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-gambit" '("geiser-gambit-" "gambit" "connect-to-gambit")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-gambit" '("connect-to-gambit" "gambit" "geiser-gambit-")))
 
 ;;;***
 
 ;;;### (autoloads nil "geiser-guile" "geiser-guile.el" (0 0 0 0))
 ;;; Generated autoloads from geiser-guile.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-guile" '("geiser-guile-" "guile" "connect-to-guile")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-guile" '("connect-to-guile" "geiser-guile-" "guile")))
 
 ;;;***
 
@@ -242,7 +242,7 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 ;;;### (autoloads nil "geiser-impl" "geiser-impl.el" (0 0 0 0))
 ;;; Generated autoloads from geiser-impl.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-impl" '("geiser-" "with--geiser-implementation" "define-geiser-implementation")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-impl" '("define-geiser-implementation" "geiser-" "with--geiser-implementation")))
 
 ;;;***
 
@@ -263,7 +263,7 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 ;;;### (autoloads nil "geiser-mit" "geiser-mit.el" (0 0 0 0))
 ;;; Generated autoloads from geiser-mit.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-mit" '("mit" "geiser-mit-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-mit" '("geiser-mit-" "mit")))
 
 ;;;***
 
@@ -284,7 +284,7 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 ;;;### (autoloads nil "geiser-racket" "geiser-racket.el" (0 0 0 0))
 ;;; Generated autoloads from geiser-racket.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-racket" '("racket" "run-gracket" "geiser-racket-" "connect-to-racket")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-racket" '("connect-to-racket" "geiser-racket-" "racket" "run-gracket")))
 
 ;;;***
 
@@ -298,7 +298,7 @@ Disable Geiser's mode (useful in Scheme buffers)." t)
 ;;;### (autoloads nil "geiser-repl" "geiser-repl.el" (0 0 0 0))
 ;;; Generated autoloads from geiser-repl.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-repl" '("geiser" "switch-to-geiser" "run-geiser")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "geiser-repl" '("geiser" "run-geiser" "switch-to-geiser")))
 
 ;;;***
 
