@@ -179,6 +179,8 @@ Null prefix argument turns off the mode."
   ;;; C-x 4 C-j opens dired in a separate window
   :straight nil)
 
+(use-package epresent)
+
 (use-package org-plus-contrib
   :init (provide 'org-plus-contrib))
 (use-package htmlize)
@@ -778,3 +780,17 @@ Null prefix argument turns off the mode."
 
 ;; (provide 'init)
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(safe-local-variable-values
+   '((cider-clojure-cli-global-options . "-A:dev")
+     (cider-repl-init-code "(dev)"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
