@@ -286,6 +286,8 @@ Null prefix argument turns off the mode."
   (provide 'org-settings)
   :bind ("C-c c" . org-capture))
 
+(use-package ob-http)
+
 (use-package org2jekyll
   :straight (:host github
              :repo "ardumont/org2jekyll")
