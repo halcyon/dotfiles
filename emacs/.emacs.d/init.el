@@ -179,6 +179,8 @@ Null prefix argument turns off the mode."
   ;;; C-x 4 C-j opens dired in a separate window
   :straight nil)
 
+(use-package dictionary)
+
 (use-package epresent)
 
 (use-package org-plus-contrib
@@ -288,6 +290,12 @@ Null prefix argument turns off the mode."
 
 (use-package ob-http)
 
+(use-package org-roam
+  :config
+  (setq org-roam-directory "~/projects/org-roam"
+        org-roam-encrypt-files t)
+  (add-hook 'after-init-hook 'org-roam-mode))
+
 (use-package org2jekyll
   :straight (:host github
              :repo "ardumont/org2jekyll")
@@ -365,7 +373,9 @@ Null prefix argument turns off the mode."
 
 (use-package ox-reveal
   :straight (:host github
-             :repo "yjwen/org-reveal"))
+                   :repo "yjwen/org-reveal"))
+
+(use-package rfc-mode)
 
 (use-package yaml-mode)
 
