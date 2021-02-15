@@ -22,7 +22,7 @@ Major mode for Rust code.
 ;;;### (autoloads nil "rustic-babel" "rustic-babel.el" (0 0 0 0))
 ;;; Generated autoloads from rustic-babel.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-babel" '("org-babel-execute:rust" "rustic-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-babel" '("cargo-toml-dependencies" "crate-dependencies" "org-babel-execute:rust" "rustic-")))
 
 ;;;***
 
@@ -83,7 +83,10 @@ If BIN is not nil, create a binary application, otherwise a library.
 Run 'cargo build' for the current project." t nil)
 
 (autoload 'rustic-cargo-run "rustic-cargo" "\
-Run 'cargo run' for the current project." t nil)
+Run 'cargo run' for the current project.
+If running with prefix command `C-u', read whole command from minibuffer.
+
+\(fn &optional ARG)" t nil)
 
 (autoload 'rustic-cargo-clean "rustic-cargo" "\
 Run 'cargo clean' for the current project." t nil)

@@ -41,7 +41,7 @@ diagnostics at BEG.
 (autoload 'flymake-diag-region "flymake" "\
 Compute BUFFER's region (BEG . END) corresponding to LINE and COL.
 If COL is nil, return a region just for LINE.  Return nil if the
-region is invalid.
+region is invalid.  This function saves match data.
 
 \(fn BUFFER LINE &optional COL)" nil nil)
 

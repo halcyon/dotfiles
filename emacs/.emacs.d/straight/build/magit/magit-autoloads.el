@@ -205,8 +205,8 @@ See `auto-revert-mode' for more information on Auto-Revert mode.
 Start a bisect session.
 
 Bisecting a bug means to find the commit that introduced it.
-This command starts such a bisect session by asking for a know
-good and a bad commit.  To move the session forward use the
+This command starts such a bisect session by asking for a known
+good and a known bad commit.  To move the session forward use the
 other actions from the bisect transient command (\\<magit-status-mode-map>\\[magit-bisect]).
 
 \(fn BAD GOOD ARGS)" t nil)
@@ -223,6 +223,15 @@ the bug in question." t nil)
 While bisecting, mark the current commit as bad.
 Use this after you have asserted that the commit does contain the
 bug in question." t nil)
+
+(autoload 'magit-bisect-mark "magit-bisect" "\
+While bisecting, mark the current commit with a bisect term.
+During a bisect using alternate terms, commits can still be
+marked with `magit-bisect-good' and `magit-bisect-bad', as those
+commands map to the correct term (\"good\" to --term-old's value
+and \"bad\" to --term-new's).  However, in some cases, it can be
+difficult to keep that mapping straight in your head; this
+command provides an interface that exposes the underlying terms." t nil)
 
 (autoload 'magit-bisect-skip "magit-bisect" "\
 While bisecting, skip the current commit.
@@ -570,13 +579,18 @@ Create a squash commit targeting COMMIT and instantly rebase.
 (autoload 'magit-commit-reshelve "magit-commit" "\
 Change the committer date and possibly the author date of `HEAD'.
 
-If you are the author of `HEAD', then both dates are changed,
-otherwise only the committer date.  The current time is used
-as the initial minibuffer input and the original author (if
-that is you) or committer date is available as the previous
+The current time is used as the initial minibuffer input and the
+original author or committer date is available as the previous
 history element.
 
-\(fn DATE)" t nil)
+Both the author and the committer dates are changes, unless one
+of the following is true, in which case only the committer date
+is updated:
+- You are not the author of the commit that is being reshelved.
+- The command was invoked with a prefix argument.
+- Non-interactively if UPDATE-AUTHOR is nil.
+
+\(fn DATE UPDATE-AUTHOR &optional ARGS)" t nil)
 
 (autoload 'magit-commit-absorb-modules "magit-commit" "\
 Spread modified modules across recent commits.
@@ -969,8 +983,12 @@ argument is used, then save the revision at its tip to the
 
 When the region is active, then save that to the `kill-ring',
 like `kill-ring-save' would, instead of behaving as described
-above.  If a prefix argument is used and the region is within a
-hunk, strip the outer diff marker column." t nil)
+above.  If a prefix argument is used and the region is within
+a hunk, then strip the diff marker column and keep only either
+the added or removed lines, depending on the sign of the prefix
+argument.
+
+\(fn ARG)" t nil)
 
 (autoload 'magit-copy-buffer-revision "magit-extras" "\
 Save the revision of the current buffer for later use.
@@ -1333,6 +1351,17 @@ https://github.com/mhagger/git-when-merged.
 Move to the Nth parent of the current commit.
 
 \(fn &optional N)" t nil)
+ (autoload 'magit-shortlog "magit-log" nil t)
+
+(autoload 'magit-shortlog-since "magit-log" "\
+Show a history summary for commits since REV.
+
+\(fn REV ARGS)" t nil)
+
+(autoload 'magit-shortlog-range "magit-log" "\
+Show a history summary for commit or range REV-OR-RANGE.
+
+\(fn REV-OR-RANGE ARGS)" t nil)
 
 (autoload 'magit-cherry "magit-log" "\
 Show commits in a branch that are not merged in the upstream branch.
@@ -1433,7 +1462,7 @@ Abort the current merge operation.
 ;;;### (autoloads nil "magit-mode" "magit-mode.el" (0 0 0 0))
 ;;; Generated autoloads from magit-mode.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-mode" '("disable-magit-save-buffers" "inhibit-magit-refresh" "magit-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-mode" '("disable-magit-save-buffers" "magit-")))
 
 ;;;***
 

@@ -46,7 +46,7 @@ the file.
 
 \(fn BEG END &optional DROP-NEWLINE)" t nil)
 
-(define-obsolete-function-alias 'hindent/reformat-decl 'hindent-reformat-decl)
+(define-obsolete-function-alias 'hindent/reformat-decl 'hindent-reformat-decl "hindent 5.2.2")
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hindent" '("hindent-")))
 

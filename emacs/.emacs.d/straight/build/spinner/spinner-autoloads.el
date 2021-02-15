@@ -35,7 +35,7 @@ Start a mode-line spinner of given TYPE-OR-OBJECT.
 If TYPE-OR-OBJECT is an object created with `make-spinner',
 simply activate it.  This method is designed for minor modes, so
 they can use the spinner as part of their lighter by doing:
-    \\='(:eval (spinner-print THE-SPINNER))
+    '(:eval (spinner-print THE-SPINNER))
 To stop this spinner, call `spinner-stop' on it.
 
 If TYPE-OR-OBJECT is anything else, a buffer-local spinner is

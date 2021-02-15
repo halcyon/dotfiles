@@ -35,23 +35,17 @@
 ;;;### (autoloads nil "ein-dev" "ein-dev.el" (0 0 0 0))
 ;;; Generated autoloads from ein-dev.el
 
-(autoload 'ein:dev-insert-mode-map "ein-dev" "\
-Insert mode-map into rst document.  For README.rst.
-
-\(fn MAP-STRING)" nil nil)
-
 (autoload 'ein:dev-start-debug "ein-dev" "\
-Enable EIN debugging support.
-When the prefix argument is given, debugging support for websocket
-callback (`websocket-callback-debug-on-error') is enabled." t nil)
+Start logging a bunch of stuff." t nil)
 
 (autoload 'ein:dev-stop-debug "ein-dev" "\
-Inverse of `ein:dev-start-debug'.  Hard to maintain because it needs to match start" t nil)
+Inverse of `ein:dev-start-debug'.
+Impossible to maintain because it needs to match start." t nil)
 
 (autoload 'ein:dev-bug-report-template "ein-dev" "\
 Open a buffer with bug report template." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-dev" '("ein:")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-dev" '("ein:dev-")))
 
 ;;;***
 
@@ -99,7 +93,7 @@ Open a buffer with bug report template." t nil)
 ;;;### (autoloads nil "ein-ipdb" "ein-ipdb.el" (0 0 0 0))
 ;;; Generated autoloads from ein-ipdb.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-ipdb" '("*ein:ipdb-" "ein:")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-ipdb" '("*ein:ipdb-sessions*" "ein:ipdb-")))
 
 ;;;***
 
@@ -275,7 +269,7 @@ or even this (if you want fast Emacs start-up)::
 \(fn &optional URL-OR-PORT)" nil nil)
 
 (autoload 'ein:notebooklist-open "ein-notebooklist" "\
-This is now an alias for ein:notebooklist-login
+This is now an alias for `ein:notebooklist-login'.
 
 \(fn URL-OR-PORT CALLBACK)" t nil)
 
@@ -287,7 +281,7 @@ Deal with security before main entry of ein:notebooklist-open*.
 CALLBACK takes two arguments, the buffer created by ein:notebooklist-open--success
 and the url-or-port argument of ein:notebooklist-open*.
 
-\(fn URL-OR-PORT CALLBACK &optional COOKIE-PLIST TOKEN)" t nil)
+\(fn URL-OR-PORT CALLBACK &optional COOKIE-NAME COOKIE-CONTENT TOKEN)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-notebooklist" '("ein:" "generate-breadcrumbs" "render-")))
 

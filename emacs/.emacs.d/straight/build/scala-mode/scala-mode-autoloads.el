@@ -3,6 +3,31 @@
 ;;; Code:
 
 
+;;;### (autoloads nil "scala-compile" "scala-compile.el" (0 0 0 0))
+;;; Generated autoloads from scala-compile.el
+
+(autoload 'scala-compile "scala-compile" "\
+`compile' specialised to Scala.
+
+First use in a buffer or calling with a prefix will prompt for a
+command, otherwise the last command is used.
+
+The command history is global.
+
+A universal argument will invoke `scala-compile-alt', which
+will cause the subsequent call to prompt.
+
+A prefix argument will ensure that the user is prompted to
+confirm the selection.
+
+A string argument will run the command (for scripting).
+
+\(fn &optional EDIT-COMMAND)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-compile" '("scala-")))
+
+;;;***
+
 ;;;### (autoloads nil "scala-mode" "scala-mode.el" (0 0 0 0))
 ;;; Generated autoloads from scala-mode.el
 

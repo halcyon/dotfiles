@@ -320,7 +320,7 @@ Switch to the project specific shell buffer if it already exists.
 
 Use a prefix argument ARG to indicate creation of a new process instead.
 
-\(fn ARG)" t nil)
+\(fn &optional ARG)" t nil)
 
 (autoload 'projectile-run-eshell "projectile" "\
 Invoke `eshell' in the project's root.
@@ -329,7 +329,7 @@ Switch to the project specific eshell buffer if it already exists.
 
 Use a prefix argument ARG to indicate creation of a new process instead.
 
-\(fn ARG)" t nil)
+\(fn &optional ARG)" t nil)
 
 (autoload 'projectile-run-ielm "projectile" "\
 Invoke `ielm' in the project's root.
@@ -338,7 +338,7 @@ Switch to the project specific ielm buffer if it already exists.
 
 Use a prefix argument ARG to indicate creation of a new process instead.
 
-\(fn ARG)" t nil)
+\(fn &optional ARG)" t nil)
 
 (autoload 'projectile-run-term "projectile" "\
 Invoke `term' in the project's root.
@@ -347,7 +347,7 @@ Switch to the project specific term buffer if it already exists.
 
 Use a prefix argument ARG to indicate creation of a new process instead.
 
-\(fn ARG)" t nil)
+\(fn &optional ARG)" t nil)
 
 (autoload 'projectile-run-vterm "projectile" "\
 Invoke `vterm' in the project's root.

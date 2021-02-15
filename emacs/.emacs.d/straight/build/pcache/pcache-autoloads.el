@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "pcache" "pcache.el" (0 0 0 0))
 ;;; Generated autoloads from pcache.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pcache" '("*pcache-repositor" "constructor" "pcache-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pcache" '("*pcache-repositor" "pcache-")))
 
 ;;;***
 

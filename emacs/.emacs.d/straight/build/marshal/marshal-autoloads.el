@@ -23,7 +23,7 @@
 
 (function-put 'marshal-defclass 'lisp-indent-function '2)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "marshal" '("marshal-" "unmarshal-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "marshal" '("marshal-" "unmarshal-internal")))
 
 ;;;***
 

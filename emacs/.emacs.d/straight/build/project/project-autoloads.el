@@ -25,7 +25,7 @@ of the project instance object.
 
 \(fn &optional MAYBE-PROMPT DIRECTORY)" nil nil)
 
-(defvar project-prefix-map (let ((map (make-sparse-keymap))) (define-key map "!" 'project-shell-command) (define-key map "&" 'project-async-shell-command) (define-key map "f" 'project-find-file) (define-key map "F" 'project-or-external-find-file) (define-key map "b" 'project-switch-to-buffer) (define-key map "s" 'project-shell) (define-key map "d" 'project-dired) (define-key map "v" 'project-vc-dir) (define-key map "c" 'project-compile) (define-key map "e" 'project-eshell) (define-key map "k" 'project-kill-buffers) (define-key map "p" 'project-switch-project) (define-key map "g" 'project-find-regexp) (define-key map "G" 'project-or-external-find-regexp) (define-key map "r" 'project-query-replace-regexp) map) "\
+(defvar project-prefix-map (let ((map (make-sparse-keymap))) (define-key map "!" 'project-shell-command) (define-key map "&" 'project-async-shell-command) (define-key map "f" 'project-find-file) (define-key map "F" 'project-or-external-find-file) (define-key map "b" 'project-switch-to-buffer) (define-key map "s" 'project-shell) (define-key map "d" 'project-dired) (define-key map "v" 'project-vc-dir) (define-key map "c" 'project-compile) (define-key map "e" 'project-eshell) (define-key map "k" 'project-kill-buffers) (define-key map "p" 'project-switch-project) (define-key map "g" 'project-find-regexp) (define-key map "G" 'project-or-external-find-regexp) (define-key map "r" 'project-query-replace-regexp) (define-key map "x" 'project-execute-extended-command) map) "\
 Keymap for project commands.")
  (define-key ctl-x-map "p" project-prefix-map)
 
@@ -76,11 +76,15 @@ pattern to search for.
 
 (autoload 'project-find-file "project" "\
 Visit a file (with completion) in the current project.
-The completion default is the string at point." t nil)
+
+The completion default is the filename at point, determined by
+`thing-at-point' (whether such file exists or not)." t nil)
 
 (autoload 'project-or-external-find-file "project" "\
 Visit a file (with completion) in the current project or external roots.
-The completion default is the string at point." t nil)
+
+The completion default is the filename at point, determined by
+`thing-at-point' (whether such file exists or not)." t nil)
 
 (autoload 'project-dired "project" "\
 Start Dired in the current project's root." t nil)
@@ -105,8 +109,12 @@ if one already exists." t nil)
 (autoload 'project-async-shell-command "project" "\
 Run `async-shell-command' in the current project's root directory." t nil)
 
+(function-put 'project-async-shell-command 'interactive-only 'async-shell-command)
+
 (autoload 'project-shell-command "project" "\
 Run `shell-command' in the current project's root directory." t nil)
+
+(function-put 'project-shell-command 'interactive-only 'shell-command)
 
 (autoload 'project-search "project" "\
 Search for REGEXP in all the files of the project.
@@ -125,10 +133,9 @@ loop using the command \\[fileloop-continue].
 \(fn FROM TO)" t nil)
 
 (autoload 'project-compile "project" "\
-Run `compile' in the project root.
-Arguments the same as in `compile'.
+Run `compile' in the project root." t nil)
 
-\(fn COMMAND &optional COMINT)" t nil)
+(function-put 'project-compile 'interactive-only 'compile)
 
 (autoload 'project-switch-to-buffer "project" "\
 Display buffer BUFFER-OR-NAME in the selected window.
@@ -185,19 +192,33 @@ Save the result in `project-list-file' if the list of projects has changed.
 (autoload 'project-known-project-roots "project" "\
 Return the list of root directories of all known projects." nil nil)
 
-(defvar project-switch-commands '((102 "Find file" project-find-file) (103 "Find regexp" project-find-regexp) (100 "Dired" project-dired) (118 "VC-Dir" project-vc-dir) (101 "Eshell" project-eshell)) "\
-Alist mapping keys to project switching menu entries.
+(autoload 'project-execute-extended-command "project" "\
+Execute an extended command in project root." t nil)
+
+(function-put 'project-execute-extended-command 'interactive-only 'command-execute)
+
+(defvar project-switch-commands '((project-find-file "Find file") (project-find-regexp "Find regexp") (project-dired "Dired") (project-vc-dir "VC-Dir") (project-eshell "Eshell")) "\
+Alist mapping commands to descriptions.
 Used by `project-switch-project' to construct a dispatch menu of
 commands available upon \"switching\" to another project.
 
-Each element is of the form (KEY LABEL COMMAND), where COMMAND is the
-command to run when KEY is pressed.  LABEL is used to distinguish
-the menu entries in the dispatch menu.")
+Each element is of the form (COMMAND LABEL &optional KEY) where
+COMMAND is the command to run when KEY is pressed.  LABEL is used
+to distinguish the menu entries in the dispatch menu.  If KEY is
+absent, COMMAND must be bound in `project-prefix-map', and the
+key is looked up in that map.")
+
+(custom-autoload 'project-switch-commands "project" t)
 
 (autoload 'project-switch-project "project" "\
 \"Switch\" to another project by running an Emacs command.
 The available commands are presented as a dispatch menu
-made from `project-switch-commands'." t nil)
+made from `project-switch-commands'.
+
+When called in a program, it will use the project corresponding
+to directory DIR.
+
+\(fn DIR)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "project" '("project-")))
 

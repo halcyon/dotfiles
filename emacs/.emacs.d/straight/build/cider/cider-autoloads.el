@@ -83,19 +83,7 @@ Start a connection of any type interactively." t nil)
 
 (defalias 'cider-jack-in #'cider-jack-in-clj)
 
-(define-obsolete-function-alias 'cider-jack-in-clojure 'cider-jack-in-clj "0.22")
-
-(define-obsolete-function-alias 'cider-jack-in-clojurescript 'cider-jack-in-cljs "0.22")
-
 (defalias 'cider-connect #'cider-connect-clj)
-
-(define-obsolete-function-alias 'cider-connect-clojure 'cider-connect-clj "0.22")
-
-(define-obsolete-function-alias 'cider-connect-clojurescript 'cider-connect-cljs "0.22")
-
-(define-obsolete-function-alias 'cider-connect-sibling-clojure 'cider-connect-sibling-clj "0.22")
-
-(define-obsolete-function-alias 'cider-connect-sibling-clojurescript 'cider-connect-sibling-cljs "0.22")
 
 (with-eval-after-load 'clojure-mode (define-key clojure-mode-map (kbd "C-c M-x") #'cider) (define-key clojure-mode-map (kbd "C-c M-j") #'cider-jack-in-clj) (define-key clojure-mode-map (kbd "C-c M-J") #'cider-jack-in-cljs) (define-key clojure-mode-map (kbd "C-c M-c") #'cider-connect-clj) (define-key clojure-mode-map (kbd "C-c M-C") #'cider-connect-cljs) (define-key clojure-mode-map (kbd "C-c C-x") 'cider-start-map) (define-key clojure-mode-map (kbd "C-c C-s") 'sesman-map) (require 'sesman) (sesman-install-menu clojure-mode-map) (add-hook 'clojure-mode-hook (lambda nil (setq-local sesman-system 'CIDER))))
 
@@ -522,8 +510,6 @@ refresh functions (defined in `cider-ns-refresh-before-fn' and
 `cider-ns-refresh-after-fn') from being invoked.
 
 \(fn &optional MODE)" t nil)
-
-(define-obsolete-function-alias 'cider-refresh 'cider-ns-refresh "0.18")
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-ns" '("cider-ns-")))
 

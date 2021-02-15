@@ -337,6 +337,50 @@ according to the value of `straight-profiles'.
 (autoload 'straight-thaw-versions "straight" "\
 Read version lockfiles and restore package versions to those listed." t nil)
 
+(autoload 'straight-bug-report "straight" "\
+Test straight.el in a clean environment.
+ARGS may be any of the following keywords and their respective values:
+  - :pre-bootstrap (Form)...
+      Forms evaluated before bootstrapping straight.el
+      e.g. (setq straight-repository-branch \"develop\")
+      Note this example is already in the default bootstrapping code.
+
+  - :post-bootstrap (Form)...
+      Forms evaluated in the testing environment after boostrapping.
+      e.g. (straight-use-package '(example :type git :host github))
+
+  - :interactive Boolean
+      If nil, the subprocess will immediately exit after the test.
+      Output will be printed to `straight-bug-report--process-buffer'
+      Otherwise, the subprocess will be interactive.
+
+  - :preserve Boolean
+      If non-nil, the test directory is left in the directory stored in the
+      variable `temporary-file-directory'. Otherwise, it is
+      immediately removed after the test is run.
+
+  - :executable String
+      Indicate the Emacs executable to launch.
+      Defaults to the path of the current Emacs executable.
+
+  - :raw Boolean
+      If non-nil, the raw process output is sent to
+      `straight-bug-report--process-buffer'. Otherwise, it is
+      formatted as markdown for submitting as an issue.
+
+  - :user-dir String
+      If non-nil, the test is run with `emacs-user-dir' set to STRING.
+      Otherwise, a temporary directory is created and used.
+      Unless absolute, paths are expanded relative to the variable
+      `temproary-file-directory'.
+
+ARGS are accessible within the :pre/:post-bootsrap phases via the
+locally bound plist, straight-bug-report-args.
+
+\(fn &rest ARGS)" nil t)
+
+(function-put 'straight-bug-report 'lisp-indent-function '0)
+
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight" '("straight-")))
 
 ;;;***
