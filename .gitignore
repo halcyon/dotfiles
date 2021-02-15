@@ -1,6 +1,7 @@
 *.elc
 emacs/.emacs.d/backups
 emacs/.emacs.d/projectile-bookmarks.eld
+emacs/.emacs.d/projects
 emacs/.emacs.d/request
 emacs/.emacs.d/var
 emacs/.emacs.d/.last-package-update-day
