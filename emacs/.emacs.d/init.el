@@ -133,7 +133,8 @@ Null prefix argument turns off the mode."
   :config
   (setq cider-repl-history-size 100000
         cider-repl-history-file "~/.emacs.d/cider-repl-history.eld")
-  (setq-local eldoc-documentation-function #'cider-eldoc) ;; Necessary until new eldoc API in emacs 28 is released
+  ;; (setq-local eldoc-documentation-function #'cider-eldoc)
+  ;; Necessary until new eldoc API in emacs 28 is released
   )
 
 (use-package company
@@ -532,7 +533,7 @@ Null prefix argument turns off the mode."
 (use-package go-guru)
 (use-package company-go)
 (use-package go-eldoc)
-(use-package go-dlv)
+;; (use-package go-dlv)
 
 (use-package geiser
   :config
