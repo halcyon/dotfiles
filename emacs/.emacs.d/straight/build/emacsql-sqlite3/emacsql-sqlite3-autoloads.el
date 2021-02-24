@@ -1,4 +1,4 @@
-;;; emacsql-sqlite3-autoloads.el --- automatically extracted autoloads
+;;; emacsql-sqlite3-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -7,7 +7,7 @@
 ;;;;;;  0 0))
 ;;; Generated autoloads from emacsql-sqlite3.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "emacsql-sqlite3" '("emacsql-sqlite3-")))
+(register-definition-prefixes "emacsql-sqlite3" '("emacsql-sqlite3-"))
 
 ;;;***
 

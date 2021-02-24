@@ -1,4 +1,4 @@
-;;; xref-autoloads.el --- automatically extracted autoloads
+;;; xref-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -90,7 +90,7 @@ FILES must be a list of absolute file names.
 
 \(fn REGEXP FILES)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "xref" '("xref-")))
+(register-definition-prefixes "xref" '("xref-"))
 
 ;;;***
 

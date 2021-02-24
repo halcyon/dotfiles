@@ -1,4 +1,4 @@
-;;; ensime-autoloads.el --- automatically extracted autoloads
+;;; ensime-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -14,7 +14,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 
 \(fn HOST PORT)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime" '("ensime-p")))
+(register-definition-prefixes "ensime" '("ensime-p"))
 
 ;;;***
 
@@ -24,14 +24,14 @@ Read config file for settings. Then connect to an existing ENSIME server.
 
 (autoload 'ensime-ac-enable "ensime-auto-complete" nil nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-auto-complete" '("ensime-")))
+(register-definition-prefixes "ensime-auto-complete" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-client" "ensime-client.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-client.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-client" '("ensime-")))
+(register-definition-prefixes "ensime-client" '("ensime-"))
 
 ;;;***
 
@@ -39,7 +39,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ensime-comint-utils.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-comint-utils" '("ensime-comint-")))
+(register-definition-prefixes "ensime-comint-utils" '("ensime-comint-"))
 
 ;;;***
 
@@ -49,7 +49,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 
 (autoload 'ensime-company-enable "ensime-company" nil nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-company" '("ensime-")))
+(register-definition-prefixes "ensime-company" '("ensime-"))
 
 ;;;***
 
@@ -57,42 +57,42 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ensime-completion-util.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-completion-util" '("ensime-")))
+(register-definition-prefixes "ensime-completion-util" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-config" "ensime-config.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-config.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-config" '("ensime-")))
+(register-definition-prefixes "ensime-config" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-debug" "ensime-debug.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-debug.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-debug" '("ensime-")))
+(register-definition-prefixes "ensime-debug" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-doc" "ensime-doc.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-doc.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-doc" '("ensime-")))
+(register-definition-prefixes "ensime-doc" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-editor" "ensime-editor.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-editor.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-editor" '("ensime-")))
+(register-definition-prefixes "ensime-editor" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-eldoc" "ensime-eldoc.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-eldoc.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-eldoc" '("ensime-eldoc-")))
+(register-definition-prefixes "ensime-eldoc" '("ensime-eldoc-"))
 
 ;;;***
 
@@ -100,28 +100,28 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ensime-expand-region.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-expand-region" '("ensime-expand-region-")))
+(register-definition-prefixes "ensime-expand-region" '("ensime-expand-region-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-helm" "ensime-helm.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-helm.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-helm" '("ensime-helm-")))
+(register-definition-prefixes "ensime-helm" '("ensime-helm-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-http" "ensime-http.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-http.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-http" '("ensime-")))
+(register-definition-prefixes "ensime-http" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-inf" "ensime-inf.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-inf.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-inf" '("ensime-")))
+(register-definition-prefixes "ensime-inf" '("ensime-"))
 
 ;;;***
 
@@ -131,14 +131,14 @@ Read config file for settings. Then connect to an existing ENSIME server.
 (autoload 'ensime-search-ivy "ensime-ivy" "\
 Search ensime with ivy." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-ivy" '("ensime-ivy-")))
+(register-definition-prefixes "ensime-ivy" '("ensime-ivy-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-macros" "ensime-macros.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-macros.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-macros" '("destructure-case" "ensime-" "with-struct")))
+(register-definition-prefixes "ensime-macros" '("destructure-case" "ensime-" "with-struct"))
 
 ;;;***
 
@@ -149,30 +149,36 @@ Search ensime with ivy." t nil)
 ENSIME: The ENhanced Scala Interaction Mode for Emacs (minor-mode).
 \\{ensime-mode-map}
 
-If called interactively, enable Ensime mode if ARG is positive,
-and disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it if
-ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Ensime mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \(fn &optional ARG)" t nil)
 
 (add-hook 'scala-mode-hook (lambda nil (when (fboundp 'ensime) (ensime-mode))))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-mode" '("ensime-")))
+(register-definition-prefixes "ensime-mode" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-model" "ensime-model.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-model.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-model" '("ensime-")))
+(register-definition-prefixes "ensime-model" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-notes" "ensime-notes.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-notes.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-notes" '("ensime-")))
+(register-definition-prefixes "ensime-notes" '("ensime-"))
 
 ;;;***
 
@@ -180,14 +186,14 @@ ARG is `toggle'; disable the mode otherwise.
 ;;;;;;  0))
 ;;; Generated autoloads from ensime-overlay.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-overlay" '("ensime-")))
+(register-definition-prefixes "ensime-overlay" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-popup" "ensime-popup.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-popup.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-popup" '("ensime-")))
+(register-definition-prefixes "ensime-popup" '("ensime-"))
 
 ;;;***
 
@@ -195,21 +201,21 @@ ARG is `toggle'; disable the mode otherwise.
 ;;;;;;  0 0))
 ;;; Generated autoloads from ensime-refactor.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-refactor" '("ensime-")))
+(register-definition-prefixes "ensime-refactor" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-sbt" "ensime-sbt.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-sbt.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-sbt" '("ensime-")))
+(register-definition-prefixes "ensime-sbt" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-search" "ensime-search.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-search.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-search" '("ensime-search")))
+(register-definition-prefixes "ensime-search" '("ensime-search"))
 
 ;;;***
 
@@ -217,7 +223,7 @@ ARG is `toggle'; disable the mode otherwise.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ensime-semantic-highlight.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-semantic-highlight" '("ensime-sem-high-")))
+(register-definition-prefixes "ensime-semantic-highlight" '("ensime-sem-high-"))
 
 ;;;***
 
@@ -225,7 +231,7 @@ ARG is `toggle'; disable the mode otherwise.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ensime-stacktrace.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-stacktrace" '("ensime-stacktrace-")))
+(register-definition-prefixes "ensime-stacktrace" '("ensime-stacktrace-"))
 
 ;;;***
 
@@ -233,35 +239,35 @@ ARG is `toggle'; disable the mode otherwise.
 ;;;;;;  0))
 ;;; Generated autoloads from ensime-startup.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-startup" '("ensime-")))
+(register-definition-prefixes "ensime-startup" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-ui" "ensime-ui.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-ui.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-ui" '("ensime-")))
+(register-definition-prefixes "ensime-ui" '("ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-undo" "ensime-undo.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-undo.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-undo" '("ensime-undo-")))
+(register-definition-prefixes "ensime-undo" '("ensime-undo-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-util" "ensime-util.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-util.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-util" '("buffer-file-name-with-indirect" "ensime-")))
+(register-definition-prefixes "ensime-util" '("buffer-file-name-with-indirect" "ensime-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ensime-vars" "ensime-vars.el" (0 0 0 0))
 ;;; Generated autoloads from ensime-vars.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ensime-vars" '("ensime-")))
+(register-definition-prefixes "ensime-vars" '("ensime-"))
 
 ;;;***
 

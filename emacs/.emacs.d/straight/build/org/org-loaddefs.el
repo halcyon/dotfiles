@@ -1,4 +1,4 @@
-;;; org-loaddefs.el --- automatically extracted autoloads
+;;; org-loaddefs.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -212,6 +212,14 @@ With optional prefix argument ARG, jump backward ARG many source blocks.
 
 (autoload 'org-babel-mark-block "ob-core" "\
 Mark current source block." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ob-core" "ob-core.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ob-core.el
+
+(register-definition-prefixes "ob-core" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -233,6 +241,14 @@ a list compatible with `org-babel-get-src-block-info', which
 see.
 
 \(fn &optional DATUM)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ob-lob" "ob-lob.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ob-lob.el
+
+(register-definition-prefixes "ob-lob" '("org-babel-"))
+
+;;;***
 
 ;;;***
 
@@ -263,6 +279,14 @@ be used to limit the exported source code blocks by languages
 matching a regular expression.
 
 \(fn &optional ARG TARGET-FILE LANG-RE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ob-tangle" "ob-tangle.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ob-tangle.el
+
+(register-definition-prefixes "ob-tangle" '("org-babel-"))
+
+;;;***
 
 ;;;***
 
@@ -365,6 +389,14 @@ This command can be called in any mode to insert a link in Org syntax." t nil)
 (autoload 'org-update-radio-target-regexp "ol" "\
 Find all radio targets in this file and update the regular expression.
 Also refresh fontification if needed." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ol" "ol.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from ol.el
+
+(register-definition-prefixes "ol" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -375,6 +407,14 @@ Also refresh fontification if needed." t nil)
 Extract anniversaries from BBDB for display in the agenda.
 When called programmatically, this function expects the `date'
 variable to be globally bound." nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ol-bbdb" "ol-bbdb.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ol-bbdb.el
+
+(register-definition-prefixes "ol-bbdb" '("org-bbdb-"))
+
+;;;***
 
 ;;;***
 
@@ -383,6 +423,14 @@ variable to be globally bound." nil nil)
 
 (autoload 'org-irc-store-link "ol-irc" "\
 Dispatch to the appropriate function to store a link to an IRC session." nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ol-irc" "ol-irc.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ol-irc.el
+
+(register-definition-prefixes "ol-irc" '("org-irc-"))
+
+;;;***
 
 ;;;***
 
@@ -437,6 +485,14 @@ This command is set with the variable `org-archive-default-command'." t nil)
 (autoload 'org-archive-subtree-default-with-confirmation "org-archive" "\
 Archive the current subtree with the default command.
 This command is set with the variable `org-archive-default-command'." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-archive"
+;;;;;;  "org-archive.el" (0 0 0 0))
+;;; Generated autoloads from org-archive.el
+
+(register-definition-prefixes "org-archive" '("org-a"))
+
+;;;***
 
 ;;;***
 
@@ -454,6 +510,14 @@ Precondition: Point must be in a dired buffer.
 Idea taken from `gnus-dired-attach'.
 
 \(fn FILES)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-attach" "org-attach.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-attach.el
+
+(register-definition-prefixes "org-attach" '("org-attach-"))
+
+;;;***
 
 ;;;***
 
@@ -607,6 +671,14 @@ Write the standard clocktable.
 (autoload 'org-clock-update-time-maybe "org-clock" "\
 If this is a CLOCK line, update it and return t.
 Otherwise, return nil." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-clock" "org-clock.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-clock.el
+
+(register-definition-prefixes "org-clock" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -698,6 +770,14 @@ Create a dynamic block capturing a column view table." t nil)
 
 (autoload 'org-agenda-columns "org-colview" "\
 Turn on or update column view in the agenda." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-colview"
+;;;;;;  "org-colview.el" (0 0 0 0))
+;;; Generated autoloads from org-colview.el
+
+(register-definition-prefixes "org-colview" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -706,6 +786,14 @@ Turn on or update column view in the agenda." t nil)
 
 (autoload 'org-check-version "org-compat" "\
 Try very hard to provide sensible version strings." nil t)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-compat" "org-compat.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-compat.el
+
+(register-definition-prefixes "org-compat" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -741,6 +829,14 @@ tree can be found.  If it is the symbol `subtree-at-point', then the tree
 will be built under the headline at point.
 
 \(fn D &optional KEEP-RESTRICTION)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-datetree"
+;;;;;;  "org-datetree.el" (0 0 0 0))
+;;; Generated autoloads from org-datetree.el
+
+(register-definition-prefixes "org-datetree" '("org-datetree-"))
+
+;;;***
 
 ;;;***
 
@@ -793,6 +889,14 @@ with \"H:MM:SS\" format, return `h:mm:ss'.  Otherwise, return
 `h:mm'.
 
 \(fn TIMES)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-duration"
+;;;;;;  "org-duration.el" (0 0 0 0))
+;;; Generated autoloads from org-duration.el
+
+(register-definition-prefixes "org-duration" '("org-duration-"))
+
+;;;***
 
 ;;;***
 
@@ -861,6 +965,14 @@ containing point, as returned by `org-element-at-point'.
 Providing it allows for quicker computation.
 
 \(fn &optional ELEMENT)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-element"
+;;;;;;  "org-element.el" (0 0 0 0))
+;;; Generated autoloads from org-element.el
+
+(register-definition-prefixes "org-element" '("org-element-"))
+
+;;;***
 
 ;;;***
 
@@ -886,6 +998,14 @@ Go to the inbox that captures the feed named FEED.
 Show the raw feed buffer of a feed.
 
 \(fn FEED)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-feed" "org-feed.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-feed.el
+
+(register-definition-prefixes "org-feed" '("org-feed-"))
+
+;;;***
 
 ;;;***
 
@@ -907,6 +1027,14 @@ With prefix arg SPECIAL, or when no footnote can be created,
 offer additional commands in a menu.
 
 \(fn &optional SPECIAL)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-footnote"
+;;;;;;  "org-footnote.el" (0 0 0 0))
+;;; Generated autoloads from org-footnote.el
+
+(register-definition-prefixes "org-footnote" '("org-footnote-"))
+
+;;;***
 
 ;;;***
 
@@ -941,6 +1069,14 @@ With a prefix argument, use the alternative interface: e.g., if
 `org-goto-interface' is `outline' use `outline-path-completion'.
 
 \(fn &optional ALTERNATIVE-INTERFACE)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-goto" "org-goto.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-goto.el
+
+(register-definition-prefixes "org-goto" '("org-goto-"))
+
+;;;***
 
 ;;;***
 
@@ -1030,6 +1166,14 @@ Store a link to the current entry, using its ID.
 
 If before first heading store first title-keyword as description
 or filename if no title." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-id" "org-id.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-id.el
+
+(register-definition-prefixes "org-id" '("org-id-"))
+
+;;;***
 
 ;;;***
 
@@ -1039,10 +1183,16 @@ or filename if no title." t nil)
 (autoload 'org-indent-mode "org-indent" "\
 When active, indent text according to outline structure.
 
-If called interactively, enable Org-Indent mode if ARG is
-positive, and disable it if ARG is zero or negative.  If called
-from Lisp, also enable the mode if ARG is omitted or nil, and
-toggle it if ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Org-Indent mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 Internally this works by adding `line-prefix' and `wrap-prefix'
 properties, after each buffer modification, on the modified zone.
@@ -1052,6 +1202,14 @@ buffer, which can take a few seconds on large buffers, is done
 during idle time.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-indent" "org-indent.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-indent.el
+
+(register-definition-prefixes "org-indent" '("org-indent-"))
+
+;;;***
 
 ;;;***
 
@@ -1060,6 +1218,14 @@ during idle time.
 
 (autoload 'org-babel-describe-bindings "org-keys" "\
 Describe all keybindings behind `org-babel-key-prefix'." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-keys" "org-keys.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-keys.el
+
+(register-definition-prefixes "org-keys" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -1076,6 +1242,14 @@ checker by its name.
 ARG can also be a list of checker names, as symbols, to run.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-lint" "org-lint.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-lint.el
+
+(register-definition-prefixes "org-lint" '("org-lint-"))
+
+;;;***
 
 ;;;***
 
@@ -1085,12 +1259,26 @@ ARG can also be a list of checker names, as symbols, to run.
 (autoload 'org-list-checkbox-radio-mode "org-list" "\
 When turned on, use list checkboxes as radio buttons.
 
-If called interactively, enable Org-List-Checkbox-Radio mode if
-ARG is positive, and disable it if ARG is zero or negative.  If
-called from Lisp, also enable the mode if ARG is omitted or nil,
-and toggle it if ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Org-List-Checkbox-Radio mode'.
+If the prefix argument is positive, enable the mode, and if it is
+zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-list" "org-list.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-list.el
+
+(register-definition-prefixes "org-list" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -1101,6 +1289,14 @@ and toggle it if ARG is `toggle'; disable the mode otherwise.
 Load FILE with optional arguments NOERROR and MUSTSUFFIX.
 
 \(fn FILE)" nil t)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-macs" "org-macs.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-macs.el
+
+(register-definition-prefixes "org-macs" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -1116,6 +1312,14 @@ create all custom agenda views, for upload to the mobile phone." t nil)
 Pull the contents of `org-mobile-capture-file' and integrate them.
 Apply all flagged actions, flag entries to be flagged and then call an
 agenda view showing the flagged items." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-mobile" "org-mobile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-mobile.el
+
+(register-definition-prefixes "org-mobile" '("org-mobile-"))
+
+;;;***
 
 ;;;***
 
@@ -1131,12 +1335,26 @@ NUMBERING is a list of numbers.
 (autoload 'org-num-mode "org-num" "\
 Dynamic numbering of headlines in an Org buffer.
 
-If called interactively, enable Org-Num mode if ARG is positive,
-and disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it if
-ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Org-Num mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-num" "org-num.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-num.el
+
+(register-definition-prefixes "org-num" '("org-num-"))
+
+;;;***
 
 ;;;***
 
@@ -1149,6 +1367,14 @@ If not given options will be taken from the +PLOT
 line directly before or after the table.
 
 \(fn &optional PARAMS)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-plot" "org-plot.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-plot.el
+
+(register-definition-prefixes "org-plot" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -1207,6 +1433,14 @@ This can be done with a `0' prefix (`C-0 C-c C-w') or a triple
 prefix argument (`C-u C-u C-u C-c C-w').
 
 \(fn &optional ARG DEFAULT-BUFFER RFLOC MSG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-refile" "org-refile.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-refile.el
+
+(register-definition-prefixes "org-refile" '("org-"))
+
+;;;***
 
 ;;;***
 
@@ -1216,10 +1450,16 @@ prefix argument (`C-u C-u C-u C-c C-w').
 (autoload 'org-table-header-line-mode "org-table" "\
 Display the first row of the table at point in the header line.
 
-If called interactively, enable Org-Table-Header-Line mode if ARG
-is positive, and disable it if ARG is zero or negative.  If
-called from Lisp, also enable the mode if ARG is omitted or nil,
-and toggle it if ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Org-Table-Header-Line mode'.  If
+the prefix argument is positive, enable the mode, and if it is
+zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \(fn &optional ARG)" t nil)
 
@@ -1731,10 +1971,16 @@ Unconditionally turn on `orgtbl-mode'." nil nil)
 (autoload 'orgtbl-mode "org-table" "\
 The Org mode table editor as a minor mode for use in other modes.
 
-If called interactively, enable Orgtbl mode if ARG is positive,
-and disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it if
-ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Orgtbl mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \(fn &optional ARG)" t nil)
 
@@ -1942,6 +2188,14 @@ characters width of the plot.  ASK may also be the `\\[universal-argument]' pref
 which will prompt for the width.
 
 \(fn &optional ASK)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-table" "org-table.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-table.el
+
+(register-definition-prefixes "org-table" '("org"))
+
+;;;***
 
 ;;;***
 
@@ -2017,6 +2271,14 @@ minutes in the Effort property, if any.  You can ignore this by
 using three `C-u' prefix arguments.
 
 \(fn &optional OPT)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "org-timer" "org-timer.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from org-timer.el
+
+(register-definition-prefixes "org-timer" '("org-timer-"))
+
+;;;***
 
 ;;;***
 
@@ -2206,6 +2468,14 @@ set of options used back then, on the current buffer.
 When ARG is `\\[universal-argument] \\[universal-argument]', display the asynchronous export stack.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox" "ox.el" (0
+;;;;;;  0 0 0))
+;;; Generated autoloads from ox.el
+
+(register-definition-prefixes "ox" '("org-export-"))
+
+;;;***
 
 ;;;***
 
@@ -2312,6 +2582,14 @@ publishing directory.
 Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-ascii" "ox-ascii.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-ascii.el
+
+(register-definition-prefixes "ox-ascii" '("org-ascii-"))
+
+;;;***
 
 ;;;***
 
@@ -2321,10 +2599,16 @@ Return output file name.
 (autoload 'org-beamer-mode "ox-beamer" "\
 Support for editing Beamer oriented Org mode files.
 
-If called interactively, enable Org-Beamer mode if ARG is
-positive, and disable it if ARG is zero or negative.  If called
-from Lisp, also enable the mode if ARG is omitted or nil, and
-toggle it if ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Org-Beamer mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \(fn &optional ARG)" t nil)
 
@@ -2450,6 +2734,14 @@ publishing directory.
 Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-beamer" "ox-beamer.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-beamer.el
+
+(register-definition-prefixes "ox-beamer" '("org-beamer-"))
+
+;;;***
 
 ;;;***
 
@@ -2552,6 +2844,14 @@ publishing directory.
 Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-html" "ox-html.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-html.el
+
+(register-definition-prefixes "ox-html" '("org-html-"))
+
+;;;***
 
 ;;;***
 
@@ -2602,6 +2902,14 @@ The file is stored under the name chosen in
 `org-icalendar-combined-agenda-file'.
 
 \(fn &optional ASYNC)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-icalendar"
+;;;;;;  "ox-icalendar.el" (0 0 0 0))
+;;; Generated autoloads from ox-icalendar.el
+
+(register-definition-prefixes "ox-icalendar" '("org-icalendar-"))
+
+;;;***
 
 ;;;***
 
@@ -2736,6 +3044,14 @@ publishing directory.
 Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-latex" "ox-latex.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-latex.el
+
+(register-definition-prefixes "ox-latex" '("org-latex-"))
+
+;;;***
 
 ;;;***
 
@@ -2806,6 +3122,14 @@ publishing directory.
 Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-md" "ox-md.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-md.el
+
+(register-definition-prefixes "ox-md" '("org-md-"))
+
+;;;***
 
 ;;;***
 
@@ -2866,6 +3190,14 @@ is non-nil then the newly converted file is opened using
 `org-open-file'.
 
 \(fn &optional IN-FILE OUT-FMT OPEN)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-odt" "ox-odt.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-odt.el
+
+(register-definition-prefixes "ox-odt" '("org-odt-"))
+
+;;;***
 
 ;;;***
 
@@ -2944,6 +3276,14 @@ publishing directory.
 Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-org" "ox-org.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-org.el
+
+(register-definition-prefixes "ox-org" '("org-org-"))
+
+;;;***
 
 ;;;***
 
@@ -2987,6 +3327,14 @@ With a prefix argument, force publishing of all files in
 the project.
 
 \(fn &optional FORCE ASYNC)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-publish" "ox-publish.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-publish.el
+
+(register-definition-prefixes "ox-publish" '("org-publish-"))
+
+;;;***
 
 ;;;***
 
@@ -3072,6 +3420,14 @@ Assume the current region has Org syntax, and convert it to Texinfo.
 This can be used in any buffer.  For example, you can write an
 itemized list in Org syntax in an Texinfo buffer and use this
 command to convert it." t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "ox-texinfo" "ox-texinfo.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ox-texinfo.el
+
+(register-definition-prefixes "ox-texinfo" '("org-texinfo-"))
+
+;;;***
 
 ;;;***
 

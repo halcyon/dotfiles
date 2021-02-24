@@ -1,4 +1,4 @@
-;;; parseedn-autoloads.el --- automatically extracted autoloads
+;;; parseedn-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "parseedn" "parseedn.el" (0 0 0 0))
 ;;; Generated autoloads from parseedn.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseedn" '("parseedn-")))
+(register-definition-prefixes "parseedn" '("parseedn-"))
 
 ;;;***
 

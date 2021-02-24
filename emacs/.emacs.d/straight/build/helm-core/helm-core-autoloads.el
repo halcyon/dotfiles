@@ -1,4 +1,4 @@
-;;; helm-core-autoloads.el --- automatically extracted autoloads
+;;; helm-core-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -218,14 +218,14 @@ Call `helm' only with SOURCES and BUFFER as args.
 
 \(fn SOURCES BUFFER)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm" '("helm-" "with-helm-")))
+(register-definition-prefixes "helm" '("helm-" "with-helm-"))
 
 ;;;***
 
 ;;;### (autoloads nil "helm-lib" "helm-lib.el" (0 0 0 0))
 ;;; Generated autoloads from helm-lib.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-lib" '("helm-" "with-helm-")))
+(register-definition-prefixes "helm-lib" '("helm-" "with-helm-"))
 
 ;;;***
 
@@ -233,14 +233,14 @@ Call `helm' only with SOURCES and BUFFER as args.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from helm-multi-match.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-multi-match" '("helm-m")))
+(register-definition-prefixes "helm-multi-match" '("helm-m"))
 
 ;;;***
 
 ;;;### (autoloads nil "helm-source" "helm-source.el" (0 0 0 0))
 ;;; Generated autoloads from helm-source.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-source" '("helm-")))
+(register-definition-prefixes "helm-source" '("helm-"))
 
 ;;;***
 

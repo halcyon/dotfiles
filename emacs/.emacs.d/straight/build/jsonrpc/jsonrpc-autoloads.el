@@ -1,4 +1,4 @@
-;;; jsonrpc-autoloads.el --- automatically extracted autoloads
+;;; jsonrpc-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "jsonrpc" "jsonrpc.el" (0 0 0 0))
 ;;; Generated autoloads from jsonrpc.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "jsonrpc" '("jsonrpc-")))
+(register-definition-prefixes "jsonrpc" '("jsonrpc-"))
 
 ;;;***
 

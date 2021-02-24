@@ -1,4 +1,4 @@
-;;; ein-autoloads.el --- automatically extracted autoloads
+;;; ein-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,14 +6,14 @@
 ;;;### (autoloads nil "ein-cell" "ein-cell.el" (0 0 0 0))
 ;;; Generated autoloads from ein-cell.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-cell" '("ein:")))
+(register-definition-prefixes "ein-cell" '("ein:"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-classes" "ein-classes.el" (0 0 0 0))
 ;;; Generated autoloads from ein-classes.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-classes" '("ein:")))
+(register-definition-prefixes "ein-classes" '("ein:"))
 
 ;;;***
 
@@ -21,14 +21,14 @@
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from ein-contents-api.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-contents-api" '("*ein:content-hierarchy*" "ein:")))
+(register-definition-prefixes "ein-contents-api" '("*ein:content-hierarchy*" "ein:"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-core" "ein-core.el" (0 0 0 0))
 ;;; Generated autoloads from ein-core.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-core" '("*ein:" "ein:")))
+(register-definition-prefixes "ein-core" '("*ein:" "ein:"))
 
 ;;;***
 
@@ -45,21 +45,21 @@ Impossible to maintain because it needs to match start." t nil)
 (autoload 'ein:dev-bug-report-template "ein-dev" "\
 Open a buffer with bug report template." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-dev" '("ein:dev-")))
+(register-definition-prefixes "ein-dev" '("ein:dev-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-events" "ein-events.el" (0 0 0 0))
 ;;; Generated autoloads from ein-events.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-events" '("ein:events-")))
+(register-definition-prefixes "ein-events" '("ein:events-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-file" "ein-file.el" (0 0 0 0))
 ;;; Generated autoloads from ein-file.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-file" '("*ein:file-buffername-template*" "ein:")))
+(register-definition-prefixes "ein-file" '("*ein:file-buffername-template*" "ein:"))
 
 ;;;***
 
@@ -86,14 +86,14 @@ Open a buffer with bug report template." t nil)
 
 \(fn &optional REFRESH)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-gat" '("ein:gat-")))
+(register-definition-prefixes "ein-gat" '("ein:gat-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-ipdb" "ein-ipdb.el" (0 0 0 0))
 ;;; Generated autoloads from ein-ipdb.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-ipdb" '("*ein:ipdb-sessions*" "ein:ipdb-")))
+(register-definition-prefixes "ein-ipdb" '("*ein:ipdb-sessions*" "ein:ipdb-"))
 
 ;;;***
 
@@ -145,7 +145,7 @@ server command.
 
 \(fn &optional ASK-P URL-OR-PORT)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-jupyter" '("*ein:jupyter-server-" "ein:")))
+(register-definition-prefixes "ein-jupyter" '("*ein:jupyter-server-" "ein:"))
 
 ;;;***
 
@@ -156,7 +156,7 @@ server command.
 
 (defalias 'ein:kernel-id 'ein:$kernel-kernel-id)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-kernel" '("ein:")))
+(register-definition-prefixes "ein-kernel" '("ein:"))
 
 ;;;***
 
@@ -164,21 +164,21 @@ server command.
 ;;;;;;  0))
 ;;; Generated autoloads from ein-kernelinfo.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-kernelinfo" '("ein:kernelinfo")))
+(register-definition-prefixes "ein-kernelinfo" '("ein:kernelinfo"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-kill-ring" "ein-kill-ring.el" (0 0 0 0))
 ;;; Generated autoloads from ein-kill-ring.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-kill-ring" '("ein:")))
+(register-definition-prefixes "ein-kill-ring" '("ein:"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-log" "ein-log.el" (0 0 0 0))
 ;;; Generated autoloads from ein-log.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-log" '("ein:")))
+(register-definition-prefixes "ein-log" '("ein:"))
 
 ;;;***
 
@@ -191,14 +191,14 @@ Major mode for editing ein:markdown files.
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-markdown-mode" '("defun-markdown-" "ein:markdown")))
+(register-definition-prefixes "ein-markdown-mode" '("defun-markdown-" "ein:markdown"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-node" "ein-node.el" (0 0 0 0))
 ;;; Generated autoloads from ein-node.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-node" '("ein:node-")))
+(register-definition-prefixes "ein-node" '("ein:node-"))
 
 ;;;***
 
@@ -225,7 +225,7 @@ where `created' indicates a new notebook or an existing one.
 
 \(fn URL-OR-PORT PATH &optional KERNELSPEC CALLBACK ERRBACK NO-POP)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-notebook" '("*ein:notebook--pending-query*" "ein:")))
+(register-definition-prefixes "ein-notebook" '("*ein:notebook--pending-query*" "ein:"))
 
 ;;;***
 
@@ -283,7 +283,7 @@ and the url-or-port argument of ein:notebooklist-open*.
 
 \(fn URL-OR-PORT CALLBACK &optional COOKIE-NAME COOKIE-CONTENT TOKEN)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-notebooklist" '("ein:" "generate-breadcrumbs" "render-")))
+(register-definition-prefixes "ein-notebooklist" '("ein:" "generate-breadcrumbs" "render-"))
 
 ;;;***
 
@@ -291,7 +291,7 @@ and the url-or-port argument of ein:notebooklist-open*.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from ein-notification.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-notification" '("ein:")))
+(register-definition-prefixes "ein-notification" '("ein:"))
 
 ;;;***
 
@@ -299,21 +299,21 @@ and the url-or-port argument of ein:notebooklist-open*.
 ;;;;;;  0 0))
 ;;; Generated autoloads from ein-output-area.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-output-area" '("ein:")))
+(register-definition-prefixes "ein-output-area" '("ein:"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-pager" "ein-pager.el" (0 0 0 0))
 ;;; Generated autoloads from ein-pager.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-pager" '("ein:pager-")))
+(register-definition-prefixes "ein-pager" '("ein:pager-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-process" "ein-process.el" (0 0 0 0))
 ;;; Generated autoloads from ein-process.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-process" '("ein:process-")))
+(register-definition-prefixes "ein-process" '("ein:process-"))
 
 ;;;***
 
@@ -321,21 +321,21 @@ and the url-or-port argument of ein:notebooklist-open*.
 ;;;;;;  0 0))
 ;;; Generated autoloads from ein-python-send.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-python-send" '("ein:python-send-")))
+(register-definition-prefixes "ein-python-send" '("ein:python-send-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-pytools" "ein-pytools.el" (0 0 0 0))
 ;;; Generated autoloads from ein-pytools.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-pytools" '("ein:pytools-jump-")))
+(register-definition-prefixes "ein-pytools" '("ein:pytools-jump-"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-query" "ein-query.el" (0 0 0 0))
 ;;; Generated autoloads from ein-query.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-query" '("ein:")))
+(register-definition-prefixes "ein-query" '("ein:"))
 
 ;;;***
 
@@ -343,7 +343,7 @@ and the url-or-port argument of ein:notebooklist-open*.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from ein-scratchsheet.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-scratchsheet" '("ein:scratchsheet")))
+(register-definition-prefixes "ein-scratchsheet" '("ein:scratchsheet"))
 
 ;;;***
 
@@ -364,7 +364,7 @@ Entry to `ein:cell-execute-internal' from the shared output cell.
 
 \(fn KERNEL CODE &rest ARGS)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-shared-output" '("*ein:shared-output*" "ein:")))
+(register-definition-prefixes "ein-shared-output" '("*ein:shared-output*" "ein:"))
 
 ;;;***
 
@@ -374,28 +374,28 @@ Entry to `ein:cell-execute-internal' from the shared output cell.
 (autoload 'ein:tb-show "ein-traceback" "\
 Show full traceback in traceback viewer." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-traceback" '("ein:t")))
+(register-definition-prefixes "ein-traceback" '("ein:t"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-utils" "ein-utils.el" (0 0 0 0))
 ;;; Generated autoloads from ein-utils.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-utils" '("ein:")))
+(register-definition-prefixes "ein-utils" '("ein:"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-websocket" "ein-websocket.el" (0 0 0 0))
 ;;; Generated autoloads from ein-websocket.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-websocket" '("ein:" "fix-request-netscape-cookie-parse")))
+(register-definition-prefixes "ein-websocket" '("ein:" "fix-request-netscape-cookie-parse"))
 
 ;;;***
 
 ;;;### (autoloads nil "ein-worksheet" "ein-worksheet.el" (0 0 0 0))
 ;;; Generated autoloads from ein-worksheet.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ein-worksheet" '("ein:" "hof-add")))
+(register-definition-prefixes "ein-worksheet" '("ein:" "hof-add"))
 
 ;;;***
 
@@ -404,7 +404,7 @@ Show full traceback in traceback viewer." t nil)
 
 (when (featurep 'org) (let* ((orig (get 'org-babel-load-languages 'custom-type)) (orig-cdr (cdr orig)) (choices (plist-get orig-cdr :key-type))) (push '(const :tag "Ein" ein) (nthcdr 1 choices)) (put 'org-babel-load-languages 'custom-type (cons (car orig) (plist-put orig-cdr :key-type choices)))))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ein" '("*ob-ein-sentinel*" "ob-ein-")))
+(register-definition-prefixes "ob-ein" '("*ob-ein-sentinel*" "ob-ein-"))
 
 ;;;***
 
@@ -412,7 +412,7 @@ Show full traceback in traceback viewer." t nil)
 ;;; Generated autoloads from poly-ein.el
  (autoload 'poly-ein-mode "poly-ein")
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poly-ein" '("pm-" "poly-ein-")))
+(register-definition-prefixes "poly-ein" '("pm-" "poly-ein-"))
 
 ;;;***
 

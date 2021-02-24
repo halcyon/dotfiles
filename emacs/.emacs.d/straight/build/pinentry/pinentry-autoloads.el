@@ -1,4 +1,4 @@
-;;; pinentry-autoloads.el --- automatically extracted autoloads
+;;; pinentry-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -17,7 +17,7 @@ will not be shown.
 
 \(fn &optional QUIET)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pinentry" '("pinentry-")))
+(register-definition-prefixes "pinentry" '("pinentry-"))
 
 ;;;***
 

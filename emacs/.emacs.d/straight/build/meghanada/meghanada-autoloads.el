@@ -1,4 +1,4 @@
-;;; meghanada-autoloads.el --- automatically extracted autoloads
+;;; meghanada-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -10,7 +10,7 @@
 (autoload 'meghanada-company-enable "company-meghanada" "\
 Enable auto completion with company." nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-meghanada" '("company-meghanada" "make-icon-hash" "meghanada--" "substring--candidate")))
+(register-definition-prefixes "company-meghanada" '("company-meghanada" "make-icon-hash" "meghanada--" "substring--candidate"))
 
 ;;;***
 
@@ -24,7 +24,7 @@ Set up eldoc function and enable 'eldoc-mode'." t nil)
 (autoload 'meghanada-eldoc-enable "eldoc-meghanada" "\
 Enable eldoc for meghanada-mode." nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eldoc-meghanada" '("eldoc-meghanada--")))
+(register-definition-prefixes "eldoc-meghanada" '("eldoc-meghanada--"))
 
 ;;;***
 
@@ -35,7 +35,7 @@ Enable eldoc for meghanada-mode." nil nil)
 (autoload 'meghanada-flycheck-enable "flycheck-meghanada" "\
 Enable flycheck for meghanada-mode." nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-meghanada" '("flycheck-meghanada-")))
+(register-definition-prefixes "flycheck-meghanada" '("flycheck-meghanada-"))
 
 ;;;***
 
@@ -70,14 +70,20 @@ Restart meghanada server and client." t nil)
 A better java development mode for Emacs (minor-mode).
 \\{meghanada-mode-map}
 
-If called interactively, enable Meghanada mode if ARG is
-positive, and disable it if ARG is zero or negative.  If called
-from Lisp, also enable the mode if ARG is omitted or nil, and
-toggle it if ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Meghanada mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \(fn &optional ARG)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "meghanada" '("meghanada-")))
+(register-definition-prefixes "meghanada" '("meghanada-"))
 
 ;;;***
 

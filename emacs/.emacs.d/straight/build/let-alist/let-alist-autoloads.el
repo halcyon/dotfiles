@@ -1,4 +1,4 @@
-;;; let-alist-autoloads.el --- automatically extracted autoloads
+;;; let-alist-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -39,7 +39,7 @@ displayed in the example above.
 
 (function-put 'let-alist 'lisp-indent-function '1)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "let-alist" '("let-alist--")))
+(register-definition-prefixes "let-alist" '("let-alist--"))
 
 ;;;***
 

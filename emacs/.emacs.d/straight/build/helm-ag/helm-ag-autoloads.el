@@ -1,4 +1,4 @@
-;;; helm-ag-autoloads.el --- automatically extracted autoloads
+;;; helm-ag-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -52,7 +52,7 @@ Not documented, QUERY.
 
 \(fn &optional QUERY)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-ag" '("helm-")))
+(register-definition-prefixes "helm-ag" '("helm-"))
 
 ;;;***
 

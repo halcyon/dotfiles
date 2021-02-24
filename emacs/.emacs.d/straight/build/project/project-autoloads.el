@@ -1,4 +1,4 @@
-;;; project-autoloads.el --- automatically extracted autoloads
+;;; project-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -220,7 +220,7 @@ to directory DIR.
 
 \(fn DIR)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "project" '("project-")))
+(register-definition-prefixes "project" '("project-"))
 
 ;;;***
 

@@ -1,4 +1,4 @@
-;;; straight-autoloads.el --- automatically extracted autoloads
+;;; straight-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -381,7 +381,7 @@ locally bound plist, straight-bug-report-args.
 
 (function-put 'straight-bug-report 'lisp-indent-function '0)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight" '("straight-")))
+(register-definition-prefixes "straight" '("straight-"))
 
 ;;;***
 
@@ -391,7 +391,7 @@ locally bound plist, straight-bug-report-args.
 (defvar straight-x-pinned-packages nil "\
 List of pinned packages.")
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight-x" '("straight-x-")))
+(register-definition-prefixes "straight-x" '("straight-x-"))
 
 ;;;***
 

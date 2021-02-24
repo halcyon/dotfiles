@@ -1,4 +1,4 @@
-;;; logito-autoloads.el --- automatically extracted autoloads
+;;; logito-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "logito" "logito.el" (0 0 0 0))
 ;;; Generated autoloads from logito.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "logito" '("logito-")))
+(register-definition-prefixes "logito" '("logito-"))
 
 ;;;***
 

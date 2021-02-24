@@ -1,4 +1,4 @@
-;;; macrostep-autoloads.el --- automatically extracted autoloads
+;;; macrostep-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -9,10 +9,16 @@
 (autoload 'macrostep-mode "macrostep" "\
 Minor mode for inline expansion of macros in Emacs Lisp source buffers.
 
-If called interactively, enable Macrostep mode if ARG is
-positive, and disable it if ARG is zero or negative.  If called
-from Lisp, also enable the mode if ARG is omitted or nil, and
-toggle it if ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Macrostep mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 \\<macrostep-keymap>Progressively expand macro forms with \\[macrostep-expand], collapse them with \\[macrostep-collapse],
 and move back and forth with \\[macrostep-next-macro] and \\[macrostep-prev-macro].
@@ -38,7 +44,7 @@ behaviors.
 
 \(fn &optional TOGGLE-SEPARATE-BUFFER)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "macrostep" '("macrostep-")))
+(register-definition-prefixes "macrostep" '("macrostep-"))
 
 ;;;***
 
@@ -49,7 +55,7 @@ behaviors.
 
 (add-hook 'c-mode-hook #'macrostep-c-mode-hook)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "macrostep-c" '("macrostep-c-")))
+(register-definition-prefixes "macrostep-c" '("macrostep-c-"))
 
 ;;;***
 

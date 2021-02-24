@@ -1,4 +1,4 @@
-;;; slime-company-autoloads.el --- automatically extracted autoloads
+;;; slime-company-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "slime-company" "slime-company.el" (0 0 0 0))
 ;;; Generated autoloads from slime-company.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slime-company" '("*slime-company--meta-request*" "company-slime" "slime-company")))
+(register-definition-prefixes "slime-company" '("*slime-company--meta-request*" "company-slime" "slime-company"))
 
 ;;;***
 

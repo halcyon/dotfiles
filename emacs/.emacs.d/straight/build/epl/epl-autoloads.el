@@ -1,4 +1,4 @@
-;;; epl-autoloads.el --- automatically extracted autoloads
+;;; epl-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "epl" "epl.el" (0 0 0 0))
 ;;; Generated autoloads from epl.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "epl" '("epl-")))
+(register-definition-prefixes "epl" '("epl-"))
 
 ;;;***
 

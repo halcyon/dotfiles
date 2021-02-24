@@ -1,4 +1,4 @@
-;;; polymode-autoloads.el --- automatically extracted autoloads
+;;; polymode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "poly-lock" "poly-lock.el" (0 0 0 0))
 ;;; Generated autoloads from poly-lock.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poly-lock" '("poly-lock-")))
+(register-definition-prefixes "poly-lock" '("poly-lock-"))
 
 ;;;***
 
@@ -83,14 +83,14 @@ most frequently used slots are:
 
 (function-put 'define-polymode 'doc-string-elt '3)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode" '("pm-" "poly")))
+(register-definition-prefixes "polymode" '("pm-" "poly"))
 
 ;;;***
 
 ;;;### (autoloads nil "polymode-base" "polymode-base.el" (0 0 0 0))
 ;;; Generated autoloads from polymode-base.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-base" '("poly-")))
+(register-definition-prefixes "polymode-base" '("poly-"))
 
 ;;;***
 
@@ -98,7 +98,7 @@ most frequently used slots are:
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from polymode-classes.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-classes" '("pm-")))
+(register-definition-prefixes "polymode-classes" '("pm-"))
 
 ;;;***
 
@@ -106,7 +106,7 @@ most frequently used slots are:
 ;;;;;;  0 0))
 ;;; Generated autoloads from polymode-compat.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-compat" '("*span*" "pm-" "polymode-")))
+(register-definition-prefixes "polymode-compat" '("*span*" "pm-" "polymode-"))
 
 ;;;***
 
@@ -156,7 +156,7 @@ key-value pairs. See the documentation of the class
 
 (function-put 'define-auto-innermode 'doc-string-elt '3)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-core" '("*span*" "polymode-")))
+(register-definition-prefixes "polymode-core" '("*span*" "polymode-"))
 
 ;;;***
 
@@ -167,10 +167,16 @@ key-value pairs. See the documentation of the class
 (autoload 'pm-debug-minor-mode "polymode-debug" "\
 Turns on/off useful facilities for debugging polymode.
 
-If called interactively, enable Pm-Debug minor mode if ARG is
-positive, and disable it if ARG is zero or negative.  If called
-from Lisp, also enable the mode if ARG is omitted or nil, and
-toggle it if ARG is `toggle'; disable the mode otherwise.
+If called interactively, toggle `Pm-Debug minor mode'.  If the
+prefix argument is positive, enable the mode, and if it is zero
+or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
 
 Key bindings:
 \\{pm-debug-minor-mode-map}
@@ -193,13 +199,15 @@ or call the function `pm-debug-mode'.")
 
 (autoload 'pm-debug-mode "polymode-debug" "\
 Toggle Pm-Debug minor mode in all buffers.
-With prefix ARG, enable Pm-Debug mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
+With prefix ARG, enable Pm-Debug mode if ARG is positive; otherwise,
+disable it.  If called from Lisp, enable the mode if ARG is omitted
+or nil.
 
 Pm-Debug minor mode is enabled in all buffers where
 `pm-debug-minor-mode-on' would do it.
-See `pm-debug-minor-mode' for more information on Pm-Debug minor mode.
+
+See `pm-debug-minor-mode' for more information on Pm-Debug minor
+mode.
 
 \(fn &optional ARG)" t nil)
 
@@ -225,7 +233,7 @@ buffer, if 'message issue a message, if nil just return a list of values.
 
 \(fn &optional OUT-TYPE)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-debug" '("pm-")))
+(register-definition-prefixes "polymode-debug" '("pm-"))
 
 ;;;***
 
@@ -233,7 +241,7 @@ buffer, if 'message issue a message, if nil just return a list of values.
 ;;;;;;  0 0))
 ;;; Generated autoloads from polymode-export.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-export" '("pm-" "poly")))
+(register-definition-prefixes "polymode-export" '("pm-" "poly"))
 
 ;;;***
 
@@ -241,7 +249,7 @@ buffer, if 'message issue a message, if nil just return a list of values.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from polymode-methods.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-methods" '("pm-")))
+(register-definition-prefixes "polymode-methods" '("pm-"))
 
 ;;;***
 
@@ -249,7 +257,7 @@ buffer, if 'message issue a message, if nil just return a list of values.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from polymode-test-utils.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-test-utils" '("pm-")))
+(register-definition-prefixes "polymode-test-utils" '("pm-"))
 
 ;;;***
 
@@ -257,7 +265,7 @@ buffer, if 'message issue a message, if nil just return a list of values.
 ;;;;;;  0))
 ;;; Generated autoloads from polymode-weave.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "polymode-weave" '("pm-" "polymode-")))
+(register-definition-prefixes "polymode-weave" '("pm-" "polymode-"))
 
 ;;;***
 

@@ -1,4 +1,4 @@
-;;; eglot-autoloads.el --- automatically extracted autoloads
+;;; eglot-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -40,7 +40,7 @@ INTERACTIVE is t if called interactively.
 (autoload 'eglot-ensure "eglot" "\
 Start Eglot session for current buffer if there isn't one." nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eglot" '("eglot-")))
+(register-definition-prefixes "eglot" '("eglot-"))
 
 ;;;***
 

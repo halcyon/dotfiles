@@ -1,4 +1,4 @@
-;;; transient-autoloads.el --- automatically extracted autoloads
+;;; transient-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -60,7 +60,7 @@ See info node `(transient)Modifying Existing Transients'.
 
 (function-put 'transient-remove-suffix 'lisp-indent-function 'defun)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "transient" '("transient-")))
+(register-definition-prefixes "transient" '("transient-"))
 
 ;;;***
 

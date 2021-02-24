@@ -1,4 +1,4 @@
-;;; link-autoloads.el --- automatically extracted autoloads
+;;; link-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "link" "link.el" (0 0 0 0))
 ;;; Generated autoloads from link.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "link" '("link-")))
+(register-definition-prefixes "link" '("link-"))
 
 ;;;***
 
