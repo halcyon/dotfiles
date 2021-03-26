@@ -294,7 +294,7 @@ Null prefix argument turns off the mode."
 (use-package org-roam
   :config
   (setq org-roam-directory "~/projects/org-roam"
-        org-roam-encrypt-files t)
+        org-roam-index-file "index.org")
   (add-hook 'after-init-hook 'org-roam-mode))
 
 (use-package org2jekyll
