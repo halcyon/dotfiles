@@ -54,8 +54,7 @@ export SSH_AUTH_SOCK
 export GPG_AGENT_INFO
 export GNOME_KEYRING_PID
 
-/usr/bin/xhost + local:docker
-/usr/bin/xset s 4800 r rate 200 50 b off
+/usr/X11R6/bin/xset s 4800 r rate 200 50 b off
 /usr/bin/xss-lock slock &
 /usr/bin/xbindkeys
 #/usr/bin/ssh-agent
