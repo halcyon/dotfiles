@@ -41,7 +41,7 @@ ZSH_THEME="halcyon"
 
 # zstyle :omz:plugins:ssh-agent agent-forwarding on
 # zstyle :omz:plugins:ssh-agent identities id_ed25519
-plugins=(docker docker-compose fasd git gpg-agent helm kubectl asdf)
+plugins=(docker docker-compose fasd git gpg-agent helm kubectl asdf pass)
 
 
 source ${ZSH}/oh-my-zsh.sh
@@ -72,7 +72,7 @@ export LESS='-R'
 # export SQLPATH=${HOME}/dotfiles/oracle
 export IDEA_HOME=${HOME}/idea-IC-183.5429.30
 
-export PATH=/usr/local/sbin:${PATH}:${HOME}/bin:${IDEA_HOME}/bin
+export PATH=/usr/local/sbin:/usr/local/jdk-11/bin:/usr/local/jdk-11/jre/bin:${PATH}:${HOME}/bin
 
 export IPOD_MOUNTPOINT="/mnt/nano"
 
