@@ -1,5 +1,4 @@
 export LC_CTYPE="en_US.UTF-8"
-export SSH_AUTH_SOCK
 /usr/local/bin/dunst &
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation" 1 
 xinput set-prop "/dev/wsmouse" "WS Pointer Wheel Emulation Button" 2 

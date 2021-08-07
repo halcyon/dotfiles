@@ -95,9 +95,9 @@ function git-gc-all-ferocious() {
   git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc "$@"
 }
 
-if [[ -f ${HOME}/gitlab/dotfiles-private/zsh/zsh-private ]]
+if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
-    source ${HOME}/gitlab/dotfiles-private/zsh/zsh-private
+    source ${HOME}/dotfiles-private/zsh/zsh-private
 fi
 
 export MANPATH="${MANPATH}:${HOME}/dotfiles/man"
