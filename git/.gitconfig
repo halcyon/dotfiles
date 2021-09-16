@@ -6,9 +6,9 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = gpg2
+	program = gpg
 [include]
-        path = ~/gitlab/dotfiles-private/git/git-private
+        path = ~/dotfiles-private/git/git-private
 # [url "git@github.com:"]
 # 	insteadOf = https://github.com/
 [user]
