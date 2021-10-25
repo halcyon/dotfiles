@@ -556,6 +556,8 @@ Null prefix argument turns off the mode."
   ;; (add-hook 'clojure-mode-hook #'configure-clojure-indent)
   )
 
+(use-package clj-refactor)
+
 
 (use-package eglot
   :straight (:host github
