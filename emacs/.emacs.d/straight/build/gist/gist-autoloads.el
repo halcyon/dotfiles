@@ -1,4 +1,4 @@
-;;; gist-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; gist-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -78,7 +78,7 @@ List your starred gists.
 (autoload 'gist-fork "gist" "\
 Fork a gist." t nil)
 
-(register-definition-prefixes "gist" '("dired-do-gist" "gist-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gist" '("dired-do-gist" "gist-")))
 
 ;;;***
 

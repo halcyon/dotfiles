@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/squiggly-clojure/elisp/flycheck-clojure/flycheck-clojure.el

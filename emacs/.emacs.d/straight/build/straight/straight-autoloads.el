@@ -1,10 +1,18 @@
-;;; straight-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; straight-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
 
 ;;;### (autoloads nil "straight" "straight.el" (0 0 0 0))
 ;;; Generated autoloads from straight.el
+
+(autoload 'straight-remove-unused-repos "straight" "\
+Remove unused repositories from the repos directory.
+A repo is considered \"unused\" if it was not explicitly requested via
+`straight-use-package' during the current Emacs session.
+If FORCE is non-nil do not prompt before deleting repos.
+
+\(fn &optional FORCE)" t nil)
 
 (autoload 'straight-get-recipe "straight" "\
 Interactively select a recipe from one of the recipe repositories.
@@ -52,7 +60,7 @@ package name as a string. In that case, the return value of the
 function is used as the value of NO-BUILD instead. In any case,
 if NO-BUILD is non-nil, then processing halts here. Otherwise,
 the package is built and activated. Note that if the package
-recipe has a non-nil `:no-build' entry, then NO-BUILD is ignored
+recipe has a nil `:build' entry, then NO-BUILD is ignored
 and processing always stops before building and activation
 occurs.
 
@@ -98,7 +106,7 @@ MELPA-STYLE-RECIPE is as for `straight-use-package'.
 Register a recipe repository using MELPA-STYLE-RECIPE.
 This registers the recipe and builds it if it is already cloned.
 Note that you probably want the recipe for a recipe repository to
-include a non-nil `:no-build' property, to unconditionally
+include a nil `:build' property, to unconditionally
 inhibit the build phase.
 
 This function also adds the recipe repository to
@@ -369,10 +377,10 @@ ARGS may be any of the following keywords and their respective values:
       formatted as markdown for submitting as an issue.
 
   - :user-dir String
-      If non-nil, the test is run with `emacs-user-dir' set to STRING.
+      If non-nil, the test is run with `user-emacs-directory' set to STRING.
       Otherwise, a temporary directory is created and used.
       Unless absolute, paths are expanded relative to the variable
-      `temproary-file-directory'.
+      `temporary-file-directory'.
 
 ARGS are accessible within the :pre/:post-bootsrap phases via the
 locally bound plist, straight-bug-report-args.
@@ -381,7 +389,17 @@ locally bound plist, straight-bug-report-args.
 
 (function-put 'straight-bug-report 'lisp-indent-function '0)
 
-(register-definition-prefixes "straight" '("straight-"))
+(autoload 'straight-dependencies "straight" "\
+Return a list of PACKAGE's dependencies.
+
+\(fn &optional PACKAGE)" t nil)
+
+(autoload 'straight-dependents "straight" "\
+Return a list PACKAGE's dependents.
+
+\(fn &optional PACKAGE)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight" '("straight-")))
 
 ;;;***
 
@@ -391,7 +409,7 @@ locally bound plist, straight-bug-report-args.
 (defvar straight-x-pinned-packages nil "\
 List of pinned packages.")
 
-(register-definition-prefixes "straight-x" '("straight-x-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight-x" '("straight-x-")))
 
 ;;;***
 

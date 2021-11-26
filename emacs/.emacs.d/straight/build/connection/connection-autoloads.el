@@ -1,4 +1,4 @@
-;;; connection-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; connection-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "connection" "connection.el" (0 0 0 0))
 ;;; Generated autoloads from connection.el
 
-(register-definition-prefixes "connection" '("connection-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "connection" '("connection-")))
 
 ;;;***
 

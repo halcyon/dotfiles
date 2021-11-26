@@ -1,4 +1,4 @@
-;;; request-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; request-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "request" "request.el" (0 0 0 0))
 ;;; Generated autoloads from request.el
 
-(register-definition-prefixes "request" '("request-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "request" '("request-")))
 
 ;;;***
 

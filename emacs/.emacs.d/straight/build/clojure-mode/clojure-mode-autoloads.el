@@ -1,4 +1,4 @@
-;;; clojure-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; clojure-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -92,7 +92,8 @@ With a numeric prefix argument the let is introduced N lists up.
 Move the form at point to a binding in the nearest let." t nil)
 
 (autoload 'clojure-rename-ns-alias "clojure-mode" "\
-Rename a namespace alias." t nil)
+Rename a namespace alias.
+If a region is active, only pick up and rename aliases within the region." t nil)
 
 (autoload 'clojure-add-arity "clojure-mode" "\
 Add an arity to a function." t nil)
@@ -119,7 +120,7 @@ Major mode for editing ClojureC code.
 
 (add-to-list 'auto-mode-alist '("\\(?:build\\|profile\\)\\.boot\\'" . clojure-mode))
 
-(register-definition-prefixes "clojure-mode" '("add-custom-clojure-indents" "clojure" "define-clojure-indent" "put-clojure-indent"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clojure-mode" '("add-custom-clojure-indents" "clojure" "define-clojure-indent" "put-clojure-indent")))
 
 ;;;***
 

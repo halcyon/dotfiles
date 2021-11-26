@@ -1,4 +1,4 @@
-;;; epresent-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; epresent-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -9,7 +9,7 @@
 (autoload 'epresent-run "epresent" "\
 Present an Org-mode buffer." t nil)
 
-(register-definition-prefixes "epresent" '("epresent-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "epresent" '("epresent-")))
 
 ;;;***
 

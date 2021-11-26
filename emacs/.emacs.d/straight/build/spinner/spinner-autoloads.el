@@ -1,4 +1,4 @@
-;;; spinner-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; spinner-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -19,7 +19,7 @@ buffer, use that instead of current buffer.
 
 When started, in order to function properly, the spinner runs a
 timer which periodically calls `force-mode-line-update' in the
-curent buffer.  If BUFFER-LOCAL was set at creation time, then
+current buffer.  If BUFFER-LOCAL was set at creation time, then
 `force-mode-line-update' is called in that buffer instead.  When
 the spinner is stopped, the timer is deactivated.
 
@@ -57,7 +57,7 @@ this time, in which case it won't display at all.
 
 \(fn &optional TYPE-OR-OBJECT FPS DELAY)" nil nil)
 
-(register-definition-prefixes "spinner" '("spinner"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spinner" '("spinner-")))
 
 ;;;***
 

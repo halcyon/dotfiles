@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/geiser/scheme/mit/geiser/emacs.scm

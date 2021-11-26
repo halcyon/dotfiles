@@ -1,4 +1,4 @@
-;;; overseer-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; overseer-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -24,16 +24,10 @@ just return nil.
 (autoload 'overseer-mode "overseer" "\
 Minor mode for emacs lisp files to test through ert-runner.
 
-If called interactively, toggle `overseer mode'.  If the prefix
-argument is positive, enable the mode, and if it is zero or
-negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+If called interactively, enable overseer mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
 
 Key bindings:
 \\{overseer-mode-map}
@@ -44,7 +38,7 @@ Key bindings:
 
 (dolist (hook '(emacs-lisp-mode-hook)) (add-hook hook 'overseer-enable-mode))
 
-(register-definition-prefixes "overseer" '("overseer-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "overseer" '("overseer-")))
 
 ;;;***
 

@@ -1,4 +1,4 @@
-;;; diminish-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; diminish-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -44,7 +44,7 @@ you can see the whole thing in the *Messages* buffer.
 This doesn't change the status of any modes; it just lets you see
 what diminished modes would be on the mode-line if they were still minor." t nil)
 
-(register-definition-prefixes "diminish" '("diminish"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "diminish" '("diminish")))
 
 ;;;***
 

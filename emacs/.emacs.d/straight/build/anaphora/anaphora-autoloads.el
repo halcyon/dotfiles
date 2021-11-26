@@ -1,4 +1,4 @@
-;;; anaphora-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; anaphora-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -212,7 +212,7 @@ DIVIDEND, DIVISOR, and DIVISORS are otherwise as documented for `/'.
 
 \(fn DIVIDEND DIVISOR &rest DIVISORS)" nil t)
 
-(register-definition-prefixes "anaphora" '("anaphora-install-font-lock-keywords"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "anaphora" '("anaphora-install-font-lock-keywords")))
 
 ;;;***
 

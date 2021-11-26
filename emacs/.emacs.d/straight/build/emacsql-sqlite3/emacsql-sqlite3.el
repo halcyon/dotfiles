@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/emacsql-sqlite3/emacsql-sqlite3.el

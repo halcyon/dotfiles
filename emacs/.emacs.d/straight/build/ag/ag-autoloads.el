@@ -1,4 +1,4 @@
-;;; ag-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; ag-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -108,7 +108,7 @@ Kill all `ag-mode' buffers." t nil)
 (autoload 'ag-kill-other-buffers "ag" "\
 Kill all `ag-mode' buffers other than the current buffer." t nil)
 
-(register-definition-prefixes "ag" '("ag-" "ag/"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ag" '("ag-" "ag/")))
 
 ;;;***
 

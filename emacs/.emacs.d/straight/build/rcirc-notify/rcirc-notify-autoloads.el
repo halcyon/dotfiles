@@ -1,4 +1,4 @@
-;;; rcirc-notify-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; rcirc-notify-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -21,7 +21,7 @@ to them.
 (autoload 'rcirc-notify-add-hooks "rcirc-notify" "\
 Initialize rcirc-notify into rcirc with hooks." t nil)
 
-(register-definition-prefixes "rcirc-notify" '("rcirc-notify"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rcirc-notify" '("rcirc-notify")))
 
 ;;;***
 

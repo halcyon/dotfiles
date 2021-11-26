@@ -1,4 +1,4 @@
-;;; helm-projectile-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; helm-projectile-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -63,7 +63,7 @@ If invoked outside of a project, displays a list of known projects to jump.
 
 (eval-after-load 'projectile '(progn (define-key projectile-command-map (kbd "h") #'helm-projectile)))
 
-(register-definition-prefixes "helm-projectile" '("helm-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-projectile" '("helm-")))
 
 ;;;***
 

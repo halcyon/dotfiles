@@ -1,4 +1,4 @@
-;;; gnus-alias-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; gnus-alias-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -55,7 +55,7 @@ context, `gnus-alias-determine-identity' may be used directly in a hook.
 
 \(fn WHICH-HEADER)" nil nil)
 
-(register-definition-prefixes "gnus-alias" '("gnus-alias-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gnus-alias" '("gnus-alias-")))
 
 ;;;***
 

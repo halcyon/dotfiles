@@ -1,4 +1,4 @@
-;;; deferred-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; deferred-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "deferred" "deferred.el" (0 0 0 0))
 ;;; Generated autoloads from deferred.el
 
-(register-definition-prefixes "deferred" '("deferred:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "deferred" '("deferred:")))
 
 ;;;***
 

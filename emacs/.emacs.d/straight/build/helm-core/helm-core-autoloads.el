@@ -1,4 +1,4 @@
-;;; helm-core-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; helm-core-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -70,10 +70,12 @@ on exit.
 For any other key pressed, run their assigned command as defined
 in MAP and then exit the loop running EXIT-FN, if specified.
 
+If DELAY an integer is specified exit after DELAY seconds.
+
 NOTE: SUBKEY and OTHER-SUBKEYS bindings support only char syntax
 and vectors, so don't use strings to define them.
 
-\(fn MAP KEY SUBKEY COMMAND &optional OTHER-SUBKEYS PROMPT EXIT-FN)" nil nil)
+\(fn MAP KEY SUBKEY COMMAND &optional OTHER-SUBKEYS PROMPT EXIT-FN DELAY)" nil nil)
 
 (function-put 'helm-define-key-with-subkeys 'lisp-indent-function '1)
 
@@ -218,14 +220,14 @@ Call `helm' only with SOURCES and BUFFER as args.
 
 \(fn SOURCES BUFFER)" nil nil)
 
-(register-definition-prefixes "helm" '("helm-" "with-helm-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm" '("helm-" "with-helm-")))
 
 ;;;***
 
 ;;;### (autoloads nil "helm-lib" "helm-lib.el" (0 0 0 0))
 ;;; Generated autoloads from helm-lib.el
 
-(register-definition-prefixes "helm-lib" '("helm-" "with-helm-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-lib" '("helm-" "with-helm-")))
 
 ;;;***
 
@@ -233,14 +235,14 @@ Call `helm' only with SOURCES and BUFFER as args.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from helm-multi-match.el
 
-(register-definition-prefixes "helm-multi-match" '("helm-m"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-multi-match" '("helm-m")))
 
 ;;;***
 
 ;;;### (autoloads nil "helm-source" "helm-source.el" (0 0 0 0))
 ;;; Generated autoloads from helm-source.el
 
-(register-definition-prefixes "helm-source" '("helm-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-source" '("helm-")))
 
 ;;;***
 

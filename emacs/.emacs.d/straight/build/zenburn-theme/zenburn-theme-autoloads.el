@@ -1,4 +1,4 @@
-;;; zenburn-theme-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; zenburn-theme-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -16,7 +16,7 @@ defining them in this alist.")
 
 (and load-file-name (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
 
-(register-definition-prefixes "zenburn-theme" '("zenburn"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "zenburn-theme" '("zenburn")))
 
 ;;;***
 

@@ -1,4 +1,4 @@
-;;; ox-reveal-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; ox-reveal-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -17,7 +17,7 @@ Return output file name.
 
 \(fn PLIST FILENAME PUB-DIR)" nil nil)
 
-(register-definition-prefixes "ox-reveal" '("frag-" "if-format" "org-reveal-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-reveal" '("frag-" "if-format" "org-reveal-")))
 
 ;;;***
 

@@ -1,4 +1,4 @@
-;;; parseclj-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; parseclj-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -6,21 +6,29 @@
 ;;;### (autoloads nil "parseclj" "parseclj.el" (0 0 0 0))
 ;;; Generated autoloads from parseclj.el
 
-(register-definition-prefixes "parseclj" '("parseclj-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj" '("parseclj-")))
+
+;;;***
+
+;;;### (autoloads nil "parseclj-alist" "parseclj-alist.el" (0 0 0
+;;;;;;  0))
+;;; Generated autoloads from parseclj-alist.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-alist" '("parseclj-")))
 
 ;;;***
 
 ;;;### (autoloads nil "parseclj-ast" "parseclj-ast.el" (0 0 0 0))
 ;;; Generated autoloads from parseclj-ast.el
 
-(register-definition-prefixes "parseclj-ast" '("parseclj-ast-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-ast" '("parseclj-ast-")))
 
 ;;;***
 
 ;;;### (autoloads nil "parseclj-lex" "parseclj-lex.el" (0 0 0 0))
 ;;; Generated autoloads from parseclj-lex.el
 
-(register-definition-prefixes "parseclj-lex" '("parseclj-lex-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-lex" '("parseclj-lex-")))
 
 ;;;***
 
@@ -28,7 +36,7 @@
 ;;;;;;  0 0))
 ;;; Generated autoloads from parseclj-parser.el
 
-(register-definition-prefixes "parseclj-parser" '("parseclj-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-parser" '("parseclj-")))
 
 ;;;***
 

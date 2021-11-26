@@ -1,0 +1,1 @@
+/home/ksm/.emacs.d/straight/repos/rust-mode/rust-rustfmt.el

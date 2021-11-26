@@ -1,4 +1,4 @@
-;;; scala-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; scala-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -24,7 +24,7 @@ A string argument will run the command (for scripting).
 
 \(fn &optional EDIT-COMMAND)" t nil)
 
-(register-definition-prefixes "scala-compile" '("scala-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-compile" '("scala-")))
 
 ;;;***
 
@@ -50,7 +50,7 @@ When started, runs `scala-mode-hook'.
 
 (modify-coding-system-alist 'file "\\.\\(scala\\|sbt\\|worksheet\\.sc\\)\\'" 'utf-8)
 
-(register-definition-prefixes "scala-mode" '("scala-mode:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode" '("scala-mode:")))
 
 ;;;***
 
@@ -58,7 +58,7 @@ When started, runs `scala-mode-hook'.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from scala-mode-fontlock.el
 
-(register-definition-prefixes "scala-mode-fontlock" '("scala-font-lock:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode-fontlock" '("scala-font-lock:")))
 
 ;;;***
 
@@ -66,7 +66,7 @@ When started, runs `scala-mode-hook'.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from scala-mode-imenu.el
 
-(register-definition-prefixes "scala-mode-imenu" '("scala-imenu:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode-imenu" '("scala-imenu:")))
 
 ;;;***
 
@@ -74,7 +74,7 @@ When started, runs `scala-mode-hook'.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from scala-mode-indent.el
 
-(register-definition-prefixes "scala-mode-indent" '("scala-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode-indent" '("scala-")))
 
 ;;;***
 
@@ -82,7 +82,7 @@ When started, runs `scala-mode-hook'.
 ;;;;;;  0))
 ;;; Generated autoloads from scala-mode-lib.el
 
-(register-definition-prefixes "scala-mode-lib" '("scala-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode-lib" '("scala-")))
 
 ;;;***
 
@@ -90,7 +90,7 @@ When started, runs `scala-mode-hook'.
 ;;;;;;  0))
 ;;; Generated autoloads from scala-mode-map.el
 
-(register-definition-prefixes "scala-mode-map" '("scala-mode-map"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode-map" '("scala-mode-map")))
 
 ;;;***
 
@@ -98,7 +98,7 @@ When started, runs `scala-mode-hook'.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from scala-mode-paragraph.el
 
-(register-definition-prefixes "scala-mode-paragraph" '("scala-paragraph:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode-paragraph" '("scala-paragraph:")))
 
 ;;;***
 
@@ -106,7 +106,7 @@ When started, runs `scala-mode-hook'.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from scala-mode-syntax.el
 
-(register-definition-prefixes "scala-mode-syntax" '("scala-syntax:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "scala-mode-syntax" '("scala-syntax:")))
 
 ;;;***
 

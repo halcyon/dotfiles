@@ -1,4 +1,4 @@
-;;; xref-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; xref-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -23,6 +23,8 @@ If sufficient information is available to determine a unique
 definition for IDENTIFIER, display it in the selected window.
 Otherwise, display the list of the possible definitions in a
 buffer where the user can select from the list.
+
+Use \\[xref-pop-marker-stack] to return back to where you invoked this command.
 
 \(fn IDENTIFIER)" t nil)
 
@@ -52,9 +54,17 @@ This command is intended to be bound to a mouse event.
 
 \(fn EVENT)" t nil)
 
+(autoload 'xref-find-references-at-mouse "xref" "\
+Find references to the identifier at or around mouse click.
+This command is intended to be bound to a mouse event.
+
+\(fn EVENT)" t nil)
+
 (autoload 'xref-find-apropos "xref" "\
 Find all meaningful symbols that match PATTERN.
 The argument has the same meaning as in `apropos'.
+See `tags-apropos-additional-actions' for how to augment the
+output of this command when the backend is etags.
 
 \(fn PATTERN)" t nil)
  (define-key esc-map "." #'xref-find-definitions)
@@ -88,9 +98,12 @@ Find all matches for REGEXP in FILES.
 Return a list of xref values.
 FILES must be a list of absolute file names.
 
+See `xref-search-program' and `xref-search-program-alist' for how
+to control which program to use when looking for matches.
+
 \(fn REGEXP FILES)" nil nil)
 
-(register-definition-prefixes "xref" '("xref-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "xref" '("xref-")))
 
 ;;;***
 

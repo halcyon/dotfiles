@@ -1,4 +1,4 @@
-;;; rfc-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; rfc-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -22,7 +22,7 @@ Major mode to browse and read RFC documents.
 
 (add-to-list 'auto-mode-alist '("/rfc[0-9]+\\.txt\\'" . rfc-mode))
 
-(register-definition-prefixes "rfc-mode" '("rfc-mode-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rfc-mode" '("rfc-mode-")))
 
 ;;;***
 

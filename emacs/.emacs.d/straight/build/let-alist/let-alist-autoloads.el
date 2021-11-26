@@ -1,4 +1,4 @@
-;;; let-alist-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; let-alist-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -31,7 +31,7 @@ essentially expands to
       .site.contents))
 
 If you nest `let-alist' invocations, the inner one can't access
-the variables of the outer one. You can, however, access alists
+the variables of the outer one.  You can, however, access alists
 inside the original alist by using dots inside the symbol, as
 displayed in the example above.
 
@@ -39,7 +39,7 @@ displayed in the example above.
 
 (function-put 'let-alist 'lisp-indent-function '1)
 
-(register-definition-prefixes "let-alist" '("let-alist--"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "let-alist" '("let-alist--")))
 
 ;;;***
 

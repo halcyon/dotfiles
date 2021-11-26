@@ -120,7 +120,7 @@ Null prefix argument turns off the mode."
 
 (use-package diminish)
 
-(require 'emacs-private (expand-file-name "~/gitlab/dotfiles-private/emacs/emacs-private.el"))
+(require 'emacs-private (expand-file-name "~/dotfiles-private/emacs/emacs-private.el"))
 
 (use-package cider
   :init
@@ -184,8 +184,6 @@ Null prefix argument turns off the mode."
 
 (use-package epresent)
 
-(use-package org-plus-contrib
-  :init (provide 'org-plus-contrib))
 (use-package htmlize)
 
 (use-package org-settings
@@ -193,7 +191,7 @@ Null prefix argument turns off the mode."
   :init
   (require 'ob-clojure)
   (require 'ob-shell)
-  (require 'ol-notmuch)
+  ;; (require 'ol-notmuch)
   (setq org-src-fontify-natively t
         org-confirm-babel-evaluate nil
         org-src-tab-acts-natively t
@@ -291,11 +289,13 @@ Null prefix argument turns off the mode."
 
 (use-package ob-http)
 
-(use-package org-roam
-  :config
-  (setq org-roam-directory "~/projects/org-roam"
-        org-roam-index-file "index.org")
-  (add-hook 'after-init-hook 'org-roam-mode))
+;; (use-package org-roam
+;;   :init
+;;   (setq org-roam-v2-ack t)
+;;   :config
+;;   (setq org-roam-directory "~/projects/org-roam"
+;;         org-roam-index-file "index.org")
+;;   (add-hook 'after-init-hook 'org-roam-mode))
 
 (use-package org2jekyll
   :straight (:host github
@@ -504,7 +504,9 @@ Null prefix argument turns off the mode."
   ;;     (let ((case-fold-search t))
   ;;       (and (re-search-backward "^[;]+ package: \\((.+)\\).*$" nil t)
   ;;            (match-string-no-properties 1)))))
-  (load (expand-file-name "~/quicklisp/slime-helper.el"))
+
+  ;; (load (expand-file-name "~/quicklisp/slime-helper.el"))
+
   ;; (defun mit-scheme-init (file encoding)
   ;;   (unload-feature 'slime-autodoc t)
   ;;   (format "%S\n\n"
@@ -555,8 +557,6 @@ Null prefix argument turns off the mode."
   ;;               (checking 'defun)))
   ;; (add-hook 'clojure-mode-hook #'configure-clojure-indent)
   )
-
-(use-package clj-refactor)
 
 
 (use-package eglot

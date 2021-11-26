@@ -1,4 +1,4 @@
-;;; restclient-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; restclient-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -24,7 +24,7 @@ Turn on restclient mode.
 
 \(fn)" t nil)
 
-(register-definition-prefixes "restclient" '("restclient-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "restclient" '("restclient-")))
 
 ;;;***
 

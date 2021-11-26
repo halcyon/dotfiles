@@ -1,4 +1,4 @@
-;;; websocket-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; websocket-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -6,7 +6,7 @@
 ;;;### (autoloads nil "websocket" "websocket.el" (0 0 0 0))
 ;;; Generated autoloads from websocket.el
 
-(register-definition-prefixes "websocket" '("websocket-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "websocket" '("websocket-")))
 
 ;;;***
 

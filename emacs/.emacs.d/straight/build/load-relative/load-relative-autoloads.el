@@ -1,4 +1,4 @@
-;;; load-relative-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; load-relative-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -92,7 +92,7 @@ same as writing (provide \\='bar-foo).
 
 \(fn &optional PREFIX)" nil t)
 
-(register-definition-prefixes "load-relative" '("autoload-relative"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "load-relative" '("autoload-relative")))
 
 ;;;***
 

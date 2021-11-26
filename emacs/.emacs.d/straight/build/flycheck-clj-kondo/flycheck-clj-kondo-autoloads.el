@@ -1,4 +1,4 @@
-;;; flycheck-clj-kondo-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; flycheck-clj-kondo-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -7,7 +7,7 @@
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from flycheck-clj-kondo.el
 
-(register-definition-prefixes "flycheck-clj-kondo" '("flycheck-clj-kondo-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-clj-kondo" '("flycheck-clj-kondo-")))
 
 ;;;***
 

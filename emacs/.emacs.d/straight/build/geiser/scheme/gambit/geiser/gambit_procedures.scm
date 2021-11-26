@@ -1,1 +1,0 @@
-/home/ksm/.emacs.d/straight/repos/geiser/scheme/gambit/geiser/gambit_procedures.scm

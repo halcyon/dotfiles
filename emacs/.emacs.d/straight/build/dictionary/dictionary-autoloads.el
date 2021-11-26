@@ -1,4 +1,4 @@
-;;; dictionary-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; dictionary-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -54,7 +54,7 @@ Display entries matching the word at the point
 
 \(fn &optional WORD)" t nil)
 
-(register-definition-prefixes "dictionary" '("dictionary-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dictionary" '("dictionary-")))
 
 ;;;***
 

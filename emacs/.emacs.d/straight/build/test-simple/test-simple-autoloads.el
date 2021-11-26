@@ -1,4 +1,4 @@
-;;; test-simple-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; test-simple-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -29,7 +29,7 @@ Calling this function interactively, COMMAND-LINE-FORMATS is set above.
 
 \(fn &rest COMMAND-LINE-FORMATS)" t nil)
 
-(register-definition-prefixes "test-simple" '("assert-" "end-tests" "note" "test-simple-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "test-simple" '("assert-" "end-tests" "note" "test-simple-")))
 
 ;;;***
 

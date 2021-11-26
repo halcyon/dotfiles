@@ -1,12 +1,23 @@
-;;; git-commit-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; git-commit-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
 
 ;;;### (autoloads nil "git-commit" "git-commit.el" (0 0 0 0))
 ;;; Generated autoloads from git-commit.el
+(put 'git-commit-major-mode 'safe-local-variable
+    (lambda (val)
+      (memq val '(text-mode
+                  markdown-mode
+                  org-mode
+                  fundamental-mode
+                  git-commit-elisp-text-mode))))
 
-(register-definition-prefixes "git-commit" '("git-commit-" "global-git-commit-mode"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git-commit" '("git-commit-" "global-git-commit-mode")))
+
+;;;***
+
+;;;### (autoloads nil nil ("git-commit-pkg.el") (0 0 0 0))
 
 ;;;***
 

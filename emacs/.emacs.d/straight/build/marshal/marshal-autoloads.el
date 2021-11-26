@@ -1,4 +1,4 @@
-;;; marshal-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; marshal-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -23,7 +23,7 @@
 
 (function-put 'marshal-defclass 'lisp-indent-function '2)
 
-(register-definition-prefixes "marshal" '("marshal-" "unmarshal-internal"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "marshal" '("marshal-" "unmarshal-internal")))
 
 ;;;***
 

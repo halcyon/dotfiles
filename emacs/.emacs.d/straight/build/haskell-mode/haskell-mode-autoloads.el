@@ -1,4 +1,4 @@
-;;; haskell-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; haskell-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -20,7 +20,7 @@ Major mode for GHC Core files.
 
 \(fn)" t nil)
 
-(register-definition-prefixes "ghc-core" '("ghc-core-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ghc-core" '("ghc-core-")))
 
 ;;;***
 
@@ -35,7 +35,7 @@ Major mode for working with .ghci files.
 
 (add-to-list 'auto-mode-alist '("\\.ghci\\'" . ghci-script-mode))
 
-(register-definition-prefixes "ghci-script-mode" '("ghci-script-mode-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ghci-script-mode" '("ghci-script-mode-")))
 
 ;;;***
 
@@ -45,16 +45,10 @@ Major mode for working with .ghci files.
 (autoload 'interactive-haskell-mode "haskell" "\
 Minor mode for enabling haskell-process interaction.
 
-If called interactively, toggle `Interactive-Haskell mode'.  If
-the prefix argument is positive, enable the mode, and if it is
-zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+If called interactively, enable Interactive-Haskell mode if ARG
+is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 
@@ -133,7 +127,7 @@ Prompts for a Cabal command to run.
 (autoload 'haskell-process-minimal-imports "haskell" "\
 Dump minimal imports." t nil)
 
-(register-definition-prefixes "haskell" '("haskell-" "interactive-haskell-mode-map" "xref-prompt-for-identifier"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell" '("haskell-" "interactive-haskell-mode-map" "xref-prompt-for-identifier")))
 
 ;;;***
 
@@ -144,7 +138,7 @@ Dump minimal imports." t nil)
 (autoload 'haskell-align-imports "haskell-align-imports" "\
 Align all the imports in the buffer." t nil)
 
-(register-definition-prefixes "haskell-align-imports" '("haskell-align-imports-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-align-imports" '("haskell-align-imports-")))
 
 ;;;***
 
@@ -158,7 +152,7 @@ Mode for editing *.chs files of the c2hs haskell tool.
 
 \(fn)" t nil)
 
-(register-definition-prefixes "haskell-c2hs" '("haskell-c2hs-font-lock-keywords"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-c2hs" '("haskell-c2hs-font-lock-keywords")))
 
 ;;;***
 
@@ -199,7 +193,7 @@ OTHER-WINDOW use `find-file-other-window'.
 
 (let ((loads (get 'haskell-cabal 'custom-loads))) (if (member '"haskell-cabal" loads) nil (put 'haskell-cabal 'custom-loads (cons '"haskell-cabal" loads))))
 
-(register-definition-prefixes "haskell-cabal" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-cabal" '("haskell-")))
 
 ;;;***
 
@@ -210,20 +204,14 @@ OTHER-WINDOW use `find-file-other-window'.
 (autoload 'haskell-collapse-mode "haskell-collapse" "\
 Minor mode to collapse and expand haskell expressions
 
-If called interactively, toggle `Haskell-Collapse mode'.  If the
-prefix argument is positive, enable the mode, and if it is zero
-or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+If called interactively, enable Haskell-Collapse mode if ARG is
+positive, and disable it if ARG is zero or negative.  If called
+from Lisp, also enable the mode if ARG is omitted or nil, and
+toggle it if ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 
-(register-definition-prefixes "haskell-collapse" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-collapse" '("haskell-")))
 
 ;;;***
 
@@ -334,7 +322,7 @@ cursor position and markers by using
 (autoload 'haskell-mode-find-uses "haskell-commands" "\
 Find use cases of the identifier at point and highlight them all." t nil)
 
-(register-definition-prefixes "haskell-commands" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-commands" '("haskell-")))
 
 ;;;***
 
@@ -368,7 +356,7 @@ base directory for build tools, or the current buffer for
 
 \(fn &optional EDIT-COMMAND)" t nil)
 
-(register-definition-prefixes "haskell-compile" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-compile" '("haskell-")))
 
 ;;;***
 
@@ -376,7 +364,7 @@ base directory for build tools, or the current buffer for
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from haskell-complete-module.el
 
-(register-definition-prefixes "haskell-complete-module" '("haskell-complete-module"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-complete-module" '("haskell-complete-module")))
 
 ;;;***
 
@@ -392,7 +380,7 @@ This function is used in non-interactive `haskell-mode'.  It
 provides completions for haskell keywords, language pragmas,
 GHC's options, and language extensions, but not identifiers." nil nil)
 
-(register-definition-prefixes "haskell-completions" '("haskell-completions-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-completions" '("haskell-completions-")))
 
 ;;;***
 
@@ -404,7 +392,7 @@ GHC's options, and language extensions, but not identifiers." nil nil)
 
 (let ((loads (get 'haskell-interactive 'custom-loads))) (if (member '"haskell-customize" loads) nil (put 'haskell-interactive 'custom-loads (cons '"haskell-customize" loads))))
 
-(register-definition-prefixes "haskell-customize" '("haskell-" "inferior-haskell-root-dir"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-customize" '("haskell-" "inferior-haskell-root-dir")))
 
 ;;;***
 
@@ -431,7 +419,7 @@ Face for headings." :group 'haskell-debug)
 (defface haskell-debug-muted-face '((t :foreground "#999")) "\
 Face for muteds." :group 'haskell-debug)
 
-(register-definition-prefixes "haskell-debug" '("haskell-debug"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-debug" '("haskell-debug")))
 
 ;;;***
 
@@ -487,7 +475,7 @@ Invokes `haskell-decl-scan-mode-hook' on activation.
 
 \(fn &optional ARG)" t nil)
 
-(register-definition-prefixes "haskell-decl-scan" '("haskell-d" "literate-haskell-ds-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-decl-scan" '("haskell-d" "literate-haskell-ds-")))
 
 ;;;***
 
@@ -519,7 +507,7 @@ current buffer.
 
 \(fn &optional SYM)" t nil)
 
-(register-definition-prefixes "haskell-doc" '("haskell-" "inferior-haskell-" "turn-off-haskell-doc"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-doc" '("haskell-" "inferior-haskell-" "turn-off-haskell-doc")))
 
 ;;;***
 
@@ -551,7 +539,7 @@ Face used to highlight LiquidHaskell annotations ({-@ ... @-})." :group 'haskell
 Face with which to fontify literate comments.
 Inherit from `default' to avoid fontification of them." :group 'haskell-appearance)
 
-(register-definition-prefixes "haskell-font-lock" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-font-lock" '("haskell-")))
 
 ;;;***
 
@@ -559,7 +547,7 @@ Inherit from `default' to avoid fontification of them." :group 'haskell-appearan
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from haskell-ghc-support.el
 
-(register-definition-prefixes "haskell-ghc-support" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-ghc-support" '("haskell-")))
 
 ;;;***
 
@@ -585,7 +573,7 @@ Lookup QUERY at `haskell-hoogle-url'.
 (autoload 'haskell-hoogle-lookup-from-local "haskell-hoogle" "\
 Lookup QUERY on local hoogle server." t nil)
 
-(register-definition-prefixes "haskell-hoogle" '("haskell-hoogle-" "hoogle-prompt"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-hoogle" '("haskell-hoogle-" "hoogle-prompt")))
 
 ;;;***
 
@@ -627,7 +615,7 @@ Invokes `haskell-indent-hook' if not nil.
 
 \(fn &optional ARG)" t nil)
 
-(register-definition-prefixes "haskell-indent" '("haskell-indent-" "turn-off-haskell-indent"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-indent" '("haskell-indent-" "turn-off-haskell-indent")))
 
 ;;;***
 
@@ -642,23 +630,17 @@ Haskell indentation mode that deals with the layout rule.
 It rebinds RET, DEL and BACKSPACE, so that indentations can be
 set and deleted as if they were real tabs.
 
-If called interactively, toggle `Haskell-Indentation mode'.  If
-the prefix argument is positive, enable the mode, and if it is
-zero or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+If called interactively, enable Haskell-Indentation mode if ARG
+is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 
 (autoload 'turn-on-haskell-indentation "haskell-indentation" "\
 Turn on the haskell-indentation minor mode." t nil)
 
-(register-definition-prefixes "haskell-indentation" '("haskell-indentation-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-indentation" '("haskell-indentation-")))
 
 ;;;***
 
@@ -704,7 +686,7 @@ function `haskell-presentation-present', depending on variable
 
 \(fn LINE)" nil nil)
 
-(register-definition-prefixes "haskell-interactive-mode" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-interactive-mode" '("haskell-")))
 
 ;;;***
 
@@ -712,7 +694,7 @@ function `haskell-presentation-present', depending on variable
 ;;;;;;  0))
 ;;; Generated autoloads from haskell-lexeme.el
 
-(register-definition-prefixes "haskell-lexeme" '("haskell-lexeme-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-lexeme" '("haskell-lexeme-")))
 
 ;;;***
 
@@ -737,7 +719,7 @@ applications.  Put your development version of the program in
 new thread, and use the `foreign-store' package to access the
 running context across :load/:reloads in GHCi." t nil)
 
-(register-definition-prefixes "haskell-load" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-load" '("haskell-")))
 
 ;;;***
 
@@ -747,7 +729,7 @@ running context across :load/:reloads in GHCi." t nil)
 (autoload 'haskell-menu "haskell-menu" "\
 Launch the Haskell sessions menu." t nil)
 
-(register-definition-prefixes "haskell-menu" '("haskell-menu-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-menu" '("haskell-menu-")))
 
 ;;;***
 
@@ -860,7 +842,7 @@ generated.
 
 \(fn &optional AND-THEN-FIND-THIS-TAG)" t nil)
 
-(register-definition-prefixes "haskell-mode" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-mode" '("haskell-")))
 
 ;;;***
 
@@ -885,7 +867,7 @@ If DONTCREATE is non-nil don't create a new session.
 
 \(fn SESSION &optional DONTCREATE)" nil nil)
 
-(register-definition-prefixes "haskell-modules" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-modules" '("haskell-")))
 
 ;;;***
 
@@ -921,7 +903,7 @@ of the region instead.
 
 \(fn COLS)" t nil)
 
-(register-definition-prefixes "haskell-move-nested" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-move-nested" '("haskell-")))
 
 ;;;***
 
@@ -941,7 +923,7 @@ Go to the first line of a list of consecutive import lines. Cycles." t nil)
 Return to the non-import point we were at before going to the module list.
    If we were originally at an import list, we can just cycle through easily." t nil)
 
-(register-definition-prefixes "haskell-navigate-imports" '("haskell-navigate-imports-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-navigate-imports" '("haskell-navigate-imports-")))
 
 ;;;***
 
@@ -949,7 +931,7 @@ Return to the non-import point we were at before going to the module list.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from haskell-presentation-mode.el
 
-(register-definition-prefixes "haskell-presentation-mode" '("haskell-presentation-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-presentation-mode" '("haskell-presentation-")))
 
 ;;;***
 
@@ -957,14 +939,14 @@ Return to the non-import point we were at before going to the module list.
 ;;;;;;  0 0))
 ;;; Generated autoloads from haskell-process.el
 
-(register-definition-prefixes "haskell-process" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-process" '("haskell-")))
 
 ;;;***
 
 ;;;### (autoloads nil "haskell-repl" "haskell-repl.el" (0 0 0 0))
 ;;; Generated autoloads from haskell-repl.el
 
-(register-definition-prefixes "haskell-repl" '("haskell-interactive-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-repl" '("haskell-interactive-")))
 
 ;;;***
 
@@ -972,7 +954,7 @@ Return to the non-import point we were at before going to the module list.
 ;;;;;;  0 0))
 ;;; Generated autoloads from haskell-sandbox.el
 
-(register-definition-prefixes "haskell-sandbox" '("haskell-sandbox-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-sandbox" '("haskell-sandbox-")))
 
 ;;;***
 
@@ -988,7 +970,7 @@ Get the session process.
 
 \(fn S)" nil nil)
 
-(register-definition-prefixes "haskell-session" '("haskell-session"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-session" '("haskell-session")))
 
 ;;;***
 
@@ -1003,7 +985,7 @@ i.e. an import list separated by blank lines on either side.
 If the region is active, it will restrict the imports to sort
 within that region." t nil)
 
-(register-definition-prefixes "haskell-sort-imports" '("haskell-sort-imports-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-sort-imports" '("haskell-sort-imports-")))
 
 ;;;***
 
@@ -1011,14 +993,14 @@ within that region." t nil)
 ;;;;;;  0))
 ;;; Generated autoloads from haskell-string.el
 
-(register-definition-prefixes "haskell-string" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-string" '("haskell-")))
 
 ;;;***
 
 ;;;### (autoloads nil "haskell-svg" "haskell-svg.el" (0 0 0 0))
 ;;; Generated autoloads from haskell-svg.el
 
-(register-definition-prefixes "haskell-svg" '("haskell-svg-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-svg" '("haskell-svg-")))
 
 ;;;***
 
@@ -1036,7 +1018,7 @@ Set input method `haskell-unicode'." t nil)
 ;;;### (autoloads nil "haskell-utils" "haskell-utils.el" (0 0 0 0))
 ;;; Generated autoloads from haskell-utils.el
 
-(register-definition-prefixes "haskell-utils" '("haskell-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "haskell-utils" '("haskell-")))
 
 ;;;***
 
@@ -1047,20 +1029,14 @@ Set input method `haskell-unicode'." t nil)
 (autoload 'highlight-uses-mode "highlight-uses-mode" "\
 Minor mode for highlighting and jumping between uses.
 
-If called interactively, toggle `Highlight-Uses mode'.  If the
-prefix argument is positive, enable the mode, and if it is zero
-or negative, disable the mode.
-
-If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
-the mode if ARG is nil, omitted, or is a positive number.
-Disable the mode if ARG is a negative number.
-
-The mode's hook is called both when the mode is enabled and when
-it is disabled.
+If called interactively, enable Highlight-Uses mode if ARG is
+positive, and disable it if ARG is zero or negative.  If called
+from Lisp, also enable the mode if ARG is omitted or nil, and
+toggle it if ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 
-(register-definition-prefixes "highlight-uses-mode" '("highlight-uses-mode-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "highlight-uses-mode" '("highlight-uses-mode-")))
 
 ;;;***
 
@@ -1072,7 +1048,7 @@ it is disabled.
 (autoload 'run-haskell "inf-haskell" "\
 Show the inferior-haskell buffer.  Start the process if needed." t nil)
 
-(register-definition-prefixes "inf-haskell" '("haskell-" "inf"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "inf-haskell" '("haskell-" "inf")))
 
 ;;;***
 
@@ -1082,7 +1058,7 @@ Show the inferior-haskell buffer.  Start the process if needed." t nil)
 (defface w3m-haddock-heading-face '((((class color)) :inherit highlight)) "\
 Face for quarantines." :group 'haskell)
 
-(register-definition-prefixes "w3m-haddock" '("haskell-w3m-" "w3m-haddock-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "w3m-haddock" '("haskell-w3m-" "w3m-haddock-")))
 
 ;;;***
 

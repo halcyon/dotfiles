@@ -1,4 +1,4 @@
-;;; sbt-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; sbt-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -33,7 +33,7 @@ that outputs errors.
 Repeat the command that was previously executed (or run the
 sbt:default-command, if no other command has yet been run)." t nil)
 
-(register-definition-prefixes "sbt-mode" '("sbt"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sbt-mode" '("sbt")))
 
 ;;;***
 
@@ -49,7 +49,7 @@ When run in buffer with no scala project then based on number of sbt buffers thi
   one sbt buffer exists - switch to that buffer
   more than one sbt buffer exist - let user choose which buffer to switch to" t nil)
 
-(register-definition-prefixes "sbt-mode-buffer" '("sbt:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sbt-mode-buffer" '("sbt:")))
 
 ;;;***
 
@@ -57,7 +57,7 @@ When run in buffer with no scala project then based on number of sbt buffers thi
 ;;;;;;  0 0))
 ;;; Generated autoloads from sbt-mode-comint.el
 
-(register-definition-prefixes "sbt-mode-comint" '("sbt:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sbt-mode-comint" '("sbt:")))
 
 ;;;***
 
@@ -69,7 +69,7 @@ When run in buffer with no scala project then based on number of sbt buffers thi
 Show Sbt hydra for current Sbt project. If there is no hydra defined for current
 Sbt project it will create one." t nil)
 
-(register-definition-prefixes "sbt-mode-hydra" '("sbt-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sbt-mode-hydra" '("sbt-")))
 
 ;;;***
 
@@ -77,7 +77,7 @@ Sbt project it will create one." t nil)
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from sbt-mode-project.el
 
-(register-definition-prefixes "sbt-mode-project" '("sbt:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sbt-mode-project" '("sbt:")))
 
 ;;;***
 
@@ -100,14 +100,14 @@ Recursively grep for definition of ID in scala files in the directory tree roote
 
 \(fn ID &optional CONFIRM)" t nil)
 
-(register-definition-prefixes "sbt-mode-rgrep" '("sbt:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sbt-mode-rgrep" '("sbt:")))
 
 ;;;***
 
 ;;;### (autoloads nil "sbt-mode-vars" "sbt-mode-vars.el" (0 0 0 0))
 ;;; Generated autoloads from sbt-mode-vars.el
 
-(register-definition-prefixes "sbt-mode-vars" '("sbt:"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sbt-mode-vars" '("sbt:")))
 
 ;;;***
 

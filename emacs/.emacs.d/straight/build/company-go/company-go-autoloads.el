@@ -1,4 +1,4 @@
-;;; company-go-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; company-go-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -11,7 +11,7 @@
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
 
-(register-definition-prefixes "company-go" '("company-go-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-go" '("company-go-")))
 
 ;;;***
 

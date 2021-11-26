@@ -1,4 +1,4 @@
-;;; goto-last-change-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; goto-last-change-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -15,7 +15,7 @@ will return point to the current position.
 
 \(fn &optional MARK-POINT MINIMAL-LINE-DISTANCE)" t nil)
 
-(register-definition-prefixes "goto-last-change" '("goto-last-change-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "goto-last-change" '("goto-last-change-")))
 
 ;;;***
 

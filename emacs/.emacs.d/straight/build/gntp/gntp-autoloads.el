@@ -1,4 +1,4 @@
-;;; gntp-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
+;;; gntp-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 
@@ -12,7 +12,7 @@ PORT defaults to `gntp-server-port'
 
 \(fn NAME TITLE TEXT SERVER &optional PORT PRIORITY ICON)" nil nil)
 
-(register-definition-prefixes "gntp" '("gntp-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gntp" '("gntp-")))
 
 ;;;***
 
