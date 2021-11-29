@@ -95,6 +95,16 @@ function git-gc-all-ferocious() {
   git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc "$@"
 }
 
+function disable-ipv6() {
+  sysctl -w net.ipv6.conf.all.disable_ipv6=1
+  sysctl -w net.ipv6.conf.default.disable_ipv6=1
+}
+
+function enable-ipv6() {
+  sysctl -w net.ipv6.conf.all.disable_ipv6=0
+  sysctl -w net.ipv6.conf.default.disable_ipv6=0
+}
+
 if [[ -f ${HOME}/dotfiles-private/zsh/zsh-private ]]
 then
     source ${HOME}/dotfiles-private/zsh/zsh-private
