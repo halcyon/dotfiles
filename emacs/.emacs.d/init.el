@@ -132,6 +132,7 @@ Null prefix argument turns off the mode."
   (put 'cider-ns-refresh-after-fn  'safe-local-variable #'stringp)
   (put 'cider-default-cljs-repl 'safe-local-variable #'symbolp)
   :bind (:map cider-repl-mode-map
+              ("C-h F" . clojure-essential-ref)
               ("C-M-q" . prog-indent-sexp)
               ("C-c C-p" . cider-pprint-eval-last-sexp))
   :config
@@ -158,6 +159,13 @@ Null prefix argument turns off the mode."
   (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
   (add-hook 'nov-mode-hook (lambda ()
                              (display-line-numbers-mode -1))))
+
+(use-package clojure-essential-ref-nov
+  :init
+  (setq clojure-essential-ref-default-browse-fn #'clojure-essential-ref-nov-browse
+        clojure-essential-ref-nov-epub-path (concat "~/books/Renzo Borgatti/"
+                                                    "Clojure_ The Essential Reference MEAP V30 (1904)/"
+                                                    "Clojure_ The Essential Reference MEAP V30 - Renzo Borgatti.epub")))
 
 (use-package term
   ;; If you do use M-x term, you will notice there's line mode that acts like
@@ -299,13 +307,13 @@ Null prefix argument turns off the mode."
 
 (use-package ob-http)
 
-(use-package org-roam
-  :init
-  (setq org-roam-v2-ack t)
-  :config
-  (setq org-roam-directory "~/projects/org-roam"
-        org-roam-index-file "index.org")
-  (add-hook 'after-init-hook 'org-roam-mode))
+;; (use-package org-roam
+;;   :init
+;;   (setq org-roam-v2-ack t)
+;;   :config
+;;   (setq org-roam-directory "~/projects/org-roam"
+;;         org-roam-index-file "index.org")
+;;   (add-hook 'after-init-hook 'org-roam-mode))
 
 (use-package org2jekyll
   :straight (:host github
@@ -554,6 +562,7 @@ Null prefix argument turns off the mode."
 (use-package clojure-mode-extra-font-locking)
 (use-package flycheck-clj-kondo)
 (use-package clojure-mode
+  :bind ("C-h F" . clojure-essential-ref)
   ;; :config
   ;; (defun configure-clojure-indent ()
   ;;   (define-clojure-indent
@@ -674,62 +683,62 @@ Null prefix argument turns off the mode."
   :bind (("C-x C-g" . git-gutter-mode)
          ("C-x v =" . git-gutter:popup-hunk)))
 
-(use-package SQLi-mode
-  :straight nil
-  :init
-  (defcustom sql-ms-program "sqlcmd"
-    "Command to start ;osql; (replaced for sqlcmd) by Microsoft.
-     Starts `sql-interactive-mode' after doing some setup."
-    :type 'file
-    :group 'SQL)
-  (defcustom sql-ms-options '("-s" "|" "-k")
-    ;; -W is the linesize
-    "List of additional options for `sql-ms-program'."
-    :type '(repeat string)
-    :version "22.1"
-    :group 'SQL)
-  (defadvice sql-connect
-      (before load-sql-connections activate)
-    "Registers sql connections before running sql-connect."
-    (require 'sql-connections "~/gitlab/dotfiles-private/emacs/sql-connections.el.gpg"))
-  (defun warehouse-staging ()
-    (interactive)
-    (setq sql-product 'ms)
-    (sql-connect 'warehouse-staging 'warehouse-staging))
-  (defun docker-postgres ()
-    (interactive)
-    (setq sql-product 'postgres)
-    (sql-connect 'docker-postgres 'docker-postgres))
-  (defun webicon-ci ()
-    (interactive)
-    (setq sql-product 'oracle)
-    (sql-connect 'webicon-ci))
-  (defun webicon-prod ()
-    (interactive)
-    (setq sql-product 'oracle)
-    (sql-connect 'webicon-prod))
-  (defun rating-prod ()
-    (interactive)
-    (setq sql-product 'oracle)
-    (sql-connect 'rating-prod))
-  (defun rating-ci ()
-    (interactive)
-    (setq sql-product 'oracle)
-    (sql-connect 'rating-ci))
-  (defun webicon-qa ()
-    (interactive)
-    (setq sql-product 'oracle)
-    (sql-connect 'webicon-qa))
-  (defun webicon-ci ()
-    (interactive)
-    (setq sql-product 'oracle)
-    (sql-connect 'webicon-ci))
-  (defun csi_mm_03_14_18 ()
-    (interactive)
-    (setq sql-product 'mysql)
-    (sql-connect 'csi_mm_03_14_18))
-  (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
-  (provide 'SQLi-mode))
+;; (use-package SQLi-mode
+;;   :straight nil
+;;   :init
+;;   (defcustom sql-ms-program "sqlcmd"
+;;     "Command to start ;osql; (replaced for sqlcmd) by Microsoft.
+;;      Starts `sql-interactive-mode' after doing some setup."
+;;     :type 'file
+;;     :group 'SQL)
+;;   (defcustom sql-ms-options '("-s" "|" "-k")
+;;     ;; -W is the linesize
+;;     "List of additional options for `sql-ms-program'."
+;;     :type '(repeat string)
+;;     :version "22.1"
+;;     :group 'SQL)
+;;   (defadvice sql-connect
+;;       (before load-sql-connections activate)
+;;     "Registers sql connections before running sql-connect."
+;;     (require 'sql-connections "~/gitlab/dotfiles-private/emacs/sql-connections.el.gpg"))
+;;   (defun warehouse-staging ()
+;;     (interactive)
+;;     (setq sql-product 'ms)
+;;     (sql-connect 'warehouse-staging 'warehouse-staging))
+;;   (defun docker-postgres ()
+;;     (interactive)
+;;     (setq sql-product 'postgres)
+;;     (sql-connect 'docker-postgres 'docker-postgres))
+;;   (defun webicon-ci ()
+;;     (interactive)
+;;     (setq sql-product 'oracle)
+;;     (sql-connect 'webicon-ci))
+;;   (defun webicon-prod ()
+;;     (interactive)
+;;     (setq sql-product 'oracle)
+;;     (sql-connect 'webicon-prod))
+;;   (defun rating-prod ()
+;;     (interactive)
+;;     (setq sql-product 'oracle)
+;;     (sql-connect 'rating-prod))
+;;   (defun rating-ci ()
+;;     (interactive)
+;;     (setq sql-product 'oracle)
+;;     (sql-connect 'rating-ci))
+;;   (defun webicon-qa ()
+;;     (interactive)
+;;     (setq sql-product 'oracle)
+;;     (sql-connect 'webicon-qa))
+;;   (defun webicon-ci ()
+;;     (interactive)
+;;     (setq sql-product 'oracle)
+;;     (sql-connect 'webicon-ci))
+;;   (defun csi_mm_03_14_18 ()
+;;     (interactive)
+;;     (setq sql-product 'mysql)
+;;     (sql-connect 'csi_mm_03_14_18))
+;;   (add-hook 'sql-interactive-mode-hook (apply-partially #'toggle-truncate-lines t))
+;;   (provide 'SQLi-mode))
 
 (use-package rcirc
   :straight nil
