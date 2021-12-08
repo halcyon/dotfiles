@@ -1,6 +1,8 @@
 ;;; package --- init.el
 ;;; Commentary:
 ;;; Code:
+
+;; (eval-after-load "org" '(debug))
 (setq message-log-max 10000)
 
 (defvar bootstrap-version)
@@ -18,6 +20,7 @@
 
 (straight-use-package 'use-package)
 (straight-use-package 'project)
+(straight-use-package 'org)
 
 (setq straight-use-package-by-default t)
 
@@ -149,6 +152,12 @@ Null prefix argument turns off the mode."
          ("C-p" . company-select-previous)
          ("C-d" . company-show-doc-buffer)
          ("M-." . company-show-location)))
+
+(use-package nov
+  :init
+  (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+  (add-hook 'nov-mode-hook (lambda ()
+                             (display-line-numbers-mode -1))))
 
 (use-package term
   ;; If you do use M-x term, you will notice there's line mode that acts like
@@ -290,13 +299,13 @@ Null prefix argument turns off the mode."
 
 (use-package ob-http)
 
-;; (use-package org-roam
-;;   :init
-;;   (setq org-roam-v2-ack t)
-;;   :config
-;;   (setq org-roam-directory "~/projects/org-roam"
-;;         org-roam-index-file "index.org")
-;;   (add-hook 'after-init-hook 'org-roam-mode))
+(use-package org-roam
+  :init
+  (setq org-roam-v2-ack t)
+  :config
+  (setq org-roam-directory "~/projects/org-roam"
+        org-roam-index-file "index.org")
+  (add-hook 'after-init-hook 'org-roam-mode))
 
 (use-package org2jekyll
   :straight (:host github
