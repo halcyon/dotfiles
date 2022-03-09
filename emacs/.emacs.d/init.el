@@ -683,6 +683,10 @@ Null prefix argument turns off the mode."
   :bind (("C-x C-g" . git-gutter-mode)
          ("C-x v =" . git-gutter:popup-hunk)))
 
+(use-package sqlformat
+  :config
+  (setq sqlformat-command 'pgformatter))
+
 ;; (use-package SQLi-mode
 ;;   :straight nil
 ;;   :init
@@ -814,17 +818,3 @@ Null prefix argument turns off the mode."
 
 ;; (provide 'init)
 ;;; init.el ends here
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(safe-local-variable-values
-   '((cider-clojure-cli-global-options . "-A:dev")
-     (cider-repl-init-code "(dev)"))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
